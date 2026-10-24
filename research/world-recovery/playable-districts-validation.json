@@ -4,22 +4,91 @@
   "route": "?view=play&district=<levelId>",
   "scope": "B4 playable district coverage: MainLevel + one requested main-world level, original character, full-resolution heightfield and per-district AABB collision proxy. Preview population/combat are loaded only for ResidentialArea1. Spawn is the district bounds centre on terrain, not an original PlayerStart.",
   "cases": [
-    { "district": "ResidentialArea1", "objects": 3782, "terrain": 144, "assetFailures": 0, "textureFailures": 0, "population": 14, "spawn": [-50.0, 0.02, -548.63], "screenshot": "research/screenshots/play-b3.jpg" },
-    { "district": "DownTown", "objects": 4274, "terrain": 144, "assetFailures": 0, "textureFailures": 0, "population": 0, "spawn": [-83.6, 0.0, -187.5], "screenshot": "research/screenshots/play-downtown.jpg" },
-    { "district": "Park", "objects": 4105, "terrain": 144, "assetFailures": 0, "textureFailures": 0, "population": 0, "spawn": [242.4, 0.0, -64.5], "screenshot": "research/screenshots/play-park.jpg" },
-    { "district": "TitleMenuLevel", "objects": 3469, "terrain": 144, "assetFailures": 0, "textureFailures": 0, "population": 0, "spawn": [-3.2, 0.04, -35.2], "screenshot": "research/screenshots/play-titlemenu.jpg" }
+    {
+      "district": "ResidentialArea1",
+      "objects": 3782,
+      "terrain": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "population": 14,
+      "spawn": [
+        -50,
+        0.02,
+        -548.63
+      ],
+      "screenshot": "research/screenshots/play-b3.jpg"
+    },
+    {
+      "district": "DownTown",
+      "objects": 4274,
+      "terrain": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "population": 0,
+      "spawn": [
+        -83.6,
+        0,
+        -187.5
+      ],
+      "screenshot": "research/screenshots/play-downtown.jpg"
+    },
+    {
+      "district": "Park",
+      "objects": 4105,
+      "terrain": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "population": 0,
+      "spawn": [
+        242.4,
+        0,
+        -64.5
+      ],
+      "screenshot": "research/screenshots/play-park.jpg"
+    },
+    {
+      "district": "TitleMenuLevel",
+      "objects": 3469,
+      "terrain": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "population": 0,
+      "spawn": [
+        -3.2,
+        0.04,
+        -35.2
+      ],
+      "screenshot": "research/screenshots/play-titlemenu.jpg"
+    },
+    {
+      "district": "__startup__",
+      "objects": 8824,
+      "terrain": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "population": 14,
+      "spawn": [
+        -50,
+        0.02,
+        -548.63
+      ],
+      "screenshot": "research/screenshots/play-startup.jpg",
+      "note": "Executes the recovered 17-package/12-step startup chain before playable assembly; movement probe passed."
+    }
   ],
   "checks": {
     "assembly": "MainLevel + requested district; terrain heightfield and collision proxy built for the selected levels; 0 asset/texture failures in every case",
     "spawn": "district bounds centre searched in a small grid for a terrain point outside the static AABB proxies",
     "population": "preview citizens/vehicles/props and combat targets are ResidentialArea1-only; other districts have no population AI",
-    "camera": "third-person follow; AABB camera pull-in enabled"
+    "camera": "third-person follow; AABB camera pull-in enabled",
+    "startupPlayable": "?view=play&startup=1 executes OriginalStreaming 17-package/12-step startup, then builds the all-level AABB collision set, spawns the original character at ResidentialArea1 and runs the B1 movement probe (walk/jump/fly/E-Q) successfully; 8,824 source objects, 144 terrain, 0 failures."
   },
   "limitations": [
     "Spawn is a viewer-safe centre point, not the original PlayerStart or story spawn.",
     "DownTown/Park/TitleMenuLevel have no population, vehicles, AI, quests or combat targets.",
     "Collision is an AABB proxy; no cooked PhysX, capsule/skeletal collision or exact landscape triangle collision.",
     "No same-camera pixel comparison with the original game; these are browser coverage checks.",
-    "Static reference-pose skeletal citizens remain hidden in MainLevel batches."
+    "Static reference-pose skeletal citizens remain hidden in MainLevel batches.",
+    "Startup playable mode is a headless verification; 36 FPS is not a performance guarantee and has no original-game matched-camera comparison."
   ]
 }

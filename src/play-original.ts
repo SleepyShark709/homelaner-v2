@@ -42,6 +42,8 @@ const viewer = new OriginalWorld(canvas);
 const input = new Input(canvas);
 const paused = el('paused');
 const requestedDistrict = new URLSearchParams(location.search).get('district') ?? 'ResidentialArea1';
+const startupMode = new URLSearchParams(location.search).get('startup') === '1';
+const playDistrict = startupMode ? 'ResidentialArea1' : requestedDistrict;
 let player: OriginalPlayer | undefined;
 let character: Character | undefined;
 let combat: Combat | undefined;
@@ -72,7 +74,7 @@ function insideBox(point: Vec3, boxes: { min: Vec3; max: Vec3 }[], margin = 0.55
 try {
   await viewer.load();
   if (!viewer.terrainManifest) throw new Error('地形清单未载入');
-  await viewer.select(requestedDistrict);
+  await viewer.select(startupMode ? '__startup__' : requestedDistrict);
   // The static world includes reference-pose skeletal citizens baked into the
   // MainLevel batches. B1 has no population/AI yet, so hide those mannequins
   // rather than presenting them as live characters next to the player.
@@ -85,10 +87,12 @@ try {
   el('load-title').textContent = '载入原角色与地形';
   el('load-message').textContent = '读取 144 块原高度场与街区碰撞代理…';
   const terrain = await TerrainHeightfield.load(viewer.terrainManifest);
-  const selected = viewer.manifest.levels.filter(level => level.id === 'MainLevel' || level.id === requestedDistrict);
+  const selected = startupMode
+    ? viewer.manifest.levels.filter(level => viewer.streamingManifest.baseline.packages.includes(level.package))
+    : viewer.manifest.levels.filter(level => level.id === 'MainLevel' || level.id === playDistrict);
   const collision = buildCollision(selected, viewer.manifest.assets);
   const candidate = viewer.manifest.spawnCandidates?.find(item => item.levelId === 'MainLevel');
-  const legacy = requestedDistrict === 'ResidentialArea1'
+  const legacy = playDistrict === 'ResidentialArea1'
     ? await fetch('/assets/city/manifest.json', { cache: 'force-cache' }).then(response => response.json()).catch(() => null) as { spawn?: Vec3; originUE?: Vec3 } | null
     : null;
   // The old prototype city manifest is district-local: its originUE is
@@ -96,7 +100,7 @@ try {
   // recorded spawn and preview population must be shifted by originUE/100.
   const offsetX = (legacy?.originUE?.[0] ?? 0) / 100;
   const offsetZ = (legacy?.originUE?.[1] ?? 0) / 100;
-  const districtLevel = viewer.manifest.levels.find(level => level.id === requestedDistrict);
+  const districtLevel = viewer.manifest.levels.find(level => level.id === playDistrict);
   const districtBounds = districtLevel?.bounds;
   const fallbackX = districtBounds ? (districtBounds.min[0] + districtBounds.max[0]) / 2 : (candidate?.position[0] ?? 50);
   const fallbackZ = districtBounds ? (districtBounds.min[2] + districtBounds.max[2]) / 2 : (candidate?.position[2] ?? 1.37);
@@ -138,7 +142,7 @@ try {
   // but placements/routes come from the previous prototype manifest, not a
   // recovered original AI/quest system. Damage stays in baseline mode here.
   population = new Population(viewer.scene, collision.boxes);
-  if (requestedDistrict === 'ResidentialArea1') {
+  if (playDistrict === 'ResidentialArea1') {
     let manifestUrl = '/assets/population-manifest.json';
     let populationOffset: [number, number] = [offsetX, offsetZ];
     if (new URLSearchParams(location.search).get('population') === 'original') {
