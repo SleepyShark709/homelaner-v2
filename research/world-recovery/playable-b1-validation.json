@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-25",
+  "harness": "scripts/capture-world.mjs",
+  "cases": [
+    {
+      "region": "view=play",
+      "ready": "play",
+      "level": "",
+      "objects": 3782,
+      "terrain": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "unresolvedMaterialCacheKeys": 0,
+      "ambiguousSlots": 0,
+      "fps": 42.384854478621925,
+      "activeMeshes": 0,
+      "warning": "",
+      "scope": "",
+      "streaming": null,
+      "streamingTrace": null,
+      "player": {
+        "position": [
+          49.999984103704946,
+          0.4496875,
+          1.3708073881832388
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "flying": false,
+        "grounded": true,
+        "state": "idle",
+        "speed": 0,
+        "charge": 0
+      },
+      "probe": {
+        "start": {
+          "stats": {
+            "position": [
+              49.999984103704946,
+              0.4496875,
+              1.3708073881832388
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "flying": false,
+            "grounded": true,
+            "state": "idle",
+            "speed": 0,
+            "charge": 0
+          },
+          "clip": "Hero_Idle",
+          "active": true
+        },
+        "walking": {
+          "stats": {
+            "position": [
+              49.999984103704946,
+              0.4496875,
+              -5.670859278483425
+            ],
+            "velocity": [
+              1.2246467991473533e-15,
+              0,
+              -10
+            ],
+            "flying": false,
+            "grounded": true,
+            "state": "run",
+            "speed": 10,
+            "charge": 0
+          },
+          "clip": "A_ThirdPersonRun",
+          "active": true
+        },
+        "jump": {
+          "stats": {
+            "position": [
+              49.999984103704946,
+              6.834518750000003,
+              -5.962525945150092
+            ],
+            "velocity": [
+              0,
+              16.56650000000002,
+              0
+            ],
+            "flying": false,
+            "grounded": false,
+            "state": "jump",
+            "speed": 16.56650000000002,
+            "charge": 0
+          },
+          "clip": "Hero_IdleFlying",
+          "active": true
+        },
+        "flying": {
+          "stats": {
+            "position": [
+              49.999984103704946,
+              6.834518750000003,
+              -5.962525945150092
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "flying": true,
+            "grounded": false,
+            "state": "hover",
+            "speed": 0,
+            "charge": 0
+          },
+          "clip": "Hero_IdleFlying",
+          "active": true
+        },
+        "ascended": {
+          "stats": {
+            "position": [
+              49.999984103704946,
+              21.33451875000002,
+              -5.962525945150092
+            ],
+            "velocity": [
+              0,
+              40,
+              0
+            ],
+            "flying": true,
+            "grounded": false,
+            "state": "hover",
+            "speed": 40,
+            "charge": 0
+          },
+          "clip": "Hero_IdleFlying",
+          "active": true
+        },
+        "descended": {
+          "stats": {
+            "position": [
+              49.999984103704946,
+              13.001185416666715,
+              -5.962525945150092
+            ],
+            "velocity": [
+              0,
+              -40,
+              0
+            ],
+            "flying": true,
+            "grounded": false,
+            "state": "hover",
+            "speed": 40,
+            "charge": 0
+          },
+          "clip": "Hero_IdleFlying",
+          "active": true
+        },
+        "exited": {
+          "stats": {
+            "position": [
+              49.999984103704946,
+              0.4496875,
+              -5.962525945150092
+            ],
+            "velocity": [
+              0,
+              0,
+              0
+            ],
+            "flying": false,
+            "grounded": true,
+            "state": "idle",
+            "speed": 0,
+            "charge": 0
+          },
+          "clip": "Hero_Idle",
+          "active": true
+        },
+        "evidence": {
+          "walkDistance": 7.041666666666663,
+          "jumpHeight": 6.384831250000003,
+          "ascendDelta": 14.500000000000016,
+          "descendDelta": -8.333333333333304
+        }
+      },
+      "consoleErrors": [],
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "devicePixelRatio": 1
+      },
+      "browser": "Chrome/156.0.8078.48",
+      "url": "http://127.0.0.1:5178/?view=play&debug=1",
+      "durationMs": 25753,
+      "screenshot": "research/screenshots/play-b1.jpg"
+    }
+  ],
+  "scope": "B1 playable vertical slice: original ResidentialArea1 street + MainLevel static world, original hero character, heightfield ground, AABB collision proxy and original-input movement. Not a complete original gameplay reconstruction.",
+  "collision": {
+    "sourceObjects": 2171,
+    "boxes": 1432,
+    "skippedSmall": 731,
+    "skippedHuge": 8,
+    "skippedUnbounded": 0,
+    "skippedTerrain": 0,
+    "note": "Axis-aligned proxy from asset-local bounds and recovered object TRS; not cooked PhysX."
+  },
+  "tests": {
+    "typecheck": "passed",
+    "controller": "5/5 passed (scripts/test-play-controller.mjs)",
+    "worldAssetClosure": "passed before B1 (2,292 files)",
+    "browserProbe": "passed (scripts/probe-play-b1.js); walk/jump/air-flight/E ascend/Q descend/exit flight and animation clips observed"
+  },
+  "checks": {
+    "route": "?view=play loads MainLevel + ResidentialArea1 with original character and 3,782 source objects / 144 terrain blocks, 0 asset/texture failures",
+    "spawn": "ResidentialArea1 road-spline midpoint from the previous recovery (not PlayerStart); MainLevel respawn actor x/z is the fallback",
+    "input": "Space jump / airborne Space flight / flight Space exit; E/Q vertical; Shift sprint; Alt walk; F reserved; R debug reset",
+    "animation": "Hero_Idle -> A_ThirdPersonRun -> Hero_IdleFlying / Hero_FlyFastSprint groups switch with state",
+    "collision": "terrain full-resolution heightfields + 1,432 AABB proxies from 2,171 static objects",
+    "camera": "third-person follow at 5.5m walking / 8m flying; pointer drag yaw/pitch"
+  },
+  "limitations": [
+    "Jump impulse and gravity are preview values; the original curve/jump height has not been matched.",
+    "Buildings/props use AABB proxies, not cooked PhysX collision; camera has no collision response.",
+    "Static reference-pose skeletal citizens baked into the maps are hidden in B1; population/AI are not restored.",
+    "No attack, ranged attack, heat vision, destruction, population, vehicles, quests, boss, menu or save flow.",
+    "Character shadows, IK, montage/notify behavior and the full HeroAnimBP state machine are not implemented.",
+    "Headless Chrome FPS is not comparable with an interactive browser or the original game; no same-camera/input comparison yet."
+  ]
+}

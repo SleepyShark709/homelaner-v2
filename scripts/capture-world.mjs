@@ -15,7 +15,6 @@ import { spawn } from 'node:child_process';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { once } from 'node:events';
 
 const args = new Map(process.argv.slice(2).map(arg => {
   const index = arg.indexOf('=');
@@ -24,6 +23,8 @@ const args = new Map(process.argv.slice(2).map(arg => {
 const region = args.get('region') ?? '__baseline__';
 const baseUrl = args.get('url') ?? 'http://127.0.0.1:5178/';
 const debug = args.get('debug') === '1';
+const query = args.get('query') ?? '';
+const expectedReady = args.get('ready') ?? 'world';
 const timeout = Number(args.get('timeout') ?? 420000);
 const settle = Number(args.get('settle') ?? 2500);
 const shot = args.get('shot') ? path.resolve(args.get('shot')) : null;
@@ -115,7 +116,9 @@ await cdp.send('Page.enable');
 await cdp.send('Runtime.enable');
 await cdp.send('Log.enable');
 await cdp.send('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: 1, mobile: false });
-const url = `${baseUrl}?region=${encodeURIComponent(region)}${debug ? '&debug=1' : ''}`;
+const url = query
+  ? `${baseUrl}?${query}${debug ? '&debug=1' : ''}`
+  : `${baseUrl}?region=${encodeURIComponent(region)}${debug ? '&debug=1' : ''}`;
 await cdp.send('Page.navigate', { url });
 
 const probeExpr = `(() => {
@@ -130,6 +133,7 @@ const probeExpr = `(() => {
     textureFailures: data.textureFailures || '', unresolvedMaterials: data.unresolvedMaterials || '',
     ambiguousSlots: data.ambiguousSlots || '', fps: data.fps || '', draws: data.draws || '',
     streaming: data.streaming || '', streamingTrace: data.streamingTrace || '',
+    player: data.player || '', mode: data.mode || '',
     warning: warning && !warning.hidden ? warning.textContent : '',
     loadingHidden: loading ? loading.hidden : null,
     scope: document.getElementById('scope')?.textContent || '',
@@ -144,7 +148,7 @@ for (;;) {
   const result = await cdp.send('Runtime.evaluate', { expression: probeExpr, returnByValue: true });
   if (result.exceptionDetails) throw new Error(`Page probe failed: ${result.exceptionDetails.text}`);
   data = JSON.parse(result.result.value);
-  if (data.ready === 'world' || data.ready === 'error') break;
+  if (data.ready === expectedReady || data.ready === 'error') break;
   if (Date.now() - started > timeout) throw new Error(`Timed out waiting for viewer (${data.ready}; ${data.warning})`);
   await delay(500);
 }
@@ -167,7 +171,7 @@ if (probe) {
 
 function parse(value) { try { return value ? JSON.parse(value) : null; } catch { return value; } }
 const recordCase = {
-  region,
+  region: query || region,
   ready: data.ready,
   level: data.level,
   objects: Number(data.objects) || 0,
@@ -182,6 +186,8 @@ const recordCase = {
   scope: data.scope,
   streaming: parse(data.streaming),
   streamingTrace: parse(data.streamingTrace),
+  player: parse(data.player),
+  probe: probeResult,
   consoleErrors,
   viewport: { width: data.size[0], height: data.size[1], devicePixelRatio: data.devicePixelRatio },
   browser: version.Browser,
@@ -209,9 +215,9 @@ if (record) {
 }
 console.log(JSON.stringify({ region, ready: recordCase.ready, objects: recordCase.objects, terrain: recordCase.terrain, failures: recordCase.assetFailures, textureFailures: recordCase.textureFailures, fps: recordCase.fps, streamingPhase: recordCase.streaming?.phase, completedCitySteps: recordCase.streaming?.completedCitySteps, traceEvents: recordCase.streamingTrace?.length ?? 0, screenshot: recordCase.screenshot }, null, 1));
 
-try { await cdp.send('Browser.close'); } catch {}
+try { await Promise.race([cdp.send('Browser.close'), delay(1000)]); } catch {}
 cdp.close();
-await Promise.race([once(chrome, 'exit'), delay(5000)]);
+await delay(800);
 if (!browserClosed) {
   try { process.kill(chrome.pid, 'SIGKILL'); } catch {}
 }

@@ -3,10 +3,11 @@ import { TransformNode } from '@babylonjs/core/Meshes/transformNode';
 import { LoadAssetContainerAsync } from '@babylonjs/core/Loading/sceneLoader';
 import type { AssetContainer } from '@babylonjs/core/assetContainer';
 import type { ShadowGenerator } from '@babylonjs/core/Lights/Shadows/shadowGenerator';
-import type { MotionState, PlayerMotor } from './PlayerMotor';
+import type { MotionState } from './PlayerMotor';
 import type { Vec3 } from './collision';
 
 const CLIPS: Record<MotionState, string> = { idle: 'Hero_Idle', run: 'A_ThirdPersonRun', jump: 'Hero_IdleFlying', hover: 'Hero_IdleFlying', fly: 'Hero_FlyFastSprint' };
+export interface MotionSource { position: Vec3; velocity: Vec3; heading: number; state: MotionState }
 export class Character {
   readonly root: TransformNode;
   private container!: AssetContainer;
@@ -14,13 +15,13 @@ export class Character {
   private yaw = Math.PI;
   private action = '';
   constructor(readonly scene: Scene) { this.root = new TransformNode('player-visual', scene); this.root.scaling.setAll(1.05); }
-  async load(shadows: ShadowGenerator): Promise<void> {
+  async load(shadows?: ShadowGenerator): Promise<void> {
     this.container = await LoadAssetContainerAsync('/assets/character/hero.gltf', this.scene);
     this.container.addAllToScene();
     this.container.animationGroups.forEach(group => group.stop());
     this.container.skeletons.forEach(skeleton => skeleton.returnToRest());
     this.container.rootNodes.forEach(node => { node.parent = this.root; });
-    this.container.meshes.filter(mesh => mesh.getTotalVertices() > 0).forEach(mesh => { mesh.isPickable = false; shadows.addShadowCaster(mesh); });
+    this.container.meshes.filter(mesh => mesh.getTotalVertices() > 0).forEach(mesh => { mesh.isPickable = false; shadows?.addShadowCaster(mesh); });
     for (const group of this.container.animationGroups) {
       for (const animation of group.targetedAnimations) {
         animation.animation.enableBlending = true;
@@ -28,7 +29,7 @@ export class Character {
       }
     }
   }
-  update(motor: PlayerMotor, dt: number): void {
+  update(motor: MotionSource, dt: number): void {
     this.root.position.copyFromFloats(...motor.position);
     this.root.position.y += 0.026;
     const difference = Math.atan2(Math.sin(motor.heading - this.yaw), Math.cos(motor.heading - this.yaw));
