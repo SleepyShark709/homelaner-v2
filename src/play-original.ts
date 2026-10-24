@@ -1,5 +1,8 @@
 import './play-original.css';
 import { Vector3 } from '@babylonjs/core/Maths/math.vector';
+import { DirectionalLight } from '@babylonjs/core/Lights/directionalLight';
+import { ShadowGenerator } from '@babylonjs/core/Lights/Shadows/shadowGenerator';
+import '@babylonjs/core/Lights/Shadows/shadowGeneratorSceneComponent';
 import { OriginalWorld } from './world/OriginalWorld';
 import { Character } from './game/Character';
 import { Input } from './game/Input';
@@ -48,6 +51,7 @@ let player: OriginalPlayer | undefined;
 let character: Character | undefined;
 let combat: Combat | undefined;
 let population: Population | undefined;
+let shadows: ShadowGenerator | undefined;
 
 viewer.onProgress = (message, done, total) => {
   el('load-message').textContent = message;
@@ -86,6 +90,19 @@ try {
   }
   el('load-title').textContent = '载入原角色与地形';
   el('load-message').textContent = '读取 144 块原高度场与街区碰撞代理…';
+  // The original program shows a dynamic character shadow. Use the viewer's
+  // existing source-sun direction; only the player casts, while static scenery
+  // receives. This is preview lighting, not the original shadow cascade.
+  const sourceSun = viewer.scene.lights.find(light => light.name === 'source-sun-direction') as DirectionalLight | undefined;
+  if (sourceSun) {
+    shadows = new ShadowGenerator(1024, sourceSun);
+    shadows.useBlurExponentialShadowMap = true;
+    shadows.blurKernel = 16;
+    shadows.setDarkness(0.35);
+    for (const mesh of viewer.scene.meshes) {
+      if (mesh.isEnabled() && mesh.isVisible && mesh.getTotalVertices() > 0) mesh.receiveShadows = true;
+    }
+  }
   const terrain = await TerrainHeightfield.load(viewer.terrainManifest);
   const selected = startupMode
     ? viewer.manifest.levels.filter(level => viewer.streamingManifest.baseline.packages.includes(level.package))
@@ -136,7 +153,7 @@ try {
     player.heading = input.yaw;
   }
   character = new Character(viewer.scene);
-  await character.load();
+  await character.load(shadows);
   character.update(player, 1);
   // Preview population: original citizen/vehicle/prop meshes and animations,
   // but placements/routes come from the previous prototype manifest, not a
@@ -223,7 +240,7 @@ try {
   document.body.dataset.ready = 'play';
   el('loading').hidden = true;
   if (new URLSearchParams(location.search).get('debug') === '1') {
-    (window as typeof window & { __undefeatedPlay?: unknown }).__undefeatedPlay = { viewer, player, character, input, collision, combat, population };
+    (window as typeof window & { __undefeatedPlay?: unknown }).__undefeatedPlay = { viewer, player, character, input, collision, combat, population, shadows };
   }
   console.info('B1 playable slice ready', { spawn, objects, collision: collision.stats });
 } catch (error) {
