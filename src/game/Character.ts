@@ -1,6 +1,7 @@
 import { Scene } from '@babylonjs/core/scene';
 import { TransformNode } from '@babylonjs/core/Meshes/transformNode';
 import { Mesh } from '@babylonjs/core/Meshes/mesh';
+import { VertexData } from '@babylonjs/core/Meshes/mesh.vertexData';
 import { CreatePlane } from '@babylonjs/core/Meshes/Builders/planeBuilder';
 import { StandardMaterial } from '@babylonjs/core/Materials/standardMaterial';
 import { Color3 } from '@babylonjs/core/Maths/math.color';
@@ -19,6 +20,7 @@ export class Character {
   private yaw = Math.PI;
   private action = '';
   private extras: Mesh[] = [];
+  private cape?: Mesh;
   constructor(readonly scene: Scene) { this.root = new TransformNode('player-visual', scene); this.root.scaling.setAll(1.05); }
   async load(shadows?: ShadowGenerator, skin: 'original' | 'homelander' = 'original'): Promise<void> {
     this.container = await LoadAssetContainerAsync('/assets/character/hero.gltf', this.scene);
@@ -64,12 +66,30 @@ export class Character {
     capeMaterial.diffuseColor = new Color3(0.72, 0.035, 0.045);
     capeMaterial.emissiveColor = new Color3(0.12, 0.008, 0.01);
     capeMaterial.backFaceCulling = false;
-    const cape = CreatePlane('homelander-cape', { width: 0.68, height: 1.0, sideOrientation: Mesh.DOUBLESIDE }, this.scene);
+    const cape = new Mesh('homelander-cape', this.scene);
+    const rows = [1.5, 1.05, 0.6, 0.32];
+    const widths = [0.36, 0.44, 0.49, 0.52];
+    const depths = [-0.16, -0.2, -0.28, -0.24];
+    const positions: number[] = [], uvs: number[] = [], indices: number[] = [];
+    for (let row = 0; row < rows.length; row++) {
+      for (let col = 0; col < 3; col++) {
+        positions.push((col - 1) * widths[row], rows[row], depths[row]);
+        uvs.push(col / 2, row / (rows.length - 1));
+      }
+    }
+    for (let row = 0; row < rows.length - 1; row++) {
+      const base = row * 3, next = base + 3;
+      indices.push(base, next, next + 1, base, next + 1, base + 1, base + 1, next + 1, next + 2, base + 1, next + 2, base + 2);
+    }
+    const normals: number[] = [];
+    VertexData.ComputeNormals(positions, indices, normals);
+    const vertexData = new VertexData();
+    vertexData.positions = positions; vertexData.indices = indices; vertexData.uvs = uvs; vertexData.normals = normals;
+    vertexData.applyToMesh(cape);
     cape.material = capeMaterial;
     cape.parent = this.root;
-    cape.position.set(0, 1.0, -0.2);
-    cape.rotation.y = 0;
     cape.isPickable = false;
+    this.cape = cape;
     shadows?.addShadowCaster(cape);
     this.extras.push(cape);
     const emblemMaterial = new StandardMaterial('homelander-emblem-mat', this.scene);
