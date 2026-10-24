@@ -34,7 +34,7 @@
 
 新增一个**可选**检查模式 `?view=play&population=original`：
 
-- `tools/asset-pipeline/export-citizen-spawns.mjs` 从解码数据取玩家附近 12 个 `BP_CharaSpawnPoint`；
+- `tools/asset-pipeline/export-citizen-spawns.mjs` 从解码数据取玩家附近 **6** 个 `BP_CharaSpawnPoint`（距玩家 ≥10 m、彼此 ≥18 m）；
 - 按 `originUE/100=(-100,-550)` 转成恢复世界坐标，写 `public/assets/world/population-original-citizens.json`；
 - 市民巡逻路线使用最近的原版 `BP_CharaChildWaypoint` 位置（同父优先），共 558 个 child 候选中选点；路线顺序、遍历和 citizen AI 仍是预览；
 - 结果用于位置/密度/路径检查，不是默认游戏人口。

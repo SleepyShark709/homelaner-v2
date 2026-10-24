@@ -23,8 +23,9 @@ const EVIDENCE = path.join(ROOT, 'research/world-recovery/citizen-spawns-selecti
 const ORIGIN = [-100, -550]; // originUE [-10000,-55000,0] cm -> metres
 const TARGET = [-50, -548.63];
 const RADIUS = 110;
-const MIN_SPACING = 7;
-const MAX_CITIZENS = 12;
+const MIN_PLAYER_DISTANCE = 10;
+const MIN_SPACING = 18;
+const MAX_CITIZENS = 6;
 
 const decoded = JSON.parse(fs.readFileSync(DECODED, 'utf8'));
 const preview = JSON.parse(fs.readFileSync(PREVIEW, 'utf8'));
@@ -51,7 +52,7 @@ for (let index = 0; index < decoded.Exports.length; index++) {
   // Local frame -> restored world: world = local + originUE/100.
   const world = [ue[0] / 100 + ORIGIN[0], 0, ue[1] / 100 + ORIGIN[1]];
   const distance = Math.hypot(world[0] - TARGET[0], world[2] - TARGET[1]);
-  if (distance > RADIUS) continue;
+  if (distance > RADIUS || distance < MIN_PLAYER_DISTANCE) continue;
   spawns.push({ id: String(entity.ObjectName), ue, world, distance });
 }
 spawns.sort((a, b) => a.distance - b.distance);
