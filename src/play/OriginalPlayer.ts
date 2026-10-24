@@ -37,6 +37,8 @@ export class OriginalPlayer {
   sprint = false;
   walk = false;
   charge = 0;
+  private sprintFast = false;
+  private sprintBlocked = false;
   readonly spawn: Vec3;
   private readonly ground: TerrainHeightfield;
   private readonly boxes: SpatialBoxes;
@@ -78,8 +80,27 @@ export class OriginalPlayer {
     const right = input.axis(['KeyD', 'ArrowRight'], ['KeyA', 'ArrowLeft']);
     const moving = forward !== 0 || right !== 0;
     // P07: Shift only arms sprint; StartSprint requires movement input. Walk
-    // mode cancels sprint. Releasing Shift or stopping movement disarms it.
-    this.sprint = !this.walk && moving && input.held('ShiftLeft', 'ShiftRight');
+    // mode cancels sprint. P08 resets a sprint once speed falls below 850 cm/s
+    // walking or 2000 cm/s flying; keep it disarmed until Shift/movement is
+    // released so holding Shift does not instantly re-arm it.
+    const shift = input.held('ShiftLeft', 'ShiftRight');
+    if (!shift || !moving || this.walk) {
+      this.sprint = false;
+      this.sprintFast = false;
+      this.sprintBlocked = false;
+    } else {
+      if (!this.sprint) this.sprint = !this.sprintBlocked;
+      if (this.sprint) {
+        const speed3 = Math.hypot(this.velocity[0], this.velocity[1], this.velocity[2]);
+        const threshold = this.flying ? 20 : 8.5;
+        if (speed3 >= threshold) this.sprintFast = true;
+        else if (this.sprintFast) {
+          this.sprint = false;
+          this.sprintFast = false;
+          this.sprintBlocked = true;
+        }
+      }
+    }
     const jump = input.pressed('Space');
 
     // P06: ground E charge starts a super/automatic flight after one second.

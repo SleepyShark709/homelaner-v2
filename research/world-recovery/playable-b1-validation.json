@@ -13,7 +13,7 @@
       "textureFailures": 0,
       "unresolvedMaterialCacheKeys": 0,
       "ambiguousSlots": 0,
-      "fps": 69.42837306155214,
+      "fps": 79.87220447252706,
       "activeMeshes": 0,
       "warning": "",
       "scope": "",
@@ -61,19 +61,19 @@
         "walking": {
           "stats": {
             "position": [
-              -52.28981056062841,
+              -51.621522924879145,
               0.020000000000000018,
-              -555.1521067605659
+              -554.9715965143588
             ],
             "velocity": [
-              -3.226492377619051,
+              0,
               0,
               -9.465186048734921
             ],
             "flying": false,
             "grounded": true,
             "state": "run",
-            "speed": 10,
+            "speed": 9.465186048734921,
             "charge": 0
           },
           "clip": "A_ThirdPersonRun",
@@ -82,19 +82,19 @@
         "jump": {
           "stats": {
             "position": [
-              -52.31233543358873,
-              6.128041666666668,
-              -555.412575946742
+              -51.621522924879145,
+              6.404831250000002,
+              -555.2320657005349
             ],
             "velocity": [
               0,
-              16.730000000000018,
+              16.56650000000002,
               0
             ],
             "flying": false,
             "grounded": false,
             "state": "jump",
-            "speed": 16.730000000000018,
+            "speed": 16.56650000000002,
             "charge": 0
           },
           "clip": "Hero_IdleFlying",
@@ -103,9 +103,9 @@
         "flying": {
           "stats": {
             "position": [
-              -52.31233543358873,
-              6.128041666666668,
-              -555.412575946742
+              -51.621522924879145,
+              6.404831250000002,
+              -555.2320657005349
             ],
             "velocity": [
               0,
@@ -124,9 +124,9 @@
         "ascended": {
           "stats": {
             "position": [
-              -52.31233543358873,
-              19.29470833333336,
-              -555.412575946742
+              -51.621522924879145,
+              19.57149791666669,
+              -555.2320657005349
             ],
             "velocity": [
               0,
@@ -145,9 +145,9 @@
         "descended": {
           "stats": {
             "position": [
-              -52.31233543358873,
-              11.29470833333339,
-              -555.412575946742
+              -51.621522924879145,
+              11.571497916666718,
+              -555.2320657005349
             ],
             "velocity": [
               0,
@@ -166,9 +166,9 @@
         "exited": {
           "stats": {
             "position": [
-              -52.31233543358873,
+              -51.621522924879145,
               0.020000000000000018,
-              -555.412575946742
+              -555.2320657005349
             ],
             "velocity": [
               0,
@@ -185,9 +185,9 @@
           "active": true
         },
         "evidence": {
-          "walkDistance": 6.522914148749123,
-          "jumpHeight": 6.108041666666669,
-          "ascendDelta": 13.166666666666693,
+          "walkDistance": 6.34240390254206,
+          "jumpHeight": 6.384831250000001,
+          "ascendDelta": 13.16666666666669,
           "descendDelta": -7.999999999999972
         }
       },
@@ -199,7 +199,7 @@
       },
       "browser": "Chrome/156.0.8078.48",
       "url": "http://127.0.0.1:5178/?view=play&debug=1",
-      "durationMs": 29392,
+      "durationMs": 29312,
       "screenshot": "research/screenshots/play-b1.jpg"
     }
   ],
@@ -215,7 +215,7 @@
   },
   "tests": {
     "typecheck": "passed",
-    "controller": "7/7 passed (scripts/test-play-controller.mjs)",
+    "controller": "8/8 passed (scripts/test-play-controller.mjs)",
     "worldAssetClosure": "passed before B1 (2,292 files)",
     "browserProbe": "passed (scripts/probe-play-b1.js); walk/jump/air-flight/E ascend/Q descend/exit flight and animation clips observed"
   },

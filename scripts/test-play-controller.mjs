@@ -106,6 +106,25 @@ test('Shift only arms sprint when movement input is present', () => {
   assert.equal(player.sprint, false);
 });
 
+test('P08 sprint disarms after speed drops and waits for a fresh Shift edge', () => {
+  const { input, player } = make();
+  step(player, input, 0.3);
+  input.down.add('KeyW');
+  input.down.add('ShiftLeft');
+  step(player, input, 0.6);
+  assert.equal(player.sprint, true);
+  player.velocity = [0, 0, 0];
+  player.update(1 / 120, input);
+  assert.equal(player.sprint, false);
+  step(player, input, 0.3);
+  assert.equal(player.sprint, false);
+  input.down.delete('ShiftLeft');
+  step(player, input, 0.1);
+  input.down.add('ShiftLeft');
+  step(player, input, 0.2);
+  assert.equal(player.sprint, true);
+});
+
 test('dynamic vehicle/prop boxes block walking', () => {
   const { input, player } = make();
   player.setDynamicBoxes([{ id: 'preview-car', min: [-2, -1, -4], max: [2, 2, -2] }]);
