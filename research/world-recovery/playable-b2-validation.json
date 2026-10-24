@@ -59,7 +59,7 @@
   },
   "tests": {
     "typecheck": "passed",
-    "controller": "6/6 passed (scripts/test-play-controller.mjs); includes dynamic vehicle/prop AABB blocking",
+    "controller": "7/7 passed (scripts/test-play-controller.mjs); includes dynamic vehicle/prop AABB blocking",
     "combatTimelines": "14 timelines passed via npm test",
     "browserProbe": "passed (scripts/probe-play-b1.js, scripts/probe-play-b2.js, scripts/probe-play-b2-hit.js)"
   },

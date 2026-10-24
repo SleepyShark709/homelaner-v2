@@ -90,6 +90,22 @@ test('sprint exceeds walk, Alt walk is slower, E/Q move vertically in flight', (
   assert.ok(player.position[1] < highY, 'Q should descend');
 });
 
+test('Shift only arms sprint when movement input is present', () => {
+  const { input, player } = make();
+  step(player, input, 0.3);
+  input.down.add('ShiftLeft');
+  step(player, input, 0.5);
+  assert.equal(player.sprint, false);
+  assert.ok(Math.hypot(player.velocity[0], player.velocity[2]) < 0.01);
+  input.down.add('KeyW');
+  step(player, input, 0.5);
+  assert.equal(player.sprint, true);
+  assert.ok(Math.hypot(player.velocity[0], player.velocity[2]) > 15);
+  input.down.delete('ShiftLeft');
+  step(player, input, 0.1);
+  assert.equal(player.sprint, false);
+});
+
 test('dynamic vehicle/prop boxes block walking', () => {
   const { input, player } = make();
   player.setDynamicBoxes([{ id: 'preview-car', min: [-2, -1, -4], max: [2, 2, -2] }]);

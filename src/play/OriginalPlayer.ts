@@ -74,8 +74,12 @@ export class OriginalPlayer {
     const ground = this.ground.heightAt(this.position[0], this.position[2]) ?? 0;
     this.grounded = !this.flying && this.position[1] <= ground + 0.08;
     this.walk = input.held('AltLeft', 'AltRight');
-    this.sprint = !this.walk && input.held('ShiftLeft', 'ShiftRight');
-    const verticalInput = input.axis(['KeyE'], ['KeyQ']);
+    const forward = input.axis(['KeyW', 'ArrowUp'], ['KeyS', 'ArrowDown']);
+    const right = input.axis(['KeyD', 'ArrowRight'], ['KeyA', 'ArrowLeft']);
+    const moving = forward !== 0 || right !== 0;
+    // P07: Shift only arms sprint; StartSprint requires movement input. Walk
+    // mode cancels sprint. Releasing Shift or stopping movement disarms it.
+    this.sprint = !this.walk && moving && input.held('ShiftLeft', 'ShiftRight');
     const jump = input.pressed('Space');
 
     // P06: ground E charge starts a super/automatic flight after one second.
@@ -101,8 +105,7 @@ export class OriginalPlayer {
       this.velocity[1] = 0;
     }
 
-    const forward = input.axis(['KeyW', 'ArrowUp'], ['KeyS', 'ArrowDown']);
-    const right = input.axis(['KeyD', 'ArrowRight'], ['KeyA', 'ArrowLeft']);
+    const verticalInput = input.axis(['KeyE'], ['KeyQ']);
     const sin = Math.sin(input.yaw), cos = Math.cos(input.yaw);
     const speed = this.walk ? 2.5 : this.flying ? (this.sprint ? TUNING.boost : TUNING.fly) : (this.sprint ? TUNING.sprint : TUNING.walk);
     let desiredX = sin * forward - cos * right;
