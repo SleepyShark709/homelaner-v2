@@ -136,6 +136,8 @@ try {
   }
   const rotation = candidate?.rotation ?? [0, 0, 0, 1];
   input.yaw = legacy ? Math.PI : 2 * Math.atan2(rotation[1], rotation[3]);
+  const yawParam = new URLSearchParams(location.search).get('yaw');
+  if (yawParam !== null && Number.isFinite(Number(yawParam))) input.yaw = Number(yawParam);
   const terrainGround = terrain.heightAt(baseX, baseZ) ?? 0;
   const floorGround = surfaces.topAt(baseX, baseZ, terrainGround + 1) ?? -Infinity;
   const candidateGround = Math.max(terrainGround, floorGround);
@@ -174,7 +176,7 @@ try {
     if (distance < 8 || distance > 160) continue;
     if (!nearestBuilding || distance < nearestBuilding.distance) nearestBuilding = { distance, yaw: Math.atan2(dx, dz) };
   }
-  if (nearestBuilding) {
+  if (nearestBuilding && yawParam === null) {
     input.yaw = nearestBuilding.yaw;
     player.heading = input.yaw;
   }
