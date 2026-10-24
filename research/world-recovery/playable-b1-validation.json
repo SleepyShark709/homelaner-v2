@@ -13,7 +13,7 @@
       "textureFailures": 0,
       "unresolvedMaterialCacheKeys": 0,
       "ambiguousSlots": 0,
-      "fps": 64.14368184795109,
+      "fps": 71.56488549567439,
       "activeMeshes": 0,
       "warning": "",
       "scope": "",
@@ -61,19 +61,19 @@
         "walking": {
           "stats": {
             "position": [
-              -51.62163582294822,
+              -51.66145804517044,
               0.47000000000000003,
-              -553.1697672653988
+              -553.3325195536172
             ],
             "velocity": [
-              0,
+              -1.1946666666666668,
               0,
               -9.465186048734921
             ],
             "flying": false,
             "grounded": true,
             "state": "run",
-            "speed": 9.465186048734921,
+            "speed": 9.540281724436161,
             "charge": 0
           },
           "clip": "A_ThirdPersonRun",
@@ -82,9 +82,9 @@
         "jump": {
           "stats": {
             "position": [
-              -51.62163582294822,
+              -51.691324711837105,
               4.373541666666663,
-              -555.1791724987165
+              -555.3419247869349
             ],
             "velocity": [
               0,
@@ -103,9 +103,9 @@
         "flying": {
           "stats": {
             "position": [
-              -51.62163582294822,
+              -51.691324711837105,
               4.373541666666663,
-              -555.2434861293372
+              -555.4062384175555
             ],
             "velocity": [
               0,
@@ -124,19 +124,19 @@
         "ascended": {
           "stats": {
             "position": [
-              -51.62163582294822,
-              14.52820833333336,
-              -555.2434861293372
+              -51.691324711837105,
+              15.014608333333364,
+              -555.4062384175555
             ],
             "velocity": [
               0,
-              28.672000000000047,
+              29.354666666666716,
               0
             ],
             "flying": true,
             "grounded": false,
             "state": "hover",
-            "speed": 28.672000000000047,
+            "speed": 29.354666666666716,
             "charge": 0
           },
           "clip": "Hero_IdleFlying",
@@ -145,9 +145,9 @@
         "descended": {
           "stats": {
             "position": [
-              -51.62163582294822,
-              0.47000000000000003,
-              -555.2434861293372
+              -51.691324711837105,
+              1.9960676392763852,
+              -555.4062384175555
             ],
             "velocity": [
               0,
@@ -166,29 +166,29 @@
         "exited": {
           "stats": {
             "position": [
-              -51.62163582294822,
-              0.47000000000000003,
-              -555.2434861293372
+              -51.691324711837105,
+              1.7306509726097183,
+              -555.4062384175555
             ],
             "velocity": [
               0,
-              0,
+              -4.8999999999999995,
               0
             ],
             "flying": false,
-            "grounded": true,
-            "state": "idle",
-            "speed": 0,
+            "grounded": false,
+            "state": "jump",
+            "speed": 4.8999999999999995,
             "charge": 0
           },
-          "clip": "Hero_Idle",
+          "clip": "Hero_IdleFlying",
           "active": true
         },
         "evidence": {
-          "walkDistance": 4.540574653582098,
+          "walkDistance": 4.703326941800469,
           "jumpHeight": 3.9035416666666625,
-          "ascendDelta": 10.154666666666698,
-          "descendDelta": -14.05820833333336
+          "ascendDelta": 10.6410666666667,
+          "descendDelta": -13.018540694056979
         }
       },
       "consoleErrors": [],
@@ -199,7 +199,7 @@
       },
       "browser": "Chrome/156.0.8078.48",
       "url": "http://127.0.0.1:5178/?view=play&debug=1",
-      "durationMs": 30092,
+      "durationMs": 30531,
       "screenshot": "research/screenshots/play-b1.jpg"
     }
   ],

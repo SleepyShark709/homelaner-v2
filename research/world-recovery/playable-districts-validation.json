@@ -99,7 +99,7 @@
     "walkableSurfaces": "29 recovered /Mesh/Floor/ AABB tops are sampled in addition to the Landscape heightfield; ?at=<x,z>&yaw=<rad> can place the player on a recovered brick/plaza floor (CommercialArea 100,234 captured, 0 failures). Side collision/PhysX remains absent.",
     "startPlazaCandidate": "MainLevel with startup=1 at (20,0) yaw 0 shows a classical-facade/balustrade/billboard city composition closer to the original start plaza than CommercialArea, but the ground is grass, camera/benches are not matched, and it is candidate-only.",
     "floorOverlay": "floors=overlay draws the authored GroundBrick_B_A texture over recovered MI_GroundBrick AABB tops as an explicit preview fallback; it is not the original floor mesh rendering and is not default.",
-    "plazaPreset": "?view=play&plaza=1 executes startup=1, spawns MainLevel (20,0) yaw 0 and enables the brick-floor overlay; preview/candidate only",
+    "plazaPreset": "?view=play&plaza=1 executes startup=1, spawns MainLevel (-20,0) yaw 0 and enables the brick-floor overlay; preview/candidate only",
     "plazaPoses": "MainLevel startup poses: (20,0) clean city/balustrade view; (-20,0) puts balustrade left/central classical building closer to the original composition but camera is wall-clipped; (-10,-20) clean paved plaza with a different building layout. All candidate-only.",
     "cameraClearSpawn": "Spawn search now rejects points whose 4 m rear camera slot intersects static AABBs; plaza=1&at=-20,0&yaw=0 yields a clean balustrade-left/classical-building composition."
   },

@@ -170,7 +170,7 @@ try {
     const [x, z] = at.split(',').map(Number);
     if (Number.isFinite(x) && Number.isFinite(z)) { baseX = x; baseZ = z; }
   } else if (plazaMode) {
-    baseX = 20; baseZ = 0;
+    baseX = -20; baseZ = 0;
   }
   const rotation = candidate?.rotation ?? [0, 0, 0, 1];
   input.yaw = legacy ? Math.PI : 2 * Math.atan2(rotation[1], rotation[3]);

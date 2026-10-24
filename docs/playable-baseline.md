@@ -1,6 +1,6 @@
 # 可玩原版基线 B1/B2/B3：原街区、原角色、原输入、战斗与动态碰撞
 
-日期：2026-10-25。入口：`http://127.0.0.1:5178/?view=play`；可用 `&district=TitleMenuLevel` 等主世界关卡切换检查目标（预览人口只在 ResidentialArea1 加载）；`&startup=1` 先执行原 17 包启动链再进入可玩模式；`&plaza=1` 是 MainLevel 起点广场预览预设（启动链 + `(20,0)` + 砖石 overlay）。
+日期：2026-10-25。入口：`http://127.0.0.1:5178/?view=play`；可用 `&district=TitleMenuLevel` 等主世界关卡切换检查目标（预览人口只在 ResidentialArea1 加载）；`&startup=1` 先执行原 17 包启动链再进入可玩模式；`&plaza=1` 是 MainLevel 起点广场预览预设（启动链 + `(-20,0)` + 砖石 overlay）。
 
 这是**可玩切片**，不是完整 UNDEFEATED 移植。B1 把原角色放回恢复后的原版街区，用原高度场和原输入语义驱动；B2 增加预览人口、原战斗动画/弹道和相机遮挡收缩。攻击命中、AI、任务、Boss、菜单/存档、完整动画状态机和同机位对照仍需继续。
 
@@ -58,7 +58,7 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 /?view=play&plaza=1
 ```
 
-截图 `play-mainplaza-startup3.jpg`，对照图 `comparison-start-plaza-mainlevel.jpg`。`plaza=1` 是等价预设：启动链 + `(20,0)` + yaw 0 + brick overlay；它便于快速检查候选，不改变默认出生点。
+截图 `play-mainplaza-startup3.jpg`，对照图 `comparison-start-plaza-mainlevel.jpg`。`plaza=1` 预设使用更接近原图的 `(-20,0)` 姿态：启动链 + 砖石 overlay + 相机净空（`play-plaza-mode.jpg` / `comparison-start-plaza-camera-clear.jpg`）；不改变默认出生点。
 
 另外两个候选姿态：
 

@@ -24,7 +24,7 @@
 
 ## MainLevel 起点广场候选
 
-`?view=play&startup=1&at=20,0&yaw=0` 在 MainLevel 原点附近加载全城后，出现石栏杆、古典立面、广告牌和城市街区，构图比单区 CommercialArea 候选更接近原程序起点广场。`?view=play&plaza=1` 是同一检查的快捷预设。
+`?view=play&startup=1&at=20,0&yaw=0` 在 MainLevel 原点附近加载全城后，出现石栏杆、古典立面、广告牌和城市街区，构图比单区 CommercialArea 候选更接近原程序起点广场。`?view=play&plaza=1` 是同一检查的快捷预设，默认使用更接近原图的 `(-20,0)` 姿态。
 
 ![MainLevel 起点广场候选](../research/runtime-observation/comparison-start-plaza-mainlevel.jpg)
 
