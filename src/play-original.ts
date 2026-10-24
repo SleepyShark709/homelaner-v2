@@ -55,9 +55,11 @@ const input = new Input(canvas);
 const CAMERA = { armLength: 4.0, attackArmLength: 6.5, farArmLength: 8.0, farSpeed: 60, armSpeed: 2, farArmSpeed: 1, boomHeight: 0.7, socketRight: 0.5, socketUp: 0.9, lagSpeed: 15, fov: 92 };
 input.pitch = 0.02;
 const paused = el('paused');
-const requestedDistrict = new URLSearchParams(location.search).get('district') ?? 'ResidentialArea1';
-const startupMode = new URLSearchParams(location.search).get('startup') === '1';
-const playDistrict = startupMode ? 'ResidentialArea1' : requestedDistrict;
+const params = new URLSearchParams(location.search);
+const requestedDistrict = params.get('district') ?? 'ResidentialArea1';
+const plazaMode = params.get('plaza') === '1';
+const startupMode = params.get('startup') === '1' || plazaMode;
+const playDistrict = plazaMode ? 'MainLevel' : startupMode ? 'ResidentialArea1' : requestedDistrict;
 let player: OriginalPlayer | undefined;
 let character: Character | undefined;
 let combat: Combat | undefined;
@@ -124,7 +126,7 @@ try {
   }
   const terrain = await TerrainHeightfield.load(viewer.terrainManifest);
   const surfaces = await WalkableSurfaces.load('/assets/world/walkable-surfaces.json');
-  if (new URLSearchParams(location.search).get('floors') === 'overlay') {
+  if (new URLSearchParams(location.search).get('floors') === 'overlay' || plazaMode) {
     // Preview-only fallback for recovered ground-brick floors that do not render
     // in the current material path. Uses the authored GroundBrick_B_A texture.
     for (const surface of surfaces.surfaces) {
@@ -163,15 +165,18 @@ try {
   const fallbackZ = districtBounds ? (districtBounds.min[2] + districtBounds.max[2]) / 2 : (candidate?.position[2] ?? 1.37);
   let baseX = (legacy?.spawn?.[0] ?? fallbackX) + (legacy ? offsetX : 0);
   let baseZ = (legacy?.spawn?.[2] ?? fallbackZ) + (legacy ? offsetZ : 0);
-  const at = new URLSearchParams(location.search).get('at');
+  const at = params.get('at');
   if (at) {
     const [x, z] = at.split(',').map(Number);
     if (Number.isFinite(x) && Number.isFinite(z)) { baseX = x; baseZ = z; }
+  } else if (plazaMode) {
+    baseX = 20; baseZ = 0;
   }
   const rotation = candidate?.rotation ?? [0, 0, 0, 1];
   input.yaw = legacy ? Math.PI : 2 * Math.atan2(rotation[1], rotation[3]);
-  const yawParam = new URLSearchParams(location.search).get('yaw');
+  const yawParam = params.get('yaw');
   if (yawParam !== null && Number.isFinite(Number(yawParam))) input.yaw = Number(yawParam);
+  else if (plazaMode) input.yaw = 0;
   const terrainGround = terrain.heightAt(baseX, baseZ) ?? 0;
   const floorGround = surfaces.topAt(baseX, baseZ, terrainGround + 0.75) ?? -Infinity;
   const candidateGround = Math.max(terrainGround, floorGround);
@@ -210,7 +215,7 @@ try {
     if (distance < 8 || distance > 160) continue;
     if (!nearestBuilding || distance < nearestBuilding.distance) nearestBuilding = { distance, yaw: Math.atan2(dx, dz) };
   }
-  if (nearestBuilding && yawParam === null) {
+  if (nearestBuilding && yawParam === null && !plazaMode) {
     input.yaw = nearestBuilding.yaw;
     player.heading = input.yaw;
   }
