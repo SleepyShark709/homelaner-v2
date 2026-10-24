@@ -18,7 +18,7 @@
     "capture:world": "node scripts/capture-world.mjs --region=__baseline__ --shot=research/screenshots/world-pass3-baseline.jpg",
     "capture:play": "node scripts/capture-world.mjs --query=view=play --ready=play --debug=1 --probe=scripts/probe-play-b1.js --record=research/world-recovery/playable-b1-validation.json --shot=research/screenshots/play-b1.jpg",
     "capture:play:b2": "node scripts/capture-world.mjs --query=view=play --ready=play --debug=1 --probe=scripts/probe-play-b2-hit.js --shot=research/screenshots/play-b2.jpg",
-    "test": "node scripts/test-collision.mjs && node scripts/test-movement.mjs && node scripts/test-combat.mjs",
+    "test": "node scripts/test-collision.mjs && node scripts/test-movement.mjs && node scripts/test-combat.mjs && node scripts/test-traffic.mjs",
     "build": "npm run typecheck && vite build",
     "preview": "vite preview --host 127.0.0.1 --port 4178 --strictPort"
   },

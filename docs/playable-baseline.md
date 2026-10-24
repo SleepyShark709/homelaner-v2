@@ -15,7 +15,7 @@
 - 输入：Space 地面跳跃 / 空中开飞 / 飞行退飞；E/Q 升降；地面按住 E 约 1 秒自动开飞；Shift 冲刺；Alt 慢行；F 预留互动；R 为调试回出生点。按 P07，Shift 只有与移动输入同时存在才进入冲刺；松开 Shift/停止移动即解除，Alt 慢行取消冲刺。按 P08，冲刺速度跌到 850 cm/s（步行）/2000 cm/s（飞行）以下会重置，且保持 Shift 不会立即重新触发。加速度使用原值：步行 2048 cm/s²、飞行 4096 cm/s²、冲刺 15000 cm/s²；楼板/台阶支撑使用 MaxStepHeight=75 cm。
 - 动画：`Hero_Idle`、`A_ThirdPersonRun`、`Hero_IdleFlying`、`Hero_FlyFastSprint` 随状态切换；B1 实测前三条。
 - 出生点：旧原型街区局部坐标 `(50, 1.37)` 加上 city manifest `originUE [-10000,-55000,0]` cm，得到恢复世界 `(-50.0, -548.63)`，位于 ResidentialArea1 的实际公寓街区；仍不是原 `PlayerStart`。MainLevel `BP_RespawnAndSpawnPoint` 的 x/z 作为备用。其他 `district=` 关卡从 bounds 中心向外按 3 m 环搜索最多 30 m，取第一个不在静态 AABB 内的地形点。
-- B2 预览人口：14 个 actor（8 市民、3 Sedan、3 报刊箱），使用原 citizen/vehicle/NewspaperBox 网格与动画；位置来自旧原型 `population-manifest.json`，按同一 `originUE` 平移到恢复世界。市民短路线优先用最近的原版 `BP_CharaChildWaypoint`（同父优先），但路线顺序/遍历、AI/导航/交通仍非原版。free 模式下市民死亡 8 秒后在原 spawn 点复活，是预览城市生命周期，不是原版 spawner 节奏。
+- B2 预览人口：14 个 actor（8 市民、3 Sedan、3 报刊箱），使用原 citizen/vehicle/NewspaperBox 网格与动画；位置来自旧原型 `population-manifest.json`，按同一 `originUE` 平移到恢复世界。市民短路线优先用最近的原版 `BP_CharaChildWaypoint`（同父优先），但路线顺序/遍历、AI/导航/交通仍非原版。free 模式下市民死亡 8 秒后在原 spawn 点复活，是预览城市生命周期，不是原版 spawner 节奏。车辆在另一辆车前方 7 m 内会停车保持间距，这是预览交通规则，不是 `BP_TrafficSystem` 状态机。
 - B2 战斗：接入原 14 段动作时间轴与攻击动画；左键/J 四段近战，右键/K 远程拳波，Shift 强攻；弹体 150 m/s、4 s 寿命。当前用 `baseline` 伤害模式：只有强力攻击可摧毁车辆，市民/道具伤害与自由破坏仍后置。
 - 热视线在 B1/B2 强制关闭：E 仍是原上升/地面蓄升键；`Combat` 以 `{heatVision:false}` 构造，避免抢占输入。
 
@@ -89,7 +89,7 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 
 ## 明确近似与缺口
 
-- 预览人口的位置来自旧原型清单，市民路线优先用最近原版 child waypoint；free 模式死亡后 8 秒复活是预览生命周期。原版 AI/导航/交通/市民状态机和路线遍历仍未恢复，不能当作原版城市活动。
+- 预览人口的位置来自旧原型清单，市民路线优先用最近原版 child waypoint；free 模式死亡后 8 秒复活是预览生命周期；车辆 7 m 间距停车是预览规则。原版 AI/导航/交通/市民状态机和路线遍历仍未恢复，不能当作原版城市活动。
 - 战斗只接入 `baseline` 伤害策略：强力攻击可毁预览车辆；市民/道具伤害、自由破坏、无惩罚规则和热视线属于后续阶段。
 - `?population=original` 是检查模式：6 个原始 spawn 点（距玩家 ≥10 m、彼此 ≥18 m）分布更开，路线使用最近的原版 child waypoint（同父优先）；原版 spawner 生成节奏/数量/导航和路线遍历未恢复，所以不能当默认人口。
 - 预览人口只加载于 ResidentialArea1；DownTown/Park/TitleMenuLevel 没有市民、车辆、AI、任务或可攻击目标。

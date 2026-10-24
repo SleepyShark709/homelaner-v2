@@ -4,6 +4,7 @@ import { LoadAssetContainerAsync } from '@babylonjs/core/Loading/sceneLoader';
 import type { AssetContainer, InstantiatedEntries } from '@babylonjs/core/assetContainer';
 import type { Bounds, Obstacle, Vec3 } from './collision';
 import { firstHit } from './collision';
+import { vehicleShouldHold } from './traffic';
 import { applyDamage, FREE_RULES } from './combat-rules';
 import type { AttackSpec, Damageable, PlayMode, TargetKind } from './combat-rules';
 
@@ -115,6 +116,11 @@ export class Population {
       const target = route.points[actor.routeIndex];
       const dx = target[0] - actor.position[0], dz = target[2] - actor.position[2];
       const distance = Math.hypot(dx, dz), speed = actor.kind === 'vehicle' ? 5 : 1.35;
+      if (actor.kind === 'vehicle' && distance > 0.01) {
+        const forward: Vec3 = [dx / distance, 0, dz / distance];
+        const blocked = this.actors.some(other => other !== actor && other.alive && other.kind === 'vehicle' && vehicleShouldHold(actor.position, other.position, forward));
+        if (blocked) continue;
+      }
       if (distance < speed * dt + 0.08) {
         actor.position = [...target];
         let next = actor.routeIndex + actor.routeDirection;

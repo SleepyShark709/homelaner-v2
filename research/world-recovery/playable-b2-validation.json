@@ -22,7 +22,8 @@
       "/assets/population/meshes/NewspaperBox/NewspaperBox.gltf"
     ],
     "placement": "previous prototype population-manifest placements, shifted by originUE; default citizen routes use the nearest recovered BP_CharaChildWaypoint positions when population-waypoint-routes.json exists. Route order/traversal, AI and traffic are not recovered.",
-    "respawn": "free-mode citizens revive at their spawn after 8 s; this is a preview city lifecycle, not recovered spawner cadence"
+    "respawn": "free-mode citizens revive at their spawn after 8 s; this is a preview city lifecycle, not recovered spawner cadence",
+    "traffic": "vehicles hold behind another live vehicle within 7 m and >0.75 forward dot; authored preview spacing, not BP_TrafficSystem"
   },
   "combat": {
     "mode": "baseline",
