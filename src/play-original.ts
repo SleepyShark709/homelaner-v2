@@ -45,7 +45,7 @@ const viewer = new OriginalWorld(canvas);
 const input = new Input(canvas);
 // Original PlayerBP CameraBoom_GEN_VARIABLE: TargetArmLength=400 cm,
 // SocketOffset=(0,50,90) cm, boom RelativeLocation Z=70 cm.
-const CAMERA = { armLength: 4.0, boomHeight: 0.7, socketRight: 0.5, socketUp: 0.9, lagSpeed: 15 };
+const CAMERA = { armLength: 4.0, boomHeight: 0.7, socketRight: 0.5, socketUp: 0.9, lagSpeed: 15, fov: 90 };
 input.pitch = 0.02;
 const paused = el('paused');
 const requestedDistrict = new URLSearchParams(location.search).get('district') ?? 'ResidentialArea1';
@@ -184,7 +184,14 @@ try {
   await combat.load();
   viewer.camera.detachControl();
   viewer.camera.minZ = 0.12;
-  viewer.camera.fov = 0.95;
+  // HeroComponent interpolates Camera.FieldOfView to 90; UE's value is
+  // horizontal, so convert to Babylon's vertical FOV at the current aspect.
+  const applyFov = () => {
+    const aspect = viewer.engine.getRenderWidth() / Math.max(1, viewer.engine.getRenderHeight());
+    viewer.camera.fov = 2 * Math.atan(Math.tan((CAMERA.fov * Math.PI) / 360) / aspect);
+  };
+  applyFov();
+  window.addEventListener('resize', applyFov);
 
   const objects = selected.reduce((sum, level) => sum + level.objects.filter(object => !(object.visibilityProperties?.bHiddenInGame === true || object.visibilityProperties?.bVisible === false || object.visibilityProperties?.actorHidden === true)).reduce((n, object) => n + sourceObjectCount(object), 0), 0);
   canvas.dataset.objects = String(objects);
