@@ -53,6 +53,8 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 
 在 CommercialArea 用 `?view=play&district=CommercialArea&at=91,181&yaw=3.14159` 检查到一组与原程序起点广场相似的元素：石质栏杆、古典拱窗立面、长椅和开阔广场，见 `play-plaza-190.jpg`。
 
+![起点广场候选对照](../research/runtime-observation/comparison-start-plaza-candidate.jpg)
+
 但这只是**候选地点**，不是已证明的同机位：
 
 - 原程序地面是砖石铺装，当前该点地形显示草地；

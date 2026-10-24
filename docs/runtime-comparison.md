@@ -26,6 +26,8 @@
 
 `?view=play&district=CommercialArea&at=91,181&yaw=3.14159` 能看到石栏杆、古典拱窗、长椅和开阔广场，和原程序起点广场的元素组合接近（`play-plaza-190.jpg`）。但地面仍是草地（原程序为砖石铺装），建筑/长椅/相机位置也未匹配，因此这是**候选地点**，不是同机位验收。
 
+![起点广场候选对照](../research/runtime-observation/comparison-start-plaza-candidate.jpg)
+
 ## 结论与下一步
 
 这轮确认了“原角色确实回到原街区、比例/服装方向基本一致”，并补了预览角色阴影，但仍暴露高优先级视觉缺口：
