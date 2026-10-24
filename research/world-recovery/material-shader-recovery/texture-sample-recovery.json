@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "method": "cooked material CachedExpressionData + D3D11 resource table + DXBC PS sample usage",
+  "source": "UAssetAPI decoded package, UModel extracted material shader map; not REA native decompilation",
+  "manifestBeforeSha256": "8634f2b9a4afebf209d7d3403c3cc0d399e14a4f0cf20e4eaf44b3bcd67f5057",
+  "materials": [
+    {
+      "material": "/Game/UrbanCity/Materials/Tileable/Concrete_Tile_mat",
+      "connected": [
+        "baseColor",
+        "normal"
+      ],
+      "textures": {
+        "baseColor": "/Game/UrbanCity/Textures/Tileable/Concrete_Tile_A",
+        "normal": "/Game/UrbanCity/Textures/Tileable/Concrete_Tile_N"
+      },
+      "shader": "research/world-recovery/material-shader-recovery/Concrete_Tile_mat/shader-0-ps_5_0.asm",
+      "shaderSha256": "dc162aeef1546aae737d927936ae3dc029ad5880755a8ed94a3b440534f3563e"
+    }
+  ],
+  "unresolved": [
+    "Compact (Concrete_Tile_C) is bound by the original PS but its channel packing is not established; it is not bound as ORM.",
+    "Original shader UV transforms, detail normal and fog/lighting are not reconstructed."
+  ],
+  "manifestAfterSha256": "1970483d2c5d1f0ad1d5df5e21b1597ab72161cefc8f835d095e2a07db6c748a"
+}

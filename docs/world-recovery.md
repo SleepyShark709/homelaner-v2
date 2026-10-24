@@ -27,7 +27,7 @@
 
 REA/Ghidra 对原 Shipping EXE 的函数、交叉引用和反编译结果位于 `research/rea-audit/native-*`。UAssetAPI/UModel 的包解码、几何/纹理导出以及 DXBC 分析是独立证据来源，不冒称 REA 反编译成果。Web 代码是依据这些证据编写的转换与渲染实现。
 
-原引擎运行逻辑不能由“导出成功”推出。当前仍缺：完整角色/动画状态机与碰撞、原 AI/敌人/Boss、任务事件及流程、原运行时关卡开关与构造脚本、原光照/雾/预曝光/后处理、复杂水面和部分材质（公园 Path_A 使用的 `Concrete_Tile_mat` 尚无基色连接，仍发白）、动画驱动的附件跟随，以及与原程序同机位/同操作的对照。天空 HDR 采样已接入并完成浏览器可见性检查；原程序已实测启动菜单和进入城市，见 runtime-observation；这仍不是行为等价验收。
+原引擎运行逻辑不能由“导出成功”推出。当前仍缺：完整角色/动画状态机与碰撞、原 AI/敌人/Boss、任务事件及流程、原运行时关卡开关与构造脚本、原光照/雾/预曝光/后处理、复杂水面和部分材质（公园 `Concrete_Tile_mat` 已按 DXBC 恢复基色/法线，`-Pavement__Mat`、`-Standard_Shader_Mat` 等白色族仍待逐项处理）、动画驱动的附件跟随，以及与原程序同机位/同操作的对照。天空 HDR 采样已接入并完成浏览器可见性检查；原程序已实测启动菜单和进入城市，见 runtime-observation；这仍不是行为等价验收。
 
 旧原型 `/?view=prototype` 中的近似控制、热视线和自由破坏继续保留为历史工作，不混入当前原版还原验收。角色/动画检查在 `/?view=assets`。祖国人换模仍后置。
 
@@ -39,6 +39,7 @@ REA/Ghidra 对原 Shipping EXE 的函数、交叉引用和反编译结果位于 
 | 原材质通道接入 | `src/world/OriginalMaterials.ts` |
 | 原编译材质计算 / 静态材质共享 | `src/world/RecoveredShaderPlugin.ts`, `src/world/material-identity.ts` |
 | shader 恢复与数值证据 | `tools/asset-pipeline/restore-evidenced-shaders.py`, `research/world-recovery/material-shader-recovery/report.zh-CN.md` |
+| 固定纹理角色恢复 | `tools/asset-pipeline/restore-texture-sample-materials.py`, `research/world-recovery/material-shader-recovery/texture-sample-recovery.json` |
 | 天空 HDR 合同与 Web 接入 | `public/assets/world/sky-material-manifest.json`, `src/world/RecoveredSurfacePlugins.ts`, `research/world-recovery/sky-recovery/` |
 | 浏览器验证与截图脚本 | `scripts/capture-world.mjs`, `research/world-recovery/browser-validation-pass3.json` |
 | 原启动与条件流送证据 | `research/streaming-contract.md`, `public/assets/world/streaming-manifest.json` |
@@ -77,8 +78,8 @@ REA/Ghidra 对原 Shipping EXE 的函数、交叉引用和反编译结果位于 
 - 静态基线（`__baseline__`）：8,824 个可见源对象、144 块地形、模型/纹理失败 0、歧义槽 0；1280×720 无头 Chrome 约 2–3 FPS。该读数是软件/无头渲染结果，不能与原游戏或正常桌面浏览器的 FPS 直接比较。截图 `research/screenshots/world-pass3-baseline.jpg`。
 - 天空：把相机放到地平线以上后，浏览器可见原 HDR 云层；默认“区域全景”是俯视视角，视线在地平线以下，所以基线截图里没有天空。截图 `research/screenshots/world-sky-up.jpg`、`research/screenshots/world-pass3-city-sky.jpg`。这证明原 HDR 采样、UV 和朝向在 Web 中可以工作；尚未与原程序同机位做像素对照。
 - 启动链（`__startup__`）：真实浏览器执行 17 包加载、12 步城区请求，以及 LoadLevel 完成后的独立延时卸载；最终 `phase=complete`、`overlay=complete`、`completedCitySteps=12`，8,824 个对象、0 资源失败。截图 `research/screenshots/world-pass3-startup.jpg`，完整 trace 与计数见 `research/world-recovery/browser-validation-pass3.json`。
-- 白色路面：公园 81 个 `Path_A` 实例绑定 `Concrete_Tile_mat`；该材质只有白色 `Color` 因子，`channels.baseColor` 为空。冻结 uniform 中确有 3 个未命名纹理参数（默认 `Concrete_Tile_N`、`Concrete_Tile_A`、`Concrete_Tile_C`），但 cooked 材质只序列化了 `Normal`/`Metallic` 输入，基色连接仍未解出。不能仅凭贴图文件名直接硬接；下一步需按 DXBC/表达式证据恢复该族。
+- 白色路面：公园 81 个 `Path_A` 实例绑定 `Concrete_Tile_mat`；修复前只有白色 `Color` 因子，`channels.baseColor` 为空。冻结 uniform 中 3 个未命名纹理参数与 PS 的 t8/t9/t10 绑定闭合：t8=N、t9=A、t10=C，PS 采样 t9 乘 `Color` 后写入 base-color 目标。已用 `restore-texture-sample-materials.py` 接入 `Concrete_Tile_A` 基色和 `Concrete_Tile_N` 法线；compact 的通道打包未建立，保持未绑定。Park 截图 `research/screenshots/park-texture-recovery.jpg` 已显示混凝土贴图，4,105 对象、0 失败。`-Pavement__Mat`、`-Standard_Shader_Mat` 等其他白色族仍待逐项处理。
 
-后续重点：先用原 DXBC/表达式证据恢复白色路面族（`Concrete_Tile_mat`、`-Pavement__Mat`、`-Standard_Shader_Mat` 等），再补原光照/雾/后处理与同机位画面对照；同时把已解释的关卡加载链、角色状态和动画接入运行时，形成可玩的原版基线，再处理 AI/事件。祖国人外观及新增玩法仍后置。
+后续重点：继续恢复其余白色路面族（`-Pavement__Mat`、`-Standard_Shader_Mat` 等），再补原光照/雾/后处理与同机位画面对照；同时把已解释的关卡加载链、角色状态和动画接入运行时，形成可玩的原版基线，再处理 AI/事件。祖国人外观及新增玩法仍后置。
 
-材质重建顺序：supplement → restore-world-materials → restore-embedded → restore-evidenced-shaders → validate。最后一步 shader 恢复不可省略，避免旧通道覆盖本轮证据结果。
+材质重建顺序：supplement → restore-world-materials → restore-embedded → restore-evidenced-shaders → restore-texture-sample-materials → validate。最后两步不可省略，避免旧通道覆盖本轮证据结果或丢失已闭合的固定纹理角色。

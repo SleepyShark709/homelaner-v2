@@ -347,6 +347,33 @@
       "url": "http://127.0.0.1:5178/?region=__startup__",
       "durationMs": 59371,
       "screenshot": "research/screenshots/world-pass3-startup.jpg"
+    },
+    {
+      "region": "Park",
+      "ready": "world",
+      "level": "Park",
+      "objects": 4105,
+      "terrain": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "unresolvedMaterialCacheKeys": 0,
+      "ambiguousSlots": 0,
+      "fps": 97.4,
+      "activeMeshes": 827,
+      "warning": "",
+      "scope": "17 份启动关卡已按原加载链识别；全部 41 份地图可单独检查。天空 HDR 已接入；当前为静态场景，部分路面材质与角色/事件逻辑待接入。",
+      "streaming": null,
+      "streamingTrace": [],
+      "consoleErrors": [],
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "devicePixelRatio": 1
+      },
+      "browser": "Chrome/156.0.8078.48",
+      "url": "http://127.0.0.1:5178/?region=Park",
+      "durationMs": 14682,
+      "screenshot": "research/screenshots/park-texture-recovery.jpg"
     }
   ],
   "scope": "Static original-world viewer and startup-chain execution in a real browser; not gameplay or original-game equivalence.",
@@ -357,13 +384,15 @@
     "skyHdrDecoder": "passed: 6 distributed RGBE probes, top/bottom row identity and >1 values",
     "baselineLoad": "passed: 8,824 visible source objects, 144 terrain blocks, 0 asset/texture failures, 0 ambiguous slots",
     "startupStreaming": "passed: 17 packages loaded, 12 city steps, overlay delay after LoadLevel completion, phase=complete, 0 failures",
-    "cameraFraming": "Default overview camera looks below the horizon; sky is visible after raising/pitching the camera above the horizon"
+    "cameraFraming": "Default overview camera looks below the horizon; sky is visible after raising/pitching the camera above the horizon",
+    "parkAfterTextureRecovery": "passed: 4,105 objects, 144 terrain blocks, 0 asset/texture failures; Park Path_A Concrete_Tile_mat now shows Concrete_Tile_A base color and Concrete_Tile_N normal",
+    "whiteSurfaceRecovery": "Concrete_Tile_mat baseColor=Concrete_Tile_A and normal=Concrete_Tile_N connected from DXBC t8/t9/t10 binding and PS usage; compact not bound because channel packing is unresolved"
   },
   "limitations": [
     "FPS is a headless/software-rendered single observation and is not comparable with the original game or a normal desktop browser.",
     "The default overview screenshot does not show the sky because its view direction is below the horizon; sky screenshots use a raised camera.",
     "Sky visibility is not a same-camera pixel comparison with the original game; original lighting, fog, pre-exposure and post-processing remain missing.",
-    "White/incomplete materials remain (e.g. Park Path_A Concrete_Tile_mat); see research/world-recovery/material-shader-recovery/white-surfaces-pass3.zh-CN.md.",
+    "Other white/incomplete material families remain (-Pavement__Mat, -Standard_Shader_Mat, backdrop mountain, etc.); see research/world-recovery/material-shader-recovery/white-surfaces-pass3.zh-CN.md.",
     "No original character, animation, AI, event or gameplay equivalence was tested."
   ]
 }

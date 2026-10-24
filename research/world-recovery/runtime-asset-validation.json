@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-24T16:41:01.454Z",
+  "generatedAt": "2026-10-24T17:18:03.412Z",
   "geometryAssets": 688,
   "levels": 41,
   "renderedObjectRecords": 9861,
   "terrainBlocks": 144,
   "gltfFiles": 688,
   "glbFiles": 144,
-  "localFilesVerified": 2290,
+  "localFilesVerified": 2292,
   "manifestSHA256": {
     "geometry-manifest.json": "48718ae5d490ed07f1eeab9f09ef9baa5d2492d9b0a781665cefcc22651be73c",
-    "material-manifest.json": "8634f2b9a4afebf209d7d3403c3cc0d399e14a4f0cf20e4eaf44b3bcd67f5057",
+    "material-manifest.json": "5146b77f9350a4363f05a7f67a3229a38c390415dbec8ae7ae4aaa38f5126b25",
     "terrain-manifest.json": "51bdd51f7aac385e496f904d0c509cc2b8e4fc5dc0f03cbfd7139a5c31160fd2",
     "terrain-material-manifest.json": "362757a260b70fef676605a278b66fb8a6ffafe308aacac2e0d399d6e94b63c5",
     "streaming-manifest.json": "6e465d1c8289f6edf1a447615ccdff8eb2754ca9f2ba48726fa018cab9e24b23",
