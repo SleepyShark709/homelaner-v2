@@ -17,7 +17,7 @@
 - 出生点：旧原型街区局部坐标 `(50, 1.37)` 加上 city manifest `originUE [-10000,-55000,0]` cm，得到恢复世界 `(-50.0, -548.63)`，位于 ResidentialArea1 的实际公寓街区；仍不是原 `PlayerStart`。MainLevel `BP_RespawnAndSpawnPoint` 的 x/z 作为备用。其他 `district=` 关卡从 bounds 中心向外按 3 m 环搜索最多 30 m，取第一个不在静态 AABB 内的地形点。
 - B2 预览人口：14 个 actor（8 市民、3 Sedan、3 报刊箱），使用原 citizen/vehicle/NewspaperBox 网格与动画；位置来自旧原型 `population-manifest.json`，按同一 `originUE` 平移到恢复世界。市民短路线优先用最近的原版 `BP_CharaChildWaypoint`（同父优先），但路线顺序/遍历、AI/导航/交通仍非原版。free 模式下市民死亡 8 秒后在原 spawn 点复活，是预览城市生命周期，不是原版 spawner 节奏。车辆在另一辆车前方 7 m 内会停车保持间距，这是预览交通规则，不是 `BP_TrafficSystem` 状态机。
 - B2 战斗：接入原 14 段动作时间轴与攻击动画；左键/J 四段近战，右键/K 远程拳波，Shift 强攻；弹体 150 m/s、4 s 寿命。当前用 `baseline` 伤害模式：只有强力攻击可摧毁车辆，市民/道具伤害与自由破坏仍后置。
-- 热视线在 B1/B2 强制关闭：E 仍是原上升/地面蓄升键；`Combat` 以 `{heatVision:false}` 构造，避免抢占输入。
+- 热视线：按住 **Shift+E**（预览）；Shift 同时抑制 E 的升降/地面蓄升，E 单独仍是原版上升/蓄升键。原版右键远程攻击保留。
 
 ## 已实测
 
@@ -38,9 +38,19 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 - 按住 E：`heatActive=false`，地面蓄升 charge 正常累加；
 - 相机位置不在任何 AABB 内（cameraInside=false）。
 
-单测 [test-play-controller.mjs](../scripts/test-play-controller.mjs) 10/10：地面/行走方向、原跳速/重力顶点、跳跃/开飞/退飞、地面蓄升 1 秒边界、冲刺/慢行/升降、Shift 必须配合移动输入、P08 冲刺速度重置、楼板支撑行走、动态车辆 AABB 阻挡、R 重置；原 14 段战斗时间轴由 `npm test` 覆盖。
+单测 [test-play-controller.mjs](../scripts/test-play-controller.mjs) 11/11：地面/行走方向、原跳速/重力顶点、跳跃/开飞/退飞、Shift+E 不蓄升、地面蓄升 1 秒边界、冲刺/慢行/升降、Shift 必须配合移动输入、P08 冲刺速度重置、楼板支撑行走、动态车辆 AABB 阻挡、R 重置；原 14 段战斗时间轴由 `npm test` 覆盖。
 
 截图：[play-b1.jpg](../research/screenshots/play-b1.jpg)、[play-b2.jpg](../research/screenshots/play-b2.jpg)、[play-b3.jpg](../research/screenshots/play-b3.jpg)。记录：[playable-b1-validation.json](../research/world-recovery/playable-b1-validation.json)、[playable-b2-validation.json](../research/world-recovery/playable-b2-validation.json)。
+
+## 热视线预览（Shift+E）
+
+- 按住 **Shift+E**：进入热视线，HUD/动作状态标记为热视线；
+- Shift 同时抑制 E 的升降/地面蓄升；松开 Shift 后 E 恢复原版行为；
+- 原版右键远程攻击不受影响；
+- free 模式下可造成伤害/摧毁；baseline 模式仍按 baseline 伤害策略；
+- Homelander 换模未开始。
+
+浏览器探针：Shift+E 时 `heatActive=true`、`flying=false`，市民生命从 35 降到 23。
 
 ## 自由破坏预览（可选）
 
@@ -52,7 +62,7 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 - 近战/远程/强力攻击可伤害并摧毁预览市民、车辆、道具；
 - 市民被摧毁后 8 秒在原 spawn 点复活；
 - 没有玩家受伤、负分、强制失败等惩罚系统；
-- **热视线尚未接入**（E 仍是原版升降），Homelander 换模未开始；
+- 热视线 **Shift+E** 已接入预览；Homelander 换模未开始；
 - 默认 `?view=play` 仍是原版基线 `baseline` 模式，不伤害市民。
 
 浏览器探针已验证：free 模式下 KeyK 攻击可把市民生命降到 0，`destroyed` 计数增加。
@@ -60,7 +70,7 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 ## B3/B4 进展
 
 - 修正旧原型街区局部坐标：`originUE [-10000,-55000,0]` cm 使原先的 `(50,1.37)` 实际对应恢复世界 `(-50.0,-548.63)`；spawn 和 14 个预览 actor 一起平移，截图从空旷主路变为 ResidentialArea1 的实际公寓/街道（`play-b3.jpg`）。
-- 预览所有存活 actor（含市民、车辆、报刊箱）的 `solidBoxes` 每帧加入玩家动态 AABB；单测新增“Shift 需移动输入”“P08 冲刺重置”“楼板支撑行走”“车辆 AABB 阻挡行走”，目前 10/10。
+- 预览所有存活 actor（含市民、车辆、报刊箱）的 `solidBoxes` 每帧加入玩家动态 AABB；单测新增“Shift 需移动输入”“P08 冲刺重置”“楼板支撑行走”“车辆 AABB 阻挡行走”“Shift+E 不蓄升”，目前 11/11。
 - 新增 `?district=` 参数：对 MainLevel + 指定主世界关卡做装配与碰撞代理，出生点取该关卡 bounds 中心附近的地面空闲点；预览人口仍只在 ResidentialArea1 加载。`play-titlemenu.jpg` 是 TitleMenuLevel 的实际浏览器检查，不是原版开始画面。
 - 新增可选 `?population=original` 检查：`tools/asset-pipeline/export-citizen-spawns.mjs` 从原版 `CitizenWayPoint` 取玩家附近 **6** 个 `BP_CharaSpawnPoint`（距玩家 ≥10 m、彼此 ≥18 m），转成恢复世界坐标，生成 `population-original-citizens.json`；路线使用最近的原版 `BP_CharaChildWaypoint`（同父优先）。原版 spawner 不会同时生成全部市民，路线顺序/遍历/AI 仍是预览，所以**默认仍用预览人口**，该模式只用于位置/路径检查（`play-child-waypoints-6b.jpg`）。
 
@@ -125,7 +135,7 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 ## 明确近似与缺口
 
 - 预览人口的位置来自旧原型清单，市民路线优先用最近原版 child waypoint；free 模式死亡后 8 秒复活是预览生命周期；车辆 7 m 间距停车是预览规则。原版 AI/导航/交通/市民状态机和路线遍历仍未恢复，不能当作原版城市活动。
-- 战斗只接入 `baseline` 伤害策略：强力攻击可毁预览车辆；市民/道具伤害、自由破坏、无惩罚规则和热视线属于后续阶段。
+- 默认战斗仍使用 `baseline` 伤害策略：强力攻击可毁预览车辆；`mode=free` 才启用市民/道具/车辆自由破坏。热视线为 Shift+E 预览；无惩罚规则只存在于 free 模式。
 - `?population=original` 是检查模式：6 个原始 spawn 点（距玩家 ≥10 m、彼此 ≥18 m）分布更开，路线使用最近的原版 child waypoint（同父优先）；原版 spawner 生成节奏/数量/导航和路线遍历未恢复，所以不能当默认人口。
 - 预览人口只加载于 ResidentialArea1；DownTown/Park/TitleMenuLevel 没有市民、车辆、AI、任务或可攻击目标。
 - 玩家动态碰撞已覆盖预览市民/车辆/报刊箱；原版 actor 胶囊形状与非统一骨骼碰撞未恢复。

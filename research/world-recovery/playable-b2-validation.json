@@ -27,7 +27,7 @@
   },
   "combat": {
     "mode": "baseline",
-    "heatVision": false,
+    "heatVision": "Shift+E hold: heatActive=true, flying=false, citizen health 35->23 in free mode; baseline damage policy remains default",
     "heatVisionReason": "E remains the original ascend/ground-charge input in B1/B2; heat vision is deferred to phase C",
     "melee": {
       "action": "近战连击",
@@ -65,7 +65,7 @@
   },
   "tests": {
     "typecheck": "passed",
-    "controller": "10/10 passed (scripts/test-play-controller.mjs); includes dynamic vehicle/prop AABB blocking",
+    "controller": "11/11 passed (scripts/test-play-controller.mjs); includes dynamic vehicle/prop AABB blocking",
     "combatTimelines": "14 timelines passed via npm test",
     "browserProbe": "passed (scripts/probe-play-b1.js, scripts/probe-play-b2.js, scripts/probe-play-b2-hit.js)"
   },

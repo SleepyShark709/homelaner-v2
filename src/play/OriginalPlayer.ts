@@ -97,12 +97,14 @@ export class OriginalPlayer {
     const forward = input.axis(['KeyW', 'ArrowUp'], ['KeyS', 'ArrowDown']);
     const right = input.axis(['KeyD', 'ArrowRight'], ['KeyA', 'ArrowLeft']);
     const moving = forward !== 0 || right !== 0;
+    const shiftHeld = input.held('ShiftLeft', 'ShiftRight');
+    // Shift+E is the heat-vision chord; it must not also charge/ascend.
+    const heatHeld = shiftHeld && input.held('KeyE');
     // P07: Shift only arms sprint; StartSprint requires movement input. Walk
     // mode cancels sprint. P08 resets a sprint once speed falls below 850 cm/s
     // walking or 2000 cm/s flying; keep it disarmed until Shift/movement is
     // released so holding Shift does not instantly re-arm it.
-    const shift = input.held('ShiftLeft', 'ShiftRight');
-    if (!shift || !moving || this.walk) {
+    if (!shiftHeld || !moving || this.walk) {
       this.sprint = false;
       this.sprintFast = false;
       this.sprintBlocked = false;
@@ -123,7 +125,7 @@ export class OriginalPlayer {
 
     // P06: ground E charge starts a super/automatic flight after one second.
     if (this.grounded && !this.flying) {
-      this.charge = input.held('KeyE') ? this.charge + dt : 0;
+      this.charge = input.held('KeyE') && !heatHeld ? this.charge + dt : 0;
       if (this.charge > 1) {
         this.flying = true;
         this.grounded = false;
@@ -144,7 +146,7 @@ export class OriginalPlayer {
       this.velocity[1] = 0;
     }
 
-    const verticalInput = input.axis(['KeyE'], ['KeyQ']);
+    const verticalInput = (input.held('KeyE') && !heatHeld ? 1 : 0) - (input.held('KeyQ') ? 1 : 0);
     const sin = Math.sin(input.yaw), cos = Math.cos(input.yaw);
     const speed = this.walk ? 2.5 : this.flying ? (this.sprint ? TUNING.boost : TUNING.fly) : (this.sprint ? TUNING.sprint : TUNING.walk);
     let desiredX = sin * forward - cos * right;

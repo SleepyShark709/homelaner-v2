@@ -62,6 +62,20 @@ test('original jump velocity + GravityScale apex is about four metres', () => {
   assert.ok(apex > 3.8 && apex < 4.5, `expected ~4.08 m apex, got ${apex}`);
 });
 
+test('Shift+E is reserved for heat vision and does not charge flight', () => {
+  const { input, player } = make();
+  step(player, input, 0.3);
+  input.down.add('ShiftLeft');
+  input.down.add('KeyE');
+  step(player, input, 1.3);
+  assert.equal(player.flying, false);
+  assert.equal(player.charge, 0);
+  assert.ok(player.position[1] < 0.1, 'Shift+E must not ascend');
+  input.down.delete('ShiftLeft');
+  step(player, input, 1.3);
+  assert.equal(player.flying, true, 'plain E after releasing Shift should still charge flight');
+});
+
 test('holding E on the ground charges flight after one second', () => {
   const { input, player } = make();
   step(player, input, 0.3);

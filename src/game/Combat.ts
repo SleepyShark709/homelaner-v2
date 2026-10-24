@@ -66,7 +66,7 @@ export class Combat {
     const melee = this.input.pressed('AttackMelee') || this.input.pressed('KeyJ');
     const ranged = this.input.pressed('AttackRanged') || this.input.pressed('KeyK');
     const strong = this.input.pressed('AttackStrong') || this.input.held('ShiftLeft', 'ShiftRight');
-    this.heatActive = this.allowHeatVision && this.input.held('KeyE');
+    this.heatActive = this.allowHeatVision && this.input.held('KeyE') && this.input.held('ShiftLeft', 'ShiftRight');
     if (this.heatActive) {
       if (this.timeline) { this.timeline = null; this.character.endAction(); }
       this.queued = null; this.motor.heading = this.input.yaw;

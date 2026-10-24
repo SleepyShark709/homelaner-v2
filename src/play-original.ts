@@ -31,12 +31,13 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <aside class="play-panel">
     <h1>原版街区 · 可玩切片</h1>
     <p>原角色、原骨架与原始街区资产；地形高度来自原 Landscape 高度场。建筑碰撞为静态 AABB 代理，跳跃/重力/相机手感仍是预览。</p>
-    <p class="warn">本切片不是完整原版玩法：AI、车辆、任务、攻击、热视线与自由破坏尚未接入。</p>
+    <p class="warn">本切片不是完整原版玩法：AI、车辆、任务与完整攻击状态仍未接入；Shift+E 为热视线预览，mode=free 为自由破坏预览。</p>
     <div class="play-keys">
       <kbd>W A S D</kbd><span>移动</span>
       <kbd>拖动鼠标</kbd><span>转向</span>
       <kbd>SPACE</kbd><span>地面跳跃 / 空中开飞 / 飞行退飞</span>
       <kbd>E / Q</kbd><span>上升 / 下降；地面按住 E 蓄升</span>
+      <kbd>SHIFT + E</kbd><span>热视线（预览）</span>
       <kbd>SHIFT</kbd><span>冲刺</span>
       <kbd>ALT</kbd><span>慢行</span>
       <kbd>F</kbd><span>互动（预留）</span>
@@ -266,7 +267,7 @@ try {
     await population.load({ manifestUrl, worldOffset: populationOffset });
   }
   population.pause(true);
-  combat = new Combat(viewer.scene, input, player as unknown as PlayerMotor, character, population, viewer.camera, collision.boxes, { heatVision: false });
+  combat = new Combat(viewer.scene, input, player as unknown as PlayerMotor, character, population, viewer.camera, collision.boxes, { heatVision: true });
   combat.mode = freeMode ? 'free' : 'baseline';
   await combat.load();
   viewer.camera.detachControl();
