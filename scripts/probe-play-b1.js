@@ -19,7 +19,7 @@
   const flying = state();
   if (!flying.stats.flying) throw new Error('airborne Space did not open flight');
   const flyY = flying.stats.position[1];
-  key('keydown', 'KeyE'); await wait(450); key('keyup', 'KeyE');
+  key('keydown', 'KeyE'); await wait(700); key('keyup', 'KeyE');
   const ascended = state();
   if (ascended.stats.position[1] < flyY + 3) throw new Error('E did not ascend in flight');
   key('keydown', 'KeyQ'); await wait(1800); key('keyup', 'KeyQ');

@@ -28,7 +28,9 @@
 
 ![MainLevel 起点广场候选](../research/runtime-observation/comparison-start-plaza-mainlevel.jpg)
 
-仍不是匹配：Web 地面是草地、原程序是砖石铺装；长椅/相机/建筑朝向未对齐。这是候选地点，不是同机位验收。
+加 `&floors=overlay` 后，用原 `GroundBrick_B_A` 纹理覆盖恢复楼板 AABB，可得到更接近原程序的砖石地面（`comparison-start-plaza-overlay.jpg`）；这是预览回退，不是原 floor mesh 已修复。
+
+仍不是匹配：长椅/相机/建筑朝向未对齐，overlay 也不是原程序渲染。这是候选地点，不是同机位验收。
 
 ## 起点广场候选
 

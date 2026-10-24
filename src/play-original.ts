@@ -6,6 +6,9 @@ import { Matrix, Vector3 } from '@babylonjs/core/Maths/math.vector';
 import { DirectionalLight } from '@babylonjs/core/Lights/directionalLight';
 import { ShadowGenerator } from '@babylonjs/core/Lights/Shadows/shadowGenerator';
 import '@babylonjs/core/Lights/Shadows/shadowGeneratorSceneComponent';
+import { StandardMaterial } from '@babylonjs/core/Materials/standardMaterial';
+import { Texture } from '@babylonjs/core/Materials/Textures/texture';
+import { CreateGround } from '@babylonjs/core/Meshes/Builders/groundBuilder';
 import { OriginalWorld } from './world/OriginalWorld';
 import { Character } from './game/Character';
 import { Input } from './game/Input';
@@ -121,6 +124,26 @@ try {
   }
   const terrain = await TerrainHeightfield.load(viewer.terrainManifest);
   const surfaces = await WalkableSurfaces.load('/assets/world/walkable-surfaces.json');
+  if (new URLSearchParams(location.search).get('floors') === 'overlay') {
+    // Preview-only fallback for recovered ground-brick floors that do not render
+    // in the current material path. Uses the authored GroundBrick_B_A texture.
+    for (const surface of surfaces.surfaces) {
+      if (!surface.material?.includes('MI_GroundBrick') || surface.area > 200_000) continue;
+      if (surface.level !== 'MainLevel' && surface.level !== playDistrict) continue;
+      const width = surface.maxX - surface.minX, depth = surface.maxZ - surface.minZ;
+      const ground = CreateGround(`floor-overlay/${surface.id}`, { width, height: depth }, viewer.scene);
+      ground.position.set((surface.minX + surface.maxX) / 2, surface.top + 0.02, (surface.minZ + surface.maxZ) / 2);
+      const material = new StandardMaterial(`floor-overlay-mat/${surface.id}`, viewer.scene);
+      const texture = new Texture('/assets/world/textures/Game/Downtown/Textures/GroundBrick_B_A.png', viewer.scene);
+      texture.uScale = width / 4; texture.vScale = depth / 4; texture.hasAlpha = false;
+      material.diffuseTexture = texture;
+      material.specularColor.set(0, 0, 0);
+      material.backFaceCulling = false;
+      ground.material = material;
+      ground.receiveShadows = true;
+      ground.isPickable = false;
+    }
+  }
   const selected = startupMode
     ? viewer.manifest.levels.filter(level => viewer.streamingManifest.baseline.packages.includes(level.package))
     : viewer.manifest.levels.filter(level => level.id === 'MainLevel' || level.id === playDistrict);

@@ -57,9 +57,9 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 /?view=play&startup=1&at=20,0&yaw=0
 ```
 
-截图 `play-mainplaza-startup3.jpg`，对照图 `comparison-start-plaza-mainlevel.jpg`。它比之前的 CommercialArea 候选更接近原程序起点广场的城市构图，但：
+截图 `play-mainplaza-startup3.jpg`，对照图 `comparison-start-plaza-mainlevel.jpg`。使用 `&floors=overlay` 会在恢复的砖石楼板 AABB 上铺 `GroundBrick_B_A` 原始纹理，得到 `play-mainplaza-overlay.jpg` / `comparison-start-plaza-overlay.jpg`；这是**预览地面回退**，不是原 floor mesh 已正确渲染。它比之前的 CommercialArea 候选更接近原程序起点广场的城市构图，但：
 
-- 地面仍是草地，原程序是砖石铺装；
+- 地面 overlay 只是用原纹理覆盖 AABB，原程序 floor mesh 的可见性仍未修好；
 - 长椅、相机位置和建筑朝向没有逐项匹配；
 - 仍是**候选**，不是同机位结论。
 
