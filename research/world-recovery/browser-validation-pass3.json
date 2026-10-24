@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-25",
+  "harness": "scripts/capture-world.mjs",
+  "cases": [
+    {
+      "region": "__baseline__",
+      "ready": "world",
+      "level": "__baseline__",
+      "objects": 8824,
+      "terrain": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "unresolvedMaterialCacheKeys": 0,
+      "ambiguousSlots": 0,
+      "fps": 2.5,
+      "activeMeshes": 10701,
+      "warning": "",
+      "scope": "17 份启动关卡已按原加载链识别；全部 41 份地图可单独检查。天空 HDR 已接入；当前为静态场景，部分路面材质与角色/事件逻辑待接入。",
+      "streaming": null,
+      "streamingTrace": [],
+      "consoleErrors": [],
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "devicePixelRatio": 1
+      },
+      "browser": "Chrome/156.0.8078.48",
+      "url": "http://127.0.0.1:5178/?region=__baseline__",
+      "durationMs": 52682,
+      "screenshot": "research/screenshots/world-pass3-baseline.jpg"
+    },
+    {
+      "region": "__startup__",
+      "ready": "world",
+      "level": "__startup__",
+      "objects": 8824,
+      "terrain": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "unresolvedMaterialCacheKeys": 0,
+      "ambiguousSlots": 0,
+      "fps": 6.2,
+      "activeMeshes": 10977,
+      "warning": "",
+      "scope": "已按原新存档条件执行 12 步城区加载及过渡关卡卸载。角色、剧情与任务仍待恢复；未使用或修改原游戏存档。",
+      "streaming": {
+        "phase": "complete",
+        "resident": "ready",
+        "overlay": "complete",
+        "completedCitySteps": 12,
+        "loadedPackages": [
+          "/Game/-HeroGame/Maps/MainLevel",
+          "/Game/-HeroGame/Maps/SubLevel/CitizenWayPoint",
+          "/Game/-HeroGame/Maps/SubLevel/CustomEventLevel",
+          "/Game/-HeroGame/Maps/SubLevel/LightingTest",
+          "/Game/-HeroGame/Maps/SubLevel/TitleMenuLevel",
+          "/Game/-HeroGame/Maps/SubLevel/DownTown",
+          "/Game/-HeroGame/Maps/SubLevel/Park",
+          "/Game/-HeroGame/Maps/SubLevel/FinancialDistrict",
+          "/Game/-HeroGame/Maps/SubLevel/CommercialArea",
+          "/Game/-HeroGame/Maps/SubLevel/IndustrialArea",
+          "/Game/-HeroGame/Maps/SubLevel/Beach",
+          "/Game/-HeroGame/Maps/SubLevel/Slam",
+          "/Game/-HeroGame/Maps/SubLevel/ResidentialArea1",
+          "/Game/-HeroGame/Maps/SubLevel/ResidentialArea2",
+          "/Game/-HeroGame/Maps/SubLevel/ResidentialArea3",
+          "/Game/-HeroGame/Maps/SubLevel/Coast",
+          "/Game/-HeroGame/Maps/SubLevel/DynamicProps"
+        ]
+      },
+      "streamingTrace": [
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "MainLevel",
+          "branch": "resident",
+          "time": 2710.199999999255
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "MainLevel",
+          "branch": "resident",
+          "time": 9788.5
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "LightingTest",
+          "branch": "resident",
+          "time": 9789.400000002235
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "CitizenWayPoint",
+          "branch": "resident",
+          "time": 9789.699999999255
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "CustomEventLevel",
+          "branch": "resident",
+          "time": 9789.800000000745
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "TitleMenuLevel",
+          "branch": "resident",
+          "time": 9789.800000000745
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "CitizenWayPoint",
+          "branch": "resident",
+          "time": 9790.800000000745
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "CustomEventLevel",
+          "branch": "resident",
+          "time": 9790.800000000745
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "LightingTest",
+          "branch": "resident",
+          "time": 13275.300000000745
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "TitleMenuLevel",
+          "branch": "resident",
+          "time": 14213.5
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "LoadLevel",
+          "branch": "overlay",
+          "time": 14213.900000002235
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "DownTown",
+          "branch": "city",
+          "time": 14214.199999999255
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "LoadLevel",
+          "branch": "overlay",
+          "time": 15027.400000002235
+        },
+        {
+          "type": "request",
+          "operation": "unload",
+          "level": "LoadLevel",
+          "branch": "overlay",
+          "time": 16028.900000002235
+        },
+        {
+          "type": "completed",
+          "operation": "unload",
+          "level": "LoadLevel",
+          "branch": "overlay",
+          "time": 16030.5
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "DownTown",
+          "branch": "city",
+          "time": 22475.900000002235
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "Park",
+          "branch": "city",
+          "time": 22475.900000002235
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "Park",
+          "branch": "city",
+          "time": 23249.10000000149
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "FinancialDistrict",
+          "branch": "city",
+          "time": 23249.10000000149
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "FinancialDistrict",
+          "branch": "city",
+          "time": 26453.5
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "CommercialArea",
+          "branch": "city",
+          "time": 26453.60000000149
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "CommercialArea",
+          "branch": "city",
+          "time": 29020.699999999255
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "IndustrialArea",
+          "branch": "city",
+          "time": 29020.900000002235
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "IndustrialArea",
+          "branch": "city",
+          "time": 30936.60000000149
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "Beach",
+          "branch": "city",
+          "time": 30936.699999999255
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "Beach",
+          "branch": "city",
+          "time": 32002.5
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "Slam",
+          "branch": "city",
+          "time": 32002.5
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "Slam",
+          "branch": "city",
+          "time": 34025
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "ResidentialArea1",
+          "branch": "city",
+          "time": 34025.10000000149
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "ResidentialArea1",
+          "branch": "city",
+          "time": 39675.199999999255
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "ResidentialArea2",
+          "branch": "city",
+          "time": 39675.300000000745
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "ResidentialArea2",
+          "branch": "city",
+          "time": 43297.300000000745
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "ResidentialArea3",
+          "branch": "city",
+          "time": 43297.300000000745
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "ResidentialArea3",
+          "branch": "city",
+          "time": 49214.900000002235
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "Coast",
+          "branch": "city",
+          "time": 49215
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "Coast",
+          "branch": "city",
+          "time": 51068.10000000149
+        },
+        {
+          "type": "request",
+          "operation": "load",
+          "level": "DynamicProps",
+          "branch": "city",
+          "time": 51068.300000000745
+        },
+        {
+          "type": "completed",
+          "operation": "load",
+          "level": "DynamicProps",
+          "branch": "city",
+          "time": 51629.900000002235
+        }
+      ],
+      "consoleErrors": [],
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "devicePixelRatio": 1
+      },
+      "browser": "Chrome/156.0.8078.48",
+      "url": "http://127.0.0.1:5178/?region=__startup__",
+      "durationMs": 59371,
+      "screenshot": "research/screenshots/world-pass3-startup.jpg"
+    }
+  ],
+  "scope": "Static original-world viewer and startup-chain execution in a real browser; not gameplay or original-game equivalence.",
+  "checks": {
+    "typecheck": "passed (Node 24.21.0)",
+    "unitTests": "passed: collision, movement, combat timelines, world material-slot, streaming module 9/9",
+    "worldAssetClosure": "passed: 2,290 local files, 9,861 render records, 688 glTF + 144 GLB",
+    "skyHdrDecoder": "passed: 6 distributed RGBE probes, top/bottom row identity and >1 values",
+    "baselineLoad": "passed: 8,824 visible source objects, 144 terrain blocks, 0 asset/texture failures, 0 ambiguous slots",
+    "startupStreaming": "passed: 17 packages loaded, 12 city steps, overlay delay after LoadLevel completion, phase=complete, 0 failures",
+    "cameraFraming": "Default overview camera looks below the horizon; sky is visible after raising/pitching the camera above the horizon"
+  },
+  "limitations": [
+    "FPS is a headless/software-rendered single observation and is not comparable with the original game or a normal desktop browser.",
+    "The default overview screenshot does not show the sky because its view direction is below the horizon; sky screenshots use a raised camera.",
+    "Sky visibility is not a same-camera pixel comparison with the original game; original lighting, fog, pre-exposure and post-processing remain missing.",
+    "White/incomplete materials remain (e.g. Park Path_A Concrete_Tile_mat); see research/world-recovery/material-shader-recovery/white-surfaces-pass3.zh-CN.md.",
+    "No original character, animation, AI, event or gameplay equivalence was tested."
+  ]
+}

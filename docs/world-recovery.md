@@ -19,15 +19,15 @@
 
 4,221 个材质描述中包含 3,616 个地图内嵌实例；1,155 张 PNG 和 3 张 HDR 已导出。引用闭合不等于效果完全还原：2,078 个描述（含继承的 MID）仍标为 shader-unmapped。本轮解出 5 个 SkeletalMesh 的 42 个原生渲染分段材质索引，消除 29 处骨骼槽歧义及 42 处 component-section 覆写冲突。原 6,684 个 override 槽已逐槽核查，含 4,546 个非空引用，没有压缩槽号或丢弃正向导出索引。
 
-新增 20 份有原编译 shader 依据的材质计算：17 份世界坐标三向投影、2 份植被顶点遮罩、1 份长椅 PBR。恢复原负向世界平铺尺度、颜色/法线混合、粗糙度通道及色彩空间；725 组独立数值检查通过。植被原网格和组件载荷没有顶点色覆写，默认白色有源证据。当前照明仍是 Babylon 预览；植被双面次表面散射、风动、原 LOD 抖动及完整原后处理未实现。数值合同通过不等于 Web 最终画面与 UE 像素等价。
+目前共 25 份有原编译 shader 依据的材质计算：首轮 17 份世界坐标三向投影、2 份植被顶点遮罩、1 份长椅 PBR；第二轮新增 3 份混凝土霉斑、1 份石铺、1 份公园草地视差。恢复原负向世界平铺尺度、颜色/法线混合、粗糙度通道、色彩空间及原实例参数；累计 1,525 组独立数值检查通过。植被原网格和组件载荷没有顶点色覆写，默认白色有源证据。天空 HDR 已按原 PS 采样合同接入，并在浏览器中看到原云层；当前照明仍是 Babylon 预览，原光照、雾、预曝光及完整后处理尚未实现。数值合同通过不等于 Web 最终画面与 UE 像素等价。
 
-根据原 Kismet 跳转地址、latent 回调及关卡标志，默认入口改为 17 份启动城市关卡的静态组合：MainLevel、4 份 AlwaysLoaded、12 次启动请求。挑战、剧情和 Boss 条件关卡不混入基线；实际运行时开关和触发器执行尚未接入。静态材质合批仅共享渲染定义完全一致且没有自有参数/未知属性的空 MID，3,454 条实例可归并，源身份保留。后续动态改参必须独立实例化。
+根据原 Kismet 跳转地址、latent 回调及关卡标志，默认入口保留 17 份启动城市关卡的静态组合：MainLevel、4 份 AlwaysLoaded、12 次启动请求。新增“原新存档加载顺序 · 执行检查”入口，已在真实浏览器中按原 12 步加载链完成 17 包加载及过渡关卡独立延时卸载，资源失败为 0；逐事件 trace 见 pass3 浏览器验证。挑战、剧情和 Boss 条件关卡不混入基线；实际运行时开关和触发器执行尚未接入。静态材质合批仅共享渲染定义完全一致且没有自有参数/未知属性的空 MID，3,454 条实例可归并，源身份保留。后续动态改参必须独立实例化。
 
 静态检查中的骨骼模型使用源参考姿态，软件蒙皮一次后合批；源骨骼和动画资产不变。这是查看器的性能处理，不是原动画状态机重建。
 
 REA/Ghidra 对原 Shipping EXE 的函数、交叉引用和反编译结果位于 `research/rea-audit/native-*`。UAssetAPI/UModel 的包解码、几何/纹理导出以及 DXBC 分析是独立证据来源，不冒称 REA 反编译成果。Web 代码是依据这些证据编写的转换与渲染实现。
 
-原引擎运行逻辑不能由“导出成功”推出。当前仍缺：完整角色/动画状态机与碰撞、原 AI/敌人/Boss、任务事件及流程、原运行时关卡开关与构造脚本、原天空/光照/后处理、复杂水面和部分材质、动画驱动的附件跟随，以及与原程序同机位/同操作的对照。原程序已实测启动菜单和进入城市，见 runtime-observation；这仍不是行为等价验收。
+原引擎运行逻辑不能由“导出成功”推出。当前仍缺：完整角色/动画状态机与碰撞、原 AI/敌人/Boss、任务事件及流程、原运行时关卡开关与构造脚本、原光照/雾/预曝光/后处理、复杂水面和部分材质（公园 Path_A 使用的 `Concrete_Tile_mat` 尚无基色连接，仍发白）、动画驱动的附件跟随，以及与原程序同机位/同操作的对照。天空 HDR 采样已接入并完成浏览器可见性检查；原程序已实测启动菜单和进入城市，见 runtime-observation；这仍不是行为等价验收。
 
 旧原型 `/?view=prototype` 中的近似控制、热视线和自由破坏继续保留为历史工作，不混入当前原版还原验收。角色/动画检查在 `/?view=assets`。祖国人换模仍后置。
 
@@ -39,6 +39,8 @@ REA/Ghidra 对原 Shipping EXE 的函数、交叉引用和反编译结果位于 
 | 原材质通道接入 | `src/world/OriginalMaterials.ts` |
 | 原编译材质计算 / 静态材质共享 | `src/world/RecoveredShaderPlugin.ts`, `src/world/material-identity.ts` |
 | shader 恢复与数值证据 | `tools/asset-pipeline/restore-evidenced-shaders.py`, `research/world-recovery/material-shader-recovery/report.zh-CN.md` |
+| 天空 HDR 合同与 Web 接入 | `public/assets/world/sky-material-manifest.json`, `src/world/RecoveredSurfacePlugins.ts`, `research/world-recovery/sky-recovery/` |
+| 浏览器验证与截图脚本 | `scripts/capture-world.mjs`, `research/world-recovery/browser-validation-pass3.json` |
 | 原启动与条件流送证据 | `research/streaming-contract.md`, `public/assets/world/streaming-manifest.json` |
 | 挂点 / 骨骼材质分段 | `research/world-recovery/geometry-socket-resolution.json`, `geometry-override-validation.json` |
 | 原程序运行观察 | `research/runtime-observation/report.zh-CN.txt` |
@@ -69,6 +71,14 @@ REA/Ghidra 对原 Shipping EXE 的函数、交叉引用和反编译结果位于 
 
 以上是首轮记录，不覆盖随后修复的挂点和材质槽。本轮验证另见 `research/world-recovery/browser-validation-pass2.json`：在 1280×720 视口下检查启动城市、公园高清地形与 Boss 场景，以及区域切换。不同视口、场景组合和相机位置的 FPS 不能直接比较，也不是稳定帧率承诺。当前启动城市全景约 15 FPS，仍需优化。
 
-后续重点：继续复杂材质、原天空/光照与同机位画面对照；把已解释的关卡加载链、角色状态和动画接入运行时，再处理 AI/事件。祖国人外观及新增玩法仍后置。
+## 第三轮浏览器验证（2026-10-25，pass3）
+
+- 新增 `scripts/capture-world.mjs`：用本机 Chrome/Chromium DevTools 驱动查看器，等待 `body.dataset.ready`，读取对象/地形/失败计数、`canvas.dataset.streaming` 与逐事件 trace，并截图。`?debug=1` 只暴露已创建的 viewer 供只读探测，不改变场景装配或玩法。
+- 静态基线（`__baseline__`）：8,824 个可见源对象、144 块地形、模型/纹理失败 0、歧义槽 0；1280×720 无头 Chrome 约 2–3 FPS。该读数是软件/无头渲染结果，不能与原游戏或正常桌面浏览器的 FPS 直接比较。截图 `research/screenshots/world-pass3-baseline.jpg`。
+- 天空：把相机放到地平线以上后，浏览器可见原 HDR 云层；默认“区域全景”是俯视视角，视线在地平线以下，所以基线截图里没有天空。截图 `research/screenshots/world-sky-up.jpg`、`research/screenshots/world-pass3-city-sky.jpg`。这证明原 HDR 采样、UV 和朝向在 Web 中可以工作；尚未与原程序同机位做像素对照。
+- 启动链（`__startup__`）：真实浏览器执行 17 包加载、12 步城区请求，以及 LoadLevel 完成后的独立延时卸载；最终 `phase=complete`、`overlay=complete`、`completedCitySteps=12`，8,824 个对象、0 资源失败。截图 `research/screenshots/world-pass3-startup.jpg`，完整 trace 与计数见 `research/world-recovery/browser-validation-pass3.json`。
+- 白色路面：公园 81 个 `Path_A` 实例绑定 `Concrete_Tile_mat`；该材质只有白色 `Color` 因子，`channels.baseColor` 为空。冻结 uniform 中确有 3 个未命名纹理参数（默认 `Concrete_Tile_N`、`Concrete_Tile_A`、`Concrete_Tile_C`），但 cooked 材质只序列化了 `Normal`/`Metallic` 输入，基色连接仍未解出。不能仅凭贴图文件名直接硬接；下一步需按 DXBC/表达式证据恢复该族。
+
+后续重点：先用原 DXBC/表达式证据恢复白色路面族（`Concrete_Tile_mat`、`-Pavement__Mat`、`-Standard_Shader_Mat` 等），再补原光照/雾/后处理与同机位画面对照；同时把已解释的关卡加载链、角色状态和动画接入运行时，形成可玩的原版基线，再处理 AI/事件。祖国人外观及新增玩法仍后置。
 
 材质重建顺序：supplement → restore-world-materials → restore-embedded → restore-evidenced-shaders → validate。最后一步 shader 恢复不可省略，避免旧通道覆盖本轮证据结果。

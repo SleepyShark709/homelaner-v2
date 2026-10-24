@@ -14,7 +14,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <label for="speed">漫游速度 <output id="speed-value">4×</output></label><input id="speed" type="range" min="1" max="14" value="4" step="1">
     <div class="world-options"><button id="quality" aria-pressed="false">高清</button><button id="wireframe" aria-pressed="false">线框检查</button></div>
     <div class="world-stats"><div><strong id="object-count">—</strong><span>已装配场景对象</span></div><div><strong id="terrain-count">—</strong><span>原高度场地形块</span></div></div>
-    <div class="recovery-note"><span>当前恢复范围</span><p id="scope">正在读取覆盖清单…</p><p>已接入原地表混合；复杂材质、原天空与后处理仍待还原。新增玩法和换模后置。</p></div>
+    <div class="recovery-note"><span>当前恢复范围</span><p id="scope">正在读取覆盖清单…</p><p>已接入原地表混合与天空 HDR；复杂材质、原光照/雾与后处理仍待还原。新增玩法和换模后置。</p></div>
   </aside>
   <div class="world-crosshair" aria-hidden="true"></div>
   <div class="world-telemetry"><span id="fps">— FPS</span><span id="position">—</span></div>
@@ -28,6 +28,11 @@ const region = el<HTMLSelectElement>('region');
 const loading = el('loading');
 const warning = el('world-warning');
 const viewer = new OriginalWorld(canvas);
+// Local verification hook for browser probes. It exposes the already-created
+// viewer read-only and does not add gameplay behavior or alter loaded assets.
+if (new URLSearchParams(location.search).get('debug') === '1') {
+  (window as typeof window & { __undefeatedWorld?: OriginalWorld }).__undefeatedWorld = viewer;
+}
 const names: Record<string, string> = {
   MainLevel: '主世界 · 道路与地形', ResidentialArea1: '住宅区一', ResidentialArea2: '住宅区二', ResidentialArea3: '住宅区三',
   DownTown: '市中心', Downtown: '市中心', CommercialArea: '商业区', FinancialArea: '金融区', FinancialDistrict: '金融区', IndustrialArea: '工业区',
@@ -46,7 +51,7 @@ async function select(): Promise<void> {
     await viewer.select(region.value);
     if (region.value !== '__startup__') {
       canvas.dataset.streaming = ''; canvas.dataset.streamingTrace = '[]';
-      el('scope').textContent = `${viewer.streamingManifest.baseline.packages.length} 份启动关卡已按原加载链识别；全部 ${viewer.manifest.levels.length} 份地图可单独检查。当前为静态场景，事件与角色逻辑待接入。`;
+      el('scope').textContent = `${viewer.streamingManifest.baseline.packages.length} 份启动关卡已按原加载链识别；全部 ${viewer.manifest.levels.length} 份地图可单独检查。天空 HDR 已接入；当前为静态场景，部分路面材质与角色/事件逻辑待接入。`;
     }
     busy(false); document.body.dataset.ready = 'world'; document.body.dataset.level = region.value;
     const failures = viewer.failuresList;
@@ -124,7 +129,7 @@ try {
   const all = document.createElement('option'); all.value = '__all__'; all.textContent = '全部主世界区域 · 静态总览'; region.append(all);
   const requested = new URLSearchParams(location.search).get('region');
   region.value = requested && [...region.options].some(option => option.value === requested) ? requested : '__baseline__';
-  el('scope').textContent = `${viewer.streamingManifest.baseline.packages.length} 份启动关卡已按原加载链识别；全部 ${viewer.manifest.levels.length} 份地图可单独检查。当前仍是静态场景，事件与角色逻辑待接入。`;
+  el('scope').textContent = `${viewer.streamingManifest.baseline.packages.length} 份启动关卡已按原加载链识别；全部 ${viewer.manifest.levels.length} 份地图可单独检查。天空 HDR 已接入；当前仍是静态场景，部分路面材质与角色/事件逻辑待接入。`;
   await select();
 } catch (error) {
   el('load-title').textContent = '原世界资源尚未就绪';

@@ -22,3 +22,6 @@ BeginPlay随机WeatherIndex为0或1并启用Tick。Tick以ChangeSpeed×DeltaTime
 核验证据
 23份DXBC均经过完整资源前缀校验和微软D3DDisassemble，未解析DXBC标记0。shader-0-ps_5_0.asm的t12采样、UV乘法、pow/乘数和opacity均可直接查阅。uniforms.json保留原参数表和preshader字节；blueprint-evidence.json含完整函数AST、原Actor/CDO属性及源hash；sampling-evidence.json含原像素/UV/朝向验证。
 这些是原游戏包数据和编译Shader证据，不把第三方包解析称为REA原生反编译或游戏运行观察。原游戏只读；未改material-manifest或src。
+
+浏览器可见性（2026-10-25，pass3）
+用 scripts/capture-world.mjs 在 1280×720 无头 Chrome 中加载 __baseline__；将相机置于地平线以上后看到原 HDR 云层，说明原 2D 采样、UV 和世界朝向在 Web 中工作。默认“区域全景”为俯视，视线低于地平线，因此基线截图不显示天空。截图 research/screenshots/world-sky-up.jpg 与 world-pass3-city-sky.jpg。该检查不是与原程序同机位/像素对照；原光照、雾、预曝光和后处理仍未实现。
