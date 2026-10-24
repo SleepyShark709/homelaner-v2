@@ -49,14 +49,18 @@
 
 ## Terrain active 检查（2026-10-25）
 
-- 覆盖候选点的正确 chunk `landscape-5269`：`visible=true`、`enabled=true`，但 `active=false`；
-- 远处 `landscape-5189` 是 active；这解释了为什么 `pickWithRay` 会命中远处低地。
-- 把所有 `landscape-*` 强制 `alwaysSelectAsActiveMesh=true`（288 个 mesh）后，画面仍没有出现砖石前景。
-- 因此 terrain active 状态确实异常，但强制 active 不是充分修复。
+> 修正：直接在 render 之外读 `isActiveMesh()` 会得到 stale false；在 `scene.render()` 后读取 `scene.getActiveMeshes()`，`landscape-5269` **确实 active**。因此“正确 terrain chunk 没有 active”的结论撤回。
 
-调试辅助：play debug hook 增加 `pick(x,y)`，用 `Matrix.Identity()` 构造 picking ray，便于后续定位实际可见 mesh。
+- `landscape-5269` 的 bounding box x50..176/z76..202/y0..0，渲染后进入 active 列表；
+- `landscape-5189` 也在 active 列表；
+- 强制所有 `landscape-*` active（288 mesh）仍不改变前景。
+- `CommercialArea:677/678` 楼板在 render 后同样 active。
+
+调试辅助：play debug hook 增加 `pick(x,y)`，用 `Matrix.Identity()` 构造 picking ray。
 
 ## Active mesh 检查（2026-10-25）
+
+> 修正：下方 `isActiveMesh=false` 是 render 外 stale 状态；render 后 floor 677/678 实际 active。保留该段仅说明强制 active 也没有改变画面。
 
 - 默认情况下 `CommercialArea:676/677/678` 的 floor mesh `enabled=true`、`isVisible=true`，但 `isActiveMesh=false`，没有进入 `scene.getActiveMeshes()`。
 - 设置 `alwaysSelectAsActiveMesh=true` 后，它们进入 active 列表（activeCount=892），但画面仍是草地。
