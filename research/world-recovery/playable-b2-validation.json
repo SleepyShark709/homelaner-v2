@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-25",
+  "route": "?view=play",
+  "scope": "B2 playable slice: original character and restored ResidentialArea1 street, full-resolution Landscape heightfield, AABB collision proxies, original-input movement, preview population and original combat animation/projectile timings. Not complete original gameplay or original AI.",
+  "world": {
+    "objects": 3782,
+    "terrain": 144,
+    "assetFailures": 0,
+    "textureFailures": 0,
+    "collisionBoxes": 1432,
+    "collisionSourceObjects": 2171
+  },
+  "population": {
+    "actors": 14,
+    "citizens": 8,
+    "vehicles": 3,
+    "props": 3,
+    "models": [
+      "/assets/citizen/citizen.gltf",
+      "/assets/original/vehicle/vehicle.gltf",
+      "/assets/population/meshes/NewspaperBox/NewspaperBox.gltf"
+    ],
+    "placement": "previous prototype population-manifest; original meshes/animations, preview placements/routes, not recovered original AI or quests"
+  },
+  "combat": {
+    "mode": "baseline",
+    "heatVision": false,
+    "heatVisionReason": "E remains the original ascend/ground-charge input in B1/B2; heat vision is deferred to phase C",
+    "melee": {
+      "action": "近战连击",
+      "clip": "Hero_Attack1",
+      "finishState": "待命"
+    },
+    "ranged": {
+      "action": "远程攻击",
+      "clip": "Hero_LongFistForce_L",
+      "projectiles": 1
+    },
+    "strongVehicleTest": {
+      "before": { "remaining": 14, "hits": 0, "destroyed": 0, "vehicleAlive": true },
+      "after": { "remaining": 11, "hits": 3, "destroyed": 3, "vehicleAlive": false },
+      "note": "Baseline mode: only strong attacks may damage vehicles; citizens/props remain ignored by the recovered uncertainty in this mode."
+    }
+  },
+  "camera": {
+    "collision": "shortens third-person offset against nearby AABB proxies",
+    "cameraInsideBox": false
+  },
+  "tests": {
+    "typecheck": "passed",
+    "controller": "5/5 passed",
+    "combatTimelines": "14 timelines passed via npm test",
+    "browserProbe": "passed (scripts/probe-play-b1.js, scripts/probe-play-b2.js, scripts/probe-play-b2-hit.js)"
+  },
+  "limitations": [
+    "Population placement and short routes come from the previous prototype manifest, not recovered original AI, navigation, traffic or crowd behavior.",
+    "Combat damage is baseline mode: strong attacks may destroy preview vehicles; citizen/prop damage, free destruction, heat vision and no-penalty rules are not implemented.",
+    "AABB collision and preview actors are not in the player collision set yet; the player can walk through preview citizens/vehicles.",
+    "Jump/gravity, camera behavior, animation blending and hit timing still lack original-game matched-camera comparison.",
+    "No quest, boss, menu, save, city event or full HeroAnimBP state machine."
+  ]
+}

@@ -30,8 +30,9 @@ export class Combat {
   private idleTime = 0;
   private heatTick = 0;
   private readonly projectiles: Projectile[] = [];
+  private readonly allowHeatVision: boolean;
   onImpact: (message: string) => void = () => {};
-  constructor(scene: Scene, readonly input: Input, readonly motor: PlayerMotor, readonly character: Character, readonly population: Population, readonly camera: FreeCamera, readonly walls: Obstacle[]) { this.effects = new Effects(scene); }
+  constructor(scene: Scene, readonly input: Input, readonly motor: PlayerMotor, readonly character: Character, readonly population: Population, readonly camera: FreeCamera, readonly walls: Obstacle[], options: { heatVision?: boolean } = {}) { this.effects = new Effects(scene); this.allowHeatVision = options.heatVision ?? true; }
   async load(): Promise<void> {
     const response = await fetch('/assets/character/combat-timings.json');
     if (!response.ok) throw new Error('原版动作时间轴未生成');
@@ -64,7 +65,7 @@ export class Combat {
     const melee = this.input.pressed('AttackMelee') || this.input.pressed('KeyJ');
     const ranged = this.input.pressed('AttackRanged') || this.input.pressed('KeyK');
     const strong = this.input.pressed('AttackStrong') || this.input.held('ShiftLeft', 'ShiftRight');
-    this.heatActive = this.input.held('KeyE');
+    this.heatActive = this.allowHeatVision && this.input.held('KeyE');
     if (this.heatActive) {
       if (this.timeline) { this.timeline = null; this.character.endAction(); }
       this.queued = null; this.motor.heading = this.input.yaw;

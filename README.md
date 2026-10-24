@@ -8,7 +8,7 @@
 
 默认入口现为**原版世界恢复查看器**：按原启动加载链选择 17 份城市关卡，按原关卡坐标、模板继承、实例矩阵、道路样条与高度场装配城市，加载原材质与纹理，并接入原天空 HDR 采样。可切换城区及全部主世界静态总览，使用漫游相机检查。46 处参考姿态附件和已发现的骨骼材质槽歧义已修复，并接入 25 份原 shader 计算合同与已恢复的启动加载链执行检查。它尚不是可完整游玩的原版移植；原构造脚本、角色控制、AI、事件和流程仍待恢复验证。
 
-旧玩法原型保存在 `/?view=prototype`，角色/动画实验室在 `/?view=assets`。原版可玩基线 B1 切片在 `/?view=play`：原角色 + 原 ResidentialArea1 街区 + 原高度场 + 原输入语义，说明与缺口见 [docs/playable-baseline.md](docs/playable-baseline.md)。新增热视线、自由破坏与换模开发暂停，先完成原版基线。当前证据及验收见 [世界恢复记录](docs/world-recovery.md)，历史原型记录见 [docs/progress.md](docs/progress.md)。
+旧玩法原型保存在 `/?view=prototype`，角色/动画实验室在 `/?view=assets`。原版可玩基线 B1/B2 切片在 `/?view=play`：原角色 + 原 ResidentialArea1 街区 + 原高度场 + 原输入语义 + 预览人口与原战斗动画；说明与缺口见 [docs/playable-baseline.md](docs/playable-baseline.md)。新增热视线、自由破坏与换模开发暂停，先完成原版基线。当前证据及验收见 [世界恢复记录](docs/world-recovery.md)，历史原型记录见 [docs/progress.md](docs/progress.md)。
 
 ## 运行
 
@@ -40,6 +40,7 @@ npm test
 npm run build
 npm run capture:world
 npm run capture:play
+npm run capture:play:b2
 ```
 
 当前世界资源位于 `public/assets/world`，旧原版派生资产位于 `public/assets/original`，工具与中间导出位于 `tools/asset-pipeline` 和 `research/exports`。二进制游戏资源不跟踪进 Git。本地缺少资产时，查看器会明确提示，不能只复制源码就得到完整资源。
@@ -57,7 +58,7 @@ npm run capture:play
 - `docs/implementation-plan.md`：完整执行方案、实现顺序与技术解释。
 - `docs/progress.md`：旧原型实际成果与限制。
 - `docs/world-recovery.md`：当前世界恢复范围、证据、浏览器验证与缺口。
-- `docs/playable-baseline.md`：B1 可玩切片、原输入语义、碰撞代理与已知近似。
+- `docs/playable-baseline.md`：B1/B2 可玩切片、原输入语义、预览人口、战斗动画、碰撞代理与已知近似。
 - `docs/city-reconstruction.md`：原地图坐标、道路样条和资源来源。
 - `docs/character-assembly.md`：原头发/墨镜挂点与装配。
 - `docs/combat-spec.md`：已恢复原战斗行为与动画命中时序。

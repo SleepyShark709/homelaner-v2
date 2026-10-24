@@ -3,6 +3,10 @@ import { Vector3 } from '@babylonjs/core/Maths/math.vector';
 import { OriginalWorld } from './world/OriginalWorld';
 import { Character } from './game/Character';
 import { Input } from './game/Input';
+import { Combat } from './game/Combat';
+import { Population } from './game/Population';
+import type { PlayerMotor } from './game/PlayerMotor';
+import { firstHit } from './game/collision';
 import type { Bounds, Vec3 } from './game/collision';
 import { buildCollision } from './play/CollisionWorld';
 import { OriginalPlayer } from './play/OriginalPlayer';
@@ -39,6 +43,8 @@ const input = new Input(canvas);
 const paused = el('paused');
 let player: OriginalPlayer | undefined;
 let character: Character | undefined;
+let combat: Combat | undefined;
+let population: Population | undefined;
 
 viewer.onProgress = (message, done, total) => {
   el('load-message').textContent = message;
@@ -119,6 +125,15 @@ try {
   character = new Character(viewer.scene);
   await character.load();
   character.update(player, 1);
+  // Preview population: original citizen/vehicle/prop meshes and animations,
+  // but placements/routes come from the previous prototype manifest, not a
+  // recovered original AI/quest system. Damage stays in baseline mode here.
+  population = new Population(viewer.scene, collision.boxes);
+  await population.load();
+  population.pause(true);
+  combat = new Combat(viewer.scene, input, player as unknown as PlayerMotor, character, population, viewer.camera, collision.boxes, { heatVision: false });
+  combat.mode = 'baseline';
+  await combat.load();
   viewer.camera.detachControl();
   viewer.camera.minZ = 0.12;
   viewer.camera.fov = 0.95;
@@ -140,7 +155,10 @@ try {
       0.8 + Math.sin(pitch) * distance,
       -Math.cos(input.yaw) * Math.cos(pitch) * distance,
     );
-    viewer.camera.position.copyFrom(target.add(offset));
+    const nearby = collision.spatial.nearby(target.x, target.z, distance + 2);
+    const hit = firstHit(target.asArray() as Vec3, offset.asArray() as Vec3, nearby, [0.2, 0.2, 0.2]);
+    const safe = hit ? Math.max(0.08, hit.time - 0.02) : 1;
+    viewer.camera.position.copyFrom(target.add(offset.scale(safe)));
     viewer.camera.setTarget(target.add(new Vector3(0, 1, 0)));
   };
   updateCamera();
@@ -150,9 +168,11 @@ try {
   viewer.scene.registerBeforeRender(() => {
     if (!player || !character || !input.active) return;
     const dt = Math.min(viewer.engine.getDeltaTime() / 1000, 0.05);
+    population?.update(dt);
     accumulator += dt;
     while (accumulator >= 1 / 120) { player.update(1 / 120, input); accumulator -= 1 / 120; }
     character.update(player, dt);
+    combat?.update(dt);
     updateCamera();
     hudTime += dt;
     if (hudTime > 0.1) {
@@ -171,10 +191,11 @@ try {
   input.clear();
   input.active = true;
   canvas.focus();
+  population?.pause(false);
   document.body.dataset.ready = 'play';
   el('loading').hidden = true;
   if (new URLSearchParams(location.search).get('debug') === '1') {
-    (window as typeof window & { __undefeatedPlay?: unknown }).__undefeatedPlay = { viewer, player, character, input, collision };
+    (window as typeof window & { __undefeatedPlay?: unknown }).__undefeatedPlay = { viewer, player, character, input, collision, combat, population };
   }
   console.info('B1 playable slice ready', { spawn, objects, collision: collision.stats });
 } catch (error) {
