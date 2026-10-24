@@ -43,6 +43,10 @@ const el = <T extends HTMLElement = HTMLElement>(id: string) => document.getElem
 const canvas = el<HTMLCanvasElement>('world');
 const viewer = new OriginalWorld(canvas);
 const input = new Input(canvas);
+// Original PlayerBP CameraBoom_GEN_VARIABLE: TargetArmLength=400 cm,
+// SocketOffset=(0,50,90) cm, boom RelativeLocation Z=70 cm.
+const CAMERA = { armLength: 4.0, boomHeight: 0.7, socketRight: 0.5, socketUp: 0.9 };
+input.pitch = 0.02;
 const paused = el('paused');
 const requestedDistrict = new URLSearchParams(location.search).get('district') ?? 'ResidentialArea1';
 const startupMode = new URLSearchParams(location.search).get('startup') === '1';
@@ -188,22 +192,26 @@ try {
   canvas.dataset.failures = String(viewer.failuresList.length);
   canvas.dataset.textureFailures = String(viewer.materials.textureFailures.size);
 
-  const target = new Vector3();
+  const base = new Vector3();
+  const forward = new Vector3();
+  const right = new Vector3();
+  const look = new Vector3();
   const updateCamera = () => {
     if (!player) return;
-    target.set(player.position[0], player.position[1] + 1.35, player.position[2]);
-    const distance = player.flying ? 8 : 5.5;
-    const pitch = input.pitch;
-    const offset = new Vector3(
-      -Math.sin(input.yaw) * Math.cos(pitch) * distance,
-      0.8 + Math.sin(pitch) * distance,
-      -Math.cos(input.yaw) * Math.cos(pitch) * distance,
-    );
-    const nearby = collision.spatial.nearby(target.x, target.z, distance + 2);
-    const hit = firstHit(target.asArray() as Vec3, offset.asArray() as Vec3, nearby, [0.2, 0.2, 0.2]);
+    const yaw = input.yaw, pitch = input.pitch;
+    right.set(Math.cos(yaw), 0, -Math.sin(yaw));
+    base.set(player.position[0], player.position[1] + CAMERA.boomHeight, player.position[2]);
+    base.addInPlace(right.scale(CAMERA.socketRight));
+    base.y += CAMERA.socketUp;
+    forward.set(Math.sin(yaw) * Math.cos(pitch), -Math.sin(pitch), Math.cos(yaw) * Math.cos(pitch));
+    const offset = forward.scale(-CAMERA.armLength);
+    const nearby = collision.spatial.nearby(base.x, base.z, CAMERA.armLength + 2);
+    const hit = firstHit(base.asArray() as Vec3, offset.asArray() as Vec3, nearby, [0.2, 0.2, 0.2]);
     const safe = hit ? Math.max(0.08, hit.time - 0.02) : 1;
-    viewer.camera.position.copyFrom(target.add(offset.scale(safe)));
-    viewer.camera.setTarget(target.add(new Vector3(0, 1, 0)));
+    viewer.camera.position.copyFrom(base.add(offset.scale(safe)));
+    look.copyFrom(base).addInPlace(forward.scale(20));
+    look.y += 0.25;
+    viewer.camera.setTarget(look);
   };
   updateCamera();
 
