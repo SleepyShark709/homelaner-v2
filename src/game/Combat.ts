@@ -39,6 +39,7 @@ export class Combat {
     this.clips = (await response.json()).clips;
   }
   get actionName(): string { return this.heatActive ? '热视线' : this.timeline ? this.attackKind === 'melee' ? '近战连击' : this.strong ? '强力拳波' : '远程攻击' : '待命'; }
+  get attacking(): boolean { return this.timeline !== null; }
   private aim(): Vec3 {
     const origin = this.camera.position.asArray() as Vec3;
     const delta = this.camera.getTarget().subtract(this.camera.position).normalize().scale(200).asArray() as Vec3;

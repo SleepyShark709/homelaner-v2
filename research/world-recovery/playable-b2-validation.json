@@ -54,6 +54,8 @@
     }
   },
   "camera": {
+    "default": "PlayerBP CameraBoom 400 cm, SocketOffset(0,50,90), boom Z70, FOV 90 horizontal, CameraLagSpeed/RotationLagSpeed 15",
+    "attack": "attack target arm 650 cm interpolated at CameraInterpSpeed 2 (HeroComponent AST)",
     "collision": "shortens third-person offset against nearby AABB proxies",
     "cameraInsideBox": false
   },

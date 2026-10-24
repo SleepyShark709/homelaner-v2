@@ -45,7 +45,7 @@ const viewer = new OriginalWorld(canvas);
 const input = new Input(canvas);
 // Original PlayerBP CameraBoom_GEN_VARIABLE: TargetArmLength=400 cm,
 // SocketOffset=(0,50,90) cm, boom RelativeLocation Z=70 cm.
-const CAMERA = { armLength: 4.0, boomHeight: 0.7, socketRight: 0.5, socketUp: 0.9, lagSpeed: 15, fov: 90 };
+const CAMERA = { armLength: 4.0, attackArmLength: 6.5, armSpeed: 2, boomHeight: 0.7, socketRight: 0.5, socketUp: 0.9, lagSpeed: 15, fov: 90 };
 input.pitch = 0.02;
 const paused = el('paused');
 const requestedDistrict = new URLSearchParams(location.search).get('district') ?? 'ResidentialArea1';
@@ -205,16 +205,19 @@ try {
   const look = new Vector3();
   const cameraTarget = new Vector3();
   let cameraInitialized = false;
+  let cameraArm = CAMERA.armLength;
   const updateCamera = (dt = 1 / 60) => {
     if (!player) return;
     const yaw = input.yaw, pitch = input.pitch;
+    const targetArm = combat?.attacking ? CAMERA.attackArmLength : CAMERA.armLength;
+    cameraArm += (targetArm - cameraArm) * (1 - Math.exp(-CAMERA.armSpeed * dt));
     right.set(Math.cos(yaw), 0, -Math.sin(yaw));
     base.set(player.position[0], player.position[1] + CAMERA.boomHeight, player.position[2]);
     base.addInPlace(right.scale(CAMERA.socketRight));
     base.y += CAMERA.socketUp;
     forward.set(Math.sin(yaw) * Math.cos(pitch), -Math.sin(pitch), Math.cos(yaw) * Math.cos(pitch));
-    const offset = forward.scale(-CAMERA.armLength);
-    const nearby = collision.spatial.nearby(base.x, base.z, CAMERA.armLength + 2);
+    const offset = forward.scale(-cameraArm);
+    const nearby = collision.spatial.nearby(base.x, base.z, cameraArm + 2);
     const hit = firstHit(base.asArray() as Vec3, offset.asArray() as Vec3, nearby, [0.2, 0.2, 0.2]);
     const safe = hit ? Math.max(0.08, hit.time - 0.02) : 1;
     look.copyFrom(base).addInPlace(forward.scale(20));
