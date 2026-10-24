@@ -14,6 +14,7 @@
   "radius": 110,
   "minSpacing": 7,
   "candidates": 967,
+  "childCandidates": 558,
   "selected": [
     {
       "id": "original-citizen-1",
@@ -28,7 +29,27 @@
         0,
         -548.014853515625
       ],
-      "distance": 0.6396349131591784
+      "distance": 0.6396349131591784,
+      "route": {
+        "id": "original-citizen-1-route",
+        "kind": "citizen",
+        "points": [
+          [
+            -49.82470703125,
+            0,
+            -548.014853515625
+          ],
+          [
+            -51.80435546875,
+            0,
+            -548.03265625
+          ]
+        ],
+        "closed": false,
+        "routeSource": [
+          "BP_CharaChildWaypoint_C_724"
+        ]
+      }
     },
     {
       "id": "original-citizen-2",
@@ -43,7 +64,39 @@
         0,
         -549.8750048828125
       ],
-      "distance": 6.7033499871205136
+      "distance": 6.7033499871205136,
+      "route": {
+        "id": "original-citizen-2-route",
+        "kind": "citizen",
+        "points": [
+          [
+            -56.58671875,
+            0,
+            -549.8750048828125
+          ],
+          [
+            -54.83,
+            0,
+            -550.09
+          ],
+          [
+            -54.6,
+            0,
+            -532.86
+          ],
+          [
+            -36.59,
+            0,
+            -533.06
+          ]
+        ],
+        "closed": false,
+        "routeSource": [
+          "BP_CharaChildWaypoint_C_795",
+          "BP_CharaChildWaypoint_C_790",
+          "BP_CharaChildWaypoint_C_789"
+        ]
+      }
     },
     {
       "id": "original-citizen-3",
@@ -58,7 +111,27 @@
         0,
         -549.605400390625
       ],
-      "distance": 8.1550366823949
+      "distance": 8.1550366823949,
+      "route": {
+        "id": "original-citizen-3-route",
+        "kind": "citizen",
+        "points": [
+          [
+            -41.903505859375,
+            0,
+            -549.605400390625
+          ],
+          [
+            -38.66435546875,
+            0,
+            -548.03265625
+          ]
+        ],
+        "closed": false,
+        "routeSource": [
+          "BP_CharaChildWaypoint_C_712"
+        ]
+      }
     },
     {
       "id": "original-citizen-4",
@@ -73,7 +146,33 @@
         0,
         -542.9233251953125
       ],
-      "distance": 10.516369626522094
+      "distance": 10.516369626522094,
+      "route": {
+        "id": "original-citizen-4-route",
+        "kind": "citizen",
+        "points": [
+          [
+            -58.83333984375,
+            0,
+            -542.9233251953125
+          ],
+          [
+            -61.89,
+            0,
+            -541.08
+          ],
+          [
+            -35.03435546874999,
+            0,
+            -548.84265625
+          ]
+        ],
+        "closed": false,
+        "routeSource": [
+          "BP_CharaChildWaypoint_C_701",
+          "BP_CharaChildWaypoint_C_698"
+        ]
+      }
     },
     {
       "id": "original-citizen-5",
@@ -88,7 +187,39 @@
         0,
         -559.451328125
       ],
-      "distance": 10.860605108503396
+      "distance": 10.860605108503396,
+      "route": {
+        "id": "original-citizen-5-route",
+        "kind": "citizen",
+        "points": [
+          [
+            -49.077177734375,
+            0,
+            -559.451328125
+          ],
+          [
+            -54.83,
+            0,
+            -550.09
+          ],
+          [
+            -54.6,
+            0,
+            -532.86
+          ],
+          [
+            -36.59,
+            0,
+            -533.06
+          ]
+        ],
+        "closed": false,
+        "routeSource": [
+          "BP_CharaChildWaypoint_C_795",
+          "BP_CharaChildWaypoint_C_790",
+          "BP_CharaChildWaypoint_C_789"
+        ]
+      }
     },
     {
       "id": "original-citizen-6",
@@ -103,7 +234,39 @@
         0,
         -537.3322265625
       ],
-      "distance": 12.016551678774494
+      "distance": 12.016551678774494,
+      "route": {
+        "id": "original-citizen-6-route",
+        "kind": "citizen",
+        "points": [
+          [
+            -54.0936328125,
+            0,
+            -537.3322265625
+          ],
+          [
+            -54.6,
+            0,
+            -532.86
+          ],
+          [
+            -54.83,
+            0,
+            -550.09
+          ],
+          [
+            -36.59,
+            0,
+            -533.06
+          ]
+        ],
+        "closed": false,
+        "routeSource": [
+          "BP_CharaChildWaypoint_C_790",
+          "BP_CharaChildWaypoint_C_795",
+          "BP_CharaChildWaypoint_C_789"
+        ]
+      }
     },
     {
       "id": "original-citizen-7",
@@ -118,7 +281,33 @@
         0,
         -559.2637890625
       ],
-      "distance": 12.693911977195608
+      "distance": 12.693911977195608,
+      "route": {
+        "id": "original-citizen-7-route",
+        "kind": "citizen",
+        "points": [
+          [
+            -56.9323828125,
+            0,
+            -559.2637890625
+          ],
+          [
+            -60.86,
+            0,
+            -559.17
+          ],
+          [
+            -70.02,
+            0,
+            -552.67
+          ]
+        ],
+        "closed": false,
+        "routeSource": [
+          "BP_CharaChildWaypoint_C_685",
+          "BP_CharaChildWaypoint_C_682"
+        ]
+      }
     },
     {
       "id": "original-citizen-8",
@@ -133,7 +322,33 @@
         0,
         -534.9280908203125
       ],
-      "distance": 13.949722082234963
+      "distance": 13.949722082234963,
+      "route": {
+        "id": "original-citizen-8-route",
+        "kind": "citizen",
+        "points": [
+          [
+            -47.38228515625,
+            0,
+            -534.9280908203125
+          ],
+          [
+            -52.19,
+            0,
+            -530.26
+          ],
+          [
+            -19.114374999999995,
+            0,
+            -528.60265625
+          ]
+        ],
+        "closed": false,
+        "routeSource": [
+          "BP_CharaChildWaypoint_C_783",
+          "BP_CharaChildWaypoint_C_784"
+        ]
+      }
     },
     {
       "id": "original-citizen-9",
@@ -148,7 +363,39 @@
         0,
         -559.6388671875
       ],
-      "distance": 14.080101693230436
+      "distance": 14.080101693230436,
+      "route": {
+        "id": "original-citizen-9-route",
+        "kind": "citizen",
+        "points": [
+          [
+            -41.221953125,
+            0,
+            -559.6388671875
+          ],
+          [
+            -37.29435546875,
+            0,
+            -559.73265625
+          ],
+          [
+            -60.86,
+            0,
+            -559.17
+          ],
+          [
+            -70.02,
+            0,
+            -552.67
+          ]
+        ],
+        "closed": false,
+        "routeSource": [
+          "BP_CharaChildWaypoint_C_686",
+          "BP_CharaChildWaypoint_C_685",
+          "BP_CharaChildWaypoint_C_682"
+        ]
+      }
     },
     {
       "id": "original-citizen-10",
@@ -163,7 +410,39 @@
         0,
         -539.7738671875
       ],
-      "distance": 14.241535210634275
+      "distance": 14.241535210634275,
+      "route": {
+        "id": "original-citizen-10-route",
+        "kind": "citizen",
+        "points": [
+          [
+            -38.846962890625,
+            0,
+            -539.7738671875
+          ],
+          [
+            -36.59,
+            0,
+            -533.06
+          ],
+          [
+            -54.6,
+            0,
+            -532.86
+          ],
+          [
+            -54.83,
+            0,
+            -550.09
+          ]
+        ],
+        "closed": false,
+        "routeSource": [
+          "BP_CharaChildWaypoint_C_789",
+          "BP_CharaChildWaypoint_C_790",
+          "BP_CharaChildWaypoint_C_795"
+        ]
+      }
     },
     {
       "id": "original-citizen-11",
@@ -178,7 +457,27 @@
         0,
         -547.4817578125
       ],
-      "distance": 14.70781993164601
+      "distance": 14.70781993164601,
+      "route": {
+        "id": "original-citizen-11-route",
+        "kind": "citizen",
+        "points": [
+          [
+            -64.6629296875,
+            0,
+            -547.4817578125
+          ],
+          [
+            -65.17386718750001,
+            0,
+            -548.0372412109375
+          ]
+        ],
+        "closed": false,
+        "routeSource": [
+          "BP_CharaChildWaypoint_C_1516"
+        ]
+      }
     },
     {
       "id": "original-citizen-12",
@@ -193,13 +492,45 @@
         0,
         -554.08
       ],
-      "distance": 15.632454872291952
+      "distance": 15.632454872291952,
+      "route": {
+        "id": "original-citizen-12-route",
+        "kind": "citizen",
+        "points": [
+          [
+            -35.34833984375,
+            0,
+            -554.08
+          ],
+          [
+            -36.22,
+            0,
+            -550.34
+          ],
+          [
+            -18.549999999999997,
+            0,
+            -554.29
+          ],
+          [
+            -30.989999999999995,
+            0,
+            -572.78
+          ]
+        ],
+        "closed": false,
+        "routeSource": [
+          "BP_CharaChildWaypoint_C_760",
+          "BP_CharaChildWaypoint_C_763",
+          "BP_CharaChildWaypoint_C_761"
+        ]
+      }
     }
   ],
   "previewVehiclesProps": 6,
   "caveats": [
     "Citizen spawn positions are the nearest recovered BP_CharaSpawnPoint actors from CitizenWayPoint, converted with originUE [-10000,-55000,0] cm.",
-    "Citizen two-point patrol routes are a nearest-neighbour preview; original citizen AI/navigation/state machine is not recovered.",
+    "Citizen patrol routes use the nearest recovered BP_CharaChildWaypoint positions (same parent where available); route order, traversal and citizen AI/state machine are still preview.",
     "Vehicle/prop placements and routes remain the previous prototype preview, shifted by the same originUE offset."
   ]
 }

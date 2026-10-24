@@ -74,16 +74,40 @@ const citizenSpawns = selected.map((spawn, index) => ({
   sourceUe: spawn.ue,
 }));
 
+const childPoints = [];
+for (let index = 0; index < decoded.Exports.length; index++) {
+  const entity = decoded.Exports[index];
+  if (!String(entity.ObjectName).startsWith('BP_CharaChildWaypoint')) continue;
+  const root = decoded.Exports[prop(entity, 'RootComponent')?.Value];
+  const ue = vec(prop(root, 'RelativeLocation'));
+  if (!ue) continue;
+  childPoints.push({
+    id: String(entity.ObjectName),
+    parent: String(prop(entity, 'ParentWaypoint')?.Value ?? ''),
+    ue,
+    world: [ue[0] / 100 + ORIGIN[0], 0, ue[1] / 100 + ORIGIN[1]],
+  });
+}
+
 const citizenRoutes = selected.map((spawn, index) => {
-  const others = selected.filter(item => item !== spawn).sort((a, b) => Math.hypot(a.world[0] - spawn.world[0], a.world[2] - spawn.world[2]) - Math.hypot(b.world[0] - spawn.world[0], b.world[2] - spawn.world[2]));
-  const neighbor = others[0];
-  const distance = neighbor ? Math.hypot(neighbor.world[0] - spawn.world[0], neighbor.world[2] - spawn.world[2]) : 0;
-  return {
-    id: `original-citizen-${index + 1}-route`,
-    kind: 'citizen',
-    points: neighbor && distance <= 45 ? [spawn.world, neighbor.world] : [spawn.world],
-    closed: false,
-  };
+  const children = childPoints
+    .map(point => ({ ...point, distance: Math.hypot(point.world[0] - spawn.world[0], point.world[2] - spawn.world[2]) }))
+    .sort((a, b) => a.distance - b.distance);
+  const nearest = children[0];
+  if (!nearest || nearest.distance > 25) {
+    return { id: `original-citizen-${index + 1}-route`, kind: 'citizen', points: [spawn.world], closed: false, routeSource: [] };
+  }
+  const points = [spawn.world, nearest.world];
+  const source = [nearest.id];
+  const sameParent = children.filter(point => point !== nearest && point.parent === nearest.parent);
+  const next = sameParent[0] ?? children.find(point => point !== nearest && Math.hypot(point.world[0] - nearest.world[0], point.world[2] - nearest.world[2]) <= 25);
+  if (next && next.distance <= 35) {
+    points.push(next.world);
+    source.push(next.id);
+    const third = children.find(point => point !== nearest && point !== next && point.parent === next.parent && Math.hypot(point.world[0] - next.world[0], point.world[2] - next.world[2]) <= 25);
+    if (third) { points.push(third.world); source.push(third.id); }
+  }
+  return { id: `original-citizen-${index + 1}-route`, kind: 'citizen', points, closed: false, routeSource: source };
 });
 
 const vehicleAndPropSpawns = preview.spawns
@@ -102,7 +126,7 @@ const manifest = {
   routes: [...citizenRoutes, ...vehicleAndPropRoutes],
   notes: [
     'Citizen spawn positions are the nearest recovered BP_CharaSpawnPoint actors from CitizenWayPoint, converted with originUE [-10000,-55000,0] cm.',
-    'Citizen two-point patrol routes are a nearest-neighbour preview; original citizen AI/navigation/state machine is not recovered.',
+    'Citizen patrol routes use the nearest recovered BP_CharaChildWaypoint positions (same parent where available); route order, traversal and citizen AI/state machine are still preview.',
     'Vehicle/prop placements and routes remain the previous prototype preview, shifted by the same originUE offset.',
   ],
 };
@@ -117,8 +141,9 @@ fs.writeFileSync(EVIDENCE, `${JSON.stringify({
   radius: RADIUS,
   minSpacing: MIN_SPACING,
   candidates: spawns.length,
-  selected: selected.map((spawn, index) => ({ id: `original-citizen-${index + 1}`, sourceActor: spawn.id, ue: spawn.ue, world: spawn.world, distance: spawn.distance })),
+  childCandidates: childPoints.length,
+  selected: selected.map((spawn, index) => ({ id: `original-citizen-${index + 1}`, sourceActor: spawn.id, ue: spawn.ue, world: spawn.world, distance: spawn.distance, route: citizenRoutes[index] })),
   previewVehiclesProps: vehicleAndPropSpawns.length,
   caveats: manifest.notes,
 }, null, 2)}\n`);
-console.log(JSON.stringify({ output: path.relative(ROOT, OUT), evidence: path.relative(ROOT, EVIDENCE), candidates: spawns.length, selected: selected.length, vehiclesProps: vehicleAndPropSpawns.length }, null, 1));
+console.log(JSON.stringify({ output: path.relative(ROOT, OUT), evidence: path.relative(ROOT, EVIDENCE), candidates: spawns.length, childCandidates: childPoints.length, selected: selected.length, vehiclesProps: vehicleAndPropSpawns.length }, null, 1));
