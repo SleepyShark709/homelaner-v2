@@ -13,7 +13,7 @@
       "textureFailures": 0,
       "unresolvedMaterialCacheKeys": 0,
       "ambiguousSlots": 0,
-      "fps": 76.12281146888265,
+      "fps": 63.965884861406806,
       "activeMeshes": 0,
       "warning": "",
       "scope": "",
@@ -63,7 +63,7 @@
             "position": [
               -51.62163582294822,
               0.47000000000000003,
-              -553.2476439783237
+              -553.4033974041735
             ],
             "velocity": [
               0,
@@ -83,18 +83,18 @@
           "stats": {
             "position": [
               -51.62163582294822,
-              4.281874999999996,
-              -555.1910862270897
+              4.346388888888885,
+              -555.3922371981961
             ],
             "velocity": [
               0,
-              4.483333333333322,
-              -2.979852715401586
+              3.6666666666666554,
+              -2.638519382068253
             ],
             "flying": false,
             "grounded": false,
             "state": "jump",
-            "speed": 5.383288955950988,
+            "speed": 4.517325422636075,
             "charge": 0
           },
           "clip": "Hero_IdleFlying",
@@ -104,8 +104,8 @@
           "stats": {
             "position": [
               -51.62163582294822,
-              4.281874999999996,
-              -555.2873430747832
+              4.346388888888885,
+              -555.4665063843723
             ],
             "velocity": [
               0,
@@ -125,18 +125,18 @@
           "stats": {
             "position": [
               -51.62163582294822,
-              13.961519444444466,
-              -555.2873430747832
+              15.234922222222252,
+              -555.4665063843723
             ],
             "velocity": [
               0,
-              27.989333333333377,
+              29.69600000000005,
               0
             ],
             "flying": true,
             "grounded": false,
             "state": "hover",
-            "speed": 27.989333333333377,
+            "speed": 29.69600000000005,
             "charge": 0
           },
           "clip": "Hero_IdleFlying",
@@ -146,18 +146,18 @@
           "stats": {
             "position": [
               -51.62163582294822,
-              0.47000000000000003,
-              -555.2873430747832
+              1.5741222222222633,
+              -555.4665063843723
             ],
             "velocity": [
               0,
-              0,
+              -40,
               0
             ],
             "flying": true,
-            "grounded": true,
+            "grounded": false,
             "state": "hover",
-            "speed": 0,
+            "speed": 40,
             "charge": 0
           },
           "clip": "Hero_IdleFlying",
@@ -168,7 +168,7 @@
             "position": [
               -51.62163582294822,
               0.47000000000000003,
-              -555.2873430747832
+              -555.4665063843723
             ],
             "velocity": [
               0,
@@ -185,10 +185,10 @@
           "active": true
         },
         "evidence": {
-          "walkDistance": 4.618451366506974,
-          "jumpHeight": 3.8118749999999957,
-          "ascendDelta": 9.67964444444447,
-          "descendDelta": -13.491519444444465
+          "walkDistance": 4.774204792356727,
+          "jumpHeight": 3.876388888888885,
+          "ascendDelta": 10.888533333333367,
+          "descendDelta": -13.66079999999999
         }
       },
       "consoleErrors": [],
@@ -199,7 +199,7 @@
       },
       "browser": "Chrome/156.0.8078.48",
       "url": "http://127.0.0.1:5178/?view=play&debug=1",
-      "durationMs": 30579,
+      "durationMs": 30753,
       "screenshot": "research/screenshots/play-b1.jpg"
     }
   ],

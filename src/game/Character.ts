@@ -40,13 +40,20 @@ export class Character {
       for (const mesh of this.container.meshes) {
         if (mesh.material?.name !== materialName) continue;
         const source = mesh.material;
-        const material = source.clone(`${source.name}-homelander`) as unknown as { albedoColor?: Color3; diffuseColor?: Color3 };
+        const material = source.clone(`${source.name}-homelander-${mesh.name}`) as unknown as { albedoColor?: Color3; diffuseColor?: Color3 };
         mesh.material = material as never;
         material.albedoColor?.copyFrom(color);
         material.diffuseColor?.copyFrom(color);
       }
     };
-    recolor('MI_Clothes_Contemporary_AllBlack', new Color3(0.05, 0.16, 0.46));
+    for (const mesh of this.container.meshes) {
+      if (mesh.material?.name !== 'MI_Clothes_Contemporary_AllBlack') continue;
+      const color = /primitive4$/.test(mesh.name) ? new Color3(0.62, 0.03, 0.035) : new Color3(0.05, 0.16, 0.46);
+      const material = mesh.material.clone(`${mesh.material.name}-homelander-${mesh.name}`) as unknown as { albedoColor?: Color3; diffuseColor?: Color3 };
+      mesh.material = material as never;
+      material.albedoColor?.copyFrom(color);
+      material.diffuseColor?.copyFrom(color);
+    }
     recolor('MI_Body_asian', new Color3(0.93, 0.76, 0.64));
     recolor('MI_Hair_Black', new Color3(0.88, 0.68, 0.28));
     for (const mesh of this.container.meshes) {
@@ -54,8 +61,8 @@ export class Character {
     }
     const spine = this.container.transformNodes.find(node => node.name === 'spine_03') ?? this.root;
     const capeMaterial = new StandardMaterial('homelander-cape-mat', this.scene);
-    capeMaterial.diffuseColor = new Color3(0.55, 0.03, 0.04);
-    capeMaterial.emissiveColor = new Color3(0.08, 0.005, 0.005);
+    capeMaterial.diffuseColor = new Color3(0.72, 0.035, 0.045);
+    capeMaterial.emissiveColor = new Color3(0.12, 0.008, 0.01);
     capeMaterial.backFaceCulling = false;
     const cape = CreatePlane('homelander-cape', { width: 0.68, height: 1.0, sideOrientation: Mesh.DOUBLESIDE }, this.scene);
     cape.material = capeMaterial;

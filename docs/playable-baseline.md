@@ -55,7 +55,7 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 
 **这不是 Homelander 正式模型**：工作区没有 Homelander 网格/贴图，角色体型、脸部、发型和斗篷形状仍是原角色占位；只用于验证换色/挂件/换模管线。正式替换需要提供有授权的 Homelander 模型（或明确允许下载/使用的外链）。
 
-截图 `play-homelander2.jpg`。
+截图 `play-homelander3.jpg`。
 
 ## 热视线预览（Shift+E）
 
