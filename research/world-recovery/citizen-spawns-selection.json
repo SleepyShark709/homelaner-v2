@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "source": "research/rea-audit/decoded-world/CitizenWayPoint.json",
+  "sourceSha256": "F984545FB9127B94C8561202234748886568170AE64FF7BC631D14FE4D02F88F",
+  "originUEcm": [
+    -10000,
+    -55000,
+    0
+  ],
+  "targetWorld": [
+    -50,
+    -548.63
+  ],
+  "radius": 110,
+  "minSpacing": 7,
+  "candidates": 967,
+  "selected": [
+    {
+      "id": "original-citizen-1",
+      "sourceActor": "BP_CharaSpawnPoint_C_8928",
+      "ue": [
+        5017.529296875,
+        198.5146484375,
+        0
+      ],
+      "world": [
+        -49.82470703125,
+        0,
+        -548.014853515625
+      ],
+      "distance": 0.6396349131591784
+    },
+    {
+      "id": "original-citizen-2",
+      "sourceActor": "BP_CharaSpawnPoint_C_9952",
+      "ue": [
+        4341.328125,
+        12.49951171875,
+        0
+      ],
+      "world": [
+        -56.58671875,
+        0,
+        -549.8750048828125
+      ],
+      "distance": 6.7033499871205136
+    },
+    {
+      "id": "original-citizen-3",
+      "sourceActor": "BP_CharaSpawnPoint_C_9981",
+      "ue": [
+        5809.6494140625,
+        39.4599609375,
+        0
+      ],
+      "world": [
+        -41.903505859375,
+        0,
+        -549.605400390625
+      ],
+      "distance": 8.1550366823949
+    },
+    {
+      "id": "original-citizen-4",
+      "sourceActor": "BP_CharaSpawnPoint_C_34196",
+      "ue": [
+        4116.666015625,
+        707.66748046875,
+        0
+      ],
+      "world": [
+        -58.83333984375,
+        0,
+        -542.9233251953125
+      ],
+      "distance": 10.516369626522094
+    },
+    {
+      "id": "original-citizen-5",
+      "sourceActor": "BP_CharaSpawnPoint_C_9156",
+      "ue": [
+        5092.2822265625,
+        -945.1328125,
+        0
+      ],
+      "world": [
+        -49.077177734375,
+        0,
+        -559.451328125
+      ],
+      "distance": 10.860605108503396
+    },
+    {
+      "id": "original-citizen-6",
+      "sourceActor": "BP_CharaSpawnPoint_C_9349",
+      "ue": [
+        4590.63671875,
+        1266.77734375,
+        0
+      ],
+      "world": [
+        -54.0936328125,
+        0,
+        -537.3322265625
+      ],
+      "distance": 12.016551678774494
+    },
+    {
+      "id": "original-citizen-7",
+      "sourceActor": "BP_CharaSpawnPoint_C_9154",
+      "ue": [
+        4306.76171875,
+        -926.37890625,
+        0
+      ],
+      "world": [
+        -56.9323828125,
+        0,
+        -559.2637890625
+      ],
+      "distance": 12.693911977195608
+    },
+    {
+      "id": "original-citizen-8",
+      "sourceActor": "BP_CharaSpawnPoint_C_998",
+      "ue": [
+        5261.771484375,
+        1507.19091796875,
+        0
+      ],
+      "world": [
+        -47.38228515625,
+        0,
+        -534.9280908203125
+      ],
+      "distance": 13.949722082234963
+    },
+    {
+      "id": "original-citizen-9",
+      "sourceActor": "BP_CharaSpawnPoint_C_9158",
+      "ue": [
+        5877.8046875,
+        -963.88671875,
+        0
+      ],
+      "world": [
+        -41.221953125,
+        0,
+        -559.6388671875
+      ],
+      "distance": 14.080101693230436
+    },
+    {
+      "id": "original-citizen-10",
+      "sourceActor": "BP_CharaSpawnPoint_C_9289",
+      "ue": [
+        6115.3037109375,
+        1022.61328125,
+        0
+      ],
+      "world": [
+        -38.846962890625,
+        0,
+        -539.7738671875
+      ],
+      "distance": 14.241535210634275
+    },
+    {
+      "id": "original-citizen-11",
+      "sourceActor": "BP_CharaSpawnPoint_C_9425",
+      "ue": [
+        3533.70703125,
+        251.82421875,
+        0
+      ],
+      "world": [
+        -64.6629296875,
+        0,
+        -547.4817578125
+      ],
+      "distance": 14.70781993164601
+    },
+    {
+      "id": "original-citizen-12",
+      "sourceActor": "BP_CharaSpawnPoint_C_9493",
+      "ue": [
+        6465.166015625,
+        -408,
+        0
+      ],
+      "world": [
+        -35.34833984375,
+        0,
+        -554.08
+      ],
+      "distance": 15.632454872291952
+    }
+  ],
+  "previewVehiclesProps": 6,
+  "caveats": [
+    "Citizen spawn positions are the nearest recovered BP_CharaSpawnPoint actors from CitizenWayPoint, converted with originUE [-10000,-55000,0] cm.",
+    "Citizen two-point patrol routes are a nearest-neighbour preview; original citizen AI/navigation/state machine is not recovered.",
+    "Vehicle/prop placements and routes remain the previous prototype preview, shifted by the same originUE offset."
+  ]
+}

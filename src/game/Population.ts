@@ -18,8 +18,8 @@ export class Population {
   private manifest!: Manifest;
   private paused = true;
   constructor(readonly scene: Scene, readonly walls: Obstacle[]) {}
-  async load(options: { worldOffset?: [number, number] } = {}): Promise<void> {
-    const response = await fetch('/assets/population-manifest.json');
+  async load(options: { worldOffset?: [number, number]; manifestUrl?: string } = {}): Promise<void> {
+    const response = await fetch(options.manifestUrl ?? '/assets/population-manifest.json');
     if (!response.ok) throw new Error('人车资源清单未生成');
     this.manifest = await response.json();
     // The previous prototype used a district-local origin. The restored world

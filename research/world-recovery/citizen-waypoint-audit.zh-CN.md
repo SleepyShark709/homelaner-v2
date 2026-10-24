@@ -24,15 +24,28 @@
 - Child waypoint 的 Billboard `RelativeLocation` 是同一局部帧的小坐标（如 `(200,200)`、`(200,13967)`）；把它与 spline 组件的 `RelativeLocation=(-14514,-51279)` 相加会得到远端位置，因此当前不能直接发布为路径。
 - 2,806 个 spawn 不是同时存在的市民；原版 spawner 的生成节奏、数量、导航寻路和状态机尚未解释。
 
-## 决定
+## 决定与可选检查
 
-本轮**不**把 waypoint/spawn 数据写入 `population-manifest.json`，也不把 preview 市民替换成这些位置；避免用未核清的坐标冒充原版路径。B3 下一步先解决：
+默认**不**把 waypoint/spawn 数据替换进 `population-manifest.json`，因为：
+
+- spawn Box 的 world transform/父组件链尚未闭合；
+- 2,806 个 spawn 不是同时存在的市民；
+- 12 个最近 spawn 点会挤在玩家附近（见 `play-original-citizens.jpg`），不能当默认人口。
+
+新增一个**可选**检查模式 `?view=play&population=original`：
+
+- `tools/asset-pipeline/export-citizen-spawns.mjs` 从解码数据取玩家附近 12 个 `BP_CharaSpawnPoint`；
+- 按 `originUE/100=(-100,-550)` 转成恢复世界坐标，写 `public/assets/world/population-original-citizens.json`；
+- 市民两点巡逻路线只是最近邻预览，不是原版路径；
+- 结果用于位置/密度检查，不是默认游戏人口。
+
+B3 下一步仍需解决：
 
 1. UAssetAPI 导出中 actor/component Outer 链、`Spline` 与 `BP_CharacterWayPoint` 的准确对应；
 2. spawn Box 的 world transform（父组件/Level transform）；
 3. spline 点局部→世界转换与 Landscape 高度；
-4. 只对玩家附近、父链可闭合的少量 spawn 做可视化/路径测试，再决定是否接入 Population。
+4. 原版 spawner 的生成节奏/数量/寻路状态机。
 
-现有 B2 仍使用旧原型 `population-manifest.json` 的预览位置/路线，已明确标注不是原版 AI。
+现有默认仍使用旧原型 `population-manifest.json` 的预览位置/路线，已明确标注不是原版 AI。
 
-证据：`research/rea-audit/decoded-world/CitizenWayPoint.json`；计数与最近点由 `research/rea-audit` 解码数据直接扫描得到，未写入原安装。
+证据：`research/rea-audit/decoded-world/CitizenWayPoint.json`；`tools/asset-pipeline/export-citizen-spawns.mjs`；`research/world-recovery/citizen-spawns-selection.json`；`research/screenshots/play-original-citizens.jpg`。
