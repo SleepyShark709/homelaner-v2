@@ -2,7 +2,7 @@ import './play-original.css';
 // Babylon's Ray side-effect is required for scene.createPickingRay/pickWithRay
 // used by the ground/plaza diagnostics.
 import '@babylonjs/core/Culling/ray';
-import { Vector3 } from '@babylonjs/core/Maths/math.vector';
+import { Matrix, Vector3 } from '@babylonjs/core/Maths/math.vector';
 import { DirectionalLight } from '@babylonjs/core/Lights/directionalLight';
 import { ShadowGenerator } from '@babylonjs/core/Lights/Shadows/shadowGenerator';
 import '@babylonjs/core/Lights/Shadows/shadowGeneratorSceneComponent';
@@ -316,7 +316,19 @@ try {
   document.body.dataset.ready = 'play';
   el('loading').hidden = true;
   if (new URLSearchParams(location.search).get('debug') === '1') {
-    (window as typeof window & { __undefeatedPlay?: unknown }).__undefeatedPlay = { viewer, player, character, input, collision, combat, population, shadows };
+    (window as typeof window & { __undefeatedPlay?: unknown }).__undefeatedPlay = {
+      viewer, player, character, input, collision, combat, population, shadows,
+      pick: (x: number, y: number) => {
+        for (const mesh of viewer.scene.meshes) {
+          mesh.isPickable = true;
+          const thin = mesh as unknown as { thinInstanceCount?: number; thinInstanceEnablePicking?: boolean };
+          if ((thin.thinInstanceCount ?? 0) > 0) thin.thinInstanceEnablePicking = true;
+        }
+        const ray = viewer.scene.createPickingRay(x, y, Matrix.Identity(), viewer.camera);
+        const hit = viewer.scene.pickWithRay(ray, () => true, true);
+        return hit?.hit ? { mesh: hit.pickedMesh?.name, material: hit.pickedMesh?.material?.name, point: hit.pickedPoint?.asArray() } : null;
+      },
+    };
   }
   console.info('B1 playable slice ready', { spawn, objects, collision: collision.stats });
 } catch (error) {

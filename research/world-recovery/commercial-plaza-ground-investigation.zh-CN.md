@@ -47,6 +47,15 @@
 
 `(91,181)` 仍是候选点；下一步应先确认子关卡/地形的高度对齐，再谈起点广场同机位。
 
+## Terrain active 检查（2026-10-25）
+
+- 覆盖候选点的正确 chunk `landscape-5269`：`visible=true`、`enabled=true`，但 `active=false`；
+- 远处 `landscape-5189` 是 active；这解释了为什么 `pickWithRay` 会命中远处低地。
+- 把所有 `landscape-*` 强制 `alwaysSelectAsActiveMesh=true`（288 个 mesh）后，画面仍没有出现砖石前景。
+- 因此 terrain active 状态确实异常，但强制 active 不是充分修复。
+
+调试辅助：play debug hook 增加 `pick(x,y)`，用 `Matrix.Identity()` 构造 picking ray，便于后续定位实际可见 mesh。
+
 ## Active mesh 检查（2026-10-25）
 
 - 默认情况下 `CommercialArea:676/677/678` 的 floor mesh `enabled=true`、`isVisible=true`，但 `isActiveMesh=false`，没有进入 `scene.getActiveMeshes()`。
