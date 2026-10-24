@@ -80,7 +80,7 @@ export class Population {
       if (paused || !actor.alive) group?.pause(); else group?.play(true);
     }
   }
-  update(dt: number): void {
+  update(dt: number, playerPosition?: Vec3): void {
     for (const actor of this.actors) {
       if (!actor.alive) {
         actor.defeatedTime += dt;
@@ -119,7 +119,8 @@ export class Population {
       if (actor.kind === 'vehicle' && distance > 0.01) {
         const forward: Vec3 = [dx / distance, 0, dz / distance];
         const blocked = this.actors.some(other => other !== actor && other.alive && other.kind === 'vehicle' && vehicleShouldHold(actor.position, other.position, forward));
-        if (blocked) continue;
+        const playerAhead = playerPosition ? vehicleShouldHold(actor.position, playerPosition, forward, 5) : false;
+        if (blocked || playerAhead) continue;
       }
       if (distance < speed * dt + 0.08) {
         actor.position = [...target];

@@ -362,7 +362,7 @@ try {
   viewer.scene.registerBeforeRender(() => {
     if (!player || !character || !input.active) return;
     const dt = Math.min(viewer.engine.getDeltaTime() / 1000, 0.05);
-    population?.update(dt);
+    population?.update(dt, player.position);
     player.setDynamicBoxes(population?.solidBoxes ?? []);
     accumulator += dt;
     while (accumulator >= 1 / 120) { player.update(1 / 120, input); accumulator -= 1 / 120; }
