@@ -52,6 +52,16 @@ test('ground Space jumps; airborne Space opens flight; flight Space exits', () =
   assert.equal(player.flying, false);
 });
 
+test('original jump velocity + GravityScale apex is about four metres', () => {
+  const { input, player } = make();
+  step(player, input, 0.3);
+  input.presses.add('Space');
+  player.update(1 / 120, input);
+  let apex = player.position[1];
+  step(player, input, 1, () => { apex = Math.max(apex, player.position[1]); });
+  assert.ok(apex > 3.8 && apex < 4.5, `expected ~4.08 m apex, got ${apex}`);
+});
+
 test('holding E on the ground charges flight after one second', () => {
   const { input, player } = make();
   step(player, input, 0.3);

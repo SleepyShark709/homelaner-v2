@@ -13,7 +13,7 @@
       "textureFailures": 0,
       "unresolvedMaterialCacheKeys": 0,
       "ambiguousSlots": 0,
-      "fps": 79.17656373744596,
+      "fps": 79.09306617360014,
       "activeMeshes": 0,
       "warning": "",
       "scope": "",
@@ -83,18 +83,18 @@
           "stats": {
             "position": [
               -51.621522924879145,
-              6.578041666666669,
+              4.346388888888885,
               -555.4657211753728
             ],
             "velocity": [
               0,
-              16.730000000000018,
+              3.6666666666666554,
               0
             ],
             "flying": false,
             "grounded": false,
             "state": "jump",
-            "speed": 16.730000000000018,
+            "speed": 3.6666666666666554,
             "charge": 0
           },
           "clip": "Hero_IdleFlying",
@@ -104,7 +104,7 @@
           "stats": {
             "position": [
               -51.621522924879145,
-              6.578041666666669,
+              4.346388888888885,
               -555.4657211753728
             ],
             "velocity": [
@@ -125,7 +125,7 @@
           "stats": {
             "position": [
               -51.621522924879145,
-              20.411375000000017,
+              17.846388888888917,
               -555.4657211753728
             ],
             "velocity": [
@@ -146,7 +146,7 @@
           "stats": {
             "position": [
               -51.621522924879145,
-              12.744708333333378,
+              10.51305555555561,
               -555.4657211753728
             ],
             "velocity": [
@@ -186,9 +186,9 @@
         },
         "evidence": {
           "walkDistance": 6.57605937737992,
-          "jumpHeight": 6.1080416666666695,
-          "ascendDelta": 13.833333333333348,
-          "descendDelta": -7.666666666666639
+          "jumpHeight": 3.876388888888885,
+          "ascendDelta": 13.500000000000032,
+          "descendDelta": -7.333333333333307
         }
       },
       "consoleErrors": [],
@@ -199,7 +199,7 @@
       },
       "browser": "Chrome/156.0.8078.48",
       "url": "http://127.0.0.1:5178/?view=play&debug=1",
-      "durationMs": 29105,
+      "durationMs": 29864,
       "screenshot": "research/screenshots/play-b1.jpg"
     }
   ],
@@ -215,7 +215,7 @@
   },
   "tests": {
     "typecheck": "passed",
-    "controller": "9/9 passed (scripts/test-play-controller.mjs)",
+    "controller": "10/10 passed (scripts/test-play-controller.mjs)",
     "worldAssetClosure": "passed before B1 (2,292 files)",
     "browserProbe": "passed (scripts/probe-play-b1.js); walk/jump/air-flight/E ascend/Q descend/exit flight and animation clips observed"
   },

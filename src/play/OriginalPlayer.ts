@@ -6,6 +6,9 @@ import type { SpatialBoxes } from './CollisionWorld.ts';
 import type { TerrainHeightfield } from './TerrainHeightfield.ts';
 import type { WalkableSurfaces } from './WalkableSurfaces.ts';
 
+/** UE GravityScale 5 * 980 cm/s^2 = 49 m/s^2, recovered from HeroComponent. */
+const ORIGINAL_GRAVITY = 49;
+
 export interface PlaySpawn {
   position: Vec3;
   /** Original actor/coordinate evidence, kept separate from the preview clamp. */
@@ -149,7 +152,7 @@ export class OriginalPlayer {
     this.velocity[0] += Math.max(-acceleration, Math.min(acceleration, desiredX - this.velocity[0]));
     this.velocity[2] += Math.max(-acceleration, Math.min(acceleration, desiredZ - this.velocity[2]));
     if (this.flying) this.velocity[1] += Math.max(-acceleration, Math.min(acceleration, desiredY - this.velocity[1]));
-    else if (!this.grounded) this.velocity[1] -= TUNING.gravity * dt;
+    else if (!this.grounded) this.velocity[1] -= ORIGINAL_GRAVITY * dt;
     else if (this.velocity[1] < 0) this.velocity[1] = -0.4;
 
     const nearby: Obstacle[] = this.boxes.nearby(this.position[0], this.position[2], 8);
