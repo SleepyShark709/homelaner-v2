@@ -47,6 +47,14 @@
 
 `(91,181)` 仍是候选点；下一步应先确认子关卡/地形的高度对齐，再谈起点广场同机位。
 
+## Active mesh 检查（2026-10-25）
+
+- 默认情况下 `CommercialArea:676/677/678` 的 floor mesh `enabled=true`、`isVisible=true`，但 `isActiveMesh=false`，没有进入 `scene.getActiveMeshes()`。
+- 设置 `alwaysSelectAsActiveMesh=true` 后，它们进入 active 列表（activeCount=892），但画面仍是草地。
+- 同时设置 active + `backFaceCulling=false` + `flipFaces` + 关闭 depth write：仍不变。
+
+因此问题不只是视锥剔除；floor mesh 即使进入 active 列表也没有覆盖前景地面。需要继续查实例几何/材质或其它遮挡 mesh。
+
 ## Ray 结果修正
 
 进一步列出具体 terrain mesh 后：
