@@ -31,6 +31,8 @@ powershell -ExecutionPolicy Bypass -File E:\undefeated-web\scripts\dev.ps1
 npm run typecheck
 npm run verify:world
 npm run test:world
+npm run test:streaming
+npm run test:sky
 npm run verify:assets
 npm run verify:game
 npm test

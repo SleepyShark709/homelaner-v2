@@ -38,7 +38,7 @@ REA/Ghidra 对原 Shipping EXE 的函数、交叉引用和反编译结果位于 
 | 默认页面与场景装配 | `src/world.ts`, `src/world/OriginalWorld.ts` |
 | 原材质通道接入 | `src/world/OriginalMaterials.ts` |
 | 原编译材质计算 / 静态材质共享 | `src/world/RecoveredShaderPlugin.ts`, `src/world/material-identity.ts` |
-| shader 恢复与数值证据 | `tools/asset-pipeline/restore-evidenced-shaders.py`, `research/world-recovery/material-shader-recovery/report.zh-CN.md` |
+| shader 恢复与数值证据 | `tools/asset-pipeline/restore-evidenced-shaders.py`, `research/world-recovery/material-shader-recovery/report.zh-CN.md`, `round2-report.zh-CN.md` |
 | 固定纹理角色恢复 | `tools/asset-pipeline/restore-texture-sample-materials.py`, `research/world-recovery/material-shader-recovery/texture-sample-recovery.json` |
 | 天空 HDR 合同与 Web 接入 | `public/assets/world/sky-material-manifest.json`, `src/world/RecoveredSurfacePlugins.ts`, `research/world-recovery/sky-recovery/` |
 | 浏览器验证与截图脚本 | `scripts/capture-world.mjs`, `research/world-recovery/browser-validation-pass3.json` |
