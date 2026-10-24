@@ -93,6 +93,10 @@ export class Population {
           actor.root.rotation.x = -Math.min(Math.PI / 2, actor.defeatedTime * 5);
         }
         if (actor.defeatedTime > 2.5) actor.root.setEnabled(false);
+        // Preview city lifecycle: citizens return after a short delay. The
+        // original spawner cadence/count is not recovered; vehicles/props stay
+        // destroyed for the rest of the session.
+        if (actor.kind === 'citizen' && actor.defeatedTime >= 8) this.revive(actor);
         continue;
       }
       if (actor.kind === 'prop') continue;
@@ -146,11 +150,12 @@ export class Population {
     return result;
   }
   reset(): void {
-    for (const actor of this.actors) {
-      actor.alive = true; actor.health = this.health(actor.kind); actor.position = [...actor.spawn.position]; actor.defeatedTime = 0; actor.velocity = [0, 0, 0]; actor.fleeTime = 0; actor.routeIndex = 1; actor.routeDirection = 1;
-      actor.root.setEnabled(true); actor.root.rotation.x = 0; this.place(actor, actor.spawn.yaw);
-      actor.clip = ''; this.animate(actor, 'Citizen_N_Walk_F');
-    }
+    for (const actor of this.actors) this.revive(actor);
+  }
+  private revive(actor: Actor): void {
+    actor.alive = true; actor.health = this.health(actor.kind); actor.position = [...actor.spawn.position]; actor.defeatedTime = 0; actor.velocity = [0, 0, 0]; actor.fleeTime = 0; actor.routeIndex = 1; actor.routeDirection = 1;
+    actor.root.setEnabled(true); actor.root.rotation.x = 0; this.place(actor, actor.spawn.yaw);
+    actor.clip = ''; this.animate(actor, 'Citizen_N_Walk_F');
   }
   /** All live actor AABBs, including citizens. The original game has actor
    * collision; this proxy is still an AABB, not the cooked capsule. */
