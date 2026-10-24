@@ -24,11 +24,13 @@ DefaultArmLength   = CameraBoom.TargetArmLength
 
 - 普通第三人称：臂长 400 cm、SocketOffset(0,50,90)、boom Z70、FOV 按 rank 0 的 92° 水平视场、lag 15；
 - 攻击时目标臂长 **650 cm**，用 `CameraInterpSpeed=2` 插值；
+- `CharacterSpeed > 6000 cm/s` 时切到 **FarArmLength=800 cm**，用 `FarCameraInterpSpeed=1` 插值；低于阈值回到普通/攻击臂长；
 - 相机碰撞 AABB 收缩。
 
 ## 未实现/未证明
 
-- `FarArmLength=800` 与 Far/Zoom 状态的具体触发分支；
+- HPS 2..27 中其它臂长（800/0/400/300/450/500/350）的具体触发分支；
+- `FarCameraInterpSpeed` 的动态 4/8/16 分支（当前只用 1 的 Far 切换）；
 - `ZoomSocketOffset=(300,50,30)` 的输入与状态；
 - 相机弹簧后处理、碰撞后控制和动画 root-motion 对相机的影响。
 

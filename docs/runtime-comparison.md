@@ -16,7 +16,7 @@
 |---|---|---|
 | 角色外观 | 黑色短袖/长裤，体型、发型轮廓与当前 Web 角色一致 | 同一原 `hero.gltf`，黑色服装与比例基本一致 |
 | 角色阴影 | 角色在铺装上有清晰动态阴影 | 已加入预览角色阴影（跟随预览太阳方向）；级联/软硬/接缝与原版不同 |
-| 相机 | 第三人称，角色约占画面高度 1/3，距离更近、略高 | 已按原 `CameraBoom` 400 cm/SocketOffset(0,50,90)/boom Z70 cm 校准，FOV 按 HeroRank 0 的 92° 水平视场，CameraLagSpeed/RotationLagSpeed=15；攻击时插值到 650 cm。Far/Zoom 切换、弹簧回弹和碰撞控制仍不同 |
+| 相机 | 第三人称，角色约占画面高度 1/3，距离更近、略高 | 已按原 `CameraBoom` 400 cm/SocketOffset(0,50,90)/boom Z70 cm 校准，FOV 按 HeroRank 0 的 92° 水平视场，CameraLagSpeed/RotationLagSpeed=15；攻击时插值到 650 cm，CharacterSpeed>60 m/s 时 FarArmLength=800 cm。其它 Far/Zoom 状态、弹簧回弹和碰撞控制仍不同 |
 | 光照/雾 | 原版光照、树影、环境雾与高光 | Babylon 预览半球/方向光；无原雾/后处理 |
 | 世界 | 起点广场：长椅、树、铺装、成排建筑立面 | ResidentialArea1 街道：砖砌公寓、车道、预览行人和车辆 |
 | 远景 | 城市立面/天空，无明显白色山体 | 白色未恢复材质的背景山体非常显眼 |

@@ -57,7 +57,8 @@
     "default": "PlayerBP CameraBoom 400 cm, SocketOffset(0,50,90), boom Z70, FOV 92 horizontal at HeroRank 0, CameraLagSpeed/RotationLagSpeed 15",
     "attack": "attack target arm 650 cm interpolated at CameraInterpSpeed 2 (HeroComponent AST)",
     "collision": "shortens third-person offset against nearby AABB proxies",
-    "cameraInsideBox": false
+    "cameraInsideBox": false,
+    "far": "CharacterSpeed > 60 m/s targets FarArmLength 800 cm with FarCameraInterpSpeed 1; browser probe reached 66.3 m/s and camera distance 11.0 m"
   },
   "tests": {
     "typecheck": "passed",
