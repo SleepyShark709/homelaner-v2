@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "source": "research/rea-audit/decoded-world/CitizenWayPoint.json",
+  "preview": "public/assets/population-manifest.json",
+  "originUEcm": [
+    -10000,
+    -55000,
+    0
+  ],
+  "childCandidates": 558,
+  "citizens": 8,
+  "usedChildren": 4,
+  "mappings": [
+    {
+      "spawn": "citizen--1-0",
+      "world": [
+        -59.000015896295054,
+        0.5120550394058228,
+        -578.1291926118167
+      ],
+      "nearestChild": "BP_CharaChildWaypoint_C_685",
+      "nearestDistance": 19.050210638153136,
+      "routeSource": [
+        "BP_CharaChildWaypoint_C_685",
+        "BP_CharaChildWaypoint_C_685"
+      ]
+    },
+    {
+      "spawn": "citizen--1-1",
+      "world": [
+        -59.000015896295054,
+        0.5120550394058228,
+        -570.1291926118167
+      ],
+      "nearestChild": "BP_CharaChildWaypoint_C_685",
+      "nearestDistance": 11.1159094800621,
+      "routeSource": [
+        "BP_CharaChildWaypoint_C_685",
+        "BP_CharaChildWaypoint_C_685"
+      ]
+    },
+    {
+      "spawn": "citizen--1-2",
+      "world": [
+        -59.000015896295054,
+        0.5120550394058228,
+        -562.1291926118167
+      ],
+      "nearestChild": "BP_CharaChildWaypoint_C_685",
+      "nearestDistance": 3.495191236522842,
+      "routeSource": [
+        "BP_CharaChildWaypoint_C_685",
+        "BP_CharaChildWaypoint_C_685"
+      ]
+    },
+    {
+      "spawn": "citizen--1-3",
+      "world": [
+        -59.000015896295054,
+        0.5120550394058228,
+        -554.1291926118167
+      ],
+      "nearestChild": "BP_CharaChildWaypoint_C_685",
+      "nearestDistance": 5.373014050865462,
+      "routeSource": [
+        "BP_CharaChildWaypoint_C_685",
+        "BP_CharaChildWaypoint_C_685"
+      ]
+    },
+    {
+      "spawn": "citizen-1-0",
+      "world": [
+        -41.000015896295054,
+        0.5120550394058228,
+        -575.1291926118167
+      ],
+      "nearestChild": "BP_CharaChildWaypoint_C_761",
+      "nearestDistance": 10.281980556852567,
+      "routeSource": [
+        "BP_CharaChildWaypoint_C_761",
+        "BP_CharaChildWaypoint_C_761"
+      ]
+    },
+    {
+      "spawn": "citizen-1-1",
+      "world": [
+        -41.000015896295054,
+        0.5120550394058228,
+        -567.1291926118167
+      ],
+      "nearestChild": "BP_CharaChildWaypoint_C_686",
+      "nearestDistance": 8.272887606872867,
+      "routeSource": [
+        "BP_CharaChildWaypoint_C_686",
+        "BP_CharaChildWaypoint_C_686"
+      ]
+    },
+    {
+      "spawn": "citizen-1-2",
+      "world": [
+        -41.000015896295054,
+        0.5120550394058228,
+        -559.1291926118167
+      ],
+      "nearestChild": "BP_CharaChildWaypoint_C_686",
+      "nearestDistance": 3.7544756713664795,
+      "routeSource": [
+        "BP_CharaChildWaypoint_C_686",
+        "BP_CharaChildWaypoint_C_686"
+      ]
+    },
+    {
+      "spawn": "citizen-1-3",
+      "world": [
+        -41.000015896295054,
+        0.5120550394058228,
+        -551.1291926118167
+      ],
+      "nearestChild": "BP_CharaChildWaypoint_C_712",
+      "nearestDistance": 3.8786398483042333,
+      "routeSource": [
+        "BP_CharaChildWaypoint_C_712",
+        "BP_CharaChildWaypoint_C_712"
+      ]
+    }
+  ],
+  "caveats": [
+    "Preview citizen placements are retained; patrol routes are replaced by nearest recovered BP_CharaChildWaypoint positions (same parent where available).",
+    "Route order/traversal and citizen AI/state machine are still preview, not recovered.",
+    "Vehicle/prop placements and routes remain the previous prototype preview shifted by originUE."
+  ]
+}

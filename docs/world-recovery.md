@@ -52,6 +52,7 @@ REA/Ghidra 对原 Shipping EXE 的函数、交叉引用和反编译结果位于 
 | HeroComponent 相机契约 | `research/world-recovery/hero-camera-contract.zh-CN.md` |
 | 可走楼板/广场地面 | `tools/asset-pipeline/export-walkable-surfaces.mjs`, `src/play/WalkableSurfaces.ts` |
 | 原版 spawn 可选检查 | `tools/asset-pipeline/export-citizen-spawns.mjs`, `research/world-recovery/citizen-spawns-selection.json` |
+| 预览人口 child-waypoint 路线 | `tools/asset-pipeline/export-preview-waypoint-routes.mjs`, `research/world-recovery/preview-waypoint-routes.json` |
 | 原启动与条件流送证据 | `research/streaming-contract.md`, `public/assets/world/streaming-manifest.json` |
 | 挂点 / 骨骼材质分段 | `research/world-recovery/geometry-socket-resolution.json`, `geometry-override-validation.json` |
 | 原程序运行观察 | `research/runtime-observation/report.zh-CN.txt` |

@@ -46,6 +46,6 @@ B3 下一步仍需解决：
 3. spline 点局部→世界转换与 Landscape 高度；
 4. 原版 spawner 的生成节奏/数量/寻路状态机。
 
-现有默认仍使用旧原型 `population-manifest.json` 的预览位置/路线，已明确标注不是原版 AI。
+现有默认使用旧原型 `population-manifest.json` 的预览位置；若 `population-waypoint-routes.json` 存在，市民短路线替换为最近原版 child waypoint（同父优先）。路线顺序/遍历、spawner 节奏和 AI 仍是预览。
 
 证据：`research/rea-audit/decoded-world/CitizenWayPoint.json`；`tools/asset-pipeline/export-citizen-spawns.mjs`；`research/world-recovery/citizen-spawns-selection.json`；`research/screenshots/play-original-citizens.jpg`。

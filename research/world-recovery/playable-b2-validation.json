@@ -21,7 +21,7 @@
       "/assets/original/vehicle/vehicle.gltf",
       "/assets/population/meshes/NewspaperBox/NewspaperBox.gltf"
     ],
-    "placement": "previous prototype population-manifest, shifted by its originUE; original meshes/animations, preview placements/routes, not recovered original AI or quests"
+    "placement": "previous prototype population-manifest placements, shifted by originUE; default citizen routes use the nearest recovered BP_CharaChildWaypoint positions when population-waypoint-routes.json exists. Route order/traversal, AI and traffic are not recovered."
   },
   "combat": {
     "mode": "baseline",
