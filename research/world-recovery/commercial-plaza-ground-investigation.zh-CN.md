@@ -21,6 +21,18 @@
 
 `?debug=floors` 可直接复现红色楼板标记。
 
+## 追加实验（2026-10-25）
+
+- `?debug=floors` 把 `SM_Floor12000x15000` 楼板染红：红色楼板只出现在远处边缘，玩家脚下仍是草地。
+- 把材质名包含 `FloorBrick` 的 **29 个 mesh** 全部染红：前景仍不变，红色只在远处边缘。
+- 修改 floor thin-instance `matrixData` 的 Y 平移 +0.2、`zOffset=-8`、`backFaceCulling=false`、`disableDepthWrite=true/depthFunction=519/renderingGroupId=1`：前景均不变。
+- 直接读取 `landscape-5269` 高度场在 `(91,181)` 的 u16：`32768`，按 manifest 计算高度 **0 m**；楼板顶面 **0.65 m**，玩家约 0.67 m。
+- 因此当前可见草地既不是高度场数值，也不是这些 floor mesh 的可见顶面；需要继续定位实际 foreground mesh/材质。
+
+结论不变：候选点仍未证明，不能把红色楼板或草地当作原版起点广场。
+
+证据截图：`play-plaza-redfloor2.jpg`、`play-plaza-all-red.jpg`、`play-plaza-nodepth.jpg`、`play-plaza-instances-raised2.jpg`。
+
 ## 结论
 
 楼板几何/实例存在，但**玩家附近可见地面不是这些 floor mesh**，或它们被地形/另一块草地面遮住。当前无法据此把候选点认定为原版起点广场；下一步需要：
