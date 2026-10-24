@@ -46,7 +46,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <kbd>R</kbd><span>回到出生点</span>
     </div>
   </aside>
-  <div class="play-hud"><div>位置 <b id="hud-position">—</b></div><div>状态 <b id="hud-mode">—</b></div><div>速度 <b id="hud-speed">—</b></div><div>FPS <b id="hud-fps">—</b></div></div>
+  <div class="play-hud"><div>位置 <b id="hud-position">—</b></div><div>状态 <b id="hud-mode">—</b></div><div>速度 <b id="hud-speed">—</b></div><div id="hud-quest-row" hidden>任务区域 <b id="hud-quests">—</b></div><div>FPS <b id="hud-fps">—</b></div></div>
   <div class="play-loading" id="loading"><div><strong id="load-title">装配原版可玩街区</strong><p id="load-message">读取原关卡、材质与地形…</p><progress id="progress" max="1" value="0"></progress></div></div>
   <div class="play-paused" id="paused" hidden>已暂停 · 点击继续</div>
   <div class="play-quest" id="quest-hint" hidden></div>`;
@@ -81,6 +81,7 @@ let shadows: ShadowGenerator | undefined;
 type QuestArea = { id: string; kind: string; position: Vec3 };
 let questAreas: QuestArea[] = [];
 let questMessageUntil = 0;
+const visitedQuests = new Set<string>();
 const questHint = el('quest-hint');
 
 viewer.onProgress = (message, done, total) => {
@@ -146,6 +147,7 @@ try {
   if (params.get('quests') === '1') {
     const quests = await fetch('/assets/world/quest-areas.json').then(response => response.ok ? response.json() : null).catch(() => null) as { areas?: QuestArea[] } | null;
     questAreas = quests?.areas ?? [];
+    if (questAreas.length) el('hud-quest-row').hidden = false;
     for (const area of questAreas) {
       const marker = CreateTorus(`quest/${area.id}`, { diameter: 1.6, thickness: 0.14, tessellation: 24 }, viewer.scene);
       marker.position.set(area.position[0], area.position[1] + 0.3, area.position[2]);
@@ -384,15 +386,17 @@ try {
           if (distance < 6 && (!nearest || distance < nearest.distance)) nearest = { area, distance };
         }
         if (nearest) {
+          visitedQuests.add(nearest.area.id);
           if (input.pressed('KeyF')) questMessageUntil = performance.now() + 2200;
           const active = performance.now() < questMessageUntil;
           questHint.hidden = false;
           questHint.textContent = active
             ? `任务区域 ${nearest.area.id} · 原版任务状态未恢复`
-            : `任务区域 ${nearest.area.id} · F 查看`;
+            : `任务区域 ${nearest.area.id} · 已发现 · F 查看`;
         } else {
           questHint.hidden = true;
         }
+        el('hud-quests').textContent = `${visitedQuests.size}/${questAreas.length}`;
       } else {
         questHint.hidden = true;
       }

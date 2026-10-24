@@ -51,9 +51,11 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 - 从 MainLevel 解码出 21 个 `FireQuest_BP`/`MatQuest_BP` 触发区域；
 - 橘色圆环 = FireQuest，蓝色圆环 = MatQuest；
 - 位置来自 actor root 的 `RelativeLocation`，半径来自 Sphere/Box 组件；
-- **只可视化触发区域并显示提示**：靠近 6 m 内按 F 会显示“任务区域 · <actor> · 原版任务状态未恢复”；原版任务状态机、完成条件、奖励和任务 UI 未恢复。
+- 靠近 6 m 内自动标记为**已发现**，HUD 显示 `任务区域 x/21`；
+- 按 F 显示“任务区域 · <actor> · 原版任务状态未恢复”；
+- 原版任务状态机、完成条件、奖励和任务 UI 未恢复，F 不会真正完成任务。
 
-脚本：`tools/asset-pipeline/export-quest-areas.mjs`；证据：`research/world-recovery/quest-areas.json`。截图 `play-quest-marker.jpg`、`play-quest-interaction.jpg`。
+脚本：`tools/asset-pipeline/export-quest-areas.mjs`；证据：`research/world-recovery/quest-areas.json`。截图 `play-quest-marker.jpg`、`play-quest-visit.jpg`。
 
 ## Homelander 风格占位（非正式换模）
 
