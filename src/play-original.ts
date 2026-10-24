@@ -131,7 +131,18 @@ try {
   input.yaw = legacy ? Math.PI : 2 * Math.atan2(rotation[1], rotation[3]);
   const candidateGround = terrain.heightAt(baseX, baseZ) ?? 0;
   let spawn: Vec3 = [baseX, candidateGround + 0.02, baseZ];
-  for (const [dx, dz] of [[0, 0], [3, 0], [-3, 0], [0, 3], [0, -3], [5, 5], [-5, 5], [5, -5], [-5, -5]]) {
+  // The original spawn point is not always a viewer-safe point (district
+  // centres can be inside collision proxies). Search outward in rings up to
+  // 30 m; keep the first terrain point outside the static AABB set.
+  const spawnOffsets: Array<[number, number]> = [[0, 0]];
+  for (let radius = 3; radius <= 30; radius += 3) {
+    for (let dx = -radius; dx <= radius; dx += 3) {
+      for (let dz = -radius; dz <= radius; dz += 3) {
+        if (Math.max(Math.abs(dx), Math.abs(dz)) === radius) spawnOffsets.push([dx, dz]);
+      }
+    }
+  }
+  for (const [dx, dz] of spawnOffsets) {
     const x = baseX + dx, z = baseZ + dz;
     const y = (terrain.heightAt(x, z) ?? 0) + 0.02;
     if (!insideBox([x, y, z], collision.boxes)) { spawn = [x, y, z]; break; }
