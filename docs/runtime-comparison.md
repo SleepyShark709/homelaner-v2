@@ -28,6 +28,8 @@
 
 ![起点广场候选对照](../research/runtime-observation/comparison-start-plaza-candidate.jpg)
 
+楼板几何存在但被草地/其它地面遮挡的排查见 [commercial-plaza-ground-investigation.zh-CN.md](../research/world-recovery/commercial-plaza-ground-investigation.zh-CN.md)。
+
 ## 结论与下一步
 
 这轮确认了“原角色确实回到原街区、比例/服装方向基本一致”，并补了预览角色阴影，但仍暴露高优先级视觉缺口：

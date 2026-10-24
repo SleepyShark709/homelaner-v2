@@ -93,6 +93,14 @@ try {
       mesh.isVisible = false;
     }
   }
+  if (new URLSearchParams(location.search).get('debug') === 'floors') {
+    for (const mesh of viewer.scene.meshes) {
+      if (!/SM_Floor12000x15000/i.test(mesh.name)) continue;
+      const material = mesh.material as unknown as { emissiveColor?: { set(...values: number[]): void }; albedoColor?: { set(...values: number[]): void } } | null;
+      material?.emissiveColor?.set(1, 0, 0);
+      material?.albedoColor?.set(1, 0, 0);
+    }
+  }
   el('load-title').textContent = '载入原角色与地形';
   el('load-message').textContent = '读取 144 块原高度场与街区碰撞代理…';
   // The original program shows a dynamic character shadow. Use the viewer's

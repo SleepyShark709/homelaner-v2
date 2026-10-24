@@ -48,6 +48,7 @@ REA/Ghidra 对原 Shipping EXE 的函数、交叉引用和反编译结果位于 
 | 原版市民 waypoint 审计 | `research/world-recovery/citizen-waypoint-audit.zh-CN.md` |
 | 首次原程序/Web 视觉对照 | `docs/runtime-comparison.md`, `research/runtime-observation/comparison-character-camera.jpg` |
 | 起点广场候选对照 | `research/runtime-observation/comparison-start-plaza-candidate.jpg` |
+| CommercialArea 地面调查 | `research/world-recovery/commercial-plaza-ground-investigation.zh-CN.md` |
 | HeroComponent 相机契约 | `research/world-recovery/hero-camera-contract.zh-CN.md` |
 | 可走楼板/广场地面 | `tools/asset-pipeline/export-walkable-surfaces.mjs`, `src/play/WalkableSurfaces.ts` |
 | 原版 spawn 可选检查 | `tools/asset-pipeline/export-citizen-spawns.mjs`, `research/world-recovery/citizen-spawns-selection.json` |

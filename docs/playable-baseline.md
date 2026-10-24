@@ -61,7 +61,7 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 - `SM_Floor12000x15000`/`MI_GroundBrick` 楼板在附近存在，但地形/楼板可见性尚未对齐；
 - 原程序建筑位置、长椅排列、相机和光照还没有逐项匹配。
 
-这组坐标作为下一步同机位对照的候选，而不是完成结论。
+这组坐标作为下一步同机位对照的候选，而不是完成结论。楼板/草地遮挡调查见 [commercial-plaza-ground-investigation.zh-CN.md](../research/world-recovery/commercial-plaza-ground-investigation.zh-CN.md)。
 
 ## 多区可玩检查
 
