@@ -42,6 +42,21 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 
 截图：[play-b1.jpg](../research/screenshots/play-b1.jpg)、[play-b2.jpg](../research/screenshots/play-b2.jpg)、[play-b3.jpg](../research/screenshots/play-b3.jpg)。记录：[playable-b1-validation.json](../research/world-recovery/playable-b1-validation.json)、[playable-b2-validation.json](../research/world-recovery/playable-b2-validation.json)。
 
+## Homelander 风格占位（非正式换模）
+
+```text
+/?view=play&skin=homelander
+```
+
+- 复用原 `hero.gltf` 骨架、绑定和全部原动画；
+- 把黑色服装改为蓝色、头发改金色、肤色提亮；
+- 隐藏原墨镜，追加红色斗篷和金色胸前徽章；
+- 保留 Shift+E 热视线、右键远程和 `mode=free`。
+
+**这不是 Homelander 正式模型**：工作区没有 Homelander 网格/贴图，角色体型、脸部、发型和斗篷形状仍是原角色占位；只用于验证换色/挂件/换模管线。正式替换需要提供有授权的 Homelander 模型（或明确允许下载/使用的外链）。
+
+截图 `play-homelander2.jpg`。
+
 ## 热视线预览（Shift+E）
 
 - 按住 **Shift+E**：进入热视线，HUD/动作状态标记为热视线；

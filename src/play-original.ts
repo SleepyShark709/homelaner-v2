@@ -236,7 +236,11 @@ try {
     player.heading = input.yaw;
   }
   character = new Character(viewer.scene);
-  await character.load(shadows);
+  await character.load(shadows, params.get('skin') === 'homelander' ? 'homelander' : 'original');
+  if (params.get('skin') === 'homelander' && !freeMode) {
+    const badge = document.querySelector<HTMLElement>('.play-badge');
+    if (badge) badge.textContent = 'Homelander 风格占位 · 原骨架';
+  }
   character.update(player, 1);
   // Preview population: original citizen/vehicle/prop meshes and animations,
   // but placements/routes come from the previous prototype manifest, not a

@@ -1,5 +1,9 @@
 import { Scene } from '@babylonjs/core/scene';
 import { TransformNode } from '@babylonjs/core/Meshes/transformNode';
+import { Mesh } from '@babylonjs/core/Meshes/mesh';
+import { CreatePlane } from '@babylonjs/core/Meshes/Builders/planeBuilder';
+import { StandardMaterial } from '@babylonjs/core/Materials/standardMaterial';
+import { Color3 } from '@babylonjs/core/Maths/math.color';
 import { LoadAssetContainerAsync } from '@babylonjs/core/Loading/sceneLoader';
 import type { AssetContainer } from '@babylonjs/core/assetContainer';
 import type { ShadowGenerator } from '@babylonjs/core/Lights/Shadows/shadowGenerator';
@@ -14,14 +18,16 @@ export class Character {
   private clip = '';
   private yaw = Math.PI;
   private action = '';
+  private extras: Mesh[] = [];
   constructor(readonly scene: Scene) { this.root = new TransformNode('player-visual', scene); this.root.scaling.setAll(1.05); }
-  async load(shadows?: ShadowGenerator): Promise<void> {
+  async load(shadows?: ShadowGenerator, skin: 'original' | 'homelander' = 'original'): Promise<void> {
     this.container = await LoadAssetContainerAsync('/assets/character/hero.gltf', this.scene);
     this.container.addAllToScene();
     this.container.animationGroups.forEach(group => group.stop());
     this.container.skeletons.forEach(skeleton => skeleton.returnToRest());
     this.container.rootNodes.forEach(node => { node.parent = this.root; });
     this.container.meshes.filter(mesh => mesh.getTotalVertices() > 0).forEach(mesh => { mesh.isPickable = false; shadows?.addShadowCaster(mesh); });
+    if (skin === 'homelander') this.homelanderStyle(shadows);
     for (const group of this.container.animationGroups) {
       for (const animation of group.targetedAnimations) {
         animation.animation.enableBlending = true;
@@ -29,6 +35,47 @@ export class Character {
       }
     }
   }
+  private homelanderStyle(shadows?: ShadowGenerator): void {
+    const recolor = (materialName: string, color: Color3) => {
+      for (const mesh of this.container.meshes) {
+        if (mesh.material?.name !== materialName) continue;
+        const source = mesh.material;
+        const material = source.clone(`${source.name}-homelander`) as unknown as { albedoColor?: Color3; diffuseColor?: Color3 };
+        mesh.material = material as never;
+        material.albedoColor?.copyFrom(color);
+        material.diffuseColor?.copyFrom(color);
+      }
+    };
+    recolor('MI_Clothes_Contemporary_AllBlack', new Color3(0.05, 0.16, 0.46));
+    recolor('MI_Body_asian', new Color3(0.93, 0.76, 0.64));
+    recolor('MI_Hair_Black', new Color3(0.88, 0.68, 0.28));
+    for (const mesh of this.container.meshes) {
+      if (/sunglasses/i.test(mesh.name)) mesh.setEnabled(false);
+    }
+    const spine = this.container.transformNodes.find(node => node.name === 'spine_03') ?? this.root;
+    const capeMaterial = new StandardMaterial('homelander-cape-mat', this.scene);
+    capeMaterial.diffuseColor = new Color3(0.55, 0.03, 0.04);
+    capeMaterial.emissiveColor = new Color3(0.08, 0.005, 0.005);
+    capeMaterial.backFaceCulling = false;
+    const cape = CreatePlane('homelander-cape', { width: 0.68, height: 1.0, sideOrientation: Mesh.DOUBLESIDE }, this.scene);
+    cape.material = capeMaterial;
+    cape.parent = this.root;
+    cape.position.set(0, 1.0, -0.2);
+    cape.rotation.y = 0;
+    cape.isPickable = false;
+    shadows?.addShadowCaster(cape);
+    this.extras.push(cape);
+    const emblemMaterial = new StandardMaterial('homelander-emblem-mat', this.scene);
+    emblemMaterial.diffuseColor = new Color3(0.95, 0.72, 0.18);
+    emblemMaterial.backFaceCulling = false;
+    const emblem = CreatePlane('homelander-emblem', { width: 0.24, height: 0.13, sideOrientation: Mesh.DOUBLESIDE }, this.scene);
+    emblem.material = emblemMaterial;
+    emblem.parent = spine;
+    emblem.position.set(0, 0.22, 0.16);
+    emblem.isPickable = false;
+    this.extras.push(emblem);
+  }
+
   update(motor: MotionSource, dt: number): void {
     this.root.position.copyFromFloats(...motor.position);
     this.root.position.y += 0.026;
@@ -65,5 +112,5 @@ export class Character {
     const sin = Math.sin(this.yaw), cos = Math.cos(this.yaw);
     return [-0.032, 0.032].map(side => [x + sin * 0.12 + cos * side, y, z + cos * 0.12 - sin * side] as Vec3);
   }
-  dispose(): void { this.container?.dispose(); this.root.dispose(); }
+  dispose(): void { this.extras.forEach(mesh => mesh.dispose()); this.extras = []; this.container?.dispose(); this.root.dispose(); }
 }
