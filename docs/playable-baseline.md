@@ -10,7 +10,7 @@
 - 角色：`/assets/character/hero.gltf`，原身体/头发/墨镜三套网格与骨架，18 段原动画；保留原骨架与比例。
 - 地面：144 块原 Landscape 高度场逐点采样（`TerrainHeightfield`），不是旧的单平面地面。
 - 碰撞：从恢复后的静态对象 TRS 与 asset bounds 生成 1,432 个 AABB 代理（2,171 个对象中跳过 731 个过小、8 个过大）；这是可玩性代理，不是原 cooked PhysX。相机偏移会对附近 AABB 做收缩，避免穿墙。所有存活预览 actor（含市民、车辆、报刊箱）的 `solidBoxes` 每帧加入玩家动态碰撞。
-- 相机：第三人称按原 `PlayerBP` `CameraBoom` 的 `TargetArmLength=400 cm`、`SocketOffset=(0,50,90) cm`、`RelativeLocation Z=70 cm` 校准，并把 `Camera.FieldOfView` 设为原 90° 水平视场；使用原 `CameraLagSpeed/RotationLagSpeed=15` 做相机位置/朝向平滑。攻击时目标臂长按 HeroComponent AST 的 650 cm 插值（`CameraInterpSpeed=2`）。HeroComponent 的 Far/Zoom 状态切换、弹簧回弹和碰撞后处理仍是近似。
+- 相机：第三人称按原 `PlayerBP` `CameraBoom` 的 `TargetArmLength=400 cm`、`SocketOffset=(0,50,90) cm`、`RelativeLocation Z=70 cm` 校准，并按 HeroRank 0 的 `Camera.FieldOfView=92°` 水平视场换算（rank 表 92/94/96/98/100/100/100）；使用原 `CameraLagSpeed/RotationLagSpeed=15` 做相机位置/朝向平滑。攻击时目标臂长按 HeroComponent AST 的 650 cm 插值（`CameraInterpSpeed=2`）。HeroComponent 的 Far/Zoom 状态切换、弹簧回弹和碰撞后处理仍是近似。
 - 输入：Space 地面跳跃 / 空中开飞 / 飞行退飞；E/Q 升降；地面按住 E 约 1 秒自动开飞；Shift 冲刺；Alt 慢行；F 预留互动；R 为调试回出生点。按 P07，Shift 只有与移动输入同时存在才进入冲刺；松开 Shift/停止移动即解除，Alt 慢行取消冲刺。按 P08，冲刺速度跌到 850 cm/s（步行）/2000 cm/s（飞行）以下会重置，且保持 Shift 不会立即重新触发。
 - 动画：`Hero_Idle`、`A_ThirdPersonRun`、`Hero_IdleFlying`、`Hero_FlyFastSprint` 随状态切换；B1 实测前三条。
 - 出生点：旧原型街区局部坐标 `(50, 1.37)` 加上 city manifest `originUE [-10000,-55000,0]` cm，得到恢复世界 `(-50.0, -548.63)`，位于 ResidentialArea1 的实际公寓街区；仍不是原 `PlayerStart`。MainLevel `BP_RespawnAndSpawnPoint` 的 x/z 作为备用。

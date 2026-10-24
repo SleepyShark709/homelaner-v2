@@ -15,14 +15,14 @@ DefaultArmLength   = CameraBoom.TargetArmLength
 
 相机更新段落还包含：
 
-- `Camera.FieldOfView` 用 `FInterpTo(..., 90, dt, 2)`，即 90° 视场；
+- `Camera.FieldOfView` 按 **HeroRank** 插值：rank 0..6 → `92,94,96,98,100,100,100`，插值速度 4；另有一个 90° 的 `FInterpTo(..., 90, dt, 2)` 分支，但其外层条件尚未完全闭合；
 - `Temp_float_Variable_123=400`、`Temp_float_Variable_124=650`，由 `IsAttackMoving` 参与选择目标臂长；
 - `FarArmLength=800 cm`，以及 `FarCameraInterpSpeed` 的动态 1/4/8/16 分支；
 - `CameraLagSpeed=15`、`CameraRotationLagSpeed=15`。
 
 ## 当前 Web 实现
 
-- 普通第三人称：臂长 400 cm、SocketOffset(0,50,90)、boom Z70、FOV 90° 水平、lag 15；
+- 普通第三人称：臂长 400 cm、SocketOffset(0,50,90)、boom Z70、FOV 按 rank 0 的 92° 水平视场、lag 15；
 - 攻击时目标臂长 **650 cm**，用 `CameraInterpSpeed=2` 插值；
 - 相机碰撞 AABB 收缩。
 

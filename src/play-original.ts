@@ -45,7 +45,7 @@ const viewer = new OriginalWorld(canvas);
 const input = new Input(canvas);
 // Original PlayerBP CameraBoom_GEN_VARIABLE: TargetArmLength=400 cm,
 // SocketOffset=(0,50,90) cm, boom RelativeLocation Z=70 cm.
-const CAMERA = { armLength: 4.0, attackArmLength: 6.5, armSpeed: 2, boomHeight: 0.7, socketRight: 0.5, socketUp: 0.9, lagSpeed: 15, fov: 90 };
+const CAMERA = { armLength: 4.0, attackArmLength: 6.5, armSpeed: 2, boomHeight: 0.7, socketRight: 0.5, socketUp: 0.9, lagSpeed: 15, fov: 92 };
 input.pitch = 0.02;
 const paused = el('paused');
 const requestedDistrict = new URLSearchParams(location.search).get('district') ?? 'ResidentialArea1';
@@ -184,8 +184,8 @@ try {
   await combat.load();
   viewer.camera.detachControl();
   viewer.camera.minZ = 0.12;
-  // HeroComponent interpolates Camera.FieldOfView to 90; UE's value is
-  // horizontal, so convert to Babylon's vertical FOV at the current aspect.
+  // HeroComponent switches Camera.FieldOfView by HeroRank:
+  // 0..6 -> 92,94,96,98,100,100,100. The preview starts at rank 0.
   const applyFov = () => {
     const aspect = viewer.engine.getRenderWidth() / Math.max(1, viewer.engine.getRenderHeight());
     viewer.camera.fov = 2 * Math.atan(Math.tan((CAMERA.fov * Math.PI) / 360) / aspect);
