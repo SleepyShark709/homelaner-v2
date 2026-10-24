@@ -9,6 +9,7 @@ import '@babylonjs/core/Lights/Shadows/shadowGeneratorSceneComponent';
 import { StandardMaterial } from '@babylonjs/core/Materials/standardMaterial';
 import { Texture } from '@babylonjs/core/Materials/Textures/texture';
 import { CreateGround } from '@babylonjs/core/Meshes/Builders/groundBuilder';
+import { Mesh } from '@babylonjs/core/Meshes/mesh';
 import { OriginalWorld } from './world/OriginalWorld';
 import { Character } from './game/Character';
 import { Input } from './game/Input';
@@ -361,6 +362,22 @@ try {
         const ray = viewer.scene.createPickingRay(x, y, Matrix.Identity(), viewer.camera);
         const hit = viewer.scene.pickWithRay(ray, () => true, true);
         return hit?.hit ? { mesh: hit.pickedMesh?.name, material: hit.pickedMesh?.material?.name, point: hit.pickedPoint?.asArray() } : null;
+      },
+      bakeFloors: () => {
+        let fixed = 0;
+        for (const candidate of viewer.scene.meshes) {
+          if (!/SM_Floor12000x15000/i.test(candidate.name)) continue;
+          const thin = candidate as unknown as { thinInstanceCount?: number; _thinInstanceDataStorage?: { matrixData?: Float32Array } };
+          if (thin.thinInstanceCount !== 1 || !thin._thinInstanceDataStorage?.matrixData) continue;
+          const mesh = candidate as Mesh;
+          const matrix = Matrix.FromArray(Array.from(thin._thinInstanceDataStorage.matrixData.slice(0, 16)));
+          thin.thinInstanceCount = 0;
+          mesh.bakeTransformIntoVertices(matrix);
+          mesh.refreshBoundingInfo();
+          mesh.alwaysSelectAsActiveMesh = true;
+          fixed++;
+        }
+        return fixed;
       },
     };
   }

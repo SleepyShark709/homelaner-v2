@@ -84,6 +84,12 @@
 
 但 floor 677/678 在 render 后 active、顶面 0.65 m，仍没有覆盖这片草地；问题集中在 floor 实例的实际渲染/材质/深度，而不是 terrain 缺失。
 
+## 实例矩阵 bake 实验（2026-10-25）
+
+调试函数 `play.bakeFloors()` 把 floor mesh 的 thin-instance `matrixData` 直接 bake 进几何、把 `thinInstanceCount` 设为 0，再刷新包围体并强制 active。结果前景仍没有砖石地面。
+
+这排除了“只是实例矩阵没有上传”的简单解释；floor mesh 的可见性问题仍在几何/材质/遮挡层。
+
 ## 结论
 
 楼板几何/实例存在，但**玩家附近可见地面不是这些 floor mesh**，或它们被地形/另一块草地面遮住。当前无法据此把候选点认定为原版起点广场；下一步需要：
