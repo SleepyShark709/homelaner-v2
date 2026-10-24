@@ -35,6 +35,8 @@
 
 ## Raycast 结果（2026-10-25）
 
+> 修正：本次 `createPickingRay(..., null, camera)` 的命中点不可靠，后续用具体 mesh bounds 否定了“地形低 30 m”的解释；见下文“Ray 结果修正”。
+
 开启 `@babylonjs/core/Culling/ray` 后，用 `scene.createPickingRay`/`pickWithRay` 对画面地面点取射线：
 
 - 屏幕 `(640,620)` 命中 `landscape-5189`，世界点 y ≈ **-41.9 m**；
@@ -44,6 +46,16 @@
 也就是说，画面里看到的“草地”是 **静态 CommercialArea 下方约 26–42 m 的 Landscape**；玩家/楼板在 y≈0.65，静态街区整体悬浮在地形上方。这比“楼板材质错了”更根本：**CommercialArea 静态层与 Landscape 的垂直/世界对齐尚未闭合**。
 
 `(91,181)` 仍是候选点；下一步应先确认子关卡/地形的高度对齐，再谈起点广场同机位。
+
+## Ray 结果修正
+
+进一步列出具体 terrain mesh 后：
+
+- `landscape-5269` 可见实例 bounds 为 x `50..176`、z `76..202`、y `0..0`，**覆盖 (91,181)**；
+- 因此候选点本地 Landscape 高度是 **0 m**，不是 -32 m；
+- 之前的 `pickWithRay` 命中的 `landscape-5189/5187` 是远处 chunk，且 `createPickingRay(..., null, camera)` 的结果不可靠，不能作为前景地面高度证据。
+
+当前可确认的是：本地地形在 0 m，楼板顶面 0.65 m，玩家约 0.67 m；**floor mesh 本身没有出现在前景**，而不是地形低了 30 m。高度错位结论撤回。
 
 ## 结论
 
