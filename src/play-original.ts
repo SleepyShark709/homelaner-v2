@@ -59,7 +59,15 @@ const paused = el('paused');
 const params = new URLSearchParams(location.search);
 const requestedDistrict = params.get('district') ?? 'ResidentialArea1';
 const plazaMode = params.get('plaza') === '1';
+const freeMode = params.get('mode') === 'free';
 const startupMode = params.get('startup') === '1' || plazaMode;
+if (freeMode) {
+  document.title = 'UNDEFEATED · 自由破坏预览';
+  const badge = document.querySelector<HTMLElement>('.play-badge');
+  if (badge) badge.textContent = '自由破坏预览 · 非原版';
+  const warn = document.querySelector<HTMLElement>('.warn');
+  if (warn) warn.textContent = '自由破坏为可选预览：可摧毁市民/车辆/道具，市民会复活；热视线、任务和完整原版 AI 尚未接入。';
+}
 const playDistrict = plazaMode ? 'MainLevel' : startupMode ? 'ResidentialArea1' : requestedDistrict;
 let player: OriginalPlayer | undefined;
 let character: Character | undefined;
@@ -259,7 +267,7 @@ try {
   }
   population.pause(true);
   combat = new Combat(viewer.scene, input, player as unknown as PlayerMotor, character, population, viewer.camera, collision.boxes, { heatVision: false });
-  combat.mode = 'baseline';
+  combat.mode = freeMode ? 'free' : 'baseline';
   await combat.load();
   viewer.camera.detachControl();
   viewer.camera.minZ = 0.12;
