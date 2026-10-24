@@ -66,12 +66,12 @@
   "limitations": [
     "Population placement and short routes come from the previous prototype manifest, not recovered original AI, navigation, traffic or crowd behavior.",
     "Combat damage is baseline mode: strong attacks may destroy preview vehicles; citizen/prop damage, free destruction, heat vision and no-penalty rules are not implemented.",
-    "Preview vehicles/props now block the player through dynamic AABB boxes; preview citizens are still pass-through and the collision proxy is not original PhysX.",
+    "All live preview actors now block the player through dynamic AABB boxes; the proxy is not original PhysX and does not use the original capsule/skeletal collision.",
     "Jump/gravity, camera behavior, animation blending and hit timing still lack original-game matched-camera comparison.",
     "No quest, boss, menu, save, city event or full HeroAnimBP state machine."
   ],
   "checks": {
-    "playerDynamicCollision": "preview vehicle/prop solidBoxes are supplied to OriginalPlayer each frame; unit test blocks a walk into a vehicle AABB; preview citizens remain non-solid",
+    "playerDynamicCollision": "all live preview actor solidBoxes (citizens, vehicles, props) are supplied to OriginalPlayer each frame; unit test blocks a walk into a vehicle AABB; collision shape is an AABB proxy, not the original capsule",
     "spawn": "District-local old spawn (50, 1.37) + originUE [-10000,-55000,0] cm = restored-world (-50.0, -548.63); population preview placements/routes shifted by the same offset."
   }
 }

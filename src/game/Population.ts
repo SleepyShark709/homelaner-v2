@@ -152,7 +152,9 @@ export class Population {
       actor.clip = ''; this.animate(actor, 'Citizen_N_Walk_F');
     }
   }
-  get solidBoxes(): Obstacle[] { return this.actors.filter(actor => actor.alive && actor.kind !== 'citizen'); }
+  /** All live actor AABBs, including citizens. The original game has actor
+   * collision; this proxy is still an AABB, not the cooked capsule. */
+  get solidBoxes(): Obstacle[] { return this.actors.filter(actor => actor.alive); }
   get remaining(): number { return this.actors.filter(actor => actor.alive).length; }
   dispose(): void { this.actors.forEach(actor => { actor.entries.dispose(); actor.root.dispose(); }); this.containers.forEach(container => container.dispose()); }
 }

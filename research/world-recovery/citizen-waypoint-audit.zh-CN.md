@@ -9,19 +9,19 @@
 - `BP_CharaSpawnPoint` 2,806 个：候选市民出生点；root `Box` 的 `RelativeLocation` 以 UE 厘米给出。
 - `BP_CharaChildWaypoint` 559 个：spline 子路点；Billboard root 带相对位置。
 
-`BP_CharaSpawnPoint` 的 root Box 位置按 `X/100, Y/100` 转换为 Web 世界米后，与 B1 出生点 `(50, 1.37)` 对齐良好：
+`BP_CharaSpawnPoint` 的 root Box 位置按 `X/100, Y/100` 得到**旧原型街区局部帧**，与旧 spawn `(50, 1.37)` 对齐；恢复世界需加 `originUE/100 = (-100, -550)` 米，即修正后的 B1 spawn `(-50.0, -548.63)` 附近：
 
-- 100 m 内 897 个，30 m 内 174 个；
+- 100 m 内 897 个，30 m 内 174 个（局部帧距离）；
 - 最近样本：`BP_CharaSpawnPoint_C_8928` `(50.18, 1.99)`、`BP_CharaSpawnPoint_C_9483` `(49.31, 1.98)`、`BP_CharaSpawnPoint_C_9288` `(51.45, 1.97)`；
 - 样本 `Box` 的 Z 为 0，实际落地高度仍需用 Landscape 高度场/原 ground offset 修正。
 
-这说明原版市民出生点网络在 Player 所在街区确实存在，且不是旧原型凭空布置的。
+这说明原版市民出生点网络在 Player 所在街区确实存在，且不是旧原型凭空布置的；它和旧 city/population 清单一样是局部坐标。
 
-## 尚未闭合的坐标/父链问题
+## 组件 OuterIndex 观察
 
-- 每个 spawn 的 `ParentWaypoint` 指向一个 actor/component 索引；但 `Spline` 组件的 `OuterIndex` 与引用它的 `BP_CharacterWayPoint` 索引并不总是一致，UAssetAPI 解码中存在 component/actor 索引偏移或 Outer 链语义未核清。
-- 例如 `BP_CharacterWayPoint45` 的 `Spline` 指向 9658，而 9658 的 `OuterIndex` 是 6765（`BP_CharacterWayPoint47`）；直接按“父 actor 位置 + spline 局部点”会得到与 spawn 不一致的远端坐标。
-- `Spline` 的 `RelativeLocation` 与局部点相加后也出现远端位置；因此在核对 actor/component outer 链和原点/世界偏移之前，不能把 spline 点发布为可运行路径。
+- 85 个 `BP_CharacterWayPoint` 的 `Spline` 组件 `OuterIndex` 一致表现为 `actor 索引 + 2`（例如 6730→6732、6731→6733）。spawn/child 的 root component 也出现同类偏移。
+- 这更像 UAssetAPI 导出数组与原 package export index 的映射差异（两个导出未列入/索引偏移），不能把 JSON 数组下标当作直接 owner 索引。
+- Child waypoint 的 Billboard `RelativeLocation` 是同一局部帧的小坐标（如 `(200,200)`、`(200,13967)`）；把它与 spline 组件的 `RelativeLocation=(-14514,-51279)` 相加会得到远端位置，因此当前不能直接发布为路径。
 - 2,806 个 spawn 不是同时存在的市民；原版 spawner 的生成节奏、数量、导航寻路和状态机尚未解释。
 
 ## 决定
