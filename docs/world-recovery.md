@@ -42,7 +42,8 @@ REA/Ghidra 对原 Shipping EXE 的函数、交叉引用和反编译结果位于 
 | 固定纹理角色恢复 | `tools/asset-pipeline/restore-texture-sample-materials.py`, `research/world-recovery/material-shader-recovery/texture-sample-recovery.json` |
 | 天空 HDR 合同与 Web 接入 | `public/assets/world/sky-material-manifest.json`, `src/world/RecoveredSurfacePlugins.ts`, `research/world-recovery/sky-recovery/` |
 | 浏览器验证与截图脚本 | `scripts/capture-world.mjs`, `research/world-recovery/browser-validation-pass3.json` |
-| B1/B2 可玩切片 | `docs/playable-baseline.md`, `src/play-original.ts`, `src/play/`, `scripts/probe-play-b1.js`, `scripts/probe-play-b2*.js` |
+| B1/B2/B3 可玩切片 | `docs/playable-baseline.md`, `src/play-original.ts`, `src/play/`, `scripts/probe-play-b1.js`, `scripts/probe-play-b2*.js` |
+| 原版市民 waypoint 审计 | `research/world-recovery/citizen-waypoint-audit.zh-CN.md` |
 | 原启动与条件流送证据 | `research/streaming-contract.md`, `public/assets/world/streaming-manifest.json` |
 | 挂点 / 骨骼材质分段 | `research/world-recovery/geometry-socket-resolution.json`, `geometry-override-validation.json` |
 | 原程序运行观察 | `research/runtime-observation/report.zh-CN.txt` |

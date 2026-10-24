@@ -38,8 +38,18 @@
       "projectiles": 1
     },
     "strongVehicleTest": {
-      "before": { "remaining": 14, "hits": 0, "destroyed": 0, "vehicleAlive": true },
-      "after": { "remaining": 11, "hits": 3, "destroyed": 3, "vehicleAlive": false },
+      "before": {
+        "remaining": 14,
+        "hits": 0,
+        "destroyed": 0,
+        "vehicleAlive": true
+      },
+      "after": {
+        "remaining": 11,
+        "hits": 3,
+        "destroyed": 3,
+        "vehicleAlive": false
+      },
       "note": "Baseline mode: only strong attacks may damage vehicles; citizens/props remain ignored by the recovered uncertainty in this mode."
     }
   },
@@ -49,15 +59,18 @@
   },
   "tests": {
     "typecheck": "passed",
-    "controller": "5/5 passed",
+    "controller": "6/6 passed (scripts/test-play-controller.mjs); includes dynamic vehicle/prop AABB blocking",
     "combatTimelines": "14 timelines passed via npm test",
     "browserProbe": "passed (scripts/probe-play-b1.js, scripts/probe-play-b2.js, scripts/probe-play-b2-hit.js)"
   },
   "limitations": [
     "Population placement and short routes come from the previous prototype manifest, not recovered original AI, navigation, traffic or crowd behavior.",
     "Combat damage is baseline mode: strong attacks may destroy preview vehicles; citizen/prop damage, free destruction, heat vision and no-penalty rules are not implemented.",
-    "AABB collision and preview actors are not in the player collision set yet; the player can walk through preview citizens/vehicles.",
+    "Preview vehicles/props now block the player through dynamic AABB boxes; preview citizens are still pass-through and the collision proxy is not original PhysX.",
     "Jump/gravity, camera behavior, animation blending and hit timing still lack original-game matched-camera comparison.",
     "No quest, boss, menu, save, city event or full HeroAnimBP state machine."
-  ]
+  ],
+  "checks": {
+    "playerDynamicCollision": "preview vehicle/prop solidBoxes are supplied to OriginalPlayer each frame; unit test blocks a walk into a vehicle AABB; preview citizens remain non-solid"
+  }
 }

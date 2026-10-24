@@ -41,6 +41,7 @@ export class OriginalPlayer {
   private readonly ground: TerrainHeightfield;
   private readonly boxes: SpatialBoxes;
   private readonly bounds: Bounds;
+  private dynamicBoxes: Obstacle[] = [];
 
   constructor(
     spawn: Vec3,
@@ -54,6 +55,10 @@ export class OriginalPlayer {
     this.boxes = boxes;
     this.bounds = terrainBounds;
   }
+
+  /** Vehicles/props from the preview population. These move, so they are not
+   * baked into the static spatial grid; the scene supplies them each frame. */
+  setDynamicBoxes(boxes: Obstacle[]): void { this.dynamicBoxes = boxes; }
 
   reset(): void {
     this.position = [...this.spawn];
@@ -113,6 +118,11 @@ export class OriginalPlayer {
     else if (this.velocity[1] < 0) this.velocity[1] = -0.4;
 
     const nearby: Obstacle[] = this.boxes.nearby(this.position[0], this.position[2], 8);
+    for (const box of this.dynamicBoxes) {
+      if (box.max[0] < this.position[0] - 8 || box.min[0] > this.position[0] + 8 ||
+          box.max[2] < this.position[2] - 8 || box.min[2] > this.position[2] + 8) continue;
+      nearby.push(box);
+    }
     const moved = moveAndSlide(this.position, [this.velocity[0] * dt, this.velocity[1] * dt, this.velocity[2] * dt], nearby, [TUNING.radius, TUNING.height / 2, TUNING.radius]);
     this.position = moved.position;
     for (const normal of moved.normals) {

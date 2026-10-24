@@ -90,6 +90,16 @@ test('sprint exceeds walk, Alt walk is slower, E/Q move vertically in flight', (
   assert.ok(player.position[1] < highY, 'Q should descend');
 });
 
+test('dynamic vehicle/prop boxes block walking', () => {
+  const { input, player } = make();
+  player.setDynamicBoxes([{ id: 'preview-car', min: [-2, -1, -4], max: [2, 2, -2] }]);
+  step(player, input, 0.3);
+  input.down.add('KeyW');
+  step(player, input, 2);
+  assert.ok(player.position[2] > -1.9, `expected AABB block before -2m, got ${player.position[2]}`);
+  assert.ok(player.velocity[2] >= -0.01, `expected forward velocity cleared, got ${player.velocity[2]}`);
+});
+
 test('R resets to the original spawn and clears flight', () => {
   const { input, player } = make();
   input.down.add('KeyE'); step(player, input, 1.2);
