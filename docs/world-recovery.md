@@ -51,6 +51,7 @@ REA/Ghidra 对原 Shipping EXE 的函数、交叉引用和反编译结果位于 
 | CommercialArea 地面调查 | `research/world-recovery/commercial-plaza-ground-investigation.zh-CN.md` |
 | StoryStartPoint 审计 | `research/world-recovery/story-start-point-audit.zh-CN.md` |
 | Homelander 风格占位 | `research/world-recovery/homelander-placeholder.zh-CN.md` |
+| 任务触发区域 | `tools/asset-pipeline/export-quest-areas.mjs`, `research/world-recovery/quest-areas.json` |
 | HeroComponent 相机契约 | `research/world-recovery/hero-camera-contract.zh-CN.md` |
 | 可走楼板/广场地面 | `tools/asset-pipeline/export-walkable-surfaces.mjs`, `src/play/WalkableSurfaces.ts` |
 | 原版 spawn 可选检查 | `tools/asset-pipeline/export-citizen-spawns.mjs`, `research/world-recovery/citizen-spawns-selection.json` |

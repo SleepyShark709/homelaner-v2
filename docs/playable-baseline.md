@@ -42,6 +42,19 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 
 截图：[play-b1.jpg](../research/screenshots/play-b1.jpg)、[play-b2.jpg](../research/screenshots/play-b2.jpg)、[play-b3.jpg](../research/screenshots/play-b3.jpg)。记录：[playable-b1-validation.json](../research/world-recovery/playable-b1-validation.json)、[playable-b2-validation.json](../research/world-recovery/playable-b2-validation.json)。
 
+## 任务触发区域可视化（可选）
+
+```text
+/?view=play&quests=1
+```
+
+- 从 MainLevel 解码出 21 个 `FireQuest_BP`/`MatQuest_BP` 触发区域；
+- 橘色圆环 = FireQuest，蓝色圆环 = MatQuest；
+- 位置来自 actor root 的 `RelativeLocation`，半径来自 Sphere/Box 组件；
+- **只可视化触发区域**：原版任务状态机、完成条件、奖励和 UI 未恢复，F 互动仍不触发任务。
+
+脚本：`tools/asset-pipeline/export-quest-areas.mjs`；证据：`research/world-recovery/quest-areas.json`。截图 `play-quest-marker.jpg`。
+
 ## Homelander 风格占位（非正式换模）
 
 ```text

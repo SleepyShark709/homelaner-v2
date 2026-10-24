@@ -3,12 +3,14 @@ import './play-original.css';
 // used by the ground/plaza diagnostics.
 import '@babylonjs/core/Culling/ray';
 import { Matrix, Vector3 } from '@babylonjs/core/Maths/math.vector';
+import { Color3 } from '@babylonjs/core/Maths/math.color';
 import { DirectionalLight } from '@babylonjs/core/Lights/directionalLight';
 import { ShadowGenerator } from '@babylonjs/core/Lights/Shadows/shadowGenerator';
 import '@babylonjs/core/Lights/Shadows/shadowGeneratorSceneComponent';
 import { StandardMaterial } from '@babylonjs/core/Materials/standardMaterial';
 import { Texture } from '@babylonjs/core/Materials/Textures/texture';
 import { CreateGround } from '@babylonjs/core/Meshes/Builders/groundBuilder';
+import { CreateTorus } from '@babylonjs/core/Meshes/Builders/torusBuilder';
 import { Mesh } from '@babylonjs/core/Meshes/mesh';
 import { OriginalWorld } from './world/OriginalWorld';
 import { Character } from './game/Character';
@@ -136,6 +138,20 @@ try {
   }
   const terrain = await TerrainHeightfield.load(viewer.terrainManifest);
   const surfaces = await WalkableSurfaces.load('/assets/world/walkable-surfaces.json');
+  if (params.get('quests') === '1') {
+    const quests = await fetch('/assets/world/quest-areas.json').then(response => response.ok ? response.json() : null).catch(() => null) as { areas?: Array<{ id: string; kind: string; position: Vec3 }> } | null;
+    for (const area of quests?.areas ?? []) {
+      const marker = CreateTorus(`quest/${area.id}`, { diameter: 1.6, thickness: 0.14, tessellation: 24 }, viewer.scene);
+      marker.position.set(area.position[0], area.position[1] + 0.3, area.position[2]);
+      const material = new StandardMaterial(`quest-mat/${area.id}`, viewer.scene);
+      const color = area.kind === 'fire' ? new Color3(1, 0.24, 0.03) : new Color3(0.12, 0.62, 1);
+      material.emissiveColor = color;
+      material.diffuseColor = color;
+      material.disableLighting = true;
+      marker.material = material;
+      marker.isPickable = false;
+    }
+  }
   if (new URLSearchParams(location.search).get('floors') === 'overlay' || plazaMode) {
     // Preview-only fallback for recovered ground-brick floors that do not render
     // in the current material path. Uses the authored GroundBrick_B_A texture.

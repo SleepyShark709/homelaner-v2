@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "source": "research/exports/city-decoded/MainLevel.json",
+  "areas": [
+    {
+      "id": "FireQuest_BP10",
+      "kind": "fire",
+      "position": [
+        91.34,
+        25.86,
+        142.28
+      ],
+      "radius": 1,
+      "component": "EnterCollision",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "FireQuest_BP11",
+      "kind": "fire",
+      "position": [
+        46.2,
+        151.7,
+        -321.4
+      ],
+      "radius": 1,
+      "component": "EnterCollision",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "FireQuest_BP12",
+      "kind": "fire",
+      "position": [
+        -256.8,
+        130.7,
+        -104.4
+      ],
+      "radius": 1,
+      "component": "EnterCollision",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "FireQuest_BP3_1200",
+      "kind": "fire",
+      "position": [
+        -258.8,
+        130.7,
+        -357.4
+      ],
+      "radius": 1,
+      "component": "EnterCollision",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "FireQuest_BP4",
+      "kind": "fire",
+      "position": [
+        -353.65,
+        130.7,
+        -508.55
+      ],
+      "radius": 1,
+      "component": "EnterCollision",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "FireQuest_BP5",
+      "kind": "fire",
+      "position": [
+        591.71,
+        151.61,
+        -229.87
+      ],
+      "radius": 1,
+      "component": "EnterCollision",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "FireQuest_BP6",
+      "kind": "fire",
+      "position": [
+        216.2,
+        132.7,
+        -367.4
+      ],
+      "radius": 1,
+      "component": "EnterCollision",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "FireQuest_BP7",
+      "kind": "fire",
+      "position": [
+        500.47,
+        65.75,
+        -351.03
+      ],
+      "radius": 1,
+      "component": "EnterCollision",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "FireQuest_BP9",
+      "kind": "fire",
+      "position": [
+        -258.79,
+        40.21,
+        196.59
+      ],
+      "radius": 1,
+      "component": "EnterCollision",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "FireQuest_BP_2427",
+      "kind": "fire",
+      "position": [
+        -0.08,
+        164.95,
+        -12.21
+      ],
+      "radius": 1,
+      "component": "EnterCollision",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "MatQuest_BP10",
+      "kind": "material",
+      "position": [
+        384.87,
+        0.7,
+        461.26
+      ],
+      "radius": 1,
+      "component": "Box",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "MatQuest_BP11",
+      "kind": "material",
+      "position": [
+        -360.73,
+        0.7,
+        -45.03
+      ],
+      "radius": 1,
+      "component": "Box",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "MatQuest_BP2_368",
+      "kind": "material",
+      "position": [
+        121.55,
+        0.7,
+        -16.31
+      ],
+      "radius": 1,
+      "component": "Box",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "MatQuest_BP3_533",
+      "kind": "material",
+      "position": [
+        488.1,
+        0.7,
+        1.9
+      ],
+      "radius": 1,
+      "component": "Box",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "MatQuest_BP4",
+      "kind": "material",
+      "position": [
+        240.07,
+        0.7,
+        123.94
+      ],
+      "radius": 1,
+      "component": "Box",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "MatQuest_BP5",
+      "kind": "material",
+      "position": [
+        -495.1,
+        0.7,
+        394.09
+      ],
+      "radius": 1,
+      "component": "Box",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "MatQuest_BP6",
+      "kind": "material",
+      "position": [
+        571.55,
+        0.7,
+        -515.24
+      ],
+      "radius": 1,
+      "component": "Box",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "MatQuest_BP7_610",
+      "kind": "material",
+      "position": [
+        217.75,
+        0.7,
+        -531.5
+      ],
+      "radius": 1,
+      "component": "Box",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "MatQuest_BP8",
+      "kind": "material",
+      "position": [
+        254.55,
+        0.7,
+        -603.27
+      ],
+      "radius": 1,
+      "component": "Box",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "MatQuest_BP9",
+      "kind": "material",
+      "position": [
+        -1.49,
+        0.84,
+        -386.07
+      ],
+      "radius": 1,
+      "component": "Box",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    },
+    {
+      "id": "MatQuest_BP_176",
+      "kind": "material",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "radius": 1,
+      "component": "BP_Base_EasterEgg_2",
+      "note": "trigger position recovered; quest completion/state machine not recovered"
+    }
+  ]
+}
