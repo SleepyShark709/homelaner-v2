@@ -59,6 +59,7 @@ npm run capture:play:b2
 - `docs/progress.md`：旧原型实际成果与限制。
 - `docs/world-recovery.md`：当前世界恢复范围、证据、浏览器验证与缺口。
 - `docs/playable-baseline.md`：B1/B2 可玩切片、原输入语义、预览人口、战斗动画、碰撞代理与已知近似。
+- `docs/runtime-comparison.md`：原程序与 Web 可玩切片的第一轮角色/相机/光照视觉对照（非同机位）。
 - `docs/city-reconstruction.md`：原地图坐标、道路样条和资源来源。
 - `docs/character-assembly.md`：原头发/墨镜挂点与装配。
 - `docs/combat-spec.md`：已恢复原战斗行为与动画命中时序。

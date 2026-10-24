@@ -46,6 +46,7 @@ REA/Ghidra 对原 Shipping EXE 的函数、交叉引用和反编译结果位于 
 | 多区可玩检查 | `research/world-recovery/playable-districts-validation.json` |
 | 可玩切片坐标修正 | `research/world-recovery/playable-spawn-coordinate-correction.zh-CN.md` |
 | 原版市民 waypoint 审计 | `research/world-recovery/citizen-waypoint-audit.zh-CN.md` |
+| 首次原程序/Web 视觉对照 | `docs/runtime-comparison.md`, `research/runtime-observation/comparison-character-camera.jpg` |
 | 原版 spawn 可选检查 | `tools/asset-pipeline/export-citizen-spawns.mjs`, `research/world-recovery/citizen-spawns-selection.json` |
 | 原启动与条件流送证据 | `research/streaming-contract.md`, `public/assets/world/streaming-manifest.json` |
 | 挂点 / 骨骼材质分段 | `research/world-recovery/geometry-socket-resolution.json`, `geometry-override-validation.json` |
