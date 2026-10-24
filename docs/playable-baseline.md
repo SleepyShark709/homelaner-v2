@@ -58,7 +58,12 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 /?view=play&plaza=1
 ```
 
-截图 `play-mainplaza-startup3.jpg`，对照图 `comparison-start-plaza-mainlevel.jpg`。`plaza=1` 是等价预设：启动链 + `(20,0)` + yaw 0 + brick overlay；它便于快速检查候选，不改变默认出生点。使用 `&floors=overlay` 会在恢复的砖石楼板 AABB 上铺 `GroundBrick_B_A` 原始纹理，得到 `play-mainplaza-overlay.jpg` / `comparison-start-plaza-overlay.jpg`；这是**预览地面回退**，不是原 floor mesh 已正确渲染。它比之前的 CommercialArea 候选更接近原程序起点广场的城市构图，但：
+截图 `play-mainplaza-startup3.jpg`，对照图 `comparison-start-plaza-mainlevel.jpg`。`plaza=1` 是等价预设：启动链 + `(20,0)` + yaw 0 + brick overlay；它便于快速检查候选，不改变默认出生点。
+
+另外两个候选姿态：
+
+- `plaza=1&at=-20,0&yaw=0`：石栏杆在左、古典建筑在中央，构图更接近原图，但相机被栏杆挤到角色背后（`play-plaza-left.jpg`）；
+- `plaza=1&at=-10,-20&yaw=0`：干净的铺装广场，但建筑布局不同（`play-plaza-left2.jpg`）。使用 `&floors=overlay` 会在恢复的砖石楼板 AABB 上铺 `GroundBrick_B_A` 原始纹理，得到 `play-mainplaza-overlay.jpg` / `comparison-start-plaza-overlay.jpg`；这是**预览地面回退**，不是原 floor mesh 已正确渲染。它比之前的 CommercialArea 候选更接近原程序起点广场的城市构图，但：
 
 - 地面 overlay 只是用原纹理覆盖 AABB，原程序 floor mesh 的可见性仍未修好；
 - 长椅、相机位置和建筑朝向没有逐项匹配；
