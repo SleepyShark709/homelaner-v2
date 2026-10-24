@@ -45,12 +45,24 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 - 修正旧原型街区局部坐标：`originUE [-10000,-55000,0]` cm 使原先的 `(50,1.37)` 实际对应恢复世界 `(-50.0,-548.63)`；spawn 和 14 个预览 actor 一起平移，截图从空旷主路变为 ResidentialArea1 的实际公寓/街道（`play-b3.jpg`）。
 - 预览所有存活 actor（含市民、车辆、报刊箱）的 `solidBoxes` 每帧加入玩家动态 AABB；单测新增“车辆 AABB 阻挡行走”，目前 6/6。
 - 新增 `?district=` 参数：对 MainLevel + 指定主世界关卡做装配与碰撞代理，出生点取该关卡 bounds 中心附近的地面空闲点；预览人口仍只在 ResidentialArea1 加载。`play-titlemenu.jpg` 是 TitleMenuLevel 的实际浏览器检查，不是原版开始画面。
+
+## 多区可玩检查
+
+| 区域 | 对象 | 地形 | 失败 | 截图 |
+|---|---:|---:|---:|---|
+| ResidentialArea1 | 3,782 | 144 | 0 | `play-b3.jpg` |
+| DownTown | 4,274 | 144 | 0 | `play-downtown.jpg` |
+| Park | 4,105 | 144 | 0 | `play-park.jpg` |
+| TitleMenuLevel | 3,469 | 144 | 0 | `play-titlemenu.jpg` |
+
+每区都使用同一原角色、原输入、原高度场和该区静态 AABB 碰撞代理；除 ResidentialArea1 外没有预览人口/战斗目标。记录见 [playable-districts-validation.json](../research/world-recovery/playable-districts-validation.json)。
 - 已审计原版 `CitizenWayPoint` 解码数据：2,806 个 `BP_CharaSpawnPoint`、85 个 spline 路径 actor、559 个 child waypoint；最近 spawn 位置与玩家街区对齐（100 m 内 897 个）。但 UAssetAPI 的 actor/component Outer 链与 spline 局部坐标转换尚未闭合，本轮不把它们替换进 Population，避免用未核清坐标冒充原版路径。详见 [citizen-waypoint-audit.zh-CN.md](../research/world-recovery/citizen-waypoint-audit.zh-CN.md)。
 
 ## 明确近似与缺口
 
 - 预览人口的位置与短路线来自旧原型清单，不是已恢复的原版 AI/导航/交通/市民状态机；不能把它当作原版城市活动。
 - 战斗只接入 `baseline` 伤害策略：强力攻击可毁预览车辆；市民/道具伤害、自由破坏、无惩罚规则和热视线属于后续阶段。
+- 预览人口只加载于 ResidentialArea1；DownTown/Park/TitleMenuLevel 没有市民、车辆、AI、任务或可攻击目标。
 - 玩家动态碰撞已覆盖预览市民/车辆/报刊箱；原版 actor 胶囊形状与非统一骨骼碰撞未恢复。
 - 跳跃冲量、重力曲线来自旧原型预览值；建筑/道具碰撞是 AABB 代理，不是原 PhysX；相机只做 AABB 收缩。
 - 地图中烘焙的参考姿态市民被隐藏，预览市民不是原地图 AI；角色阴影、IK、蒙太奇/通知、完整 HeroAnimBP 状态机未实现。
