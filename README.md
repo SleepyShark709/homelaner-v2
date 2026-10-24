@@ -8,7 +8,7 @@
 
 默认入口现为**原版世界恢复查看器**：按原启动加载链选择 17 份城市关卡，按原关卡坐标、模板继承、实例矩阵、道路样条与高度场装配城市，加载原材质与纹理，并接入原天空 HDR 采样。可切换城区及全部主世界静态总览，使用漫游相机检查。46 处参考姿态附件和已发现的骨骼材质槽歧义已修复，并接入 25 份原 shader 计算合同与已恢复的启动加载链执行检查。它尚不是可完整游玩的原版移植；原构造脚本、角色控制、AI、事件和流程仍待恢复验证。
 
-旧玩法原型保存在 `/?view=prototype`，角色/动画实验室在 `/?view=assets`。原版可玩基线 B1/B2 切片在 `/?view=play`：原角色 + 原 ResidentialArea1 街区 + 原高度场 + 原输入语义 + 预览人口与原战斗动画；说明与缺口见 [docs/playable-baseline.md](docs/playable-baseline.md)。新增热视线、自由破坏与换模开发暂停，先完成原版基线。当前证据及验收见 [世界恢复记录](docs/world-recovery.md)，历史原型记录见 [docs/progress.md](docs/progress.md)。
+旧玩法原型保存在 `/?view=prototype`，角色/动画实验室在 `/?view=assets`。原版可玩基线 B1/B2/B3 切片在 `/?view=play`：原角色 + 原 ResidentialArea1 街区 + 原高度场 + 原输入语义 + 预览人口与原战斗动画 + 车辆/道具动态碰撞；说明与缺口见 [docs/playable-baseline.md](docs/playable-baseline.md)。新增热视线、自由破坏与换模开发暂停，先完成原版基线。当前证据及验收见 [世界恢复记录](docs/world-recovery.md)，历史原型记录见 [docs/progress.md](docs/progress.md)。
 
 ## 运行
 
