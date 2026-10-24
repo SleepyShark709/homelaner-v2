@@ -48,7 +48,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </aside>
   <div class="play-hud"><div>位置 <b id="hud-position">—</b></div><div>状态 <b id="hud-mode">—</b></div><div>速度 <b id="hud-speed">—</b></div><div>FPS <b id="hud-fps">—</b></div></div>
   <div class="play-loading" id="loading"><div><strong id="load-title">装配原版可玩街区</strong><p id="load-message">读取原关卡、材质与地形…</p><progress id="progress" max="1" value="0"></progress></div></div>
-  <div class="play-paused" id="paused" hidden>已暂停 · 点击继续</div>`;
+  <div class="play-paused" id="paused" hidden>已暂停 · 点击继续</div>
+  <div class="play-quest" id="quest-hint" hidden></div>`;
 
 const el = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
 const canvas = el<HTMLCanvasElement>('world');
@@ -77,6 +78,10 @@ let character: Character | undefined;
 let combat: Combat | undefined;
 let population: Population | undefined;
 let shadows: ShadowGenerator | undefined;
+type QuestArea = { id: string; kind: string; position: Vec3 };
+let questAreas: QuestArea[] = [];
+let questMessageUntil = 0;
+const questHint = el('quest-hint');
 
 viewer.onProgress = (message, done, total) => {
   el('load-message').textContent = message;
@@ -139,8 +144,9 @@ try {
   const terrain = await TerrainHeightfield.load(viewer.terrainManifest);
   const surfaces = await WalkableSurfaces.load('/assets/world/walkable-surfaces.json');
   if (params.get('quests') === '1') {
-    const quests = await fetch('/assets/world/quest-areas.json').then(response => response.ok ? response.json() : null).catch(() => null) as { areas?: Array<{ id: string; kind: string; position: Vec3 }> } | null;
-    for (const area of quests?.areas ?? []) {
+    const quests = await fetch('/assets/world/quest-areas.json').then(response => response.ok ? response.json() : null).catch(() => null) as { areas?: QuestArea[] } | null;
+    questAreas = quests?.areas ?? [];
+    for (const area of questAreas) {
       const marker = CreateTorus(`quest/${area.id}`, { diameter: 1.6, thickness: 0.14, tessellation: 24 }, viewer.scene);
       marker.position.set(area.position[0], area.position[1] + 0.3, area.position[2]);
       const material = new StandardMaterial(`quest-mat/${area.id}`, viewer.scene);
@@ -371,6 +377,25 @@ try {
       el('hud-mode').textContent = stats.flying ? (stats.state === 'fly' ? '飞行冲刺' : '飞行悬停') : stats.grounded ? (stats.state === 'run' ? '地面移动' : '地面待机') : '腾空';
       el('hud-speed').textContent = `${stats.speed.toFixed(1)} m/s${stats.charge > 0 ? ` · 蓄升 ${stats.charge.toFixed(1)}s` : ''}`;
       el('hud-fps').textContent = String(Math.round(viewer.engine.getFps()));
+      if (questAreas.length) {
+        let nearest: { area: QuestArea; distance: number } | undefined;
+        for (const area of questAreas) {
+          const distance = Math.hypot(area.position[0] - stats.position[0], area.position[1] - stats.position[1], area.position[2] - stats.position[2]);
+          if (distance < 6 && (!nearest || distance < nearest.distance)) nearest = { area, distance };
+        }
+        if (nearest) {
+          if (input.pressed('KeyF')) questMessageUntil = performance.now() + 2200;
+          const active = performance.now() < questMessageUntil;
+          questHint.hidden = false;
+          questHint.textContent = active
+            ? `任务区域 ${nearest.area.id} · 原版任务状态未恢复`
+            : `任务区域 ${nearest.area.id} · F 查看`;
+        } else {
+          questHint.hidden = true;
+        }
+      } else {
+        questHint.hidden = true;
+      }
     }
   });
 

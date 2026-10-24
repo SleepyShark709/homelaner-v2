@@ -22,3 +22,5 @@ body{margin:0;overflow:hidden}
 .play-loading progress{width:260px;height:5px}
 .play-paused{position:fixed;inset:0;display:grid;place-items:center;background:#07110fbb;z-index:8;font-size:14px;letter-spacing:1px;cursor:pointer}
 .play-paused[hidden]{display:none}
+.play-quest{position:fixed;left:50%;bottom:120px;transform:translateX(-50%);padding:10px 16px;border:1px solid #d9b95a99;border-radius:6px;background:#15140be6;color:#f1df9e;font-size:13px;letter-spacing:.5px;z-index:4;text-align:center}
+.play-quest[hidden]{display:none}
