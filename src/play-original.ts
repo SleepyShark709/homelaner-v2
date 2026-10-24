@@ -197,7 +197,13 @@ try {
     const terrainY = terrain.heightAt(x, z) ?? 0;
     const floorY = surfaces.topAt(x, z, terrainY + 0.75);
     const y = Math.max(terrainY, floorY ?? -Infinity) + 0.02;
-    if (!insideBox([x, y, z], collision.boxes)) { spawn = [x, y, z]; break; }
+    if (insideBox([x, y, z], collision.boxes)) continue;
+    // Keep a 4 m third-person camera slot clear so a wall/balustrade does not
+    // force the camera into the character at spawn.
+    const cameraX = x - Math.sin(input.yaw) * 4, cameraZ = z - Math.cos(input.yaw) * 4;
+    if (insideBox([cameraX, y + 1.6, cameraZ], collision.boxes)) continue;
+    spawn = [x, y, z];
+    break;
   }
   const terrainBounds = terrain.bounds();
   const bounds: Bounds = { min: [terrainBounds.min[0], -180, terrainBounds.min[2]], max: [terrainBounds.max[0], terrainBounds.max[1] + 600, terrainBounds.max[2]] };

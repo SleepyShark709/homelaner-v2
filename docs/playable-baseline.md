@@ -62,7 +62,7 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 
 另外两个候选姿态：
 
-- `plaza=1&at=-20,0&yaw=0`：石栏杆在左、古典建筑在中央，构图更接近原图，但相机被栏杆挤到角色背后（`play-plaza-left.jpg`）；
+- `plaza=1&at=-20,0&yaw=0`：石栏杆在左、古典建筑在中央，构图更接近原图；出生点搜索现在要求角色后方 4 m 相机位不被静态 AABB 占用，因此相机不再挤进角色（`play-plaza-left-clear.jpg`，对照 `comparison-start-plaza-camera-clear.jpg`）；
 - `plaza=1&at=-10,-20&yaw=0`：干净的铺装广场，但建筑布局不同（`play-plaza-left2.jpg`）。使用 `&floors=overlay` 会在恢复的砖石楼板 AABB 上铺 `GroundBrick_B_A` 原始纹理，得到 `play-mainplaza-overlay.jpg` / `comparison-start-plaza-overlay.jpg`；这是**预览地面回退**，不是原 floor mesh 已正确渲染。它比之前的 CommercialArea 候选更接近原程序起点广场的城市构图，但：
 
 - 地面 overlay 只是用原纹理覆盖 AABB，原程序 floor mesh 的可见性仍未修好；
