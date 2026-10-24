@@ -55,6 +55,7 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 | ResidentialArea1 | 3,782 | 144 | 0 | `play-b3.jpg` |
 | DownTown | 4,274 | 144 | 0 | `play-downtown.jpg` |
 | Park | 4,105 | 144 | 0 | `play-park.jpg` |
+| CommercialArea | 4,017 | 144 | 0 | `play-commercial.jpg` |
 | TitleMenuLevel | 3,469 | 144 | 0 | `play-titlemenu.jpg` |
 | 17 包启动链（`startup=1`） | 8,824 | 144 | 0 | `play-startup.jpg` |
 

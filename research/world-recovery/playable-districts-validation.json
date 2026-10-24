@@ -74,6 +74,20 @@
       ],
       "screenshot": "research/screenshots/play-startup.jpg",
       "note": "Executes the recovered 17-package/12-step startup chain before playable assembly; movement probe passed."
+    },
+    {
+      "district": "CommercialArea",
+      "objects": 4017,
+      "terrain": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "population": 0,
+      "spawn": [
+        21.5,
+        0,
+        153
+      ],
+      "screenshot": "research/screenshots/play-commercial.jpg"
     }
   ],
   "checks": {
