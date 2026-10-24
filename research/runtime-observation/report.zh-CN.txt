@@ -22,4 +22,4 @@ Pak SHA-256：4aecf43f0983c756aeb0e2ef1a2030915b19858c58bd47c2179a4c3a504625cf
 命令行参数来源：Epic UE4.27 官方说明
 https://dev.epicgames.com/documentation/en-us/unreal-engine/command-line-arguments?application_version=4.27
 
-首次视觉对照（2026-10-25）：把原程序 original-start-plaza.png 与 Web play-fov92.jpg 并排，仅比较角色/相机/光照/UI，不是同地点或同机位；Web 已加预览角色阴影并按原 CameraBoom 400cm、HeroRank 0 的 FOV 92 校准。见 docs/runtime-comparison.md 和 comparison-character-camera.jpg。
+首次视觉对照（2026-10-25）：把原程序 original-start-plaza.png 与 Web play-fov92.jpg 并排，仅比较角色/相机/光照/UI，不是同地点或同机位；Web 已加预览角色阴影并按原 CameraBoom 400cm、HeroRank 0 的 FOV 92 校准。见 docs/runtime-comparison.md 和 comparison-character-camera.jpg。MainLevel startup 全城候选见 comparison-start-plaza-mainlevel.jpg（仍非匹配）。

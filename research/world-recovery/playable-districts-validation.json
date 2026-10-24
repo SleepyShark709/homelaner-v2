@@ -97,7 +97,7 @@
     "camera": "third-person follow; AABB camera pull-in enabled",
     "startupPlayable": "?view=play&startup=1 executes OriginalStreaming 17-package/12-step startup, then builds the all-level AABB collision set, spawns the original character at ResidentialArea1 and runs the B1 movement probe (walk/jump/fly/E-Q) successfully; 8,824 source objects, 144 terrain, 0 failures.",
     "walkableSurfaces": "29 recovered /Mesh/Floor/ AABB tops are sampled in addition to the Landscape heightfield; ?at=<x,z>&yaw=<rad> can place the player on a recovered brick/plaza floor (CommercialArea 100,234 captured, 0 failures). Side collision/PhysX remains absent.",
-    "startPlazaCandidate": "CommercialArea around (91,181) shows stone balustrades, classical facades and benches similar in composition to the original start-plaza capture (play-plaza-190.jpg), but the ground is grass and building/bench/camera positions are unverified; candidate only, not a matched camera."
+    "startPlazaCandidate": "MainLevel with startup=1 at (20,0) yaw 0 shows a classical-facade/balustrade/billboard city composition closer to the original start plaza than CommercialArea, but the ground is grass, camera/benches are not matched, and it is candidate-only."
   },
   "limitations": [
     "Spawn is a viewer-safe centre point, not the original PlayerStart or story spawn.",

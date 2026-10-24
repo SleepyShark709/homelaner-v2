@@ -49,6 +49,20 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 - 新增 `?district=` 参数：对 MainLevel + 指定主世界关卡做装配与碰撞代理，出生点取该关卡 bounds 中心附近的地面空闲点；预览人口仍只在 ResidentialArea1 加载。`play-titlemenu.jpg` 是 TitleMenuLevel 的实际浏览器检查，不是原版开始画面。
 - 新增可选 `?population=original` 检查：`tools/asset-pipeline/export-citizen-spawns.mjs` 从原版 `CitizenWayPoint` 取玩家附近 **6** 个 `BP_CharaSpawnPoint`（距玩家 ≥10 m、彼此 ≥18 m），转成恢复世界坐标，生成 `population-original-citizens.json`；路线使用最近的原版 `BP_CharaChildWaypoint`（同父优先）。原版 spawner 不会同时生成全部市民，路线顺序/遍历/AI 仍是预览，所以**默认仍用预览人口**，该模式只用于位置/路径检查（`play-child-waypoints-6b.jpg`）。
 
+## MainLevel 起点广场候选（startup 全城）
+
+单区 `?view=play` 在 MainLevel 原点附近只显示空广场；加上 `&startup=1` 加载 17 包后，同一位置出现古典立面、石栏杆、广告牌和城市街区：
+
+```text
+/?view=play&startup=1&at=20,0&yaw=0
+```
+
+截图 `play-mainplaza-startup3.jpg`，对照图 `comparison-start-plaza-mainlevel.jpg`。它比之前的 CommercialArea 候选更接近原程序起点广场的城市构图，但：
+
+- 地面仍是草地，原程序是砖石铺装；
+- 长椅、相机位置和建筑朝向没有逐项匹配；
+- 仍是**候选**，不是同机位结论。
+
 ## 起点广场候选（未证明）
 
 在 CommercialArea 用 `?view=play&district=CommercialArea&at=91,181&yaw=3.14159` 检查到一组与原程序起点广场相似的元素：石质栏杆、古典拱窗立面、长椅和开阔广场，见 `play-plaza-190.jpg`。

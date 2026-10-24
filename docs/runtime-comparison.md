@@ -22,6 +22,14 @@
 | 远景 | 城市立面/天空，无明显白色山体 | 白色未恢复材质的背景山体非常显眼 |
 | UI | 原版小地图、准星、HUD | 自定义检查面板/状态 HUD；没有原版小地图/菜单 |
 
+## MainLevel 起点广场候选
+
+`?view=play&startup=1&at=20,0&yaw=0` 在 MainLevel 原点附近加载全城后，出现石栏杆、古典立面、广告牌和城市街区，构图比单区 CommercialArea 候选更接近原程序起点广场。
+
+![MainLevel 起点广场候选](../research/runtime-observation/comparison-start-plaza-mainlevel.jpg)
+
+仍不是匹配：Web 地面是草地、原程序是砖石铺装；长椅/相机/建筑朝向未对齐。这是候选地点，不是同机位验收。
+
 ## 起点广场候选
 
 `?view=play&district=CommercialArea&at=91,181&yaw=3.14159` 能看到石栏杆、古典拱窗、长椅和开阔广场，和原程序起点广场的元素组合接近（`play-plaza-190.jpg`）。但地面仍是草地（原程序为砖石铺装），建筑/长椅/相机位置也未匹配，因此这是**候选地点**，不是同机位验收。
