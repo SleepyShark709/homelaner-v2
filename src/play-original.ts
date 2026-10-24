@@ -315,6 +315,8 @@ try {
       cameraTarget.copyFrom(Vector3.Lerp(cameraTarget, look, alpha));
     }
     viewer.camera.setTarget(cameraTarget);
+    const cameraGround = terrain.heightAt(viewer.camera.position.x, viewer.camera.position.z) ?? 0;
+    if (viewer.camera.position.y < cameraGround + 0.3) viewer.camera.position.y = cameraGround + 0.3;
   };
   updateCamera();
 

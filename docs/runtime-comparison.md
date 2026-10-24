@@ -32,6 +32,8 @@
 
 候选姿态补充：`plaza=1&at=-20,0&yaw=0` 把石栏杆放到左侧、古典建筑放中央，并给后方 4 m 相机留空，构图更接近原图（`comparison-start-plaza-camera-clear.jpg`）；`plaza=1&at=-10,-20&yaw=0` 视野干净但建筑布局不同。两者都仍是候选，不是同机位。
 
+三个已恢复 `StoryStartPoint` 的 startup 检查都没有命中开始广场，见 [story-start-point-audit.zh-CN.md](../research/world-recovery/story-start-point-audit.zh-CN.md)。
+
 ![相机净空后的广场候选](../research/runtime-observation/comparison-start-plaza-camera-clear.jpg)
 
 仍不是匹配：长椅/相机/建筑朝向未对齐，overlay 也不是原程序渲染。这是候选地点，不是同机位验收。
