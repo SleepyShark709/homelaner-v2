@@ -1,0 +1,2507 @@
+{
+  "package": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelWind",
+  "actors": [
+    {
+      "exportIndex": 36,
+      "name": "BP_BaseBoss_830",
+      "class": "BP_BaseBoss_C",
+      "rootComponentIndex": 37,
+      "rootComponent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CollisionCylinder",
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 73,
+      "name": "TestBossLevelWind_C_0",
+      "class": "TestBossLevelWind_C",
+      "rootComponentIndex": null,
+      "rootComponent": null,
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 74,
+      "name": "ChildActor_GEN_VARIABLE_WindDirectionalSource_CAT_514",
+      "class": "WindDirectionalSource",
+      "rootComponentIndex": 75,
+      "rootComponent": "TestBossLevelWind/PersistentLevel/ChildActor_GEN_VARIABLE_WindDirectionalSource_CAT_514/WindDirectionalSourceComponent0",
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 77,
+      "name": "WorldSettings",
+      "class": "WorldSettings",
+      "rootComponentIndex": null,
+      "rootComponent": null,
+      "visibilityProperties": {}
+    }
+  ],
+  "componentTransforms": [
+    {
+      "exportIndex": 3,
+      "component": "Arrow1",
+      "class": "ArrowComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 31,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Main",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 4,
+      "component": "Arrow2",
+      "class": "ArrowComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 32,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Right",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 5,
+      "component": "Arrow3",
+      "class": "ArrowComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 28,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Left",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 6,
+      "component": "Arrow4",
+      "class": "ArrowComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 34,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/RightMid",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 7,
+      "component": "Arrow5",
+      "class": "ArrowComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 30,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/LeftMid",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 8,
+      "component": "Arrow6",
+      "class": "ArrowComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 26,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Back",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 9,
+      "component": "Arrow7",
+      "class": "ArrowComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 33,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/RightB",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 10,
+      "component": "Arrow8",
+      "class": "ArrowComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 29,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/LeftB",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 11,
+      "component": "Arrow9",
+      "class": "ArrowComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 27,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/DeadEffectLocation",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 12,
+      "component": "S_BossAttackCharge",
+      "class": "AudioComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 67,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Audio",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 13,
+      "component": "S_BossBlowing",
+      "class": "AudioComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 67,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Audio",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 14,
+      "component": "S_BossHandSwingStart",
+      "class": "AudioComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 67,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Audio",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 15,
+      "component": "S_BossHeavyAttackAttackCharge",
+      "class": "AudioComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 67,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Audio",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 16,
+      "component": "S_BossHitGround",
+      "class": "AudioComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 67,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Audio",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 17,
+      "component": "S_BossMoving",
+      "class": "AudioComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 67,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Audio",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 18,
+      "component": "S_BossPowerUp",
+      "class": "AudioComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 67,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Audio",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 19,
+      "component": "S_BossReturn",
+      "class": "AudioComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 67,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Audio",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 20,
+      "component": "S_BossSpawn",
+      "class": "AudioComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 67,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Audio",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 21,
+      "component": "S_BossStunVoice",
+      "class": "AudioComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 67,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Audio",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 22,
+      "component": "S_LongRangeHit",
+      "class": "AudioComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 67,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Audio",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 23,
+      "component": "S_MoveStart",
+      "class": "AudioComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 67,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Audio",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 24,
+      "component": "S_NormalHit",
+      "class": "AudioComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 67,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Audio",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 25,
+      "component": "S_StunStart",
+      "class": "AudioComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 67,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Audio",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 26,
+      "component": "Back",
+      "class": "BillboardComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 66,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/AttackPoint",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 27,
+      "component": "DeadEffectLocation",
+      "class": "BillboardComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 37,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CollisionCylinder",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 28,
+      "component": "Left",
+      "class": "BillboardComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 66,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/AttackPoint",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 29,
+      "component": "LeftB",
+      "class": "BillboardComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 66,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/AttackPoint",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 30,
+      "component": "LeftMid",
+      "class": "BillboardComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 66,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/AttackPoint",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 31,
+      "component": "Main",
+      "class": "BillboardComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 66,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/AttackPoint",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 32,
+      "component": "Right",
+      "class": "BillboardComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 66,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/AttackPoint",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 33,
+      "component": "RightB",
+      "class": "BillboardComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 66,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/AttackPoint",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 34,
+      "component": "RightMid",
+      "class": "BillboardComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 66,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/AttackPoint",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 35,
+      "component": "Top",
+      "class": "BillboardComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 66,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/AttackPoint",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 37,
+      "component": "CollisionCylinder",
+      "class": "CapsuleComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 0,
+      "attachParent": null,
+      "attachSocket": null,
+      "relativeLocationUE": {
+        "X": -4500.0,
+        "Y": "+0",
+        "Z": 1874.171142578125
+      },
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 39,
+      "component": "WindActor",
+      "class": "ChildActorComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 37,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CollisionCylinder",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 44,
+      "component": "P_BossAttackCharge",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 31,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Main",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 45,
+      "component": "P_BossAttackHandSwing_L",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 71,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CharacterMesh0",
+      "attachSocket": "HandPowerL",
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 46,
+      "component": "P_BossAttackHandSwing_R",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 71,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CharacterMesh0",
+      "attachSocket": "HandPowerR",
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 47,
+      "component": "P_BossBlowing",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 70,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/HitEffect",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 48,
+      "component": "P_BossHeavyAttackCharge",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 71,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CharacterMesh0",
+      "attachSocket": "Root",
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 49,
+      "component": "P_BossPowerUp_Charge",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 71,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CharacterMesh0",
+      "attachSocket": "Root",
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 50,
+      "component": "P_BossPowerUpAura",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 71,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CharacterMesh0",
+      "attachSocket": "Root",
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 51,
+      "component": "P_BossReturn",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 71,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CharacterMesh0",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 52,
+      "component": "P_BossSpawn",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 71,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CharacterMesh0",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 53,
+      "component": "P_BossStunStart",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 71,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CharacterMesh0",
+      "attachSocket": "Root",
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 54,
+      "component": "P_HeavyAttackAura",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 71,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CharacterMesh0",
+      "attachSocket": "Root",
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 55,
+      "component": "P_HitEffect",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 70,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/HitEffect",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 56,
+      "component": "P_HitEffect_Heavy",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 70,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/HitEffect",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 57,
+      "component": "P_HitEffect_Slash",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 70,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/HitEffect",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 58,
+      "component": "P_HitEffect_Slash_Heavy",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 70,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/HitEffect",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 59,
+      "component": "P_HitEffect_Stun",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 70,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/HitEffect",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 60,
+      "component": "P_HitEffect_Stun_Slash",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 70,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/HitEffect",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 61,
+      "component": "P_HitGround",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 68,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Effects",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 62,
+      "component": "P_MoveStart",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 68,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/Effects",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 63,
+      "component": "P_Power_L",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 71,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CharacterMesh0",
+      "attachSocket": "HandPowerL",
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 64,
+      "component": "P_Power_R",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 71,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CharacterMesh0",
+      "attachSocket": "HandPowerR",
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 65,
+      "component": "P_PowerMain",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 71,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CharacterMesh0",
+      "attachSocket": "Root",
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 66,
+      "component": "AttackPoint",
+      "class": "SceneComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 37,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CollisionCylinder",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 67,
+      "component": "Audio",
+      "class": "SceneComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 37,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CollisionCylinder",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 68,
+      "component": "Effects",
+      "class": "SceneComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 37,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CollisionCylinder",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 69,
+      "component": "FixPivot",
+      "class": "SceneComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 71,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CharacterMesh0",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 70,
+      "component": "HitEffect",
+      "class": "SceneComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 71,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CharacterMesh0",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 71,
+      "component": "CharacterMesh0",
+      "class": "SkeletalMeshComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 37,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CollisionCylinder",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 72,
+      "component": "PlayerCheckCollision",
+      "class": "SphereComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "sourceActorExportIndex": 36,
+      "outer": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830",
+      "attachParentIndex": 37,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/CollisionCylinder",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 75,
+      "component": "WindDirectionalSourceComponent0",
+      "class": "WindDirectionalSourceComponent",
+      "sourceActor": "TestBossLevelWind/PersistentLevel/ChildActor_GEN_VARIABLE_WindDirectionalSource_CAT_514",
+      "sourceActorExportIndex": 74,
+      "outer": "TestBossLevelWind/PersistentLevel/ChildActor_GEN_VARIABLE_WindDirectionalSource_CAT_514",
+      "attachParentIndex": 39,
+      "attachParent": "TestBossLevelWind/PersistentLevel/BP_BaseBoss_830/WindActor",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          -4500.0,
+          0.0,
+          1874.171142578125
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    }
+  ],
+  "meshReferences": [],
+  "materialOverrides": [],
+  "lightsAndReflection": [],
+  "environmentActors": [
+    {
+      "exportIndex": 77,
+      "class": "WorldSettings",
+      "name": "WorldSettings",
+      "properties": {
+        "bEnableNavigationSystem": false,
+        "NavigationSystemConfig": 43,
+        "BookmarkArray": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        }
+      }
+    }
+  ],
+  "terrain": [],
+  "foliageAndInstancing": [],
+  "streamingRecords": [],
+  "streamingTables": [
+    {
+      "worldExport": 76,
+      "tailBytes": 16,
+      "tailWords": [
+        0,
+        40,
+        0,
+        0
+      ],
+      "verifiedCountedTable": false
+    }
+  ],
+  "levelActorReferenceTables": [
+    {
+      "levelExportIndex": 40,
+      "slots": 5,
+      "nullSlots": 1,
+      "actorExports": [
+        77,
+        73,
+        36,
+        74
+      ]
+    }
+  ],
+  "materialImports": [],
+  "meshImports": [],
+  "embeddedMaterialExports": [],
+  "rawExports": []
+}

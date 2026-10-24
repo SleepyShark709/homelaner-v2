@@ -1,0 +1,813 @@
+{
+  "method": "UAssetAPI creation control-flow + class/CDO structure + UE4.27 documented initialization. Derived fresh-save default, not observed user save.",
+  "sources": [
+    {
+      "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\HeroGameSaveData.json",
+      "sha256": "af0540e8e69c6fdaaaf70cf485152a19917e1e5665d9165d999505d54ad92ec7"
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\streaming-HeroGameInstance-view.json",
+      "sha256": "79d4597e0b9c71eec72793ffc26bbdd54db8066ca71d9a73da9950cad01203a0"
+    }
+  ],
+  "originalGameInstanceDecode": {
+    "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameInstance.json",
+    "sha256": "76a56ee8b423b00d47b750678f477e0fa7c2bf5fa8f644ff6c59d6c9142343b9",
+    "offsets": "E:\\undefeated-web\\research\\streaming-HeroGameInstance-offsets.json",
+    "filePresentAtThisVerification": true,
+    "hashSource": "original JSON re-read with explicit UTF-8 and SHA verified"
+  },
+  "creationChain": [
+    {
+      "pointer": "/Exports/0/ScriptBytecode/91",
+      "ast": {
+        "op": "EX_LetObj",
+        "VariableExpression": "CallFunc_Create_ReturnValue",
+        "AssignmentExpression": {
+          "on": {
+            "object": "Default__WidgetBlueprintLibrary"
+          },
+          "do": {
+            "call": "Create",
+            "args": [
+              "self",
+              {
+                "object": "WBP_SaveAndLoad_C"
+              },
+              {
+                "op": "EX_NoObject"
+              }
+            ]
+          }
+        }
+      },
+      "offset": 2495
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/92",
+      "ast": {
+        "op": "EX_LetObj",
+        "VariableExpression": "WBP_SaveOrLoad",
+        "AssignmentExpression": "CallFunc_Create_ReturnValue"
+      },
+      "offset": 2548
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/93",
+      "ast": {
+        "op": "EX_LetObj",
+        "VariableExpression": "CallFunc_LoadGame_ReturnValue_1",
+        "AssignmentExpression": {
+          "call": "LoadGame",
+          "args": []
+        }
+      },
+      "offset": 2567
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/94",
+      "ast": {
+        "op": "EX_LetBool",
+        "VariableExpression": "CallFunc_IsValid_ReturnValue_8",
+        "AssignmentExpression": {
+          "call": "IsValid",
+          "args": [
+            "CallFunc_LoadGame_ReturnValue_1"
+          ]
+        }
+      },
+      "offset": 2591
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/95",
+      "ast": {
+        "op": "EX_JumpIfNot",
+        "CodeOffset": 2689,
+        "BooleanExpression": "CallFunc_IsValid_ReturnValue_8"
+      },
+      "offset": 2620
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/96",
+      "ast": {
+        "call": "Delay",
+        "args": [
+          "self",
+          0.20000000298023224,
+          {
+            "op": "EX_StructConst",
+            "Struct": -160,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 1182
+              },
+              -2100906002,
+              "ExecuteUbergraph_HeroGameInstance",
+              "self"
+            ]
+          }
+        ]
+      },
+      "offset": 2634
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/97",
+      "ast": {
+        "op": "EX_PopExecutionFlow"
+      },
+      "offset": 2688
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/98",
+      "ast": {
+        "op": "EX_LetObj",
+        "VariableExpression": "CallFunc_CreateSaveGameObject_ReturnValue",
+        "AssignmentExpression": {
+          "call": "CreateSaveGameObject",
+          "args": [
+            {
+              "object": "HeroGameSaveData_C"
+            }
+          ]
+        }
+      },
+      "offset": 2689
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/99",
+      "ast": {
+        "op": "EX_LetObj",
+        "VariableExpression": "SaveData",
+        "AssignmentExpression": "CallFunc_CreateSaveGameObject_ReturnValue"
+      },
+      "offset": 2718
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/100",
+      "ast": {
+        "op": "EX_LetBool",
+        "VariableExpression": {
+          "on": "SaveData",
+          "do": "IsFirstStart"
+        },
+        "AssignmentExpression": true
+      },
+      "offset": 2737
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/101",
+      "ast": {
+        "call": "SetDefaultLanguageFromPlatform",
+        "args": []
+      },
+      "offset": 2770
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/102",
+      "ast": {
+        "call": "SaveGame",
+        "args": [
+          "CallFunc_SaveGame_SaveSuccess"
+        ]
+      },
+      "offset": 2784
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/103",
+      "ast": {
+        "call": "Delay",
+        "args": [
+          "self",
+          0.20000000298023224,
+          {
+            "op": "EX_StructConst",
+            "Struct": -160,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 706
+              },
+              270715354,
+              "ExecuteUbergraph_HeroGameInstance",
+              "self"
+            ]
+          }
+        ]
+      },
+      "offset": 2807
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/104",
+      "ast": {
+        "op": "EX_PopExecutionFlow"
+      },
+      "offset": 2861
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/132",
+      "ast": {
+        "op": "EX_LetObj",
+        "VariableExpression": "HeroGameMode",
+        "AssignmentExpression": "K2Node_CustomEvent_HeroGameMode"
+      },
+      "offset": 3596
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/133",
+      "ast": {
+        "op": "EX_LetObj",
+        "VariableExpression": "HeroGameState",
+        "AssignmentExpression": "K2Node_CustomEvent_HeroGameState"
+      },
+      "offset": 3615
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/134",
+      "ast": {
+        "op": "EX_LetObj",
+        "VariableExpression": "HeroGameController",
+        "AssignmentExpression": "K2Node_CustomEvent_HeroGameController"
+      },
+      "offset": 3634
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/135",
+      "ast": {
+        "op": "EX_LetObj",
+        "VariableExpression": "CallFunc_GetPlayerCharacter_ReturnValue_1",
+        "AssignmentExpression": {
+          "call": "GetPlayerCharacter",
+          "args": [
+            "self",
+            0
+          ]
+        }
+      },
+      "offset": 3653
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/136",
+      "ast": {
+        "op": "EX_Let",
+        "Value": {
+          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+          "New": {
+            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+            "Path": [],
+            "ResolvedOwner": 0
+          }
+        },
+        "Variable": "K2Node_DynamicCast_AsPlayer_BP",
+        "Expression": {
+          "op": "EX_DynamicCast",
+          "ClassPtr": -15,
+          "TargetExpression": "CallFunc_GetPlayerCharacter_ReturnValue_1"
+        }
+      },
+      "offset": 3679
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/137",
+      "ast": {
+        "op": "EX_Let",
+        "Value": {
+          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+          "New": {
+            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+            "Path": [],
+            "ResolvedOwner": 0
+          }
+        },
+        "Variable": "K2Node_DynamicCast_bSuccess_4",
+        "Expression": {
+          "op": "EX_PrimitiveCast",
+          "ConversionType": "ObjectToBool",
+          "Target": "K2Node_DynamicCast_AsPlayer_BP"
+        }
+      },
+      "offset": 3715
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/138",
+      "ast": {
+        "op": "EX_PopExecutionFlowIfNot",
+        "BooleanExpression": "K2Node_DynamicCast_bSuccess_4"
+      },
+      "offset": 3744
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/139",
+      "ast": {
+        "op": "EX_LetObj",
+        "VariableExpression": "PlayerRef",
+        "AssignmentExpression": "K2Node_DynamicCast_AsPlayer_BP"
+      },
+      "offset": 3754
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/140",
+      "ast": {
+        "op": "EX_PushExecutionFlow",
+        "PushingAddress": 3783
+      },
+      "offset": 3773
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/141",
+      "ast": {
+        "op": "EX_Jump",
+        "CodeOffset": 2495
+      },
+      "offset": 3778
+    },
+    {
+      "pointer": "/Exports/0/ScriptBytecode/142",
+      "ast": {
+        "op": "EX_LetBool",
+        "VariableExpression": "Initialized",
+        "AssignmentExpression": true
+      },
+      "offset": 3783
+    }
+  ],
+  "initializeEntry": {
+    "export_index": 18,
+    "name": "Initialize",
+    "statements": [
+      {
+        "pointer": "/Exports/18/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_HeroGameMode",
+          "AssignmentExpression": "HeroGameMode"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/18/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_HeroGameState",
+          "AssignmentExpression": "HeroGameState"
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/18/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_HeroGameController",
+          "AssignmentExpression": "HeroGameController"
+        },
+        "offset": 36
+      },
+      {
+        "pointer": "/Exports/18/ScriptBytecode/3",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            3596
+          ]
+        },
+        "offset": 54
+      },
+      {
+        "pointer": "/Exports/18/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 69
+      },
+      {
+        "pointer": "/Exports/18/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 71
+      }
+    ]
+  },
+  "classIdentity": {
+    "objectName": "HeroGameSaveData_C",
+    "superImport": {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "SaveGame",
+      "OuterIndex": -8,
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "bImportOptional": false
+    },
+    "superPointer": "/Imports/3",
+    "classDefaultObject": 2,
+    "functionExportCount": 0,
+    "classScriptBytecode": []
+  },
+  "properties": [
+    {
+      "pointer": "/Exports/0/LoadedProperties/21",
+      "descriptor": {
+        "$type": "UAssetAPI.FieldTypes.FBoolProperty, UAssetAPI",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "NativeBool": true,
+        "Value": true,
+        "ArrayDim": "TArray",
+        "ElementSize": 1,
+        "PropertyFlags": "CPF_Edit, CPF_BlueprintVisible, CPF_DisableEditOnInstance",
+        "RepIndex": 0,
+        "RepNotifyFunc": "None",
+        "BlueprintReplicationCondition": "COND_None",
+        "RawValue": null,
+        "SerializedType": "BoolProperty",
+        "Name": "IsFirstTutorial",
+        "Flags": "RF_Public, RF_LoadCompleted"
+      }
+    },
+    {
+      "pointer": "/Exports/0/LoadedProperties/29",
+      "descriptor": {
+        "$type": "UAssetAPI.FieldTypes.FBoolProperty, UAssetAPI",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "NativeBool": true,
+        "Value": true,
+        "ArrayDim": "TArray",
+        "ElementSize": 1,
+        "PropertyFlags": "CPF_Edit, CPF_BlueprintVisible, CPF_DisableEditOnInstance",
+        "RepIndex": 0,
+        "RepNotifyFunc": "None",
+        "BlueprintReplicationCondition": "COND_None",
+        "RawValue": null,
+        "SerializedType": "BoolProperty",
+        "Name": "IsFirstPlayerSpecialAction",
+        "Flags": "RF_Public, RF_LoadCompleted"
+      }
+    }
+  ],
+  "classDefaultObject": {
+    "pointer": "/Exports/1",
+    "serializedData": [
+      {
+        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+        "Value": 1.0,
+        "Name": "MasterVolume",
+        "DuplicationIndex": 0
+      },
+      {
+        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+        "Value": 1.0,
+        "Name": "SEVolume",
+        "DuplicationIndex": 0
+      },
+      {
+        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+        "Value": 1.0,
+        "Name": "BGMVolume",
+        "DuplicationIndex": 0
+      },
+      {
+        "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+        "Name": "CameraS",
+        "DuplicationIndex": 0,
+        "Value": 5
+      },
+      {
+        "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+        "Name": "IsVibration",
+        "DuplicationIndex": 0,
+        "Value": true
+      },
+      {
+        "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+        "ByteType": "FName",
+        "EnumType": "E_PlayerAttackMoveType",
+        "EnumValue": "E_PlayerAttackMoveType::NewEnumerator1",
+        "Name": "PlayerActionMoveType",
+        "DuplicationIndex": 0
+      },
+      {
+        "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+        "Name": "FreeModeTutorial",
+        "DuplicationIndex": 0,
+        "Value": true
+      },
+      {
+        "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+        "Name": "ChallengeQuestTutorial",
+        "DuplicationIndex": 0,
+        "Value": true
+      },
+      {
+        "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+        "Name": "FollowCamera",
+        "DuplicationIndex": 0,
+        "Value": true
+      },
+      {
+        "$type": "UAssetAPI.PropertyTypes.Objects.ArrayPropertyData, UAssetAPI",
+        "ArrayType": "StructProperty",
+        "Name": "ChallengeSave",
+        "DuplicationIndex": 0,
+        "Value": [
+          {
+            "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+            "StructType": "S_ChallengeQuestSave",
+            "SerializeNone": true,
+            "StructGUID": "{DD84C3E1-445A-9612-B830-51BFD814B575}",
+            "Name": "ChallengeSave",
+            "DuplicationIndex": 0,
+            "Value": [
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestType",
+                "EnumValue": "E_ChallengeQuestType::NewEnumerator0",
+                "Name": "QuestType_6_87995CA14811836FF4621BB4FC141D16",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestDifficulty",
+                "EnumValue": "E_ChallengeQuestDifficulty::NewEnumerator0",
+                "Name": "Difficulty_5_A3E64D81402C08F308C9E481028D0A71",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                "Name": "HighScore_10_40F6223E4AE78DECA1ACA5B211D103E3",
+                "DuplicationIndex": 0,
+                "Value": 0
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+            "StructType": "S_ChallengeQuestSave",
+            "SerializeNone": true,
+            "StructGUID": "{DD84C3E1-445A-9612-B830-51BFD814B575}",
+            "Name": "ChallengeSave",
+            "DuplicationIndex": 0,
+            "Value": [
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestType",
+                "EnumValue": "E_ChallengeQuestType::NewEnumerator0",
+                "Name": "QuestType_6_87995CA14811836FF4621BB4FC141D16",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestDifficulty",
+                "EnumValue": "E_ChallengeQuestDifficulty::NewEnumerator1",
+                "Name": "Difficulty_5_A3E64D81402C08F308C9E481028D0A71",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                "Name": "HighScore_10_40F6223E4AE78DECA1ACA5B211D103E3",
+                "DuplicationIndex": 0,
+                "Value": 0
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+            "StructType": "S_ChallengeQuestSave",
+            "SerializeNone": true,
+            "StructGUID": "{DD84C3E1-445A-9612-B830-51BFD814B575}",
+            "Name": "ChallengeSave",
+            "DuplicationIndex": 0,
+            "Value": [
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestType",
+                "EnumValue": "E_ChallengeQuestType::NewEnumerator0",
+                "Name": "QuestType_6_87995CA14811836FF4621BB4FC141D16",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestDifficulty",
+                "EnumValue": "E_ChallengeQuestDifficulty::NewEnumerator2",
+                "Name": "Difficulty_5_A3E64D81402C08F308C9E481028D0A71",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                "Name": "HighScore_10_40F6223E4AE78DECA1ACA5B211D103E3",
+                "DuplicationIndex": 0,
+                "Value": 0
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+            "StructType": "S_ChallengeQuestSave",
+            "SerializeNone": true,
+            "StructGUID": "{DD84C3E1-445A-9612-B830-51BFD814B575}",
+            "Name": "ChallengeSave",
+            "DuplicationIndex": 0,
+            "Value": [
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestType",
+                "EnumValue": "E_ChallengeQuestType::NewEnumerator0",
+                "Name": "QuestType_6_87995CA14811836FF4621BB4FC141D16",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestDifficulty",
+                "EnumValue": "E_ChallengeQuestDifficulty::NewEnumerator4",
+                "Name": "Difficulty_5_A3E64D81402C08F308C9E481028D0A71",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                "Name": "HighScore_10_40F6223E4AE78DECA1ACA5B211D103E3",
+                "DuplicationIndex": 0,
+                "Value": 0
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+            "StructType": "S_ChallengeQuestSave",
+            "SerializeNone": true,
+            "StructGUID": "{DD84C3E1-445A-9612-B830-51BFD814B575}",
+            "Name": "ChallengeSave",
+            "DuplicationIndex": 0,
+            "Value": [
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestType",
+                "EnumValue": "E_ChallengeQuestType::NewEnumerator1",
+                "Name": "QuestType_6_87995CA14811836FF4621BB4FC141D16",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestDifficulty",
+                "EnumValue": "E_ChallengeQuestDifficulty::NewEnumerator0",
+                "Name": "Difficulty_5_A3E64D81402C08F308C9E481028D0A71",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                "Name": "HighScore_10_40F6223E4AE78DECA1ACA5B211D103E3",
+                "DuplicationIndex": 0,
+                "Value": 0
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+            "StructType": "S_ChallengeQuestSave",
+            "SerializeNone": true,
+            "StructGUID": "{DD84C3E1-445A-9612-B830-51BFD814B575}",
+            "Name": "ChallengeSave",
+            "DuplicationIndex": 0,
+            "Value": [
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestType",
+                "EnumValue": "E_ChallengeQuestType::NewEnumerator1",
+                "Name": "QuestType_6_87995CA14811836FF4621BB4FC141D16",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestDifficulty",
+                "EnumValue": "E_ChallengeQuestDifficulty::NewEnumerator1",
+                "Name": "Difficulty_5_A3E64D81402C08F308C9E481028D0A71",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                "Name": "HighScore_10_40F6223E4AE78DECA1ACA5B211D103E3",
+                "DuplicationIndex": 0,
+                "Value": 0
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+            "StructType": "S_ChallengeQuestSave",
+            "SerializeNone": true,
+            "StructGUID": "{DD84C3E1-445A-9612-B830-51BFD814B575}",
+            "Name": "ChallengeSave",
+            "DuplicationIndex": 0,
+            "Value": [
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestType",
+                "EnumValue": "E_ChallengeQuestType::NewEnumerator1",
+                "Name": "QuestType_6_87995CA14811836FF4621BB4FC141D16",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestDifficulty",
+                "EnumValue": "E_ChallengeQuestDifficulty::NewEnumerator2",
+                "Name": "Difficulty_5_A3E64D81402C08F308C9E481028D0A71",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                "Name": "HighScore_10_40F6223E4AE78DECA1ACA5B211D103E3",
+                "DuplicationIndex": 0,
+                "Value": 0
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+            "StructType": "S_ChallengeQuestSave",
+            "SerializeNone": true,
+            "StructGUID": "{DD84C3E1-445A-9612-B830-51BFD814B575}",
+            "Name": "ChallengeSave",
+            "DuplicationIndex": 0,
+            "Value": [
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestType",
+                "EnumValue": "E_ChallengeQuestType::NewEnumerator1",
+                "Name": "QuestType_6_87995CA14811836FF4621BB4FC141D16",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "E_ChallengeQuestDifficulty",
+                "EnumValue": "E_ChallengeQuestDifficulty::NewEnumerator4",
+                "Name": "Difficulty_5_A3E64D81402C08F308C9E481028D0A71",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                "Name": "HighScore_10_40F6223E4AE78DECA1ACA5B211D103E3",
+                "DuplicationIndex": 0,
+                "Value": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+        "Name": "Story",
+        "DuplicationIndex": 0,
+        "Value": -1
+      }
+    ],
+    "targetBoolOverridesPresent": false
+  },
+  "engineSemantics": {
+    "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-object-handling?application_version=4.27",
+    "sections": [
+      "Automatic Property Initialization",
+      "Serialization"
+    ],
+    "paraphrase": "UObject memory, including reflected properties, is cleared before construction. Serialization may omit properties unchanged from defaults."
+  },
+  "conclusions": {
+    "IsFirstPlayerSpecialAction": {
+      "newSaveValue": false,
+      "classification": "derived: own Blueprint bool, no CDO override or initializer, and engine zero initialization"
+    },
+    "IsFirstTutorial": {
+      "newSaveValue": false,
+      "classification": "derived: own Blueprint bool, no CDO override or initializer, and engine zero initialization"
+    }
+  },
+  "limits": [
+    "Only freshly constructed HeroGameSaveData_C; existing saves can override values.",
+    "No original user save file was read or written.",
+    "FBoolProperty.Value=true is descriptor data, not the saved property value.",
+    "Tutorial execution remains unknown; the checker is not a complete original new-game implementation."
+  ]
+}

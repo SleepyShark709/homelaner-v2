@@ -1,0 +1,952 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "scope": "Additional static combat recovery; installation never modified or launched",
+  "sources": {
+    "BP_NormalLongAttackCollirion": {
+      "path": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_NormalLongAttackCollirion.json",
+      "sha256": "cc11a73d0c4da2a4ed3f51eab9b953e4d173f96c8ac9b0ae40705c48dadb1182"
+    },
+    "BP_SuperPunch": {
+      "path": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_SuperPunch.json",
+      "sha256": "b7ac9cbc42fa0f92a068717ab885c6dbb6dddfcf44e664f082a045f82cda9ad6"
+    },
+    "BP_SuperKick": {
+      "path": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_SuperKick.json",
+      "sha256": "1a8e75484dce77f8308e94b5fc6f80057a6cc44e3544078f26007e1e27e1c357"
+    },
+    "BP_AirLongAttack_Kick": {
+      "path": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_AirLongAttack_Kick.json",
+      "sha256": "779e80d8deec81375b01f9707dceb2383084c80139bb4e309e6727fe1a75df9b"
+    },
+    "BP_AttackCollirion": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_AttackCollirion.json",
+      "sha256": "cf914ce5fac9412c446cb8fbef8dbef5847225b6f6456a9a4a7211f716617c85"
+    },
+    "BP_AttackCollirionNormal": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_AttackCollirionNormal.json",
+      "sha256": "2c4ba5e89658debdc60fff6f8d2bdee0e15517524e3b41bcfddb7823633b98d6"
+    },
+    "HeroComponent": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroComponent.json",
+      "sha256": "23e454745d3dfeb949b24c763ebaa33a127dcec66bc310b499f1510e03d89fd0"
+    }
+  },
+  "projectiles": [
+    {
+      "class": "BP_NormalLongAttackCollirion",
+      "status": "recovered_static_inheritance_and_control_flow",
+      "initial_speed_ue_per_second": 15000,
+      "max_speed_ue_per_second": 15000,
+      "projectile_gravity_scale": 0,
+      "actor_lifetime_seconds": 4,
+      "sphere_radius_ue": 256,
+      "capsule": null,
+      "capsule_missing_reason": "Not serialized; native CapsuleComponent size not proved here. Do not guess.",
+      "trace_radius_ue": 100,
+      "environment_forward_trace_distance_ue": 300,
+      "impact_flags": {
+        "IsStrong": false,
+        "IsSlash": false,
+        "IsLongRange": true,
+        "third_flag": false,
+        "fifth_flag": false
+      },
+      "flag_evidence_note": "Normal class IsStrong/IsSlash are zero-default derivations; other classes explicitly Initialize on BeginPlay. Super class CDO IsLongRange=false is overridden to true by Initialize.",
+      "evidence": [
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/17/Data"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/10/Data/10"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/7/ScriptBytecode/13"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/6/ScriptBytecode"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/27/Data"
+        },
+        {
+          "source": "BP_AttackCollirion",
+          "pointer": "/Exports/20/Data/0"
+        }
+      ]
+    },
+    {
+      "class": "BP_SuperPunch",
+      "status": "recovered_static_inheritance_and_control_flow",
+      "initial_speed_ue_per_second": 15000,
+      "max_speed_ue_per_second": 15000,
+      "projectile_gravity_scale": 0,
+      "actor_lifetime_seconds": 4,
+      "sphere_radius_ue": 1500,
+      "capsule": null,
+      "capsule_missing_reason": "Not serialized; native CapsuleComponent size not proved here. Do not guess.",
+      "trace_radius_ue": 100,
+      "environment_forward_trace_distance_ue": 300,
+      "impact_flags": {
+        "IsStrong": true,
+        "IsSlash": false,
+        "IsLongRange": true,
+        "third_flag": false,
+        "fifth_flag": false
+      },
+      "flag_evidence_note": "Normal class IsStrong/IsSlash are zero-default derivations; other classes explicitly Initialize on BeginPlay. Super class CDO IsLongRange=false is overridden to true by Initialize.",
+      "evidence": [
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/17/Data"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/10/Data/10"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/7/ScriptBytecode/13"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/6/ScriptBytecode"
+        },
+        {
+          "source": "BP_SuperPunch",
+          "pointer": "/Exports/2/SuperStruct"
+        },
+        {
+          "source": "BP_SuperPunch",
+          "pointer": "/Exports/0/ScriptBytecode"
+        },
+        {
+          "source": "BP_SuperPunch",
+          "pointer": "/Exports/12/Data"
+        },
+        {
+          "source": "BP_SuperPunch",
+          "pointer": "/Exports/7/Data"
+        }
+      ]
+    },
+    {
+      "class": "BP_SuperKick",
+      "status": "recovered_static_inheritance_and_control_flow",
+      "initial_speed_ue_per_second": 15000,
+      "max_speed_ue_per_second": 15000,
+      "projectile_gravity_scale": 0,
+      "actor_lifetime_seconds": 4,
+      "sphere_radius_ue": 500,
+      "capsule": {
+        "half_height_ue": 2000,
+        "radius_ue": 350,
+        "roll_degrees": 100
+      },
+      "capsule_missing_reason": null,
+      "trace_radius_ue": 100,
+      "environment_forward_trace_distance_ue": 300,
+      "impact_flags": {
+        "IsStrong": true,
+        "IsSlash": true,
+        "IsLongRange": true,
+        "third_flag": false,
+        "fifth_flag": false
+      },
+      "flag_evidence_note": "Normal class IsStrong/IsSlash are zero-default derivations; other classes explicitly Initialize on BeginPlay. Super class CDO IsLongRange=false is overridden to true by Initialize.",
+      "evidence": [
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/17/Data"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/10/Data/10"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/7/ScriptBytecode/13"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/6/ScriptBytecode"
+        },
+        {
+          "source": "BP_SuperKick",
+          "pointer": "/Exports/2/SuperStruct"
+        },
+        {
+          "source": "BP_SuperKick",
+          "pointer": "/Exports/0/ScriptBytecode"
+        },
+        {
+          "source": "BP_SuperKick",
+          "pointer": "/Exports/13/Data"
+        },
+        {
+          "source": "BP_SuperKick",
+          "pointer": "/Exports/5/Data"
+        },
+        {
+          "source": "BP_SuperKick",
+          "pointer": "/Exports/8/Data"
+        }
+      ]
+    },
+    {
+      "class": "BP_AirLongAttack_Kick",
+      "status": "recovered_static_inheritance_and_control_flow",
+      "initial_speed_ue_per_second": 15000,
+      "max_speed_ue_per_second": 15000,
+      "projectile_gravity_scale": 0,
+      "actor_lifetime_seconds": 4,
+      "sphere_radius_ue": 256,
+      "capsule": {
+        "half_height_ue": 500,
+        "radius_ue": 97.1514892578125,
+        "roll_degrees": -90.0000991821289
+      },
+      "capsule_missing_reason": null,
+      "trace_radius_ue": 64,
+      "environment_forward_trace_distance_ue": 300,
+      "impact_flags": {
+        "IsStrong": false,
+        "IsSlash": true,
+        "IsLongRange": true,
+        "third_flag": false,
+        "fifth_flag": false
+      },
+      "flag_evidence_note": "Normal class IsStrong/IsSlash are zero-default derivations; other classes explicitly Initialize on BeginPlay. Super class CDO IsLongRange=false is overridden to true by Initialize.",
+      "evidence": [
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/17/Data"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/10/Data/10"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/7/ScriptBytecode/13"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/6/ScriptBytecode"
+        },
+        {
+          "source": "BP_AirLongAttack_Kick",
+          "pointer": "/Exports/2/SuperStruct"
+        },
+        {
+          "source": "BP_AirLongAttack_Kick",
+          "pointer": "/Exports/0/ScriptBytecode"
+        },
+        {
+          "source": "BP_AirLongAttack_Kick",
+          "pointer": "/Exports/5/Data"
+        }
+      ]
+    }
+  ],
+  "shared_behavior": [
+    {
+      "id": "lifetime-vs-active",
+      "status": "recovered_control_flow",
+      "claim": "BeginPlay schedules3.5s then IsHit=true and MainEffect.Deactivate. This does NOT disable collision/stop movement; OverlapFunc does not test IsHit. Actor expires at4s. Do not implement3.5 as proved hard damage TTL.",
+      "evidence": [
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/4"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/5"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/9"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/69"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/71"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/120"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/121"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/122"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/123"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/125"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/7/ScriptBytecode"
+        }
+      ]
+    },
+    {
+      "id": "max-range",
+      "status": "derived_bound_not_observed",
+      "claim": "No explicit combat range clamp found. 15000*4=60000 UE is nominal unobstructed travel bound, not guaranteed hit range. 15000*3.5=52500 is visual timeout distance only. 225000000 squared-distance check gates crack decals, not projectile travel.",
+      "parameters": {
+        "nominal_travel_bound_ue": 60000,
+        "nominal_visual_distance_ue": 52500
+      },
+      "evidence": [
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/17/Data"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/10/Data/10"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/105"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/106"
+        }
+      ]
+    },
+    {
+      "id": "environment-hit",
+      "status": "recovered_control_flow",
+      "claim": "When not IsHit, forward sphere trace300 with TraceRadius and channel0 checks environment. Water/ocean branch and floor/building branch stop projectile movement, set IsHit, disable Sphere/Sphere1/Capsule and deactivate effect. Target overlaps call ImpactForce without destroying projectile; enemy hit is not automatically first-hit projectile consumption.",
+      "evidence": [
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/14"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/16"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/19"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/20"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/30"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/31"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/32"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/33"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/34"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/38"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/39"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/57"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/58"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/59"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/60"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/61"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/69"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/122"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/125"
+        }
+      ]
+    },
+    {
+      "id": "overlap-dedup",
+      "status": "recovered_control_flow",
+      "claim": "Inherited sphere callbacks keep OverlapActors unique array and last OverlapActor; capsule callback only compares last OverlapActor before OverlapFunc. A-B-A capsule encounters can repeat A. Using per-projectile Set across all colliders is an explicit reconstruction simplification, not exact original behavior.",
+      "evidence": [
+        {
+          "source": "BP_AttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/21"
+        },
+        {
+          "source": "BP_AttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/24"
+        },
+        {
+          "source": "BP_AttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/26"
+        },
+        {
+          "source": "BP_AttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/31"
+        },
+        {
+          "source": "BP_AttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/34"
+        },
+        {
+          "source": "BP_AttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/36"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/120"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/121"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/122"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/0/ScriptBytecode/123"
+        }
+      ]
+    },
+    {
+      "id": "homing-not-proved",
+      "status": "serialized_defaults_with_limit",
+      "claim": "bIsHomingProjectile=true and HomingAccelerationMagnitude=1 serialized, but no HomingTargetComponent assignment in these four classes. Do not invent target-seeking behavior. SetInitialVelocity creates localX15000 while retaining inputY/Z; engineMaxSpeed remains15000.",
+      "evidence": [
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/17/Data"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/8/ScriptBytecode"
+        }
+      ]
+    },
+    {
+      "id": "shapes",
+      "status": "recovered_inheritance",
+      "claim": "Normal and AirKick mainSphere256 inherited from BP_AttackCollirion; SuperPunch mainSphere1500; SuperKick mainSphere500. Sphere1 inherited bGenerateOverlapEvents=false even where child overrides radius/position, so do not add it as an independent damage volume. Capsule is an additional overlapping shape; SuperPunch/Normal capsule native size remains unconfirmed.",
+      "evidence": [
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/26/Data/0"
+        },
+        {
+          "source": "BP_NormalLongAttackCollirion",
+          "pointer": "/Exports/27/Data"
+        },
+        {
+          "source": "BP_SuperPunch",
+          "pointer": "/Exports/11/Data"
+        },
+        {
+          "source": "BP_SuperKick",
+          "pointer": "/Exports/12/Data"
+        },
+        {
+          "source": "BP_AttackCollirion",
+          "pointer": "/Exports/20/Data/0"
+        }
+      ]
+    },
+    {
+      "id": "melee-effective-sphere",
+      "status": "recovered_static_inheritance",
+      "claim": "BP_AttackCollirionNormal directly inherits BP_AttackCollirion(Actor). Child component overrides only Sphere1/Box/RadialForce; Sphere1+Box NoCollision. MainSphere remains radius256; no construction script or SetSphereRadius in either class. Hero spawn uses scale(1,1,1). Therefore normal spawned attack static mainSphere radius256 is the usable reconstruction value; runtime observation is still absent. SphereRadius160 actor variable has no bytecode reference in these two classes.",
+      "parameters": {
+        "sphere_radius_ue": 256,
+        "spawn_scale": [
+          1,
+          1,
+          1
+        ],
+        "lifespan_seconds": 0.1,
+        "radial_radius_ue": 255,
+        "radial_impulse": 400
+      },
+      "evidence": [
+        {
+          "source": "BP_AttackCollirion",
+          "pointer": "/Exports/5/SuperStruct"
+        },
+        {
+          "source": "BP_AttackCollirion",
+          "pointer": "/Exports/20/Data/0"
+        },
+        {
+          "source": "BP_AttackCollirionNormal",
+          "pointer": "/Exports/2/SuperStruct"
+        },
+        {
+          "source": "BP_AttackCollirionNormal",
+          "pointer": "/Exports/5/Data"
+        },
+        {
+          "source": "BP_AttackCollirionNormal",
+          "pointer": "/Exports/4/Data"
+        },
+        {
+          "source": "BP_AttackCollirionNormal",
+          "pointer": "/Exports/10/Data"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4725"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4726"
+        }
+      ]
+    }
+  ],
+  "minimal_action_selection": {
+    "status": "recovered_control_flow_reduced_nonboss_subset",
+    "ranged_accepted_states": {
+      "0": "CanMove: MovementMode1 or2 => IsMovementInput ? (counter>=1 ? SuperPunch with deathblow fallback : groundCombo) : normalRanged; MovementMode5 =>airRanged",
+      "9": "ChainAttack: MovementMode1=>groundCombo;5=>airRanged",
+      "10": "Sliding: require IsDeathblowEnable then superPunch",
+      "11": "ChainLongAttack: normalRanged",
+      "16": "AirLongRangeAttackChain:airRanged"
+    },
+    "other_states": "Return without action in this reduced subset. Original21/24/26 have boss-specific branches; do not pretend they are idle.",
+    "pre_gate": "GetIsHitReaction() blocks before state dispatch. In approved free mode do not introduce forced hit reaction.",
+    "evidence": [
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/604"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/605"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/606"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/607"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/608"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/609"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/610"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/611"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/612"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/613"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/614"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/615"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/616"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/617"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/618"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/619"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/620"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/621"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/622"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/623"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/624"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/625"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/626"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/627"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/628"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/629"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/630"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/631"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/632"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/633"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/634"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/635"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/636"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/637"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/638"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/639"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/640"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/641"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/642"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/643"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/644"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/645"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/646"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/647"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/648"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/649"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/650"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/651"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/652"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/653"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/654"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/655"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/656"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/657"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/658"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/659"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/660"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/661"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/662"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/663"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/664"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/665"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/666"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/667"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/668"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/669"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/670"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/671"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/672"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/673"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/674"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/675"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/676"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/677"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/678"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/679"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/680"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/681"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/682"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/683"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/684"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/685"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/686"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/687"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/688"
+      }
+    ]
+  },
+  "interrupt_contract": {
+    "status": "recommended_minimal_reconstruction_contract_not_complete_original_interrupt_matrix",
+    "rules": [
+      "Every animation action owns a generation token; interruptions invalidate un-fired events from old action, clear attack movement and chain gate.",
+      "Emit gameplay hit only when timeline crosses its notify; fast frame may cross several events, process chronologically and once.",
+      "Do not restart an active ranged windup on every mouse event. Accept next attack only in explicitly recovered state gates; buffer behavior outside those gates is not proved.",
+      "When a chain notify opens a recovered chain state, a new accepted attack may replace recovery; already spawned projectiles continue their own lifetime (no parent reference-based despawn found in these four classes).",
+      "FinishAction/FinishLongAttack restore their relevant locomotion/action state via existing HeroAnimBP routing; use explicit timeline callbacks, not animation asset full duration as universal cooldown.",
+      "E heat vision is an independent held input in the approved design. ReleasingE/window focus loss/dispose immediately stops beam and hit ticks; do not imply original game supported this added binding.",
+      "In free mode no damage-driven involuntary interruption; input/transition cancellation remains explicit."
+    ],
+    "original_evidence_limits": "Montage_Stop calls with0,.15,.2,.25s exist, but full causal action interrupt matrix not recovered in this timebox; no universal cancel window claimed.",
+    "evidence": [
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/193/ScriptBytecode"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/1771"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/4488"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/4537"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/4875"
+      },
+      {
+        "source": "HeroComponent",
+        "pointer": "/Exports/2/ScriptBytecode/5709"
+      }
+    ]
+  }
+}

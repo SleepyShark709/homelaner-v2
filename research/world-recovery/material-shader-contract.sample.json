@@ -1,0 +1,159 @@
+{
+  "sourcePackage": "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorAsphalt",
+  "shaderRecovery": {
+    "version": 1,
+    "kind": "world-triplanar",
+    "status": "original-cooked-computation-statically-recovered",
+    "authoritativeRoles": [
+      "baseColor",
+      "normal",
+      "roughness",
+      "metallic"
+    ],
+    "worldScaleUEcmNegative": [
+      -1024.0,
+      -1024.0,
+      -1024.0
+    ],
+    "originUEcm": [
+      0,
+      0,
+      0
+    ],
+    "tintLinear": [
+      0.30000001192092896,
+      0.30000001192092896,
+      0.30000001192092896
+    ],
+    "normalIntensity": 2.0,
+    "roughnessMultiplier": 2.0,
+    "metallic": 0.0,
+    "textures": {
+      "normal": {
+        "url": "/assets/world/textures/Game/Env/NYC_Streets/Textures/T_NYC_Asphalt_02_N.png",
+        "colorSpace": "linear",
+        "texturePackage": "/Game/Env/NYC_Streets/Textures/T_NYC_Asphalt_02_N",
+        "channel": "rgb",
+        "texCoord": 0,
+        "sourceParameter": "World Align Normal",
+        "evidence": {
+          "file": "research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json",
+          "pointer": "/shaders/0",
+          "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster"
+        },
+        "shaderEvidence": {
+          "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+          "assemblyLines": [
+            82,
+            134
+          ],
+          "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+          "textureRegister": 6,
+          "constantBuffer": 3,
+          "resourceIndex": 0,
+          "componentSwizzle": "rgb"
+        },
+        "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+        "uvMappingStatus": "original TEXCOORD0",
+        "normalConvention": "directx",
+        "normalValidation": {
+          "greenChannelTransformation": "unchanged-from-cooked-BC5",
+          "validation": "592 pixels / 37 distributed BC5 blocks: original R/G match within 1; inverted G hypothesis rejected",
+          "sourceBulkSha256": "3aa4bf50166265c9c0b7bb0040b051734bf012f79792e132df197feec11dd699"
+        }
+      },
+      "baseColor": {
+        "url": "/assets/world/textures/Game/Env/NYC_Streets/Textures/T_NYC_Asphalt_02_D.png",
+        "colorSpace": "srgb",
+        "texturePackage": "/Game/Env/NYC_Streets/Textures/T_NYC_Asphalt_02_D",
+        "channel": "rgb",
+        "texCoord": 0,
+        "sourceParameter": "World Aligned Albedo",
+        "evidence": {
+          "file": "research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json",
+          "pointer": "/shaders/0",
+          "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster"
+        },
+        "shaderEvidence": {
+          "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+          "assemblyLines": [
+            136,
+            145
+          ],
+          "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+          "textureRegister": 7,
+          "constantBuffer": 3,
+          "resourceIndex": 2,
+          "componentSwizzle": "rgb"
+        },
+        "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+        "uvMappingStatus": "original TEXCOORD0"
+      },
+      "roughness": {
+        "url": "/assets/world/textures/Game/UrbanCity/Textures/Tileable/asphalt_r.png",
+        "colorSpace": "srgb",
+        "texturePackage": "/Game/UrbanCity/Textures/Tileable/asphalt_r",
+        "channel": "r",
+        "texCoord": 0,
+        "sourceParameter": "World Aligned Roughness",
+        "evidence": {
+          "file": "research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json",
+          "pointer": "/shaders/0",
+          "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster"
+        },
+        "shaderEvidence": {
+          "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+          "assemblyLines": [
+            146,
+            154
+          ],
+          "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+          "textureRegister": 8,
+          "constantBuffer": 3,
+          "resourceIndex": 4,
+          "componentSwizzle": "r"
+        },
+        "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+        "uvMappingStatus": "original TEXCOORD0"
+      }
+    },
+    "formula": {
+      "vertexTangentFrame": "For static meshes: Blocal=cross(Nlocal,Tlocal)*localHand; Tcorrected=cross(Blocal,Nlocal)*localHand. Build noScaleWorld by dividing each finalWorld basis axis by its positive length (retain negative-axis sign). VS T=noScaleWorld*Tcorrected, N=noScaleWorld*Nlocal, hand=original tangent sign*primitive determinant sign. No inverse-transpose and no output-vector normalization. For original UE instanced path its matrix axes are individually normalized before the same transform; exact original instance sign policy is separately recorded.",
+      "position": "absoluteUEcm = 100 * worldPositionRHmeters.xzy + originUEcm; q = absoluteUEcm / worldScaleUEcmNegative",
+      "sourcePreViewTranslation": "Original PS: TEXCOORD9 translated world position minus View.PreViewTranslation (cb0[70].xyz). Web absolute world position already excludes camera translation; do not subtract camera position. Use final world position after every actor/instance transform.",
+      "normalCoordinates": "T=v0.xyz and N=v1.xyz are unnormalized linear-centroid pixel interpolants of original world tangent/normal. B=cross(N,T)*v1.w is rebuilt per pixel; do NOT normalize T,N,B before weight/projection math. Convert the correct original Web RH basis by .xzy; preserve reflection and instance determinant handedness.",
+      "weightsColor": "blendX=clamp(3*abs(N.x)-1,0,1); blendZ=clamp(3*abs(N.z)-1,0,1)",
+      "baseColor": "clamp(mix(mix(sampleAlbedo(q.xz).rgb,sampleAlbedo(q.yz).rgb,blendX),sampleAlbedo(q.xy).rgb,blendZ)*tintLinear,0,1)",
+      "roughness": "clamp(mix(mix(sampleRoughness(q.xz).r,sampleRoughness(q.yz).r,blendX),sampleRoughness(q.xy).r,blendZ)*roughnessMultiplier,0,1)",
+      "normalDecode": "decode(uv)=vec3(2*sampleNormal(uv).rg-1,sqrt(max(1-dot(2*sampleNormal(uv).rg-1,2*sampleNormal(uv).rg-1),0)))",
+      "normalProjection": "a=decode(q.xz); b=decode(q.yz); c=decode(q.xy); nxz=vec3(-a.x,a.z*N.y,-a.y); nyz=vec3(b.z*N.x,-b.x,-b.y); nxy=vec3(-c.x,-c.y,c.z*N.z)",
+      "normalBlend": "W=normalize(mix(mix(nxz,nyz,clamp(abs(N.x),0,1)),nxy,clamp(abs(N.z),0,1)))",
+      "normalIntensity": "nT=normalize(vec3(dot(T,W)*normalIntensity,dot(B,W)*normalIntensity,dot(N,W))); outUE=normalize(T*nT.x+B*nT.y+N*nT.z); worldNormalRH=outUE.xzy",
+      "normalIntensityOrthonormalEquivalent": "Not valid generally for the original interpolated frame. Only mathematically valid for a proven orthonormal TBN: outUE=normalize(normalIntensity*W + (1-normalIntensity)*dot(N,W)*N)",
+      "sampling": "Texture RGB decoded using original SRGB state; alpha remains linear. Repeat wrap; original PNG rows unchanged. No green-channel flip for the explicit UE world normal projection.",
+      "metallic": "clamp(metallic,0,1)",
+      "specular": "0.5 UE default-lit scalar (F0=0.04 for dielectric)",
+      "selectionEmissive": "SelectionColor.rgb*SelectionColor.a; default zero; preserve if set"
+    },
+    "factorPolicy": "Plugin writes final baseColor,roughness,metallic and worldNormal; do not reapply generic channels/factors to these roles.",
+    "evidence": {
+      "bindingFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\bindings.json",
+      "materialConstantBuffer": 3,
+      "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+      "normalLines": [
+        80,
+        134
+      ],
+      "colorAndRoughnessLines": [
+        135,
+        156
+      ]
+    },
+    "limitations": [
+      "Static original material operations, not lighting/postprocess equivalence.",
+      "World-aligned normal requires geometric original world normal and orthonormal tangent frame or full stated TBN formula.",
+      "Origin remains zero in current export; update originUEcm if future origin rebasing is introduced."
+    ]
+  }
+}

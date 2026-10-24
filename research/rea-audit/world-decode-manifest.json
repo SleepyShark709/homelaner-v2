@@ -1,0 +1,749 @@
+{
+  "tool": "E:\\undefeated-web\\tools\\asset-pipeline\\uasset-net472\\UAssetGUI.exe",
+  "sha256": "29f5cf02d359e2d050e44d896105956c587fc8f03ca3c7e70e3fc1d6be69580d",
+  "engineVersion": "VER_UE4_27",
+  "records": [
+    {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "name": "MainLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\MainLevel.umap",
+      "decoded": "E:\\undefeated-web\\research\\exports\\city-decoded\\MainLevel.json",
+      "usedExistingDecode": true,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\MainLevel.umap",
+          "bytes": 1623226,
+          "sha256": "0a22c6728087615a867ac2731dfa1facb7ed28c1c8f075df03aa1927f0a1eddb"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\MainLevel.uexp",
+          "bytes": 55251787,
+          "sha256": "7ba09c3ed28a8d4a889ecc9727f5b24d5ca01b7716e11025c2bedcd57872577a"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\MainLevel.ubulk",
+          "bytes": 16121856,
+          "sha256": "51e8454f41a406bca7647f2277494095ae62d5abeeaf0eced62e33de28f5d414"
+        }
+      ],
+      "decodedBytes": 265646829,
+      "decodedSha256": "0f436d9a23f99c9d8069f0d2feb45ffc2e096666551802120cce78e4d7b3c489"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/Story1Level",
+      "name": "Story1Level",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\StoryLevel\\Story1Level.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Story1Level.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\StoryLevel\\Story1Level.umap",
+          "bytes": 24026,
+          "sha256": "c043f82d0f2deacd922f38a67af17e62f229e04be5def8aed3f33afb0d690097"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\StoryLevel\\Story1Level.uexp",
+          "bytes": 19707,
+          "sha256": "b85ea687e914dc466c4decf9f08a9b01ee7e799b231c1c91086d7e9f796b803c"
+        }
+      ],
+      "decodedBytes": 320152,
+      "decodedSha256": "a1c786866de1a7108f856e4aaae924968b60515137fef322e378a4ad6e966165"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/Story2Level",
+      "name": "Story2Level",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\StoryLevel\\Story2Level.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Story2Level.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\StoryLevel\\Story2Level.umap",
+          "bytes": 27305,
+          "sha256": "4f2552ebd111bc94be902a80a3bb9da6d40ef126ae92b9aed0a5f4db62aa3417"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\StoryLevel\\Story2Level.uexp",
+          "bytes": 24049,
+          "sha256": "a8ef16226b2a7ac1bb405c666811ab569aab9f6c7607cce3a0001aae8c70edf1"
+        }
+      ],
+      "decodedBytes": 372426,
+      "decodedSha256": "85351100b206de11c1fe58e633f362aa749cfe12420694604200f2b6e42f7fb3"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/Story3Level",
+      "name": "Story3Level",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\StoryLevel\\Story3Level.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Story3Level.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\StoryLevel\\Story3Level.umap",
+          "bytes": 27959,
+          "sha256": "170e2033fa23dfd6e865eeb7d62fff7d6cf0843a1b82f193c174be3ba9e26492"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\StoryLevel\\Story3Level.uexp",
+          "bytes": 24873,
+          "sha256": "8e1d6d5c162c5167798f2e0d21008d04ff63cb297ce78941636c6fd36cfff8cf"
+        }
+      ],
+      "decodedBytes": 387719,
+      "decodedSha256": "d646cf48ee886641ce6827ee4b4430d7ca1d749a4cab682b2f0e79a64f2fd638"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/TutorialLevel",
+      "name": "TutorialLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\StoryLevel\\TutorialLevel.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\TutorialLevel.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\StoryLevel\\TutorialLevel.umap",
+          "bytes": 78190,
+          "sha256": "837740d281c11c7dd1c2ed5447abc51c30babfa596b57bf03ab152507521a54a"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\StoryLevel\\TutorialLevel.uexp",
+          "bytes": 169195,
+          "sha256": "043934950be05c7a86fefe7c0fe21b011f99d0292034ce9568c9c04a0e734d72"
+        }
+      ],
+      "decodedBytes": 2817809,
+      "decodedSha256": "805ae740e29d8445465e14ac44abd7f2edd76da1628f24cb6f0d90c8fb9ffcd3"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Beach",
+      "name": "Beach",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Beach.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Beach.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Beach.umap",
+          "bytes": 56743,
+          "sha256": "cc9d678821fb1574500cac4480554a4d084b90e74ecbff8c7052fc2ba8be24e5"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Beach.uexp",
+          "bytes": 198067,
+          "sha256": "d1e5c758d236f546c7a820fb93ee0554cbbca35ac7496a253060aac38329764f"
+        }
+      ],
+      "decodedBytes": 2622133,
+      "decodedSha256": "abedc1cf266a77a03a038fde29f98cbe36f2e27b4c87dac621688007fd679530"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Easy",
+      "name": "CQ_D_Easy",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_D_Easy.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_D_Easy.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_D_Easy.umap",
+          "bytes": 183809,
+          "sha256": "2efa110422399a050546d7d598aabc98dabf624b3d7ba54ceee845fe8c7da15b"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_D_Easy.uexp",
+          "bytes": 265852,
+          "sha256": "4d3d9c03700970321c2ada1e555939a30634d34929a1d303bd1e3eab3e16b85d"
+        }
+      ],
+      "decodedBytes": 4567651,
+      "decodedSha256": "3d398a2c528830643819dae2b59076d4e58dfd652b86f35556687b09dee9c6fa"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Hard",
+      "name": "CQ_D_Hard",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_D_Hard.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_D_Hard.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_D_Hard.umap",
+          "bytes": 406072,
+          "sha256": "421cccb5ebf355c035b1121c3aa813e043a63aeb3b0527bb73dda128f457f525"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_D_Hard.uexp",
+          "bytes": 590822,
+          "sha256": "ff1e5dd0506afc857bf92a7b0c2ca7e84765298f7f9c4d92d94d528821ad82cb"
+        }
+      ],
+      "decodedBytes": 10380554,
+      "decodedSha256": "93161ee7896b78f6d2fed8efdb29b518ff76268518010a11a5156bbbd595962d"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Normal",
+      "name": "CQ_D_Normal",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_D_Normal.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_D_Normal.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_D_Normal.umap",
+          "bytes": 256462,
+          "sha256": "ddcaa576ee21abdcd78f2aaa0b21e819935a154c6e5be4145e61aa7079fe9e02"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_D_Normal.uexp",
+          "bytes": 363390,
+          "sha256": "20682829eff092c255e8d473a761e591b6aca6f34169787d0439bce11a708aeb"
+        }
+      ],
+      "decodedBytes": 6455150,
+      "decodedSha256": "e20e752937c4c73e505ee09df5f162fc8299de7f93651cf3f3dad06181e6e181"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_D_TU",
+      "name": "CQ_D_TU",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_D_TU.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_D_TU.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_D_TU.umap",
+          "bytes": 105750,
+          "sha256": "afeb8d168ee4a5037f0cc5c549b9283392858056e69ec741f06005142d8b0d7e"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_D_TU.uexp",
+          "bytes": 137069,
+          "sha256": "c9ca30f1c38dc6d424d29aa699e148fde63a43187423fcc641ce4beaabf5d2ec"
+        }
+      ],
+      "decodedBytes": 2425040,
+      "decodedSha256": "3d7d5046a664f743130b2c4a965d914235bf434c802d7624831a437af1e3dabe"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Easy",
+      "name": "CQ_F_Easy",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_F_Easy.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_F_Easy.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_F_Easy.umap",
+          "bytes": 75167,
+          "sha256": "b7d19211f0cc13d8b29ebd3720707d1f3ca2743285fe0a57507ad417a244433d"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_F_Easy.uexp",
+          "bytes": 126949,
+          "sha256": "44d78c75ab7b3bc52fe55c3f1fe9cae00373512ec9555f4304312c84c678012b"
+        }
+      ],
+      "decodedBytes": 1698965,
+      "decodedSha256": "aa234224cf28ae4f87fff669437dcf4bfb2bb4e5779393f11224aaba09d09256"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Hard",
+      "name": "CQ_F_Hard",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_F_Hard.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_F_Hard.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_F_Hard.umap",
+          "bytes": 83803,
+          "sha256": "32a8fdde28694587804d9a7f51f41875a2b3ee9dfad0939a92fd62024a5a3cb9"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_F_Hard.uexp",
+          "bytes": 144141,
+          "sha256": "8c5b13b3d9f0546f7e1477e0e1b29c41cd4d0c1a88e33594ae5952decfd8a12c"
+        }
+      ],
+      "decodedBytes": 1926351,
+      "decodedSha256": "778543ac3a26fbbd5d4878887802f6c582a7c4950253702adbad95bc4f696a85"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Normal",
+      "name": "CQ_F_Normal",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_F_Normal.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_F_Normal.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_F_Normal.umap",
+          "bytes": 92453,
+          "sha256": "e621e6d0a72b5046534e7e2300cdf13357a7d5cc3e464db01f8dc57de757a825"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_F_Normal.uexp",
+          "bytes": 159961,
+          "sha256": "805fd0926d48d42564e013af2bdfa7055e198e119b8b02b9cae44c787773a2f9"
+        }
+      ],
+      "decodedBytes": 2134697,
+      "decodedSha256": "574433154298a86c90ed81f598af09aec6d96c4617ecba98818a3542cc0b41f2"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_F_TU",
+      "name": "CQ_F_TU",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_F_TU.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_F_TU.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_F_TU.umap",
+          "bytes": 54228,
+          "sha256": "237db77499ff1635d2bac993211c5cb072368d0369d24e60e2e659d6f9134c58"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CQ_F_TU.uexp",
+          "bytes": 88560,
+          "sha256": "502d2253de1f58b26ce0e72d384b0d2d1fcba2f848683791da00644afc92953c"
+        }
+      ],
+      "decodedBytes": 1190031,
+      "decodedSha256": "72b806106697e7c60719fe8ff87c81a44d89e4ecda28b79b02648c806a19c140"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CitizenWayPoint",
+      "name": "CitizenWayPoint",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CitizenWayPoint.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CitizenWayPoint.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CitizenWayPoint.umap",
+          "bytes": 1301243,
+          "sha256": "2be88557b7b7f7467fc63f273ae6c23abf5b643f26b94e2788ba52c812823f14"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CitizenWayPoint.uexp",
+          "bytes": 4070593,
+          "sha256": "b669dff917b6037665fda2f8a26015b530dc97f738160a3992ddab7c148c336e"
+        }
+      ],
+      "decodedBytes": 53448769,
+      "decodedSha256": "f984545fb9127b94c8561202234748886568170ae64ff7bc631d14fe4d02f88f"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Coast",
+      "name": "Coast",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Coast.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Coast.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Coast.umap",
+          "bytes": 36428,
+          "sha256": "a0d43219fc1e1787d736ed8026adbe2452da0980e84161ecc087958d3a7f6093"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Coast.uexp",
+          "bytes": 366177,
+          "sha256": "4b8aa6e38a0708ca6d673fa76e180493ccbde0ac33d270932d79dd09b55496d0"
+        }
+      ],
+      "decodedBytes": 4558863,
+      "decodedSha256": "37204f9b8849138044cd2e23fd7ce5d53ab048626194e8d5e3475c4a1cf7aab1"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CommercialArea",
+      "name": "CommercialArea",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CommercialArea.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CommercialArea.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CommercialArea.umap",
+          "bytes": 183834,
+          "sha256": "01004c320c1f99f2456570ae79a08e64f824d89b3597c38702effcd668b69dd5"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CommercialArea.uexp",
+          "bytes": 971505,
+          "sha256": "feb07b08b9be8c6eea4e727d115e9d805cc005362e35b25036f7dd15051dd98b"
+        }
+      ],
+      "decodedBytes": 12063754,
+      "decodedSha256": "0d88858d3a0d0954b80c5161373f48fb159456d7be9a2d949a466b372c2abbe1"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CustomEventLevel",
+      "name": "CustomEventLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CustomEventLevel.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CustomEventLevel.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CustomEventLevel.umap",
+          "bytes": 9277,
+          "sha256": "03a932487fe3282a47bfb43c29af053c17a6d7d87b66381a95cc0f47fdd73d93"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\CustomEventLevel.uexp",
+          "bytes": 5208,
+          "sha256": "04ed4774c71dd660e9a8faedcd8b07d46a5d5197fa674093586d40e7d3ec9e05"
+        }
+      ],
+      "decodedBytes": 156791,
+      "decodedSha256": "5a44715d17ba7b9f5b2dea1040dd635c83eb5d8cff3d9a5f502c302449a590de"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/DownTown",
+      "name": "DownTown",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\DownTown.umap",
+      "decoded": "E:\\undefeated-web\\research\\exports\\city-decoded\\DownTown.json",
+      "usedExistingDecode": true,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\DownTown.umap",
+          "bytes": 264306,
+          "sha256": "4c8ac7299f2e2c5a905f62ac123ed2936ae5711b0d055fcfda46a1da4c536971"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\DownTown.uexp",
+          "bytes": 1184658,
+          "sha256": "581dc521484e5950d6719b8d53232569a2d0a33a8fb1b7d10149c86a499c7476"
+        }
+      ],
+      "decodedBytes": 14727320,
+      "decodedSha256": "4dd198bfdb7d24aa587db0cf1ab5a2606659a929119e4711c55aaeb5128e6a26"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/DynamicProps",
+      "name": "DynamicProps",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\DynamicProps.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\DynamicProps.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\DynamicProps.umap",
+          "bytes": 685798,
+          "sha256": "eb4104b8a63cf653bd76142f98ba41f9159ffb1316beaf30959e5cb03774220e"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\DynamicProps.uexp",
+          "bytes": 2016279,
+          "sha256": "dea676571a7a0246230295b381f9a3ff4985bf2de7ca73dfb1b161ed3e97c3fe"
+        }
+      ],
+      "decodedBytes": 23830599,
+      "decodedSha256": "80e6a36b598ae4b06257b293439c2508d514a82f8ee057206b26eb1657c73ec2"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/EnelightMeteor",
+      "name": "EnelightMeteor",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\EnelightMeteor.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\EnelightMeteor.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\EnelightMeteor.umap",
+          "bytes": 7706,
+          "sha256": "3bf0b635ec04e53710f57ecfc5990924a5f87d33432e5d2fa6cc6a731f0e137c"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\EnelightMeteor.uexp",
+          "bytes": 3853,
+          "sha256": "7d4489e4376d127051f967033373c11bad865474c53bb96250ca5668918060be"
+        }
+      ],
+      "decodedBytes": 71266,
+      "decodedSha256": "2cfe917aa13ba3036381774ce570abd68e732687cb6b5082c1b6530712410862"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/FinancialDistrict",
+      "name": "FinancialDistrict",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\FinancialDistrict.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\FinancialDistrict.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\FinancialDistrict.umap",
+          "bytes": 110897,
+          "sha256": "c709cf49f394387853690e91086e3741aebc6d7ab6a88be3e5f5e7d51561606c"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\FinancialDistrict.uexp",
+          "bytes": 629575,
+          "sha256": "02430d87044812a8ba8bef49de230ca9df4485618569ef370c7c26410e3225aa"
+        }
+      ],
+      "decodedBytes": 7941589,
+      "decodedSha256": "d179d345c7e9b75be451daf03e3d40be6f94b468f6211474e7fdc185153483e2"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/FireBossLevel",
+      "name": "FireBossLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\FireBossLevel.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\FireBossLevel.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\FireBossLevel.umap",
+          "bytes": 22902,
+          "sha256": "fb26a08dc257e555ff13a19142bfe3aa91e22851456b5753618d63d8b6517a49"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\FireBossLevel.uexp",
+          "bytes": 21114,
+          "sha256": "189a084c3024f9fdb838fc03d4c3709e9bba9dc277d7da71d34015ad4d587f1a"
+        }
+      ],
+      "decodedBytes": 316557,
+      "decodedSha256": "e766e87a3bf86f920cbb2865bde9b6e6295883f6722a8550bf2ec64065aa1d2f"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/IndustrialArea",
+      "name": "IndustrialArea",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\IndustrialArea.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\IndustrialArea.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\IndustrialArea.umap",
+          "bytes": 131089,
+          "sha256": "cc7a203fbfd238479de5a3dd1bd1dc3ecec961091163244af93bb868c4f5029a"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\IndustrialArea.uexp",
+          "bytes": 332696,
+          "sha256": "fcc2bd8f897f95d5ef06a5e7c3ce3a59e13dc636dcd475a22807b8e078247ab2"
+        }
+      ],
+      "decodedBytes": 4225148,
+      "decodedSha256": "ddc242ba6cc15815c027d8eadbf082a08a8f19ca57b52a8adbfd360e455343be"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/LightingTest",
+      "name": "LightingTest",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\LightingTest.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\LightingTest.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\LightingTest.umap",
+          "bytes": 12140,
+          "sha256": "9c9fd6d4e5eb1f08da8613b8ba4918a1b5af8dc2025a2b32b5ace1cb844765b6"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\LightingTest.uexp",
+          "bytes": 8469101,
+          "sha256": "c8eb5f8cc62e54ed6ace31246d01166d3ecffe2cb2104c4092afada125e15177"
+        }
+      ],
+      "decodedBytes": 11421159,
+      "decodedSha256": "809bdaca4e34192e5b17c55f715c7eb7b007bd3787a2bafb3b1f75322785b93e"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/LightningBossLevel",
+      "name": "LightningBossLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\LightningBossLevel.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\LightningBossLevel.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\LightningBossLevel.umap",
+          "bytes": 22031,
+          "sha256": "7c9fee2ab9b5d6f8d2b52141f1dfbeaacf8144b38ac2dcfb38dbfb23059070c7"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\LightningBossLevel.uexp",
+          "bytes": 20114,
+          "sha256": "a264994b87997ea15eba8441a8856f18ae12b771a2b9cdc2e3e1a4b1e324227e"
+        }
+      ],
+      "decodedBytes": 302912,
+      "decodedSha256": "5f828c7390ab4331d076f01ebc73bfa88e5908b1f40da5d4d95cda77c9d26bea"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/LoadLevel",
+      "name": "LoadLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\LoadLevel.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\LoadLevel.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\LoadLevel.umap",
+          "bytes": 67742,
+          "sha256": "dea017ff7cdf823e3327190d704aa3f0fddf542793bf2b7a6edf7ea52f69aef0"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\LoadLevel.uexp",
+          "bytes": 57735,
+          "sha256": "fbcc386a34a5829dd5179b105dfea5e83724a859fe1d6cbab644e90c3898e163"
+        }
+      ],
+      "decodedBytes": 941769,
+      "decodedSha256": "3c9d1ffff65a9f7b397702cfeda7d959af0ecdc35014b947f1101c211386bb71"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Park",
+      "name": "Park",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Park.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Park.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Park.umap",
+          "bytes": 145266,
+          "sha256": "a3d51f9e71b691aa9ae554b3b5fa1bd1efcf0b9098f123ee866970a2e22d05f9"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Park.uexp",
+          "bytes": 454049,
+          "sha256": "3241e1955aade6f775bb253cd5ba6787a5583baeecfd0cb58574d54eb5e33c05"
+        }
+      ],
+      "decodedBytes": 5299729,
+      "decodedSha256": "5fb1827a986ef1414f7153bd5679b62f14b5d2cc21c6a45b664db3104b7ceef6"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea1",
+      "name": "ResidentialArea1",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\ResidentialArea1.umap",
+      "decoded": "E:\\undefeated-web\\research\\exports\\city-decoded\\ResidentialArea1.json",
+      "usedExistingDecode": true,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\ResidentialArea1.umap",
+          "bytes": 116908,
+          "sha256": "81b11f07e3dd014d0ff61313af8bbefd594e976fd1e9f7b1ac65f98548ef5e22"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\ResidentialArea1.uexp",
+          "bytes": 543677,
+          "sha256": "3ba281551bcf012ac00e64a579c65082e255d89781d6ee51396077f9792bca38"
+        }
+      ],
+      "decodedBytes": 6966308,
+      "decodedSha256": "f6ee54104f8af7a106ad4cdd725ff3b216022768fb5ddd2ec06a6b543de1814a"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea2",
+      "name": "ResidentialArea2",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\ResidentialArea2.umap",
+      "decoded": "E:\\undefeated-web\\research\\exports\\city-decoded\\ResidentialArea2.json",
+      "usedExistingDecode": true,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\ResidentialArea2.umap",
+          "bytes": 112642,
+          "sha256": "4d0d09452853d1eea69cedd3487011dd7d0ed03d78a8b5c154f52117ee1fbdfa"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\ResidentialArea2.uexp",
+          "bytes": 557122,
+          "sha256": "7c54f6a5962001ed3fa043baf9da2f2e421501cb4a51961f4be6ae225c3bdf44"
+        }
+      ],
+      "decodedBytes": 7166580,
+      "decodedSha256": "309509545fa6a63379cf800473a57603bde6760580e3fd396aa19288f7c3f66c"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea3",
+      "name": "ResidentialArea3",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\ResidentialArea3.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\ResidentialArea3.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\ResidentialArea3.umap",
+          "bytes": 71355,
+          "sha256": "50bbce182cb0a1c99805fbe483304ccdb0c7719b551588a766e81910b7f87ab7"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\ResidentialArea3.uexp",
+          "bytes": 453900,
+          "sha256": "98a0d3a3557763e94e7cf40c5350da6ad2d8dfcf669912f51ab0ae463c770241"
+        }
+      ],
+      "decodedBytes": 6118702,
+      "decodedSha256": "fc519e885cc2e03650dbda61a36a5bf5155a2b193d88b98f1fd4bf9f60e66266"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Slam",
+      "name": "Slam",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Slam.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Slam.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Slam.umap",
+          "bytes": 38816,
+          "sha256": "a159590be28645a30ba62052b51e29694393c850c0d030bdeef1bfb7f43894b3"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Slam.uexp",
+          "bytes": 137369,
+          "sha256": "92481e311db399616b24e1e31c1c2f90c3c54b8195d869ff1a32759bca67d1bf"
+        }
+      ],
+      "decodedBytes": 1836948,
+      "decodedSha256": "48078c2b5c6f0b1fbc50bdad67653ef7936d6761984b68a8424c2c822255b2c4"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/TitleMenuLevel",
+      "name": "TitleMenuLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\TitleMenuLevel.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\TitleMenuLevel.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\TitleMenuLevel.umap",
+          "bytes": 19210,
+          "sha256": "0009289c0dcd08e23539e1dd7cb931775486f2e11c8ea827782ae236d7a8127e"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\TitleMenuLevel.uexp",
+          "bytes": 23537,
+          "sha256": "49e66c48710da0a7a91f1af4186d91e2318c76261af4ddb3ba2f295493c66952"
+        }
+      ],
+      "decodedBytes": 424542,
+      "decodedSha256": "e80723ea1c6cdbb394c5a709e61bdd94577493000aa7d0e143f09fa9c00f9cd0"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/WindBossLevel",
+      "name": "WindBossLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\WindBossLevel.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\WindBossLevel.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\WindBossLevel.umap",
+          "bytes": 19645,
+          "sha256": "25e66280575b2ec1d418e5372e82e66da925b2e811bcad4d23d9e1a54607d0a9"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\WindBossLevel.uexp",
+          "bytes": 16772,
+          "sha256": "1e7a1dfba68834e7d15e114167d5d74f118cd12ca8eb29e963e352286090af40"
+        }
+      ],
+      "decodedBytes": 264333,
+      "decodedSha256": "39f83837ae000ee303374b373a54586593c0c3cbee054cd9430b9653f0085110"
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Lighting",
+      "name": "Lighting",
+      "source": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Lighting.umap",
+      "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Lighting.json",
+      "usedExistingDecode": false,
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Lighting.umap",
+          "bytes": 11775,
+          "sha256": "ef9b6e19840d6a51187e7bfbe99d66d40f5c7567d4099bc6642a05b6028d0220"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\Lighting.uexp",
+          "bytes": 606076,
+          "sha256": "8438dfd6e6c82b92c11191ead31b994371e5826bdbb82e8e9a6b150a1bbd8cee"
+        }
+      ],
+      "exitCode": 0,
+      "decodedBytes": 948412,
+      "decodedSha256": "7d5f7cce5a1e26790355caba730e21cc25533cd7efc1753eafc32cad788d9e7b",
+      "referenceDepth": "transitive"
+    }
+  ]
+}

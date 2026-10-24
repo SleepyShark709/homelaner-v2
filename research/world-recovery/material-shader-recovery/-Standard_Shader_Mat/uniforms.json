@@ -1,0 +1,184 @@
+{
+  "frozenStartInExtras": 240,
+  "frozenBytes": 84292,
+  "frozenSHA256": "357f1eb665677ef9f2c415045d306b64f1a08c2a92e2db03ce629d51d0419961",
+  "layoutParametersRaw": [
+    8,
+    41
+  ],
+  "scalarParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 83888,
+      "parameter": "BaseTexture Tiling",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.0
+    },
+    {
+      "index": 1,
+      "frozenOffset": 83912,
+      "parameter": "Color",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.0
+    },
+    {
+      "index": 2,
+      "frozenOffset": 83936,
+      "parameter": "Roughness",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.0
+    },
+    {
+      "index": 3,
+      "frozenOffset": 83960,
+      "parameter": "Opacity",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.0
+    }
+  ],
+  "vectorParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 83984,
+      "parameter": "SelectionColor",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "index": 1,
+      "frozenOffset": 84020,
+      "parameter": "BaseColor",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "textureParameters2D": [
+    {
+      "index": 0,
+      "frozenOffset": 84056,
+      "parameter": "Normal",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 14,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/FireHydrant_N"
+    },
+    {
+      "index": 1,
+      "frozenOffset": 84084,
+      "parameter": "Base Color",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 1,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/FireHydrant_A"
+    },
+    {
+      "index": 2,
+      "frozenOffset": 84112,
+      "parameter": "Compact",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 15,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/FireHydrant_C"
+    },
+    {
+      "index": 3,
+      "frozenOffset": 84140,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 0,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq"
+    }
+  ],
+  "uniformVectorPreshaders": [
+    {
+      "offset": 42,
+      "size": 3,
+      "bytesHex": "040000"
+    },
+    {
+      "offset": 45,
+      "size": 9,
+      "bytesHex": "0400002303000102ff"
+    },
+    {
+      "offset": 54,
+      "size": 3,
+      "bytesHex": "040100"
+    },
+    {
+      "offset": 57,
+      "size": 9,
+      "bytesHex": "0401002303000102ff"
+    }
+  ],
+  "uniformScalarPreshaders": [
+    {
+      "offset": 0,
+      "size": 3,
+      "bytesHex": "030000"
+    },
+    {
+      "offset": 3,
+      "size": 9,
+      "bytesHex": "040000230103ffffff"
+    },
+    {
+      "offset": 12,
+      "size": 3,
+      "bytesHex": "030100"
+    },
+    {
+      "offset": 15,
+      "size": 3,
+      "bytesHex": "030200"
+    },
+    {
+      "offset": 18,
+      "size": 3,
+      "bytesHex": "030300"
+    },
+    {
+      "offset": 21,
+      "size": 21,
+      "bytesHex": "030300020000803f0000803f0000803f0000803f07"
+    }
+  ],
+  "namePatches": {
+    "84084": "Base Color",
+    "84020": "BaseColor",
+    "83888": "BaseTexture Tiling",
+    "83912": "Color",
+    "84112": "Compact",
+    "84056": "Normal",
+    "83960": "Opacity",
+    "83936": "Roughness",
+    "83984": "SelectionColor"
+  },
+  "preshaderDataHex": "030000040000230103ffffff030100030200030300030300020000803f0000803f0000803f0000803f070400000400002303000102ff0401000401002303000102ff",
+  "preshaderDataFrozenOffset": 84168
+}

@@ -1,0 +1,4879 @@
+{
+  "scope": "Static native streaming call sites in all decoded referenced maps plus BP_CityManager/BP_StoryManager/HeroGameMode. Branch reachability/latency completion is not assumed.",
+  "sources": [
+    {
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\BP_CityManager.json",
+      "sha256": "2421176824b0a62ee63e2bc24004588e2b545f9fd7b62f2bb3a8d7484ec4fb00",
+      "callCount": 2,
+      "defaultScalarProperties": {
+        "CurrentCityHealth": 100.0,
+        "MaxCityHealth": 100.0,
+        "MaxDamageIndex": 20,
+        "ChangeBeforeCityHealth": 100.0
+      },
+      "calls": [
+        {
+          "function": "ExecuteUbergraph_BP_CityManager",
+          "bytecodeJsonPath": "/20",
+          "nativeCall": "UnloadStreamLevel",
+          "levelLiteral": null,
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -85,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SwitchValue, UAssetAPI",
+                "EndGotoOffset": 799,
+                "IndexTerm": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                  "Variable": {
+                    "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                    "New": {
+                      "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                      "Path": [
+                        "Temp_bool_Variable"
+                      ],
+                      "ResolvedOwner": 1
+                    }
+                  }
+                },
+                "DefaultTerm": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                  "Variable": {
+                    "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                    "New": {
+                      "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                      "Path": [
+                        "K2Node_Select_Default_3"
+                      ],
+                      "ResolvedOwner": 1
+                    }
+                  }
+                },
+                "Cases": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                    "CaseIndexValueTerm": {
+                      "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+                    },
+                    "NextOffset": 685,
+                    "CaseTerm": {
+                      "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SwitchValue, UAssetAPI",
+                      "EndGotoOffset": 685,
+                      "IndexTerm": {
+                        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                        "Variable": {
+                          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                          "New": {
+                            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                            "Path": [
+                              "Temp_byte_Variable_1"
+                            ],
+                            "ResolvedOwner": 1
+                          }
+                        }
+                      },
+                      "DefaultTerm": {
+                        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                        "Variable": {
+                          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                          "New": {
+                            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                            "Path": [
+                              "K2Node_Select_Default_1"
+                            ],
+                            "ResolvedOwner": 1
+                          }
+                        }
+                      },
+                      "Cases": [
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 0
+                          },
+                          "NextOffset": 616,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_9"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 1
+                          },
+                          "NextOffset": 631,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_8"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 2
+                          },
+                          "NextOffset": 646,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_7"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 3
+                          },
+                          "NextOffset": 661,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_6"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 4
+                          },
+                          "NextOffset": 676,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_5"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                    "CaseIndexValueTerm": {
+                      "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+                    },
+                    "NextOffset": 790,
+                    "CaseTerm": {
+                      "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SwitchValue, UAssetAPI",
+                      "EndGotoOffset": 790,
+                      "IndexTerm": {
+                        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                        "Variable": {
+                          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                          "New": {
+                            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                            "Path": [
+                              "Temp_byte_Variable_2"
+                            ],
+                            "ResolvedOwner": 1
+                          }
+                        }
+                      },
+                      "DefaultTerm": {
+                        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                        "Variable": {
+                          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                          "New": {
+                            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                            "Path": [
+                              "K2Node_Select_Default_2"
+                            ],
+                            "ResolvedOwner": 1
+                          }
+                        }
+                      },
+                      "Cases": [
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 0
+                          },
+                          "NextOffset": 721,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_14"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 1
+                          },
+                          "NextOffset": 736,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_13"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 2
+                          },
+                          "NextOffset": 751,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_12"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 3
+                          },
+                          "NextOffset": 766,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_11"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 4
+                          },
+                          "NextOffset": 781,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_10"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -177,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 840
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": 2146471431
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_BP_CityManager"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            ]
+          }
+        },
+        {
+          "function": "ExecuteUbergraph_BP_CityManager",
+          "bytecodeJsonPath": "/124",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": null,
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -84,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SwitchValue, UAssetAPI",
+                "EndGotoOffset": 3513,
+                "IndexTerm": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                  "Variable": {
+                    "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                    "New": {
+                      "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                      "Path": [
+                        "Temp_bool_Variable_1"
+                      ],
+                      "ResolvedOwner": 1
+                    }
+                  }
+                },
+                "DefaultTerm": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                  "Variable": {
+                    "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                    "New": {
+                      "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                      "Path": [
+                        "K2Node_Select_Default_5"
+                      ],
+                      "ResolvedOwner": 1
+                    }
+                  }
+                },
+                "Cases": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                    "CaseIndexValueTerm": {
+                      "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+                    },
+                    "NextOffset": 3399,
+                    "CaseTerm": {
+                      "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SwitchValue, UAssetAPI",
+                      "EndGotoOffset": 3399,
+                      "IndexTerm": {
+                        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                        "Variable": {
+                          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                          "New": {
+                            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                            "Path": [
+                              "Temp_byte_Variable_3"
+                            ],
+                            "ResolvedOwner": 1
+                          }
+                        }
+                      },
+                      "DefaultTerm": {
+                        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                        "Variable": {
+                          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                          "New": {
+                            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                            "Path": [
+                              "K2Node_Select_Default_4"
+                            ],
+                            "ResolvedOwner": 1
+                          }
+                        }
+                      },
+                      "Cases": [
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 0
+                          },
+                          "NextOffset": 3330,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_15"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 1
+                          },
+                          "NextOffset": 3345,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_16"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 2
+                          },
+                          "NextOffset": 3360,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_17"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 3
+                          },
+                          "NextOffset": 3375,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_18"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 4
+                          },
+                          "NextOffset": 3390,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_19"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                    "CaseIndexValueTerm": {
+                      "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+                    },
+                    "NextOffset": 3504,
+                    "CaseTerm": {
+                      "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SwitchValue, UAssetAPI",
+                      "EndGotoOffset": 3504,
+                      "IndexTerm": {
+                        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                        "Variable": {
+                          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                          "New": {
+                            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                            "Path": [
+                              "Temp_byte_Variable"
+                            ],
+                            "ResolvedOwner": 1
+                          }
+                        }
+                      },
+                      "DefaultTerm": {
+                        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                        "Variable": {
+                          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                          "New": {
+                            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                            "Path": [
+                              "K2Node_Select_Default"
+                            ],
+                            "ResolvedOwner": 1
+                          }
+                        }
+                      },
+                      "Cases": [
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 0
+                          },
+                          "NextOffset": 3435,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_4"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 1
+                          },
+                          "NextOffset": 3450,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_3"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 2
+                          },
+                          "NextOffset": 3465,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_2"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 3
+                          },
+                          "NextOffset": 3480,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable_1"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI",
+                          "CaseIndexValueTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                            "Value": 4
+                          },
+                          "NextOffset": 3495,
+                          "CaseTerm": {
+                            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                            "Variable": {
+                              "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                              "New": {
+                                "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                                "Path": [
+                                  "Temp_name_Variable"
+                                ],
+                                "ResolvedOwner": 1
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -177,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 969
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -692161023
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_BP_CityManager"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        }
+      ],
+      "shortEventWrappers": [
+        {
+          "function": "CheckAndShowCityDamageTutorial",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 3879
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "UnloadBossLevel",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetValueOnPersistentFrame, UAssetAPI",
+              "DestinationProperty": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [
+                    "K2Node_CustomEvent_BossType"
+                  ],
+                  "ResolvedOwner": 1
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "BossType"
+                    ],
+                    "ResolvedOwner": 3
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 3555
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "LoadBossLevel",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetValueOnPersistentFrame, UAssetAPI",
+              "DestinationProperty": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [
+                    "K2Node_CustomEvent_BossType_1"
+                  ],
+                  "ResolvedOwner": 1
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "BossType"
+                    ],
+                    "ResolvedOwner": 4
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 2656
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ResetGameOverDoOnce",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 2651
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "SetBossRef",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetValueOnPersistentFrame, UAssetAPI",
+              "DestinationProperty": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [
+                    "K2Node_CustomEvent_Boss"
+                  ],
+                  "ResolvedOwner": 1
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "Boss"
+                    ],
+                    "ResolvedOwner": 6
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 2603
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "GameOverEvent",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 2598
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "DecreaceDamageIndex",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 2497
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "IncreaceDamageIndex",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 2400
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ReceiveBeginPlay",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 2277
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "RecoveryCityHealth",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Let, UAssetAPI",
+              "Value": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [
+                    "CurrentCityHealth"
+                  ],
+                  "ResolvedOwner": 13
+                }
+              },
+              "Variable": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_InstanceVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "CurrentCityHealth"
+                    ],
+                    "ResolvedOwner": 13
+                  }
+                }
+              },
+              "Expression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_InstanceVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "MaxCityHealth"
+                    ],
+                    "ResolvedOwner": 13
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Context, UAssetAPI",
+              "ObjectExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_InstanceVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "WBP_BossBattle"
+                    ],
+                    "ResolvedOwner": 13
+                  }
+                }
+              },
+              "Offset": 23,
+              "RValuePointer": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [],
+                  "ResolvedOwner": 0
+                }
+              },
+              "ContextExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVirtualFunction, UAssetAPI",
+                "VirtualFunctionName": "ChangeCityHealth",
+                "Parameters": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_InstanceVariable, UAssetAPI",
+                    "Variable": {
+                      "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                      "New": {
+                        "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                        "Path": [
+                          "MaxCityHealth"
+                        ],
+                        "ResolvedOwner": 13
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\BP_StoryManager.json",
+      "sha256": "741b68e57fd2ebb2f51b60ecda84245d0da0f5f364cddbf593465d5a9b71c433",
+      "callCount": 3,
+      "defaultScalarProperties": {},
+      "calls": [
+        {
+          "function": "ExecuteUbergraph_BP_StoryManager",
+          "bytecodeJsonPath": "/314",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": null,
+          "levelVariable": [
+            "CallFunc_GetStoryLevelName_LevelName"
+          ],
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -112,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "CallFunc_GetStoryLevelName_LevelName"
+                    ],
+                    "ResolvedOwner": 1
+                  }
+                }
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -234,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 1458
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": 2001695922
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_BP_StoryManager"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false,
+          "defaultVariableValue": null
+        },
+        {
+          "function": "ExecuteUbergraph_BP_StoryManager",
+          "bytecodeJsonPath": "/317",
+          "nativeCall": "UnloadStreamLevel",
+          "levelLiteral": null,
+          "levelVariable": [
+            "CallFunc_GetStoryLevelName_LevelName_2"
+          ],
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -113,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "CallFunc_GetStoryLevelName_LevelName_2"
+                    ],
+                    "ResolvedOwner": 1
+                  }
+                }
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -234,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 5234
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": 1549010392
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_BP_StoryManager"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            ]
+          },
+          "defaultVariableValue": null
+        },
+        {
+          "function": "ExecuteUbergraph_BP_StoryManager",
+          "bytecodeJsonPath": "/323",
+          "nativeCall": "UnloadStreamLevel",
+          "levelLiteral": null,
+          "levelVariable": [
+            "CallFunc_GetStoryLevelName_LevelName_1"
+          ],
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -113,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "CallFunc_GetStoryLevelName_LevelName_1"
+                    ],
+                    "ResolvedOwner": 1
+                  }
+                }
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -234,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 3531
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -609992170
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_BP_StoryManager"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            ]
+          },
+          "defaultVariableValue": null
+        }
+      ],
+      "shortEventWrappers": [
+        {
+          "function": "Story3FinishBackToFreeGame",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 9289
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ResetStoryClearDoOnce",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 9284
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "FinalStoryClearSequenceFinish",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 9279
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ResetStoryStartDoOnce",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 9086
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "SkipSequenceEvent",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 9017
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "StoryStartSequenceFinish",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 8859
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ClearStory",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 8430
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ForceEndStory",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 8338
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "StartStory",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetValueOnPersistentFrame, UAssetAPI",
+              "DestinationProperty": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [
+                    "K2Node_CustomEvent_StoryType"
+                  ],
+                  "ResolvedOwner": 1
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "StoryType"
+                    ],
+                    "ResolvedOwner": 12
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 8001
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ReceiveBeginPlay",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 7946
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "GetStoryLevelName",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "CallFunc_Map_Find_ReturnValue"
+                    ],
+                    "ResolvedOwner": 15
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Context, UAssetAPI",
+                "ObjectExpression": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ObjectConst, UAssetAPI",
+                  "Value": -62
+                },
+                "Offset": 37,
+                "RValuePointer": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "CallFunc_Map_Find_ReturnValue"
+                    ],
+                    "ResolvedOwner": 15
+                  }
+                },
+                "ContextExpression": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_FinalFunction, UAssetAPI",
+                  "StackNode": -107,
+                  "Parameters": [
+                    {
+                      "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_InstanceVariable, UAssetAPI",
+                      "Variable": {
+                        "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                        "New": {
+                          "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                          "Path": [
+                            "StoryLevelName"
+                          ],
+                          "ResolvedOwner": 26
+                        }
+                      }
+                    },
+                    {
+                      "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                      "Variable": {
+                        "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                        "New": {
+                          "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                          "Path": [
+                            "StoryType"
+                          ],
+                          "ResolvedOwner": 15
+                        }
+                      }
+                    },
+                    {
+                      "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                      "Variable": {
+                        "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                        "New": {
+                          "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                          "Path": [
+                            "CallFunc_Map_Find_Value"
+                          ],
+                          "ResolvedOwner": 15
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Let, UAssetAPI",
+              "Value": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [
+                    "LevelName"
+                  ],
+                  "ResolvedOwner": 15
+                }
+              },
+              "Variable": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "LevelName"
+                    ],
+                    "ResolvedOwner": 15
+                  }
+                }
+              },
+              "Expression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "CallFunc_Map_Find_Value"
+                    ],
+                    "ResolvedOwner": 15
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ReleaseRight",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 16
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ReleaseLeft",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 17
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "Right",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 18
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "Left",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 19
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "Apply",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 20
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "Back",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 22
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "Done",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 23
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "Down",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 24
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "Up",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 25
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\HeroGameMode.json",
+      "sha256": "1c893a771c343a3ea807093a39399ccd66cb5f650b39bfee21cf40ff0026c8a4",
+      "callCount": 18,
+      "defaultScalarProperties": {
+        "MainLevelName": "MainLevel",
+        "BtnFlashMaxTime": 0.36000001430511475,
+        "DynamicPropsLevelName": "DynamicProps",
+        "GameStateClass": -37,
+        "PlayerControllerClass": -22,
+        "HUDClass": -30,
+        "DefaultPawnClass": -36
+      },
+      "calls": [
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/27",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": "EnelightMeteor",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "EnelightMeteor"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 1479
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": 1611059979
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/54",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": null,
+          "levelVariable": [
+            "DynamicPropsLevelName"
+          ],
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_InstanceVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "DynamicPropsLevelName"
+                    ],
+                    "ResolvedOwner": 76
+                  }
+                }
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 747
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -1957880948
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false,
+          "defaultVariableValue": "DynamicProps"
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/56",
+          "nativeCall": "UnloadStreamLevel",
+          "levelLiteral": "LoadLevel",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -108,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "LoadLevel"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -1
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -866068155
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            ]
+          }
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/60",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": "ResidentialArea3",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ResidentialArea3"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 1729
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": 741042276
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/62",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": "Coast",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "Coast"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 1484
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -1492583841
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/64",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": "ResidentialArea2",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ResidentialArea2"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 1664
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": 1661930520
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/66",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": "Slam",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "Slam"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 1924
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -2041404833
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/68",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": "ResidentialArea1",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ResidentialArea1"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 1794
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": 558598079
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/70",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": "Beach",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "Beach"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 1859
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -1915892448
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/72",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": "IndustrialArea",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "IndustrialArea"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 1989
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -717177249
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/74",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": "CommercialArea",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "CommercialArea"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 2054
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": 1414111761
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/76",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": "FinancialDistrict",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "FinancialDistrict"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 2119
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -1368059508
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/78",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": "Park",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "Park"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 2184
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -1910411443
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/80",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": null,
+          "levelVariable": [
+            "DynamicPropsLevelName"
+          ],
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_InstanceVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "DynamicPropsLevelName"
+                    ],
+                    "ResolvedOwner": 76
+                  }
+                }
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -1
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -1035019821
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false,
+          "defaultVariableValue": "DynamicProps"
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/321",
+          "nativeCall": "UnloadStreamLevel",
+          "levelLiteral": null,
+          "levelVariable": [
+            "DynamicPropsLevelName"
+          ],
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -108,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_InstanceVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "DynamicPropsLevelName"
+                    ],
+                    "ResolvedOwner": 76
+                  }
+                }
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 2314
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": 573893122
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            ]
+          },
+          "defaultVariableValue": "DynamicProps"
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/553",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": "EnelightMeteor",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "EnelightMeteor"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -1
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -379384806
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/830",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": "LoadLevel",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "LoadLevel"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 1609
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -357615350
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        },
+        {
+          "function": "ExecuteUbergraph_HeroGameMode",
+          "bytecodeJsonPath": "/913",
+          "nativeCall": "LoadStreamLevel",
+          "levelLiteral": "DownTown",
+          "levelVariable": null,
+          "exactBytecodeNode": {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+            "StackNode": -105,
+            "Parameters": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "DownTown"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+                "Struct": -320,
+                "StructSize": 32,
+                "Value": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                    "Value": 2249
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                    "Value": -996781719
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                    "Value": "ExecuteUbergraph_HeroGameMode"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  }
+                ]
+              }
+            ]
+          },
+          "bMakeVisibleAfterLoad": true,
+          "bShouldBlockOnLoad": false
+        }
+      ],
+      "shortEventWrappers": [
+        {
+          "function": "StartCQTutorial",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 36651
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "FinishTutorial",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetValueOnPersistentFrame, UAssetAPI",
+              "DestinationProperty": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [
+                    "K2Node_CustomEvent_IsTitleBack"
+                  ],
+                  "ResolvedOwner": 1
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "IsTitleBack"
+                    ],
+                    "ResolvedOwner": 3
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 36634
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "CQTutorialClearCounterEvent",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 36587
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ResetCQTutorialCounter",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 36385
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "CQCleartAnimation",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 36370
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ResetFInishTutorialEvent",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 36365
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "CheckShowSpecialActionTutorial",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 36248
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "PlaySpecialActionTutorialEvent",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 36216
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ShowSpecialActionTutorial",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 36190
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "SkipSequencerEvent",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 35910
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "BtnImageFlashAnim",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 35619
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "StartTitleMenu",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 32673
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "WaitPressAnyKeyEvent",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 32668
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "GameStartEvent",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 32647
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "BackTitleEvent",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 32642
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "BackToTitle",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 32637
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "BackToTitleFromOptions",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 32467
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "BackTitleNextEvent",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 32152
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "TGSFalse",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetValueOnPersistentFrame, UAssetAPI",
+              "DestinationProperty": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [
+                    "K2Node_CustomEvent_TGS"
+                  ],
+                  "ResolvedOwner": 1
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "TGS"
+                    ],
+                    "ResolvedOwner": 21
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 32018
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "PlayTitleMovie",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 31589
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "StopTitleMovie",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 31584
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ForceStartTutorial",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 30959
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ShowOptionMenu",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 30954
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "BackMainMenu",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 30949
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ShowPauseMenu",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 30944
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ClosePauseWidget",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 30939
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ShowInCQPause",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 30934
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ResumeGame",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 30422
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "BackPauseMenu",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 30417
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "OpenYesNoWidget",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetValueOnPersistentFrame, UAssetAPI",
+              "DestinationProperty": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [
+                    "K2Node_CustomEvent_IsBackToTitle"
+                  ],
+                  "ResolvedOwner": 1
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "IsBackToTitle"
+                    ],
+                    "ResolvedOwner": 32
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 30295
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ForceCQSelect",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 30141
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "OpenCQWidget",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 30044
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "InputUp",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 29830
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "InputDown",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 29815
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "InputLeft",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 29800
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "InputRight",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 29795
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "InputSelect",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 29780
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "InputBack",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 29765
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "CheckInputMode",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 29033
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "InputApplySetting",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 28509
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ForceShowCredit",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 26093
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "SetCQResult",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetValueOnPersistentFrame, UAssetAPI",
+              "DestinationProperty": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [
+                    "K2Node_CustomEvent_InCQResult"
+                  ],
+                  "ResolvedOwner": 1
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "InCQResult"
+                    ],
+                    "ResolvedOwner": 44
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 26073
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ReceiveTick",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetValueOnPersistentFrame, UAssetAPI",
+              "DestinationProperty": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [
+                    "K2Node_Event_DeltaSeconds"
+                  ],
+                  "ResolvedOwner": 1
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "DeltaSeconds"
+                    ],
+                    "ResolvedOwner": 45
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 25335
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "EndCQ",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 25300
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "RestartCQ",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 25234
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ShowCredit",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 24730
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "InTitleFalse",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 24189
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ReceiveBeginPlay",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalFinalFunction, UAssetAPI",
+              "StackNode": 1,
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                  "Value": 21526
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "PlaySE2D",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Context, UAssetAPI",
+              "ObjectExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ObjectConst, UAssetAPI",
+                "Value": -149
+              },
+              "Offset": 46,
+              "RValuePointer": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [],
+                  "ResolvedOwner": 0
+                }
+              },
+              "ContextExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_FinalFunction, UAssetAPI",
+                "StackNode": -106,
+                "Parameters": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                    "Variable": {
+                      "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                      "New": {
+                        "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                        "Path": [
+                          "Sound"
+                        ],
+                        "ResolvedOwner": 51
+                      }
+                    }
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                    "Variable": {
+                      "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                      "New": {
+                        "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                        "Path": [
+                          "Volume"
+                        ],
+                        "ResolvedOwner": 51
+                      }
+                    }
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                    "Variable": {
+                      "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                      "New": {
+                        "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                        "Path": [
+                          "Pitch"
+                        ],
+                        "ResolvedOwner": 51
+                      }
+                    }
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_FloatConst, UAssetAPI",
+                    "Value": "+0"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NoObject, UAssetAPI"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NoObject, UAssetAPI"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+                  }
+                ]
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "SetInputStateCQResult",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "CallFunc_SetGamePaused_ReturnValue"
+                    ],
+                    "ResolvedOwner": 54
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+                "StackNode": -107,
+                "Parameters": [
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+                  },
+                  {
+                    "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+                  }
+                ]
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVirtualFunction, UAssetAPI",
+              "VirtualFunctionName": "SetInputState",
+              "Parameters": [
+                {
+                  "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_ByteConst, UAssetAPI",
+                  "Value": 8
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "SetInputState",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Let, UAssetAPI",
+              "Value": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [
+                    "GameInputState"
+                  ],
+                  "ResolvedOwner": 76
+                }
+              },
+              "Variable": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_InstanceVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "GameInputState"
+                    ],
+                    "ResolvedOwner": 76
+                  }
+                }
+              },
+              "Expression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "GameInputState"
+                    ],
+                    "ResolvedOwner": 55
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "SetTitleSingboard",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetObj, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_InstanceVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "TitleSignboard"
+                    ],
+                    "ResolvedOwner": 76
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "TitleSingboard"
+                    ],
+                    "ResolvedOwner": 56
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "SetEnvSoundType",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Let, UAssetAPI",
+              "Value": {
+                "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                "New": {
+                  "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                  "Path": [
+                    "CurrentEnvType"
+                  ],
+                  "ResolvedOwner": 76
+                }
+              },
+              "Variable": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_InstanceVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "CurrentEnvType"
+                    ],
+                    "ResolvedOwner": 76
+                  }
+                }
+              },
+              "Expression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "CurrentEnvType"
+                    ],
+                    "ResolvedOwner": 59
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "CQSetting",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetObj, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_InstanceVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "CurrentCQ"
+                    ],
+                    "ResolvedOwner": 76
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "CQ"
+                    ],
+                    "ResolvedOwner": 64
+                  }
+                }
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ReleaseRight",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 66
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "ReleaseLeft",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 67
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "Right",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 68
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "Left",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 69
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "Apply",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 70
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "Back",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 72
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "Done",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 73
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "Down",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 74
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        },
+        {
+          "function": "Up",
+          "bytecode": [
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LetBool, UAssetAPI",
+              "VariableExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalOutVariable, UAssetAPI",
+                "Variable": {
+                  "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+                  "New": {
+                    "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+                    "Path": [
+                      "out"
+                    ],
+                    "ResolvedOwner": 75
+                  }
+                }
+              },
+              "AssignmentExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Return, UAssetAPI",
+              "ReturnExpression": {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"
+              }
+            },
+            {
+              "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_EndOfScript, UAssetAPI"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "callCount": 23,
+  "conclusion": "HeroGameMode contains explicit LoadStreamLevel requests for city districts with bMakeVisibleAfterLoad=true and bShouldBlockOnLoad=false. This proves intentional runtime loading code, not that every package is loaded in the current session. City/Story managers additionally load/unload selected challenge/story levels."
+}

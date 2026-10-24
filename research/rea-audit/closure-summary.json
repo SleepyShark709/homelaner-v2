@@ -1,0 +1,542 @@
+{
+  "decoded_packages": 306,
+  "class_exports": 186,
+  "asset_classes": {
+    "BlueprintGeneratedClass": 140,
+    "AnimBlueprintGeneratedClass": 13,
+    "DataTable": 39,
+    "UserDefinedEnum": 49,
+    "UserDefinedStruct": 28,
+    "WidgetBlueprintGeneratedClass": 33,
+    "BehaviorTree": 2,
+    "BlackboardData": 2
+  },
+  "functions_nonempty": 1996,
+  "raw_export_packages": [
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_BossBattle",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_3",
+        "MovieScene2DTransformSection_4",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_2",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_10",
+        "MovieSceneColorSection_11",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_4",
+        "MovieSceneColorSection_5",
+        "MovieSceneColorSection_6",
+        "MovieSceneColorSection_7",
+        "MovieSceneColorSection_8",
+        "MovieSceneColorSection_9",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_10",
+        "MovieSceneColorSection_11",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_4",
+        "MovieSceneColorSection_5",
+        "MovieSceneColorSection_6",
+        "MovieSceneColorSection_7",
+        "MovieSceneColorSection_8",
+        "MovieSceneColorSection_9",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_4",
+        "MovieSceneColorSection_5",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_Credit",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_3",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_FadeOut",
+      "exports": [
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_HeroPoint",
+      "exports": [
+        "MovieScene2DTransformSection_7",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_3",
+        "MovieScene2DTransformSection_4",
+        "MovieScene2DTransformSection_3",
+        "MovieScene2DTransformSection_4",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_4",
+        "MovieScene2DTransformSection_5",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_4",
+        "MovieScene2DTransformSection_5",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_5",
+        "MovieScene2DTransformSection_6",
+        "MovieSceneColorSection_15",
+        "MovieSceneColorSection_16",
+        "MovieSceneColorSection_17",
+        "MovieSceneColorSection_18",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_5",
+        "MovieSceneColorSection_6",
+        "MovieSceneColorSection_7",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_3",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_3",
+        "MovieSceneColorSection_4",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_3",
+        "MovieSceneColorSection_4",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_8",
+        "MovieSceneColorSection_9",
+        "MovieSceneColorSection_10",
+        "MovieSceneColorSection_11",
+        "MovieSceneColorSection_12",
+        "MovieSceneColorSection_13",
+        "MovieSceneColorSection_14",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_15",
+        "MovieSceneColorSection_8",
+        "MovieSceneColorSection_9",
+        "MovieSceneColorSection_10",
+        "MovieSceneColorSection_11",
+        "MovieSceneColorSection_3",
+        "MovieSceneColorSection_4",
+        "MovieSceneColorSection_4",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_InChallengeQuest",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_3",
+        "MovieScene2DTransformSection_4",
+        "MovieScene2DTransformSection_5",
+        "MovieScene2DTransformSection_6",
+        "MovieScene2DTransformSection_0",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_3",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_Lockon",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_3",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_4",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_OptionsAndSetting",
+      "exports": [
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_3",
+        "MovieScene2DTransformSection_4",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_0",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_PauseMenu",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_4",
+        "MovieScene2DTransformSection_3",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_2",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_PlayerActionBtn",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_QuitAndBackTitle",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_SaveAndLoad",
+      "exports": [
+        "MovieSceneColorSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_SequenceSkip",
+      "exports": [
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_2"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_StartMessage",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_TitleMovie",
+      "exports": [
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_Tutorial",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieSceneColorSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_TutorialHint",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_3",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneVectorSection_0",
+        "MovieSceneVectorSection_1",
+        "MovieSceneVectorSection_1",
+        "MovieSceneVectorSection_0",
+        "MovieSceneVectorSection_2"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WPB_ChallengeQuestSelect",
+      "exports": [
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_9",
+        "MovieScene2DTransformSection_10",
+        "MovieScene2DTransformSection_11",
+        "MovieScene2DTransformSection_12",
+        "MovieScene2DTransformSection_13",
+        "MovieScene2DTransformSection_14",
+        "MovieScene2DTransformSection_15",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_3",
+        "MovieScene2DTransformSection_3",
+        "MovieScene2DTransformSection_4",
+        "MovieScene2DTransformSection_5",
+        "MovieScene2DTransformSection_6",
+        "MovieScene2DTransformSection_7",
+        "MovieScene2DTransformSection_8",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_6",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_3",
+        "MovieScene2DTransformSection_4",
+        "MovieScene2DTransformSection_5",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_10",
+        "MovieSceneColorSection_11",
+        "MovieSceneColorSection_12",
+        "MovieSceneColorSection_13",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_3",
+        "MovieSceneColorSection_4",
+        "MovieSceneColorSection_5",
+        "MovieSceneColorSection_7",
+        "MovieSceneColorSection_8",
+        "MovieSceneColorSection_9",
+        "MovieSceneColorSection_20",
+        "MovieSceneColorSection_21",
+        "MovieSceneColorSection_3",
+        "MovieSceneColorSection_4",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/WIdget/Free_Widget",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_3",
+        "MovieSceneAudioSection_1",
+        "MovieSceneAudioSection_0",
+        "MovieSceneAudioSection_0",
+        "MovieSceneAudioSection_2",
+        "MovieSceneAudioSection_3",
+        "MovieSceneAudioSection_2",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_3",
+        "MovieSceneColorSection_4",
+        "MovieSceneColorSection_5",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_2",
+        "MovieSceneMarginSection_0",
+        "MovieSceneMarginSection_9"
+      ]
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/WIdget/MiniMap_Widget",
+      "exports": [
+        "MovieSceneColorSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_FlashMode",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_HeroSpecialAction",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_TitleFream",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_3",
+        "MovieScene2DTransformSection_4",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_3",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_4",
+        "MovieSceneColorSection_5",
+        "MovieSceneColorSection_6",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_TutorialControlHint",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieSceneFloatSection_0",
+        "MovieSceneFloatSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/WIdget/NewMiniMap_Widget",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_0",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneVectorSection_0",
+        "MovieSceneVectorSection_0"
+      ]
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/WIdget/Twitter_Widget",
+      "exports": [
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_6",
+        "MovieScene2DTransformSection_7",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_3",
+        "MovieScene2DTransformSection_0",
+        "MovieScene2DTransformSection_1",
+        "MovieScene2DTransformSection_2",
+        "MovieScene2DTransformSection_3",
+        "MovieScene2DTransformSection_4",
+        "MovieScene2DTransformSection_5",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_0",
+        "MovieSceneColorSection_1",
+        "MovieSceneColorSection_2",
+        "MovieSceneColorSection_3"
+      ]
+    }
+  ],
+  "soft_reference_packages": [],
+  "native_unique_anchors": [
+    [
+      "Class",
+      "/Script/UNDEFEATED.ActivitySystemLibrary",
+      2
+    ],
+    [
+      "Function",
+      "/Script/UNDEFEATED.ActivitySystemLibrary.StartActivity",
+      1
+    ],
+    [
+      "Class",
+      "/Script/UNDEFEATED.GameActivitySubsystem",
+      1
+    ],
+    [
+      "Class",
+      "/Script/UNDEFEATED.UndefeatedGameInstance",
+      1
+    ],
+    [
+      "DelegateFunction",
+      "/Script/UNDEFEATED.OnActivityRequested__DelegateSignature",
+      1
+    ],
+    [
+      "Function",
+      "/Script/UNDEFEATED.ActivitySystemLibrary.FinishActivity",
+      1
+    ],
+    [
+      "Function",
+      "/Script/UNDEFEATED.ActivitySystemLibrary.GetActivityID",
+      1
+    ],
+    [
+      "Function",
+      "/Script/UNDEFEATED.ActivitySystemLibrary.SetEnableActivity",
+      1
+    ],
+    [
+      "UndefeatedGameInstance",
+      "/Script/UNDEFEATED.Default__UndefeatedGameInstance",
+      1
+    ]
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "frozenStartInExtras": 111,
+  "frozenBytes": 7090,
+  "frozenSHA256": "9aea51a493b840f85dbeb67a2327ab3d43ec563f7e8b15d6afb70ff20ded1f4c",
+  "layoutParametersRaw": [
+    8,
+    41
+  ],
+  "scalarParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 6800,
+      "parameter": "Param",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.3724169731140137
+    }
+  ],
+  "vectorParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 6824,
+      "parameter": "SelectionColor",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "textureParameters2D": [
+    {
+      "index": 0,
+      "frozenOffset": 6860,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 2,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/UrbanCity/Textures/Props/prp_bench_n"
+    },
+    {
+      "index": 1,
+      "frozenOffset": 6888,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 0,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/UrbanCity/Textures/Props/prp_bench_a"
+    },
+    {
+      "index": 2,
+      "frozenOffset": 6916,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 1,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/UrbanCity/Textures/Props/prp_bench_m"
+    },
+    {
+      "index": 3,
+      "frozenOffset": 6944,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 4,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/UrbanCity/Textures/Props/prp_bench_r"
+    },
+    {
+      "index": 4,
+      "frozenOffset": 6972,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 3,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/UrbanCity/Textures/Props/prp_bench_ao"
+    }
+  ],
+  "uniformVectorPreshaders": [
+    {
+      "offset": 12,
+      "size": 3,
+      "bytesHex": "040000"
+    },
+    {
+      "offset": 15,
+      "size": 9,
+      "bytesHex": "0400002303000102ff"
+    }
+  ],
+  "uniformScalarPreshaders": [
+    {
+      "offset": 0,
+      "size": 9,
+      "bytesHex": "040000230103ffffff"
+    },
+    {
+      "offset": 9,
+      "size": 3,
+      "bytesHex": "030000"
+    }
+  ],
+  "namePatches": {
+    "6800": "Param",
+    "6824": "SelectionColor"
+  },
+  "preshaderDataHex": "040000230103ffffff0300000400000400002303000102ff",
+  "preshaderDataFrozenOffset": 7000
+}

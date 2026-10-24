@@ -1,0 +1,299 @@
+{
+  "staticObjects": 41,
+  "splineComponents": 211,
+  "assets": 17,
+  "resourceChecks": [
+    {
+      "file": "roads.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/Road_Large_A/Road_Large_A.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/Road_Medium_B/Road_Medium_B.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/Road_Small_A/Road_Small_A.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/Sidewalk_Large_A/Sidewalk_Large_A.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/Sidewalk_Small_B/Sidewalk_Small_B.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_Floor12000x15000/SM_Floor12000x15000.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Apartment_A/SM_MERGED_Apartment_A.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Apartment_B/SM_MERGED_Apartment_B.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Apartment_C/SM_MERGED_Apartment_C.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Apartment_D/SM_MERGED_Apartment_D.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Apartment_E/SM_MERGED_Apartment_E.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Apartment_F/SM_MERGED_Apartment_F.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Ornate_Floor_RA1/SM_MERGED_Ornate_Floor_RA1.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Ornate_Floor_RA1_B/SM_MERGED_Ornate_Floor_RA1_B.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Ornate_Floor_RA1_C/SM_MERGED_Ornate_Floor_RA1_C.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Road_Crosswalk_Large_A18/SM_MERGED_Road_Crosswalk_Large_A18.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Sidewalk_Corner_Small_A32/SM_MERGED_Sidewalk_Corner_Small_A32.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Sidewalk_Corner_Small_A34_1066/SM_MERGED_Sidewalk_Corner_Small_A34_1066.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Sidewalk_Small_A601_705/SM_MERGED_Sidewalk_Small_A601_705.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Sidewalk_Small_A821/SM_MERGED_Sidewalk_Small_A821.gltf",
+      "missingResources": []
+    },
+    {
+      "file": "meshes/SM_MERGED_Sidewalk_Small_A923/SM_MERGED_Sidewalk_Small_A923.gltf",
+      "missingResources": []
+    }
+  ],
+  "inputs": [
+    {
+      "file": "E:\\undefeated-web\\tools\\asset-pipeline\\umodel.exe",
+      "bytes": 1468928,
+      "sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0"
+    },
+    {
+      "file": "E:\\undefeated-web\\tools\\asset-pipeline\\bin\\repak.exe",
+      "bytes": 4541952,
+      "sha256": "fcd538e5994b9bb833622d425ae346f4e0692f02d4b0025114a559f9b6286022"
+    },
+    {
+      "file": "E:\\undefeated-web\\tools\\asset-pipeline\\bin\\oo2core_9_win64.dll",
+      "bytes": 637952,
+      "sha256": "6f5d41a7892ea6b2db420f2458dad2f84a63901c9a93ce9497337b16c195f457"
+    },
+    {
+      "file": "E:\\undefeated-web\\tools\\asset-pipeline\\uasset-net472\\UAssetGUI.exe",
+      "bytes": 1402880,
+      "sha256": "29f5cf02d359e2d050e44d896105956c587fc8f03ca3c7e70e3fc1d6be69580d"
+    },
+    {
+      "file": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\MainLevel.umap",
+      "bytes": 1623226,
+      "sha256": "0a22c6728087615a867ac2731dfa1facb7ed28c1c8f075df03aa1927f0a1eddb"
+    },
+    {
+      "file": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\MainLevel.uexp",
+      "bytes": 55251787,
+      "sha256": "7ba09c3ed28a8d4a889ecc9727f5b24d5ca01b7716e11025c2bedcd57872577a"
+    },
+    {
+      "file": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\ResidentialArea1.umap",
+      "bytes": 116908,
+      "sha256": "81b11f07e3dd014d0ff61313af8bbefd594e976fd1e9f7b1ac65f98548ef5e22"
+    },
+    {
+      "file": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\ResidentialArea1.uexp",
+      "bytes": 543677,
+      "sha256": "3ba281551bcf012ac00e64a579c65082e255d89781d6ee51396077f9792bca38"
+    }
+  ],
+  "groundY": 0.511199990388751,
+  "spawn": [
+    49.999984103704946,
+    1.711199990388751,
+    1.3708073881832388
+  ],
+  "staticBounds": {
+    "min": [
+      -227.0002326965332,
+      -0.35,
+      -137.0
+    ],
+    "max": [
+      270.00025367736816,
+      35.679998779296874,
+      149.00027084350586
+    ]
+  },
+  "coordinateChecks": {
+    "UE_yaw_90_local_X_in_glTF": [
+      0.0,
+      0.0,
+      1.0000000000000002
+    ],
+    "expected": [
+      0,
+      0,
+      1
+    ]
+  },
+  "scope": "Original actors/components, original source meshes, selected rectangular street block; not complete map or original UE rendering.",
+  "primitiveMergeChecks": [
+    {
+      "mesh": "Road_Large_A",
+      "triangles": 144,
+      "positionUVTriangleHash": "934fef31b2e7adde13168ecf14ea9ebcc28a499530fd9f1b66092c265028afd6",
+      "matchesSource": true
+    },
+    {
+      "mesh": "Road_Medium_B",
+      "triangles": 110,
+      "positionUVTriangleHash": "12dd178291e3833dfa4bd3a33cfae71de6fc810548e7fb6d0a97d150db1cc3bd",
+      "matchesSource": true
+    },
+    {
+      "mesh": "Road_Small_A",
+      "triangles": 104,
+      "positionUVTriangleHash": "1c14a12f42dac6949debcc56d7c089c465c54251afb3e4b3c07985a1d2d53ec9",
+      "matchesSource": true
+    },
+    {
+      "mesh": "Sidewalk_Large_A",
+      "triangles": 164,
+      "positionUVTriangleHash": "cc831b7db55488c831efe4cf2058c4bbd3e923cd2bf3b5d06d618fa90a70cdad",
+      "matchesSource": true
+    },
+    {
+      "mesh": "Sidewalk_Small_B",
+      "triangles": 152,
+      "positionUVTriangleHash": "d405bb9a3cef62799925c4ec2a8c590b839fbcd92b537dc2fa80ceadb66e72a4",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_Floor12000x15000",
+      "triangles": 12,
+      "positionUVTriangleHash": "3c904f8264c01d0db434c55a39e489e3d6cae6e2f29f5f46de1f098dba3110d6",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Apartment_A",
+      "triangles": 40061,
+      "positionUVTriangleHash": "9573fb227867b124e1dffe407f24de21bb9046ef007eaa1daf08b45c7ca1f5ab",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Apartment_B",
+      "triangles": 52488,
+      "positionUVTriangleHash": "a7adb2de253d219757639a26268457c8cccbd101afedab0450b88ec6083acaf6",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Apartment_C",
+      "triangles": 23744,
+      "positionUVTriangleHash": "29c2f7c3730f69a70896dc6dca98556d643a0dd286aa7a4c78a087a59147151b",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Apartment_D",
+      "triangles": 24584,
+      "positionUVTriangleHash": "308f9a4e5ff61d33816daf6b0fda62e7e0474e3cac6b61c813e211e0fea6b9a4",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Apartment_E",
+      "triangles": 27673,
+      "positionUVTriangleHash": "71ed1d48e3b776a71fe3526eacde9e4643eed8caae9db936bc9dcdc72ec05a8e",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Apartment_F",
+      "triangles": 23034,
+      "positionUVTriangleHash": "51fb085d1ac8ac65bf06bb9258e3a7150630568a6f50dddeb0dac49021e080db",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Ornate_Floor_RA1",
+      "triangles": 671,
+      "positionUVTriangleHash": "f9859566115bcf33acac3a18c0759d22b6feb662bc23217fb7185029d02c7d21",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Ornate_Floor_RA1_B",
+      "triangles": 1101,
+      "positionUVTriangleHash": "2874bc6dd71c4a017b10773a93ffc37a256f0a9293f57e35707bf83a4d4d62ae",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Ornate_Floor_RA1_C",
+      "triangles": 1612,
+      "positionUVTriangleHash": "b32b1f2241324776148e50d050a3f5f81b361f89561f39af97c9f7063300efc2",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Road_Crosswalk_Large_A18",
+      "triangles": 3498,
+      "positionUVTriangleHash": "67657c2439cb2c3c33fba13ace2f7808e3183532a95a82d930c53570e9509698",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Sidewalk_Corner_Small_A32",
+      "triangles": 1839,
+      "positionUVTriangleHash": "ab71376d49d928d4590f756d504bc731e8d5cbbb7db0e889b1aaf0a29f7ef753",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Sidewalk_Corner_Small_A34_1066",
+      "triangles": 1814,
+      "positionUVTriangleHash": "4e070b47b1993f8cb49d4b3290d73fbce9f353d180437ac2671d1b7c01c2abb5",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Sidewalk_Small_A601_705",
+      "triangles": 3040,
+      "positionUVTriangleHash": "191706abc78d9f1878281e81d0255236c2107a594442767ac0fcf21fa282a739",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Sidewalk_Small_A821",
+      "triangles": 3040,
+      "positionUVTriangleHash": "5fda9aef4ceb6df6700a709caef11c942a251b6ac82fec46b7c9da7ac96ab630",
+      "matchesSource": true
+    },
+    {
+      "mesh": "SM_MERGED_Sidewalk_Small_A923",
+      "triangles": 2128,
+      "positionUVTriangleHash": "12daeba6e414ae5cfed6008c2c0f904490a55b8ce56984308c7b3b824b905ec9",
+      "matchesSource": true
+    }
+  ],
+  "sceneTriangleCount": 604147,
+  "scenePrimitiveCountBefore": 1960,
+  "scenePrimitiveCountAfter": 481
+}

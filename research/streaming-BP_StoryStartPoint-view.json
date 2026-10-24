@@ -1,0 +1,2587 @@
+[
+  {
+    "export_index": 0,
+    "name": "ExecuteUbergraph_BP_StoryStartPoint",
+    "statements": [
+      {
+        "pointer": "/Exports/0/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_PushExecutionFlow",
+          "PushingAddress": 4572
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_ComputedJump",
+          "CodeOffsetExpression": "EntryPoint"
+        },
+        "offset": 5
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "IsSotryClear",
+          "AssignmentExpression": true
+        },
+        "offset": 15
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 26
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_GetGameMode_ReturnValue",
+          "AssignmentExpression": {
+            "call": "GetGameMode",
+            "args": [
+              "self"
+            ]
+          }
+        },
+        "offset": 27
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_AsHero_Game_Mode",
+          "Expression": {
+            "op": "EX_DynamicCast",
+            "ClassPtr": -9,
+            "TargetExpression": "CallFunc_GetGameMode_ReturnValue"
+          }
+        },
+        "offset": 48
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/6",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_bSuccess",
+          "Expression": {
+            "op": "EX_PrimitiveCast",
+            "ConversionType": "ObjectToBool",
+            "Target": "K2Node_DynamicCast_AsHero_Game_Mode"
+          }
+        },
+        "offset": 84
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/7",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "K2Node_DynamicCast_bSuccess"
+        },
+        "offset": 113
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/8",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "HeroGameMode",
+          "AssignmentExpression": "K2Node_DynamicCast_AsHero_Game_Mode"
+        },
+        "offset": 123
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/9",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "HeroGameState",
+          "AssignmentExpression": {
+            "on": "K2Node_DynamicCast_AsHero_Game_Mode",
+            "do": "HeroGameState"
+          }
+        },
+        "offset": 142
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/10",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "HeroGameInstance",
+          "AssignmentExpression": {
+            "on": "K2Node_DynamicCast_AsHero_Game_Mode",
+            "do": "HeroGameInstance"
+          }
+        },
+        "offset": 183
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/11",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "Player",
+          "AssignmentExpression": {
+            "on": "K2Node_DynamicCast_AsHero_Game_Mode",
+            "do": "PlayerRef"
+          }
+        },
+        "offset": 224
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/12",
+        "ast": {
+          "op": "EX_SetArray",
+          "AssigningProperty": "CallFunc_GetAllActorsOfClass_OutActors",
+          "ArrayInnerProp": null,
+          "Elements": []
+        },
+        "offset": 265
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/13",
+        "ast": {
+          "call": "GetAllActorsOfClass",
+          "args": [
+            "self",
+            {
+              "object": "BP_StoryManager_C"
+            },
+            "CallFunc_GetAllActorsOfClass_OutActors"
+          ]
+        },
+        "offset": 276
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/14",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Get",
+            "args": [
+              "CallFunc_GetAllActorsOfClass_OutActors",
+              0,
+              "CallFunc_Array_Get_Item"
+            ]
+          }
+        },
+        "offset": 305
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/15",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "StoryManager",
+          "AssignmentExpression": "CallFunc_Array_Get_Item"
+        },
+        "offset": 360
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/16",
+        "ast": {
+          "on": "S_StoryStartPoint",
+          "do": {
+            "call": "Stop",
+            "args": []
+          }
+        },
+        "offset": 379
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/17",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "Temp_object_Variable",
+          "AssignmentExpression": {
+            "op": "EX_NoObject"
+          }
+        },
+        "offset": 415
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/18",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "Temp_object_Variable_1",
+          "AssignmentExpression": {
+            "op": "EX_NoObject"
+          }
+        },
+        "offset": 426
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/19",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "Temp_object_Variable_2",
+          "AssignmentExpression": {
+            "object": "P_BossBattleArea_Lightning"
+          }
+        },
+        "offset": 437
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/20",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "Temp_object_Variable_3",
+          "AssignmentExpression": {
+            "object": "P_BossBattleArea_Fire"
+          }
+        },
+        "offset": 456
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/21",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "Temp_object_Variable_4",
+          "AssignmentExpression": {
+            "object": "P_BossBattleArea_Wind"
+          }
+        },
+        "offset": 475
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/22",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "Temp_object_Variable_5",
+          "AssignmentExpression": {
+            "op": "EX_NoObject"
+          }
+        },
+        "offset": 494
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/23",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_byte_Variable_4",
+          "Variable": "Temp_byte_Variable_4",
+          "Expression": "StoryType"
+        },
+        "offset": 505
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/24",
+        "ast": {
+          "on": "P_StartBossBattle",
+          "do": {
+            "call": "SetTemplate",
+            "args": [
+              {
+                "op": "EX_SwitchValue",
+                "EndGotoOffset": 678,
+                "IndexTerm": "Temp_byte_Variable_4",
+                "DefaultTerm": "K2Node_Select_Default_5",
+                "Cases": [
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": 0,
+                    "NextOffset": 594,
+                    "CaseTerm": "Temp_object_Variable_5"
+                  },
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": 1,
+                    "NextOffset": 609,
+                    "CaseTerm": "Temp_object_Variable_4"
+                  },
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": 2,
+                    "NextOffset": 624,
+                    "CaseTerm": "Temp_object_Variable_3"
+                  },
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": 3,
+                    "NextOffset": 639,
+                    "CaseTerm": "Temp_object_Variable_2"
+                  },
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": 4,
+                    "NextOffset": 654,
+                    "CaseTerm": "Temp_object_Variable_1"
+                  },
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": 5,
+                    "NextOffset": 669,
+                    "CaseTerm": "Temp_object_Variable"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "offset": 532
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/25",
+        "ast": {
+          "op": "EX_PushExecutionFlow",
+          "PushingAddress": 820
+        },
+        "offset": 679
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/26",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess_4",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              1
+            ]
+          }
+        },
+        "offset": 684
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/27",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1537,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess_4"
+        },
+        "offset": 715
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/28",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess_4",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              2
+            ]
+          }
+        },
+        "offset": 729
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/29",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1612,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess_4"
+        },
+        "offset": 760
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/30",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess_4",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              3
+            ]
+          }
+        },
+        "offset": 774
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/31",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1694,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess_4"
+        },
+        "offset": 805
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/32",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 819
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/33",
+        "ast": {
+          "call": "Delay",
+          "args": [
+            "self",
+            "+0",
+            {
+              "op": "EX_StructConst",
+              "Struct": -124,
+              "StructSize": 32,
+              "Value": [
+                {
+                  "op": "EX_SkipOffsetConst",
+                  "Value": 875
+                },
+                765787396,
+                "ExecuteUbergraph_BP_StoryStartPoint",
+                "self"
+              ]
+            }
+          ]
+        },
+        "offset": 820
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/34",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 874
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/35",
+        "ast": {
+          "on": "Sphere",
+          "do": {
+            "call": "SetGenerateOverlapEvents",
+            "args": [
+              false
+            ]
+          }
+        },
+        "offset": 875
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/36",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_EqualEqual_IntInt_ReturnValue",
+          "AssignmentExpression": {
+            "call": "EqualEqual_IntInt",
+            "args": [
+              {
+                "on": {
+                  "on": "HeroGameInstance",
+                  "do": "SaveData"
+                },
+                "do": "Story"
+              },
+              -1
+            ]
+          }
+        },
+        "offset": 908
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/37",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1016,
+          "BooleanExpression": "CallFunc_EqualEqual_IntInt_ReturnValue"
+        },
+        "offset": 986
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/38",
+        "ast": {
+          "call": "SetActiveStory",
+          "args": [
+            false
+          ]
+        },
+        "offset": 1000
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/39",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 1015
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/40",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchInteger_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_IntInt",
+            "args": [
+              {
+                "on": {
+                  "on": "HeroGameInstance",
+                  "do": "SaveData"
+                },
+                "do": "Story"
+              },
+              0
+            ]
+          }
+        },
+        "offset": 1016
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/41",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1385,
+          "BooleanExpression": "K2Node_SwitchInteger_CmpSuccess"
+        },
+        "offset": 1094
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/42",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchInteger_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_IntInt",
+            "args": [
+              {
+                "on": {
+                  "on": "HeroGameInstance",
+                  "do": "SaveData"
+                },
+                "do": "Story"
+              },
+              1
+            ]
+          }
+        },
+        "offset": 1108
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/43",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1776,
+          "BooleanExpression": "K2Node_SwitchInteger_CmpSuccess"
+        },
+        "offset": 1186
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/44",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchInteger_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_IntInt",
+            "args": [
+              {
+                "on": {
+                  "on": "HeroGameInstance",
+                  "do": "SaveData"
+                },
+                "do": "Story"
+              },
+              2
+            ]
+          }
+        },
+        "offset": 1200
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/45",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1912,
+          "BooleanExpression": "K2Node_SwitchInteger_CmpSuccess"
+        },
+        "offset": 1278
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/46",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchInteger_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_IntInt",
+            "args": [
+              {
+                "on": {
+                  "on": "HeroGameInstance",
+                  "do": "SaveData"
+                },
+                "do": "Story"
+              },
+              3
+            ]
+          }
+        },
+        "offset": 1292
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/47",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 2048,
+          "BooleanExpression": "K2Node_SwitchInteger_CmpSuccess"
+        },
+        "offset": 1370
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/48",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 1384
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/49",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              1
+            ]
+          }
+        },
+        "offset": 1385
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/50",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1521,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess"
+        },
+        "offset": 1416
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/51",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              2
+            ]
+          }
+        },
+        "offset": 1430
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/52",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 2184,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess"
+        },
+        "offset": 1461
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/53",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              3
+            ]
+          }
+        },
+        "offset": 1475
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/54",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 2184,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess"
+        },
+        "offset": 1506
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/55",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 1520
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/56",
+        "ast": {
+          "call": "SetActiveStory",
+          "args": [
+            true
+          ]
+        },
+        "offset": 1521
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/57",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 1536
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/58",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1600,
+          "BooleanExpression": {
+            "on": {
+              "on": "HeroGameInstance",
+              "do": "SaveData"
+            },
+            "do": "IsFirstClearStory1"
+          }
+        },
+        "offset": 1537
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/59",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 15
+        },
+        "offset": 1595
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/60",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "IsSotryClear",
+          "AssignmentExpression": false
+        },
+        "offset": 1600
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/61",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 1611
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/62",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1682,
+          "BooleanExpression": {
+            "on": {
+              "on": "HeroGameInstance",
+              "do": "SaveData"
+            },
+            "do": "IsFirstClearStory2"
+          }
+        },
+        "offset": 1612
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/63",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "IsSotryClear",
+          "AssignmentExpression": true
+        },
+        "offset": 1670
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/64",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 1681
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/65",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "IsSotryClear",
+          "AssignmentExpression": false
+        },
+        "offset": 1682
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/66",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 1693
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/67",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1764,
+          "BooleanExpression": {
+            "on": {
+              "on": "HeroGameInstance",
+              "do": "SaveData"
+            },
+            "do": "IsFirstClearStory3"
+          }
+        },
+        "offset": 1694
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/68",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "IsSotryClear",
+          "AssignmentExpression": true
+        },
+        "offset": 1752
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/69",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 1763
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/70",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "IsSotryClear",
+          "AssignmentExpression": false
+        },
+        "offset": 1764
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/71",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 1775
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/72",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess_3",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              1
+            ]
+          }
+        },
+        "offset": 1776
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/73",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1521,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess_3"
+        },
+        "offset": 1807
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/74",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess_3",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              2
+            ]
+          }
+        },
+        "offset": 1821
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/75",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1521,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess_3"
+        },
+        "offset": 1852
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/76",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess_3",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              3
+            ]
+          }
+        },
+        "offset": 1866
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/77",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 2184,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess_3"
+        },
+        "offset": 1897
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/78",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 1911
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/79",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess_2",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              1
+            ]
+          }
+        },
+        "offset": 1912
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/80",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1521,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess_2"
+        },
+        "offset": 1943
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/81",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess_2",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              2
+            ]
+          }
+        },
+        "offset": 1957
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/82",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1521,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess_2"
+        },
+        "offset": 1988
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/83",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess_2",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              3
+            ]
+          }
+        },
+        "offset": 2002
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/84",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1521,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess_2"
+        },
+        "offset": 2033
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/85",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 2047
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/86",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess_1",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              1
+            ]
+          }
+        },
+        "offset": 2048
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/87",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1521,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess_1"
+        },
+        "offset": 2079
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/88",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess_1",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              2
+            ]
+          }
+        },
+        "offset": 2093
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/89",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1521,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess_1"
+        },
+        "offset": 2124
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/90",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess_1",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              3
+            ]
+          }
+        },
+        "offset": 2138
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/91",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1521,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess_1"
+        },
+        "offset": 2169
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/92",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 2183
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/93",
+        "ast": {
+          "call": "SetActiveStory",
+          "args": [
+            false
+          ]
+        },
+        "offset": 2184
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/94",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 2199
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/95",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 875
+        },
+        "offset": 2200
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/96",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_ActorHasTag_ReturnValue",
+          "AssignmentExpression": {
+            "on": "K2Node_ComponentBoundEvent_OtherActor_1",
+            "do": {
+              "call": "ActorHasTag",
+              "args": [
+                "Player"
+              ]
+            }
+          }
+        },
+        "offset": 2205
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/97",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_ActorHasTag_ReturnValue"
+        },
+        "offset": 2260
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/98",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+          "AssignmentExpression": {
+            "call": "EqualEqual_ByteByte",
+            "args": [
+              {
+                "on": "HeroGameMode",
+                "do": "GameInputState"
+              },
+              4
+            ]
+          }
+        },
+        "offset": 2270
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/99",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_EqualEqual_ByteByte_ReturnValue"
+        },
+        "offset": 2323
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/100",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_byte_Variable_5",
+          "Variable": "Temp_byte_Variable_5",
+          "Expression": 2
+        },
+        "offset": 2333
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/101",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_byte_Variable_6",
+          "Variable": "Temp_byte_Variable_6",
+          "Expression": 1
+        },
+        "offset": 2353
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/102",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "Temp_bool_Variable_3",
+          "AssignmentExpression": "IsSotryClear"
+        },
+        "offset": 2373
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/103",
+        "ast": {
+          "on": "Player",
+          "do": {
+            "call": "SetStartMassageTypeAndStoryType",
+            "args": [
+              {
+                "op": "EX_SwitchValue",
+                "EndGotoOffset": 2480,
+                "IndexTerm": "Temp_bool_Variable_3",
+                "DefaultTerm": "K2Node_Select_Default_6",
+                "Cases": [
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": false,
+                    "NextOffset": 2457,
+                    "CaseTerm": "Temp_byte_Variable_6"
+                  },
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": true,
+                    "NextOffset": 2471,
+                    "CaseTerm": "Temp_byte_Variable_5"
+                  }
+                ]
+              },
+              "StoryType"
+            ]
+          }
+        },
+        "offset": 2392
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/104",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_byte_Variable_5",
+          "Variable": "Temp_byte_Variable_5",
+          "Expression": 2
+        },
+        "offset": 2490
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/105",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_byte_Variable_6",
+          "Variable": "Temp_byte_Variable_6",
+          "Expression": 1
+        },
+        "offset": 2510
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/106",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "Temp_bool_Variable_3",
+          "AssignmentExpression": "IsSotryClear"
+        },
+        "offset": 2530
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/107",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_GetStartMassageText_ReturnValue",
+          "Variable": "CallFunc_GetStartMassageText_ReturnValue",
+          "Expression": {
+            "on": {
+              "object": "Default__BPFL_Localize_C"
+            },
+            "do": {
+              "call": "GetStartMassageText",
+              "args": [
+                {
+                  "op": "EX_SwitchValue",
+                  "EndGotoOffset": 2655,
+                  "IndexTerm": "Temp_bool_Variable_3",
+                  "DefaultTerm": "K2Node_Select_Default_6",
+                  "Cases": [
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": false,
+                      "NextOffset": 2632,
+                      "CaseTerm": "Temp_byte_Variable_6"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": true,
+                      "NextOffset": 2646,
+                      "CaseTerm": "Temp_byte_Variable_5"
+                    }
+                  ]
+                },
+                "self"
+              ]
+            }
+          }
+        },
+        "offset": 2549
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/108",
+        "ast": {
+          "on": {
+            "on": "HeroGameMode",
+            "do": "WBP_CQTest"
+          },
+          "do": {
+            "call": "SetVisibilityCQPanel",
+            "args": [
+              true,
+              "CallFunc_GetStartMassageText_ReturnValue",
+              {
+                "op": "EX_SwitchValue",
+                "EndGotoOffset": 2777,
+                "IndexTerm": "Temp_bool_Variable_3",
+                "DefaultTerm": "K2Node_Select_Default_6",
+                "Cases": [
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": false,
+                    "NextOffset": 2754,
+                    "CaseTerm": "Temp_byte_Variable_6"
+                  },
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": true,
+                    "NextOffset": 2768,
+                    "CaseTerm": "Temp_byte_Variable_5"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "offset": 2657
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/109",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 2778
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/110",
+        "ast": {
+          "on": "Player",
+          "do": {
+            "call": "SetStartMassageTypeAndStoryType",
+            "args": [
+              3,
+              4
+            ]
+          }
+        },
+        "offset": 2779
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/111",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_byte_Variable",
+          "Variable": "Temp_byte_Variable",
+          "Expression": 2
+        },
+        "offset": 2819
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/112",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_byte_Variable_1",
+          "Variable": "Temp_byte_Variable_1",
+          "Expression": 1
+        },
+        "offset": 2839
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/113",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "Temp_bool_Variable_2",
+          "AssignmentExpression": "IsSotryClear"
+        },
+        "offset": 2859
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/114",
+        "ast": {
+          "on": {
+            "on": "HeroGameMode",
+            "do": "WBP_CQTest"
+          },
+          "do": {
+            "call": "SetVisibilityCQPanel",
+            "args": [
+              false,
+              {
+                "op": "EX_TextConst",
+                "Value": {
+                  "op": "FScriptText",
+                  "TextLiteralType": "Empty",
+                  "LocalizedSource": null,
+                  "LocalizedKey": null,
+                  "LocalizedNamespace": null,
+                  "InvariantLiteralString": null,
+                  "LiteralString": null,
+                  "StringTableAsset": null,
+                  "StringTableId": null,
+                  "StringTableKey": null
+                }
+              },
+              {
+                "op": "EX_SwitchValue",
+                "EndGotoOffset": 2991,
+                "IndexTerm": "Temp_bool_Variable_2",
+                "DefaultTerm": "K2Node_Select_Default",
+                "Cases": [
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": false,
+                    "NextOffset": 2968,
+                    "CaseTerm": "Temp_byte_Variable_1"
+                  },
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": true,
+                    "NextOffset": 2982,
+                    "CaseTerm": "Temp_byte_Variable"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "offset": 2878
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/115",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 2992
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/116",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 3022,
+          "BooleanExpression": "K2Node_CustomEvent_bGenerateOverlapEvents"
+        },
+        "offset": 2993
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/117",
+        "ast": {
+          "call": "SetCurrentStoryActive",
+          "args": []
+        },
+        "offset": 3007
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/118",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 3021
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/119",
+        "ast": {
+          "call": "SetActiveStory",
+          "args": [
+            false
+          ]
+        },
+        "offset": 3022
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/120",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_IsInViewport_ReturnValue",
+          "AssignmentExpression": {
+            "on": {
+              "on": "HeroGameMode",
+              "do": "WBP_CQTest"
+            },
+            "do": {
+              "call": "IsInViewport",
+              "args": []
+            }
+          }
+        },
+        "offset": 3037
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/121",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_IsInViewport_ReturnValue"
+        },
+        "offset": 3101
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/122",
+        "ast": {
+          "call": "ForceHiddenStartMsaageWidget",
+          "args": []
+        },
+        "offset": 3111
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/123",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 3125
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/124",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_ActorHasTag_ReturnValue_1",
+          "AssignmentExpression": {
+            "on": "K2Node_ComponentBoundEvent_OtherActor",
+            "do": {
+              "call": "ActorHasTag",
+              "args": [
+                "Player"
+              ]
+            }
+          }
+        },
+        "offset": 3126
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/125",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_ActorHasTag_ReturnValue_1"
+        },
+        "offset": 3181
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/126",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 2779
+        },
+        "offset": 3191
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/127",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 2779
+        },
+        "offset": 3196
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/128",
+        "ast": {
+          "on": "Sphere",
+          "do": {
+            "call": "SetGenerateOverlapEvents",
+            "args": [
+              "K2Node_CustomEvent_IsActive"
+            ]
+          }
+        },
+        "offset": 3201
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/129",
+        "ast": {
+          "on": "P_StartBossBattle",
+          "do": {
+            "call": "Deactivate",
+            "args": []
+          }
+        },
+        "offset": 3242
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/130",
+        "ast": {
+          "on": "P_StartStory",
+          "do": {
+            "call": "Deactivate",
+            "args": []
+          }
+        },
+        "offset": 3278
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/131",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 4337,
+          "BooleanExpression": "K2Node_CustomEvent_IsActive"
+        },
+        "offset": 3314
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/132",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "Temp_bool_Variable_1",
+          "AssignmentExpression": "IsSotryClear"
+        },
+        "offset": 3328
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/133",
+        "ast": {
+          "on": {
+            "op": "EX_SwitchValue",
+            "EndGotoOffset": 3401,
+            "IndexTerm": "Temp_bool_Variable_1",
+            "DefaultTerm": "K2Node_Select_Default_3",
+            "Cases": [
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": false,
+                "NextOffset": 3378,
+                "CaseTerm": "P_StartStory"
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": true,
+                "NextOffset": 3392,
+                "CaseTerm": "P_StartBossBattle"
+              }
+            ]
+          },
+          "do": {
+            "call": "Activate",
+            "args": [
+              false
+            ]
+          }
+        },
+        "offset": 3347
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/134",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_name_Variable",
+          "Variable": "Temp_name_Variable",
+          "Expression": "None"
+        },
+        "offset": 3428
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/135",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_name_Variable_1",
+          "Variable": "Temp_name_Variable_1",
+          "Expression": "None"
+        },
+        "offset": 3459
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/136",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_name_Variable_2",
+          "Variable": "Temp_name_Variable_2",
+          "Expression": "LightningBoss"
+        },
+        "offset": 3490
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/137",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_name_Variable_3",
+          "Variable": "Temp_name_Variable_3",
+          "Expression": "FireBoss"
+        },
+        "offset": 3521
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/138",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_name_Variable_4",
+          "Variable": "Temp_name_Variable_4",
+          "Expression": "WindBoss"
+        },
+        "offset": 3552
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/139",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_name_Variable_5",
+          "Variable": "Temp_name_Variable_5",
+          "Expression": "None"
+        },
+        "offset": 3583
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/140",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_name_Variable_6",
+          "Variable": "Temp_name_Variable_6",
+          "Expression": "Story"
+        },
+        "offset": 3614
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/141",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_byte_Variable_2",
+          "Variable": "Temp_byte_Variable_2",
+          "Expression": "StoryType"
+        },
+        "offset": 3645
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/142",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "Temp_bool_Variable",
+          "AssignmentExpression": "IsSotryClear"
+        },
+        "offset": 3672
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/143",
+        "ast": {
+          "op": "EX_SetArray",
+          "AssigningProperty": "K2Node_MakeArray_Array",
+          "ArrayInnerProp": null,
+          "Elements": [
+            "MiniMap",
+            {
+              "op": "EX_SwitchValue",
+              "EndGotoOffset": 3873,
+              "IndexTerm": "Temp_bool_Variable",
+              "DefaultTerm": "K2Node_Select_Default_2",
+              "Cases": [
+                {
+                  "op": "FKismetSwitchCase",
+                  "CaseIndexValueTerm": false,
+                  "NextOffset": 3744,
+                  "CaseTerm": "Temp_name_Variable_6"
+                },
+                {
+                  "op": "FKismetSwitchCase",
+                  "CaseIndexValueTerm": true,
+                  "NextOffset": 3864,
+                  "CaseTerm": {
+                    "op": "EX_SwitchValue",
+                    "EndGotoOffset": 3864,
+                    "IndexTerm": "Temp_byte_Variable_2",
+                    "DefaultTerm": "K2Node_Select_Default_1",
+                    "Cases": [
+                      {
+                        "op": "FKismetSwitchCase",
+                        "CaseIndexValueTerm": 0,
+                        "NextOffset": 3780,
+                        "CaseTerm": "Temp_name_Variable_5"
+                      },
+                      {
+                        "op": "FKismetSwitchCase",
+                        "CaseIndexValueTerm": 1,
+                        "NextOffset": 3795,
+                        "CaseTerm": "Temp_name_Variable_4"
+                      },
+                      {
+                        "op": "FKismetSwitchCase",
+                        "CaseIndexValueTerm": 2,
+                        "NextOffset": 3810,
+                        "CaseTerm": "Temp_name_Variable_3"
+                      },
+                      {
+                        "op": "FKismetSwitchCase",
+                        "CaseIndexValueTerm": 3,
+                        "NextOffset": 3825,
+                        "CaseTerm": "Temp_name_Variable_2"
+                      },
+                      {
+                        "op": "FKismetSwitchCase",
+                        "CaseIndexValueTerm": 4,
+                        "NextOffset": 3840,
+                        "CaseTerm": "Temp_name_Variable_1"
+                      },
+                      {
+                        "op": "FKismetSwitchCase",
+                        "CaseIndexValueTerm": 5,
+                        "NextOffset": 3855,
+                        "CaseTerm": "Temp_name_Variable"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "offset": 3691
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/144",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Tags",
+          "Variable": "Tags",
+          "Expression": "K2Node_MakeArray_Array"
+        },
+        "offset": 3874
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/145",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 4282,
+          "BooleanExpression": "IsSotryClear"
+        },
+        "offset": 3901
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/146",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable",
+          "Variable": "Temp_int_Variable",
+          "Expression": 3
+        },
+        "offset": 3915
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/147",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_1",
+          "Variable": "Temp_int_Variable_1",
+          "Expression": 3
+        },
+        "offset": 3938
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/148",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_2",
+          "Variable": "Temp_int_Variable_2",
+          "Expression": 2
+        },
+        "offset": 3961
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/149",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_3",
+          "Variable": "Temp_int_Variable_3",
+          "Expression": 1
+        },
+        "offset": 3984
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/150",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_4",
+          "Variable": "Temp_int_Variable_4",
+          "Expression": 0
+        },
+        "offset": 4007
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/151",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_5",
+          "Variable": "Temp_int_Variable_5",
+          "Expression": 3
+        },
+        "offset": 4030
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/152",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_byte_Variable_3",
+          "Variable": "Temp_byte_Variable_3",
+          "Expression": "StoryType"
+        },
+        "offset": 4053
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/153",
+        "ast": {
+          "on": "S_StoryStartPoint",
+          "do": {
+            "call": "SetIntParameter",
+            "args": [
+              "BossType",
+              {
+                "op": "EX_SwitchValue",
+                "EndGotoOffset": 4239,
+                "IndexTerm": "Temp_byte_Variable_3",
+                "DefaultTerm": "K2Node_Select_Default_4",
+                "Cases": [
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": 0,
+                    "NextOffset": 4155,
+                    "CaseTerm": "Temp_int_Variable_5"
+                  },
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": 1,
+                    "NextOffset": 4170,
+                    "CaseTerm": "Temp_int_Variable_4"
+                  },
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": 2,
+                    "NextOffset": 4185,
+                    "CaseTerm": "Temp_int_Variable_3"
+                  },
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": 3,
+                    "NextOffset": 4200,
+                    "CaseTerm": "Temp_int_Variable_2"
+                  },
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": 4,
+                    "NextOffset": 4215,
+                    "CaseTerm": "Temp_int_Variable_1"
+                  },
+                  {
+                    "op": "FKismetSwitchCase",
+                    "CaseIndexValueTerm": 5,
+                    "NextOffset": 4230,
+                    "CaseTerm": "Temp_int_Variable"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "offset": 4080
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/154",
+        "ast": {
+          "on": "S_StoryStartPoint",
+          "do": {
+            "call": "Play",
+            "args": [
+              "+0"
+            ]
+          }
+        },
+        "offset": 4240
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/155",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 4281
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/156",
+        "ast": {
+          "on": "S_StoryStartPoint",
+          "do": {
+            "call": "SetIntParameter",
+            "args": [
+              "BossType",
+              3
+            ]
+          }
+        },
+        "offset": 4282
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/157",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 4240
+        },
+        "offset": 4332
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/158",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Clear",
+            "args": [
+              "Tags"
+            ]
+          }
+        },
+        "offset": 4337
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/159",
+        "ast": {
+          "on": "S_StoryStartPoint",
+          "do": {
+            "call": "FadeOut",
+            "args": [
+              1.0,
+              "+0",
+              0
+            ]
+          }
+        },
+        "offset": 4378
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/160",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 4426
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/161",
+        "ast": {
+          "call": "Delay",
+          "args": [
+            "self",
+            0.20000000298023224,
+            {
+              "op": "EX_StructConst",
+              "Struct": -124,
+              "StructSize": 32,
+              "Value": [
+                {
+                  "op": "EX_SkipOffsetConst",
+                  "Value": 27
+                },
+                1656623300,
+                "ExecuteUbergraph_BP_StoryStartPoint",
+                "self"
+              ]
+            }
+          ]
+        },
+        "offset": 4427
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/162",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 4481
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/163",
+        "ast": {
+          "call": "SetClearFlag",
+          "args": []
+        },
+        "offset": 4482
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/164",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 4496
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/165",
+        "ast": {
+          "call": "Delay",
+          "args": [
+            "self",
+            "+0",
+            {
+              "op": "EX_StructConst",
+              "Struct": -124,
+              "StructSize": 32,
+              "Value": [
+                {
+                  "op": "EX_SkipOffsetConst",
+                  "Value": 2200
+                },
+                925144850,
+                "ExecuteUbergraph_BP_StoryStartPoint",
+                "self"
+              ]
+            }
+          ]
+        },
+        "offset": 4497
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/166",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 4551
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/167",
+        "ast": {
+          "op": "EX_PushExecutionFlow",
+          "PushingAddress": 4497
+        },
+        "offset": 4552
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/168",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 4482
+        },
+        "offset": 4557
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/169",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 4552
+        },
+        "offset": 4562
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/170",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 684
+        },
+        "offset": 4567
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/171",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 4572
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/172",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 4574
+      }
+    ]
+  },
+  {
+    "export_index": 1,
+    "name": "SetClearFlag",
+    "statements": [
+      {
+        "pointer": "/Exports/1/ScriptBytecode/0",
+        "ast": {
+          "call": "ExecuteUbergraph_BP_StoryStartPoint",
+          "args": [
+            4567
+          ]
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/1/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 15
+      },
+      {
+        "pointer": "/Exports/1/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 17
+      }
+    ]
+  },
+  {
+    "export_index": 2,
+    "name": "SetCurrentStoryActive",
+    "statements": [
+      {
+        "pointer": "/Exports/2/ScriptBytecode/0",
+        "ast": {
+          "call": "ExecuteUbergraph_BP_StoryStartPoint",
+          "args": [
+            4562
+          ]
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/2/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 15
+      },
+      {
+        "pointer": "/Exports/2/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 17
+      }
+    ]
+  },
+  {
+    "export_index": 3,
+    "name": "ReceiveBeginPlay",
+    "statements": [
+      {
+        "pointer": "/Exports/3/ScriptBytecode/0",
+        "ast": {
+          "call": "ExecuteUbergraph_BP_StoryStartPoint",
+          "args": [
+            4427
+          ]
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/3/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 15
+      },
+      {
+        "pointer": "/Exports/3/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 17
+      }
+    ]
+  },
+  {
+    "export_index": 4,
+    "name": "SetActiveStory",
+    "statements": [
+      {
+        "pointer": "/Exports/4/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_IsActive",
+          "AssignmentExpression": "IsActive"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/4/ScriptBytecode/1",
+        "ast": {
+          "call": "ExecuteUbergraph_BP_StoryStartPoint",
+          "args": [
+            3201
+          ]
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/4/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 33
+      },
+      {
+        "pointer": "/Exports/4/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 35
+      }
+    ]
+  },
+  {
+    "export_index": 5,
+    "name": "ForceHiddenStartMsaageWidget",
+    "statements": [
+      {
+        "pointer": "/Exports/5/ScriptBytecode/0",
+        "ast": {
+          "call": "ExecuteUbergraph_BP_StoryStartPoint",
+          "args": [
+            3196
+          ]
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/5/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 15
+      },
+      {
+        "pointer": "/Exports/5/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 17
+      }
+    ]
+  },
+  {
+    "export_index": 6,
+    "name": "BndEvt__Sphere_K2Node_ComponentBoundEvent_55_ComponentEndOverlapSignature__DelegateSignature",
+    "statements": [
+      {
+        "pointer": "/Exports/6/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OverlappedComponent",
+          "AssignmentExpression": "OverlappedComponent"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/6/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OtherActor",
+          "AssignmentExpression": "OtherActor"
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/6/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OtherComp",
+          "AssignmentExpression": "OtherComp"
+        },
+        "offset": 36
+      },
+      {
+        "pointer": "/Exports/6/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OtherBodyIndex",
+          "AssignmentExpression": "OtherBodyIndex"
+        },
+        "offset": 54
+      },
+      {
+        "pointer": "/Exports/6/ScriptBytecode/4",
+        "ast": {
+          "call": "ExecuteUbergraph_BP_StoryStartPoint",
+          "args": [
+            3126
+          ]
+        },
+        "offset": 72
+      },
+      {
+        "pointer": "/Exports/6/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 87
+      },
+      {
+        "pointer": "/Exports/6/ScriptBytecode/6",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 89
+      }
+    ]
+  },
+  {
+    "export_index": 7,
+    "name": "SetGenerateOverlapEvents",
+    "statements": [
+      {
+        "pointer": "/Exports/7/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_bGenerateOverlapEvents",
+          "AssignmentExpression": "bGenerateOverlapEvents"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/7/ScriptBytecode/1",
+        "ast": {
+          "call": "ExecuteUbergraph_BP_StoryStartPoint",
+          "args": [
+            2993
+          ]
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/7/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 33
+      },
+      {
+        "pointer": "/Exports/7/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 35
+      }
+    ]
+  },
+  {
+    "export_index": 8,
+    "name": "BndEvt__Sphere_K2Node_ComponentBoundEvent_54_ComponentBeginOverlapSignature__DelegateSignature",
+    "statements": [
+      {
+        "pointer": "/Exports/8/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OverlappedComponent_1",
+          "AssignmentExpression": "OverlappedComponent"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/8/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OtherActor_1",
+          "AssignmentExpression": "OtherActor"
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/8/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OtherComp_1",
+          "AssignmentExpression": "OtherComp"
+        },
+        "offset": 36
+      },
+      {
+        "pointer": "/Exports/8/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OtherBodyIndex_1",
+          "AssignmentExpression": "OtherBodyIndex"
+        },
+        "offset": 54
+      },
+      {
+        "pointer": "/Exports/8/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_bFromSweep",
+          "AssignmentExpression": "bFromSweep"
+        },
+        "offset": 72
+      },
+      {
+        "pointer": "/Exports/8/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_SweepResult",
+          "AssignmentExpression": "SweepResult"
+        },
+        "offset": 90
+      },
+      {
+        "pointer": "/Exports/8/ScriptBytecode/6",
+        "ast": {
+          "call": "ExecuteUbergraph_BP_StoryStartPoint",
+          "args": [
+            2205
+          ]
+        },
+        "offset": 108
+      },
+      {
+        "pointer": "/Exports/8/ScriptBytecode/7",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 123
+      },
+      {
+        "pointer": "/Exports/8/ScriptBytecode/8",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 125
+      }
+    ]
+  },
+  {
+    "export_index": 9,
+    "name": "FinishStoryQuest",
+    "statements": [
+      {
+        "pointer": "/Exports/9/ScriptBytecode/0",
+        "ast": {
+          "call": "SetCurrentStoryActive",
+          "args": []
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/9/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 14
+      },
+      {
+        "pointer": "/Exports/9/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 16
+      }
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+ExecuteUbergraph_BP_Sky export:1
+0: EX_ComputedJump {"CodeOffsetExpression": {"$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI", "Variable": {"$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI", "New": {"$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI", "Path": ["EntryPoint"], "ResolvedOwner": 1}}}}
+1: CallFunc_GreaterEqual_FloatFloat_ReturnValue = /Script/Engine/KismetMathLibrary/GreaterEqual_FloatFloat(WeatherChangeCounter, ChangeInterval)
+2: EX_JumpIfNot {"CodeOffset": 155, "BooleanExpression": {"$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI", "Variable": {"$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI", "New": {"$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI", "Path": ["CallFunc_GreaterEqual_FloatFloat_ReturnValue"], "ResolvedOwner": 1}}}}
+3: CallFunc_RandomIntegerInRange_ReturnValue_1 = /Script/Engine/KismetMathLibrary/RandomIntegerInRange(0, 1)
+4: WeatherIndex = CallFunc_RandomIntegerInRange_ReturnValue_1
+5: WeatherChangeCounter = '+0'
+6: EX_Jump {"CodeOffset": 707}
+7: HDRI_MInst./Script/Engine/MaterialInstanceDynamic/SetScalarParameterValue('Opacity', WeatherOpacity)
+8: EX_Jump {"CodeOffset": 707}
+9: CallFunc_RandomIntegerInRange_ReturnValue = /Script/Engine/KismetMathLibrary/RandomIntegerInRange(0, 1)
+10: WeatherIndex = CallFunc_RandomIntegerInRange_ReturnValue
+11: /Script/Engine/Actor/SetActorTickEnabled(True)
+12: EX_Jump {"CodeOffset": 707}
+13: DeltaTime = K2Node_Event_DeltaSeconds
+14: Temp_float_Variable = '+0'
+15: Temp_float_Variable_1 = 1.0
+16: Temp_int_Variable = WeatherIndex
+17: CallFunc_Multiply_FloatFloat_ReturnValue = /Script/Engine/KismetMathLibrary/Multiply_FloatFloat(DeltaTime, ChangeSpeed)
+18: CallFunc_Add_FloatFloat_ReturnValue_1 = /Script/Engine/KismetMathLibrary/Add_FloatFloat('+0', CallFunc_Multiply_FloatFloat_ReturnValue)
+19: CallFunc_Ease_ReturnValue = /Script/Engine/KismetMathLibrary/Ease(WeatherOpacity, EX_SwitchValue {"EndGotoOffset": 580, "IndexTerm": {"$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI", "Variable": {"$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI", "New": {"$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI", "Path": ["Temp_int_Variable"], "ResolvedOwner": 1}}}, "DefaultTerm": {"$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI", "Variable": {"$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI", "New": {"$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI", "Path": ["K2Node_Select_Default"], "ResolvedOwner": 1}}}, "Cases": [{"$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI", "CaseIndexValueTerm": {"$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI", "Value": 0}, "NextOffset": 553, "CaseTerm": {"$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI", "Variable": {"$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI", "New": {"$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI", "Path": ["Temp_float_Variable_1"], "ResolvedOwner": 1}}}}, {"$type": "UAssetAPI.Kismet.Bytecode.Expressions.FKismetSwitchCase, UAssetAPI", "CaseIndexValueTerm": {"$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI", "Value": 1}, "NextOffset": 571, "CaseTerm": {"$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI", "Variable": {"$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI", "New": {"$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI", "Path": ["Temp_float_Variable"], "ResolvedOwner": 1}}}}]}, CallFunc_Add_FloatFloat_ReturnValue_1, 0, 2.0, 2)
+20: WeatherOpacity = CallFunc_Ease_ReturnValue
+21: CallFunc_Add_FloatFloat_ReturnValue = /Script/Engine/KismetMathLibrary/Add_FloatFloat(WeatherChangeCounter, DeltaTime)
+22: WeatherChangeCounter = CallFunc_Add_FloatFloat_ReturnValue
+23: EX_Jump {"CodeOffset": 10}
+24: EX_Return {"ReturnExpression": {"$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"}}
+25: EX_EndOfScript {}
+
+ReceiveTick export:2
+0: EX_LetValueOnPersistentFrame {"DestinationProperty": {"$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI", "New": {"$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI", "Path": ["K2Node_Event_DeltaSeconds"], "ResolvedOwner": 1}}, "AssignmentExpression": {"$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI", "Variable": {"$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI", "New": {"$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI", "Path": ["DeltaSeconds"], "ResolvedOwner": 2}}}}
+1: BP_Sky_C/ExecuteUbergraph_BP_Sky(295)
+2: EX_Return {"ReturnExpression": {"$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"}}
+3: EX_EndOfScript {}
+
+ReceiveBeginPlay export:3
+0: BP_Sky_C/ExecuteUbergraph_BP_Sky(214)
+1: EX_Return {"ReturnExpression": {"$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"}}
+2: EX_EndOfScript {}
+
+UserConstructionScript export:4
+0: SM_SkyDome./Script/Engine/SceneComponent/SetVisibility(IsSkyDomeVisibility, False)
+1: SM_SkyDome./Script/Engine/SceneComponent/K2_SetWorldRotation({'$type': 'UAssetAPI.UnrealTypes.FRotator, UAssetAPI', 'Pitch': '+0', 'Yaw': '+0', 'Roll': '+0'}, False, CallFunc_K2_SetWorldRotation_SweepHitResult, False)
+2: CallFunc_CreateDynamicMaterialInstance_ReturnValue = /Script/Engine/KismetMaterialLibrary/CreateDynamicMaterialInstance(Self, /Game/Skies/Materials/MI_Skies/MI_Skies, 'None', 0)
+3: HDRI_MInst = CallFunc_CreateDynamicMaterialInstance_ReturnValue
+4: SM_SkyDome.SetMaterial(0, HDRI_MInst)
+5: CallFunc_Multiply_FloatFloat_ReturnValue = /Script/Engine/KismetMathLibrary/Multiply_FloatFloat(HDRI_Brightness, GlobalBrightness)
+6: HDRI_MInst./Script/Engine/MaterialInstanceDynamic/SetScalarParameterValue('HDRI_Brightness', CallFunc_Multiply_FloatFloat_ReturnValue)
+7: HDRI_MInst./Script/Engine/MaterialInstanceDynamic/SetVectorParameterValue('HDRI_Tint', HDRI_Tint)
+8: HDRI_MInst./Script/Engine/MaterialInstanceDynamic/SetTextureParameterValue('HDRI_Cubemap', HDRI_Cubemap)
+9: CallFunc_MakeRotator_ReturnValue = /Script/Engine/KismetMathLibrary/MakeRotator('+0', '+0', HDRI_Rotation)
+10: SM_SkyDome./Script/Engine/SceneComponent/K2_SetWorldRotation(CallFunc_MakeRotator_ReturnValue, False, CallFunc_K2_SetWorldRotation_SweepHitResult_1, False)
+11: HDRI_MInst./Script/Engine/MaterialInstanceDynamic/SetScalarParameterValue('HDRI_Contrast', HDRI_Contrast)
+12: EX_Return {"ReturnExpression": {"$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Nothing, UAssetAPI"}}
+13: EX_EndOfScript {}

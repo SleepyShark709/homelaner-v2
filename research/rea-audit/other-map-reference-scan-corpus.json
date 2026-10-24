@@ -1,0 +1,1612 @@
+[
+  {
+    "path": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_AirLongAttack_Kick.json",
+    "sha256": "779e80d8deec81375b01f9707dceb2383084c80139bb4e309e6727fe1a75df9b",
+    "bytes": 57151
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_NormalLongAttackCollirion.json",
+    "sha256": "cc11a73d0c4da2a4ed3f51eab9b953e4d173f96c8ac9b0ae40705c48dadb1182",
+    "bytes": 626377
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_SuperKick.json",
+    "sha256": "1a8e75484dce77f8308e94b5fc6f80057a6cc44e3544078f26007e1e27e1c357",
+    "bytes": 82161
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_SuperPunch.json",
+    "sha256": "b7ac9cbc42fa0f92a068717ab885c6dbb6dddfcf44e664f082a045f82cda9ad6",
+    "bytes": 72812
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\manifest.json",
+    "sha256": "b50874f49d990005822523735c03047c316fa69fea1cfa62f155d8a19f59c332",
+    "bytes": 1927
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\exports\\city-decoded\\DownTown.json",
+    "sha256": "4dd198bfdb7d24aa587db0cf1ab5a2606659a929119e4711c55aaeb5128e6a26",
+    "bytes": 14727320
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\exports\\city-decoded\\MainLevel-components.json",
+    "sha256": "f05f001b3b9986a60447941a9e87374dcc6f01e3ddde14aaf2cb31f53ca2b4b6",
+    "bytes": 50709838
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\exports\\city-decoded\\MainLevel.json",
+    "sha256": "0f436d9a23f99c9d8069f0d2feb45ffc2e096666551802120cce78e4d7b3c489",
+    "bytes": 265646829
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\exports\\city-decoded\\ResidentialArea1-components.json",
+    "sha256": "e6a05411a64747a0bc1530d12f58380ab0dcb4499e37fdf70ace1685564caae3",
+    "bytes": 4759978
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\exports\\city-decoded\\ResidentialArea1.json",
+    "sha256": "f6ee54104f8af7a106ad4cdd725ff3b216022768fb5ddd2ec06a6b543de1814a",
+    "bytes": 6966308
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\exports\\city-decoded\\ResidentialArea2.json",
+    "sha256": "309509545fa6a63379cf800473a57603bde6760580e3fd396aa19288f7c3f66c",
+    "bytes": 7166580
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\exports\\decoded\\PlayerBP.json",
+    "sha256": "019bd742f355abd84590ef35cd0c0739d94db8712ecefcf480cf8494ae2d6072",
+    "bytes": 1507858
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\BP_Decal.json",
+    "sha256": "1c880c9389042e54fd1516c56964d8d40e6cc2473f26647d6add99d6a66f34d9",
+    "bytes": 125517
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\BPI_Interact.json",
+    "sha256": "2629117ceb320c4b37f155c1967fc68cd1e14fd4b85e4eb0720988d7390ee0dc",
+    "bytes": 16027
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\CheckDead_BPI.json",
+    "sha256": "c4722f2861b13e41f6abdef028c9da30c61f3c100f14d33d455215388dbe4a53",
+    "bytes": 11358
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\CQTypeInterface.json",
+    "sha256": "9b9d0248f48daa9d333b7829488b4d38ba1796fdb07a66039ab30326c09ba6f7",
+    "bytes": 16010
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\E_DecalType.json",
+    "sha256": "26fbd5bf744adbffab27b1da26e6f26cb4e57de097f2178b02da5dc4b0c98395",
+    "bytes": 10173
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\E_FadeType.json",
+    "sha256": "e437aaa3d4a22fef27d003f1ddf9d8f53b40623d216e606ef45cd992fed2c35a",
+    "bytes": 10151
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\E_ForceFeedBackType.json",
+    "sha256": "287b3a911aaae636f300ee4e5bd2c8df77ecbc5a128a705b0931a9845d4c7d54",
+    "bytes": 8261
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\EPlatformType.json",
+    "sha256": "c0e30959bfbb116689d5bd46a30771f7eb9553c5f33d170bfc38387e4ec9b44b",
+    "bytes": 8230
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\FinishLoadInterface.json",
+    "sha256": "e91f67026e852f46a4f22e0ff91989be32bdce571027dcca410861d181c40e83",
+    "bytes": 12052
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+    "sha256": "f49018e7ffb1b2a2d4f2b305304188aa75303d00bab9f5677c4d85f49888fce5",
+    "bytes": 1554272
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_FlightRing.json",
+    "sha256": "ef57659c2ae30511806b9c773099dde8bb17ff4951d42c4cd7455e76ccc8fbb9",
+    "bytes": 526008
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_StoryStartPoint.json",
+    "sha256": "39665e2244cf015df2e0484f7564a5d51da6b4e3d309698f7a8941f4efbb7ca4",
+    "bytes": 403585
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BPFL_BossBattleTutorialAndOther.json",
+    "sha256": "d3543a72b49b90664c7367897877d684317d6a645c33a08b5bf13dd809e4d7cb",
+    "bytes": 71441
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BPFL_Story.json",
+    "sha256": "4370c6695909941ae317a7c3a734e7781999bda255045c46d1425db2dcefbb5a",
+    "bytes": 35579
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BPI_BackToTitleEvent.json",
+    "sha256": "3e1a871cd5defb22404e21f3db9be2728fb3941c07715144c8be6f89503861d6",
+    "bytes": 12095
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BPI_BossBattleLose.json",
+    "sha256": "88b231870d279135e15f6da948c8c202bfb8cee070675d471ff4d95aac8c46b8",
+    "bytes": 12066
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BPI_LoadData.json",
+    "sha256": "39b6cb175481f4c0e6b85e1949f9e26177407198075ade9911f70e6b2782b965",
+    "bytes": 12863
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BPI_StoryClear.json",
+    "sha256": "f207f100ad7ab035a02798e3d825282408960d7a75a5bf4a077f931ad69a7db3",
+    "bytes": 12062
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BPI_Title.json",
+    "sha256": "8552e6cfeacc872dbac2e1d9d45d1e24f9990c017203d20d0bcacc592e353483",
+    "bytes": 24831
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\CQParamInterface.json",
+    "sha256": "5932a9dd8204394f56334d76f996034504750336131fdd1b24771a846456ec21",
+    "bytes": 41562
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\DT_BGM.json",
+    "sha256": "d7ff15697ab0dd5c50170fd1d4ccc5ea3a98a02de48122ccba5dc161b146819b",
+    "bytes": 39289
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\DT_EnvSound.json",
+    "sha256": "8dd7eefa7c46851ced3464a845ab8090f273cd1ffea3da5546a3819594dd7e32",
+    "bytes": 17802
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\E_BGM.json",
+    "sha256": "4d05c16e9c7aacc227b46a81b12f7ff3b4d9b53d8fc4268cc45f879ff3044eaf",
+    "bytes": 31565
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\E_BossBattleTutorialAndOther.json",
+    "sha256": "628cd2adc4292d1b23a9472703a1d35a7ad71c4494f5aed2692071cb55a2ccbb",
+    "bytes": 11431
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\E_ChallengeQuestDifficulty.json",
+    "sha256": "f866c112db66eed27d81883aaf44e7788bc785579dac834c9075595495c5bd6f",
+    "bytes": 12390
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\E_ChallengeQuestType.json",
+    "sha256": "d62d02c6109983ce68998dc9abb5d352cdb687153cc07118232c9aa84c0d4cd6",
+    "bytes": 8282
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\E_Environment.json",
+    "sha256": "269064b522fbecabaddd305c8f8fd2a34ee6b2e5cabb3cf2fdef8abeaa1cf9a9",
+    "bytes": 16123
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\E_Story.json",
+    "sha256": "82163b730335d30b0d30cc1e0b1592f67f69d611c08f83385383df9478ea3d5b",
+    "bytes": 12060
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\E_WidgetSetting.json",
+    "sha256": "24d2f0b496926d6d06a7c5963c15caf1db52879d63ee6145cd1c710d1425590a",
+    "bytes": 9231
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\E_WidgetType.json",
+    "sha256": "0bc1d1db7e87813f03a618f252e0042844367ee57ac8a13b34f85352d68e7bf4",
+    "bytes": 9190
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\GameInputStateEnum.json",
+    "sha256": "1b7cb9d804db7c58ddc663b4fa48080a6b2af11399c701306001ed5bf781577f",
+    "bytes": 18321
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\HeroCameraShake.json",
+    "sha256": "eef2cc8e823690e0ea6466258f5cb7911d8348d6a49f79d1b74dacf967a6534f",
+    "bytes": 12882
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\HeroCameraShakeLong.json",
+    "sha256": "5784d50045e42164b610ab98f098d96902ecf4f82f0cba0b9880224d4a35d700",
+    "bytes": 13142
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\HeroGameSaveData.json",
+    "sha256": "af0540e8e69c6fdaaaf70cf485152a19917e1e5665d9165d999505d54ad92ec7",
+    "bytes": 45480
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\S_BGM.json",
+    "sha256": "104a3438a773a75f247b50f6a85e53d260663b96a4aa34d80f87db1c52956bb6",
+    "bytes": 6591
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\S_ChallengeQuest.json",
+    "sha256": "8e1805c218273a42511c33013a7724c297ef67f8f1e9f47dbdf25d8776a98564",
+    "bytes": 8698
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\S_ChallengeQuestSave.json",
+    "sha256": "38ed503519fafa4aadfcd55f68e41f6979101db9a222c67dd711593f3d0b76a1",
+    "bytes": 8100
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\S_EnvSound.json",
+    "sha256": "58380bf2ee408ff8d82c6e5e78c545c8df28ff5a54b8c80b68669cce0390e8bb",
+    "bytes": 6610
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\StoryQuestInterface.json",
+    "sha256": "8584911791c555f79921eb41b476e498e37e8e54596c9188f8323481879b3b69",
+    "bytes": 11867
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\MyFunctionLibrary.json",
+    "sha256": "0a511db8e253847313c760d55c1137f6b569b09912cdef35d7db21fd4610ca5f",
+    "bytes": 924850
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\PlayerImpact_BPI.json",
+    "sha256": "ab1a58233481ca660adf063b2996285ac63a3e1810aa5355cc13344f84402970",
+    "bytes": 24085
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_Base_EasterEgg.json",
+    "sha256": "0c4f70dd3867a73cdf05f34e1fdc444852ccde307fb257b3d6e4a7511cc86059",
+    "bytes": 204481
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\E_PropsDrawDistance.json",
+    "sha256": "47645bd74ae1e3a6db0a3ddc4ff6e85a96893a06405eb831a372b5fd96530c4d",
+    "bytes": 10254
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\SendEnemyRef.json",
+    "sha256": "1f49c4c98c4834772627de28e4e6fabdef79d568c6a210a74a95f204c9634228",
+    "bytes": 12521
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\SetBtnImageInterface.json",
+    "sha256": "0294d16dc1a0b0db4bb68fca41863bfd1d76656758ba2591ded7aec240645065",
+    "bytes": 15827
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\TutorialInterface.json",
+    "sha256": "04aaf34f785b3b967ff220b2af1f5540f2e953eb80f2f320a706f05caff35a77",
+    "bytes": 15128
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\BP_TitleSignboard.json",
+    "sha256": "5b114101e1fa07d9bae76e5491617ea582e727ddb725a5bfdffd963897d2b4d8",
+    "bytes": 200493
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\BPI_FreeModeTutorial.json",
+    "sha256": "06d318286af2b4d6b464a9a03fd3f1ab175c141854c3847cf1cb43c5019983db",
+    "bytes": 12578
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\BPI_SpecialActionWidget.json",
+    "sha256": "2068db3183aa8db46ed280bc36cffb068f825f5aa2321f8895f5794b157aa827",
+    "bytes": 27223
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\DT_CreditRichText.json",
+    "sha256": "e94fd1594cd79ecc0cffc055a61f22bbf5ffebabf545da3122042cf847fa5c56",
+    "bytes": 169055
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\E_GamePadBtnImage.json",
+    "sha256": "0a30f0bbf4a44df6e5130cca7383aff317ddfdfef753053ab1210f96001df993",
+    "bytes": 23203
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\E_GraphicsSettingType.json",
+    "sha256": "31671ce9b2a9b5cd6791001c9011b9e1c3590a35a300924a800859da0af09ed2",
+    "bytes": 12352
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\E_KeyboardBtnImage.json",
+    "sha256": "b451d9ca5581e937e3311daeee8b31beb954cca33dd8f21ad2ad7ce9d01e9b17",
+    "bytes": 23267
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\E_UIInputType.json",
+    "sha256": "c59dafba98f58bedc48f3dac96116a664813561bfb493c4efaf87c6a45c8737d",
+    "bytes": 10189
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\E_UISoundType.json",
+    "sha256": "73e2872d0651c248b62e4ea87cbc6394425003825cf431db0b2779e0a7e7c203",
+    "bytes": 10199
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\FL_OptionsSetting.json",
+    "sha256": "378ba1356980cbc882dc1a0aa94a51cda10b31e3b9f31fdb244f41d2b9ac38e0",
+    "bytes": 617860
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\HeroGameHUD.json",
+    "sha256": "3da11734cd4942e14244aef72be26d15708346c1e0e14927277dfbd7f2160583",
+    "bytes": 17004
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\InputInterface.json",
+    "sha256": "4ef3c8aa4f968cf9234fb6c0609d5f460574169b117e3b1e1b89dd254474626d",
+    "bytes": 40676
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\KeyAndButton\\DT_KeyAndIconList.json",
+    "sha256": "538d4f18595f1b1ee05805170898c0219fa5737614879a2c08533bb3bf4c51bf",
+    "bytes": 64342
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\KeyAndButton\\SPlatformIcons.json",
+    "sha256": "5d766ca3d0b54b06f960b4b1d7374bdd01879be347810ecca826f914cd852d28",
+    "bytes": 6971
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\KeyAndButton\\WBP_KeyAndButton.json",
+    "sha256": "35cbef6a0c5fc6ec0bc4d96b1a43829cfb5b7928d2745272297d65a3d8a14583",
+    "bytes": 101459
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\S_Resolution.json",
+    "sha256": "9811b2e84b2080190cdcdd813eb0689edec090556058f2f05b213a10a0370899",
+    "bytes": 7070
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\S_TutorialBtnImage.json",
+    "sha256": "719e3dbe62e2aeee8e0f5cc0d8f4466879f7babc981f30c9053a8c6b98d9291e",
+    "bytes": 9001
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\S_UIBtnImages.json",
+    "sha256": "14bab9751aa1a8369f7c94c3efbed374b057b7fd497e4a1d735b2295d046849b",
+    "bytes": 7012
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\STutorialActionHint.json",
+    "sha256": "8d11225c9bbcf4444b85cea25a29b6998893a4a2852a440ac0560972a2fba95a",
+    "bytes": 6730
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\STutorialActionHintArray.json",
+    "sha256": "f08b9f77fb94f154d1aece25e5e47a70d8dbdc6011fcbdf122c1eef0e3a20fb2",
+    "bytes": 7168
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_BossBattle.json",
+    "sha256": "3f1dbc9f6c5cbf76985dff4877d1ef1ce28875cab2a30423d3cdc3a7d916b7f6",
+    "bytes": 2589633
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_Credit.json",
+    "sha256": "08be6f48e6d12dd403aae6873ac980a06e696084d460588f893218fb733583c3",
+    "bytes": 1139600
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_EaserEgg.json",
+    "sha256": "2a1d7ac5816554e43310862361108073008b23df3c6e749b0ddf0cb98c25f55a",
+    "bytes": 138292
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_FadeOut.json",
+    "sha256": "a5dd4062a38ba1caefd1b2c497900aa9973cfe8cf31da9a3eb52076d55ae9105",
+    "bytes": 132106
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_FlashMode.json",
+    "sha256": "5f4a596281ddb0eae2030111b4083d4c94d843c15def265c94e462de3615d04c",
+    "bytes": 227020
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_GameVersion.json",
+    "sha256": "8225c1cc848c20691257e616f04e84ff589662fb865d1b891c4cb8bd5c76194c",
+    "bytes": 33656
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_GenesisPR.json",
+    "sha256": "ced3b49d818f17d33e595cbcd5f6f0de6732d68b95d7105ad8908e78f69287b2",
+    "bytes": 213515
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_HeroPoint.json",
+    "sha256": "c16ab7c55abee0e28d5f2eccfc08b4247e1be4b6a1d5c1ddd6c8ef4462b60894",
+    "bytes": 3804436
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_HeroSpecialAction.json",
+    "sha256": "4a671c1c75c804964fadfdf77ac72ecf063228dd4482103d9edc95cb90166cbb",
+    "bytes": 494505
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_InChallengeQuest.json",
+    "sha256": "fd222fec397eca505c873d0d3aac09e44101f4d74521e30e615a4fde473b0955",
+    "bytes": 1140175
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_Load.json",
+    "sha256": "9f306884658616c0e0412870c462e38d968b061822d99d61aa70f91da74e114f",
+    "bytes": 50012
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_Lockon.json",
+    "sha256": "1b661737bde438e6f5dd48044bb04a4507cc6b925b1631ff4667cd6a5b5bb224",
+    "bytes": 597797
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_OptionsAndSetting.json",
+    "sha256": "ec349127df0f33372b7d00666c6380db845ddd6450022c55985e1883141de800",
+    "bytes": 4795563
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_PauseMenu.json",
+    "sha256": "7a6db7cf651ca34ddc5d7af992c32917a933014f591c3637ca6d5332e5f07d9d",
+    "bytes": 1031283
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_PlayerActionBtn.json",
+    "sha256": "27270d5c5f39b87121d512f095360136daf04224cf098e3295ac03ac1a49f326",
+    "bytes": 126265
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_QuitAndBackTitle.json",
+    "sha256": "bfcaa9d1f4351e87f58802b6f780f31b21767eee000c29c02db144d203d8ecad",
+    "bytes": 474133
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_SaveAndLoad.json",
+    "sha256": "bfdef05fad7f012ee87335ade981fbfc8d1f4abecf7690cba66cfbd02c6f0fad",
+    "bytes": 97921
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_SequenceSkip.json",
+    "sha256": "82489bcab97843a6dc7ff830583fb841576d8aa81e9ae69fe2c5e3ddab00e2ca",
+    "bytes": 272526
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_StartMessage.json",
+    "sha256": "1a80c9985c90c7b7a6216ddac4bccf87c2f28e310df3cb2755645af90af1827f",
+    "bytes": 194150
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_TitleFream.json",
+    "sha256": "06191506e4dfb6de9330d75fcc6f68dfcb892776fda8c02c3f08c50d8c99ead6",
+    "bytes": 1280307
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_TitleMovie.json",
+    "sha256": "4a06d069a53e3d73bbe5805885aeb1594866f39706ba2f0778555c96cf70f254",
+    "bytes": 210259
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_TitleSinboard.json",
+    "sha256": "378059f1621c061dbd38b582534909c7d84d5553da62eb97eb6e39ca1d670daf",
+    "bytes": 360339
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_Tutorial.json",
+    "sha256": "28fb2e1fef7fdcf858f536ecae9f56c117cf7ef9815e60662ec2fbfd4c2ebed4",
+    "bytes": 2442368
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_TutorialControlHint.json",
+    "sha256": "53c7bbd3882c4706293889c85db6bf2a5b70d398c1e9ba514db16593800bbc55",
+    "bytes": 185784
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_TutorialHint.json",
+    "sha256": "d5d577911bc29547c414335e08dc08ac2d251013d772a4791e07ba90aacb1ce6",
+    "bytes": 1833546
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WPB_ChallengeQuestSelect.json",
+    "sha256": "13e30187652e93b76ed60ca564b1148ebf32cb837566002720cab5a9db10a7e8",
+    "bytes": 4191119
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\WedgetInputInterface.json",
+    "sha256": "45419088bda665ce971b7b5689af60588a828acd8c09d89ce4b0fd083caecccf",
+    "bytes": 15738
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Animation\\Boss\\Wind\\AnimBP_WindBoss.json",
+    "sha256": "4e0238a05b3bc319fdb62898b772d37000d19b6148c8cc331bb54f5011c59522",
+    "bytes": 473480
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\AttackBP\\BP_BossAttackDamage.json",
+    "sha256": "26787936589a3b401b076e68bdacf82b2c4f94bdcf5e658bb5034d7c7edc5a30",
+    "bytes": 350171
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\AttackBP\\BP_BossAttackSP.json",
+    "sha256": "3d08325751f004e1492e6d55249fc1ebcd329bc43516ac525c69e06f294d8728",
+    "bytes": 430050
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\AttackBP\\BP_BossHeavyAttack.json",
+    "sha256": "1e4fc3b417dc583a134fd4cd1a1f4858286ee4c70294103a0aa6d17123288bb5",
+    "bytes": 597601
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\AttackBP\\BP_BossLightning.json",
+    "sha256": "80ed01684933fbf93aa2fc4c2935d7545923113815ba8ad5b1b619be9660dcad",
+    "bytes": 314522
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\BP_BossAttackTarget.json",
+    "sha256": "88e356ac373286874a2afd886b09ba6ac6aa7c8a1b8858a83c95fa16c0883d32",
+    "bytes": 124010
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\BP_BossMovingPoint.json",
+    "sha256": "44006344d2f9582eaf64102f1d6dee39442981a381b0526229b03b31ebea02ec",
+    "bytes": 126863
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\BPFL_BossSpawn.json",
+    "sha256": "b02d321daa0f96438ab4dbcfa7c8e143359b9cb1b41728601a06c026402d940e",
+    "bytes": 28447
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\DT_BossAnimMontage.json",
+    "sha256": "5fff04eb36c51c820527dabce6fd23c5d905fc43f0a04a63f61636c02aa66b65",
+    "bytes": 48585
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\E_BossAnimMontage.json",
+    "sha256": "694d5aa892c6a26e4fee360d8dc1ed6a8bf9c54133fc818f17a18414cf6042d4",
+    "bytes": 23288
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\E_BossType.json",
+    "sha256": "a5058f47a3a519330d4d459f6ec73c94be70949c1386973d0c91190fc95e4a58",
+    "bytes": 11131
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\S_BossAnimMontage.json",
+    "sha256": "275f3ba3dcb15bf7bb79ec274ef691744b71f368c768d36411066e794a5fb946",
+    "bytes": 9061
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\S_BossParam.json",
+    "sha256": "06dcf64c5c312614e643f96ad60fa447f237752c4d09b4618e12eb52f4d4cc03",
+    "bytes": 8141
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BP_BossProjectile.json",
+    "sha256": "aecc29bf7838c86232aa767df6bda922db77371a5e688f5fd6a4c766f2d5f4e0",
+    "bytes": 573261
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BP_Bullet.json",
+    "sha256": "25418c814eadbd41902681ccc1ff3f945ee5b34ae601ef6b977126f84902332f",
+    "bytes": 172866
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BP_BulletHitHole.json",
+    "sha256": "7df919a4d5cd07c5bb6f892eace4265f729627c3de39cef2213a75dc946a062d",
+    "bytes": 93606
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BP_DestructionProp_S.json",
+    "sha256": "7273f25cec23f37185971094d281ed7012b8161b691ffe2364ffc11ebad595d0",
+    "bytes": 465763
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BPFL_SendBossSelfRef.json",
+    "sha256": "ee9de772c90772808fcf5be6bc880975b82ce7b832140963a1f912364cc14b67",
+    "bytes": 73772
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\DecreaseCQDPropsInterface.json",
+    "sha256": "0aa60c1e64478f7329a2fb3bd6d7b9b2e8f4ce60214c665800b24d78994167f7",
+    "bytes": 11772
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\E_CQDPropsType.json",
+    "sha256": "2420e79f500de6ea4a7fb5c041f15c5a8e1dc86e8249173ebbc41705c9f44708",
+    "bytes": 9209
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Mesh\\Gang_AnimBPl.json",
+    "sha256": "0a74506554ccaf9e10278f063edfb8d54e8644a53ef847f6b2b171fbdeef5b43",
+    "bytes": 212693
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\BPFL_Localize.json",
+    "sha256": "c1cfafba0cbfe98b34760ddeb84a97f7ecd3ae8f18aaa1168781a49614a7ff26",
+    "bytes": 182972
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\BPI_Localize.json",
+    "sha256": "3efda709776d1e6d17187cdbf01f3fcdf3a64f931796e11c64badc535fea6606",
+    "bytes": 12021
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_BossBattleControlHint.json",
+    "sha256": "44fd6631be792e0ba00ce798a3aae93dba8507dcf928f5f0f5604e6ac1993559",
+    "bytes": 10563
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_CQDescriptionLocalizeText.json",
+    "sha256": "66bdab60454abd0ccbe43bfffd8ad80b79441a3b44badb3e43258af9a868de41",
+    "bytes": 9479
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_CQNameLocalizeText.json",
+    "sha256": "d4ab3b550e06eb4c06e9778193a5174dc38f17ccf0ee208b6e59246420d65b90",
+    "bytes": 9300
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_CQSelectLocalizeText.json",
+    "sha256": "33f4270616bfbc4297cc6369a89715f811522e6acc98911ef0944a5c9413204e",
+    "bytes": 9252
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_GenesisLocalizeText.json",
+    "sha256": "2de961e11ac5ba7afed38529f3fc75c096505f9ddc98be9211897cf22a73edc7",
+    "bytes": 11866
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_HeroPointSpecialEffects.json",
+    "sha256": "0860f1ae9f9d572cd2328617004509730de484bf1619be090c5a8c98aaefc166",
+    "bytes": 17199
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_InCQLocalizeText.json",
+    "sha256": "cbf2e2b70d25e45dd83f1bae5a62a02fecffaa0fa5f03b1a8d2c1795fed3c1ed",
+    "bytes": 11968
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_OpControlsHintLocalizeText.json",
+    "sha256": "0cf17698954589e0e98efc97a0c885860341093d19bc9dd76c090287bed1b5e0",
+    "bytes": 32911
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_OptionControlsLocalizeText.json",
+    "sha256": "e039fc042a86523fe845e8b797ea8cc6197bfe16a56bd382c12a27d899d4b9ca",
+    "bytes": 13532
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_OptionGrahpicsLocalizeText.json",
+    "sha256": "bb5639c66b76185ecf126a7cf813cee643c7a53b8ef07f3e66f3afd521eb247d",
+    "bytes": 18887
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_OptionMenuLocalizeText.json",
+    "sha256": "4187b371ae7b9c9854282a1d88b34bcf8c7b6a0151508086e0b7bc99d3e812cc",
+    "bytes": 12067
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_OptionSoundLocalizeText.json",
+    "sha256": "46cc219094c04566e0bbe5fd74442b8ca9f71d33b211f6955b022127f8e78644",
+    "bytes": 10717
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_PauseInCQLocalizeText.json",
+    "sha256": "32b40944c8493694b7241e0d003c416ffa7e2de26997b5700f5531264fac476b",
+    "bytes": 14688
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_PauseLocalizeText.json",
+    "sha256": "a0d0c221fde91b900af10e2533717b01b453817a2f26d06a84fc134dd77f5aac",
+    "bytes": 11975
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_QuitOrTitleLocalizeText.json",
+    "sha256": "079e58d075df440c74e6f2398287bfb7a9aabd9c4f56a1a1a7767ea40610a87d",
+    "bytes": 10704
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_SelectLocalizeText.json",
+    "sha256": "8cfc2ce2ebd6920f71a89fc0150d5b0cee89ba3f210217a1d754b490de65c2bb",
+    "bytes": 17020
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_StartMassageText.json",
+    "sha256": "cd4eba196a6e201c92821ff2f8d6699a041b94700eea3d94df02fe1f83fcbbb1",
+    "bytes": 11931
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_TutorialHintLocalizeText.json",
+    "sha256": "140b9ab353e4ad28418e3db4ba45fbb285633f58b8cbb0baebfa9d2e5e73c15d",
+    "bytes": 18709
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_TutorialLocalizeText.json",
+    "sha256": "788eb63a18aac47b20871547c5b531810e853d9ae376b538ef68789aa8ed4a2f",
+    "bytes": 111578
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\DT_TutorialObjectiveLocalizeText.json",
+    "sha256": "42b1463b139afe9826b77bcf70d44f1abcad5dd17d0d97ea5b7fa1224cd7719b",
+    "bytes": 13466
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\E_LocalizeWidgetType.json",
+    "sha256": "0224ffa622cbd8b20f40e1c0062f36376e99252d1c4aed40198ab182f4908177",
+    "bytes": 25483
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\E_StartMassageType.json",
+    "sha256": "8a85ef6ccd009ae414354c6a8f5805b1b9b05a587e42ea87d73eb3e7b65ed7eb",
+    "bytes": 10258
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\ST_LocalizeText.json",
+    "sha256": "7c263359803459ab4753394bb404912843d427cf2d3ac2b00e053fb382045343",
+    "bytes": 6517
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_AirAttackCollirion.json",
+    "sha256": "d7ea4105e80835c36b81d7e28697e76176a529da1fa1c8c35982515e3191913e",
+    "bytes": 438666
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_AttackCollirionHeavy.json",
+    "sha256": "3e879f9320f800467f355c1322404fc46a8cca243e885ce6bcbd41a9a2963061",
+    "bytes": 54753
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_AttackCollirionHeavySlash.json",
+    "sha256": "87f61e3ccb7b7673c4fd80376a5d8d7cd1ba362202a976cfe439f3673b07b279",
+    "bytes": 54792
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_Explosion.json",
+    "sha256": "f58355785cfda58327976c4169d8afee4d2dbee58b820ef41ea5c102650953c7",
+    "bytes": 362857
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_Explosion_Enemy.json",
+    "sha256": "7292c7b19ebf57e4e964bdfb0019d4d9ec34ca238eaee71d3c41303827a6e504",
+    "bytes": 48646
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_LongAttack_BackHandSlash.json",
+    "sha256": "46e217c312f1134c0eb6e7db3b188ad136655d901414131250dd42e7968f8209",
+    "bytes": 57366
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_LongAttack_FlashKick.json",
+    "sha256": "8b28ca315fbfc93f53cb3a8149c38228ef0324fbcfe62073dea9f5aa2738b382",
+    "bytes": 55829
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_LongAttack_Smash.json",
+    "sha256": "955cb964fe465674a27e03134bf7fb75b2705dd78690466e9d15d8de12c4dd0e",
+    "bytes": 55741
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_NewDashAttackCollirion.json",
+    "sha256": "865044319c012f279879e76e4ab99a30cd0b421b1268e2b1f75d7775ece75c83",
+    "bytes": 84887
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_ShockWaveCollision.json",
+    "sha256": "b5a4bdc23cb70f51d3f123a031e99f9c6d1e5db33699ae5cbfe2ec540418a876",
+    "bytes": 240176
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_SprintCollision.json",
+    "sha256": "5eafcdfa2c782ad43dc5251810ecb6bc5885a846fbd24a43a9ddd2b2a0484b91",
+    "bytes": 67805
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\DataTable\\SSpecialAction.json",
+    "sha256": "a2cb67a5bb41f8e6f3ce4ac2939c4b360053ac66039598de6f2469fb5de427d8",
+    "bytes": 8058
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\E_FallingSpeedType.json",
+    "sha256": "7a7458c2b670f1d2726d026092df9991e5e7acd20441684a8789876fd346fd08",
+    "bytes": 10261
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\E_HeroRank.json",
+    "sha256": "8b71682dd20441584edc0dd73e8c5ed80200c5b870de4fb598bac6d5bc50830b",
+    "bytes": 13065
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\E_PlayerAttackMoveType.json",
+    "sha256": "0879c3a8b8fa0d1c3e8319d1ce6e90b700f1012c61bdded39ba574636bcfa525",
+    "bytes": 8331
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\E_PlayerEffect.json",
+    "sha256": "3b0bac5c024f9e64864a67a4ca875b08f4cce0455f30a2ac90776c7baa12fec4",
+    "bytes": 31211
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\E_TraceDirectionType.json",
+    "sha256": "fda19fbea75e0598cbf261eecdfd0d427ddaa45c82251fd2e61ecbe1a862033f",
+    "bytes": 9274
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\E_TraceTag.json",
+    "sha256": "181fae07bf34ca52f2a59053b3e1047cc5c39d78b77ac884b78578729729357d",
+    "bytes": 9172
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\E_WaitPose.json",
+    "sha256": "b76ad211ccc0eb273b01c680b3e96012662d7c79013c07728dea1d883ab7b0ee",
+    "bytes": 10158
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\HeroPoint\\BPFL_HeroPoint.json",
+    "sha256": "0923fa9f0ad03570b335fd9b9714f9400c1df6fccc16386c4fe00e934a54a531",
+    "bytes": 110597
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\HeroPoint\\S_HeroPoint.json",
+    "sha256": "7397044870a7d1329a9b0461f802719b1bf25cdfe590cd1e2f5909c480c30fdf",
+    "bytes": 6533
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\HeroPoint\\S_HeroRankUpAndDownPoint.json",
+    "sha256": "c3387b93c21db69311bcdd443941c3e34c6472922fd7ab3f6fdf96711847c99d",
+    "bytes": 6549
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Sound\\DataTable_Sound.json",
+    "sha256": "5624deae2d20bc20346fcc307679ef76ae28dda62784512259456584ef701d92",
+    "bytes": 8405
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Sound\\Enum_Sound.json",
+    "sha256": "44d3d99b2d9fd572194a225596f848830e8ceb4266b9cf776e5fc0ceb0be0bba",
+    "bytes": 7211
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Sound\\Struct_Sound.json",
+    "sha256": "7236c2ddecad6be3a6c34bc069c4d49d4a27aecb4429b689f97bc41a2567cef3",
+    "bytes": 6966
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Citizen_AIController.json",
+    "sha256": "a187d57b6a2eb3c7baac9f96a5a94eefc585130138fe7913ab830d4a1a6923b2",
+    "bytes": 28645
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Citizen_BB.json",
+    "sha256": "fdac69254b4a78a10904d0e5550f2106ef71e0983ff2ed97a50270d51e5d419d",
+    "bytes": 18624
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Citizen_BT.json",
+    "sha256": "35346be08efb3006ee2d5c3f547806f891721c3e1c3b0681edb29915c782b932",
+    "bytes": 66622
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Service\\CheckCitizenState_Service.json",
+    "sha256": "99e9829c91a146adf38290fe66bc839de32499a2690c5d642de8ad4fbeff2ec3",
+    "bytes": 211342
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Service\\GetNearWayPoint_Service.json",
+    "sha256": "41ca89ff6ec9b4f877ea97d5765e2dce04abd5424d1e028f068a22f37f9c06c1",
+    "bytes": 116955
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Task\\GetPointAndEscape.json",
+    "sha256": "19bc8a5fbfb2c2884eb9a70bf55928d66a738d1b2a3be3fc8a9bb4a2fbdbbe9c",
+    "bytes": 168963
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Task\\GroundAnimAction_Task.json",
+    "sha256": "bac6d195a4185d533be0fe7d509500359dcf92cee5b0f33ed2e51429dfcc45f3",
+    "bytes": 45166
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Task\\MoveToChildWayPoint_Task.json",
+    "sha256": "6092ff5d15af2fb85f392f17104587026029704d3d7d4cb049406059915f9005",
+    "bytes": 235802
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Task\\SkyAnimAction_Task.json",
+    "sha256": "2f95bb8e47f1e6174e805a69428696d8e6166d3c183bd1c39ef41b86b0416481",
+    "bytes": 45139
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\BluePrints\\BPI_Citizen.json",
+    "sha256": "cae50895bf818f24053562009198508b5cd53f71df66a025777a206eedb19872",
+    "bytes": 11936
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\BluePrints\\EscapePoint_BP.json",
+    "sha256": "f66d40bd2134d198f4bdf44f917ef3d8e151c6259c25c0d8313895953ad4646b",
+    "bytes": 30897
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\BluePrints\\Girl\\BP_WomanCitizen.json",
+    "sha256": "cc42068a88143c5f3fb37bbc200429836cd8351d1e332dc43ec4fda9ce6f12c4",
+    "bytes": 961931
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\BluePrints\\Girl\\GirlCitizen_AnimBP.json",
+    "sha256": "fe78a80974afd3afc74f42eb8b896d77462da11947446730e2e33890f1f5162f",
+    "bytes": 218434
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\BluePrints\\Man\\BP_ManCitizen.json",
+    "sha256": "97872d10c34b968c75be5fa6560d6803a77cacb06fa9174c0455f161dff7968b",
+    "bytes": 405886
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\BluePrints\\Man\\Citizen_AnimBP.json",
+    "sha256": "f5e4e581044b47ec94bebd24c13a6dd35feab7e1b4ad6d528e4e8a89c564e0bf",
+    "bytes": 239486
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\BluePrints\\WayPoint_BP.json",
+    "sha256": "58ffc1410ea9b878732c4008e4c944e6268c9faa09d880b2f48961ec02c3b0c8",
+    "bytes": 105909
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\CitizenSystem\\FrameWork\\BP_CharaChildWaypoint.json",
+    "sha256": "d1b5547732ced4a167e036c8346dc0d0e73c38e57ee375d62cf41d81f07fd355",
+    "bytes": 24907
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\CitizenSystem\\FrameWork\\BP_CharaSpawnPoint.json",
+    "sha256": "103a4d9e42a6662f184bfb8f102965fc919af89f00eb30206f21e6199765ef0f",
+    "bytes": 109631
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\CitizenSystem\\FrameWork\\Enum_CharacterState.json",
+    "sha256": "7b902cf2ca6e8671d154175d2084eea53f0028c56cb196025d1538f6974b481f",
+    "bytes": 11298
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\CitizenSystem\\FrameWork\\FuncLib_CitizenSystem.json",
+    "sha256": "1e912112fd8da58eaa47a133c2a2e725bfc9e6577b03339d63d4c1e5d6b959c4",
+    "bytes": 64965
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\CitizenSystem\\SceneActor\\BP_CharacterPoolArea.json",
+    "sha256": "dda818234e06d76fdb0b8c477aab0dd483a9477bdf37aab840d44eb5f62674dc",
+    "bytes": 240103
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\CitizenSystem\\SceneActor\\BP_CharacterWayPoint.json",
+    "sha256": "a766010717d0dfa546c071589ef52c9d6346ed080b8f05cf3450ec2fed81ac57",
+    "bytes": 517212
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\DataTable\\DT_CitizenSysyem.json",
+    "sha256": "7e604f6344eaff8a2ba22d58f6bc49c87a0189a53c071a2fa3053bc28f5c3dec",
+    "bytes": 13929
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\DataTable\\DT_MinimapIcon.json",
+    "sha256": "dfede62959f1f9a6d5e2f956aeaa6d2ebc8ad55d6200e5d1082c7e9ebe017194",
+    "bytes": 27609
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Gang_AIController.json",
+    "sha256": "1442260ad48dc09c3699eb9eabea1e9a33d2ce98ff216ce97c154b640f3e1d3d",
+    "bytes": 35974
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Gang_BB.json",
+    "sha256": "1bd25617f65339e8be677b2c331b9f907b5378a1bba3064571081dc720963c51",
+    "bytes": 21292
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Gang_BT.json",
+    "sha256": "bdc9b26d61f3701eb4c770f2df4495792098bdf813fbec53ad9c5a512b615137",
+    "bytes": 76934
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Service\\CheckCombatDist_Service.json",
+    "sha256": "21ff4498efa03bf9e628533a2664f47de898cea98e1dc21e20ca019aebc4a324",
+    "bytes": 72606
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Service\\CheckGangState_Service.json",
+    "sha256": "652166b5f8ffcd1dee0f0d97b37e0271bf8c9e197f942fd359661460d47694d1",
+    "bytes": 103436
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Service\\GetNearGangArea_Service.json",
+    "sha256": "9442c7cad30c52aa5bdcd170e808fda8f4550b5e15732878a9aa851af465d1ad",
+    "bytes": 80350
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Service\\GroupAction_Service.json",
+    "sha256": "39ff89396a5ede11a29267571078a6a5d93bf2bef7e54af8e7d66ca0581e0451",
+    "bytes": 93407
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Task\\CombatMoveAction_Task.json",
+    "sha256": "a748dd07964bba22336cd87952b80790adff849f2d70ccd61609652504322d58",
+    "bytes": 40522
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Task\\CombatShotAction_Task.json",
+    "sha256": "8311201c5d34008f8dd5fd75156af2fea1f676d1e5962d898fa9f89a8cf481ee",
+    "bytes": 44914
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Task\\PatrolAction_Task.json",
+    "sha256": "09c222d6c07c2b48fab89ccb1fa0ea2b0b8822b3c57f8720219c28221f472bea",
+    "bytes": 54092
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Task\\SetWalkSpeed_Task.json",
+    "sha256": "69570394eb361cd69c2f4e46ad764791b128c84051dd8e7e24f44057641c9c38",
+    "bytes": 37425
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Task\\WaitTime_SkipToCombat_Task.json",
+    "sha256": "6cb2f5bc3253d593cbf64de7c596937c02fc151795e89da8fa10a06613201346",
+    "bytes": 64308
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\BluePrint\\GangArea_BP.json",
+    "sha256": "6ba3653a157ce01277997ee701919a3944ac283914e123aa8e473f8248e06f25",
+    "bytes": 371208
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\BluePrint\\GangCombatMode_Enum.json",
+    "sha256": "2f97964606ac99549d64c3f3ab08cae5dc97cf28510b60bbb18565352b0eddb6",
+    "bytes": 8304
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\BluePrint\\GangState_Enum.json",
+    "sha256": "bb532be0ba8e04b1d795f52c5561702847474bc7ac1b68290832752d7cad1b33",
+    "bytes": 8253
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\MiniMap\\NewMinimapSystem\\BP_WorldCaptureCamera.json",
+    "sha256": "03619349f20098f10857716ec6a9dfe9459a726b5259967435cc1a84a07a206d",
+    "bytes": 120473
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\MiniMap\\Str_MinimapIcon.json",
+    "sha256": "74c8c7d0f064e9d368bc0f98c449dc16f3505b8db7694fbeaa4360fbf7752e8d",
+    "bytes": 6812
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\BaseQuest_BP.json",
+    "sha256": "790facf5839f51cbd935f2def3a64220a52edb8b4cc7ce485d8bd000020e54ce",
+    "bytes": 213874
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\HeroGameState.json",
+    "sha256": "fc97ec23e5f5a3881d5b74b12d2c7f4defdfaee6e4f748b632c921f55ffbd6ba",
+    "bytes": 914479
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\QuestFuncLib.json",
+    "sha256": "5b2787624882762dabcdcae911aa5df6581805dded07ffde355f38509610b632",
+    "bytes": 21737
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\QuestStruct.json",
+    "sha256": "8627e89a545f274deae97ce674c075504a952cfccabf4c4004e129d1d6349f75",
+    "bytes": 9095
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\QuestType.json",
+    "sha256": "af418a1d150554831b285e9820b9c16a59b4e77ba45859d8163e5abeb707953b",
+    "bytes": 11134
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Framework\\BPI_LineIntersectionTest.json",
+    "sha256": "ebddd24737bd18ed6ae292a3ab8ce53b24506a287023b21347b20218231e8e4c",
+    "bytes": 11498
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Framework\\BPO_Line2D.json",
+    "sha256": "6147200d042411c758a43735cbaa066653f02e2ad9c56a58d6a3b1ddc27dcb13",
+    "bytes": 64656
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Framework\\Line1D.json",
+    "sha256": "38d304c973663fe54fac37387242477d770bf683f935e5e84c25c2bb2a40e9cc",
+    "bytes": 6495
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Framework\\Line2D.json",
+    "sha256": "0f2e5b8ca0389e4e93ac0320d83db2f42a69ab152b52a8b87f6974ee3c5b1adf",
+    "bytes": 7894
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Framework\\LineResult.json",
+    "sha256": "2e95cfbed5747dfed18d05dc835cc055a97e859a38d88d292dfa06bd8bb290e8",
+    "bytes": 8500
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Framework\\SplineHelper.json",
+    "sha256": "36c279b684b5754a46d1290132fcecc45240c6c9930cd9300103660d31adce2e",
+    "bytes": 48576
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Framework\\SYS_CollisionLibrary.json",
+    "sha256": "5e0f6bd3a70de91474c7e7a1684c6d11dee0188dad6257d00fe9b492066840a5",
+    "bytes": 1244050
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Framework\\SYS_IntersectResult.json",
+    "sha256": "bc16f77b87990e507ce08929e2a11b2007d95b4436247d4a5cef1c28cd249588",
+    "bytes": 7315
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Framework\\TrafficSysyemPara.json",
+    "sha256": "0f8bf967846753521549e2ccb4b62bf96509fa9b3379319f87ea9a1e37524fb1",
+    "bytes": 6380
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\SceneActor\\BP_VehiclePoolArea.json",
+    "sha256": "f981c9aa8d623c27321bcfc5aee3e80e07062ec9a98f2dde196c4d5de97c140b",
+    "bytes": 357828
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\SceneActor\\BP_VehicleWaypoint.json",
+    "sha256": "2387fff87a5cc5a7959502f8add1a1bc079bd731cac6457c366a34451de2116a",
+    "bytes": 683085
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Blueprint\\BP_Vehicle_Generic.json",
+    "sha256": "75485ef04c3ef42d49498c5a26e0fbad06c2348ac91f7e2ae741efce19637b4f",
+    "bytes": 37456
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Blueprint\\BP_Vehicle_Hatchback.json",
+    "sha256": "7b375ec6a56eea58f015f043b462b5d849d02fda3626e528669f0d2d728859d4",
+    "bytes": 48234
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Blueprint\\BP_Vehicle_Hybrid.json",
+    "sha256": "3b5cb028c1d48c96f085c97b21d789e08f997de4ee6f6b32d01b7287a7912647",
+    "bytes": 48168
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Blueprint\\BP_Vehicle_Sedan2Door.json",
+    "sha256": "297d0600fe077cd296d955ed99cf0c33f43037dcbbbf36d57ad94b601c14d9e6",
+    "bytes": 48256
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Blueprint\\BP_Vehicle_SUV.json",
+    "sha256": "6f7b7edcf343e1ca21a2d85e238aef43c9a6b6173516c43d67337efc0ab7bacb",
+    "bytes": 48102
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Blueprint\\BP_Vehicle_Taxi.json",
+    "sha256": "500a695695efb75adc5256c71d1f6598d424a0ef5c5a5cf811da5e31965c6042",
+    "bytes": 27966
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Blueprint\\Str_Vehicle.json",
+    "sha256": "2ebe0567dcf413365983d93928e2c2f51ba12c5d2194990a1cdae2982a0f0876",
+    "bytes": 10013
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Sedan\\Sedan_AnimBP.json",
+    "sha256": "41f36a2a20f724299a115f3b63543b321381457b049b7cc6795c5fd849a27193",
+    "bytes": 38816
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\WheelBP\\Sedan\\Sedan_BackWheel.json",
+    "sha256": "4cc894167fd4e19c7d767caa6f294ed127c10368f9fb544ff1b5e46cb04bdd4f",
+    "bytes": 9637
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\WheelBP\\Sedan\\Sedan_FrontWheel.json",
+    "sha256": "31e0b6887f5d5cc163a726ff04867eeeda64f1e1c4a44a826b36221dee718518",
+    "bytes": 9901
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Content\\ContentType_Enum.json",
+    "sha256": "e0da9fd0a1a69b5bad46da1293aa319a17a57559acfd4fbcc70ecd8f7129b4e1",
+    "bytes": 9264
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Story\\StoryStartPoint_BP.json",
+    "sha256": "5b420365c4e4033ccdecbcc7e6198fbfad9e0175cb3653dd742d2055898f82af",
+    "bytes": 126689
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Story\\StorySystem\\Story_Struct.json",
+    "sha256": "add69bdc8832aad26d03e014c4d6c6609b0f0bdcbb8e7c09015d2907fb3dc8c2",
+    "bytes": 7873
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Story\\StorySystem\\StoryDataTable.json",
+    "sha256": "041489137747f50778be7e2edd3474498035105e2b413e1552ff6f7c138729e3",
+    "bytes": 9772
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Story\\StorySystem\\StoryNo1_BP.json",
+    "sha256": "a24c915e449913e70e35c9f2db652b733e074dd09ebbe38eab8f09a1b3dbaa90",
+    "bytes": 29621
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Story\\StorySystem\\StoryNo2_BP.json",
+    "sha256": "8b013527f1a2d576facc0a564bd3833490ed560815079cc9dca258ee6947436d",
+    "bytes": 31462
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Story\\StorySystem\\Storysystem_BP.json",
+    "sha256": "4ea20746454c23c007998145905ffdbbd5686b40ae0aa4d7e50684ce440807e2",
+    "bytes": 32518
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Twitter\\DataTable\\FaceIcon_DataTable.json",
+    "sha256": "f86f68061fede2bc77266f384de5ea2dcbdba83121ca9f2a1d414ac95439af75",
+    "bytes": 120813
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Twitter\\DataTable\\FireTweet_DataTable.json",
+    "sha256": "c14fbb574f074e3fefb5de8211a26675b777d41b595c6c34c134b5af6fbb27d2",
+    "bytes": 10009
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Twitter\\DataTable\\GangTweet_DataTable.json",
+    "sha256": "013269bb41836c026fdda960a2a6990bc2f7fc3be0e4cc3569ea36d5982793cd",
+    "bytes": 10864
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Twitter\\DataTable\\MatTweet_DataTable.json",
+    "sha256": "e990738bd07647c5b1e7177f3a81ca566ff3d917d452a4431396a2aaf0ac2108",
+    "bytes": 10006
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Twitter\\DataTable\\Tweet_DataTable.json",
+    "sha256": "c199c4bb5fbc89a2287b9fc564944c5dd7b491e044de3404cb6f8201cd0764f4",
+    "bytes": 33710
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Twitter\\FaceIcon_Struct.json",
+    "sha256": "333774be8b9879d8a2ffb0fa312918762a3ebcf0fe1ebc300548c07debf61dd5",
+    "bytes": 8726
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Twitter\\Tweet_Struct.json",
+    "sha256": "167e152ace41f7da8e83e121dfafef34da92914bf7d9f41572268d0f52b8f27c",
+    "bytes": 6359
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Twitter\\TwitterFunctionLib.json",
+    "sha256": "e39cacfd5f4fc6bac44170b941a1594f4af9697802437d80cca815a339e29656",
+    "bytes": 234603
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_2\\FuncLib\\FuncLib_Ver1_2.json",
+    "sha256": "18e7af19dbd6043ba96e066aaa44d9560c7278806a40106710a03782533533a0",
+    "bytes": 76615
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\WIdget\\DifenceBillls_Widget.json",
+    "sha256": "38ff850a010df7165a3122a8c4bbb77ab9918a5b113899610af30c51fbdb29f3",
+    "bytes": 21734
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\WIdget\\Free_Widget.json",
+    "sha256": "752d307afe855361c2db4645cd1ad15da2a00d20edf56ef68b4fd639b279861e",
+    "bytes": 2458778
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\WIdget\\MiniMap_Widget.json",
+    "sha256": "55b1df6b37c3353b8bbd6295ec4b46d65e737961cb222c3640227e1572b213d0",
+    "bytes": 419296
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\WIdget\\NewMiniMap_Widget.json",
+    "sha256": "ba035f2ac27f6bd26ddd3696a84668e9090070b9b4e1e2f95e6ed2d830eeb796",
+    "bytes": 850275
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\WIdget\\Twitter_Widget.json",
+    "sha256": "85982f1d9bb19ca2d2e162b81c9759ccfd344bb3f8c507c9bda305f06da272e8",
+    "bytes": 1320245
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Downtown\\Meshes\\Rigged_Vehicles\\Generic_AnimBP.json",
+    "sha256": "d15739752ec5cbc130947aff4ec7091f5e4ff9e6dbcf40991de8c2d1fb2c1ac2",
+    "bytes": 38830
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Downtown\\Meshes\\Rigged_Vehicles\\Taxi_AnimBP.json",
+    "sha256": "0db4dbac7adac611a1855983f2753c780b721f57b7e14c64d5ef00be3294f627",
+    "bytes": 38795
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\GR_Stylized_Female_01\\Character\\Animations\\AB_MovementB.json",
+    "sha256": "9ab66b20edb006eac9ee360bcf0da7bb31901e45d378d2494ab3c64b986c5ba5",
+    "bytes": 898155
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\GR_Stylized_Female_01\\Character\\Blueprints\\BP_GRFH1_Character.json",
+    "sha256": "10d67b6ad253b953efb956f78318588a44ca739641cab906585350febdd6ddfd",
+    "bytes": 1529566
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\GR_Stylized_Female_01\\Character\\Blueprints\\Enumerations\\EN_Cloth_Bottom.json",
+    "sha256": "93a389abc792d9ec718bda4746ca2bb9617fe66314b3a6573e5a92e6ccca6087",
+    "bytes": 10299
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\GR_Stylized_Female_01\\Character\\Blueprints\\Enumerations\\EN_Cloth_Top.json",
+    "sha256": "c7cde6bb1152bd7962ff56a9a086815227806b6f99bf1474c693f72ca4a821d3",
+    "bytes": 11293
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\GR_Stylized_Female_01\\Character\\Blueprints\\Enumerations\\EN_Hair.json",
+    "sha256": "12a4ef8cf779086e069bf287d2c834626a75a1d6f870e9a2af34a468dd72e943",
+    "bytes": 10182
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\GR_Stylized_Female_01\\Character\\Blueprints\\Enumerations\\EN_Poses.json",
+    "sha256": "b372d35d81dae5c11468934d2600e7c63c8f99e09c71e3e1646d82648faa0c1a",
+    "bytes": 12204
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\GR_Stylized_Female_01\\Character\\Blueprints\\Enumerations\\EN_Shoes.json",
+    "sha256": "4b9da1827e02cedf91c10a7c28f7bda475e35bd54ac8cdab78d6af65be1797bd",
+    "bytes": 8236
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\GR_Stylized_Female_01\\Character\\Blueprints\\Enumerations\\EN_Socks.json",
+    "sha256": "7a4106096bd7a4a4533528921e2ad5ce50621d00d660d2d2a16b399f88747320",
+    "bytes": 10205
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\GR_Stylized_Female_01\\Character\\Blueprints\\Enumerations\\EN_Underwear_Bottom.json",
+    "sha256": "43b1a02a903f3a6df3825a33747bf709c39ec42ec19b32da4a3443cbf5c2bd7a",
+    "bytes": 8363
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\GR_Stylized_Female_01\\Character\\Blueprints\\HUD\\WB_CharacterSetup.json",
+    "sha256": "aefe8b64abbff27b2121e196b9b7aa32731aaf54ab149f05f56d600ea96fb1ec",
+    "bytes": 1224339
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Vehicles_Vol1\\Blueprints\\BackWheels.json",
+    "sha256": "3a263930423b501eedaf8f5ac0b715ace0fbeb2a156bd4027bd8155976ff0b45",
+    "bytes": 10594
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Vehicles_Vol1\\Blueprints\\FrontWheels.json",
+    "sha256": "54fbe66fbbb72f5ed3d2a7dca872604276d56173853d9bf43c56d83ceb75ac6f",
+    "bytes": 9837
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Vehicles_Vol1\\Blueprints\\Hatchback_AnimBP.json",
+    "sha256": "62be61ec5cb6d7ead7a0e20781185751a9f9ab8d5a7b7558b0ae340e6a3c1586",
+    "bytes": 43652
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Vehicles_Vol1\\Blueprints\\Hybrid_AnimBP.json",
+    "sha256": "0f692ded74bc80c86dbfccc9dfe7d521a7690b5e932affbb0b3ca077f7d1235e",
+    "bytes": 43608
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Vehicles_Vol1\\Blueprints\\Sedan2Door_AnimBP.json",
+    "sha256": "f073cb6da4181ed257111ab0fd422ae0173aeead0078453e34b918feaaf31d18",
+    "bytes": 43666
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Vehicles_Vol1\\Blueprints\\SUV_AnimBP.json",
+    "sha256": "4c99ae05fc81549505a3f10666d2ee8b28cebefe33375b57147d35d0bd2c54ce",
+    "bytes": 43567
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\BP_CityManager.json",
+    "sha256": "2421176824b0a62ee63e2bc24004588e2b545f9fd7b62f2bb3a8d7484ec4fb00",
+    "bytes": 380568
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\BP_StoryManager.json",
+    "sha256": "741b68e57fd2ebb2f51b60ecda84245d0da0f5f364cddbf593465d5a9b71c433",
+    "bytes": 706369
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\HeroGameMode.json",
+    "sha256": "1c893a771c343a3ea807093a39399ccd66cb5f650b39bfee21cf40ff0026c8a4",
+    "bytes": 2679295
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\DPropTest.json",
+    "sha256": "cc691f7429a6b4d98d843f451a5e46e3e7eef0c179354a46b7c2c2efd4190034",
+    "bytes": 1485863
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\FPropTest.json",
+    "sha256": "9ee90eadbadff362958b8c7eb7e2b2bbdb4a9f7c626ebb79ad785aa5e7c3b64c",
+    "bytes": 494093
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelFire.json",
+    "sha256": "14c0046def9a8ca1c303ef50c4921737050b2d74c6a30c9da07a73554fb85df5",
+    "bytes": 321721
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelLightning.json",
+    "sha256": "4a9202af24112f0fee095c68740546625dec913f547891f1dce955121f28fda9",
+    "bytes": 308079
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelWind.json",
+    "sha256": "9f580ada4663f38e21e99372cec233f804a60ece56eeff3197dadabf5c65d4eb",
+    "bytes": 271826
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+    "sha256": "2641d9fd0860cb586d738b455dca1cdc7f3f418ee755532469c4cfe6bcf8f360",
+    "bytes": 7514976
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Beach.json",
+    "sha256": "abedc1cf266a77a03a038fde29f98cbe36f2e27b4c87dac621688007fd679530",
+    "bytes": 2622133
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CitizenWayPoint.json",
+    "sha256": "f984545fb9127b94c8561202234748886568170ae64ff7bc631d14fe4d02f88f",
+    "bytes": 53448769
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Coast.json",
+    "sha256": "37204f9b8849138044cd2e23fd7ce5d53ab048626194e8d5e3475c4a1cf7aab1",
+    "bytes": 4558863
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CommercialArea.json",
+    "sha256": "0d88858d3a0d0954b80c5161373f48fb159456d7be9a2d949a466b372c2abbe1",
+    "bytes": 12063754
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_D_Easy.json",
+    "sha256": "3d398a2c528830643819dae2b59076d4e58dfd652b86f35556687b09dee9c6fa",
+    "bytes": 4567651
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_D_Hard.json",
+    "sha256": "93161ee7896b78f6d2fed8efdb29b518ff76268518010a11a5156bbbd595962d",
+    "bytes": 10380554
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_D_Normal.json",
+    "sha256": "e20e752937c4c73e505ee09df5f162fc8299de7f93651cf3f3dad06181e6e181",
+    "bytes": 6455150
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_D_TU.json",
+    "sha256": "3d7d5046a664f743130b2c4a965d914235bf434c802d7624831a437af1e3dabe",
+    "bytes": 2425040
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_F_Easy.json",
+    "sha256": "aa234224cf28ae4f87fff669437dcf4bfb2bb4e5779393f11224aaba09d09256",
+    "bytes": 1698965
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_F_Hard.json",
+    "sha256": "778543ac3a26fbbd5d4878887802f6c582a7c4950253702adbad95bc4f696a85",
+    "bytes": 1926351
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_F_Normal.json",
+    "sha256": "574433154298a86c90ed81f598af09aec6d96c4617ecba98818a3542cc0b41f2",
+    "bytes": 2134697
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_F_TU.json",
+    "sha256": "72b806106697e7c60719fe8ff87c81a44d89e4ecda28b79b02648c806a19c140",
+    "bytes": 1190031
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CustomEventLevel.json",
+    "sha256": "5a44715d17ba7b9f5b2dea1040dd635c83eb5d8cff3d9a5f502c302449a590de",
+    "bytes": 156791
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\DynamicProps.json",
+    "sha256": "80e6a36b598ae4b06257b293439c2508d514a82f8ee057206b26eb1657c73ec2",
+    "bytes": 23830599
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\EnelightMeteor.json",
+    "sha256": "2cfe917aa13ba3036381774ce570abd68e732687cb6b5082c1b6530712410862",
+    "bytes": 71266
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\FinancialDistrict.json",
+    "sha256": "d179d345c7e9b75be451daf03e3d40be6f94b468f6211474e7fdc185153483e2",
+    "bytes": 7941589
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\FireBossLevel.json",
+    "sha256": "e766e87a3bf86f920cbb2865bde9b6e6295883f6722a8550bf2ec64065aa1d2f",
+    "bytes": 316557
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\IndustrialArea.json",
+    "sha256": "ddc242ba6cc15815c027d8eadbf082a08a8f19ca57b52a8adbfd360e455343be",
+    "bytes": 4225148
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Lighting.json",
+    "sha256": "7d5f7cce5a1e26790355caba730e21cc25533cd7efc1753eafc32cad788d9e7b",
+    "bytes": 948412
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\LightingTest.json",
+    "sha256": "809bdaca4e34192e5b17c55f715c7eb7b007bd3787a2bafb3b1f75322785b93e",
+    "bytes": 11421159
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\LightningBossLevel.json",
+    "sha256": "5f828c7390ab4331d076f01ebc73bfa88e5908b1f40da5d4d95cda77c9d26bea",
+    "bytes": 302912
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\LoadLevel.json",
+    "sha256": "3c9d1ffff65a9f7b397702cfeda7d959af0ecdc35014b947f1101c211386bb71",
+    "bytes": 941769
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Park.json",
+    "sha256": "5fb1827a986ef1414f7153bd5679b62f14b5d2cc21c6a45b664db3104b7ceef6",
+    "bytes": 5299729
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\ResidentialArea3.json",
+    "sha256": "fc519e885cc2e03650dbda61a36a5bf5155a2b193d88b98f1fd4bf9f60e66266",
+    "bytes": 6118702
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Slam.json",
+    "sha256": "48078c2b5c6f0b1fbc50bdad67653ef7936d6761984b68a8424c2c822255b2c4",
+    "bytes": 1836948
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Story1Level.json",
+    "sha256": "a1c786866de1a7108f856e4aaae924968b60515137fef322e378a4ad6e966165",
+    "bytes": 320152
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Story2Level.json",
+    "sha256": "85351100b206de11c1fe58e633f362aa749cfe12420694604200f2b6e42f7fb3",
+    "bytes": 372426
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Story3Level.json",
+    "sha256": "d646cf48ee886641ce6827ee4b4430d7ca1d749a4cab682b2f0e79a64f2fd638",
+    "bytes": 387719
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\TitleMenuLevel.json",
+    "sha256": "e80723ea1c6cdbb394c5a709e61bdd94577493000aa7d0e143f09fa9c00f9cd0",
+    "bytes": 424542
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\TutorialLevel.json",
+    "sha256": "805ae740e29d8445465e14ac44abd7f2edd76da1628f24cb6f0d90c8fb9ffcd3",
+    "bytes": 2817809
+  },
+  {
+    "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\WindBossLevel.json",
+    "sha256": "39f83837ae000ee303374b373a54586593c0c3cbee054cd9430b9653f0085110",
+    "bytes": 264333
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "originalSerializedOverrideSlotsChecked": 6684,
+  "originalNonNullOverridesPreserved": 4546,
+  "embeddedOriginalOverridesPreserved": 3466,
+  "scope": "All 41 map packages; per original component, before instancing expansion and batching."
+}

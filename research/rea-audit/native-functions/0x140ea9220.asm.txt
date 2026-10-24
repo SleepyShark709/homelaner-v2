@@ -1,0 +1,178 @@
+0x140ea9220: PUSH RBP
+0x140ea9222: PUSH RBX
+0x140ea9223: PUSH RSI
+0x140ea9224: PUSH R14
+0x140ea9226: PUSH R15
+0x140ea9228: LEA RBP, [RSP + -0x37]
+0x140ea922d: SUB RSP, 0xe0
+0x140ea9234: MOV RAX, qword ptr [0x1448c9b00]
+0x140ea923b: XOR RAX, RSP
+0x140ea923e: MOV qword ptr [RBP + 0x27], RAX
+0x140ea9242: MOV RAX, qword ptr [RCX]
+0x140ea9245: XOR R15D, R15D
+0x140ea9248: MOV R14, R8
+0x140ea924b: MOV qword ptr [RBP + -0x79], R15
+0x140ea924f: MOV RSI, RDX
+0x140ea9252: CALL qword ptr [RAX + 0x160]
+0x140ea9258: MOV ECX, dword ptr [0x144b79ac8]
+0x140ea925e: MOV RAX, qword ptr GS:[0x58]
+0x140ea9267: MOV EDX, 0x108
+0x140ea926c: MOV RAX, qword ptr [RAX + RCX*0x8]
+0x140ea9270: MOV EAX, dword ptr [RDX + RAX*0x1]
+0x140ea9273: CMP dword ptr [0x1448f30f0], EAX
+0x140ea9279: JG 0x140ea9492
+0x140ea927f: MOV RBX, qword ptr [0x1448f30e8]
+0x140ea9286: CALL 0x140fcf840
+0x140ea928b: MOV RDX, RBX
+0x140ea928e: MOV RCX, RAX
+0x140ea9291: CALL 0x140fcff10
+0x140ea9296: MOV RDX, qword ptr [RBP + -0x79]
+0x140ea929a: MOV RCX, RAX
+0x140ea929d: MOV R8, qword ptr [RAX]
+0x140ea92a0: CALL qword ptr [R8 + 0x50]
+0x140ea92a4: TEST RAX, RAX
+0x140ea92a7: JZ 0x140ea9477
+0x140ea92ad: MOV CL, 0x1
+0x140ea92af: CALL 0x140d4d090
+0x140ea92b4: MOV RBX, RAX
+0x140ea92b7: TEST RAX, RAX
+0x140ea92ba: JZ 0x140ea9477
+0x140ea92c0: MOV R8, qword ptr [RAX]
+0x140ea92c3: LEA RDX, [RBP + -0x71]
+0x140ea92c7: MOV RCX, RAX
+0x140ea92ca: MOV qword ptr [RSP + 0x128], RDI
+0x140ea92d2: CALL qword ptr [R8 + 0xe8]
+0x140ea92d9: MOV EDI, 0xffffffff
+0x140ea92de: CMP qword ptr [RBP + -0x71], R15
+0x140ea92e2: JZ 0x140ea943d
+0x140ea92e8: MOV RSI, qword ptr [RSI + 0x298]
+0x140ea92ef: TEST RSI, RSI
+0x140ea92f2: JZ 0x140ea943d
+0x140ea92f8: CALL 0x142e07be0
+0x140ea92fd: MOV RDX, qword ptr [RSI + 0x10]
+0x140ea9301: LEA R8, [RAX + 0x30]
+0x140ea9305: MOVSXD RAX, dword ptr [RAX + 0x38]
+0x140ea9309: CMP EAX, dword ptr [RDX + 0x38]
+0x140ea930c: JG 0x140ea943d
+0x140ea9312: MOV RCX, RAX
+0x140ea9315: MOV RAX, qword ptr [RDX + 0x30]
+0x140ea9319: CMP qword ptr [RAX + RCX*0x8], R8
+0x140ea931d: JNZ 0x140ea943d
+0x140ea9323: MOV RAX, qword ptr [RBX]
+0x140ea9326: LEA RDX, [RBP + -0x41]
+0x140ea932a: MOV ESI, dword ptr [RSI + 0xb8]
+0x140ea9330: MOV RCX, RBX
+0x140ea9333: CALL qword ptr [RAX + 0x80]
+0x140ea9339: MOV RCX, qword ptr [RBP + -0x41]
+0x140ea933d: TEST RCX, RCX
+0x140ea9340: JZ 0x140ea9406
+0x140ea9346: MOV RAX, qword ptr [RCX]
+0x140ea9349: LEA RDX, [RBP + -0x51]
+0x140ea934d: MOV R8D, ESI
+0x140ea9350: CALL qword ptr [RAX + 0xf0]
+0x140ea9356: MOV RCX, qword ptr [RBP + -0x71]
+0x140ea935a: LEA RDX, [RBP + -0x61]
+0x140ea935e: MOV qword ptr [RBP + -0x61], R15
+0x140ea9362: LEA R9, [RBP + -0x29]
+0x140ea9366: MOV dword ptr [RBP + -0x59], R15D
+0x140ea936a: MOV R8, R14
+0x140ea936d: MOV qword ptr [RBP + -0x29], R15
+0x140ea9371: MOV qword ptr [RBP + -0x21], R15
+0x140ea9375: MOV qword ptr [RBP + -0x9], R15
+0x140ea9379: MOV dword ptr [RBP + -0x1], R15D
+0x140ea937d: MOV dword ptr [RBP + 0x3], 0x80
+0x140ea9384: MOV dword ptr [RBP + 0x7], EDI
+0x140ea9387: MOV dword ptr [RBP + 0xb], R15D
+0x140ea938b: MOV qword ptr [RBP + 0x17], R15
+0x140ea938f: MOV dword ptr [RBP + 0x1f], R15D
+0x140ea9393: MOV RAX, qword ptr [RCX]
+0x140ea9396: MOV qword ptr [RSP + 0x20], RDX
+0x140ea939b: MOV RDX, qword ptr [RBP + -0x51]
+0x140ea939f: CALL qword ptr [RAX + 0x8]
+0x140ea93a2: MOV RCX, qword ptr [RBP + 0x17]
+0x140ea93a6: MOV dword ptr [RBP + 0x1f], R15D
+0x140ea93aa: TEST RCX, RCX
+0x140ea93ad: JZ 0x140ea93b4
+0x140ea93af: CALL 0x140ef49c0
+0x140ea93b4: XOR EDX, EDX
+0x140ea93b6: LEA RCX, [RBP + -0x29]
+0x140ea93ba: CALL 0x140d4c140
+0x140ea93bf: MOV RCX, qword ptr [RBP + -0x9]
+0x140ea93c3: TEST RCX, RCX
+0x140ea93c6: JZ 0x140ea93cd
+0x140ea93c8: CALL 0x140ef49c0
+0x140ea93cd: MOV RCX, qword ptr [RBP + -0x29]
+0x140ea93d1: TEST RCX, RCX
+0x140ea93d4: JZ 0x140ea93db
+0x140ea93d6: CALL 0x140ef49c0
+0x140ea93db: MOV RBX, qword ptr [RBP + -0x49]
+0x140ea93df: TEST RBX, RBX
+0x140ea93e2: JZ 0x140ea9406
+0x140ea93e4: SUB dword ptr [RBX + 0x8], 0x1
+0x140ea93e8: JNZ 0x140ea9406
+0x140ea93ea: MOV RAX, qword ptr [RBX]
+0x140ea93ed: MOV RCX, RBX
+0x140ea93f0: CALL qword ptr [RAX]
+0x140ea93f2: SUB dword ptr [RBX + 0xc], 0x1
+0x140ea93f6: JNZ 0x140ea9406
+0x140ea93f8: MOV RAX, qword ptr [RBX]
+0x140ea93fb: MOV EDX, 0x1
+0x140ea9400: MOV RCX, RBX
+0x140ea9403: CALL qword ptr [RAX + 0x8]
+0x140ea9406: MOV RBX, qword ptr [RBP + -0x39]
+0x140ea940a: TEST RBX, RBX
+0x140ea940d: JZ 0x140ea943d
+0x140ea940f: MOV EAX, EDI
+0x140ea9411: XADD.LOCK dword ptr [RBX + 0x8], EAX
+0x140ea9416: CMP EAX, 0x1
+0x140ea9419: JNZ 0x140ea943d
+0x140ea941b: MOV RAX, qword ptr [RBX]
+0x140ea941e: MOV RCX, RBX
+0x140ea9421: CALL qword ptr [RAX]
+0x140ea9423: MOV EAX, EDI
+0x140ea9425: XADD.LOCK dword ptr [RBX + 0xc], EAX
+0x140ea942a: CMP EAX, 0x1
+0x140ea942d: JNZ 0x140ea943d
+0x140ea942f: MOV RAX, qword ptr [RBX]
+0x140ea9432: MOV EDX, 0x1
+0x140ea9437: MOV RCX, RBX
+0x140ea943a: CALL qword ptr [RAX + 0x8]
+0x140ea943d: MOV RBX, qword ptr [RBP + -0x69]
+0x140ea9441: TEST RBX, RBX
+0x140ea9444: JZ 0x140ea946f
+0x140ea9446: MOV EAX, EDI
+0x140ea9448: XADD.LOCK dword ptr [RBX + 0x8], EAX
+0x140ea944d: CMP EAX, 0x1
+0x140ea9450: JNZ 0x140ea946f
+0x140ea9452: MOV RAX, qword ptr [RBX]
+0x140ea9455: MOV RCX, RBX
+0x140ea9458: CALL qword ptr [RAX]
+0x140ea945a: XADD.LOCK dword ptr [RBX + 0xc], EDI
+0x140ea945f: CMP EDI, 0x1
+0x140ea9462: JNZ 0x140ea946f
+0x140ea9464: MOV RAX, qword ptr [RBX]
+0x140ea9467: MOV EDX, EDI
+0x140ea9469: MOV RCX, RBX
+0x140ea946c: CALL qword ptr [RAX + 0x8]
+0x140ea946f: MOV RDI, qword ptr [RSP + 0x128]
+0x140ea9477: MOV RCX, qword ptr [RBP + 0x27]
+0x140ea947b: XOR RCX, RSP
+0x140ea947e: CALL 0x1436d3080
+0x140ea9483: ADD RSP, 0xe0
+0x140ea948a: POP R15
+0x140ea948c: POP R14
+0x140ea948e: POP RSI
+0x140ea948f: POP RBX
+0x140ea9490: POP RBP
+0x140ea9491: RET
+0x140ea9492: LEA RCX, [0x1448f30f0]
+0x140ea9499: CALL 0x1436d2ef4
+0x140ea949e: CMP dword ptr [0x1448f30f0], -0x1
+0x140ea94a5: JNZ 0x140ea927f
+0x140ea94ab: MOV R8D, 0x1
+0x140ea94b1: LEA RDX, [0x14388f228]
+0x140ea94b8: LEA RCX, [0x1448f30e8]
+0x140ea94bf: CALL 0x140fe7ba0
+0x140ea94c4: LEA RCX, [0x1448f30f0]
+0x140ea94cb: CALL 0x1436d2e88
+0x140ea94d0: JMP 0x140ea927f

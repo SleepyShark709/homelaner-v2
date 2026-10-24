@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "coordinateSystem": "gltf-rh-y-up-meters",
+  "originUE": [
+    0,
+    0,
+    0
+  ],
+  "assets": [
+    {
+      "id": "MeshName-sha12",
+      "url": "/assets/world/meshes/MeshName-sha12/mesh.gltf",
+      "sourcePackage": "/Game/path/MeshName",
+      "sourceMaterialSlots": [
+        {
+          "slotIndex": 0,
+          "slotName": "MaterialSlot",
+          "material": {
+            "package": "/Game/path/Mat",
+            "object": "Mat",
+            "reference": "/Game/path/Mat.Mat"
+          }
+        }
+      ],
+      "gltfMaterials": [
+        {
+          "materialIndex": 0,
+          "name": "Mat",
+          "sourceSlotCandidates": [
+            0
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          0,
+          0,
+          0
+        ],
+        "max": [
+          1,
+          1,
+          1
+        ]
+      },
+      "geometryStats": {
+        "triangles": 1
+      }
+    }
+  ],
+  "levels": [
+    {
+      "id": "MainLevel",
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "scope": "main-world",
+      "streaming": [],
+      "bounds": {
+        "min": [
+          0,
+          0,
+          0
+        ],
+        "max": [
+          1,
+          1,
+          1
+        ]
+      },
+      "objects": [
+        {
+          "id": "MainLevel:123",
+          "assetId": "MeshName-sha12",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "source": {
+            "package": "/Game/-HeroGame/Maps/MainLevel",
+            "actor": "MainLevel/PersistentLevel/Actor",
+            "component": "StaticMeshComponent0",
+            "exportIndex": 123
+          },
+          "materialOverrides": [
+            {
+              "slotIndex": 0,
+              "material": null
+            }
+          ],
+          "visibilityProperties": {},
+          "geometryMode": "static"
+        }
+      ]
+    }
+  ],
+  "spawnCandidates": [
+    {
+      "levelId": "MainLevel",
+      "actorClass": "PlayerStart",
+      "sourceActor": "MainLevel/PersistentLevel/PlayerStart",
+      "sourceExportIndex": 100,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "gaps": [],
+  "totals": {}
+}

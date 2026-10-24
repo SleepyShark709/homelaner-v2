@@ -1,0 +1,95 @@
+{
+  "statistics": {
+    "seedPackages": 640,
+    "processedPackages": 2084,
+    "pendingPackages": 0,
+    "decodedPackages": 2084,
+    "failedPackages": 0,
+    "rawExports": 2,
+    "packagesWithRawExports": 1,
+    "reusedMaterialAuditPackages": 139,
+    "importsEdges": 11641,
+    "followedEdges": 5741,
+    "newThisRun": 484,
+    "elapsedSecondsThisRun": 148.54,
+    "queueExhausted": true
+  },
+  "incomingPackageTypes": {
+    "StaticMesh": 388,
+    "Texture2D": 1044,
+    "Material": 173,
+    "TextureCube": 5,
+    "MaterialFunction": 120,
+    "MaterialInstanceConstant": 339,
+    "SkeletalMesh": 11,
+    "MaterialParameterCollection": 2,
+    "SubsurfaceProfile": 2
+  },
+  "mapOwnedResourceExportTypes": {
+    "LandscapeMaterialInstanceConstant": 148,
+    "MaterialInstanceDynamic": 3299,
+    "Texture2D": 66
+  },
+  "packagesWithOpaqueExtrasBeyondSmallDefaultTail": 1687,
+  "failures": [],
+  "rawExportPackages": [
+    {
+      "package": "/Game/Character/Trooper/Mesh/Trooper_Lead",
+      "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\Character\\Trooper\\Mesh\\Trooper_Lead.json",
+      "rawExports": [
+        {
+          "index": 2,
+          "objectName": "Trooper_Lead_Clothing_2",
+          "className": "ClothingAssetCommon",
+          "serializedExportType": "UAssetAPI.ExportTypes.RawExport, UAssetAPI",
+          "propertyCount": 2,
+          "opaqueExtrasEncodedCharacters": 0,
+          "isRawExport": true,
+          "pointer": "/Exports/2"
+        },
+        {
+          "index": 3,
+          "objectName": "Trooper_Lead_Clothing_3",
+          "className": "ClothingAssetCommon",
+          "serializedExportType": "UAssetAPI.ExportTypes.RawExport, UAssetAPI",
+          "propertyCount": 2,
+          "opaqueExtrasEncodedCharacters": 0,
+          "isRawExport": true,
+          "pointer": "/Exports/3"
+        }
+      ]
+    }
+  ],
+  "nonTraversedExternalImportTypes": {
+    "BodySetup": 389,
+    "Class": 2868,
+    "NavCollision": 388,
+    "StaticMesh": 388,
+    "Texture2D": 1044,
+    "TextureCube": 5,
+    "MaterialInstanceConstant": 339,
+    "PhysicsAsset": 8,
+    "SkeletalMesh": 11,
+    "Skeleton": 11,
+    "Material": 173,
+    "PhysicalMaterial": 145,
+    "MaterialFunction": 120,
+    "MorphTarget": 4,
+    "SkeletalMeshSocket": 1,
+    "ClothConfigNv": 1,
+    "ClothingAssetCommon": 1,
+    "MaterialParameterCollection": 2,
+    "SubsurfaceProfile": 2
+  },
+  "seedCrosscheckExceptions": [
+    {
+      "kind": "material",
+      "reference": "/Script/Engine/Default__MaterialInstanceDynamic",
+      "package": "/Script/Engine",
+      "presentInTypedSeeds": false,
+      "worldCoveragePointer": "/uniqueAssetsAcrossReferencedWorld/materials/132"
+    }
+  ],
+  "validationErrors": [],
+  "validationMeaning": "Every typed traversed edge and seed has a node or explicit pending entry; local source hashes recorded; no geometry/shader/pixel validation performed."
+}

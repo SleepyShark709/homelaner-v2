@@ -1,0 +1,53 @@
+{
+  "purpose": "REA native analysis of the user-selected UNDEFEATED Shipping executable",
+  "originalExecutable": "E:/SteamLibrary/steamapps/common/UNDEFEATED/UNDEFEATED/Binaries/Win64/UNDEFEATED-Win64-Shipping.exe",
+  "originalSha256": "0790a47508668dafb64f097c855745abd91a8ff027c8c6b5b0766db2d01669ef",
+  "rea": {
+    "version": "6.7.0",
+    "entrypoint": "official scripts/rea.mjs mcp",
+    "transport": "local stdio JSON-RPC, scripts/rea-session.py",
+    "note": "No Codex MCP registration or global environment edits; raw responses are retained unchanged."
+  },
+  "ghidra": {
+    "version": "12.1.4",
+    "url": "https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.1.4_build/ghidra_12.1.4_PUBLIC_20260921.zip",
+    "sha256": "ddac49f903da9d5bac833e5cc79395098b9c33cfd3279be5f31bd00387d2d4db",
+    "checksumVerified": true
+  },
+  "jdk": {
+    "version": "21.0.12.1+1",
+    "vendor": "Eclipse Temurin",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk_x64_windows_hotspot_21.0.12.1_1.zip",
+    "sha256": "f9d6e191ab098c0d416e7d588a24420a8621cd2f4720dab2459b8b7b2d2d8b4e",
+    "checksumVerified": true
+  },
+  "portableLocation": "E:/undefeated-web/tools/rea-runtime/",
+  "doctor": "rea-ghidra-doctor.json",
+  "nativeSession": "session/status.json",
+  "openResponse": "session/responses/002-open.json",
+  "limitations": [
+    "Provider readiness and open_binary success do not mean whole-program analysis or gameplay reconstruction is complete.",
+    "UAssetAPI/UModel results are separate specialized UE observations, not REA native Evidence."
+  ],
+  "defaultAnalysisAttempt": {
+    "response": "session/responses/003-overview.json",
+    "status": "provider_timeout",
+    "startupDeadlineMs": 1800000,
+    "usableDecompilationProduced": false
+  },
+  "focusedAnalysisAttempt": {
+    "session": "session-focused/status.json",
+    "heap": "8G",
+    "startupDeadlineMs": 3600000,
+    "disabledAnalyzers": [
+      "Function ID",
+      "Windows x86 PE RTTI Analyzer",
+      "Stack",
+      "x86 Constant Reference Analyzer"
+    ],
+    "scope": "limited analysis profile; not default full-program analysis",
+    "status": "initial_queries_succeeded",
+    "overviewEvidenceId": "ev_b3187dcc5bf44994bf0f23c7c3e60707bb47ce95ad12802eb8344259aef998b6",
+    "analyzedFunctions": 10
+  }
+}

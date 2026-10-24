@@ -1,0 +1,660 @@
+{
+  "version": 2,
+  "scope": "Original MainLevel Landscape material only; no Web changes",
+  "provenance": "UAssetAPI decoded properties + cooked DXBC extraction + Microsoft d3dcompiler_47 D3DDisassemble; NOT REA native evidence",
+  "runtimeVerified": false,
+  "status": "material-binding-and-uv-statically-recovered-runtime-unverified",
+  "sources": [
+    {
+      "path": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape.json",
+      "sha256": "779f8a3e456fe2b89f2b93801cfcfc2baf19535de6e9da772c3aebe700df33ba",
+      "exportCount": 1
+    },
+    {
+      "path": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape_Inst.json",
+      "sha256": "4e0958118b4c9a59109634c21947a8b2bce8f74f4dc852d63cfdd00fe931a29e",
+      "exportCount": 1
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\exports\\city-decoded\\MainLevel.json",
+      "sha256": "0f436d9a23f99c9d8069f0d2feb45ffc2e096666551802120cce78e4d7b3c489",
+      "bytes": 265646829
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\rea-audit\\levels\\MainLevel.json",
+      "sha256": "c7751d0dc707ecada6b9f24c38a6185ab5bcde2017d7477278c313de0c3a159a",
+      "bytes": 11170141
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\MainLevel.umap",
+      "sha256": "0a22c6728087615a867ac2731dfa1facb7ed28c1c8f075df03aa1927f0a1eddb",
+      "bytes": 1623226
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\MainLevel.uexp",
+      "sha256": "7ba09c3ed28a8d4a889ecc9727f5b24d5ca01b7716e11025c2bedcd57872577a",
+      "bytes": 55251787
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\MainLevel.ubulk",
+      "sha256": "51e8454f41a406bca7647f2277494095ae62d5abeeaf0eced62e33de28f5d414",
+      "bytes": 16121856
+    }
+  ],
+  "facts": [
+    {
+      "id": "parent-chain",
+      "status": "confirmed-static",
+      "statement": "Landscape actor -> M_LandScape_Inst -> M_LandScape. Component instances inherit one of four landscape static permutations then M_LandScape_Inst.",
+      "evidence": [
+        {
+          "file": "research/exports/city-decoded/MainLevel.json",
+          "pointer": "/Exports/5177/Data"
+        },
+        {
+          "file": "research/exports/city-decoded/MainLevel.json",
+          "pointer": "/Imports/269"
+        },
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape_Inst.json",
+          "pointer": "/Exports/0/Data/0"
+        },
+        {
+          "file": "research/exports/city-decoded/MainLevel.json",
+          "pointer": "/Exports/5612/Data"
+        }
+      ]
+    },
+    {
+      "id": "graph-retention",
+      "status": "confirmed-static",
+      "statement": "Master has one Material export and no MaterialExpression exports. Expression type names in NameMap do not recover graph wiring. Cooked shader bytes are present.",
+      "evidence": [
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape.json",
+          "pointer": "/Exports"
+        },
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape.json",
+          "pointer": "/NameMap"
+        },
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape.json",
+          "pointer": "/Exports/0/Extras"
+        }
+      ]
+    },
+    {
+      "id": "parameters",
+      "status": "confirmed-static",
+      "scalarOverrides": {
+        "Metalic": 0,
+        "Roughness": 1,
+        "Spec": 0.12807300686836243,
+        "Texture Scale": 0.20000000298023224,
+        "RefractionDepthBias": 0
+      },
+      "vectorOverrides": {
+        "SandColor": [
+          0.53644800186,
+          0.56999999285,
+          0.48014900088,
+          1
+        ]
+      },
+      "inheritedCachedVector": {
+        "GrassColor": [
+          0.1166670024,
+          0.1400000006,
+          0.09333299845,
+          1
+        ]
+      },
+      "warning": "Texture Scale maps exactly to cb3[9].x in the selected three-layer PS, proven by preshader and vector-first/scalar-packed layout. Final UV uses SectionBase+component-local grid coordinates, not global world coordinates.",
+      "evidence": [
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape_Inst.json",
+          "pointer": "/Exports/0/Data/1"
+        },
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape_Inst.json",
+          "pointer": "/Exports/0/Data/2"
+        },
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape.json",
+          "pointer": "/Exports/0/Data/8"
+        }
+      ]
+    },
+    {
+      "id": "texture-parameter-overrides",
+      "status": "confirmed-static",
+      "parameters": {
+        "Ground": "/Game/GTFreeMaterials/Textures/Ground_MuddyGrass/Ground_MuddyGrass_2k_alb",
+        "GroundNormal": "/Game/GTFreeMaterials/Textures/Ground_MuddyGrass/Ground_MuddyGrass_2k_n"
+      },
+      "warning": "Frozen texture parameter indices and D3D11 resource tokens now confirm GroundNormal->t8 and Ground->t11 in the selected three-layer shader. Instance overrides replace master DirtBrownTan.",
+      "evidence": [
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape_Inst.json",
+          "pointer": "/Exports/0/Data/3"
+        },
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape_Inst.json",
+          "pointer": "/Imports"
+        }
+      ]
+    },
+    {
+      "id": "weight-channel-contract",
+      "status": "confirmed-static",
+      "components": 144,
+      "layerComponentCounts": {
+        "Grass": 144,
+        "Ground": 11,
+        "Sand": 48
+      },
+      "contract": "heightfields[].weightmapLayers stores exact LayerInfo import, texture package index, original PNG and RGBA channel. Pixel values remain original linear weight data. Component instance LayerMask vectors and Weightmap0 references can be cross-checked against these allocations.",
+      "example": {
+        "componentManifestIndex": 0,
+        "componentMaterialInstanceExport": 5612,
+        "maskGrass": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "maskSand": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "weightmapPackageIndex": 11050
+      },
+      "evidence": [
+        {
+          "file": "public/assets/world/terrain-manifest.json",
+          "pointer": "/heightfields"
+        },
+        {
+          "file": "research/exports/city-decoded/MainLevel.json",
+          "pointer": "/Exports/5612/Data"
+        },
+        {
+          "file": "research/exports/city-decoded/MainLevel.json",
+          "pointer": "/Imports/253"
+        },
+        {
+          "file": "research/exports/city-decoded/MainLevel.json",
+          "pointer": "/Imports/254"
+        },
+        {
+          "file": "research/exports/city-decoded/MainLevel.json",
+          "pointer": "/Imports/255"
+        }
+      ]
+    },
+    {
+      "id": "blend-formula",
+      "status": "confirmed-static-binding",
+      "shader": "export-5623-shader-6-ps_5_0",
+      "weightFormula": "W=sample(t6,v1.xy); w0=dot(W,cb3[1]); w1=dot(W,cb3[2]); w2=dot(W,cb3[3])",
+      "uvFormula": "uv=v0.xy*cb3[9].x",
+      "baseColorFormula": "saturate(sample(t10,uv).rgb*cb3[6].rgb*w0 + sample(t11,uv).rgb*w1 + sample(t12,uv).rgb*cb3[8].rgb*w2)",
+      "normalFormula": "Decode XY from t7/t8/t9 as 2*sample-1, reconstruct Z=sqrt(max(1-dot(XY,XY),0)); weight by w0/w1/w2, apply engine material-normal override, normalize, transform by terrain basis, normalize.",
+      "warning": "Weights and texture/tint registers are now bound by the additional frozen/resource evidence. Engine view overrides and original lighting are not runtime captured.",
+      "evidence": [
+        {
+          "file": "research\\world-recovery\\terrain-material-shaders\\export-5623-shader-6-ps_5_0.asm",
+          "lines1Based": [
+            98,
+            142
+          ]
+        }
+      ]
+    },
+    {
+      "id": "static-permutations",
+      "status": "confirmed-static",
+      "permutations": [
+        {
+          "exportIndex": 5611,
+          "layers": [
+            "Grass",
+            "Sand"
+          ],
+          "weightBasedBlend": [
+            true,
+            true
+          ],
+          "shaderCount": 24,
+          "evidence": [
+            {
+              "file": "research/exports/city-decoded/MainLevel.json",
+              "pointer": "/Exports/5611/Data"
+            },
+            {
+              "file": "research/exports/city-decoded/MainLevel.json",
+              "pointer": "/Exports/5611/Extras"
+            }
+          ]
+        },
+        {
+          "exportIndex": 5623,
+          "layers": [
+            "Grass",
+            "Ground",
+            "Sand"
+          ],
+          "weightBasedBlend": [
+            true,
+            true,
+            true
+          ],
+          "shaderCount": 24,
+          "evidence": [
+            {
+              "file": "research/exports/city-decoded/MainLevel.json",
+              "pointer": "/Exports/5623/Data"
+            },
+            {
+              "file": "research/exports/city-decoded/MainLevel.json",
+              "pointer": "/Exports/5623/Extras"
+            }
+          ]
+        },
+        {
+          "exportIndex": 5672,
+          "layers": [
+            "Grass",
+            "Ground"
+          ],
+          "weightBasedBlend": [
+            true,
+            true
+          ],
+          "shaderCount": 24,
+          "evidence": [
+            {
+              "file": "research/exports/city-decoded/MainLevel.json",
+              "pointer": "/Exports/5672/Data"
+            },
+            {
+              "file": "research/exports/city-decoded/MainLevel.json",
+              "pointer": "/Exports/5672/Extras"
+            }
+          ]
+        },
+        {
+          "exportIndex": 5675,
+          "layers": [
+            "Grass"
+          ],
+          "weightBasedBlend": [
+            true
+          ],
+          "shaderCount": 24,
+          "evidence": [
+            {
+              "file": "research/exports/city-decoded/MainLevel.json",
+              "pointer": "/Exports/5675/Data"
+            },
+            {
+              "file": "research/exports/city-decoded/MainLevel.json",
+              "pointer": "/Exports/5675/Extras"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-bindings",
+      "status": "confirmed-static-binding",
+      "contractFile": "research/world-recovery/terrain-material-bindings.json",
+      "threeLayerRegisterBindings": {
+        "t6": "component Weightmap0",
+        "t7": "Grass_N",
+        "t8": "GroundNormal -> MuddyGrass_n",
+        "t9": "T_SandDunes_N",
+        "t10": "Grass_A",
+        "t11": "Ground -> MuddyGrass_alb",
+        "t12": "T_SandDunes_D",
+        "cb3[1]": "LayerMask_Grass",
+        "cb3[2]": "LayerMask_Ground",
+        "cb3[3]": "LayerMask_Sand",
+        "cb3[6].rgb": "GrassColor.rgb",
+        "cb3[8].rgb": "SandColor.rgb",
+        "cb3[9].x": "Texture Scale"
+      },
+      "method": "Decode full FD3D11ShaderResourceTable prefix; uniform index=token>>24, resource index=(token>>8)&65535, binding=token&255. Texture/sampler members are paired. Frozen FName patches + TextureIndex + CachedReferencedTextures + inherited instance overrides complete package binding. Preshader opcodes 3/4/35 select scalar/vector/swizzle; vectors occupy float4 registers before packed scalars.",
+      "evidence": [
+        {
+          "file": "research/world-recovery/terrain-uniform-binding-check.json",
+          "pointer": "/records/1"
+        },
+        {
+          "file": "research/world-recovery/terrain-material-bindings.json",
+          "pointer": "/permutations/1"
+        },
+        {
+          "file": "research/world-recovery/terrain-UE-RHIDefinitions-4.26.h",
+          "lines1Based": [
+            920,
+            968
+          ]
+        },
+        {
+          "file": "research/world-recovery/terrain-UE-ShaderCore-4.26.h",
+          "lines1Based": [
+            320,
+            370
+          ]
+        },
+        {
+          "file": "research/world-recovery/terrain-UE-D3D11ShaderResources-4.26.h",
+          "lines1Based": [
+            9,
+            28
+          ]
+        },
+        {
+          "file": "research/world-recovery/terrain-UE-MaterialShared-4.26.h",
+          "lines1Based": [
+            213,
+            250
+          ]
+        },
+        {
+          "file": "research/world-recovery/terrain-UE-MaterialUniformExpressions-4.26.cpp",
+          "lines1Based": [
+            409,
+            420
+          ]
+        },
+        {
+          "file": "research/world-recovery/terrain-UE-MaterialUniformExpressions-4.26.cpp",
+          "lines1Based": [
+            470,
+            478
+          ]
+        },
+        {
+          "file": "research/world-recovery/terrain-UE-MaterialUniformExpressions-4.26.cpp",
+          "lines1Based": [
+            956,
+            1025
+          ]
+        },
+        {
+          "file": "research/world-recovery/terrain-UE-MaterialUniformExpressions-4.26.cpp",
+          "lines1Based": [
+            1190,
+            1222
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uv-and-height-basis",
+      "status": "confirmed-static-binding",
+      "formula": {
+        "textureUV": "(localGrid + sectionBaseUE) * TextureScale; localGrid=GLB_POSITION.xz / localGridScaleMeters; POSITION excludes SectionBase",
+        "baseColorLinear": "clamp(sum(sRGBToLinear(albedo_layer(uv))*tintLinear_layer*weight_layer),0,1)",
+        "weightNormalization": "none added; use original channel values; do not divide by weight sum",
+        "tangentNormal": "n_l=vec3(2*RG_l-1,sqrt(max(1-dot(2*RG_l-1,2*RG_l-1),0))); n=normalize(sum(w_l*n_l))",
+        "heightNormalUE": "N=vec3(2*heightBA-1,sqrt(max(1-dot(2*heightBA-1,2*heightBA-1),0)))",
+        "tangentBasisUE": "T=normalize(vec3(N.z,0,-N.x)); B=cross(N,T); outUE=normalize(n.x*T+n.y*B+n.z*N)",
+        "normalWorld": "For the recovered unrotated MainLevel actor, worldNormal=outUE.xzy. Do not flip the normal PNG green channel when using this explicit UE basis.",
+        "selectionEmissive": "SelectionColor.rgb * SelectionColor.a; ordinary default SelectionColor is zero; runtime editor/override values not captured"
+      },
+      "componentContract": "manifest.objects contains precise SectionBase, original channel allocations, height atlas origin and dimensions; POSITION is component-local 0..126 meters and contains no SectionBase.",
+      "evidence": [
+        {
+          "file": "research/world-recovery/terrain-material-shaders/export-5623-shader-0-vs_5_0.asm",
+          "lines1Based": [
+            123,
+            131
+          ]
+        },
+        {
+          "file": "research/world-recovery/terrain-material-shaders/export-5623-shader-6-ps_5_0.asm",
+          "lines1Based": [
+            65,
+            86
+          ]
+        },
+        {
+          "file": "research/world-recovery/terrain-UE-LandscapeVertexFactory-4.26.ush",
+          "lines1Based": [
+            346,
+            399
+          ]
+        },
+        {
+          "file": "research/world-recovery/terrain-UE-LandscapeRender-4.26.cpp",
+          "lines1Based": [
+            1960,
+            1985
+          ]
+        },
+        {
+          "file": "research/world-recovery/terrain-material-bindings.json",
+          "pointer": "/componentChecks"
+        }
+      ]
+    },
+    {
+      "id": "instance-layer-and-pixel-validation",
+      "status": "confirmed-static-validation",
+      "validation": {
+        "objects": 144,
+        "componentMaskReferencesVerified": 144,
+        "shaderResourcePrefixesFullyParsed": 93,
+        "materialTexturePNGHashChecks": 6
+      },
+      "weightPixels": {
+        "components": 144,
+        "componentTexels": 2359296,
+        "minAllocatedWeightSumU8": 255,
+        "maxAllocatedWeightSumU8": 256,
+        "texelsNotExactly255": 72,
+        "zeroWeightTexels": 0,
+        "interpretation": "Raw allocated-channel weights; shader uses them directly without adding normalization."
+      },
+      "evidence": [
+        {
+          "file": "public/assets/world/terrain-material-manifest.json",
+          "pointer": "/validation"
+        },
+        {
+          "file": "research/world-recovery/terrain-material-weight-validation.json"
+        }
+      ]
+    }
+  ],
+  "referencedOriginalTextures": [
+    {
+      "package": "/Game/Assets/Texture/T_SandDunes_D",
+      "status": "compiled-reference-with-resolved-uniform-index; DirtBrownTan overridden by instance MuddyGrass",
+      "evidence": [
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape.json",
+          "pointer": "/Imports/13"
+        }
+      ]
+    },
+    {
+      "package": "/Game/Assets/Texture/T_SandDunes_N",
+      "status": "compiled-reference-with-resolved-uniform-index; DirtBrownTan overridden by instance MuddyGrass",
+      "evidence": [
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape.json",
+          "pointer": "/Imports/14"
+        }
+      ]
+    },
+    {
+      "package": "/Game/Downtown/Textures/Grass_A",
+      "status": "compiled-reference-with-resolved-uniform-index; DirtBrownTan overridden by instance MuddyGrass",
+      "evidence": [
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape.json",
+          "pointer": "/Imports/15"
+        }
+      ]
+    },
+    {
+      "package": "/Game/Downtown/Textures/Grass_N",
+      "status": "compiled-reference-with-resolved-uniform-index; DirtBrownTan overridden by instance MuddyGrass",
+      "evidence": [
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape.json",
+          "pointer": "/Imports/16"
+        }
+      ]
+    },
+    {
+      "package": "/Game/GTFreeMaterials/Textures/Ground_DirtBrownTan/Ground_DirtBrownTan_2k_alb",
+      "status": "compiled-reference-with-resolved-uniform-index; DirtBrownTan overridden by instance MuddyGrass",
+      "evidence": [
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape.json",
+          "pointer": "/Imports/17"
+        }
+      ]
+    },
+    {
+      "package": "/Game/GTFreeMaterials/Textures/Ground_DirtBrownTan/Ground_DirtBrownTan_2k_n",
+      "status": "compiled-reference-with-resolved-uniform-index; DirtBrownTan overridden by instance MuddyGrass",
+      "evidence": [
+        {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\-HeroGame\\Materials\\M_LandScape.json",
+          "pointer": "/Imports/18"
+        }
+      ]
+    }
+  ],
+  "shaderRecovery": {
+    "index": "research\\world-recovery\\terrain-material-shaders\\index.json",
+    "permutations": 4,
+    "validatedDXBCContainers": 96,
+    "method": "Bounded LZ4 candidate decompression preceding DXBC literals; accept only complete DXBC containers validated by Microsoft D3DDisassemble. Original DXBC and assembly retained with SHA256 in index.",
+    "limitation": "All 96 DXBC opcode containers validated. 93 preceding resource tables consume their full decoded prefix; 3 candidate compressed prefix boundaries remain unresolved. All four selected full material shaders have complete parsed tables. Full UE shader archive deserialization is not claimed.",
+    "sourceExtras": [
+      {
+        "exportIndex": 5611,
+        "bytes": 75593,
+        "sha256": "9c5d706b6261494e99adaa66f150849cf47994dba00ebb21b44be313cd2e6e88"
+      },
+      {
+        "exportIndex": 5623,
+        "bytes": 76992,
+        "sha256": "24f7d7ee35107f28b792e56fe985b800037e36b171226df0b2afb138af75b3df"
+      },
+      {
+        "exportIndex": 5672,
+        "bytes": 75421,
+        "sha256": "f28eb037600f5d321ed1e4ecbf62dd31512df2b829f56c1cb1ecf817fe6af275"
+      },
+      {
+        "exportIndex": 5675,
+        "bytes": 73646,
+        "sha256": "624d8235584230bb112697110c6c7724d4a2ac5f42220349738bc532ad6f2f56"
+      }
+    ],
+    "resourcePrefixesFullyParsed": 93,
+    "unparsedCandidatePrefixes": [
+      {
+        "exportIndex": 5611,
+        "shaderIndex": 20,
+        "reason": "unpack_from requires a buffer of at least 2484 bytes for unpacking 2476 bytes at offset 8 (actual buffer size is 34)"
+      },
+      {
+        "exportIndex": 5672,
+        "shaderIndex": 18,
+        "reason": "unpack_from requires a buffer of at least 2484 bytes for unpacking 2476 bytes at offset 8 (actual buffer size is 34)"
+      },
+      {
+        "exportIndex": 5675,
+        "shaderIndex": 22,
+        "reason": "unpack_from requires a buffer of at least 2484 bytes for unpacking 2476 bytes at offset 8 (actual buffer size is 34)"
+      }
+    ]
+  },
+  "inferences": [],
+  "unknowns": [
+    "Original live view normal/roughness overrides, mip bias and sampling LOD/anisotropy state.",
+    "Original lightmaps, deferred lighting, shadows, exposure and tonemapping equivalence.",
+    "Runtime material/global parameter updates beyond these recovered static parent/component instances.",
+    "Three non-selected candidate shader resource prefixes are incomplete although their DXBC containers validate.",
+    "Original runtime screenshots/GPU draws have not been compared."
+  ],
+  "acceptanceGates": [
+    "Consume manifest using original texture URLs, preserved PNG row orientation, linear weight/normal textures and sRGB albedo decoding.",
+    "Use component-local GLB POSITION.xz (0..126) plus SectionBase once for material UV.",
+    "Do not normalize weight sum: 72 original texels sum to 256/255.",
+    "Mark original-material computations separately from preview lighting; report omitted original normal basis if only geometric normal shading is used.",
+    "Compare with original runtime before claiming complete visual fidelity."
+  ],
+  "publicTerrainMaterialManifestCreated": true,
+  "boundedFollowup": "Completed; frozen uniform/preshader data and complete D3D11 resource prefixes establish texture, mask, tint and scale binding. No further expansion.",
+  "manifest": "public/assets/world/terrain-material-manifest.json",
+  "layoutSources": [
+    {
+      "path": "research/world-recovery/terrain-UE-LandscapeVertexFactory-4.26.ush",
+      "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Shaders/Private/LandscapeVertexFactory.ush",
+      "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+      "sha256": "99a7f78613ac200d923dc66164327051de13e3ca106cf9869a5b13c85eeb79f8"
+    },
+    {
+      "path": "research/world-recovery/terrain-UE-LandscapeRender-4.26.cpp",
+      "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/Landscape/Private/LandscapeRender.cpp",
+      "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+      "sha256": "485dc968694ca318c35096784e6410957a042dc120e1f2427a75b38d743b65af"
+    },
+    {
+      "path": "research/world-recovery/terrain-UE-MaterialUniformExpressions-4.26.h",
+      "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/Engine/Private/Materials/MaterialUniformExpressions.h",
+      "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+      "sha256": "4a391d56da59bcfa466a35ede09aa7e2a2bcd5d15dda10d8c7f0dbc4239d56e6"
+    },
+    {
+      "path": "research/world-recovery/terrain-UE-MaterialUniformExpressions-4.26.cpp",
+      "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/Engine/Private/Materials/MaterialUniformExpressions.cpp",
+      "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+      "sha256": "cb5ed2ca1a3fe019dae3bad4d6e9f134c2a9091cda1b5bf60eff8eb12aaa9396"
+    },
+    {
+      "path": "research/world-recovery/terrain-UE-MaterialShared-4.26.h",
+      "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/Engine/Public/MaterialShared.h",
+      "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+      "sha256": "203796b50b2189fa04436b93f943160ada65edc0013392182bf57ac8b475d624"
+    },
+    {
+      "path": "research/world-recovery/terrain-UE-D3D11Shaders-4.26.cpp",
+      "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/Windows/D3D11RHI/Private/D3D11Shaders.cpp",
+      "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+      "sha256": "c54baccfd8a8ae99ec50d272401a84a8605b64b54212935e2c695c6805301901"
+    },
+    {
+      "path": "research/world-recovery/terrain-UE-RHIDefinitions-4.26.h",
+      "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/RHI/Public/RHIDefinitions.h",
+      "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+      "sha256": "6824998a41708ca4c6eb94008855a2d436419b3e7c75eefa68f85818b5f9d168"
+    },
+    {
+      "path": "research/world-recovery/terrain-UE-ShaderCore-4.26.h",
+      "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/RenderCore/Public/ShaderCore.h",
+      "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+      "sha256": "75699b5d761bb01f9dc9f398e41cc0017b23b68f653f733aece04cc0016a1126"
+    },
+    {
+      "path": "research/world-recovery/terrain-UE-D3D11ShaderResources-4.26.h",
+      "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/Windows/D3D11RHI/Public/D3D11ShaderResources.h",
+      "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+      "sha256": "87da418de7ea9a2b4cfc054c7b4013280c0f6f81ffe1a9d38df60c7795189a63"
+    }
+  ],
+  "implementationBoundary": "No src edits. Published exact material input/compute contract; root separately integrates rendering with explicit preview lighting."
+}

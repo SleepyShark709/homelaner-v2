@@ -1,0 +1,6228 @@
+{
+  "scope": "All recovered SplineMesh components; no name-based road selection; includes sidewalks/curbs if original component is SplineMesh. No runtime shading or pixel-equivalence claim.",
+  "manifestSha256": "48718ae5d490ed07f1eeab9f09ef9baa5d2492d9b0a781665cefcc22651be73c",
+  "materialManifestSha256": "18c61a03877ceb20d915758d79c0613aa5d9e1d31a0701e93658111b19ffda9f",
+  "summary": {
+    "renderObjects": 212,
+    "originalSplineComponents": 1952,
+    "originalMeshPackages": 9,
+    "effectiveMaterials": 8,
+    "originalToBakedUVPointsExactlyEqual": 633762,
+    "bakedToBatchedUVPointsExactlyEqual": 633178,
+    "missingTextureFiles": 0
+  },
+  "objects": [
+    {
+      "id": "spline-batch-MainLevel-c39c4805e7d8",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-8017ea9d6240",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 20,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-0eb5eeebdc63",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Environment/meshes/Platformer_Bridge_01",
+      "sourceComponentCount": 5,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Environment/materials/Bridge_01_Material",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-53b43dacfa3f",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-3adcd3ddc595",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-944a69fd09ec",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-da55cd9b4841",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-503c51ba5d2a",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-398380db944d",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-5e6ecafb08cf",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-d5a258a6f9f1",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-e570d88f24f2",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-2a377033fb34",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_A",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-a54f0aa60325",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-cc0634bd13e2",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-8c3b4bbb2110",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_A",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-3762ab2c5e37",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-cd719bd52a65",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 18,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-cbd32567136c",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-553d52e74343",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-baead18ce560",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-cd6ea6c1fb76",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Environment/meshes/Platformer_Bridge_01",
+      "sourceComponentCount": 4,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Environment/materials/Bridge_01_Material",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-055252a23165",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-fd0367bb83f0",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-ba327cf85a1a",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-12614052f236",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-e0d2fe4a733a",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-b13ec42d4750",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-0d2c55520eff",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-d7a27427095e",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 17,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-af7c2cadd47f",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-aac20a85ff4c",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-ae1dc26f62c9",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 5,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-2dd3497f3d9f",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 14,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-1d426bdd0550",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-eac2bc3bb8bf",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 19,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-dd198f106739",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 15,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-560da420f862",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-9743e052afbd",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 7,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-4a9cdad8e1db",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-9a511e7bdd57",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-ab398c772ab8",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-a13a891b3c42",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-96caa82406c0",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-0e0ce72a7a46",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-1fb4ee5e34d2",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-91416abaa50e",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-11128db9e1fb",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-749cd4eb93fd",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-0247312814ef",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-8fa639bfd7f1",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-ba5d385e621f",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-46af2d609b2f",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-d92eb9c0a98a",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-7af3497f5e5e",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-dc90e30ed860",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-2d32410a10cf",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 3,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-d3a4afb19d6a",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 4,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-6a1d3ae6f90f",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-f0a1e3393742",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-25c1b3ab4d38",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-81699ca5d41b",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-1dfe26d3d75d",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-7726621e7784",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-911bdd19bbf1",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-f6bef491a4f7",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-4e6504960bdd",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-52b2623067db",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-6c7a211eb812",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 19,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-02ae247378be",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-733bd77285dc",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-4eac81847467",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-ea1e9dffe186",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-58f93a398e73",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-30dca918bd1e",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-5b2bb631efe2",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-9ec9aac6eb15",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-b26fabe38b6b",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-34a3d368bd86",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 19,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-4ad5dec197b6",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-5519770f2217",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-baf84cfb9959",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-45769807a52b",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-49120fed5223",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-41f9bf7c26b6",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-59e7d31c336a",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-755f315d6e3f",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-adbf920caa07",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-1c9fd03d5481",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-0ccac011a054",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_B",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-242e282d5070",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-6f01566112cb",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_A",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-68ec3d667bc4",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-d5de6e595878",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-767775c493b1",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-8a8ea7e215cb",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Medium_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-f712bb5bb9be",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-02bb90f31480",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-ff3aa9c6e5b5",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-cb078093fc73",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-41391ccf27ea",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-c7ec081b453a",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-1c889423e580",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-37e51981abc2",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-23065f953603",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-3f355706bb9c",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 18,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-aab5c4febcae",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-af12f71b85b4",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-c526e6bc8ca3",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-8fe63affe921",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-1fb2dcbf3a35",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-2ba355fbd9b7",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-62fcb5583b90",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-ea96e41d23a7",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-3349cc6c5621",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-badcce9df2eb",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-0be74f1948ac",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-8e8a3e4aa3c4",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-347a81937a28",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-e98de8c9369c",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-ad92ba04fa04",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-b2ae4c578e45",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 18,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-dcc96cda06f7",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-b2d0964de9a4",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 3,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-2413851d2a30",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 5,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-36a899e45947",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-c98171d2b311",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-6b65cb945c1b",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-e1d2edceb47b",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-6c4490ebadc9",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-871c28364b9a",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-164ead107311",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-1c9bc6adccac",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-b53ab8df3df3",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 7,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-96cd8bf599c7",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 7,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-86a3355d334f",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-e2ae19952ba8",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 9,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-d8b24c07e58d",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 6,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-1c5d0eb3c9b9",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-c70309dd1e10",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 7,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-3eb0f7c5e199",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-4420b22d5592",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 7,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-d48f2ecd73cd",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Small_A",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-396bcddeded5",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 5,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-77bf6fa47609",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-7ae4ec1ade25",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 5,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-318e46821be7",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-33642d448afa",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-851b08ea4ef5",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-4908ee0d2445",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-5fc54e444903",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-b0b35ce7e329",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-4f122507b712",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-365110cb8281",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-63fd14e8387e",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 7,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-628684664702",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-aa8e0ec21384",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+      "sourceComponentCount": 5,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-3769e5a2709b",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-ef0ca5ca63e4",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-2bc7c3827a19",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-303c0834b508",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-bc7a359bf639",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-ad44652f7c8a",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-e27ea06864ca",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-3340ed72cbe6",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-afa5a004625d",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 15,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-a7841592e3ae",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 3,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-aed44e32de1c",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-1ee86bd6aa2b",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-4191fcd9c6c0",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-787ee0a97f1c",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-d72ef64f12c4",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-66059c73232c",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-c1f98bd00c06",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 8,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-65cfed4d5e69",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 5,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-e837a655748b",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 15,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MainLevel:8921",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 1,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-36f841ea538d",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 14,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-a8061bd76e27",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-b36f44d8c7f0",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-07047496a1db",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-5e2155399f04",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-7bcbd9276c77",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-82def8bdfb8e",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-d2b737f1213d",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Environment/meshes/Platformer_Bridge_01",
+      "sourceComponentCount": 3,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Environment/materials/Bridge_01_Material",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-2b34c35b3702",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-819b58b093d0",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 6,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-e8fbb2953e6a",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-2877ab243466",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-44910b143b45",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-7e4355f24ca7",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-29c5e4ab698e",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 10,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-1b0a6cf4ecf0",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-248906beacbd",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-58a1f3650cb9",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-8d9d37721b5d",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-868eb0edb7e6",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 3,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-883472285f55",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+      "sourceComponentCount": 11,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadMisc_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-ee9a64d1021e",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/-HeroGame/Mesh/SM_Cube100x100",
+      "sourceComponentCount": 3,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/-HeroGame/Materials/MaterialInstance/MI_Grass",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MainLevel:9176",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/-HeroGame/Mesh/SM_Cube100x100",
+      "sourceComponentCount": 1,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/-HeroGame/Materials/MaterialInstance/MI_Grass",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MainLevel:9178",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/-HeroGame/Mesh/SM_Cube100x100",
+      "sourceComponentCount": 1,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/-HeroGame/Materials/MaterialInstance/MI_Grass",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-ab51beabfe25",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/-HeroGame/Mesh/SM_Cube100x100",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick5",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-16f8234dc6cc",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/-HeroGame/Mesh/SM_Cube100x100",
+      "sourceComponentCount": 3,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick5",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MainLevel:9188",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/-HeroGame/Mesh/SM_Cube100x100",
+      "sourceComponentCount": 1,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick5",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-6fd8cca186cc",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/-HeroGame/Mesh/SM_Cube100x100",
+      "sourceComponentCount": 3,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick5",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MainLevel:9192",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/-HeroGame/Mesh/SM_Cube100x100",
+      "sourceComponentCount": 1,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick5",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MainLevel:9194",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/-HeroGame/Mesh/SM_Cube100x100",
+      "sourceComponentCount": 1,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick4",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-259464a8e321",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/-HeroGame/Mesh/SM_Cube100x100",
+      "sourceComponentCount": 3,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick4",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MainLevel:9197",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/-HeroGame/Mesh/SM_Cube100x100",
+      "sourceComponentCount": 1,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick4",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-9fe458d88f61",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 13,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-e92bf03ef2f2",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 12,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spline-batch-MainLevel-b103e21b3739",
+      "level": "MainLevel",
+      "sourcePackage": "/Game/Downtown/Meshes/Road_Large_A",
+      "sourceComponentCount": 2,
+      "sections": [
+        {
+          "section": 0,
+          "originalSlot": 0,
+          "material": "/Game/Downtown/Materials/RoadDecals_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        },
+        {
+          "section": 1,
+          "originalSlot": 1,
+          "material": "/Game/Downtown/Materials/RoadMain_A_Inst",
+          "uvChannels": [
+            "TEXCOORD_0",
+            "TEXCOORD_1"
+          ]
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "package": "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick4",
+      "baseMaterial": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "status": "partial-dxbc-recovery",
+      "baseColorChannel": null,
+      "shaderRecovery": {
+        "version": 1,
+        "kind": "world-triplanar",
+        "status": "original-cooked-computation-statically-recovered",
+        "authoritativeRoles": [
+          "baseColor",
+          "normal",
+          "roughness",
+          "metallic"
+        ],
+        "worldScaleUEcmNegative": [
+          -512.0,
+          -512.0,
+          -512.0
+        ],
+        "originUEcm": [
+          0,
+          0,
+          0
+        ],
+        "tintLinear": [
+          0.36458298563957214,
+          0.36458298563957214,
+          0.36458298563957214
+        ],
+        "normalIntensity": 1.0,
+        "roughnessMultiplier": 1.0,
+        "metallic": 0.0,
+        "textures": {
+          "normal": {
+            "url": "/assets/world/textures/Game/UrbanCity/Textures/Tileable/concrete_ground_03_n.png",
+            "colorSpace": "linear",
+            "texturePackage": "/Game/UrbanCity/Textures/Tileable/concrete_ground_03_n",
+            "channel": "rgb",
+            "texCoord": 0,
+            "sourceParameter": "World Align Normal",
+            "evidence": {
+              "file": "research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json",
+              "pointer": "/shaders/0",
+              "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster"
+            },
+            "shaderEvidence": {
+              "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+              "assemblyLines": [
+                82,
+                134
+              ],
+              "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+              "textureRegister": 6,
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "componentSwizzle": "rgb"
+            },
+            "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+            "uvMappingStatus": "original TEXCOORD0",
+            "normalConvention": "directx",
+            "normalValidation": {
+              "greenChannelTransformation": "unchanged-from-cooked-BC5",
+              "validation": "592 pixels / 37 distributed BC5 blocks: original R/G match within 1; inverted G hypothesis rejected",
+              "sourceBulkSha256": "d67f776a78108f780c87bea17505b007e8b4bf1d8a082d531d221cd36d0127b3"
+            }
+          },
+          "baseColor": {
+            "url": "/assets/world/textures/Game/UrbanCity/Textures/Tileable/concrete_ground_03_d.png",
+            "colorSpace": "srgb",
+            "texturePackage": "/Game/UrbanCity/Textures/Tileable/concrete_ground_03_d",
+            "channel": "rgb",
+            "texCoord": 0,
+            "sourceParameter": "World Aligned Albedo",
+            "evidence": {
+              "file": "research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json",
+              "pointer": "/shaders/0",
+              "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster"
+            },
+            "shaderEvidence": {
+              "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+              "assemblyLines": [
+                136,
+                145
+              ],
+              "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+              "textureRegister": 7,
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "componentSwizzle": "rgb"
+            },
+            "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+            "uvMappingStatus": "original TEXCOORD0"
+          },
+          "roughness": {
+            "url": "/assets/world/textures/Game/UrbanCity/Textures/Tileable/concrete_ground_03_r.png",
+            "colorSpace": "srgb",
+            "texturePackage": "/Game/UrbanCity/Textures/Tileable/concrete_ground_03_r",
+            "channel": "r",
+            "texCoord": 0,
+            "sourceParameter": "World Aligned Roughness",
+            "evidence": {
+              "file": "research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json",
+              "pointer": "/shaders/0",
+              "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster"
+            },
+            "shaderEvidence": {
+              "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+              "assemblyLines": [
+                146,
+                154
+              ],
+              "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+              "textureRegister": 8,
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "componentSwizzle": "r"
+            },
+            "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+            "uvMappingStatus": "original TEXCOORD0"
+          }
+        },
+        "formula": {
+          "vertexTangentFrame": "For static meshes: Blocal=cross(Nlocal,Tlocal)*localHand; Tcorrected=cross(Blocal,Nlocal)*localHand. Build noScaleWorld by dividing each finalWorld basis axis by its positive length (retain negative-axis sign). VS T=noScaleWorld*Tcorrected, N=noScaleWorld*Nlocal, hand=original tangent sign*primitive determinant sign. No inverse-transpose and no output-vector normalization. For original UE instanced path its matrix axes are individually normalized before the same transform; exact original instance sign policy is separately recorded.",
+          "position": "absoluteUEcm = 100 * worldPositionRHmeters.xzy + originUEcm; q = absoluteUEcm / worldScaleUEcmNegative",
+          "sourcePreViewTranslation": "Original PS: TEXCOORD9 translated world position minus View.PreViewTranslation (cb0[70].xyz). Web absolute world position already excludes camera translation; do not subtract camera position. Use final world position after every actor/instance transform.",
+          "normalCoordinates": "T=v0.xyz and N=v1.xyz are unnormalized linear-centroid pixel interpolants of original world tangent/normal. B=cross(N,T)*v1.w is rebuilt per pixel; do NOT normalize T,N,B before weight/projection math. Convert the correct original Web RH basis by .xzy; preserve reflection and instance determinant handedness.",
+          "weightsColor": "blendX=clamp(3*abs(N.x)-1,0,1); blendZ=clamp(3*abs(N.z)-1,0,1)",
+          "baseColor": "clamp(mix(mix(sampleAlbedo(q.xz).rgb,sampleAlbedo(q.yz).rgb,blendX),sampleAlbedo(q.xy).rgb,blendZ)*tintLinear,0,1)",
+          "roughness": "clamp(mix(mix(sampleRoughness(q.xz).r,sampleRoughness(q.yz).r,blendX),sampleRoughness(q.xy).r,blendZ)*roughnessMultiplier,0,1)",
+          "normalDecode": "decode(uv)=vec3(2*sampleNormal(uv).rg-1,sqrt(max(1-dot(2*sampleNormal(uv).rg-1,2*sampleNormal(uv).rg-1),0)))",
+          "normalProjection": "a=decode(q.xz); b=decode(q.yz); c=decode(q.xy); nxz=vec3(-a.x,a.z*N.y,-a.y); nyz=vec3(b.z*N.x,-b.x,-b.y); nxy=vec3(-c.x,-c.y,c.z*N.z)",
+          "normalBlend": "W=normalize(mix(mix(nxz,nyz,clamp(abs(N.x),0,1)),nxy,clamp(abs(N.z),0,1)))",
+          "normalIntensity": "nT=normalize(vec3(dot(T,W)*normalIntensity,dot(B,W)*normalIntensity,dot(N,W))); outUE=normalize(T*nT.x+B*nT.y+N*nT.z); worldNormalRH=outUE.xzy",
+          "normalIntensityOrthonormalEquivalent": "Not valid generally for the original interpolated frame. Only mathematically valid for a proven orthonormal TBN: outUE=normalize(normalIntensity*W + (1-normalIntensity)*dot(N,W)*N)",
+          "sampling": "Texture RGB decoded using original SRGB state; alpha remains linear. Repeat wrap; original PNG rows unchanged. No green-channel flip for the explicit UE world normal projection.",
+          "metallic": "clamp(metallic,0,1)",
+          "specular": "0.5 UE default-lit scalar (F0=0.04 for dielectric)",
+          "selectionEmissive": "SelectionColor.rgb*SelectionColor.a; default zero; preserve if set"
+        },
+        "factorPolicy": "Plugin writes final baseColor,roughness,metallic and worldNormal; do not reapply generic channels/factors to these roles.",
+        "evidence": {
+          "bindingFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\bindings.json",
+          "materialConstantBuffer": 3,
+          "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+          "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+          "normalLines": [
+            80,
+            134
+          ],
+          "colorAndRoughnessLines": [
+            135,
+            156
+          ]
+        },
+        "limitations": [
+          "Static original material operations, not lighting/postprocess equivalence.",
+          "World-aligned normal requires geometric original world normal and orthonormal tangent frame or full stated TBN formula.",
+          "Origin remains zero in current export; update originUEcm if future origin rebasing is introduced."
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "World Aligned Albedo",
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_03_d",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/UrbanCity/Textures/Tileable/concrete_ground_03_d.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "World Aligned Roughness",
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_03_r",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/UrbanCity/Textures/Tileable/concrete_ground_03_r.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "World Align Normal",
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_03_n",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/UrbanCity/Textures/Tileable/concrete_ground_03_n.png",
+          "fileExists": true
+        }
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick5",
+      "baseMaterial": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "status": "partial-dxbc-recovery",
+      "baseColorChannel": null,
+      "shaderRecovery": {
+        "version": 1,
+        "kind": "world-triplanar",
+        "status": "original-cooked-computation-statically-recovered",
+        "authoritativeRoles": [
+          "baseColor",
+          "normal",
+          "roughness",
+          "metallic"
+        ],
+        "worldScaleUEcmNegative": [
+          -512.0,
+          -512.0,
+          -512.0
+        ],
+        "originUEcm": [
+          0,
+          0,
+          0
+        ],
+        "tintLinear": [
+          0.78125,
+          0.5289710164070129,
+          0.5289710164070129
+        ],
+        "normalIntensity": 1.0,
+        "roughnessMultiplier": 0.6499999761581421,
+        "metallic": 0.0,
+        "textures": {
+          "normal": {
+            "url": "/assets/world/textures/Game/GTFreeMaterials/Textures/Brick_chicagoStyle/Brick_chicagoStyle_2k_n.png",
+            "colorSpace": "linear",
+            "texturePackage": "/Game/GTFreeMaterials/Textures/Brick_chicagoStyle/Brick_chicagoStyle_2k_n",
+            "channel": "rgb",
+            "texCoord": 0,
+            "sourceParameter": "World Align Normal",
+            "evidence": {
+              "file": "research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json",
+              "pointer": "/shaders/0",
+              "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster"
+            },
+            "shaderEvidence": {
+              "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+              "assemblyLines": [
+                82,
+                134
+              ],
+              "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+              "textureRegister": 6,
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "componentSwizzle": "rgb"
+            },
+            "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+            "uvMappingStatus": "original TEXCOORD0",
+            "normalConvention": "directx",
+            "normalValidation": {
+              "greenChannelTransformation": "unchanged-from-cooked-BC5",
+              "validation": "592 pixels / 37 distributed BC5 blocks: original R/G match within 1; inverted G hypothesis rejected",
+              "sourceBulkSha256": "547969f555dae161ddeaf0116e3847a6beff92f4cc6097e55fdf30a993f20baa"
+            }
+          },
+          "baseColor": {
+            "url": "/assets/world/textures/Game/GTFreeMaterials/Textures/Brick_chicagoStyle/Brick_chicagoStyle_2k_alb.png",
+            "colorSpace": "srgb",
+            "texturePackage": "/Game/GTFreeMaterials/Textures/Brick_chicagoStyle/Brick_chicagoStyle_2k_alb",
+            "channel": "rgb",
+            "texCoord": 0,
+            "sourceParameter": "World Aligned Albedo",
+            "evidence": {
+              "file": "research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json",
+              "pointer": "/shaders/0",
+              "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster"
+            },
+            "shaderEvidence": {
+              "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+              "assemblyLines": [
+                136,
+                145
+              ],
+              "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+              "textureRegister": 7,
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "componentSwizzle": "rgb"
+            },
+            "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+            "uvMappingStatus": "original TEXCOORD0"
+          },
+          "roughness": {
+            "url": "/assets/world/textures/Game/Action_Male/Textures/T_White.png",
+            "colorSpace": "linear",
+            "texturePackage": "/Game/Action_Male/Textures/T_White",
+            "channel": "r",
+            "texCoord": 0,
+            "sourceParameter": "World Aligned Roughness",
+            "evidence": {
+              "file": "research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json",
+              "pointer": "/shaders/0",
+              "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster"
+            },
+            "shaderEvidence": {
+              "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+              "assemblyLines": [
+                146,
+                154
+              ],
+              "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+              "textureRegister": 8,
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "componentSwizzle": "r"
+            },
+            "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+            "uvMappingStatus": "original TEXCOORD0"
+          }
+        },
+        "formula": {
+          "vertexTangentFrame": "For static meshes: Blocal=cross(Nlocal,Tlocal)*localHand; Tcorrected=cross(Blocal,Nlocal)*localHand. Build noScaleWorld by dividing each finalWorld basis axis by its positive length (retain negative-axis sign). VS T=noScaleWorld*Tcorrected, N=noScaleWorld*Nlocal, hand=original tangent sign*primitive determinant sign. No inverse-transpose and no output-vector normalization. For original UE instanced path its matrix axes are individually normalized before the same transform; exact original instance sign policy is separately recorded.",
+          "position": "absoluteUEcm = 100 * worldPositionRHmeters.xzy + originUEcm; q = absoluteUEcm / worldScaleUEcmNegative",
+          "sourcePreViewTranslation": "Original PS: TEXCOORD9 translated world position minus View.PreViewTranslation (cb0[70].xyz). Web absolute world position already excludes camera translation; do not subtract camera position. Use final world position after every actor/instance transform.",
+          "normalCoordinates": "T=v0.xyz and N=v1.xyz are unnormalized linear-centroid pixel interpolants of original world tangent/normal. B=cross(N,T)*v1.w is rebuilt per pixel; do NOT normalize T,N,B before weight/projection math. Convert the correct original Web RH basis by .xzy; preserve reflection and instance determinant handedness.",
+          "weightsColor": "blendX=clamp(3*abs(N.x)-1,0,1); blendZ=clamp(3*abs(N.z)-1,0,1)",
+          "baseColor": "clamp(mix(mix(sampleAlbedo(q.xz).rgb,sampleAlbedo(q.yz).rgb,blendX),sampleAlbedo(q.xy).rgb,blendZ)*tintLinear,0,1)",
+          "roughness": "clamp(mix(mix(sampleRoughness(q.xz).r,sampleRoughness(q.yz).r,blendX),sampleRoughness(q.xy).r,blendZ)*roughnessMultiplier,0,1)",
+          "normalDecode": "decode(uv)=vec3(2*sampleNormal(uv).rg-1,sqrt(max(1-dot(2*sampleNormal(uv).rg-1,2*sampleNormal(uv).rg-1),0)))",
+          "normalProjection": "a=decode(q.xz); b=decode(q.yz); c=decode(q.xy); nxz=vec3(-a.x,a.z*N.y,-a.y); nyz=vec3(b.z*N.x,-b.x,-b.y); nxy=vec3(-c.x,-c.y,c.z*N.z)",
+          "normalBlend": "W=normalize(mix(mix(nxz,nyz,clamp(abs(N.x),0,1)),nxy,clamp(abs(N.z),0,1)))",
+          "normalIntensity": "nT=normalize(vec3(dot(T,W)*normalIntensity,dot(B,W)*normalIntensity,dot(N,W))); outUE=normalize(T*nT.x+B*nT.y+N*nT.z); worldNormalRH=outUE.xzy",
+          "normalIntensityOrthonormalEquivalent": "Not valid generally for the original interpolated frame. Only mathematically valid for a proven orthonormal TBN: outUE=normalize(normalIntensity*W + (1-normalIntensity)*dot(N,W)*N)",
+          "sampling": "Texture RGB decoded using original SRGB state; alpha remains linear. Repeat wrap; original PNG rows unchanged. No green-channel flip for the explicit UE world normal projection.",
+          "metallic": "clamp(metallic,0,1)",
+          "specular": "0.5 UE default-lit scalar (F0=0.04 for dielectric)",
+          "selectionEmissive": "SelectionColor.rgb*SelectionColor.a; default zero; preserve if set"
+        },
+        "factorPolicy": "Plugin writes final baseColor,roughness,metallic and worldNormal; do not reapply generic channels/factors to these roles.",
+        "evidence": {
+          "bindingFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\bindings.json",
+          "materialConstantBuffer": 3,
+          "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+          "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+          "normalLines": [
+            80,
+            134
+          ],
+          "colorAndRoughnessLines": [
+            135,
+            156
+          ]
+        },
+        "limitations": [
+          "Static original material operations, not lighting/postprocess equivalence.",
+          "World-aligned normal requires geometric original world normal and orthonormal tangent frame or full stated TBN formula.",
+          "Origin remains zero in current export; update originUEcm if future origin rebasing is introduced."
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "World Aligned Albedo",
+          "package": "/Game/GTFreeMaterials/Textures/Brick_chicagoStyle/Brick_chicagoStyle_2k_alb",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/GTFreeMaterials/Textures/Brick_chicagoStyle/Brick_chicagoStyle_2k_alb.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "World Aligned Roughness",
+          "package": "/Game/Action_Male/Textures/T_White",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Action_Male/Textures/T_White.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "World Align Normal",
+          "package": "/Game/GTFreeMaterials/Textures/Brick_chicagoStyle/Brick_chicagoStyle_2k_n",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/GTFreeMaterials/Textures/Brick_chicagoStyle/Brick_chicagoStyle_2k_n.png",
+          "fileExists": true
+        }
+      ]
+    },
+    {
+      "package": "/Game/-HeroGame/Materials/MaterialInstance/MI_Grass",
+      "baseMaterial": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "status": "partial-dxbc-recovery",
+      "baseColorChannel": null,
+      "shaderRecovery": {
+        "version": 1,
+        "kind": "world-triplanar",
+        "status": "original-cooked-computation-statically-recovered",
+        "authoritativeRoles": [
+          "baseColor",
+          "normal",
+          "roughness",
+          "metallic"
+        ],
+        "worldScaleUEcmNegative": [
+          -512.0,
+          -512.0,
+          -512.0
+        ],
+        "originUEcm": [
+          0,
+          0,
+          0
+        ],
+        "tintLinear": [
+          0.24794700741767883,
+          0.27083298563957214,
+          0.16503900289535522
+        ],
+        "normalIntensity": 1.0,
+        "roughnessMultiplier": 1.0,
+        "metallic": 0.0,
+        "textures": {
+          "normal": {
+            "url": "/assets/world/textures/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_n.png",
+            "colorSpace": "linear",
+            "texturePackage": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_n",
+            "channel": "rgb",
+            "texCoord": 0,
+            "sourceParameter": "World Align Normal",
+            "evidence": {
+              "file": "research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json",
+              "pointer": "/shaders/0",
+              "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster"
+            },
+            "shaderEvidence": {
+              "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+              "assemblyLines": [
+                82,
+                134
+              ],
+              "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+              "textureRegister": 6,
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "componentSwizzle": "rgb"
+            },
+            "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+            "uvMappingStatus": "original TEXCOORD0",
+            "normalConvention": "directx",
+            "normalValidation": {
+              "greenChannelTransformation": "unchanged-from-cooked-BC5",
+              "validation": "592 pixels / 37 distributed BC5 blocks: original R/G match within 1; inverted G hypothesis rejected",
+              "sourceBulkSha256": "69b14edb9e24beb40807e0de6e3e6e9841147ee7097a75c7dfbebcc50a235b8a"
+            }
+          },
+          "baseColor": {
+            "url": "/assets/world/textures/Game/OilRefinery/Textures/T_Grass_v02_BC.png",
+            "colorSpace": "srgb",
+            "texturePackage": "/Game/OilRefinery/Textures/T_Grass_v02_BC",
+            "channel": "rgb",
+            "texCoord": 0,
+            "sourceParameter": "World Aligned Albedo",
+            "evidence": {
+              "file": "research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json",
+              "pointer": "/shaders/0",
+              "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster"
+            },
+            "shaderEvidence": {
+              "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+              "assemblyLines": [
+                136,
+                145
+              ],
+              "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+              "textureRegister": 7,
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "componentSwizzle": "rgb"
+            },
+            "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+            "uvMappingStatus": "original TEXCOORD0"
+          },
+          "roughness": {
+            "url": "/assets/world/textures/Game/Action_Male/Textures/T_White.png",
+            "colorSpace": "linear",
+            "texturePackage": "/Game/Action_Male/Textures/T_White",
+            "channel": "r",
+            "texCoord": 0,
+            "sourceParameter": "World Aligned Roughness",
+            "evidence": {
+              "file": "research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json",
+              "pointer": "/shaders/0",
+              "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster"
+            },
+            "shaderEvidence": {
+              "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+              "assemblyLines": [
+                146,
+                154
+              ],
+              "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+              "textureRegister": 8,
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "componentSwizzle": "r"
+            },
+            "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+            "uvMappingStatus": "original TEXCOORD0"
+          }
+        },
+        "formula": {
+          "vertexTangentFrame": "For static meshes: Blocal=cross(Nlocal,Tlocal)*localHand; Tcorrected=cross(Blocal,Nlocal)*localHand. Build noScaleWorld by dividing each finalWorld basis axis by its positive length (retain negative-axis sign). VS T=noScaleWorld*Tcorrected, N=noScaleWorld*Nlocal, hand=original tangent sign*primitive determinant sign. No inverse-transpose and no output-vector normalization. For original UE instanced path its matrix axes are individually normalized before the same transform; exact original instance sign policy is separately recorded.",
+          "position": "absoluteUEcm = 100 * worldPositionRHmeters.xzy + originUEcm; q = absoluteUEcm / worldScaleUEcmNegative",
+          "sourcePreViewTranslation": "Original PS: TEXCOORD9 translated world position minus View.PreViewTranslation (cb0[70].xyz). Web absolute world position already excludes camera translation; do not subtract camera position. Use final world position after every actor/instance transform.",
+          "normalCoordinates": "T=v0.xyz and N=v1.xyz are unnormalized linear-centroid pixel interpolants of original world tangent/normal. B=cross(N,T)*v1.w is rebuilt per pixel; do NOT normalize T,N,B before weight/projection math. Convert the correct original Web RH basis by .xzy; preserve reflection and instance determinant handedness.",
+          "weightsColor": "blendX=clamp(3*abs(N.x)-1,0,1); blendZ=clamp(3*abs(N.z)-1,0,1)",
+          "baseColor": "clamp(mix(mix(sampleAlbedo(q.xz).rgb,sampleAlbedo(q.yz).rgb,blendX),sampleAlbedo(q.xy).rgb,blendZ)*tintLinear,0,1)",
+          "roughness": "clamp(mix(mix(sampleRoughness(q.xz).r,sampleRoughness(q.yz).r,blendX),sampleRoughness(q.xy).r,blendZ)*roughnessMultiplier,0,1)",
+          "normalDecode": "decode(uv)=vec3(2*sampleNormal(uv).rg-1,sqrt(max(1-dot(2*sampleNormal(uv).rg-1,2*sampleNormal(uv).rg-1),0)))",
+          "normalProjection": "a=decode(q.xz); b=decode(q.yz); c=decode(q.xy); nxz=vec3(-a.x,a.z*N.y,-a.y); nyz=vec3(b.z*N.x,-b.x,-b.y); nxy=vec3(-c.x,-c.y,c.z*N.z)",
+          "normalBlend": "W=normalize(mix(mix(nxz,nyz,clamp(abs(N.x),0,1)),nxy,clamp(abs(N.z),0,1)))",
+          "normalIntensity": "nT=normalize(vec3(dot(T,W)*normalIntensity,dot(B,W)*normalIntensity,dot(N,W))); outUE=normalize(T*nT.x+B*nT.y+N*nT.z); worldNormalRH=outUE.xzy",
+          "normalIntensityOrthonormalEquivalent": "Not valid generally for the original interpolated frame. Only mathematically valid for a proven orthonormal TBN: outUE=normalize(normalIntensity*W + (1-normalIntensity)*dot(N,W)*N)",
+          "sampling": "Texture RGB decoded using original SRGB state; alpha remains linear. Repeat wrap; original PNG rows unchanged. No green-channel flip for the explicit UE world normal projection.",
+          "metallic": "clamp(metallic,0,1)",
+          "specular": "0.5 UE default-lit scalar (F0=0.04 for dielectric)",
+          "selectionEmissive": "SelectionColor.rgb*SelectionColor.a; default zero; preserve if set"
+        },
+        "factorPolicy": "Plugin writes final baseColor,roughness,metallic and worldNormal; do not reapply generic channels/factors to these roles.",
+        "evidence": {
+          "bindingFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\bindings.json",
+          "materialConstantBuffer": 3,
+          "shaderSha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+          "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+          "normalLines": [
+            80,
+            134
+          ],
+          "colorAndRoughnessLines": [
+            135,
+            156
+          ]
+        },
+        "limitations": [
+          "Static original material operations, not lighting/postprocess equivalence.",
+          "World-aligned normal requires geometric original world normal and orthonormal tangent frame or full stated TBN formula.",
+          "Origin remains zero in current export; update originUEcm if future origin rebasing is introduced."
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "World Aligned Albedo",
+          "package": "/Game/OilRefinery/Textures/T_Grass_v02_BC",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/OilRefinery/Textures/T_Grass_v02_BC.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "World Aligned Roughness",
+          "package": "/Game/Action_Male/Textures/T_White",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Action_Male/Textures/T_White.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "World Align Normal",
+          "package": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_n",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_n.png",
+          "fileExists": true
+        }
+      ]
+    },
+    {
+      "package": "/Game/Downtown/Materials/RoadDecals_Inst",
+      "baseMaterial": "/Game/Downtown/Materials/-Standard_Shader_Mat",
+      "status": "partial-pbr-projection",
+      "baseColorChannel": {
+        "texturePackage": "/Game/Downtown/Textures/RoadDecals_A",
+        "url": "/assets/world/textures/Game/Downtown/Textures/RoadDecals_A.png",
+        "colorSpace": "srgb",
+        "channel": "rgb",
+        "texCoord": 0,
+        "sourceParameter": "Base Color",
+        "evidence": {
+          "file": "research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\Downtown\\Materials\\RoadDecals_Inst.json",
+          "pointer": "/Exports/0/Data/3/Value/0",
+          "package": "/Game/Downtown/Materials/RoadDecals_Inst"
+        },
+        "mappingBasis": "explicit source parameter semantic; complete shader formula not recovered",
+        "uvMappingStatus": "mesh UV0 projection; original shader UV math not reconstructed"
+      },
+      "shaderRecovery": null,
+      "textures": [
+        {
+          "parameter": "Base Color",
+          "package": "/Game/Downtown/Textures/RoadDecals_A",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/RoadDecals_A.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "SpriteTexture",
+          "package": "/Engine/EngineResources/DefaultTexture",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Engine/EngineResources/DefaultTexture.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "Grunge Map",
+          "package": "/Game/Downtown/Textures/Template/Grunge_A",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/Template/Grunge_A.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "Normal",
+          "package": "/Game/Downtown/Textures/Blank_Normal",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/Blank_Normal.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "Detail Normalmap",
+          "package": "/Game/Downtown/Textures/Template/Stone_A_N",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/Template/Stone_A_N.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "Compact",
+          "package": "/Game/Downtown/Textures/ConcretePainted_C",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/ConcretePainted_C.png",
+          "fileExists": true
+        }
+      ]
+    },
+    {
+      "package": "/Game/Downtown/Materials/RoadMain_A_Inst",
+      "baseMaterial": "/Game/Downtown/Materials/-Pavement__Mat",
+      "status": "partial-pbr-projection",
+      "baseColorChannel": {
+        "texturePackage": "/Game/Downtown/Textures/RoadMain_A",
+        "url": "/assets/world/textures/Game/Downtown/Textures/RoadMain_A.png",
+        "colorSpace": "srgb",
+        "channel": "rgb",
+        "texCoord": 0,
+        "sourceParameter": "BaseColor",
+        "evidence": {
+          "file": "research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\Downtown\\Materials\\RoadMain_A_Inst.json",
+          "pointer": "/Exports/0/Data/3/Value/0",
+          "package": "/Game/Downtown/Materials/RoadMain_A_Inst"
+        },
+        "mappingBasis": "explicit source parameter semantic; complete shader formula not recovered",
+        "uvMappingStatus": "mesh UV0 projection; original shader UV math not reconstructed"
+      },
+      "shaderRecovery": null,
+      "textures": [
+        {
+          "parameter": "Height",
+          "package": "/Game/Downtown/Textures/RoadMain_H",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/RoadMain_H.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "Normal",
+          "package": "/Game/Downtown/Textures/RoadMain_N",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/RoadMain_N.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "Compact",
+          "package": "/Game/Downtown/Textures/RoadMain_C",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/RoadMain_C.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "BaseColor",
+          "package": "/Game/Downtown/Textures/RoadMain_A",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/RoadMain_A.png",
+          "fileExists": true
+        }
+      ]
+    },
+    {
+      "package": "/Game/Downtown/Materials/RoadMisc_Inst",
+      "baseMaterial": "/Game/Downtown/Materials/-Standard_Shader_Mat",
+      "status": "partial-pbr-projection",
+      "baseColorChannel": {
+        "texturePackage": "/Game/Downtown/Textures/RoadMisc_A",
+        "url": "/assets/world/textures/Game/Downtown/Textures/RoadMisc_A.png",
+        "colorSpace": "srgb",
+        "channel": "rgb",
+        "texCoord": 0,
+        "sourceParameter": "Base Color",
+        "evidence": {
+          "file": "research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\Downtown\\Materials\\RoadMisc_Inst.json",
+          "pointer": "/Exports/0/Data/3/Value/0",
+          "package": "/Game/Downtown/Materials/RoadMisc_Inst"
+        },
+        "mappingBasis": "explicit source parameter semantic; complete shader formula not recovered",
+        "uvMappingStatus": "mesh UV0 projection; original shader UV math not reconstructed"
+      },
+      "shaderRecovery": null,
+      "textures": [
+        {
+          "parameter": "Base Color",
+          "package": "/Game/Downtown/Textures/RoadMisc_A",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/RoadMisc_A.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "SpriteTexture",
+          "package": "/Engine/EngineResources/DefaultTexture",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Engine/EngineResources/DefaultTexture.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "Grunge Map",
+          "package": "/Game/Downtown/Textures/Template/Grunge_A",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/Template/Grunge_A.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "Normal",
+          "package": "/Game/Downtown/Textures/RoadMisc_N",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/RoadMisc_N.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "Detail Normalmap",
+          "package": "/Game/Downtown/Textures/Template/Stone_A_N",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/Template/Stone_A_N.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "Compact",
+          "package": "/Game/Downtown/Textures/RoadMisc_C",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/RoadMisc_C.png",
+          "fileExists": true
+        }
+      ]
+    },
+    {
+      "package": "/Game/Downtown/Materials/Sidewalk_A_Inst",
+      "baseMaterial": "/Game/Downtown/Materials/-Pavement__Mat",
+      "status": "partial-pbr-projection",
+      "baseColorChannel": {
+        "texturePackage": "/Game/Downtown/Textures/Sidewalk_A_A",
+        "url": "/assets/world/textures/Game/Downtown/Textures/Sidewalk_A_A.png",
+        "colorSpace": "srgb",
+        "channel": "rgb",
+        "texCoord": 0,
+        "sourceParameter": "BaseColor",
+        "evidence": {
+          "file": "research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\Downtown\\Materials\\Sidewalk_A_Inst.json",
+          "pointer": "/Exports/0/Data/3/Value/0",
+          "package": "/Game/Downtown/Materials/Sidewalk_A_Inst"
+        },
+        "mappingBasis": "explicit source parameter semantic; complete shader formula not recovered",
+        "uvMappingStatus": "mesh UV0 projection; original shader UV math not reconstructed"
+      },
+      "shaderRecovery": null,
+      "textures": [
+        {
+          "parameter": "Height",
+          "package": "/Game/Downtown/Textures/Sidewalk_A_H",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/Sidewalk_A_H.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "Normal",
+          "package": "/Game/Downtown/Textures/Sidewalk_A_N",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/Sidewalk_A_N.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "Compact",
+          "package": "/Game/Downtown/Textures/Sidewalk_A_C",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/Sidewalk_A_C.png",
+          "fileExists": true
+        },
+        {
+          "parameter": "BaseColor",
+          "package": "/Game/Downtown/Textures/Sidewalk_A_A",
+          "status": "exported-original-pixels",
+          "url": "/assets/world/textures/Game/Downtown/Textures/Sidewalk_A_A.png",
+          "fileExists": true
+        }
+      ]
+    },
+    {
+      "package": "/Game/Environment/materials/Bridge_01_Material",
+      "baseMaterial": "/Game/Environment/materials/Bridge_01_Material",
+      "status": "shader-unmapped",
+      "baseColorChannel": null,
+      "shaderRecovery": null,
+      "textures": []
+    }
+  ],
+  "errors": [],
+  "conclusion": "All examined original UV channels and exact native section/material overrides are preserved. Any partial shader projection listed is a material/runtime boundary, not evidence of missing road geometry or UV."
+}

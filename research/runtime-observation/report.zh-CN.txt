@@ -1,0 +1,23 @@
+UNDEFEATED 原程序运行观察 — 2026-10-24 至 2026-10-25
+
+目标：E:/SteamLibrary/steamapps/common/UNDEFEATED/UNDEFEATED/Binaries/Win64/UNDEFEATED-Win64-Shipping.exe
+EXE SHA-256：0790a47508668dafb64f097c855745abd91a8ff027c8c6b5b0766db2d01669ef
+Pak SHA-256：4aecf43f0983c756aeb0e2ef1a2030915b19858c58bd47c2179a4c3a504625cf
+菜单显示版本：2.1.0。
+
+目的：取得原程序实际启动和城市视觉证据，区分静态导出与运行观察。本次不是同机位、同操作的 Web 等价验收。
+
+步骤与结果：
+1. 启动前备份该游戏 Saved/Config 与 Saved/SaveGames，记录逐文件哈希。备份仅在本机，目录 backup-before-20261024，已排除 Git。
+2. 使用 -windowed -ResX=1280 -ResY=720 -nosplash 启动。第一次隐藏窗口启动没有可操作窗口，核对路径后停止仅由本次创建的 PID 3040；改为正常交互窗口启动 PID 29684。
+3. 通过 CUA 观察标题、按 Return 进入菜单，看到 GameStart / Options / Quit。点击 GameStart，进入现有存档的城市广场；未选新游戏、重置存档或打开外链。
+4. 观察到原主角第三人称形象、铺装广场、树木、长椅、道路和建筑。截图 original-title.png、original-start-plaza.png 是原程序窗口的实际截图。
+5. 尝试按住 E 的工具请求在输入前被 Windows 接口拒绝（不支持 durationMs），因此没有热射线或 E 行为的运行证据。
+6. Escape 显示暂停菜单，Alt+F4 关闭本次游戏；随后确认 PID 29684 已退出。
+
+用户数据：20 个备份文件逐一比较，SaveData.sav 哈希未变。GameUserSettings.ini 因窗口分辨率自动变化，确认当前哈希匹配本次观察后的值后恢复备份。一个旧 CrashReportClient 临时配置退出后缺失，保留备份而未重新制造临时目录。详细 before/after/restoration 状态见 save-comparison.json。未改动安装目录文件。
+
+结论边界：证实该原程序可以启动并进入城市，提供外观参考；没有证实运行时实际加载了全部 17 份静态基线关卡，没有验证动画状态、碰撞、攻击、任务、AI、手感或 Web 画面等价。原启动加载链的证据仍来自独立的 UAssetAPI/Kismet 静态分析（research/streaming-contract.md），不能归为运行捕获。
+
+命令行参数来源：Epic UE4.27 官方说明
+https://dev.epicgames.com/documentation/en-us/unreal-engine/command-line-arguments?application_version=4.27

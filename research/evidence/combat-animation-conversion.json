@@ -1,0 +1,1368 @@
+{
+  "sourceFiles": {
+    "research\\exports\\combat-animations\\manifest.json": "35b5f1ee99e9c90d095d20aa6ee46e7c4ca207201b110445569d96958c6e2cf2",
+    "research\\evidence\\combat-spec.json": "787396742b30027677af50f5b6fa22725d1b1fd613a313c06ed4dbfbe6da5634",
+    "research\\exports\\combat-animations\\Animations\\Hero_Attack1.psa": "fe70a11be182c7783a851a0924130a914b6cdfec1a417925f356eb8afa2ded82",
+    "research\\exports\\combat-animations\\Animations\\Hero_Attack1.config": "e7196b2d134ba194123117f5c4e761901154fffb1c1fdbed517434c04dce24e6",
+    "research\\exports\\combat-animations\\Animations\\Hero_Attack2.psa": "64152c65a264077956e6895c3b7bfca38a5553c176d297b3362956eabbdd7ccf",
+    "research\\exports\\combat-animations\\Animations\\Hero_Attack2.config": "f6b7ac84d8b8d34f91b8cf0ff94b7eb00f1a6d98081d53a351d6612ac9a5a405",
+    "research\\exports\\combat-animations\\Animations\\Hero_Attack3.psa": "0a1fe1a58d83e9a2a955d881bdd71544187b5b6479ca2bf3abb87b156d332fd0",
+    "research\\exports\\combat-animations\\Animations\\Hero_Attack3.config": "3678dbbf8739f0cbaa0e312a961aa5d0230b25c6e382d4982b6012cc32bd250a",
+    "research\\exports\\combat-animations\\Animations\\Hero_Attack4.psa": "51deebc4e613e6176b025ad9d944b5031cbcba9d6165a5a589dcc17e8838f253",
+    "research\\exports\\combat-animations\\Animations\\Hero_Attack4.config": "40ded33a0650376e686ca4a425e9844b44d72dbd0b42064823aad906742e89e5",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_LongFistForce_L.psa": "dc98c2fb88b0c1c53d0b0cdf3dd30864113e6ac31b7d76f1d1d648df8391b4b9",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_LongFistForce_L.config": "7c08c25f050c3264ef950492c691459e2b78f5f73d2def81761b988dcba11b49",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_LongFistForce_R.psa": "b3681789f0a204273787312759503225ae9b26341a3e16bc8bf382cd2b214aae",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_LongFistForce_R.config": "08965c7cc7f0f6fb9a28ee40521622a6b904fa8816a625c80b211ba967773f76",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_BackHandSlash_New.psa": "9b70e0f414575573fc6aa93e37cf7090f9973dd001a144248c57feb91d7848f4",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_BackHandSlash_New.config": "c8cfcb4c4a1a082e6000e4cc86b2cf73cc2b130abfd64b9d6115464f2cc8798f",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_FlashKick.psa": "9a37e195781e08b4568ecb2f89c48a6c07f0d0cf46e3eab39740c64b79ac71ea",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_FlashKick.config": "c1180f0cb48b77b7d239e3517c72446bbeb6cac0ced1dd0817ff62b0684eee9f",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_Smash_A.psa": "09b3e39d609817d9947b0f9b79993786568de1e1794f2176376daf4ba7a179a8",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_Smash_A.config": "c8542a25937ada46a204ff7d20a92b451ad60586efd8dde996823bf1be230d7b",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_SuperPunch.psa": "ad899324cfc9ff5508ec306404fe6272a87229af4456766a83f414598e02e484",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_SuperPunch.config": "ad7b41d2cc3f0a9cb19b7b8fa822a229f8acc83112d853017547176a4148d8cf",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_AirKick_L.psa": "7f4c18c497712d6e57b608b6b3cf7f078114b8c1dfbf481d09f548c0e95eb0df",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_AirKick_L.config": "81e21133aafa5e8df261f2b9da489e8ff60cc1eff27d5b4102d40bd6e8bc8b4b",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_AirKick_R.psa": "da02ac06a29ee8a8e7f75a5e916e57958ba5c3abf848321a9a7361a9d834687d",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_AirKick_R.config": "1b654c5d2abfce0f1e86490f0af56d4657deeb5526b3f2f6934358947938e55a",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_AirSuperKick.psa": "52cd930c91f9455536e5229df6a5e7e57f888008ca3810cc600488a9aac693d4",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_AirSuperKick.config": "935603685976850c17589fcd256016df66bcc185f100e1435eac5196f70de9f1",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_AirAttackStart.psa": "e5ac315d58898304d1d6d3acbe2d355724ff951449882ccd7a96324fc6a53a0f",
+    "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_AirAttackStart.config": "193a4fb4aa0b89ee9fdc91e0f64097eca552b50b3520f47dcf4fffd045855708"
+  },
+  "inputBaseModelCanonicalSha256": "015adf7249c002be8f3cdbb5be70c53add088fa2b0a0f238c095ceca9e059309",
+  "originalSceneAndGeometryHashes": {
+    "nodes": "3de6b1ca89c45f830b80d4a7bc70e230126e95ab72eda1410e3f109082105c91",
+    "skins": "bc9eef028866f8731b0ea7690d613eb91aefb7ba453943ab4916c7978c4d7349",
+    "meshes": "60b876eb57ddc6df625f8dbf1ab3bf6b371fa45d3fdcc0ee2bd9832be0b8ff2c",
+    "materials": "baa225bd2e5a40700e80318ef0794c29e822fc51fddb19f54b43ead1c0318771",
+    "images": "b7b3f997419a238b2207b846b74d892e0435850d948b9f087c9511904607566f",
+    "textures": "4942957abf496f0dd4b89592890f6fd130b4e675ed80ef7880df5d3bb48a9b0c",
+    "scenes": "09a90a0a479492a2a12bd40b28da366ef440490071c092a6b6f971267867a454"
+  },
+  "preservedLocomotionCanonicalSha256": "62c0eba05506ff671215e4bafa8d606dcf385f6798db52a869c357b36e627e1d",
+  "clips": [
+    {
+      "name": "Hero_Attack1",
+      "sourceFrames": 111,
+      "outputKeys": 112,
+      "fps": 66.59999084472656,
+      "duration": 1.6666668957776452,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "removedTracks": [],
+      "channels": 127,
+      "maxLocalTranslationMeters": 1.2522474635826317,
+      "allFrameWorldJointBoundsMeters": {
+        "min": [
+          -0.9144527651452453,
+          -0.1978866296048061,
+          -1.0268123925746466
+        ],
+        "max": [
+          0.5883656871164681,
+          1.6443156653404079,
+          1.118795083754753
+        ]
+      },
+      "terminalSampleHoldSeconds": 0.015015017079077883
+    },
+    {
+      "name": "Hero_Attack2",
+      "sourceFrames": 111,
+      "outputKeys": 112,
+      "fps": 66.59999084472656,
+      "duration": 1.6666668957776452,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "removedTracks": [],
+      "channels": 127,
+      "maxLocalTranslationMeters": 1.2522474635826317,
+      "allFrameWorldJointBoundsMeters": {
+        "min": [
+          -0.9144526948411262,
+          -0.197180478509086,
+          -0.8867111859385087
+        ],
+        "max": [
+          0.5664597761970077,
+          1.6442042074577534,
+          1.0179616758410162
+        ]
+      },
+      "terminalSampleHoldSeconds": 0.015015017079077883
+    },
+    {
+      "name": "Hero_Attack3",
+      "sourceFrames": 111,
+      "outputKeys": 112,
+      "fps": 66.59999084472656,
+      "duration": 1.6666668957776452,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "removedTracks": [],
+      "channels": 127,
+      "maxLocalTranslationMeters": 1.2522474635826317,
+      "allFrameWorldJointBoundsMeters": {
+        "min": [
+          -0.9144526948411262,
+          -0.19333700519408792,
+          -1.0055104810683226
+        ],
+        "max": [
+          0.5664597761970077,
+          1.6444646563361414,
+          1.0644717778547443
+        ]
+      },
+      "terminalSampleHoldSeconds": 0.015015017079077883
+    },
+    {
+      "name": "Hero_Attack4",
+      "sourceFrames": 111,
+      "outputKeys": 112,
+      "fps": 66.59999084472656,
+      "duration": 1.6666668957776452,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "removedTracks": [],
+      "channels": 127,
+      "maxLocalTranslationMeters": 1.2522474635826317,
+      "allFrameWorldJointBoundsMeters": {
+        "min": [
+          -0.9144526948411262,
+          -0.19315401816620786,
+          -0.8976492335413939
+        ],
+        "max": [
+          0.8609795556546022,
+          1.6439184082118237,
+          1.0493460327837205
+        ]
+      },
+      "terminalSampleHoldSeconds": 0.015015017079077883
+    },
+    {
+      "name": "Hero_LongFistForce_L",
+      "sourceFrames": 121,
+      "outputKeys": 122,
+      "fps": 60.49999237060547,
+      "duration": 2.000000252211421,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "removedTracks": [],
+      "channels": 127,
+      "maxLocalTranslationMeters": 1.2522474635826317,
+      "allFrameWorldJointBoundsMeters": {
+        "min": [
+          -0.9144526948411262,
+          -0.19286600612228116,
+          -0.7683544119944429
+        ],
+        "max": [
+          0.5664597761970077,
+          1.6452097201109783,
+          1.1551861174481985
+        ]
+      },
+      "terminalSampleHoldSeconds": 0.016528927704226624
+    },
+    {
+      "name": "Hero_LongFistForce_R",
+      "sourceFrames": 121,
+      "outputKeys": 122,
+      "fps": 60.49999237060547,
+      "duration": 2.000000252211421,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "removedTracks": [],
+      "channels": 127,
+      "maxLocalTranslationMeters": 1.2522474635826317,
+      "allFrameWorldJointBoundsMeters": {
+        "min": [
+          -0.9144526948411262,
+          -0.1928571797730781,
+          -0.6051001436252974
+        ],
+        "max": [
+          0.5664597761970077,
+          1.6452515632886717,
+          1.0351628202945677
+        ]
+      },
+      "terminalSampleHoldSeconds": 0.016528927704226624
+    },
+    {
+      "name": "Hero_BackHandSlash_New",
+      "sourceFrames": 121,
+      "outputKeys": 122,
+      "fps": 60.49999237060547,
+      "duration": 2.000000252211421,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "removedTracks": [],
+      "channels": 127,
+      "maxLocalTranslationMeters": 1.2522474635826317,
+      "allFrameWorldJointBoundsMeters": {
+        "min": [
+          -0.9144527651452453,
+          -0.192842661901716,
+          -0.8961380316927281
+        ],
+        "max": [
+          0.9140217889619888,
+          1.6449668736149734,
+          1.1025316937489171
+        ]
+      },
+      "terminalSampleHoldSeconds": 0.016528927704226624
+    },
+    {
+      "name": "Hero_FlashKick",
+      "sourceFrames": 71,
+      "outputKeys": 72,
+      "fps": 60.85714340209961,
+      "duration": 1.1666666562195303,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "removedTracks": [
+        {
+          "bone": "index_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "index_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "head_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_r_end",
+          "removed": "all"
+        }
+      ],
+      "channels": 77,
+      "maxLocalTranslationMeters": 1.4765765129827906,
+      "allFrameWorldJointBoundsMeters": {
+        "min": [
+          -0.9144524251344663,
+          -0.19449952341111673,
+          -1.1286808510228359
+        ],
+        "max": [
+          0.5664599142361002,
+          2.6105863560034663,
+          1.2403806488866504
+        ]
+      },
+      "terminalSampleHoldSeconds": 0.016431924735486342
+    },
+    {
+      "name": "Hero_Smash_A",
+      "sourceFrames": 81,
+      "outputKeys": 82,
+      "fps": 60.75,
+      "duration": 1.3333333333333333,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "removedTracks": [
+        {
+          "bone": "index_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "index_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "head_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_r_end",
+          "removed": "all"
+        }
+      ],
+      "channels": 77,
+      "maxLocalTranslationMeters": 1.2522475282084162,
+      "allFrameWorldJointBoundsMeters": {
+        "min": [
+          -0.914452348840521,
+          -0.20885238248286248,
+          -0.8110064264686098
+        ],
+        "max": [
+          0.5664599278465905,
+          2.4512339672767256,
+          1.1321926593552483
+        ]
+      },
+      "terminalSampleHoldSeconds": 0.01646090534979424
+    },
+    {
+      "name": "Hero_SuperPunch",
+      "sourceFrames": 121,
+      "outputKeys": 122,
+      "fps": 60.5,
+      "duration": 2.0,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "removedTracks": [
+        {
+          "bone": "index_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "index_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "head_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_r_end",
+          "removed": "all"
+        }
+      ],
+      "channels": 77,
+      "maxLocalTranslationMeters": 1.2522475320910853,
+      "allFrameWorldJointBoundsMeters": {
+        "min": [
+          -0.9144525014284116,
+          -0.2013939115595856,
+          -0.6994847009852699
+        ],
+        "max": [
+          0.5664597767733953,
+          1.56206545786058,
+          1.056748215657394
+        ]
+      },
+      "terminalSampleHoldSeconds": 0.01652892561983471
+    },
+    {
+      "name": "Hero_AirKick_L",
+      "sourceFrames": 71,
+      "outputKeys": 72,
+      "fps": 60.85714340209961,
+      "duration": 1.1666666562195303,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "removedTracks": [
+        {
+          "bone": "index_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "index_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "head_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_r_end",
+          "removed": "all"
+        }
+      ],
+      "channels": 77,
+      "maxLocalTranslationMeters": 1.2649368230030618,
+      "allFrameWorldJointBoundsMeters": {
+        "min": [
+          -0.9144524251344663,
+          0.0,
+          -0.740804258979463
+        ],
+        "max": [
+          0.9441586426243402,
+          1.9458855903736976,
+          0.8771026934327599
+        ]
+      },
+      "terminalSampleHoldSeconds": 0.016431924735486342
+    },
+    {
+      "name": "Hero_AirKick_R",
+      "sourceFrames": 71,
+      "outputKeys": 72,
+      "fps": 60.85714340209961,
+      "duration": 1.1666666562195303,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "removedTracks": [
+        {
+          "bone": "index_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "index_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "head_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_r_end",
+          "removed": "all"
+        }
+      ],
+      "channels": 77,
+      "maxLocalTranslationMeters": 1.2719410845960473,
+      "allFrameWorldJointBoundsMeters": {
+        "min": [
+          -0.9144524251344663,
+          0.0,
+          -0.753935575932234
+        ],
+        "max": [
+          0.9303331672464245,
+          1.9673602124825529,
+          1.0860071504801443
+        ]
+      },
+      "terminalSampleHoldSeconds": 0.016431924735486342
+    },
+    {
+      "name": "Hero_AirSuperKick",
+      "sourceFrames": 121,
+      "outputKeys": 122,
+      "fps": 60.5,
+      "duration": 2.0,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "removedTracks": [
+        {
+          "bone": "index_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "index_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "head_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_r_end",
+          "removed": "all"
+        }
+      ],
+      "channels": 77,
+      "maxLocalTranslationMeters": 1.2522475320910853,
+      "allFrameWorldJointBoundsMeters": {
+        "min": [
+          -0.9144525014284116,
+          0.0,
+          -1.1758448671100212
+        ],
+        "max": [
+          1.0799667551386294,
+          1.8958437909266856,
+          1.114711807631171
+        ]
+      },
+      "terminalSampleHoldSeconds": 0.01652892561983471
+    },
+    {
+      "name": "Hero_AirAttackStart",
+      "sourceFrames": 41,
+      "outputKeys": 42,
+      "fps": 61.5,
+      "duration": 0.6666666666666666,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "removedTracks": [
+        {
+          "bone": "index_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "index_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "head_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_r_end",
+          "removed": "all"
+        }
+      ],
+      "channels": 77,
+      "maxLocalTranslationMeters": 1.6751123332455744,
+      "allFrameWorldJointBoundsMeters": {
+        "min": [
+          -0.9144524632814389,
+          0.0,
+          -0.4641188716353756
+        ],
+        "max": [
+          0.5664598296907056,
+          2.1777372333146467,
+          0.4349206752928473
+        ]
+      },
+      "terminalSampleHoldSeconds": 0.016260162601626018
+    }
+  ],
+  "checks": {
+    "mainJoints": 93,
+    "accessorySkinJoints": [
+      2,
+      2
+    ],
+    "totalAnimations": 18,
+    "originalNodesSkinsMeshesMaterialsAndLocomotionPreserved": true,
+    "allSerializedKeysFinite": true,
+    "allInputTimesStrictlyIncreasing": true,
+    "noDuplicateAnimationTargets": true,
+    "bufferBoundsValid": true,
+    "allNotifiesWithinExportedDuration": true,
+    "maximumQuaternionSquaredNormError": 9.866141192915734e-08
+  },
+  "outputs": {
+    "public\\assets\\character\\hero.gltf": "e60f3e87c3ad6b1c82f4114a81186e050f520c23026654a1547ced92ed58923e",
+    "public\\assets\\character\\combat-animations.bin": "3184a8edf8876891e3796a2b73d9f156b1c4e039d73c5988d875a3c394cd90f4",
+    "public\\assets\\character\\combat-timings.json": "75e5c5a76a0040da01869a2e024915398dabead748b931ae7d4ba9fb041fea08"
+  },
+  "conversionSource": "https://github.com/gildor2/UEViewer/blob/a0bfb468d42be831b126632fd8a0ae6b3614f981/Unreal/UnrealMesh/UnAnim4.cpp#L818",
+  "limitations": [
+    "Static mathematical verification, not original-game timing observation.",
+    "Terminal last-pose hold preserves the last PSA sample duration; no additional motion poses are synthesized.",
+    "Notification metadata alone does not implement collision, particles, montage blending or action cancellation."
+  ]
+}

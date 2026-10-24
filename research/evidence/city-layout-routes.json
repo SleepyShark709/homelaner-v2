@@ -1,0 +1,129 @@
+{
+  "coordinateSystem": "gltf-rh-y-up-meters",
+  "originUE": [
+    -10000.0,
+    -55000.0,
+    0.0
+  ],
+  "scope": "Six independent original geometry spline segments, not recovered original AI routes; no invented connections.",
+  "selection": "Closest three road and three sidewalk segments to spawn after conservative bounds and expanded building-footprint screening.",
+  "routes": [
+    {
+      "evidence": {
+        "sourceMesh": "/Game/Downtown/Meshes/Road_Large_A",
+        "transverseSourceGLTFMeters": 9.5367431640625e-07,
+        "sourceSurfaceHeightRangeMeters": [
+          0.08120029419660568,
+          0.08120029419660568
+        ],
+        "sampleParameterRange": [
+          0.025,
+          0.975
+        ],
+        "method": "Transverse mesh bounds midpoint; exact highest source triangle intersection at each longitudinal sample; apply original SplineParams and full parent transform. No additional foot lift."
+      },
+      "distanceToSpawn": 9.637128499662167e-07,
+      "lengthMeters": 10.379660515410157,
+      "id": "road-SplineMeshComponent_2141",
+      "sourceComponent": "SplineMeshComponent_2141"
+    },
+    {
+      "evidence": {
+        "sourceMesh": "/Game/Downtown/Meshes/Road_Large_A",
+        "transverseSourceGLTFMeters": 9.5367431640625e-07,
+        "sourceSurfaceHeightRangeMeters": [
+          0.08120029419660568,
+          0.08120029419660568
+        ],
+        "sampleParameterRange": [
+          0.025,
+          0.975
+        ],
+        "method": "Transverse mesh bounds midpoint; exact highest source triangle intersection at each longitudinal sample; apply original SplineParams and full parent transform. No additional foot lift."
+      },
+      "distanceToSpawn": 10.915219482588332,
+      "lengthMeters": 10.365672655768012,
+      "id": "road-SplineMeshComponent_2140",
+      "sourceComponent": "SplineMeshComponent_2140"
+    },
+    {
+      "evidence": {
+        "sourceMesh": "/Game/Downtown/Meshes/Road_Large_A",
+        "transverseSourceGLTFMeters": 9.5367431640625e-07,
+        "sourceSurfaceHeightRangeMeters": [
+          0.08120029419660568,
+          0.08120029419660568
+        ],
+        "sampleParameterRange": [
+          0.025,
+          0.975
+        ],
+        "method": "Transverse mesh bounds midpoint; exact highest source triangle intersection at each longitudinal sample; apply original SplineParams and full parent transform. No additional foot lift."
+      },
+      "distanceToSpawn": 10.932060912876011,
+      "lengthMeters": 10.397788275091024,
+      "id": "road-SplineMeshComponent_2142",
+      "sourceComponent": "SplineMeshComponent_2142"
+    },
+    {
+      "evidence": {
+        "sourceMesh": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+        "transverseSourceGLTFMeters": 2.9999997138947947,
+        "sourceSurfaceHeightRangeMeters": [
+          0.14445210993289948,
+          0.15000000596046448
+        ],
+        "sampleParameterRange": [
+          0.025,
+          0.975
+        ],
+        "method": "Transverse mesh bounds midpoint; exact highest source triangle intersection at each longitudinal sample; apply original SplineParams and full parent transform. No additional foot lift."
+      },
+      "distanceToSpawn": 121.85098394260213,
+      "lengthMeters": 5.215051999506489,
+      "id": "sidewalk-SplineMeshComponent_3057",
+      "sourceComponent": "SplineMeshComponent_3057"
+    },
+    {
+      "evidence": {
+        "sourceMesh": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+        "transverseSourceGLTFMeters": 2.9999997138947947,
+        "sourceSurfaceHeightRangeMeters": [
+          0.14445210993289948,
+          0.15000000596046448
+        ],
+        "sampleParameterRange": [
+          0.025,
+          0.975
+        ],
+        "method": "Transverse mesh bounds midpoint; exact highest source triangle intersection at each longitudinal sample; apply original SplineParams and full parent transform. No additional foot lift."
+      },
+      "distanceToSpawn": 122.00729630721814,
+      "lengthMeters": 6.735556604029895,
+      "id": "sidewalk-SplineMeshComponent_3107",
+      "sourceComponent": "SplineMeshComponent_3107"
+    },
+    {
+      "evidence": {
+        "sourceMesh": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+        "transverseSourceGLTFMeters": 2.9999997138947947,
+        "sourceSurfaceHeightRangeMeters": [
+          0.14445210993289948,
+          0.15000000596046448
+        ],
+        "sampleParameterRange": [
+          0.025,
+          0.975
+        ],
+        "method": "Transverse mesh bounds midpoint; exact highest source triangle intersection at each longitudinal sample; apply original SplineParams and full parent transform. No additional foot lift."
+      },
+      "distanceToSpawn": 123.7387090685566,
+      "lengthMeters": 7.483540128842387,
+      "id": "sidewalk-SplineMeshComponent_3053",
+      "sourceComponent": "SplineMeshComponent_3053"
+    }
+  ],
+  "rejected": [],
+  "candidateCount": 211,
+  "buildingClearanceMeters": 0.5
+}

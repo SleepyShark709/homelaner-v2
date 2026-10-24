@@ -1,0 +1,55 @@
+{
+  "manifest": "E:\\undefeated-web\\public\\assets\\world\\streaming-manifest.json",
+  "sha256": "6e465d1c8289f6edf1a447615ccdff8eb2754ca9f2ba48726fa018cab9e24b23",
+  "baselineCount": 17,
+  "startupRequests": 12,
+  "triggerInstances": 11,
+  "startupLatentEdgesVerified": true,
+  "functionOffsets": [
+    {
+      "class": "HeroGameMode",
+      "functions": 75,
+      "allFunctionByteSizesMatch": true
+    },
+    {
+      "class": "BP_CityManager",
+      "functions": 12,
+      "allFunctionByteSizesMatch": true
+    },
+    {
+      "class": "BP_StoryManager",
+      "functions": 25,
+      "allFunctionByteSizesMatch": true
+    },
+    {
+      "class": "HeroGameInstance",
+      "functions": 27,
+      "allFunctionByteSizesMatch": true
+    },
+    {
+      "class": "BP_ChallengQuestSpawnPoint",
+      "functions": 45,
+      "allFunctionByteSizesMatch": true
+    },
+    {
+      "class": "BP_StoryStartPoint",
+      "functions": 10,
+      "allFunctionByteSizesMatch": true
+    }
+  ],
+  "callCounts": {
+    "LoadStreamLevel": 25,
+    "UnloadStreamLevel": 21
+  },
+  "missingCQLevelNames": [
+    "CQ_D_VHard",
+    "CQ_D_U",
+    "CQ_F_VHard",
+    "CQ_F_U"
+  ],
+  "sourceManifestSha256": {
+    "mainLevelTable": "b6ff233afe1ecd9e4628bb8a7bae1ae916074e6d9c2c1d558cd3c3a7460aad76",
+    "mapScan": "fa7d640de63ab4d833707f3ed059bd8be5ac622ef006e53287211f10c4f9bc91",
+    "callInventory": "019e7656dea76f54eb935e02876860cef7d965b88031c1db61fb9ccf5df7d703"
+  }
+}

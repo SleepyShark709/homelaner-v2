@@ -1,0 +1,29 @@
+{
+  "name": "undefeated-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local Web reconstruction of UNDEFEATED, starting with verified original assets.",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5178 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "verify:assets": "node scripts/verify-assets.mjs",
+    "verify:game": "node scripts/verify-assets.mjs --game",
+    "verify:world": "node scripts/verify-world.mjs",
+    "test:world": "node scripts/test-world.mjs",
+    "test:streaming": "node scripts/test-streaming.mjs",
+    "test:sky": "node scripts/test-sky-hdr.mjs",
+    "test": "node scripts/test-collision.mjs && node scripts/test-movement.mjs && node scripts/test-combat.mjs",
+    "build": "npm run typecheck && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4178 --strictPort"
+  },
+  "dependencies": {
+    "@babylonjs/core": "9.32.0",
+    "@babylonjs/loaders": "9.32.0"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  }
+}

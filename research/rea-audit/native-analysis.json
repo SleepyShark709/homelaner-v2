@@ -1,0 +1,639 @@
+{
+  "scope": "Initial focused native investigation; NOT full native semantic recovery or a complete Web port.",
+  "source": {
+    "name": "UNDEFEATED-Win64-Shipping.exe",
+    "digest": {
+      "sha256": "0790a47508668dafb64f097c855745abd91a8ff027c8c6b5b0766db2d01669ef"
+    },
+    "local_path": "E:\\SteamLibrary\\steamapps\\common\\UNDEFEATED\\UNDEFEATED\\Binaries\\Win64\\UNDEFEATED-Win64-Shipping.exe",
+    "format": "pe",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "parameters": {
+      "target_kind": "executable",
+      "target_format": "pe",
+      "executable_role": "application",
+      "managed": false,
+      "native_aot_metadata": {
+        "contract_revision": "rtr-9.1-x64-pe-read-only-v5",
+        "source_bytes": 134217728,
+        "work_units": 67108864,
+        "working_memory_bytes": 67108864,
+        "report_bytes": 4194304
+      },
+      "architecture": "x86_64",
+      "available_architectures": [
+        "x86_64"
+      ],
+      "import_mode": "ephemeral-source-immutable",
+      "pdb_observations": "program-info-v5",
+      "annotation_policy": "atomic-function-entry-metadata-v1",
+      "load_image_observations": "source-mappings-entry-context-v2",
+      "function_body_evidence": "complete-inclusive-ranges-v1",
+      "function_references": "complete-body-and-entry-reference-manager-v2",
+      "call_relationship_coverage": "function-body-call-coverage-v5",
+      "function_dossier_coverage": "observed-facets-and-call-relationships-v1",
+      "string_inventory_evidence": "defined-data-coverage-v1",
+      "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+      "procedure_file_offset_resolution": "address-first-unique-target-source-mapping-v2",
+      "instruction_flow_evidence": "decoded-return-pcode-v1",
+      "instruction_references": "exact-address-incoming-without-synthetic-entry-v2",
+      "function_boundary_observations": "ghidra-function-boundary-limitations-v4",
+      "no_return_repair": "disabled-windows-p0",
+      "process_launch": "official-headless-script-v1",
+      "jump_table_evidence": "typed-case-default-blocks-v1",
+      "decompiler_jump_loads": true,
+      "loader": "auto-from-header",
+      "language_id": "auto-from-header",
+      "compiler_spec_id": "auto-default",
+      "analyzer_preset": "ghidra-default+disabled:Function ID,Windows x86 PE RTTI Analyzer,Stack,x86 Constant Reference Analyzer",
+      "analysis_options": {
+        "disabled_analyzers": [
+          "Function ID",
+          "Windows x86 PE RTTI Analyzer",
+          "Stack",
+          "x86 Constant Reference Analyzer"
+        ]
+      }
+    },
+    "digest": "2dd9f52a10bf9a540caaf274f58dc95f2b6895f34322e4b3cfc98104bfd4334a"
+  },
+  "inventory": {
+    "document": "target-0790a4750866.exe",
+    "image_base": "0x140000000",
+    "segments": [
+      {
+        "name": "Headers",
+        "start": "0x140000000",
+        "end": "0x140000600",
+        "length": 1536,
+        "image_base": "0x140000000",
+        "address_space": "ram"
+      },
+      {
+        "name": ".text",
+        "start": "0x140001000",
+        "end": "0x143760600",
+        "length": 58062336,
+        "image_base": "0x140000000",
+        "address_space": "ram"
+      },
+      {
+        "name": ".rdata",
+        "start": "0x143761000",
+        "end": "0x144504000",
+        "length": 14299136,
+        "image_base": "0x140000000",
+        "address_space": "ram"
+      },
+      {
+        "name": ".data",
+        "start": "0x144504000",
+        "end": "0x144b7ac2c",
+        "length": 6777900,
+        "image_base": "0x140000000",
+        "address_space": "ram"
+      },
+      {
+        "name": ".pdata",
+        "start": "0x144b7b000",
+        "end": "0x144e39000",
+        "length": 2875392,
+        "image_base": "0x140000000",
+        "address_space": "ram"
+      },
+      {
+        "name": ".msvcjmc",
+        "start": "0x144e39000",
+        "end": "0x144e39200",
+        "length": 512,
+        "image_base": "0x140000000",
+        "address_space": "ram"
+      },
+      {
+        "name": ".rodata",
+        "start": "0x144e3a000",
+        "end": "0x144e3b200",
+        "length": 4608,
+        "image_base": "0x140000000",
+        "address_space": "ram"
+      },
+      {
+        "name": "_RDATA",
+        "start": "0x144e3c000",
+        "end": "0x144e62c00",
+        "length": 158720,
+        "image_base": "0x140000000",
+        "address_space": "ram"
+      },
+      {
+        "name": ".rsrc",
+        "start": "0x144e63000",
+        "end": "0x144e7c400",
+        "length": 103424,
+        "image_base": "0x140000000",
+        "address_space": "ram"
+      },
+      {
+        "name": ".reloc",
+        "start": "0x144e7d000",
+        "end": "0x144f96e00",
+        "length": 1154560,
+        "image_base": "0x140000000",
+        "address_space": "ram"
+      },
+      {
+        "name": "tdb",
+        "start": "0xff00000000",
+        "end": "0xff00001850",
+        "length": 6224,
+        "image_base": "0x140000000",
+        "address_space": "ram"
+      }
+    ],
+    "segment_count": 11,
+    "procedure_count": 158215,
+    "string_count": 85121
+  },
+  "overviewEvidenceId": "ev_b3187dcc5bf44994bf0f23c7c3e60707bb47ce95ad12802eb8344259aef998b6",
+  "inventoryLimitations": [
+    "Derived by an REA composed workflow.",
+    "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+    "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: Counts use the complete defined-string inventory and the same local/external function inventory as list_strings and list_procedures. They do not establish discovery of undefined strings or unidentified functions.",
+    "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+    "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: Memory-block end addresses are exclusive; segment lengths use those observed address coordinates.",
+    "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: Only Ghidra-defined string Data is observed; packed or undefined string bytes may be absent. Completeness applies to that inventory, and an empty search does not establish that text is absent from the artifact. If an address is known, use read_bytes and xrefs to inspect bytes and references.",
+    "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: The Ghidra Program references PDB UNDEFEATED-Win64-Shipping.pdb (GUID b162b98c-a929-4790-ab85-7ad2ba383b08, age (hex) 1, signature unknown, version RSDS); Ghidra reports load state unknown. Original names and types may be missing; an empty name search does not prove a procedure is absent. Use list_procedures and address-based analysis to inspect recovered functions. REA does not admit a caller-selected PDB companion.",
+    "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+    "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+    "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+    "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: Windows Ghidra P0 accepts native x86, x86-64, ARMNT (Thumb-2) and ARM64 PE applications and DLLs, and explicitly selected raw 6502 images; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+    "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+  ],
+  "functionPointerTable": [
+    {
+      "name": "FinishActivity",
+      "namePointer": "0x1438e8740",
+      "functionPointer": "0x140ea9b00",
+      "tableAddress": "0x1438e8b30",
+      "evidenceId": "ev_34614a143d6a2863234aaacaf46119435f196967f4ed8a9a15f7bd16583a6fb2"
+    },
+    {
+      "name": "GetActivityID",
+      "namePointer": "0x1438e8750",
+      "functionPointer": "0x140ea9bc0",
+      "tableAddress": "0x1438e8b40",
+      "evidenceId": "ev_34614a143d6a2863234aaacaf46119435f196967f4ed8a9a15f7bd16583a6fb2"
+    },
+    {
+      "name": "SetEnableActivity",
+      "namePointer": "0x1438e8760",
+      "functionPointer": "0x140ea9cc0",
+      "tableAddress": "0x1438e8b50",
+      "evidenceId": "ev_34614a143d6a2863234aaacaf46119435f196967f4ed8a9a15f7bd16583a6fb2"
+    },
+    {
+      "name": "StartActivity",
+      "namePointer": "0x1438e8778",
+      "functionPointer": "0x140ea9d80",
+      "tableAddress": "0x1438e8b60",
+      "evidenceId": "ev_34614a143d6a2863234aaacaf46119435f196967f4ed8a9a15f7bd16583a6fb2"
+    }
+  ],
+  "analyzedFunctions": [
+    {
+      "address": "0x140ea9d80",
+      "evidenceId": "ev_6794fad7e164a192180d3664086a4cc9cca99322acd6d0c3f8cb7eef19aad1ba",
+      "response": "session-focused\\responses\\009-analyze-start-candidate.json",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x140ea9d80",
+            "end": "0x140ea9e38"
+          }
+        ],
+        "total_bytes": 185,
+        "span_bytes": 185,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "callees": [
+        "0x140ea82c0",
+        "0x14117c350",
+        "0x1411bee80",
+        "0x1411e66f0",
+        "0x1411e6720"
+      ],
+      "unresolvedCalls": [],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+      ]
+    },
+    {
+      "address": "0x140ea9bc0",
+      "evidenceId": "ev_d9e9d0cf0c723994096834e361d1a86e8b8da26daefdf771fd388a871385af22",
+      "response": "session-focused\\responses\\010-analyze-id-candidate.json",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x140ea9bc0",
+            "end": "0x140ea9cbf"
+          }
+        ],
+        "total_bytes": 256,
+        "span_bytes": 256,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "callees": [
+        "0x140ea7680",
+        "0x140ef49c0",
+        "0x1411e66f0",
+        "0x1411e6720"
+      ],
+      "unresolvedCalls": [],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+      ]
+    },
+    {
+      "address": "0x140ea7680",
+      "evidenceId": "ev_0ce40fb212d1124f99b077da3489fb11df09336ea5607c304ea0b5ccfb404c7b",
+      "response": "session-focused\\responses\\013-analyze-activity-id-body.json",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x140ea7680",
+            "end": "0x140ea7a21"
+          }
+        ],
+        "total_bytes": 930,
+        "span_bytes": 930,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "callees": [
+        "0x1407d7780",
+        "0x1407d7c80",
+        "0x1407da340",
+        "0x1407de680",
+        "0x140ea6ed0",
+        "0x140ea73f0",
+        "0x140ef49c0",
+        "0x1436d3080"
+      ],
+      "unresolvedCalls": [],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+      ]
+    },
+    {
+      "address": "0x140ea82c0",
+      "evidenceId": "ev_7437901d93da39e0a60ae60aecde5a5f970c7193bae9d1ec22057761b1a02b63",
+      "response": "session-focused\\responses\\014-analyze-activity-start-body.json",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x140ea82c0",
+            "end": "0x140ea83b0"
+          }
+        ],
+        "total_bytes": 241,
+        "span_bytes": 241,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "callees": [
+        "0x140ea7680",
+        "0x140ea9220",
+        "0x140eaa020",
+        "0x140ef49c0",
+        "0x1428c18a0",
+        "0x142c7c100"
+      ],
+      "unresolvedCalls": [
+        {
+          "address": "0x140ea82d8",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        }
+      ],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+      ]
+    },
+    {
+      "address": "0x140ea9220",
+      "evidenceId": "ev_28b9f5740535f4374d451b06396956eed901d478fd0f36d2d9c0b5dee4a1dc0b",
+      "response": "session-focused\\responses\\016-analyze-activity-subsystem.json",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x140ea9220",
+            "end": "0x140ea94d4"
+          }
+        ],
+        "total_bytes": 693,
+        "span_bytes": 693,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "callees": [
+        "0x140d4c140",
+        "0x140d4d090",
+        "0x140ef49c0",
+        "0x140fcf840",
+        "0x140fcff10",
+        "0x140fe7ba0",
+        "0x142e07be0",
+        "0x1436d2e88",
+        "0x1436d2ef4",
+        "0x1436d3080"
+      ],
+      "unresolvedCalls": [
+        {
+          "address": "0x140ea9252",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x140ea92a0",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x140ea92d2",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x140ea9333",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x140ea9350",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x140ea939f",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x140ea93f0",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x140ea9403",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x140ea9421",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x140ea943a",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x140ea9458",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        },
+        {
+          "address": "0x140ea946c",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        }
+      ],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+      ]
+    },
+    {
+      "address": "0x140eaa020",
+      "evidenceId": "ev_178a7c67a1e0f8695364a5b93948d2b56f9588af12d3ac6aad99d06d5a993fa8",
+      "response": "session-focused\\responses\\017-analyze-activity-class.json",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x140eaa020",
+            "end": "0x140eaa0d1"
+          }
+        ],
+        "total_bytes": 178,
+        "span_bytes": 178,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "callees": [
+        "0x141078710"
+      ],
+      "unresolvedCalls": [],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+      ]
+    },
+    {
+      "address": "0x140ea9b00",
+      "evidenceId": "ev_b25b7b40cf5bf06477fa4ebb031deecef0975cd144b7a6f3abb5673827c388f9",
+      "response": "session-focused\\responses\\019-analyze-finish-wrapper.json",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x140ea9b00",
+            "end": "0x140ea9bb8"
+          }
+        ],
+        "total_bytes": 185,
+        "span_bytes": 185,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "callees": [
+        "0x140ea7580",
+        "0x14117c350",
+        "0x1411bee80",
+        "0x1411e66f0",
+        "0x1411e6720"
+      ],
+      "unresolvedCalls": [],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+      ]
+    },
+    {
+      "address": "0x140ea9cc0",
+      "evidenceId": "ev_63452db877a4800aadee8cd5e735e53e2ccf547d27f8b2df11c0f852136e2724",
+      "response": "session-focused\\responses\\020-analyze-enable-wrapper.json",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x140ea9cc0",
+            "end": "0x140ea9d7a"
+          }
+        ],
+        "total_bytes": 187,
+        "span_bytes": 187,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "callees": [
+        "0x140ea7da0",
+        "0x1411be170",
+        "0x1411bee80",
+        "0x1411e66f0",
+        "0x1411e6720"
+      ],
+      "unresolvedCalls": [],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+      ]
+    },
+    {
+      "address": "0x140ea7580",
+      "evidenceId": "ev_a953ccb754ec44ed1c4f6938adcbc30d1c871b5157b7ae1b737e07a19cb0860a",
+      "response": "session-focused\\responses\\021-analyze-finish-body.json",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x140ea7580",
+            "end": "0x140ea7670"
+          }
+        ],
+        "total_bytes": 241,
+        "span_bytes": 241,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "callees": [
+        "0x140ea7680",
+        "0x140ea8710",
+        "0x140eaa020",
+        "0x140ef49c0",
+        "0x1428c18a0",
+        "0x142c7c100"
+      ],
+      "unresolvedCalls": [
+        {
+          "address": "0x140ea7598",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        }
+      ],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+      ]
+    },
+    {
+      "address": "0x140ea7da0",
+      "evidenceId": "ev_8f4e19289e34db5976af1bacdbac7eb3bd8fb22d7be6a2acabfc5f19bde576a8",
+      "response": "session-focused\\responses\\022-analyze-enable-body.json",
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x140ea7da0",
+            "end": "0x140ea82b7"
+          }
+        ],
+        "total_bytes": 1304,
+        "span_bytes": 1304,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "callees": [
+        "0x1407ce440",
+        "0x1407d7780",
+        "0x1407d7c80",
+        "0x1407da340",
+        "0x140ea6ed0",
+        "0x140ea73f0",
+        "0x140ea8fc0",
+        "0x140eaa020",
+        "0x140ef49c0",
+        "0x1428c18a0",
+        "0x142c7c100",
+        "0x1436d3080"
+      ],
+      "unresolvedCalls": [
+        {
+          "address": "0x140ea7dd7",
+          "reason": "Instruction decoder identifies a call but ReferenceManager supplies no call destination"
+        }
+      ],
+      "limitations": [
+        "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+        "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+        "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+        "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+      ]
+    }
+  ],
+  "activityIdMapping": {
+    "0": "UNDEFEATED_SubTask1",
+    "1": "UNDEFEATED_SubTask2",
+    "2": "UNDEFEATED_SubTask3",
+    "3": "UNDEFEATED_SubTask4",
+    "4": "UNDEFEATED_MainActivity"
+  },
+  "mappingEvidenceId": "ev_0ce40fb212d1124f99b077da3489fb11df09336ea5607c304ea0b5ccfb404c7b",
+  "mappingStatus": "Derived from static decompilation and assembly; not runtime-observed.",
+  "bundle": "native-evidence-expanded.json",
+  "defaultAttempt": {
+    "status": "provider_timeout",
+    "deadlineMs": 1800000,
+    "response": "session/responses/003-overview.json"
+  },
+  "limitations": [
+    "Four costly analyzers disabled in successful profile; profile digest retained.",
+    "Function/string inventory counts do not mean those items have been semantically understood.",
+    "Indirect OnlineSubsystem targets and runtime dispatch remain unresolved.",
+    "No original game launch or behavior comparison was performed.",
+    "Native pseudocode is inferred decompiler output, not recovered original source."
+  ]
+}

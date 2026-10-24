@@ -1,0 +1,952 @@
+{
+  "mesh": {
+    "assetId": "SM_SkyDome-4c22c8a73d6a",
+    "sourcePackage": "/Game/Skies/Meshes/SM_SkyDome",
+    "url": "/assets/world/meshes/SM_SkyDome-4c22c8a73d6a/mesh.gltf",
+    "sha256": "da6585f0e81daeb5dd9985390203c71fa29652a625d779b1200dfcc769a42c27",
+    "vertexCount": 1104,
+    "bounds": {
+      "min": [
+        -10,
+        -2.8213e-06,
+        -10
+      ],
+      "max": [
+        10,
+        10,
+        10
+      ]
+    },
+    "uv0Min": [
+      3.0517578125e-05,
+      3.0517578125e-05
+    ],
+    "uv0Max": [
+      0.99951171875,
+      0.5
+    ],
+    "axisUVSamples": [
+      {
+        "axis": "UE+X",
+        "vertex": 229,
+        "positionRHmeters": [
+          10.0,
+          -1.6292111695292988e-06,
+          3.639874194050208e-05
+        ],
+        "uv0": [
+          0.74951171875,
+          0.5
+        ],
+        "shaderUV": [
+          0.74951171875,
+          1.0
+        ],
+        "normalDotPosition": -9.988859218960178,
+        "directionError": 1.3275227438729667e-11
+      },
+      {
+        "axis": "UE-X",
+        "vertex": 118,
+        "positionRHmeters": [
+          -10.0,
+          -1.6292075315504917e-06,
+          5.642824362439569e-06
+        ],
+        "uv0": [
+          0.25,
+          0.5
+        ],
+        "shaderUV": [
+          0.25,
+          1.0
+        ],
+        "normalDotPosition": -9.98885921896035,
+        "directionError": 3.4495783966193447e-13
+      },
+      {
+        "axis": "UE+Y",
+        "vertex": 174,
+        "positionRHmeters": [
+          -4.649122729460942e-06,
+          -2.82129963125044e-06,
+          10.0
+        ],
+        "uv0": [
+          0.5,
+          0.5
+        ],
+        "shaderUV": [
+          0.5,
+          1.0
+        ],
+        "normalDotPosition": -9.988859162703784,
+        "directionError": 2.957407376287767e-13
+      },
+      {
+        "axis": "UE-Y",
+        "vertex": 67,
+        "positionRHmeters": [
+          -4.3711386865652457e-07,
+          -4.3711392549994343e-07,
+          -10.0
+        ],
+        "uv0": [
+          3.0517578125e-05,
+          0.5
+        ],
+        "shaderUV": [
+          3.0517578125e-05,
+          1.0
+        ],
+        "normalDotPosition": -9.988859275216987,
+        "directionError": 3.821371180378424e-15
+      },
+      {
+        "axis": "UE-Y",
+        "vertex": 284,
+        "positionRHmeters": [
+          -4.3711386865652457e-07,
+          -4.3711392549994343e-07,
+          -10.0
+        ],
+        "uv0": [
+          0.99951171875,
+          0.5
+        ],
+        "shaderUV": [
+          0.99951171875,
+          1.0
+        ],
+        "normalDotPosition": -9.988859275216987,
+        "directionError": 3.821371180378424e-15
+      },
+      {
+        "axis": "UE+Z",
+        "vertex": 0,
+        "positionRHmeters": [
+          0.0,
+          10.0,
+          1.19231856388069e-06
+        ],
+        "uv0": [
+          3.0517578125e-05,
+          3.0517578125e-05
+        ],
+        "shaderUV": [
+          3.0517578125e-05,
+          6.103515625e-05
+        ],
+        "normalDotPosition": -10.0,
+        "directionError": 1.4216235577744957e-14
+      },
+      {
+        "axis": "UE+Z",
+        "vertex": 4,
+        "positionRHmeters": [
+          0.0,
+          10.0,
+          1.19231856388069e-06
+        ],
+        "uv0": [
+          0.015625,
+          3.0517578125e-05
+        ],
+        "shaderUV": [
+          0.015625,
+          6.103515625e-05
+        ],
+        "normalDotPosition": -10.0,
+        "directionError": 1.4216235577744957e-14
+      },
+      {
+        "axis": "UE+Z",
+        "vertex": 9,
+        "positionRHmeters": [
+          0.0,
+          10.0,
+          1.19231856388069e-06
+        ],
+        "uv0": [
+          0.03125,
+          3.0517578125e-05
+        ],
+        "shaderUV": [
+          0.03125,
+          6.103515625e-05
+        ],
+        "normalDotPosition": -10.0,
+        "directionError": 1.4216235577744957e-14
+      },
+      {
+        "axis": "UE+Z",
+        "vertex": 14,
+        "positionRHmeters": [
+          0.0,
+          10.0,
+          1.19231856388069e-06
+        ],
+        "uv0": [
+          0.046875,
+          3.0517578125e-05
+        ],
+        "shaderUV": [
+          0.046875,
+          6.103515625e-05
+        ],
+        "normalDotPosition": -10.0,
+        "directionError": 1.4216235577744957e-14
+      }
+    ],
+    "normalDotPositionRange": [
+      -10.000000669238943,
+      -9.988709724293757
+    ]
+  },
+  "image": {
+    "url": "/assets/world/textures/Game/Skies/Textures/T_SkyCloudy11.hdr",
+    "sha256": "30ef3404089790bd49f75d5a61a522e75a621365982d2a1c2c9affa952d5dde6",
+    "width": 8192,
+    "height": 2048,
+    "header": "#?RADIANCE\nFORMAT=32-bit_rle_rgbe\n\n-Y 2048 +X 8192\n",
+    "payloadOffset": 51,
+    "payloadBytes": 67108864,
+    "storage": "uncompressed row-major RGBE, despite rle_rgbe format header; verified byte length and UEViewer WriteHDR source",
+    "orientation": "-Y +X: rows in source order, y=0 top and x=0 left; no vertical flip in WriteHDR",
+    "decode": "linearRGB = RGBbytes * 2^(Ebyte-128-8), zero if Ebyte=0",
+    "pixelSamples": [
+      {
+        "x": 0,
+        "y": 0,
+        "rgbe": [
+          66,
+          82,
+          132,
+          128
+        ],
+        "linearRGB": [
+          0.2578125,
+          0.3203125,
+          0.515625
+        ]
+      },
+      {
+        "x": 4096,
+        "y": 0,
+        "rgbe": [
+          69,
+          85,
+          136,
+          128
+        ],
+        "linearRGB": [
+          0.26953125,
+          0.33203125,
+          0.53125
+        ]
+      },
+      {
+        "x": 0,
+        "y": 1024,
+        "rgbe": [
+          57,
+          94,
+          200,
+          126
+        ],
+        "linearRGB": [
+          0.0556640625,
+          0.091796875,
+          0.1953125
+        ]
+      },
+      {
+        "x": 4096,
+        "y": 1024,
+        "rgbe": [
+          198,
+          190,
+          183,
+          131
+        ],
+        "linearRGB": [
+          6.1875,
+          5.9375,
+          5.71875
+        ]
+      },
+      {
+        "x": 4096,
+        "y": 2047,
+        "rgbe": [
+          92,
+          110,
+          137,
+          128
+        ],
+        "linearRGB": [
+          0.359375,
+          0.4296875,
+          0.53515625
+        ]
+      },
+      {
+        "x": 8191,
+        "y": 2047,
+        "rgbe": [
+          169,
+          172,
+          177,
+          128
+        ],
+        "linearRGB": [
+          0.66015625,
+          0.671875,
+          0.69140625
+        ]
+      }
+    ],
+    "alpha": "RGBE stores exponent, not original texture alpha; material Opacity is scalar"
+  },
+  "originalPixelValidation": {
+    "source": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\Skies\\Textures\\T_SkyCloudy11.uexp",
+    "sha256": "785423a5e31ae109b2b6280c91dcf64baa2cd46c4023ae4f7d97963ed0bf55bd",
+    "format": "PF_FloatRGBA",
+    "mipCount": 14,
+    "topMipDataOffsetInUexp": 312,
+    "topMipPayloadBytes": 134217728,
+    "samples": [
+      {
+        "x": 0,
+        "y": 0,
+        "originalHalfFloatRGBA": [
+          0.25830078125,
+          0.321533203125,
+          0.51611328125,
+          1.0
+        ],
+        "exportedRGBE": [
+          66,
+          82,
+          132,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 4096,
+        "y": 0,
+        "originalHalfFloatRGBA": [
+          0.271728515625,
+          0.335693359375,
+          0.53173828125,
+          1.0
+        ],
+        "exportedRGBE": [
+          69,
+          85,
+          136,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 0,
+        "y": 1024,
+        "originalHalfFloatRGBA": [
+          0.0556640625,
+          0.09228515625,
+          0.1956787109375,
+          1.0
+        ],
+        "exportedRGBE": [
+          57,
+          94,
+          200,
+          126
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 4096,
+        "y": 1024,
+        "originalHalfFloatRGBA": [
+          6.20703125,
+          5.953125,
+          5.73828125,
+          1.0
+        ],
+        "exportedRGBE": [
+          198,
+          190,
+          183,
+          131
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 4096,
+        "y": 2047,
+        "originalHalfFloatRGBA": [
+          0.362548828125,
+          0.432373046875,
+          0.53564453125,
+          1.0
+        ],
+        "exportedRGBE": [
+          92,
+          110,
+          137,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 8191,
+        "y": 2047,
+        "originalHalfFloatRGBA": [
+          0.66259765625,
+          0.6728515625,
+          0.6943359375,
+          1.0
+        ],
+        "exportedRGBE": [
+          169,
+          172,
+          177,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "originalHalfFloatRGBA": [
+          0.25830078125,
+          0.321533203125,
+          0.51611328125,
+          1.0
+        ],
+        "exportedRGBE": [
+          66,
+          82,
+          132,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 211,
+        "y": 73,
+        "originalHalfFloatRGBA": [
+          0.490234375,
+          0.55126953125,
+          0.72509765625,
+          1.0
+        ],
+        "exportedRGBE": [
+          125,
+          141,
+          185,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 422,
+        "y": 146,
+        "originalHalfFloatRGBA": [
+          0.06488037109375,
+          0.10772705078125,
+          0.232666015625,
+          1.0
+        ],
+        "exportedRGBE": [
+          66,
+          110,
+          238,
+          126
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 633,
+        "y": 219,
+        "originalHalfFloatRGBA": [
+          0.2626953125,
+          0.323486328125,
+          0.486572265625,
+          1.0
+        ],
+        "exportedRGBE": [
+          134,
+          165,
+          249,
+          127
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 844,
+        "y": 292,
+        "originalHalfFloatRGBA": [
+          0.134521484375,
+          0.1873779296875,
+          0.349853515625,
+          1.0
+        ],
+        "exportedRGBE": [
+          68,
+          95,
+          179,
+          127
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 1055,
+        "y": 365,
+        "originalHalfFloatRGBA": [
+          0.128662109375,
+          0.1834716796875,
+          0.33642578125,
+          1.0
+        ],
+        "exportedRGBE": [
+          65,
+          93,
+          172,
+          127
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 1266,
+        "y": 438,
+        "originalHalfFloatRGBA": [
+          0.301513671875,
+          0.359619140625,
+          0.5146484375,
+          1.0
+        ],
+        "exportedRGBE": [
+          77,
+          92,
+          131,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 1477,
+        "y": 511,
+        "originalHalfFloatRGBA": [
+          0.45654296875,
+          0.51416015625,
+          0.64013671875,
+          1.0
+        ],
+        "exportedRGBE": [
+          116,
+          131,
+          163,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 1688,
+        "y": 584,
+        "originalHalfFloatRGBA": [
+          0.467041015625,
+          0.52734375,
+          0.6328125,
+          1.0
+        ],
+        "exportedRGBE": [
+          119,
+          135,
+          162,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 1899,
+        "y": 657,
+        "originalHalfFloatRGBA": [
+          0.70849609375,
+          0.75537109375,
+          0.87255859375,
+          1.0
+        ],
+        "exportedRGBE": [
+          181,
+          193,
+          223,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 2110,
+        "y": 730,
+        "originalHalfFloatRGBA": [
+          0.7744140625,
+          0.828125,
+          0.96044921875,
+          1.0
+        ],
+        "exportedRGBE": [
+          198,
+          212,
+          245,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 2321,
+        "y": 803,
+        "originalHalfFloatRGBA": [
+          0.486572265625,
+          0.552734375,
+          0.7158203125,
+          1.0
+        ],
+        "exportedRGBE": [
+          124,
+          141,
+          183,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 2532,
+        "y": 876,
+        "originalHalfFloatRGBA": [
+          0.09869384765625,
+          0.173095703125,
+          0.386474609375,
+          1.0
+        ],
+        "exportedRGBE": [
+          50,
+          88,
+          197,
+          127
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 2743,
+        "y": 949,
+        "originalHalfFloatRGBA": [
+          0.1103515625,
+          0.19580078125,
+          0.4384765625,
+          1.0
+        ],
+        "exportedRGBE": [
+          56,
+          100,
+          224,
+          127
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 2954,
+        "y": 1022,
+        "originalHalfFloatRGBA": [
+          0.166015625,
+          0.268798828125,
+          0.5458984375,
+          1.0
+        ],
+        "exportedRGBE": [
+          42,
+          68,
+          139,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 3165,
+        "y": 1095,
+        "originalHalfFloatRGBA": [
+          0.198486328125,
+          0.310791015625,
+          0.6005859375,
+          1.0
+        ],
+        "exportedRGBE": [
+          50,
+          79,
+          153,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 3376,
+        "y": 1168,
+        "originalHalfFloatRGBA": [
+          0.2276611328125,
+          0.335205078125,
+          0.62255859375,
+          1.0
+        ],
+        "exportedRGBE": [
+          58,
+          85,
+          159,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 3587,
+        "y": 1241,
+        "originalHalfFloatRGBA": [
+          0.283447265625,
+          0.345947265625,
+          0.483642578125,
+          1.0
+        ],
+        "exportedRGBE": [
+          145,
+          177,
+          247,
+          127
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 3798,
+        "y": 1314,
+        "originalHalfFloatRGBA": [
+          0.1680908203125,
+          0.2064208984375,
+          0.26904296875,
+          1.0
+        ],
+        "exportedRGBE": [
+          86,
+          105,
+          137,
+          127
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 4009,
+        "y": 1387,
+        "originalHalfFloatRGBA": [
+          0.1590576171875,
+          0.193603515625,
+          0.2471923828125,
+          1.0
+        ],
+        "exportedRGBE": [
+          162,
+          198,
+          253,
+          126
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 4220,
+        "y": 1460,
+        "originalHalfFloatRGBA": [
+          0.2462158203125,
+          0.282470703125,
+          0.312255859375,
+          1.0
+        ],
+        "exportedRGBE": [
+          126,
+          144,
+          159,
+          127
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 4431,
+        "y": 1533,
+        "originalHalfFloatRGBA": [
+          2.51171875,
+          2.51171875,
+          2.515625,
+          1.0
+        ],
+        "exportedRGBE": [
+          160,
+          160,
+          161,
+          130
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 4642,
+        "y": 1606,
+        "originalHalfFloatRGBA": [
+          0.59033203125,
+          0.6376953125,
+          0.72119140625,
+          1.0
+        ],
+        "exportedRGBE": [
+          151,
+          163,
+          184,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 4853,
+        "y": 1679,
+        "originalHalfFloatRGBA": [
+          0.568359375,
+          0.6181640625,
+          0.68701171875,
+          1.0
+        ],
+        "exportedRGBE": [
+          145,
+          158,
+          175,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 5064,
+        "y": 1752,
+        "originalHalfFloatRGBA": [
+          0.3037109375,
+          0.432373046875,
+          0.7001953125,
+          1.0
+        ],
+        "exportedRGBE": [
+          77,
+          110,
+          179,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 5275,
+        "y": 1825,
+        "originalHalfFloatRGBA": [
+          0.63671875,
+          0.68115234375,
+          0.755859375,
+          1.0
+        ],
+        "exportedRGBE": [
+          163,
+          174,
+          193,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 5486,
+        "y": 1898,
+        "originalHalfFloatRGBA": [
+          0.381591796875,
+          0.4287109375,
+          0.49658203125,
+          1.0
+        ],
+        "exportedRGBE": [
+          195,
+          219,
+          254,
+          127
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 5697,
+        "y": 1971,
+        "originalHalfFloatRGBA": [
+          0.472900390625,
+          0.498291015625,
+          0.52392578125,
+          1.0
+        ],
+        "exportedRGBE": [
+          121,
+          127,
+          134,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 5908,
+        "y": 2044,
+        "originalHalfFloatRGBA": [
+          0.43115234375,
+          0.494140625,
+          0.58935546875,
+          1.0
+        ],
+        "exportedRGBE": [
+          110,
+          126,
+          150,
+          128
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 6119,
+        "y": 69,
+        "originalHalfFloatRGBA": [
+          0.079345703125,
+          0.1290283203125,
+          0.27880859375,
+          1.0
+        ],
+        "exportedRGBE": [
+          40,
+          66,
+          142,
+          127
+        ],
+        "exactExporterMatch": true
+      },
+      {
+        "x": 6330,
+        "y": 142,
+        "originalHalfFloatRGBA": [
+          0.069580078125,
+          0.11480712890625,
+          0.25146484375,
+          1.0
+        ],
+        "exportedRGBE": [
+          35,
+          58,
+          128,
+          127
+        ],
+        "exactExporterMatch": true
+      }
+    ],
+    "exactlyMatchedSamples": 37,
+    "precisionBoundary": "RGBE quantizes source half-float RGB. This verifies the exporter transform and row orientation, not bit-exact half-float output."
+  }
+}

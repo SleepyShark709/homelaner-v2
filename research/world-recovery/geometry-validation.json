@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "sourceComponentsExpected": 11359,
+  "sourceComponentsRepresented": 11359,
+  "socketTransformGaps": 0,
+  "validatedPublishedGltfs": 688,
+  "baseSourceBuffersByteIdentical": 476,
+  "sourceTransformMaximumError": 0.0,
+  "instancesRecovered": 253,
+  "batchPositionSamples": 11628,
+  "batchPositionMaximumErrorMeters": 3.0517004120156344e-05,
+  "batchUVSamplesUnchanged": 23256,
+  "referencedGeometryFileBytes": 314497920,
+  "nativeStaticSectionsMapped": 3390,
+  "verifiedOriginalNullMaterialSections": 3,
+  "unresolvedSectionMaterialAddresses": 0,
+  "ambiguousOriginalSkeletalSlots": 0,
+  "manifestSha256": "48718ae5d490ed07f1eeab9f09ef9baa5d2492d9b0a781665cefcc22651be73c",
+  "referencePoseSocketAttachments": 46,
+  "runtimeAnimatedSocketFollowingImplemented": false,
+  "nativeSkeletalSectionsMapped": 42,
+  "componentSectionOverrideAmbiguities": 0,
+  "socketReferencePoseChecks": {
+    "parentInverseBindMaximumError": 8.609368071741338e-06,
+    "parentRelativeBaselineMaximumError": 0.0,
+    "worldTRSReconstructionMaximumError": 6.572831893106671e-07
+  }
+}

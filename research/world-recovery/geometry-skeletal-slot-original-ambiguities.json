@@ -1,0 +1,3866 @@
+[
+  {
+    "id": "Story2Level:80",
+    "section": 0,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "Story2Level:80",
+    "section": 3,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "Story2Level:80",
+    "section": 4,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "Story2Level:80",
+    "section": 5,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "Story2Level:80",
+    "section": 6,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "Story2Level:80",
+    "section": 7,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "Story2Level:80",
+    "section": 8,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "Story2Level:80",
+    "section": 9,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "Story2Level:80",
+    "section": 10,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "Story2Level:80",
+    "section": 11,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "Story2Level:80",
+    "section": 12,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "Story2Level:80",
+    "section": 13,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "Story2Level:80",
+    "section": 14,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "Story2Level:80",
+    "section": 15,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "FireBossLevel:70",
+    "section": 0,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "FireBossLevel:70",
+    "section": 3,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "FireBossLevel:70",
+    "section": 4,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "FireBossLevel:70",
+    "section": 5,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "FireBossLevel:70",
+    "section": 6,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "FireBossLevel:70",
+    "section": 7,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "FireBossLevel:70",
+    "section": 8,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "FireBossLevel:70",
+    "section": 9,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "FireBossLevel:70",
+    "section": 10,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "FireBossLevel:70",
+    "section": 11,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "FireBossLevel:70",
+    "section": 12,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "FireBossLevel:70",
+    "section": 13,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "FireBossLevel:70",
+    "section": 14,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "FireBossLevel:70",
+    "section": 15,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelFire:72",
+    "section": 0,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelFire:72",
+    "section": 3,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelFire:72",
+    "section": 4,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelFire:72",
+    "section": 5,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelFire:72",
+    "section": 6,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelFire:72",
+    "section": 7,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelFire:72",
+    "section": 8,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelFire:72",
+    "section": 9,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelFire:72",
+    "section": 10,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelFire:72",
+    "section": 11,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelFire:72",
+    "section": 12,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelFire:72",
+    "section": 13,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelFire:72",
+    "section": 14,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelFire:72",
+    "section": 15,
+    "candidates": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "materials": [
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/-HeroGame/Materials/M_Visible",
+        "object": "M_Visible",
+        "reference": "/Game/-HeroGame/Materials/M_Visible.M_Visible"
+      },
+      {
+        "package": "/Game/Action_Male/Materials/MI_Body_Fire",
+        "object": "MI_Body_Fire",
+        "reference": "/Game/Action_Male/Materials/MI_Body_Fire.MI_Body_Fire"
+      }
+    ]
+  }
+]

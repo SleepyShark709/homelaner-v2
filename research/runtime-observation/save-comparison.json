@@ -1,0 +1,124 @@
+[
+  {
+    "file": "Config\\CrashReportClient\\UE4CC-Windows-24BA246D458D3672FC00D2BD58027540\\CrashReportClient.ini",
+    "before": "ffd2f515d5b546c4d9f3a65c58af871cfe2c11812ae3cbd7a5b3a15718906b65",
+    "after": null,
+    "unchanged": false,
+    "note": "Transient crash-report config missing after game exit; retained in backup."
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\Compat.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\DeviceProfiles.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\Engine.ini",
+    "before": "543540ff17867be598ad8c55961e83cf2ec65c0f10eb2a43bd74cffedc093ac3",
+    "after": "543540ff17867be598ad8c55961e83cf2ec65c0f10eb2a43bd74cffedc093ac3",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\Game.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\GameUserSettings.ini",
+    "before": "127b374627d87cd2232894e8b6360e3dace972640c6bd27eb5e91690261f4040",
+    "after": "aab1042c6fddac44ca110c3f082f401b87d3d111ee3b342dd393439a7a188e77",
+    "unchanged": false,
+    "restoredToBefore": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\Hardware.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\Input.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\LiveLink.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\MagicLeap.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\MagicLeapLightEstimation.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\MotoSynth.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\Niagara.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\Paper2D.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\PhysXVehicles.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\RuntimeOptions.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\Scalability.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\Synthesis.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "Config\\WindowsNoEditor\\VariantManagerContent.ini",
+    "before": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "after": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "unchanged": true
+  },
+  {
+    "file": "SaveGames\\SaveData.sav",
+    "before": "559f6bf1dfa8a2fe23390b3fdef2fe5f7f97474664e907b58cc202b6a0672dbb",
+    "after": "559f6bf1dfa8a2fe23390b3fdef2fe5f7f97474664e907b58cc202b6a0672dbb",
+    "unchanged": true
+  }
+]

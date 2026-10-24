@@ -1,0 +1,74 @@
+{
+  "assessedAt": "2026-10-24",
+  "scope": "Web 重建技术选择与最后阶段的角色外观替换；此文件不声称已验证所有 UNDEFEATED cooked 资产的可导出性。",
+  "evidenceType": "官方工具文档核实 + 项目需求推导；原游戏资产的实测导出结果由独立导出报告记录。",
+  "recommendation": {
+    "stack": "TypeScript + Vite + Babylon.js + glTF/GLB；先完成 WebGL2 原型和资产转换验证，随后接入 Havok 物理",
+    "reason": "当前任务是独立的浏览器 3D 动作游戏，Babylon 的场景、骨骼动画、粒子、拾取、调试与物理集成可以减少基础设施拼装。用户已明确不要求沿用旧仓库技术栈。",
+    "limits": [
+      "这是按项目约束作出的工程选择，不代表已做三个引擎的同场景性能对比。",
+      "任何候选 Web 引擎都不能直接运行 UNDEFEATED 的 UE 蓝图、AnimBlueprint 或 Windows 可执行文件。这里的移植实际包含可导出资产转换和运行逻辑重建。",
+      "Babylon/Havok 与 UE 的物理行为不能仅靠复制数字保证一致，需重调移动、碰撞、质量、摩擦、冲量和空中控制。",
+      "Havok 是独立异步加载的 WebAssembly 模块，需支持 SIMD；官方文档提示 iOS 16.4 以前不可用。生产环境应自行托管依赖。"
+    ],
+    "sourceIds": ["babylon-specs", "babylon-havok"]
+  },
+  "alternatives": [
+    {
+      "stack": "Three.js + Rapier",
+      "assessment": "可行，适合希望精细控制渲染或复用已有 Three 项目时；但本项目需要自行整合更多游戏层系统。Three 支持蒙皮、骨骼与动画重定向；Rapier 提供角色碰撞移动，但自由飞行仍需游戏自定义控制。",
+      "constraint": "Rapier 内置角色控制器主要处理平移而非旋转；不能将其直接等同于完整的超人飞行控制器。",
+      "sourceIds": ["three-skinned-mesh", "three-skeleton-utils", "rapier-controller"]
+    },
+    {
+      "stack": "Godot Web",
+      "assessment": "可行，编辑器、场景与动画工作流完整；若以后更重视可视化关卡编辑或桌面版本，可重新评估。当前浏览器优先项目采用 TypeScript 更直接。",
+      "constraint": "Godot 4 Web 使用 WebAssembly 与 WebGL2，仅 Compatibility 渲染器可用于 Web；C# 项目目前不能导出 Web。多线程导出需要额外响应头，单线程版本更易部署。仍需重建 UE 逻辑。",
+      "sourceIds": ["godot-web"]
+    }
+  ],
+  "assetReuse": [
+    {"asset": "角色网格、骨架、动画片段", "route": "成功导出后保留骨架和原动画，通过转换工具生成可验证的 glTF/GLB。", "verification": "骨骼层级、rest/bind 矩阵、蒙皮权重、比例、坐标系、根运动及动画时长；先用原角色进行对照。"},
+    {"asset": "纹理", "route": "导出并转换为浏览器可加载格式，后续按需要压缩。", "verification": "色彩空间、法线通道、透明度和 UV。"},
+    {"asset": "UE 材质、着色器和粒子", "route": "依据纹理、参数及可观测外观重建 Web 材质/特效。", "verification": "不能把 UE 材质图或 Niagara/Cascade 当作 glTF 可直接复用的数据。"},
+    {"asset": "AnimBlueprint、状态机、动画事件", "route": "复用导出的动作片段，重写切换、混合和事件触发；事件可记录为外部时间轴数据。", "verification": "动画片段不包含完整的 UE 运行状态逻辑。"},
+    {"asset": "城市模型与场景布局", "route": "模型和实例变换可按导出能力逐步恢复，再实施实例化、LOD、分区加载。", "verification": "独立网格导出成功不等于已恢复完整地图、碰撞、材质与实例布局。"},
+    {"asset": "碰撞体和物理设置", "route": "提取可用形状与参数后映射到目标物理引擎。", "verification": "需重新验证尺度、角色控制、动态载具、稳定性及破坏行为。"},
+    {"asset": "UE 蓝图与原生逻辑", "route": "静态证据和行为参考用于编写 TypeScript 实现。", "verification": "不是把 cooked 蓝图自动转成等价 TypeScript，也不承诺完整源码还原。"}
+  ],
+  "appearanceReplacement": {
+    "default": "保留 UNDEFEATED 原骨架与原动画，把祖国人的可见网格适配并蒙皮到该骨架。",
+    "plainExplanation": "骨架是动作驱动的关节；网格是外皮。要让原骨架带动新的外皮，外皮必须有正确的骨骼权重。因此通常需要转移绑定或重新蒙皮并修权重，但不用从零制作一套骨骼和全部动作。",
+    "correction": "不能笼统承诺只换一个模型文件且不用重新绑骨；保留原动画是否顺利取决于新外皮的体型、原始姿势与蒙皮。",
+    "steps": [
+      "先在 Web 中验证原角色、原骨架和原动画的成套导入。",
+      "检查祖国人资产的网格、贴图、已有骨架、披风与 rest pose；此评估不预先宣称这些已经兼容。",
+      "将祖国人的网格对齐原角色尺度、朝向、关节位置和参考姿势。",
+      "使用原角色作为权重来源转移顶点组，或绑定到原骨架并自动权重，再手动修正肩、肘、髋、膝、颈与手部。",
+      "保留原骨骼层级及动画目标；仅骨名相同不足以保证兼容，还需要一致的层级和绑定姿态。",
+      "披风可独立做次级骨骼或简化摆动；新增披风骨骼不能破坏原骨骼索引和动画映射。眼睛位置通过挂点/节点提供给热视线效果。",
+      "导出 glTF/GLB 并测试待机、跑步、起飞、飞行、转向、落地、拳击和射线的变形。"
+    ],
+    "fallback": "若网格适配原骨架效果太差，保留祖国人骨架并将原游戏动画重定向过去。这改变了驱动骨架，属于动画重定向，与把新网格蒙皮到原骨架是两条不同路线。",
+    "retargetLimit": "Babylon 的重定向支持不同骨架与参考姿势补偿，但仍需映射和验证；找不到目标节点的动画轨道会被移除。官方 API 要求正确的源/目标参考姿势，且当前支持源动画以 TransformNode 为目标，常见于 glTF。",
+    "sourceIds": ["blender-parenting", "blender-transfer", "three-skinned-mesh", "babylon-retarget"]
+  },
+  "acceptanceGates": [
+    "原骨架与至少待机、跑步、飞行三个原动作先在浏览器通过视觉检查。",
+    "城市核心区可加载、碰撞和镜头可操作后，再扩大地图；不将占位场景称为完成移植。",
+    "保留原有右键玩法，单独定义按住 E 的热视线；原按键冲突由输入配置统一处理。",
+    "自由破坏模式应集中配置伤害、硬直、击退、能量、倒地、死亡和任务处罚，而非零散绕开负面效果。",
+    "外观替换在基础玩法与动画稳定后进行，单独验证蒙皮质量。"
+  ],
+  "sources": [
+    {"id": "blender-parenting", "url": "https://docs.blender.org/manual/id/5.0/animation/armatures/skinning/parenting.html", "title": "Blender Manual — Armature Deform Parent", "supports": "Armature Modifier、按骨名顶点组、自动权重及复杂网格需修权重"},
+    {"id": "blender-transfer", "url": "https://docs.blender.org/manual/en/5.1/modeling/modifiers/modify/data_transfer.html", "title": "Blender Manual — Data Transfer Modifier", "supports": "网格之间通过映射和插值转移顶点组等数据"},
+    {"id": "three-skinned-mesh", "url": "https://threejs.org/docs/pages/SkinnedMesh.html", "title": "Three.js — SkinnedMesh", "supports": "骨架、skinIndex、skinWeight 与蒙皮要求"},
+    {"id": "three-skeleton-utils", "url": "https://threejs.org/docs/pages/module-SkeletonUtils.html", "title": "Three.js — SkeletonUtils", "supports": "retargetClip、骨骼命名映射与姿态选项"},
+    {"id": "babylon-retarget", "url": "https://doc.babylonjs.com/features/featuresDeepDive/animation/animationRetargeting", "title": "Babylon.js — Animation Retargeting", "supports": "v9 动画重定向、参考姿势、TransformNode 及未匹配轨道的限制"},
+    {"id": "babylon-havok", "url": "https://doc.babylonjs.com/features/featuresDeepDive/physics/havokPlugin/", "title": "Babylon.js — Havok Physics Plugin", "supports": "独立 WASM 模块、异步初始化、SIMD 要求与生产部署"},
+    {"id": "babylon-specs", "url": "https://www.babylonjs.com/specifications/", "title": "Babylon.js — Specifications", "supports": "Web 渲染、骨骼、粒子、场景、物理、LOD、实例化及 Inspector"},
+    {"id": "rapier-controller", "url": "https://rapier.rs/docs/user_guides/javascript/character_controller/", "title": "Rapier — Character Controller", "supports": "碰撞移动与台阶斜坡支持、游戏定制需求、主要处理平移"},
+    {"id": "godot-web", "url": "https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_web.html", "title": "Godot — Exporting for the Web", "supports": "WebGL2/Compatibility、C# Web 限制、单线程与多线程部署"}
+  ]
+}

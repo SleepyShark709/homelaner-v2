@@ -1,0 +1,1013 @@
+{
+  "records": [
+    {
+      "exportIndex": 6201,
+      "objectName": "LevelStreamingKismet_10",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/LoadLevel.LoadLevel",
+      "package": "/Game/-HeroGame/Maps/SubLevel/LoadLevel",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/LoadLevel.LoadLevel"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.03864987567067146,
+          "G": 0.7826600074768066,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6202,
+      "objectName": "LevelStreamingKismet_13",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Easy.CQ_D_Easy",
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Easy",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Easy.CQ_D_Easy"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.628060519695282,
+          "G": 0.19324937462806702,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6203,
+      "objectName": "LevelStreamingKismet_14",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Hard.CQ_D_Hard",
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Hard",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Hard.CQ_D_Hard"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.7343476414680481,
+          "G": 0.08696222305297852,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6204,
+      "objectName": "LevelStreamingKismet_15",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Normal.CQ_D_Normal",
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Normal",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Normal.CQ_D_Normal"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.4058237075805664,
+          "G": 0.4154861867427826,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6205,
+      "objectName": "LevelStreamingKismet_16",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Easy.CQ_F_Easy",
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Easy",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Easy.CQ_F_Easy"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.7246851921081543,
+          "G": 0.09662468731403351,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6206,
+      "objectName": "LevelStreamingKismet_17",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Normal.CQ_F_Normal",
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Normal",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Normal.CQ_F_Normal"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.048312343657016754,
+          "G": "+0",
+          "B": 0.7821998596191406,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6207,
+      "objectName": "LevelStreamingKismet_18",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Hard.CQ_F_Hard",
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Hard",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Hard.CQ_F_Hard"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.8019849061965942,
+          "G": "+0",
+          "B": 0.019554996863007545,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6210,
+      "objectName": "LevelStreamingKismet_30",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/Beach.Beach",
+      "package": "/Game/-HeroGame/Maps/SubLevel/Beach",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/Beach.Beach"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.5797481536865234,
+          "G": 0.24156174063682556,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6211,
+      "objectName": "LevelStreamingKismet_31",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/Coast.Coast",
+      "package": "/Game/-HeroGame/Maps/SubLevel/Coast",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/Coast.Coast"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.14493703842163086,
+          "G": 0.6763728260993958,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6212,
+      "objectName": "LevelStreamingKismet_32",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/CommercialArea.CommercialArea",
+      "package": "/Game/-HeroGame/Maps/SubLevel/CommercialArea",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/CommercialArea.CommercialArea"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": "+0",
+          "G": 0.7536725997924805,
+          "B": 0.06763728708028793,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6213,
+      "objectName": "LevelStreamingKismet_33",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/DownTown.DownTown",
+      "package": "/Game/-HeroGame/Maps/SubLevel/DownTown",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/DownTown.DownTown"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.2029118537902832,
+          "G": "+0",
+          "B": 0.6257598996162415,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6214,
+      "objectName": "LevelStreamingKismet_34",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/FinancialDistrict.FinancialDistrict",
+      "package": "/Game/-HeroGame/Maps/SubLevel/FinancialDistrict",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/FinancialDistrict.FinancialDistrict"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": "+0",
+          "G": 0.2995365560054779,
+          "B": 0.5217733383178711,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6215,
+      "objectName": "LevelStreamingKismet_35",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/IndustrialArea.IndustrialArea",
+      "package": "/Game/-HeroGame/Maps/SubLevel/IndustrialArea",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/IndustrialArea.IndustrialArea"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.44447359442710876,
+          "G": 0.37683629989624023,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6216,
+      "objectName": "LevelStreamingKismet_37",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/Park.Park",
+      "package": "/Game/-HeroGame/Maps/SubLevel/Park",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/Park.Park"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.3188614845275879,
+          "G": 0.5024483799934387,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6217,
+      "objectName": "LevelStreamingKismet_38",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea1.ResidentialArea1",
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea1",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea1.ResidentialArea1"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": "+0",
+          "G": 0.01932493783533573,
+          "B": 0.8019849061965942,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6218,
+      "objectName": "LevelStreamingKismet_39",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea2.ResidentialArea2",
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea2",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea2.ResidentialArea2"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.7729974985122681,
+          "G": "+0",
+          "B": 0.04888749122619629,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6220,
+      "objectName": "LevelStreamingKismet_40",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea3.ResidentialArea3",
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea3",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea3.ResidentialArea3"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.6377229690551758,
+          "G": "+0",
+          "B": 0.18577246367931366,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6221,
+      "objectName": "LevelStreamingKismet_41",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/Slam.Slam",
+      "package": "/Game/-HeroGame/Maps/SubLevel/Slam",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/Slam.Slam"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.5990731120109558,
+          "G": 0.22223679721355438,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6195,
+      "objectName": "LevelStreamingAlwaysLoaded_1",
+      "class": "LevelStreamingAlwaysLoaded",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/LightingTest.LightingTest",
+      "package": "/Game/-HeroGame/Maps/SubLevel/LightingTest",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "always-loaded class policy",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/LightingTest.LightingTest"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.35751134157180786,
+          "G": "+0",
+          "B": 0.4693199396133423,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6194,
+      "objectName": "LevelStreamingAlwaysLoaded_0",
+      "class": "LevelStreamingAlwaysLoaded",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/CitizenWayPoint.CitizenWayPoint",
+      "package": "/Game/-HeroGame/Maps/SubLevel/CitizenWayPoint",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "always-loaded class policy",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/CitizenWayPoint.CitizenWayPoint"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.5410982966423035,
+          "G": "+0",
+          "B": 0.28354746103286743,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6199,
+      "objectName": "LevelStreamingKismet_0",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/StoryLevel/TutorialLevel.TutorialLevel",
+      "package": "/Game/-HeroGame/Maps/StoryLevel/TutorialLevel",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/StoryLevel/TutorialLevel.TutorialLevel"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": "+0",
+          "G": 0.6860353350639343,
+          "B": 0.13527457416057587,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6196,
+      "objectName": "LevelStreamingAlwaysLoaded_2",
+      "class": "LevelStreamingAlwaysLoaded",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/CustomEventLevel.CustomEventLevel",
+      "package": "/Game/-HeroGame/Maps/SubLevel/CustomEventLevel",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "always-loaded class policy",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/CustomEventLevel.CustomEventLevel"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": "+0",
+          "G": 0.628060519695282,
+          "B": 0.19324937462806702,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6197,
+      "objectName": "LevelStreamingAlwaysLoaded_3",
+      "class": "LevelStreamingAlwaysLoaded",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/TitleMenuLevel.TitleMenuLevel",
+      "package": "/Game/-HeroGame/Maps/SubLevel/TitleMenuLevel",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "always-loaded class policy",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/TitleMenuLevel.TitleMenuLevel"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.22223679721355438,
+          "G": 0.5990731120109558,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6200,
+      "objectName": "LevelStreamingKismet_1",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/DynamicProps.DynamicProps",
+      "package": "/Game/-HeroGame/Maps/SubLevel/DynamicProps",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/DynamicProps.DynamicProps"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": "+0",
+          "G": 0.07729975134134293,
+          "B": 0.7440100908279419,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6208,
+      "objectName": "LevelStreamingKismet_2",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/CQ_D_TU.CQ_D_TU",
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_D_TU",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/CQ_D_TU.CQ_D_TU"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.6087355613708496,
+          "G": 0.2125743329524994,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6209,
+      "objectName": "LevelStreamingKismet_3",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/CQ_F_TU.CQ_F_TU",
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_F_TU",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/CQ_F_TU.CQ_F_TU"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": "+0",
+          "G": 0.38649874925613403,
+          "B": 0.4348111152648926,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6219,
+      "objectName": "LevelStreamingKismet_4",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/WindBossLevel.WindBossLevel",
+      "package": "/Game/-HeroGame/Maps/SubLevel/WindBossLevel",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/WindBossLevel.WindBossLevel"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.06763728708028793,
+          "G": 0.7536725997924805,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6222,
+      "objectName": "LevelStreamingKismet_5",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/FireBossLevel.FireBossLevel",
+      "package": "/Game/-HeroGame/Maps/SubLevel/FireBossLevel",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/FireBossLevel.FireBossLevel"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.4058237075805664,
+          "G": 0.4154861867427826,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6223,
+      "objectName": "LevelStreamingKismet_6",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/LightningBossLevel.LightningBossLevel",
+      "package": "/Game/-HeroGame/Maps/SubLevel/LightningBossLevel",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/LightningBossLevel.LightningBossLevel"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.009662468917667866,
+          "G": 0.8116474151611328,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6224,
+      "objectName": "LevelStreamingKismet_7",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/StoryLevel/Story1Level.Story1Level",
+      "package": "/Game/-HeroGame/Maps/StoryLevel/Story1Level",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/StoryLevel/Story1Level.Story1Level"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": "+0",
+          "G": 0.7440100908279419,
+          "B": 0.07729975134134293,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6225,
+      "objectName": "LevelStreamingKismet_8",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/StoryLevel/Story2Level.Story2Level",
+      "package": "/Game/-HeroGame/Maps/StoryLevel/Story2Level",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/StoryLevel/Story2Level.Story2Level"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": 0.628060519695282,
+          "G": 0.19324937462806702,
+          "B": "+0",
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6226,
+      "objectName": "LevelStreamingKismet_9",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/StoryLevel/Story3Level.Story3Level",
+      "package": "/Game/-HeroGame/Maps/StoryLevel/Story3Level",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/StoryLevel/Story3Level.Story3Level"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": "+0",
+          "G": 0.6956977844238281,
+          "B": 0.12561209499835968,
+          "A": 1.0
+        }
+      }
+    },
+    {
+      "exportIndex": 6198,
+      "objectName": "LevelStreamingDynamic_0",
+      "class": "LevelStreamingDynamic",
+      "outer": "MainLevel",
+      "worldAsset": "/Game/-HeroGame/Maps/SubLevel/EnelightMeteor.EnelightMeteor",
+      "package": "/Game/-HeroGame/Maps/SubLevel/EnelightMeteor",
+      "explicitLoadingProperties": {},
+      "bShouldBeLoaded": null,
+      "bShouldBeVisible": null,
+      "configurationClassification": "dynamic runtime-requested; current loaded/visible state not established",
+      "levelTransform": null,
+      "properties": {
+        "WorldAsset": {
+          "AssetPath": {
+            "PackageName": null,
+            "AssetName": "/Game/-HeroGame/Maps/SubLevel/EnelightMeteor.EnelightMeteor"
+          },
+          "SubPathString": null
+        },
+        "LevelColor": {
+          "R": "+0",
+          "G": 0.2499997615814209,
+          "B": 1.0,
+          "A": 1.0
+        }
+      }
+    }
+  ],
+  "tables": [
+    {
+      "worldExport": 11844,
+      "tailBytes": 148,
+      "tailSha256": "d0704a55fee5f385abcafd9a40d09f9a18c7d6524ae8fdc0cf0a46c6307f83b5",
+      "tailWords": [
+        0,
+        6193,
+        0,
+        33,
+        6201,
+        6202,
+        6203,
+        6204,
+        6205,
+        6206,
+        6207,
+        6210,
+        6211,
+        6212,
+        6213,
+        6214,
+        6215,
+        6216,
+        6217,
+        6218,
+        6220,
+        6221,
+        6195,
+        6194,
+        6199,
+        6196,
+        6197,
+        6200,
+        6208,
+        6209,
+        6219,
+        6222,
+        6223,
+        6224,
+        6225,
+        6226,
+        6198
+      ],
+      "countOffsetInExtras": 12,
+      "count": 33,
+      "streamingExportIndices": [
+        6201,
+        6202,
+        6203,
+        6204,
+        6205,
+        6206,
+        6207,
+        6210,
+        6211,
+        6212,
+        6213,
+        6214,
+        6215,
+        6216,
+        6217,
+        6218,
+        6220,
+        6221,
+        6195,
+        6194,
+        6199,
+        6196,
+        6197,
+        6200,
+        6208,
+        6209,
+        6219,
+        6222,
+        6223,
+        6224,
+        6225,
+        6226,
+        6198
+      ],
+      "verifiedCountedTable": true,
+      "evidence": "Exact terminal int32 counted array; every reference resolves to a LevelStreaming object owned by this World. This decodes the counted-reference region, not all undocumented UWorld tail fields."
+    }
+  ]
+}

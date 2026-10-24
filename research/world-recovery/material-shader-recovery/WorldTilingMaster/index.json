@@ -1,0 +1,6167 @@
+{
+  "shaders": [
+    {
+      "dxbcLiteralOffsetInExtras": 26117,
+      "lz4CandidateStart": 25996,
+      "lz4ConsumedEnd": 29394,
+      "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+      "bytes": 9248,
+      "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 25,
+        "srvMap": [
+          5,
+          0,
+          0,
+          0,
+          0,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          5,
+          0,
+          0,
+          7,
+          8,
+          0,
+          11009,
+          50331907,
+          67118850,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          69011706,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          5,
+          0,
+          0,
+          7,
+          10,
+          512,
+          2817,
+          50331654,
+          50332167,
+          50332680,
+          67118595,
+          67119108,
+          67119621,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 29517,
+      "lz4CandidateStart": 29500,
+      "lz4ConsumedEnd": 31278,
+      "decodedPrefixHex": "000000000000000000000000000000000200000000000000f407991e00000000",
+      "bytes": 4620,
+      "sha256": "a280357a328ceb134c964232cdbb56d759d66f901292339f4f1a81d4f6b0ae6d",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-1-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 0,
+        "srvMap": [],
+        "samplerMap": [],
+        "uavMap": [],
+        "layoutHashes": [
+          0,
+          513345524
+        ],
+        "textureMap": [],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 31490,
+      "lz4CandidateStart": 31351,
+      "lz4ConsumedEnd": 34885,
+      "decodedPrefixHex": "0d0000000500000000000000000000000000000000000000ffffffff090000000400000000000000060000000700000000000000012b00000301000202270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991e00000000ff0dd000810ac50c1400000004000000000000000d000000100000000002000001030000020400000305000004060000050700000608000007090000080b00000c0000020d0200020e040002092600030a2800030b2a0003ffffffff",
+      "bytes": 9716,
+      "sha256": "0d80ff9999529d7521825b16d6bf2adcfd5695efb8c6c289596b1989c93fa6a2",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-2-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 13,
+        "srvMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          0,
+          6,
+          7,
+          0,
+          11009,
+          33554691,
+          50341634,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          0,
+          13,
+          16,
+          512,
+          769,
+          1026,
+          1283,
+          1540,
+          1797,
+          2054,
+          2311,
+          2824,
+          33554444,
+          33554957,
+          33555470,
+          50341385,
+          50341898,
+          50342411,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 3,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 4,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 5,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 6,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 8,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 9,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 12
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 13
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 14
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 11
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 35104,
+      "lz4CandidateStart": 34964,
+      "lz4ConsumedEnd": 38389,
+      "decodedPrefixHex": "0f0000000800000004000000000000000000000000000000003100000133000002340000ffffffff090000000400000005000000060000000700000000000000030100010127000202090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991eff0dd000810ac50cf10e830d0e0000000000000004000000070000000a000000090000010a0200010b0400010326000204280002052a0002060000030701000308030003ffffffff",
+      "bytes": 9432,
+      "sha256": "816689529f6a315ab667c588043879da51931f8dfbc62b7cb468f09990304238",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-3-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          5,
+          6,
+          7,
+          0,
+          16777475,
+          33564417,
+          50333954,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          7,
+          10,
+          16777225,
+          16777738,
+          16778251,
+          33564163,
+          33564676,
+          33565189,
+          50331654,
+          50331911,
+          50332424,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 3,
+            "bindIndex": 8
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 38633,
+      "lz4CandidateStart": 38483,
+      "lz4ConsumedEnd": 42268,
+      "decodedPrefixHex": "0d00000006000000040000000000000000000000000000000a340000ffffffff090000000400000000000000060000000700000000000000012b00000301000202270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991e00000000ff0dd000810ac50c1500000004000000000000000e000000110000000002000001030000020400000305000004060000050700000608000007090000080a0000090b00000e0000020f020002100400020b2600030c2800030d2a0003ffffffff",
+      "bytes": 10672,
+      "sha256": "bf971dcbc5c81a9aad827662669969c89ddfe9efd05d318bc4a159628a7cd69d",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-4-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 13,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          13322,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          0,
+          6,
+          7,
+          0,
+          11009,
+          33554691,
+          50341634,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          0,
+          14,
+          17,
+          512,
+          769,
+          1026,
+          1283,
+          1540,
+          1797,
+          2054,
+          2311,
+          2568,
+          2825,
+          33554446,
+          33554959,
+          33555472,
+          50341387,
+          50341900,
+          50342413,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 3,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 4,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 5,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 6,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 8,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 9,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 10,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 14
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 15
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 16
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 12
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 13
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 42424,
+      "lz4CandidateStart": 42347,
+      "lz4ConsumedEnd": 44009,
+      "decodedPrefixHex": "280000000c0000000000000000000000000000000600000000000000080000000300000304030003000000050101000502020005ffffffff07000000000000000000000000000000000000000000000000000000ffffffff07000000000000000000000000000000000000000000000000000000ffffffff0600000000000000f407991e00000000e706460600000000f906360607000000000000000000000000000000000000000000000000000000ffffffff",
+      "bytes": 4152,
+      "sha256": "2e317a6c6dc3f75d91d94ba005c97affa96b6b06e29df3f91ee461cf1c460c0c",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-5-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 40,
+        "srvMap": [
+          0,
+          0,
+          0,
+          6,
+          0,
+          8,
+          50331651,
+          50332420,
+          83886080,
+          83886337,
+          83886594,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          0,
+          513345524,
+          0,
+          105252583,
+          0,
+          104204025
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 44226,
+      "lz4CandidateStart": 44104,
+      "lz4ConsumedEnd": 47156,
+      "decodedPrefixHex": "390000000800000006000000000000000000000000000000000000000000000000340000ffffffff0b00000006000000000000000000000007000000080000000900000000000000030100030127000402090005ffffffff07000000000000000000000000000000000000000000000000000000ffffffff06000000f407991e0000000000000000ff0dd000810ac50cf10e830d0e00000000000000000000000000000006000000090000000c0000000500000306020003070400030126000402280004032a000404000005ffffffff",
+      "bytes": 8320,
+      "sha256": "4494c22e0cfecbc77b0675c5ab5dfb02eb882bcd363b2979e45e0ca6b6eb5313",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-6-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 57,
+        "srvMap": [
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13312,
+          4294967295
+        ],
+        "samplerMap": [
+          6,
+          0,
+          0,
+          7,
+          8,
+          9,
+          0,
+          50331907,
+          67118849,
+          83888386,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          0,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          6,
+          9,
+          12,
+          50331653,
+          50332166,
+          50332679,
+          67118593,
+          67119106,
+          67119619,
+          83886084,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 0,
+            "bindIndex": 4
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 47396,
+      "lz4CandidateStart": 47290,
+      "lz4ConsumedEnd": 49745,
+      "decodedPrefixHex": "0d0000000500000000000000000000000000000000000000ffffffff090000000400000000000000060000000700000000000000012b00000301000202270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991e00000000ff0dd000810ac50c0d0000000400000000000000060000000900000000020000010b00000500000206020002070400020226000303280003042a0003ffffffff",
+      "bytes": 6456,
+      "sha256": "bc6218c55461bf66379ecc9c338b77e7e92f22821b3e73e03454a78fb310f779",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-7-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 13,
+        "srvMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          0,
+          6,
+          7,
+          0,
+          11009,
+          33554691,
+          50341634,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          0,
+          6,
+          9,
+          512,
+          2817,
+          33554437,
+          33554950,
+          33555463,
+          50341378,
+          50341891,
+          50342404,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 49938,
+      "lz4CandidateStart": 49823,
+      "lz4ConsumedEnd": 52966,
+      "decodedPrefixHex": "0d000000060000000400000000000000000000000000000002310000ffffffff090000000400000000000000060000000700000000000000012b00000301000202270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991efa081d04ff0dd000810ac50c0d0000000400000000000000060000000900000000020000010b00000600000207020002080400020326000304280003052a0003ffffffff",
+      "bytes": 8380,
+      "sha256": "19e7cfe9f3e58af6a3f586b8d7e34e95cd335dbfaf619ad4665d48add90b260e",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-8-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 13,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12546,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          0,
+          6,
+          7,
+          0,
+          11009,
+          33554691,
+          50341634,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          69011706,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          0,
+          6,
+          9,
+          512,
+          2817,
+          33554438,
+          33554951,
+          33555464,
+          50341379,
+          50341892,
+          50342405,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 53176,
+      "lz4CandidateStart": 53060,
+      "lz4ConsumedEnd": 55963,
+      "decodedPrefixHex": "07000000060000000300000000000000000000000231000003340000ffffffff0800000003000000050000000600000000000000012b00000301000102270002ffffffff04000000000000000000000000000000ffffffff03000000f407991eff0dd000810ac50c0c00000003000000050000000800000000020000010b00000700000108020001090400010426000205280002062a0002ffffffff",
+      "bytes": 7784,
+      "sha256": "c81744be279ab55484cd1846f924e137650b59cfdd4fcd5211287854819df781",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-9-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 7,
+        "srvMap": [
+          3,
+          0,
+          0,
+          12546,
+          13315,
+          4294967295
+        ],
+        "samplerMap": [
+          3,
+          5,
+          6,
+          0,
+          11009,
+          16777475,
+          33564418,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          3,
+          5,
+          8,
+          512,
+          2817,
+          16777223,
+          16777736,
+          16778249,
+          33564164,
+          33564677,
+          33565190,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 56175,
+      "lz4CandidateStart": 56030,
+      "lz4ConsumedEnd": 59456,
+      "decodedPrefixHex": "1d00000007000000050000000000000000000000000000000000000002340000ffffffff0b000000050000000000000007000000080000000900000000000000012b0000030300020401000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c110000000500000000000000070000000a0000000d00000000020000010b0000060000020701000208020002090000030a0200030b0400030326000404280004052a0004ffffffff",
+      "bytes": 9236,
+      "sha256": "d8f28ba968bc59684baedd5f384a59c0ccb0d85a63397ce0f935545e19052043",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-10-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 29,
+        "srvMap": [
+          5,
+          0,
+          0,
+          0,
+          0,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          5,
+          0,
+          7,
+          8,
+          9,
+          0,
+          11009,
+          33555203,
+          50331908,
+          67118850,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          69011706,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          5,
+          0,
+          7,
+          10,
+          13,
+          512,
+          2817,
+          33554438,
+          33554695,
+          33554952,
+          50331657,
+          50332170,
+          50332683,
+          67118595,
+          67119108,
+          67119621,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 59707,
+      "lz4CandidateStart": 59562,
+      "lz4ConsumedEnd": 63059,
+      "decodedPrefixHex": "070000000500000003000000000000000000000009310000ffffffff0800000003000000050000000600000000000000012b00000301000102270002ffffffff04000000000000000000000000000000ffffffff03000000f407991eff0dd000810ac50c13000000030000000c0000000f0000000002000001030000020400000305000004060000050700000608000007090000080b00000d0000010e0200010f0400010a2600020b2800020c2a0002ffffffff",
+      "bytes": 9556,
+      "sha256": "9646c822db93c48971214b5e27b68216993712f6508931a487c04ff3a43bfd74",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-11-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 7,
+        "srvMap": [
+          3,
+          0,
+          0,
+          12553,
+          4294967295
+        ],
+        "samplerMap": [
+          3,
+          5,
+          6,
+          0,
+          11009,
+          16777475,
+          33564418,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          3,
+          12,
+          15,
+          512,
+          769,
+          1026,
+          1283,
+          1540,
+          1797,
+          2054,
+          2311,
+          2824,
+          16777229,
+          16777742,
+          16778255,
+          33564170,
+          33564683,
+          33565196,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 3,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 4,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 5,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 6,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 8,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 9,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 13
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 14
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 15
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 12
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 63271,
+      "lz4CandidateStart": 63126,
+      "lz4ConsumedEnd": 66716,
+      "decodedPrefixHex": "1d00000007000000050000000000000000000000000000000000000002340000ffffffff0b000000050000000000000007000000080000000900000000000000012b0000030300020401000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c110000000500000000000000070000000a0000000d00000000020000010b0000060000020701000208020002090000030a0200030b0400030326000404280004052a0004ffffffff",
+      "bytes": 9660,
+      "sha256": "01624dfc90f4c226a5a169c08394248daa0263dab0e65a6d075424ef2430e2ad",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-12-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 29,
+        "srvMap": [
+          5,
+          0,
+          0,
+          0,
+          0,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          5,
+          0,
+          7,
+          8,
+          9,
+          0,
+          11009,
+          33555203,
+          50331908,
+          67118850,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          69011706,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          5,
+          0,
+          7,
+          10,
+          13,
+          512,
+          2817,
+          33554438,
+          33554695,
+          33554952,
+          50331657,
+          50332170,
+          50332683,
+          67118595,
+          67119108,
+          67119621,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 66945,
+      "lz4CandidateStart": 66822,
+      "lz4ConsumedEnd": 69761,
+      "decodedPrefixHex": "0f00000007000000040000000000000000000000000000000031000001330000ffffffff090000000400000005000000060000000700000000000000030100010127000202090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991eff0dd000810ac50cf10e830d0c0000000000000004000000070000000a0000000600000107020001080400010226000203280002042a000205000003ffffffff",
+      "bytes": 7720,
+      "sha256": "c67bdbf7fb4c111e2f5dec712223cf8301909017622e184295e0e582a97444cc",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-13-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          5,
+          6,
+          7,
+          0,
+          16777475,
+          33564417,
+          50333954,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          7,
+          10,
+          16777222,
+          16777735,
+          16778248,
+          33564162,
+          33564675,
+          33565188,
+          50331653,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 69976,
+      "lz4CandidateStart": 69855,
+      "lz4ConsumedEnd": 72782,
+      "decodedPrefixHex": "3900000007000000000000000000000000000000000000000000000000000000ffffffff0b00000006000000000000000000000007000000080000000900000000000000030100030127000402090005ffffffff07000000000000000000000000000000000000000000000000000000ffffffff06000000f407991e0000000000000000ff0dd000810ac50cf10e830d0f00000000000000000000000000000006000000090000000c0000000500000306020003070400030026000401280004022a00040300000504030005ffffffff",
+      "bytes": 7812,
+      "sha256": "6bf8dfca22aa4fe6e44e13bca52f9b7b2553fcf606a1da49da899cc4fe24f550",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-14-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 57,
+        "srvMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "samplerMap": [
+          6,
+          0,
+          0,
+          7,
+          8,
+          9,
+          0,
+          50331907,
+          67118849,
+          83888386,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          0,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          6,
+          9,
+          12,
+          50331653,
+          50332166,
+          50332679,
+          67118592,
+          67119105,
+          67119618,
+          83886083,
+          83886852,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 0,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 3,
+            "bindIndex": 4
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 73057,
+      "lz4CandidateStart": 72916,
+      "lz4ConsumedEnd": 76467,
+      "decodedPrefixHex": "0f00000007000000040000000000000000000000000000000231000003340000ffffffff0a0000000400000006000000070000000800000000000000012b0000030300010401000202270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991efa081d04ff0dd000810ac50c100000000400000006000000090000000c00000000020000010b00000700000108010001090200010a0000020b0200020c0400020426000305280003062a0003ffffffff",
+      "bytes": 9576,
+      "sha256": "5441ee61c57b13f068b00580083506f0d9c6fb3cfd900a44d9001b46d1b11c55",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-15-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12546,
+          13315,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          6,
+          7,
+          8,
+          0,
+          11009,
+          16777987,
+          33554692,
+          50341634,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          69011706,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          6,
+          9,
+          12,
+          512,
+          2817,
+          16777223,
+          16777480,
+          16777737,
+          33554442,
+          33554955,
+          33555468,
+          50341380,
+          50341893,
+          50342406,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 12
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 76684,
+      "lz4CandidateStart": 76561,
+      "lz4ConsumedEnd": 79652,
+      "decodedPrefixHex": "390000000800000006000000000000000000000000000000000000000000000000340000ffffffff0b00000006000000000000000000000007000000080000000900000000000000030100030127000402090005ffffffff07000000000000000000000000000000000000000000000000000000ffffffff06000000f407991e0000000000000000ff0dd000810ac50cf10e830d0f00000000000000000000000000000006000000090000000c0000000600000307020003080400030126000402280004032a00040400000505010005ffffffff",
+      "bytes": 8584,
+      "sha256": "2feaaac039a1118c00f66faab614b89151876c15f5151d15d50223e8ee68b313",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-16-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 57,
+        "srvMap": [
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13312,
+          4294967295
+        ],
+        "samplerMap": [
+          6,
+          0,
+          0,
+          7,
+          8,
+          9,
+          0,
+          50331907,
+          67118849,
+          83888386,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          0,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          6,
+          9,
+          12,
+          50331654,
+          50332167,
+          50332680,
+          67118593,
+          67119106,
+          67119619,
+          83886084,
+          83886341,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 0,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 1,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 79910,
+      "lz4CandidateStart": 79787,
+      "lz4ConsumedEnd": 82709,
+      "decodedPrefixHex": "0f00000007000000040000000000000000000000000000000031000001330000ffffffff090000000400000005000000060000000700000000000000030100010127000202090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991eff0dd000810ac50cf10e830d0c0000000000000004000000070000000a0000000600000107020001080400010226000203280002042a000205000003ffffffff",
+      "bytes": 7696,
+      "sha256": "141dfb4e2f3ddf3c396622f6832901b4bbfb471a75a982710d0e02a4e3e2d7dc",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-17-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          5,
+          6,
+          7,
+          0,
+          16777475,
+          33564417,
+          50333954,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          7,
+          10,
+          16777222,
+          16777735,
+          16778248,
+          33564162,
+          33564675,
+          33565188,
+          50331653,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 82932,
+      "lz4CandidateStart": 82803,
+      "lz4ConsumedEnd": 85924,
+      "decodedPrefixHex": "0f0000000800000004000000000000000000000000000000003100000133000002340000ffffffff090000000400000005000000060000000700000000000000030100010127000202090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991eff0dd000810ac50cf10e830d0c0000000000000004000000070000000a0000000700000108020001090400010326000204280002052a000206000003ffffffff",
+      "bytes": 8428,
+      "sha256": "4ab6047f199dca5ab1bc675237d9f84c43ef27fc857c59d69f52ca50112c8372",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-18-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          5,
+          6,
+          7,
+          0,
+          16777475,
+          33564417,
+          50333954,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          7,
+          10,
+          16777223,
+          16777736,
+          16778249,
+          33564163,
+          33564676,
+          33565189,
+          50331654,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 86135,
+      "lz4CandidateStart": 86018,
+      "lz4ConsumedEnd": 88673,
+      "decodedPrefixHex": "3900000007000000000000000000000000000000000000000000000000000000ffffffff0b00000006000000000000000000000007000000080000000900000000000000030100030127000402090005ffffffff07000000000000000000000000000000000000000000000000000000ffffffff06000000f407991e0000000000000000ff0dd000810ac50cf10e830d0e00000000000000000000000000000006000000090000000c0000000400000305020003060400030026000401280004022a000403000005ffffffff",
+      "bytes": 7164,
+      "sha256": "132ce489793a20f510d8d845f5ecbe302fb181ff89f6a2d9dabc17d1fcc6927b",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-19-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 57,
+        "srvMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "samplerMap": [
+          6,
+          0,
+          0,
+          7,
+          8,
+          9,
+          0,
+          50331907,
+          67118849,
+          83888386,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          0,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          6,
+          9,
+          12,
+          50331652,
+          50332165,
+          50332678,
+          67118592,
+          67119105,
+          67119618,
+          83886083,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 0,
+            "bindIndex": 3
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 88824,
+      "lz4CandidateStart": 88807,
+      "lz4ConsumedEnd": 90574,
+      "decodedPrefixHex": "000000000000000000000000000000000200000000000000f407991e00000000",
+      "bytes": 4608,
+      "sha256": "e551123fc7648088e546061b4263393c2bced65942c3d30da4e676ae7e78096c",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-20-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 0,
+        "srvMap": [],
+        "samplerMap": [],
+        "uavMap": [],
+        "layoutHashes": [
+          0,
+          513345524
+        ],
+        "textureMap": [],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 90759,
+      "lz4CandidateStart": 90647,
+      "lz4ConsumedEnd": 93453,
+      "decodedPrefixHex": "0d000000060000000400000000000000000000000000000002340000ffffffff090000000400000000000000060000000700000000000000012b00000301000202270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991e00000000ff0dd000810ac50c0d0000000400000000000000060000000900000000020000010b00000600000207020002080400020326000304280003052a0003ffffffff",
+      "bytes": 7520,
+      "sha256": "d300bd3e33167f7556b969d5227c50575c05fafbda3ad9e73db68c671b4b7b8b",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-21-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 13,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          0,
+          6,
+          7,
+          0,
+          11009,
+          33554691,
+          50341634,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          0,
+          6,
+          9,
+          512,
+          2817,
+          33554438,
+          33554951,
+          33555464,
+          50341379,
+          50341892,
+          50342405,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 93592,
+      "lz4CandidateStart": 93532,
+      "lz4ConsumedEnd": 94726,
+      "decodedPrefixHex": "0300000007000000020000000400000000310000013300000200000103030001ffffffff030000000000000000000000ffffffff030000000000000000000000ffffffff02000000f407991ee7064606030000000000000000000000ffffffff",
+      "bytes": 2492,
+      "sha256": "b334789ff8a3e4086a5329b3a3d07507d3677b9524efb0166cb642b909f2c743",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-22-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 3,
+        "srvMap": [
+          2,
+          4,
+          12544,
+          13057,
+          16777218,
+          16777987,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          105252583
+        ],
+        "textureMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 94910,
+      "lz4CandidateStart": 94770,
+      "lz4ConsumedEnd": 97957,
+      "decodedPrefixHex": "0f000000060000000400000000000000000000000000000002310000ffffffff0a0000000400000006000000070000000800000000000000012b0000030300010401000202270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991efa081d04ff0dd000810ac50c100000000400000006000000090000000c00000000020000010b0000060000010701000108020001090000020a0200020b0400020326000304280003052a0003ffffffff",
+      "bytes": 8368,
+      "sha256": "53325702765aacc2596cb35f8ce38e2e46246c669a2c8e0a8ecce94e8db66a8d",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-23-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12546,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          6,
+          7,
+          8,
+          0,
+          11009,
+          16777987,
+          33554692,
+          50341634,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          69011706,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          6,
+          9,
+          12,
+          512,
+          2817,
+          16777222,
+          16777479,
+          16777736,
+          33554441,
+          33554954,
+          33555467,
+          50341379,
+          50341892,
+          50342405,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 98163,
+      "lz4CandidateStart": 98051,
+      "lz4ConsumedEnd": 101026,
+      "decodedPrefixHex": "0d000000060000000400000000000000000000000000000002340000ffffffff090000000400000000000000060000000700000000000000012b00000301000202270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991e00000000ff0dd000810ac50c0d0000000400000000000000060000000900000000020000010b00000600000207020002080400020326000304280003052a0003ffffffff",
+      "bytes": 7944,
+      "sha256": "0a769b8e46d3442570713f35e5a419684ef9f3d6caf09f87c2e385b9565cfe7c",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-24-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 13,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          0,
+          6,
+          7,
+          0,
+          11009,
+          33554691,
+          50341634,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          0,
+          6,
+          9,
+          512,
+          2817,
+          33554438,
+          33554951,
+          33555464,
+          50341379,
+          50341892,
+          50342405,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 101182,
+      "lz4CandidateStart": 101105,
+      "lz4ConsumedEnd": 102794,
+      "decodedPrefixHex": "280000000c0000000000000000000000000000000600000000000000080000000300000304030003000000050101000502020005ffffffff07000000000000000000000000000000000000000000000000000000ffffffff07000000000000000000000000000000000000000000000000000000ffffffff0600000000000000f407991e00000000e706460600000000f906360607000000000000000000000000000000000000000000000000000000ffffffff",
+      "bytes": 4160,
+      "sha256": "3a970da701baaf732b088efa01a7e779beb21bca387c20c16ef068e9f457d358",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-25-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 40,
+        "srvMap": [
+          0,
+          0,
+          0,
+          6,
+          0,
+          8,
+          50331651,
+          50332420,
+          83886080,
+          83886337,
+          83886594,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          0,
+          513345524,
+          0,
+          105252583,
+          0,
+          104204025
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 103026,
+      "lz4CandidateStart": 102889,
+      "lz4ConsumedEnd": 106089,
+      "decodedPrefixHex": "1d000000060000000000000000000000000000000000000000000000ffffffff0b000000050000000000000007000000080000000900000000000000012b0000030300020401000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c110000000500000000000000070000000a0000000d00000000020000010b000005000002060100020702000208000003090200030a0400030226000403280004042a0004ffffffff",
+      "bytes": 8452,
+      "sha256": "cb32c1aafcd118de53e1b5cd5c924b941f926087231fba0f1148a3926f4cdaac",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-26-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 29,
+        "srvMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "samplerMap": [
+          5,
+          0,
+          7,
+          8,
+          9,
+          0,
+          11009,
+          33555203,
+          50331908,
+          67118850,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          69011706,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          5,
+          0,
+          7,
+          10,
+          13,
+          512,
+          2817,
+          33554437,
+          33554694,
+          33554951,
+          50331656,
+          50332169,
+          50332682,
+          67118594,
+          67119107,
+          67119620,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 106332,
+      "lz4CandidateStart": 106195,
+      "lz4ConsumedEnd": 109234,
+      "decodedPrefixHex": "1d000000060000000000000000000000000000000000000000000000ffffffff0b000000050000000000000007000000080000000900000000000000012b0000030300020401000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c110000000500000000000000070000000a0000000d00000000020000010b000005000002060100020702000208000003090200030a0400030226000403280004042a0004ffffffff",
+      "bytes": 8028,
+      "sha256": "ce002b35b552a46b06113180d463c9d24bd87a9d55d61980b348a62d22d3b43a",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-27-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 29,
+        "srvMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "samplerMap": [
+          5,
+          0,
+          7,
+          8,
+          9,
+          0,
+          11009,
+          33555203,
+          50331908,
+          67118850,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          69011706,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          5,
+          0,
+          7,
+          10,
+          13,
+          512,
+          2817,
+          33554437,
+          33554694,
+          33554951,
+          50331656,
+          50332169,
+          50332682,
+          67118594,
+          67119107,
+          67119620,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 109457,
+      "lz4CandidateStart": 109340,
+      "lz4ConsumedEnd": 112184,
+      "decodedPrefixHex": "3900000007000000000000000000000000000000000000000000000000000000ffffffff0b00000006000000000000000000000007000000080000000900000000000000030100030127000402090005ffffffff07000000000000000000000000000000000000000000000000000000ffffffff06000000f407991e0000000000000000ff0dd000810ac50cf10e830d0e00000000000000000000000000000006000000090000000c0000000400000305020003060400030026000401280004022a000403000005ffffffff",
+      "bytes": 7588,
+      "sha256": "3d01be57b93f9f39646075f7913405a795ac2f01619ac849c7c374436ad06585",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-28-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 57,
+        "srvMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "samplerMap": [
+          6,
+          0,
+          0,
+          7,
+          8,
+          9,
+          0,
+          50331907,
+          67118849,
+          83888386,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          0,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          6,
+          9,
+          12,
+          50331652,
+          50332165,
+          50332678,
+          67118592,
+          67119105,
+          67119618,
+          83886083,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 0,
+            "bindIndex": 3
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 112428,
+      "lz4CandidateStart": 112318,
+      "lz4ConsumedEnd": 114897,
+      "decodedPrefixHex": "070000000500000003000000000000000000000002310000ffffffff0800000003000000050000000600000000000000012b00000301000102270002ffffffff04000000000000000000000000000000ffffffff03000000f407991eff0dd000810ac50c0c00000003000000050000000800000000020000010b00000600000107020001080400010326000204280002052a0002ffffffff",
+      "bytes": 6720,
+      "sha256": "f075cfba0afad02ac05b7268e093cf14095182f8440c5878fa9e93eabb1e74d3",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-29-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 7,
+        "srvMap": [
+          3,
+          0,
+          0,
+          12546,
+          4294967295
+        ],
+        "samplerMap": [
+          3,
+          5,
+          6,
+          0,
+          11009,
+          16777475,
+          33564418,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          3,
+          5,
+          8,
+          512,
+          2817,
+          16777222,
+          16777735,
+          16778248,
+          33564163,
+          33564676,
+          33565189,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 115114,
+      "lz4CandidateStart": 114964,
+      "lz4ConsumedEnd": 118913,
+      "decodedPrefixHex": "0d00000006000000040000000000000000000000000000000a340000ffffffff090000000400000000000000060000000700000000000000012b00000301000202270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991e00000000ff0dd000810ac50c1500000004000000000000000e000000110000000002000001030000020400000305000004060000050700000608000007090000080a0000090b00000e0000020f020002100400020b2600030c2800030d2a0003ffffffff",
+      "bytes": 11096,
+      "sha256": "56555af04c36f5e54db7e491d495d2179910c33c93990546b319aff7b5029fa0",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-30-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 13,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          13322,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          0,
+          6,
+          7,
+          0,
+          11009,
+          33554691,
+          50341634,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          0,
+          14,
+          17,
+          512,
+          769,
+          1026,
+          1283,
+          1540,
+          1797,
+          2054,
+          2311,
+          2568,
+          2825,
+          33554446,
+          33554959,
+          33555472,
+          50341387,
+          50341900,
+          50342413,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 3,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 4,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 5,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 6,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 8,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 9,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 10,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 14
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 15
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 16
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 12
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 13
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 119044,
+      "lz4CandidateStart": 118992,
+      "lz4ConsumedEnd": 119988,
+      "decodedPrefixHex": "030000000500000002000000030000000031000001030001ffffffff030000000000000000000000ffffffff030000000000000000000000ffffffff02000000f407991ee7064606030000000000000000000000ffffffff",
+      "bytes": 1956,
+      "sha256": "c349ec678e23f007a9f5bb04ad706c3bab7c5a706ed230077114ebc45f7c350e",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-31-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 3,
+        "srvMap": [
+          2,
+          3,
+          12544,
+          16777985,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          105252583
+        ],
+        "textureMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 120152,
+      "lz4CandidateStart": 120030,
+      "lz4ConsumedEnd": 122895,
+      "decodedPrefixHex": "390000000800000006000000000000000000000000000000000000000000000000340000ffffffff0b00000006000000000000000000000007000000080000000900000000000000030100030127000402090005ffffffff07000000000000000000000000000000000000000000000000000000ffffffff06000000f407991e0000000000000000ff0dd000810ac50cf10e830d0e00000000000000000000000000000006000000090000000c0000000500000306020003070400030126000402280004032a000404000005ffffffff",
+      "bytes": 7896,
+      "sha256": "0adbd98ec7cd0c3e93fe0857ab37379abda0b696e5f9d1ed0b356132317a4af2",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-32-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 57,
+        "srvMap": [
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13312,
+          4294967295
+        ],
+        "samplerMap": [
+          6,
+          0,
+          0,
+          7,
+          8,
+          9,
+          0,
+          50331907,
+          67118849,
+          83888386,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          0,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          6,
+          9,
+          12,
+          50331653,
+          50332166,
+          50332679,
+          67118593,
+          67119106,
+          67119619,
+          83886084,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 0,
+            "bindIndex": 4
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 123046,
+      "lz4CandidateStart": 123029,
+      "lz4ConsumedEnd": 124391,
+      "decodedPrefixHex": "000000000000000000000000000000000200000000000000f407991e00000000",
+      "bytes": 3964,
+      "sha256": "fae682cb9236289a13ac492433668e464a9f2ccb0da6fb135faefeec0d3700d6",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-33-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 0,
+        "srvMap": [],
+        "samplerMap": [],
+        "uavMap": [],
+        "layoutHashes": [
+          0,
+          513345524
+        ],
+        "textureMap": [],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 124548,
+      "lz4CandidateStart": 124435,
+      "lz4ConsumedEnd": 127431,
+      "decodedPrefixHex": "19000000060000000000000000000000000000000000000000000000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000500000306020003070400030226000403280004042a0004ffffffff",
+      "bytes": 8040,
+      "sha256": "07279a4d02d4d4ff07ac3b59013eca85d29b7363daa944eb5d162c91c32b82e1",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-34-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 25,
+        "srvMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "samplerMap": [
+          5,
+          0,
+          0,
+          7,
+          8,
+          0,
+          11009,
+          50331907,
+          67118850,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          69011706,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          5,
+          0,
+          0,
+          7,
+          10,
+          512,
+          2817,
+          50331653,
+          50332166,
+          50332679,
+          67118594,
+          67119107,
+          67119620,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 127658,
+      "lz4CandidateStart": 127537,
+      "lz4ConsumedEnd": 131098,
+      "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+      "bytes": 9672,
+      "sha256": "af9f52eb2b52f70bae7ac1d76cbe8e30821c210caa1c1f6d9142e5c66aef5bc9",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-35-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 25,
+        "srvMap": [
+          5,
+          0,
+          0,
+          0,
+          0,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          5,
+          0,
+          0,
+          7,
+          8,
+          0,
+          11009,
+          50331907,
+          67118850,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          69011706,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          5,
+          0,
+          0,
+          7,
+          10,
+          512,
+          2817,
+          50331654,
+          50332167,
+          50332680,
+          67118595,
+          67119108,
+          67119621,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 131310,
+      "lz4CandidateStart": 131204,
+      "lz4ConsumedEnd": 133826,
+      "decodedPrefixHex": "0d0000000500000000000000000000000000000000000000ffffffff090000000400000000000000060000000700000000000000012b00000301000202270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991e00000000ff0dd000810ac50c0d0000000400000000000000060000000900000000020000010b00000500000206020002070400020226000303280003042a0003ffffffff",
+      "bytes": 6880,
+      "sha256": "05cdb3575886ca104f17ac4388a614d96c9a61062ade09c4f9a58c3edbce1895",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-36-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 13,
+        "srvMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          0,
+          6,
+          7,
+          0,
+          11009,
+          33554691,
+          50341634,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          0,
+          6,
+          9,
+          512,
+          2817,
+          33554437,
+          33554950,
+          33555463,
+          50341378,
+          50341891,
+          50342404,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 134031,
+      "lz4CandidateStart": 133904,
+      "lz4ConsumedEnd": 137237,
+      "decodedPrefixHex": "390000000800000006000000000000000000000000000000000000000000000000340000ffffffff0b00000006000000000000000000000007000000080000000900000000000000030100030127000402090005ffffffff07000000000000000000000000000000000000000000000000000000ffffffff06000000f407991e0000000000000000ff0dd000810ac50cf10e830d1000000000000000000000000000000006000000090000000c0000000700000308020003090400030126000402280004032a0004040000050501000506030005ffffffff",
+      "bytes": 9200,
+      "sha256": "d06ba75ce790537ea7ea89bbb259be0c4f4373550c90a3bb2a0c08bd5f335960",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-37-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 57,
+        "srvMap": [
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13312,
+          4294967295
+        ],
+        "samplerMap": [
+          6,
+          0,
+          0,
+          7,
+          8,
+          9,
+          0,
+          50331907,
+          67118849,
+          83888386,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          0,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          6,
+          9,
+          12,
+          50331655,
+          50332168,
+          50332681,
+          67118593,
+          67119106,
+          67119619,
+          83886084,
+          83886341,
+          83886854,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 0,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 1,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 3,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 137505,
+      "lz4CandidateStart": 137372,
+      "lz4ConsumedEnd": 140711,
+      "decodedPrefixHex": "0f0000000800000004000000000000000000000000000000003100000133000002340000ffffffff090000000400000005000000060000000700000000000000030100010127000202090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991eff0dd000810ac50cf10e830d0d0000000000000004000000070000000a00000008000001090200010a0400010326000204280002052a00020600000307010003ffffffff",
+      "bytes": 9108,
+      "sha256": "e57f952f80f4263d285148042c6d5aa05a6a1d7f82c844c864fd536f79d8a86b",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-38-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          5,
+          6,
+          7,
+          0,
+          16777475,
+          33564417,
+          50333954,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          7,
+          10,
+          16777224,
+          16777737,
+          16778250,
+          33564163,
+          33564676,
+          33565189,
+          50331654,
+          50331911,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 7
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 140922,
+      "lz4CandidateStart": 140805,
+      "lz4ConsumedEnd": 143484,
+      "decodedPrefixHex": "3900000007000000000000000000000000000000000000000000000000000000ffffffff0b00000006000000000000000000000007000000080000000900000000000000030100030127000402090005ffffffff07000000000000000000000000000000000000000000000000000000ffffffff06000000f407991e0000000000000000ff0dd000810ac50cf10e830d0e00000000000000000000000000000006000000090000000c0000000400000305020003060400030026000401280004022a000403000005ffffffff",
+      "bytes": 7196,
+      "sha256": "c238815b56f4f9217a53b14ecc4231231fca4304b9133891bdbfc8a5ab01399d",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-39-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 57,
+        "srvMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "samplerMap": [
+          6,
+          0,
+          0,
+          7,
+          8,
+          9,
+          0,
+          50331907,
+          67118849,
+          83888386,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          0,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          6,
+          9,
+          12,
+          50331652,
+          50332165,
+          50332678,
+          67118592,
+          67119105,
+          67119618,
+          83886083,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 0,
+            "bindIndex": 3
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 143739,
+      "lz4CandidateStart": 143618,
+      "lz4ConsumedEnd": 146360,
+      "decodedPrefixHex": "3900000007000000000000000000000000000000000000000000000000000000ffffffff0b00000006000000000000000000000007000000080000000900000000000000030100030127000402090005ffffffff07000000000000000000000000000000000000000000000000000000ffffffff06000000f407991e0000000000000000ff0dd000810ac50cf10e830d0f00000000000000000000000000000006000000090000000c0000000500000306020003070400030026000401280004022a00040300000504030005ffffffff",
+      "bytes": 7388,
+      "sha256": "64193e9cb4228c5097f3cd1a36e6e8d4cabfe2bdfc97fd3db2cbcf26a114bf04",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-40-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 57,
+        "srvMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "samplerMap": [
+          6,
+          0,
+          0,
+          7,
+          8,
+          9,
+          0,
+          50331907,
+          67118849,
+          83888386,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          0,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          6,
+          9,
+          12,
+          50331653,
+          50332166,
+          50332679,
+          67118592,
+          67119105,
+          67119618,
+          83886083,
+          83886852,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 0,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 3,
+            "bindIndex": 4
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 146647,
+      "lz4CandidateStart": 146494,
+      "lz4ConsumedEnd": 150375,
+      "decodedPrefixHex": "07000000060000000300000000000000000000000a3100000b340000ffffffff0800000003000000050000000600000000000000012b00000301000102270002ffffffff04000000000000000000000000000000ffffffff03000000f407991eff0dd000810ac50c14000000030000000d000000100000000002000001030000020400000305000004060000050700000608000007090000080a0000090b00000f00000110020001110400010c2600020d2800020e2a0002ffffffff",
+      "bytes": 10936,
+      "sha256": "b402b37acc38c61a8a6e7505ece0800099530523008ea46c9cc4d0d5cc61a029",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-41-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 7,
+        "srvMap": [
+          3,
+          0,
+          0,
+          12554,
+          13323,
+          4294967295
+        ],
+        "samplerMap": [
+          3,
+          5,
+          6,
+          0,
+          11009,
+          16777475,
+          33564418,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          3,
+          13,
+          16,
+          512,
+          769,
+          1026,
+          1283,
+          1540,
+          1797,
+          2054,
+          2311,
+          2568,
+          2825,
+          16777231,
+          16777744,
+          16778257,
+          33564172,
+          33564685,
+          33565198,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 3,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 4,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 5,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 6,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 8,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 9,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 10,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 15
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 16
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 17
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 12
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 13
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 14
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 150569,
+      "lz4CandidateStart": 150442,
+      "lz4ConsumedEnd": 153592,
+      "decodedPrefixHex": "390000000800000006000000000000000000000000000000000000000000000000340000ffffffff0b00000006000000000000000000000007000000080000000900000000000000030100030127000402090005ffffffff07000000000000000000000000000000000000000000000000000000ffffffff06000000f407991e0000000000000000ff0dd000810ac50cf10e830d1000000000000000000000000000000006000000090000000c0000000700000308020003090400030126000402280004032a0004040000050501000506030005ffffffff",
+      "bytes": 8776,
+      "sha256": "b21fc13aa54129001225b346b9ca171b007987111b43f0e38cbcff955576bc61",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-42-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 57,
+        "srvMap": [
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13312,
+          4294967295
+        ],
+        "samplerMap": [
+          6,
+          0,
+          0,
+          7,
+          8,
+          9,
+          0,
+          50331907,
+          67118849,
+          83888386,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          0,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          6,
+          9,
+          12,
+          50331655,
+          50332168,
+          50332681,
+          67118593,
+          67119106,
+          67119619,
+          83886084,
+          83886341,
+          83886854,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 0,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 1,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 3,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 153796,
+      "lz4CandidateStart": 153727,
+      "lz4ConsumedEnd": 155314,
+      "decodedPrefixHex": "18000000090000000000000000000000000000000500000006000000020300030000000401010004ffffffff060000000000000000000000000000000000000000000000ffffffff060000000000000000000000000000000000000000000000ffffffff0500000000000000f407991e00000000e7064606f9063606060000000000000000000000000000000000000000000000ffffffff",
+      "bytes": 3880,
+      "sha256": "f7c54c302c31e6351e4bfb450b1e76c0969fc1bc1919b4822cb7d3608b1aba89",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-43-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 24,
+        "srvMap": [
+          0,
+          0,
+          0,
+          5,
+          6,
+          50332418,
+          67108864,
+          67109121,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          0,
+          513345524,
+          0,
+          105252583,
+          104204025
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 155520,
+      "lz4CandidateStart": 155381,
+      "lz4ConsumedEnd": 158750,
+      "decodedPrefixHex": "0d0000000500000000000000000000000000000000000000ffffffff090000000400000000000000060000000700000000000000012b00000301000202270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991e00000000ff0dd000810ac50c1400000004000000000000000d000000100000000002000001030000020400000305000004060000050700000608000007090000080b00000c0000020d0200020e040002092600030a2800030b2a0003ffffffff",
+      "bytes": 9292,
+      "sha256": "8b6ca6c0dc8a0ea85ff270745ec4df88049a12978aa321d4d23fdf33d2814f15",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-44-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 13,
+        "srvMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          0,
+          6,
+          7,
+          0,
+          11009,
+          33554691,
+          50341634,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          0,
+          13,
+          16,
+          512,
+          769,
+          1026,
+          1283,
+          1540,
+          1797,
+          2054,
+          2311,
+          2824,
+          33554444,
+          33554957,
+          33555470,
+          50341385,
+          50341898,
+          50342411,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 3,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 4,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 5,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 6,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 8,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 9,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 12
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 13
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 14
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 11
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 158948,
+      "lz4CandidateStart": 158829,
+      "lz4ConsumedEnd": 162356,
+      "decodedPrefixHex": "0d00000007000000040000000000000000000000000000000231000003340000ffffffff090000000400000000000000060000000700000000000000012b00000301000202270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991efa081d04ff0dd000810ac50c0d0000000400000000000000060000000900000000020000010b00000700000208020002090400020426000305280003062a0003ffffffff",
+      "bytes": 9588,
+      "sha256": "47c67ae397bb38ea22b33015ee233429dcee2933b08ff9a402d5d5496326c345",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-45-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 13,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12546,
+          13315,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          0,
+          6,
+          7,
+          0,
+          11009,
+          33554691,
+          50341634,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          69011706,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          0,
+          6,
+          9,
+          512,
+          2817,
+          33554439,
+          33554952,
+          33555465,
+          50341380,
+          50341893,
+          50342406,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 162563,
+      "lz4CandidateStart": 162450,
+      "lz4ConsumedEnd": 165607,
+      "decodedPrefixHex": "19000000060000000000000000000000000000000000000000000000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000500000306020003070400030226000403280004042a0004ffffffff",
+      "bytes": 8464,
+      "sha256": "9d117dd60b670af7f81ecae44f2243db64b7918d27037e19ae5fc3ddc991f963",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-46-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 25,
+        "srvMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "samplerMap": [
+          5,
+          0,
+          0,
+          7,
+          8,
+          0,
+          11009,
+          50331907,
+          67118850,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          69011706,
+          13635071,
+          214239873
+        ],
+        "textureMap": [
+          5,
+          0,
+          0,
+          7,
+          10,
+          512,
+          2817,
+          50331653,
+          50332166,
+          50332679,
+          67118594,
+          67119107,
+          67119620,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 165840,
+      "lz4CandidateStart": 165713,
+      "lz4ConsumedEnd": 168729,
+      "decodedPrefixHex": "0f00000007000000040000000000000000000000000000000031000001330000ffffffff090000000400000005000000060000000700000000000000030100010127000202090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991eff0dd000810ac50cf10e830d0d0000000000000004000000070000000a0000000700000108020001090400010226000203280002042a00020500000306030003ffffffff",
+      "bytes": 8044,
+      "sha256": "649e79f0914e8eda1d29e275b5ad5d0915570cbe8ad6bb332daf29b535903445",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-47-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          5,
+          6,
+          7,
+          0,
+          16777475,
+          33564417,
+          50333954,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          7,
+          10,
+          16777223,
+          16777736,
+          16778249,
+          33564162,
+          33564675,
+          33565188,
+          50331653,
+          50332422,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 3,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 168940,
+      "lz4CandidateStart": 168823,
+      "lz4ConsumedEnd": 171682,
+      "decodedPrefixHex": "3900000007000000000000000000000000000000000000000000000000000000ffffffff0b00000006000000000000000000000007000000080000000900000000000000030100030127000402090005ffffffff07000000000000000000000000000000000000000000000000000000ffffffff06000000f407991e0000000000000000ff0dd000810ac50cf10e830d0e00000000000000000000000000000006000000090000000c0000000400000305020003060400030026000401280004022a000403000005ffffffff",
+      "bytes": 7620,
+      "sha256": "18814dcd7e444cd6fc9abfd18cfcc92ebe3f1053d29c5be3e69c2883c2334eb8",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-48-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 57,
+        "srvMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "samplerMap": [
+          6,
+          0,
+          0,
+          7,
+          8,
+          9,
+          0,
+          50331907,
+          67118849,
+          83888386,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          0,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          6,
+          9,
+          12,
+          50331652,
+          50332165,
+          50332678,
+          67118592,
+          67119105,
+          67119618,
+          83886083,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 0,
+            "bindIndex": 3
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 171833,
+      "lz4CandidateStart": 171816,
+      "lz4ConsumedEnd": 173515,
+      "decodedPrefixHex": "000000000000000000000000000000000200000000000000f407991e00000000",
+      "bytes": 4444,
+      "sha256": "f3005094ad17a351366ae4cef6291416d18d9976eaabba46d629a4ba9dce9e9f",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-49-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 0,
+        "srvMap": [],
+        "samplerMap": [],
+        "uavMap": [],
+        "layoutHashes": [
+          0,
+          513345524
+        ],
+        "textureMap": [],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 173619,
+      "lz4CandidateStart": 173559,
+      "lz4ConsumedEnd": 174728,
+      "decodedPrefixHex": "0300000007000000020000000400000000310000013300000200000103030001ffffffff030000000000000000000000ffffffff030000000000000000000000ffffffff02000000f407991ee7064606030000000000000000000000ffffffff",
+      "bytes": 2420,
+      "sha256": "91a0ad5f400c57d7f713ff4589f3206a89d2966fc2bf95719ff6575470310d22",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-50-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 3,
+        "srvMap": [
+          2,
+          4,
+          12544,
+          13057,
+          16777218,
+          16777987,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          105252583
+        ],
+        "textureMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 174895,
+      "lz4CandidateStart": 174772,
+      "lz4ConsumedEnd": 178044,
+      "decodedPrefixHex": "390000000800000006000000000000000000000000000000000000000000000000340000ffffffff0b00000006000000000000000000000007000000080000000900000000000000030100030127000402090005ffffffff07000000000000000000000000000000000000000000000000000000ffffffff06000000f407991e0000000000000000ff0dd000810ac50cf10e830d0f00000000000000000000000000000006000000090000000c0000000600000307020003080400030126000402280004032a00040400000505010005ffffffff",
+      "bytes": 9008,
+      "sha256": "1a1820ef21fbf7552338c36bf7e633873d9cce912ff8b32e507d7f4f2f1b9ab8",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-51-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 57,
+        "srvMap": [
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13312,
+          4294967295
+        ],
+        "samplerMap": [
+          6,
+          0,
+          0,
+          7,
+          8,
+          9,
+          0,
+          50331907,
+          67118849,
+          83888386,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          0,
+          0,
+          13635071,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          0,
+          0,
+          6,
+          9,
+          12,
+          50331654,
+          50332167,
+          50332680,
+          67118593,
+          67119106,
+          67119619,
+          83886084,
+          83886341,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 38,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 40,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 42,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 0,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 1,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 0,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 4,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 5,
+            "resourceIndex": 9,
+            "bindIndex": 2
+          }
+        ]
+      }
+    }
+  ],
+  "unresolvedDxbcLiterals": [],
+  "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+  "extrasSha256": "3236f2851bd00bfb90bedbeb71bfabc46f0deba2b2279b713ddfac951fb48bf7",
+  "source": {
+    "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+    "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+    "exportPointer": "/Exports/0",
+    "sourceFiles": [
+      {
+        "extension": ".uasset",
+        "presentInPak": true,
+        "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+        "existsLocally": true,
+        "bytes": 5070,
+        "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+      },
+      {
+        "extension": ".uexp",
+        "presentInPak": true,
+        "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+        "existsLocally": true,
+        "bytes": 185195,
+        "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+      },
+      {
+        "extension": ".ubulk",
+        "presentInPak": false,
+        "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+        "existsLocally": false,
+        "notReadReason": "Bulk payload intentionally not extracted"
+      }
+    ]
+  },
+  "method": "Bounded LZ4 candidate extraction; complete D3D11 resource-table prefix and Microsoft D3DDisassemble validation; not REA retained Evidence"
+}

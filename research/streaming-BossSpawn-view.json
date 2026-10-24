@@ -1,0 +1,117 @@
+[
+  {
+    "export_index": 0,
+    "name": "BossSpawn",
+    "statements": [
+      {
+        "pointer": "/Exports/0/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_SetArray",
+          "AssigningProperty": "CallFunc_GetAllActorsOfClass_OutActors",
+          "ArrayInnerProp": null,
+          "Elements": []
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/1",
+        "ast": {
+          "call": "GetAllActorsOfClass",
+          "args": [
+            "__WorldContext",
+            {
+              "object": "BP_CityManager_C"
+            },
+            "CallFunc_GetAllActorsOfClass_OutActors"
+          ]
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/2",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Get",
+            "args": [
+              "CallFunc_GetAllActorsOfClass_OutActors",
+              0,
+              "CallFunc_Array_Get_Item"
+            ]
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_IsValid_ReturnValue",
+          "AssignmentExpression": {
+            "call": "IsValid",
+            "args": [
+              "CallFunc_Array_Get_Item"
+            ]
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 251,
+          "BooleanExpression": "CallFunc_IsValid_ReturnValue"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/5",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Get",
+            "args": [
+              "CallFunc_GetAllActorsOfClass_OutActors",
+              0,
+              "CallFunc_Array_Get_Item"
+            ]
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/6",
+        "ast": {
+          "on": "CallFunc_Array_Get_Item",
+          "do": {
+            "call": "LoadBossLevel",
+            "args": [
+              "BossType"
+            ]
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/7",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 251
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/8",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/9",
+        "ast": {
+          "op": "EX_EndOfScript"
+        }
+      }
+    ]
+  }
+]

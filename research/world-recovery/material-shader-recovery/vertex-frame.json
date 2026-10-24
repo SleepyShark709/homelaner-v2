@@ -1,0 +1,57 @@
+{
+  "originalStaticMeshShader": {
+    "file": "research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-22-vs_5_0.dxbc",
+    "sha256": "b334789ff8a3e4086a5329b3a3d07507d3677b9524efb0166cb642b909f2c743",
+    "assemblyFile": "research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-22-vs_5_0.asm",
+    "sourceLines": [
+      48,
+      59,
+      60,
+      83
+    ]
+  },
+  "corroboratingSources": [
+    {
+      "file": "research\\world-recovery\\material-shader-recovery\\UE-LocalVertexFactory-4.26.ush",
+      "sha256": "e55e7a020aac0b9a7fd43195a7db332950e11519f8d8e57110e20b9462bc4e30",
+      "url": "https://raw.githubusercontent.com/CFHH/UnrealEngine-4.26/main/Engine/Shaders/Private/LocalVertexFactory.ush",
+      "relevantLines": [
+        479,
+        486,
+        691,
+        746,
+        794,
+        796,
+        933
+      ],
+      "role": "Epic UE4.26 source mirror for layout/semantic corroboration; not asserted to be the exact original game source"
+    },
+    {
+      "file": "research\\world-recovery\\material-shader-recovery\\UE-SceneData-4.26.ush",
+      "sha256": "92603ee015c9335bb930d64c4896c0095617b59b4adf98aa2aa2de69fd866c0f",
+      "url": "https://raw.githubusercontent.com/CFHH/UnrealEngine-4.26/main/Engine/Shaders/Private/SceneData.ush",
+      "relevantLines": [
+        11,
+        40,
+        79,
+        83
+      ],
+      "role": "Epic UE4.26 source mirror for layout/semantic corroboration; not asserted to be the exact original game source"
+    },
+    {
+      "file": "research\\world-recovery\\material-shader-recovery\\UE-PrimitiveUniformShaderParameters-4.26.h",
+      "sha256": "e42081eb872e26a4484dd4694c75ee24596435716ef7d19f4a167a96924605ed",
+      "url": "https://raw.githubusercontent.com/CFHH/UnrealEngine-4.26/main/Engine/Source/Runtime/Engine/Public/PrimitiveUniformShaderParameters.h",
+      "relevantLines": [
+        88,
+        102
+      ],
+      "role": "Epic UE4.26 source mirror for layout/semantic corroboration; not asserted to be the exact original game source"
+    }
+  ],
+  "formula": "For static meshes: Blocal=cross(Nlocal,Tlocal)*localHand; Tcorrected=cross(Blocal,Nlocal)*localHand. Build noScaleWorld by dividing each finalWorld basis axis by its positive length (retain negative-axis sign). VS T=noScaleWorld*Tcorrected, N=noScaleWorld*Nlocal, hand=original tangent sign*primitive determinant sign. No inverse-transpose and no output-vector normalization. For original UE instanced path its matrix axes are individually normalized before the same transform; exact original instance sign policy is separately recorded.",
+  "interpolation": "Original PS T,N are linear centroid interpolants; no PS normalization before original triplanar weights. Rebuild B per pixel from cross(N,T)*hand.",
+  "axisHandedness": "UModel transforms XYZ by swapping Y/Z, normalizes XYZ separately, and retains tangent.w=sign(originalNormal.w). Convert T/N back with .xzy before original UE cross products; do not add a second coordinate-reflection sign.",
+  "glTFPrecisionLimitation": "UModel separately normalizes original quantized T/N XYZ; the original pre-normalization magnitudes are not recoverable from current glTF. Original source arithmetic recovered, browser inputs retain this exporter difference.",
+  "instancePolicyLimitation": "Original UE instancing normalizes combined instance-to-world axes but TangentToWorldSign uses primitive determinant sign; arbitrary negative per-instance determinant equivalence is not claimed. Current non-instanced original components grouped as Web instances use their original primitive transforms."
+}

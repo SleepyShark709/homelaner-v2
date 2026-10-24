@@ -1,0 +1,1841 @@
+{
+  "sourceLayout": "terrain-UE-ShaderCore-4.26.h + terrain-UE-D3D11ShaderResources-4.26.h + terrain-UE-RHIDefinitions-4.26.h",
+  "resourcePrefixesFullyParsed": 93,
+  "unparsedCandidatePrefixes": [
+    {
+      "exportIndex": 5611,
+      "shaderIndex": 20,
+      "reason": "unpack_from requires a buffer of at least 2484 bytes for unpacking 2476 bytes at offset 8 (actual buffer size is 34)"
+    },
+    {
+      "exportIndex": 5672,
+      "shaderIndex": 18,
+      "reason": "unpack_from requires a buffer of at least 2484 bytes for unpacking 2476 bytes at offset 8 (actual buffer size is 34)"
+    },
+    {
+      "exportIndex": 5675,
+      "shaderIndex": 22,
+      "reason": "unpack_from requires a buffer of at least 2484 bytes for unpacking 2476 bytes at offset 8 (actual buffer size is 34)"
+    }
+  ],
+  "permutations": [
+    {
+      "exportIndex": 5611,
+      "shaderIndex": 0,
+      "shaderSHA256": "f3cb057a14dd2dbcfd77ab88b95b1407c6efee713a21750a65774340e24af98c",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\terrain-material-shaders\\export-5611-shader-0-ps_5_0.asm",
+      "materialConstantBuffer": 4,
+      "textureBindings": [
+        {
+          "constantBuffer": 4,
+          "resourceIndex": 0,
+          "bindIndex": 7,
+          "token": "0x4000007",
+          "parameter": "Weightmap0",
+          "defaultTexture": "/Engine/EngineMaterials/WeightMapPlaceholderTexture.WeightMapPlaceholderTexture",
+          "textureParameterIndex": 0,
+          "effectiveTexture": "/Engine/EngineMaterials/WeightMapPlaceholderTexture"
+        },
+        {
+          "constantBuffer": 4,
+          "resourceIndex": 2,
+          "bindIndex": 8,
+          "token": "0x4000208",
+          "parameter": null,
+          "defaultTexture": "/Game/Downtown/Textures/Grass_N.Grass_N",
+          "textureParameterIndex": 1,
+          "effectiveTexture": "/Game/Downtown/Textures/Grass_N"
+        },
+        {
+          "constantBuffer": 4,
+          "resourceIndex": 4,
+          "bindIndex": 9,
+          "token": "0x4000409",
+          "parameter": null,
+          "defaultTexture": "/Game/Assets/Texture/T_SandDunes_N.T_SandDunes_N",
+          "textureParameterIndex": 2,
+          "effectiveTexture": "/Game/Assets/Texture/T_SandDunes_N"
+        },
+        {
+          "constantBuffer": 4,
+          "resourceIndex": 6,
+          "bindIndex": 10,
+          "token": "0x400060a",
+          "parameter": null,
+          "defaultTexture": "/Game/Downtown/Textures/Grass_A.Grass_A",
+          "textureParameterIndex": 3,
+          "effectiveTexture": "/Game/Downtown/Textures/Grass_A"
+        },
+        {
+          "constantBuffer": 4,
+          "resourceIndex": 8,
+          "bindIndex": 11,
+          "token": "0x400080b",
+          "parameter": null,
+          "defaultTexture": "/Game/Assets/Texture/T_SandDunes_D.T_SandDunes_D",
+          "textureParameterIndex": 4,
+          "effectiveTexture": "/Game/Assets/Texture/T_SandDunes_D"
+        }
+      ],
+      "samplerBindings": [
+        {
+          "constantBuffer": 4,
+          "resourceIndex": 1,
+          "bindIndex": 3,
+          "token": "0x4000103"
+        },
+        {
+          "constantBuffer": 4,
+          "resourceIndex": 3,
+          "bindIndex": 4,
+          "token": "0x4000304"
+        },
+        {
+          "constantBuffer": 4,
+          "resourceIndex": 5,
+          "bindIndex": 5,
+          "token": "0x4000505"
+        },
+        {
+          "constantBuffer": 4,
+          "resourceIndex": 7,
+          "bindIndex": 6,
+          "token": "0x4000706"
+        },
+        {
+          "constantBuffer": 4,
+          "resourceIndex": 9,
+          "bindIndex": 7,
+          "token": "0x4000907"
+        }
+      ],
+      "vectorRegisters": [
+        {
+          "expression": "SelectionColor",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040000",
+          "preshaderDataOffset": 21
+        },
+        {
+          "expression": "LayerMask_Grass",
+          "defaultOrInstanceValue": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040100",
+          "preshaderDataOffset": 24
+        },
+        {
+          "expression": "LayerMask_Sand",
+          "defaultOrInstanceValue": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040200",
+          "preshaderDataOffset": 27
+        },
+        {
+          "expression": "SelectionColor.rgb",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "0400002303000102ff",
+          "preshaderDataOffset": 30
+        },
+        {
+          "expression": "GrassColor",
+          "defaultOrInstanceValue": [
+            0.1166670024394989,
+            0.14000000059604645,
+            0.09333299845457077,
+            1.0
+          ],
+          "preshaderHex": "040300",
+          "preshaderDataOffset": 39
+        },
+        {
+          "expression": "GrassColor.rgb",
+          "defaultOrInstanceValue": [
+            0.1166670024394989,
+            0.14000000059604645,
+            0.09333299845457077,
+            0.0
+          ],
+          "preshaderHex": "0403002303000102ff",
+          "preshaderDataOffset": 42
+        },
+        {
+          "expression": "SandColor",
+          "defaultOrInstanceValue": [
+            0.5364480018615723,
+            0.5699999928474426,
+            0.4801490008831024,
+            1.0
+          ],
+          "preshaderHex": "040400",
+          "preshaderDataOffset": 51
+        },
+        {
+          "expression": "SandColor.rgb",
+          "defaultOrInstanceValue": [
+            0.5364480018615723,
+            0.5699999928474426,
+            0.4801490008831024,
+            0.0
+          ],
+          "preshaderHex": "0404002303000102ff",
+          "preshaderDataOffset": 54
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "expression": "Texture Scale",
+          "defaultOrInstanceValue": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ],
+          "preshaderHex": "030000",
+          "preshaderDataOffset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "expression": "SelectionColor.a",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040000230103ffffff",
+          "preshaderDataOffset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "expression": "Metalic",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "030100",
+          "preshaderDataOffset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "expression": "Spec",
+          "defaultOrInstanceValue": [
+            0.12807300686836243,
+            0.12807300686836243,
+            0.12807300686836243,
+            0.12807300686836243
+          ],
+          "preshaderHex": "030200",
+          "preshaderDataOffset": 15,
+          "register": 8,
+          "component": "w"
+        },
+        {
+          "expression": "Roughness",
+          "defaultOrInstanceValue": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "preshaderHex": "030300",
+          "preshaderDataOffset": 18,
+          "register": 9,
+          "component": "x"
+        }
+      ],
+      "prefixFullyConsumed": true
+    },
+    {
+      "exportIndex": 5623,
+      "shaderIndex": 6,
+      "shaderSHA256": "94159ea8553a3d7b700abc7066a4560980528702ad9678b94b8372fe608676ae",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\terrain-material-shaders\\export-5623-shader-6-ps_5_0.asm",
+      "materialConstantBuffer": 3,
+      "textureBindings": [
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 0,
+          "bindIndex": 6,
+          "token": "0x3000006",
+          "parameter": "Weightmap0",
+          "defaultTexture": "/Engine/EngineMaterials/WeightMapPlaceholderTexture.WeightMapPlaceholderTexture",
+          "textureParameterIndex": 0,
+          "effectiveTexture": "/Engine/EngineMaterials/WeightMapPlaceholderTexture"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 2,
+          "bindIndex": 7,
+          "token": "0x3000207",
+          "parameter": null,
+          "defaultTexture": "/Game/Downtown/Textures/Grass_N.Grass_N",
+          "textureParameterIndex": 1,
+          "effectiveTexture": "/Game/Downtown/Textures/Grass_N"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 4,
+          "bindIndex": 8,
+          "token": "0x3000408",
+          "parameter": "GroundNormal",
+          "defaultTexture": "/Game/GTFreeMaterials/Textures/Ground_DirtBrownTan/Ground_DirtBrownTan_2k_n.Ground_DirtBrownTan_2k_n",
+          "textureParameterIndex": 2,
+          "effectiveTexture": "/Game/GTFreeMaterials/Textures/Ground_MuddyGrass/Ground_MuddyGrass_2k_n"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 6,
+          "bindIndex": 9,
+          "token": "0x3000609",
+          "parameter": null,
+          "defaultTexture": "/Game/Assets/Texture/T_SandDunes_N.T_SandDunes_N",
+          "textureParameterIndex": 3,
+          "effectiveTexture": "/Game/Assets/Texture/T_SandDunes_N"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 8,
+          "bindIndex": 10,
+          "token": "0x300080a",
+          "parameter": null,
+          "defaultTexture": "/Game/Downtown/Textures/Grass_A.Grass_A",
+          "textureParameterIndex": 4,
+          "effectiveTexture": "/Game/Downtown/Textures/Grass_A"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 10,
+          "bindIndex": 11,
+          "token": "0x3000a0b",
+          "parameter": "Ground",
+          "defaultTexture": "/Game/GTFreeMaterials/Textures/Ground_DirtBrownTan/Ground_DirtBrownTan_2k_alb.Ground_DirtBrownTan_2k_alb",
+          "textureParameterIndex": 5,
+          "effectiveTexture": "/Game/GTFreeMaterials/Textures/Ground_MuddyGrass/Ground_MuddyGrass_2k_alb"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 12,
+          "bindIndex": 12,
+          "token": "0x3000c0c",
+          "parameter": null,
+          "defaultTexture": "/Game/Assets/Texture/T_SandDunes_D.T_SandDunes_D",
+          "textureParameterIndex": 6,
+          "effectiveTexture": "/Game/Assets/Texture/T_SandDunes_D"
+        }
+      ],
+      "samplerBindings": [
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 1,
+          "bindIndex": 3,
+          "token": "0x3000103"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 3,
+          "bindIndex": 4,
+          "token": "0x3000304"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 5,
+          "bindIndex": 5,
+          "token": "0x3000505"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 7,
+          "bindIndex": 6,
+          "token": "0x3000706"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 9,
+          "bindIndex": 7,
+          "token": "0x3000907"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 11,
+          "bindIndex": 8,
+          "token": "0x3000b08"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 13,
+          "bindIndex": 9,
+          "token": "0x3000d09"
+        }
+      ],
+      "vectorRegisters": [
+        {
+          "expression": "SelectionColor",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040000",
+          "preshaderDataOffset": 21
+        },
+        {
+          "expression": "LayerMask_Grass",
+          "defaultOrInstanceValue": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040100",
+          "preshaderDataOffset": 24
+        },
+        {
+          "expression": "LayerMask_Ground",
+          "defaultOrInstanceValue": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040200",
+          "preshaderDataOffset": 27
+        },
+        {
+          "expression": "LayerMask_Sand",
+          "defaultOrInstanceValue": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040300",
+          "preshaderDataOffset": 30
+        },
+        {
+          "expression": "SelectionColor.rgb",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "0400002303000102ff",
+          "preshaderDataOffset": 33
+        },
+        {
+          "expression": "GrassColor",
+          "defaultOrInstanceValue": [
+            0.1166670024394989,
+            0.14000000059604645,
+            0.09333299845457077,
+            1.0
+          ],
+          "preshaderHex": "040400",
+          "preshaderDataOffset": 42
+        },
+        {
+          "expression": "GrassColor.rgb",
+          "defaultOrInstanceValue": [
+            0.1166670024394989,
+            0.14000000059604645,
+            0.09333299845457077,
+            0.0
+          ],
+          "preshaderHex": "0404002303000102ff",
+          "preshaderDataOffset": 45
+        },
+        {
+          "expression": "SandColor",
+          "defaultOrInstanceValue": [
+            0.5364480018615723,
+            0.5699999928474426,
+            0.4801490008831024,
+            1.0
+          ],
+          "preshaderHex": "040500",
+          "preshaderDataOffset": 54
+        },
+        {
+          "expression": "SandColor.rgb",
+          "defaultOrInstanceValue": [
+            0.5364480018615723,
+            0.5699999928474426,
+            0.4801490008831024,
+            0.0
+          ],
+          "preshaderHex": "0405002303000102ff",
+          "preshaderDataOffset": 57
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "expression": "Texture Scale",
+          "defaultOrInstanceValue": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ],
+          "preshaderHex": "030000",
+          "preshaderDataOffset": 0,
+          "register": 9,
+          "component": "x"
+        },
+        {
+          "expression": "SelectionColor.a",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040000230103ffffff",
+          "preshaderDataOffset": 3,
+          "register": 9,
+          "component": "y"
+        },
+        {
+          "expression": "Metalic",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "030100",
+          "preshaderDataOffset": 12,
+          "register": 9,
+          "component": "z"
+        },
+        {
+          "expression": "Spec",
+          "defaultOrInstanceValue": [
+            0.12807300686836243,
+            0.12807300686836243,
+            0.12807300686836243,
+            0.12807300686836243
+          ],
+          "preshaderHex": "030200",
+          "preshaderDataOffset": 15,
+          "register": 9,
+          "component": "w"
+        },
+        {
+          "expression": "Roughness",
+          "defaultOrInstanceValue": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "preshaderHex": "030300",
+          "preshaderDataOffset": 18,
+          "register": 10,
+          "component": "x"
+        }
+      ],
+      "prefixFullyConsumed": true
+    },
+    {
+      "exportIndex": 5672,
+      "shaderIndex": 0,
+      "shaderSHA256": "39f9d3d495aad75fbe77069282fe7a46e803c3f363ee221ac0bd35da18536876",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\terrain-material-shaders\\export-5672-shader-0-ps_5_0.asm",
+      "materialConstantBuffer": 3,
+      "textureBindings": [
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 0,
+          "bindIndex": 6,
+          "token": "0x3000006",
+          "parameter": "Weightmap0",
+          "defaultTexture": "/Engine/EngineMaterials/WeightMapPlaceholderTexture.WeightMapPlaceholderTexture",
+          "textureParameterIndex": 0,
+          "effectiveTexture": "/Engine/EngineMaterials/WeightMapPlaceholderTexture"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 2,
+          "bindIndex": 7,
+          "token": "0x3000207",
+          "parameter": null,
+          "defaultTexture": "/Game/Downtown/Textures/Grass_N.Grass_N",
+          "textureParameterIndex": 1,
+          "effectiveTexture": "/Game/Downtown/Textures/Grass_N"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 4,
+          "bindIndex": 8,
+          "token": "0x3000408",
+          "parameter": "GroundNormal",
+          "defaultTexture": "/Game/GTFreeMaterials/Textures/Ground_DirtBrownTan/Ground_DirtBrownTan_2k_n.Ground_DirtBrownTan_2k_n",
+          "textureParameterIndex": 2,
+          "effectiveTexture": "/Game/GTFreeMaterials/Textures/Ground_MuddyGrass/Ground_MuddyGrass_2k_n"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 6,
+          "bindIndex": 9,
+          "token": "0x3000609",
+          "parameter": null,
+          "defaultTexture": "/Game/Downtown/Textures/Grass_A.Grass_A",
+          "textureParameterIndex": 3,
+          "effectiveTexture": "/Game/Downtown/Textures/Grass_A"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 8,
+          "bindIndex": 10,
+          "token": "0x300080a",
+          "parameter": "Ground",
+          "defaultTexture": "/Game/GTFreeMaterials/Textures/Ground_DirtBrownTan/Ground_DirtBrownTan_2k_alb.Ground_DirtBrownTan_2k_alb",
+          "textureParameterIndex": 4,
+          "effectiveTexture": "/Game/GTFreeMaterials/Textures/Ground_MuddyGrass/Ground_MuddyGrass_2k_alb"
+        }
+      ],
+      "samplerBindings": [
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 1,
+          "bindIndex": 3,
+          "token": "0x3000103"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 3,
+          "bindIndex": 4,
+          "token": "0x3000304"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 5,
+          "bindIndex": 5,
+          "token": "0x3000505"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 7,
+          "bindIndex": 6,
+          "token": "0x3000706"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 9,
+          "bindIndex": 7,
+          "token": "0x3000907"
+        }
+      ],
+      "vectorRegisters": [
+        {
+          "expression": "SelectionColor",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040000",
+          "preshaderDataOffset": 21
+        },
+        {
+          "expression": "LayerMask_Grass",
+          "defaultOrInstanceValue": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040100",
+          "preshaderDataOffset": 24
+        },
+        {
+          "expression": "LayerMask_Ground",
+          "defaultOrInstanceValue": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040200",
+          "preshaderDataOffset": 27
+        },
+        {
+          "expression": "SelectionColor.rgb",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "0400002303000102ff",
+          "preshaderDataOffset": 30
+        },
+        {
+          "expression": "GrassColor",
+          "defaultOrInstanceValue": [
+            0.1166670024394989,
+            0.14000000059604645,
+            0.09333299845457077,
+            1.0
+          ],
+          "preshaderHex": "040300",
+          "preshaderDataOffset": 39
+        },
+        {
+          "expression": "GrassColor.rgb",
+          "defaultOrInstanceValue": [
+            0.1166670024394989,
+            0.14000000059604645,
+            0.09333299845457077,
+            0.0
+          ],
+          "preshaderHex": "0403002303000102ff",
+          "preshaderDataOffset": 42
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "expression": "Texture Scale",
+          "defaultOrInstanceValue": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ],
+          "preshaderHex": "030000",
+          "preshaderDataOffset": 0,
+          "register": 6,
+          "component": "x"
+        },
+        {
+          "expression": "SelectionColor.a",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040000230103ffffff",
+          "preshaderDataOffset": 3,
+          "register": 6,
+          "component": "y"
+        },
+        {
+          "expression": "Metalic",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "030100",
+          "preshaderDataOffset": 12,
+          "register": 6,
+          "component": "z"
+        },
+        {
+          "expression": "Spec",
+          "defaultOrInstanceValue": [
+            0.12807300686836243,
+            0.12807300686836243,
+            0.12807300686836243,
+            0.12807300686836243
+          ],
+          "preshaderHex": "030200",
+          "preshaderDataOffset": 15,
+          "register": 6,
+          "component": "w"
+        },
+        {
+          "expression": "Roughness",
+          "defaultOrInstanceValue": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "preshaderHex": "030300",
+          "preshaderDataOffset": 18,
+          "register": 7,
+          "component": "x"
+        }
+      ],
+      "prefixFullyConsumed": true
+    },
+    {
+      "exportIndex": 5675,
+      "shaderIndex": 18,
+      "shaderSHA256": "c56f823bf32cde8df9f8ee4cc23135d1b7faa457d96e560019c65f9bbe36426d",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\terrain-material-shaders\\export-5675-shader-18-ps_5_0.asm",
+      "materialConstantBuffer": 3,
+      "textureBindings": [
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 0,
+          "bindIndex": 6,
+          "token": "0x3000006",
+          "parameter": "Weightmap0",
+          "defaultTexture": "/Engine/EngineMaterials/WeightMapPlaceholderTexture.WeightMapPlaceholderTexture",
+          "textureParameterIndex": 0,
+          "effectiveTexture": "/Engine/EngineMaterials/WeightMapPlaceholderTexture"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 2,
+          "bindIndex": 7,
+          "token": "0x3000207",
+          "parameter": null,
+          "defaultTexture": "/Game/Downtown/Textures/Grass_N.Grass_N",
+          "textureParameterIndex": 1,
+          "effectiveTexture": "/Game/Downtown/Textures/Grass_N"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 4,
+          "bindIndex": 8,
+          "token": "0x3000408",
+          "parameter": null,
+          "defaultTexture": "/Game/Downtown/Textures/Grass_A.Grass_A",
+          "textureParameterIndex": 2,
+          "effectiveTexture": "/Game/Downtown/Textures/Grass_A"
+        }
+      ],
+      "samplerBindings": [
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 1,
+          "bindIndex": 3,
+          "token": "0x3000103"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 3,
+          "bindIndex": 4,
+          "token": "0x3000304"
+        },
+        {
+          "constantBuffer": 3,
+          "resourceIndex": 5,
+          "bindIndex": 5,
+          "token": "0x3000505"
+        }
+      ],
+      "vectorRegisters": [
+        {
+          "expression": "SelectionColor",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040000",
+          "preshaderDataOffset": 21
+        },
+        {
+          "expression": "LayerMask_Grass",
+          "defaultOrInstanceValue": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040100",
+          "preshaderDataOffset": 24
+        },
+        {
+          "expression": "SelectionColor.rgb",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "0400002303000102ff",
+          "preshaderDataOffset": 27
+        },
+        {
+          "expression": "GrassColor",
+          "defaultOrInstanceValue": [
+            0.1166670024394989,
+            0.14000000059604645,
+            0.09333299845457077,
+            1.0
+          ],
+          "preshaderHex": "040200",
+          "preshaderDataOffset": 36
+        },
+        {
+          "expression": "GrassColor.rgb",
+          "defaultOrInstanceValue": [
+            0.1166670024394989,
+            0.14000000059604645,
+            0.09333299845457077,
+            0.0
+          ],
+          "preshaderHex": "0402002303000102ff",
+          "preshaderDataOffset": 39
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "expression": "Texture Scale",
+          "defaultOrInstanceValue": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ],
+          "preshaderHex": "030000",
+          "preshaderDataOffset": 0,
+          "register": 5,
+          "component": "x"
+        },
+        {
+          "expression": "SelectionColor.a",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "040000230103ffffff",
+          "preshaderDataOffset": 3,
+          "register": 5,
+          "component": "y"
+        },
+        {
+          "expression": "Metalic",
+          "defaultOrInstanceValue": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "preshaderHex": "030100",
+          "preshaderDataOffset": 12,
+          "register": 5,
+          "component": "z"
+        },
+        {
+          "expression": "Spec",
+          "defaultOrInstanceValue": [
+            0.12807300686836243,
+            0.12807300686836243,
+            0.12807300686836243,
+            0.12807300686836243
+          ],
+          "preshaderHex": "030200",
+          "preshaderDataOffset": 15,
+          "register": 5,
+          "component": "w"
+        },
+        {
+          "expression": "Roughness",
+          "defaultOrInstanceValue": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "preshaderHex": "030300",
+          "preshaderDataOffset": 18,
+          "register": 6,
+          "component": "x"
+        }
+      ],
+      "prefixFullyConsumed": true
+    }
+  ],
+  "componentChecks": [
+    {
+      "id": "landscape-5179",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5180",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5181",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5182",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5183",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5184",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5185",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5186",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5187",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5188",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5189",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5190",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5191",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5192",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5193",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5194",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5195",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5196",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5197",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5198",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5199",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5200",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5201",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5202",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5203",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5204",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5205",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5206",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5207",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5208",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5209",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5210",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5211",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5212",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5213",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5214",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5215",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5216",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5217",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5218",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5219",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5220",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5221",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5222",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5223",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5224",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5225",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5226",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5227",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5228",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5229",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5230",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5231",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5232",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5233",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5234",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5235",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5236",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5237",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5238",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5239",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5240",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5241",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5242",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5243",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5244",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5245",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5246",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5247",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5248",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5249",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5250",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5251",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5252",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5253",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5254",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5255",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5256",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5257",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5258",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5259",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5260",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5261",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5262",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5263",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5264",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5265",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5266",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5267",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5268",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5269",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5270",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5271",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5272",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5273",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5274",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5275",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5276",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5277",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5278",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5279",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5280",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5281",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5282",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5283",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5284",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5285",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5286",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5287",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5288",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5289",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5290",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5291",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5292",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5293",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5294",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5295",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5296",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5297",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5298",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5299",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5300",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5301",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5302",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5303",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5304",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5305",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5306",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5307",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5308",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5309",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5310",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5311",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5312",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5313",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5314",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5315",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5316",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5317",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5318",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5319",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5320",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5321",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    },
+    {
+      "id": "landscape-5322",
+      "allocationAndLayerMaskMatch": true,
+      "weightmapAndHeightmapReferenceMatch": true,
+      "parentChainMatch": true
+    }
+  ]
+}

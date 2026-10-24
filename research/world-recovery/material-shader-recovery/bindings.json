@@ -1,0 +1,6532 @@
+{
+  "provenance": "Original cooked Extras DXBC/frozen uniform/source parameter analysis with Microsoft disassembly; not REA output",
+  "materials": {
+    "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/ForgottenHotel/Textures/TilingTextures/Wallpaper/Wallpaper_normal",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/ForgottenHotel/Textures/TilingTextures/Wallpaper/Wallpaper_basecolor",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/ForgottenHotel/Textures/TilingTextures/Wallpaper/Wallpaper_roughness",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -512.0,
+            -512.0,
+            -512.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorAsphalt": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/Env/NYC_Streets/Textures/T_NYC_Asphalt_02_N",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/Env/NYC_Streets/Textures/T_NYC_Asphalt_02_D",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/UrbanCity/Textures/Tileable/asphalt_r",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            1024.0,
+            1024.0,
+            1024.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            1024.0,
+            1024.0,
+            1024.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            1024.0,
+            1024.0,
+            1024.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -1024.0,
+            -1024.0,
+            -1024.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_04_n",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_04_d",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_03_r",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -512.0,
+            -512.0,
+            -512.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick1": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_05_n",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_05_d",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_05_r",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -512.0,
+            -512.0,
+            -512.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            3.0,
+            3.0,
+            3.0,
+            3.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick2": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/Downtown/Textures/Marble_N",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/Downtown/Textures/Marble_A",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/Action_Male/Textures/T_White",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -512.0,
+            -512.0,
+            -512.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick3": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_04_n",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_04_d",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_04_h",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -512.0,
+            -512.0,
+            -512.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            0.48958298563957214,
+            0.29069000482559204,
+            0.29069000482559204,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            0.48958298563957214,
+            0.29069000482559204,
+            0.29069000482559204,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick4": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_03_n",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_03_d",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/UrbanCity/Textures/Tileable/concrete_ground_03_r",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -512.0,
+            -512.0,
+            -512.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            0.36458298563957214,
+            0.36458298563957214,
+            0.36458298563957214,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            0.36458298563957214,
+            0.36458298563957214,
+            0.36458298563957214,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick5": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/GTFreeMaterials/Textures/Brick_chicagoStyle/Brick_chicagoStyle_2k_n",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/GTFreeMaterials/Textures/Brick_chicagoStyle/Brick_chicagoStyle_2k_alb",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/Action_Male/Textures/T_White",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -512.0,
+            -512.0,
+            -512.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            0.78125,
+            0.5289710164070129,
+            0.5289710164070129,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            0.78125,
+            0.5289710164070129,
+            0.5289710164070129,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            0.6499999761581421,
+            0.6499999761581421,
+            0.6499999761581421,
+            0.6499999761581421
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_Grass": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_n",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/OilRefinery/Textures/T_Grass_v02_BC",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/Action_Male/Textures/T_White",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -512.0,
+            -512.0,
+            -512.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            0.24794700741767883,
+            0.27083298563957214,
+            0.16503900289535522,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            0.24794700741767883,
+            0.27083298563957214,
+            0.16503900289535522,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_Gravel": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/ElectricalUtility/Textures/T_CoarseGravel_N2",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/ElectricalUtility/Textures/T_CoarseGravel_D",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/UrbanCity/Textures/Tileable/road_r",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            256.0,
+            256.0,
+            256.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            256.0,
+            256.0,
+            256.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            256.0,
+            256.0,
+            256.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -256.0,
+            -256.0,
+            -256.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            0.6927080154418945,
+            0.6927080154418945,
+            0.6927080154418945,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            0.6927080154418945,
+            0.6927080154418945,
+            0.6927080154418945,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            3.0,
+            3.0,
+            3.0,
+            3.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_GroundBrick": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/Downtown/Textures/GroundBrick_B_N",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/Downtown/Textures/GroundBrick_B_A",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/Action_Male/Textures/T_White",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -512.0,
+            -512.0,
+            -512.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            0.6499999761581421,
+            0.6499999761581421,
+            0.6499999761581421,
+            0.6499999761581421
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_Metal": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/StarterContent/Textures/T_Metal_Steel_N",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/StarterContent/Textures/T_Metal_Steel_D",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/Action_Male/Textures/T_White",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            512.0,
+            501.3333435058594,
+            501.3333435058594,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            512.0,
+            501.3333435058594,
+            501.3333435058594,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            512.0,
+            501.3333435058594,
+            501.3333435058594,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -512.0,
+            -501.3333435058594,
+            -501.3333435058594,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            2.0,
+            2.0,
+            2.0,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            2.0,
+            2.0,
+            2.0,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_RoofTop": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/Downtown/Textures/Roof_N",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/Downtown/Textures/Roof_A",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/Action_Male/Textures/T_White",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            1024.0,
+            1024.0,
+            1024.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            1024.0,
+            1024.0,
+            1024.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            1024.0,
+            1024.0,
+            1024.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -1024.0,
+            -1024.0,
+            -1024.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            0.20833300054073334,
+            0.20833300054073334,
+            0.20833300054073334,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            0.20833300054073334,
+            0.20833300054073334,
+            0.20833300054073334,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            0.75,
+            0.75,
+            0.75,
+            0.75
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_RoofTop1": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/UrbanCity/Textures/Tileable/rooftop_n",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/UrbanCity/Textures/Tileable/rooftop_d",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/UrbanCity/Textures/Tileable/road_r",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -512.0,
+            -512.0,
+            -512.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            0.6927080154418945,
+            0.6927080154418945,
+            0.6927080154418945,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            0.6927080154418945,
+            0.6927080154418945,
+            0.6927080154418945,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            1.2000000476837158,
+            1.2000000476837158,
+            1.2000000476837158,
+            1.2000000476837158
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_Stone": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/UrbanCity/Textures/Tileable/cobbleStone_01_n",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/UrbanCity/Textures/Tileable/cobbleStone_01_d",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/UrbanCity/Textures/Tileable/cobbleStone_01_r",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            202.0,
+            202.11000061035156,
+            256.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            202.0,
+            202.11000061035156,
+            256.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            202.0,
+            202.11000061035156,
+            256.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -202.0,
+            -202.11000061035156,
+            -256.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/UrbanCity/Materials/Foliage/Foliage_Mat": {
+      "package": "/Game/UrbanCity/Materials/Foliage/Foliage_Mat",
+      "materialConstantBuffer": 2,
+      "textures": {
+        "5": {
+          "package": "/Game/UrbanCity/Textures/Foliage/foliage_01_n",
+          "parameter": null,
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "6": {
+          "package": "/Game/UrbanCity/Textures/Foliage/foliage_01_d",
+          "parameter": null,
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "7": {
+          "package": "/Game/UrbanCity/Textures/Foliage/foliage_01_r",
+          "parameter": null,
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 33
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 36
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 0,
+          "register": 2,
+          "component": "x"
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "Occlusion",
+          "bytesHex": "030000",
+          "offset": 9,
+          "register": 2,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.08761099725961685,
+            0.08761099725961685,
+            0.08761099725961685,
+            0.08761099725961685
+          ],
+          "expression": "Specular",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 2,
+          "component": "z"
+        },
+        {
+          "value": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896
+          ],
+          "expression": "Roughness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 2,
+          "component": "w"
+        },
+        {
+          "value": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ],
+          "expression": "Speed",
+          "bytesHex": "030300",
+          "offset": 18,
+          "register": 3,
+          "component": "x"
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "Weight",
+          "bytesHex": "030400",
+          "offset": 21,
+          "register": 3,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "expression": "Intensity",
+          "bytesHex": "030500",
+          "offset": 24,
+          "register": 3,
+          "component": "z"
+        },
+        {
+          "value": [
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "expression": "Sub Surface Strength",
+          "bytesHex": "030600",
+          "offset": 27,
+          "register": 3,
+          "component": "w"
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "__SubsurfaceProfile",
+          "bytesHex": "030700",
+          "offset": 30,
+          "register": 4,
+          "component": "x"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 34851,
+        "lz4CandidateStart": 34734,
+        "lz4ConsumedEnd": 37187,
+        "decodedPrefixHex": "0d0000000500000000000000000000000000000000000000ffffffff0a00000004000000000000000500000008000000002b000002010002030300020405000201270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991e00000000ff0d9000810ac50c0d0000000400000000000000060000000900000000020000010b00000500000206020002070400020226000303280003042a0003ffffffff",
+        "bytes": 5756,
+        "sha256": "c69ec17fe02144c04884a9d5778c6bfced4adff5376244e4ab5da76780a09f77",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Foliage_Mat\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 13,
+          "srvMap": [
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "samplerMap": [
+            4,
+            0,
+            5,
+            8,
+            11008,
+            33554690,
+            33555203,
+            33555716,
+            50341633,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            9440767,
+            214239873
+          ],
+          "textureMap": [
+            4,
+            0,
+            6,
+            9,
+            512,
+            2817,
+            33554437,
+            33554950,
+            33555463,
+            50341378,
+            50341891,
+            50342404,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 0,
+              "bindIndex": 5
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 2,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 4,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 38,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 40,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 42,
+              "bindIndex": 4
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 1,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 3,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 5,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 39,
+              "bindIndex": 1
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Foliage\\Foliage_Mat.json",
+        "decodedSha256": "070f4e73832891feca23b6188f9ee449a8ca0904243ccdf0851b402f15e233f9",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Foliage\\Foliage_Mat.uasset",
+            "existsLocally": true,
+            "bytes": 2666,
+            "sha256": "788361d947db71c5abc30247cff9fee43b572a53d5c15c0e28c79c44e761aabe"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Foliage\\Foliage_Mat.uexp",
+            "existsLocally": true,
+            "bytes": 208255,
+            "sha256": "2dcbeaf5d234db47d75c068736d346c44a4e084d81d7de3c06049cb9ff6a656c"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Foliage\\Foliage_Mat.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Foliage_Mat\\index.json"
+    },
+    "/Game/UrbanCity/Materials/Foliage/Foliage_01_Inst": {
+      "package": "/Game/UrbanCity/Materials/Foliage/Foliage_Mat",
+      "materialConstantBuffer": 2,
+      "textures": {
+        "5": {
+          "package": "/Game/UrbanCity/Textures/Foliage/foliage_01_n",
+          "parameter": null,
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "6": {
+          "package": "/Game/UrbanCity/Textures/Foliage/foliage_01_d",
+          "parameter": null,
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "7": {
+          "package": "/Game/UrbanCity/Textures/Foliage/foliage_01_r",
+          "parameter": null,
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 33
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 36
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 0,
+          "register": 2,
+          "component": "x"
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "Occlusion",
+          "bytesHex": "030000",
+          "offset": 9,
+          "register": 2,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.08761099725961685,
+            0.08761099725961685,
+            0.08761099725961685,
+            0.08761099725961685
+          ],
+          "expression": "Specular",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 2,
+          "component": "z"
+        },
+        {
+          "value": [
+            0.8964110016822815,
+            0.8964110016822815,
+            0.8964110016822815,
+            0.8964110016822815
+          ],
+          "expression": "Roughness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 2,
+          "component": "w"
+        },
+        {
+          "value": [
+            0.20544399321079254,
+            0.20544399321079254,
+            0.20544399321079254,
+            0.20544399321079254
+          ],
+          "expression": "Speed",
+          "bytesHex": "030300",
+          "offset": 18,
+          "register": 3,
+          "component": "x"
+        },
+        {
+          "value": [
+            1.5372029542922974,
+            1.5372029542922974,
+            1.5372029542922974,
+            1.5372029542922974
+          ],
+          "expression": "Weight",
+          "bytesHex": "030400",
+          "offset": 21,
+          "register": 3,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "expression": "Intensity",
+          "bytesHex": "030500",
+          "offset": 24,
+          "register": 3,
+          "component": "z"
+        },
+        {
+          "value": [
+            1.6179300546646118,
+            1.6179300546646118,
+            1.6179300546646118,
+            1.6179300546646118
+          ],
+          "expression": "Sub Surface Strength",
+          "bytesHex": "030600",
+          "offset": 27,
+          "register": 3,
+          "component": "w"
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "__SubsurfaceProfile",
+          "bytesHex": "030700",
+          "offset": 30,
+          "register": 4,
+          "component": "x"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 34851,
+        "lz4CandidateStart": 34734,
+        "lz4ConsumedEnd": 37187,
+        "decodedPrefixHex": "0d0000000500000000000000000000000000000000000000ffffffff0a00000004000000000000000500000008000000002b000002010002030300020405000201270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991e00000000ff0d9000810ac50c0d0000000400000000000000060000000900000000020000010b00000500000206020002070400020226000303280003042a0003ffffffff",
+        "bytes": 5756,
+        "sha256": "c69ec17fe02144c04884a9d5778c6bfced4adff5376244e4ab5da76780a09f77",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Foliage_Mat\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 13,
+          "srvMap": [
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "samplerMap": [
+            4,
+            0,
+            5,
+            8,
+            11008,
+            33554690,
+            33555203,
+            33555716,
+            50341633,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            9440767,
+            214239873
+          ],
+          "textureMap": [
+            4,
+            0,
+            6,
+            9,
+            512,
+            2817,
+            33554437,
+            33554950,
+            33555463,
+            50341378,
+            50341891,
+            50342404,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 0,
+              "bindIndex": 5
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 2,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 4,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 38,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 40,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 42,
+              "bindIndex": 4
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 1,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 3,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 5,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 39,
+              "bindIndex": 1
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Foliage\\Foliage_Mat.json",
+        "decodedSha256": "070f4e73832891feca23b6188f9ee449a8ca0904243ccdf0851b402f15e233f9",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Foliage\\Foliage_Mat.uasset",
+            "existsLocally": true,
+            "bytes": 2666,
+            "sha256": "788361d947db71c5abc30247cff9fee43b572a53d5c15c0e28c79c44e761aabe"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Foliage\\Foliage_Mat.uexp",
+            "existsLocally": true,
+            "bytes": 208255,
+            "sha256": "2dcbeaf5d234db47d75c068736d346c44a4e084d81d7de3c06049cb9ff6a656c"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Foliage\\Foliage_Mat.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Foliage_Mat\\index.json"
+    },
+    "/Game/UrbanCity/Materials/Props/prp_bench_Mat": {
+      "package": "/Game/UrbanCity/Materials/Props/prp_bench_Mat",
+      "materialConstantBuffer": 2,
+      "textures": {
+        "9": {
+          "package": "/Game/UrbanCity/Textures/Props/prp_bench_n",
+          "parameter": null,
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "10": {
+          "package": "/Game/UrbanCity/Textures/Props/prp_bench_a",
+          "parameter": null,
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "11": {
+          "package": "/Game/UrbanCity/Textures/Props/prp_bench_m",
+          "parameter": null,
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        },
+        "12": {
+          "package": "/Game/UrbanCity/Textures/Props/prp_bench_r",
+          "parameter": null,
+          "textureParameterIndex": 3,
+          "resourceIndex": 6
+        },
+        "13": {
+          "package": "/Game/UrbanCity/Textures/Props/prp_bench_ao",
+          "parameter": null,
+          "textureParameterIndex": 4,
+          "resourceIndex": 8
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 12
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 15
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 0,
+          "register": 2,
+          "component": "x"
+        },
+        {
+          "value": [
+            1.3724169731140137,
+            1.3724169731140137,
+            1.3724169731140137,
+            1.3724169731140137
+          ],
+          "expression": "Param",
+          "bytesHex": "030000",
+          "offset": 9,
+          "register": 2,
+          "component": "y"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 8996,
+        "lz4CandidateStart": 8833,
+        "lz4ConsumedEnd": 11802,
+        "decodedPrefixHex": "0f000000060000000400000000000000000000000000000002310000ffffffff0d0000000400000005000000060000000b000000002b000002030001030100020403000205050002060700020709000201270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991efa081d04f7089805810ac50c120000000400000006000000090000000e00000000020000010b0000060000010701000108020001090000020a0200020b0400020c0600020d0800020326000304280003052a0003ffffffff",
+        "bytes": 7084,
+        "sha256": "52abab99cd0d91f5b4ed96f8eb9dc312837f297f8e640bc2bb900de0d8efc567",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 15,
+          "srvMap": [
+            4,
+            0,
+            0,
+            0,
+            12546,
+            4294967295
+          ],
+          "samplerMap": [
+            4,
+            5,
+            6,
+            11,
+            11008,
+            16777986,
+            33554691,
+            33555204,
+            33555717,
+            33556230,
+            33556743,
+            50341633,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            69011706,
+            93849847,
+            214239873
+          ],
+          "textureMap": [
+            4,
+            6,
+            9,
+            14,
+            512,
+            2817,
+            16777222,
+            16777479,
+            16777736,
+            33554441,
+            33554954,
+            33555467,
+            33555980,
+            33556493,
+            50341379,
+            50341892,
+            50342405,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 1,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 2,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 0,
+              "bindIndex": 9
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 2,
+              "bindIndex": 10
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 4,
+              "bindIndex": 11
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 6,
+              "bindIndex": 12
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 8,
+              "bindIndex": 13
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 3,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 3,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 5,
+              "bindIndex": 5
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 7,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 9,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 39,
+              "bindIndex": 1
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Props\\prp_bench_Mat.json",
+        "decodedSha256": "07732737437be5d4c7f7d0b220123a7162ca34335e8f416f8338b4c45e241526",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Props\\prp_bench_Mat.uasset",
+            "existsLocally": true,
+            "bytes": 2458,
+            "sha256": "c04e58f92e2ec53a66489424e2d9036b86da8c9cb4607dc4602bc3f4f002e4e1"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Props\\prp_bench_Mat.uexp",
+            "existsLocally": true,
+            "bytes": 56764,
+            "sha256": "6983112aba2162eddc64559e9fe9c96ea43b1c7b41844648a03364feeb48ecf3"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Props\\prp_bench_Mat.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_Concrete": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/Downtown/Textures/ConcretePainted_N",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/Downtown/Textures/ConcretePainted_A",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/Downtown/Textures/ConreteClean_A",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -512.0,
+            -512.0,
+            -512.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            0.42500001192092896,
+            0.42500001192092896,
+            0.42500001192092896,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            0.42500001192092896,
+            0.42500001192092896,
+            0.42500001192092896,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    },
+    "/Game/-HeroGame/Materials/MaterialInstance/MI_Sidewalk": {
+      "package": "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster",
+      "materialConstantBuffer": 3,
+      "textures": {
+        "6": {
+          "package": "/Game/Downtown/Textures/Sidewalk_A_N",
+          "parameter": "World Align Normal",
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "7": {
+          "package": "/Game/Downtown/Textures/Sidewalk_A_A",
+          "parameter": "World Aligned Albedo",
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "8": {
+          "package": "/Game/Downtown/Textures/Sidewalk_A_H",
+          "parameter": "World Aligned Roughness",
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 18
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale",
+          "bytesHex": "040100",
+          "offset": 21
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "Albedo/Normal World Scale.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 24
+        },
+        {
+          "value": [
+            512.0,
+            512.0,
+            512.0,
+            0.0
+          ],
+          "expression": "abs(Albedo/Normal World Scale.rgb)",
+          "bytesHex": "0401002303000102ff19",
+          "offset": 33
+        },
+        {
+          "value": [
+            -512.0,
+            -512.0,
+            -512.0,
+            -0.0
+          ],
+          "expression": "(abs(Albedo/Normal World Scale.rgb)*[-1.0, -1.0, -1.0, -1.0])",
+          "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07",
+          "offset": 43
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 71
+        },
+        {
+          "value": [
+            0.42500001192092896,
+            0.42500001192092896,
+            0.42500001192092896,
+            1.0
+          ],
+          "expression": "Albedo Tint",
+          "bytesHex": "040200",
+          "offset": 80
+        },
+        {
+          "value": [
+            0.42500001192092896,
+            0.42500001192092896,
+            0.42500001192092896,
+            0.0
+          ],
+          "expression": "Albedo Tint.rgb",
+          "bytesHex": "0402002303000102ff",
+          "offset": 83
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "expression": "World Align Normal Intensity",
+          "bytesHex": "030000",
+          "offset": 0,
+          "register": 8,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 3,
+          "register": 8,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Metalness",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 8,
+          "component": "z"
+        },
+        {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "expression": "RoughnessBrightness",
+          "bytesHex": "030200",
+          "offset": 15,
+          "register": 8,
+          "component": "w"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 26117,
+        "lz4CandidateStart": 25996,
+        "lz4ConsumedEnd": 29394,
+        "decodedPrefixHex": "1900000007000000050000000000000000000000000000000000000002340000ffffffff0a000000050000000000000000000000070000000800000000000000012b00000301000302270004ffffffff060000000000000000000000000000000000000000000000ffffffff05000000f407991e00000000fa081d04ff0dd000810ac50c0e000000050000000000000000000000070000000a00000000020000010b00000600000307020003080400030326000404280004052a0004ffffffff",
+        "bytes": 9248,
+        "sha256": "6bfa907620af6e8bfb03c982679630a05d2aaf1486451d0399064a7d5e2358a3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 25,
+          "srvMap": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            13314,
+            4294967295
+          ],
+          "samplerMap": [
+            5,
+            0,
+            0,
+            7,
+            8,
+            0,
+            11009,
+            50331907,
+            67118850,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            69011706,
+            13635071,
+            214239873
+          ],
+          "textureMap": [
+            5,
+            0,
+            0,
+            7,
+            10,
+            512,
+            2817,
+            50331654,
+            50332167,
+            50332680,
+            67118595,
+            67119108,
+            67119621,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 0,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 2,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 4,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 38,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 40,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 42,
+              "bindIndex": 5
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 0,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 1,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 4,
+              "resourceIndex": 39,
+              "bindIndex": 2
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.json",
+        "decodedSha256": "f3866cd8e0323ad279363a522cf9342dd99c2c50efb48578365fd1db1cd17853",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uasset",
+            "existsLocally": true,
+            "bytes": 5070,
+            "sha256": "a05f396a81dca25fc71fff7ca7bca5895eb65b6543f298846c71cc226706de1a"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.uexp",
+            "existsLocally": true,
+            "bytes": 185195,
+            "sha256": "66a07d269141bdb5d191ac6abe14077411d3fa610284e795796964bc1fd08267"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ForgottenHotel\\Materials\\Tiling_Mats\\WorldTilingMaster.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\WorldTilingMaster\\index.json"
+    }
+  }
+}

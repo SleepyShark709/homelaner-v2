@@ -1,0 +1,159 @@
+{
+  "frozenStartInExtras": 171,
+  "frozenBytes": 7190,
+  "frozenSHA256": "a2a09feac89d59e4d2dcbaf44415f667f9165d88ae1a45822114238659c26747",
+  "layoutParametersRaw": [
+    8,
+    41
+  ],
+  "scalarParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 6824,
+      "parameter": "Mildew Gradient Amount",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 0.02568800002336502
+    },
+    {
+      "index": 1,
+      "frozenOffset": 6848,
+      "parameter": "Mildew Amount",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 0.0
+    }
+  ],
+  "vectorParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 6872,
+      "parameter": "SelectionColor",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "index": 1,
+      "frozenOffset": 6908,
+      "parameter": "Mildew Color",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        0.0,
+        0.10499999672174454,
+        0.0002704918442759663,
+        1.0
+      ]
+    }
+  ],
+  "textureParameters2D": [
+    {
+      "index": 0,
+      "frozenOffset": 6944,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 1,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/ModularStreetPack/Textures/T_Concrete_NRM"
+    },
+    {
+      "index": 1,
+      "frozenOffset": 6972,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 4,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/ModularStreetPack/Textures/T_Concrete"
+    },
+    {
+      "index": 2,
+      "frozenOffset": 7000,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 3,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/ModularStreetPack/Textures/T_Mildew_GradientMap"
+    },
+    {
+      "index": 3,
+      "frozenOffset": 7028,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 2,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/ModularStreetPack/Textures/T_Mildew_Map"
+    },
+    {
+      "index": 4,
+      "frozenOffset": 7056,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 0,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/ModularStreetPack/Textures/T_Concrete_Roughness"
+    }
+  ],
+  "uniformVectorPreshaders": [
+    {
+      "offset": 15,
+      "size": 3,
+      "bytesHex": "040000"
+    },
+    {
+      "offset": 18,
+      "size": 9,
+      "bytesHex": "0400002303000102ff"
+    },
+    {
+      "offset": 27,
+      "size": 3,
+      "bytesHex": "040100"
+    },
+    {
+      "offset": 30,
+      "size": 9,
+      "bytesHex": "0401002303000102ff"
+    }
+  ],
+  "uniformScalarPreshaders": [
+    {
+      "offset": 0,
+      "size": 9,
+      "bytesHex": "040000230103ffffff"
+    },
+    {
+      "offset": 9,
+      "size": 3,
+      "bytesHex": "030000"
+    },
+    {
+      "offset": 12,
+      "size": 3,
+      "bytesHex": "030100"
+    }
+  ],
+  "namePatches": {
+    "6848": "Mildew Amount",
+    "6908": "Mildew Color",
+    "6824": "Mildew Gradient Amount",
+    "6872": "SelectionColor"
+  },
+  "preshaderDataHex": "040000230103ffffff0300000301000400000400002303000102ff0401000401002303000102ff",
+  "preshaderDataFrozenOffset": 7084
+}

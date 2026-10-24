@@ -1,0 +1,597 @@
+{
+  "evidence_type": "UAssetAPI decoded cooked assets; static observation, not REA Evidence or gameplay measurement",
+  "tables": {
+    "DT_BossParam": [
+      {
+        "pointer": "/Exports/0/Table",
+        "rows": {
+          "Wind": {
+            "MaxFlySpeed_2_B75AF67F46BF646FE432139C7FD39433": 12000.0,
+            "MaxHP_4_3AAA52E648AD24F15FF9D883671AA69E": 1000.0,
+            "MaxStunPoint_22_4118CE7F49E385C4EE66AE94DCE4D103": 10,
+            "MaxStunTime_9_8B169D7A41D20A5B607741B907C4F49C": 10.0,
+            "MaxHeavyAttackCount_23_AB85E10E41F65CB2845706AF0D8D7EB1": 15,
+            "MaxAttackingTime_13_6362B0CC4AA4B5486DAAE7AECE3994A4": 30.0,
+            "MinAttackingTime_15_4BB4D66841E7AB774CD5879F507B3976": 20.0,
+            "MaxBlowingTime_19_EBD294D1460AFD0ED68F4198F2890061": 1.5,
+            "MaxMovingDistance_21_37A6234B4411DC76DE8A4F821B53DD8F": 30000.0,
+            "NormalAttackDamage_27_B96ABD4849024A59E3293296E41AF051": -1.0,
+            "NormalAttackkDamage_S_29_65C1AB934E8B0D3A0E9A728FDB649A86": -2.0,
+            "HeavyAttackDamage_31_B587E6794DD043DBC6BB6ABFE940E217": -10.0
+          },
+          "Fire": {
+            "MaxFlySpeed_2_B75AF67F46BF646FE432139C7FD39433": 13000.0,
+            "MaxHP_4_3AAA52E648AD24F15FF9D883671AA69E": 1500.0,
+            "MaxStunPoint_22_4118CE7F49E385C4EE66AE94DCE4D103": 15,
+            "MaxStunTime_9_8B169D7A41D20A5B607741B907C4F49C": 10.0,
+            "MaxHeavyAttackCount_23_AB85E10E41F65CB2845706AF0D8D7EB1": 10,
+            "MaxAttackingTime_13_6362B0CC4AA4B5486DAAE7AECE3994A4": 20.0,
+            "MinAttackingTime_15_4BB4D66841E7AB774CD5879F507B3976": 10.0,
+            "MaxBlowingTime_19_EBD294D1460AFD0ED68F4198F2890061": 1.5,
+            "MaxMovingDistance_21_37A6234B4411DC76DE8A4F821B53DD8F": 40000.0,
+            "NormalAttackDamage_27_B96ABD4849024A59E3293296E41AF051": -1.0,
+            "NormalAttackkDamage_S_29_65C1AB934E8B0D3A0E9A728FDB649A86": -2.0,
+            "HeavyAttackDamage_31_B587E6794DD043DBC6BB6ABFE940E217": -20.0
+          },
+          "Lightning": {
+            "MaxFlySpeed_2_B75AF67F46BF646FE432139C7FD39433": 15000.0,
+            "MaxHP_4_3AAA52E648AD24F15FF9D883671AA69E": 2000.0,
+            "MaxStunPoint_22_4118CE7F49E385C4EE66AE94DCE4D103": 20,
+            "MaxStunTime_9_8B169D7A41D20A5B607741B907C4F49C": 10.0,
+            "MaxHeavyAttackCount_23_AB85E10E41F65CB2845706AF0D8D7EB1": 10,
+            "MaxAttackingTime_13_6362B0CC4AA4B5486DAAE7AECE3994A4": 15.0,
+            "MinAttackingTime_15_4BB4D66841E7AB774CD5879F507B3976": 10.0,
+            "MaxBlowingTime_19_EBD294D1460AFD0ED68F4198F2890061": 1.5,
+            "MaxMovingDistance_21_37A6234B4411DC76DE8A4F821B53DD8F": 50000.0,
+            "NormalAttackDamage_27_B96ABD4849024A59E3293296E41AF051": -1.0,
+            "NormalAttackkDamage_S_29_65C1AB934E8B0D3A0E9A728FDB649A86": -4.0,
+            "HeavyAttackDamage_31_B587E6794DD043DBC6BB6ABFE940E217": -30.0
+          },
+          "Bot": {
+            "MaxFlySpeed_2_B75AF67F46BF646FE432139C7FD39433": 10000.0,
+            "MaxHP_4_3AAA52E648AD24F15FF9D883671AA69E": 650.0,
+            "MaxStunPoint_22_4118CE7F49E385C4EE66AE94DCE4D103": 5,
+            "MaxStunTime_9_8B169D7A41D20A5B607741B907C4F49C": 10.0,
+            "MaxHeavyAttackCount_23_AB85E10E41F65CB2845706AF0D8D7EB1": 15,
+            "MaxAttackingTime_13_6362B0CC4AA4B5486DAAE7AECE3994A4": 30.0,
+            "MinAttackingTime_15_4BB4D66841E7AB774CD5879F507B3976": 20.0,
+            "MaxBlowingTime_19_EBD294D1460AFD0ED68F4198F2890061": 1.5,
+            "MaxMovingDistance_21_37A6234B4411DC76DE8A4F821B53DD8F": 30000.0,
+            "NormalAttackDamage_27_B96ABD4849024A59E3293296E41AF051": -1.0,
+            "NormalAttackkDamage_S_29_65C1AB934E8B0D3A0E9A728FDB649A86": -1.0,
+            "HeavyAttackDamage_31_B587E6794DD043DBC6BB6ABFE940E217": -10.0
+          }
+        }
+      }
+    ],
+    "DT_HeroPoint": [
+      {
+        "pointer": "/Exports/0/Table",
+        "rows": {
+          "CQDS": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 100,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": null
+          },
+          "CQDM": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 200,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": null
+          },
+          "CQDL": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 300,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": null
+          },
+          "N_Ene": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 100,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": null
+          },
+          "CQFN": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 300,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": null
+          },
+          "CQFG": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 400,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": null
+          },
+          "CQ": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 1000,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": "D2853E0C40B6F3D3D59C689E2047DFEA"
+          },
+          "Mat": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 2000,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": "B2AB3F8E44E050664B9EF7AAA55C8FE8"
+          },
+          "CFire": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 2000,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": "4D4F2DF945348A0FC7E79BBBAE9A994B"
+          },
+          "Tero": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 1000,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": "29F51839419452AE577075900CFC2C85"
+          },
+          "Vehicle": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": -2000,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": null
+          },
+          "Tutorial": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 10000,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": "4F7737144EE7231CFA4662B46163D6DA"
+          },
+          "Debug+": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 10000,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": "A4C0DFB4434382590405DEB227CED960"
+          },
+          "Debug-": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": -10000,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": "5CE8F0954C1A8F9E84CA01B0AB71E444"
+          },
+          "MC": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 10000,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": "3DD46B3841247A2F31DBD1B70EE7183D"
+          },
+          "MF": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": -20000,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": "BE750EBB4F0CE875CCBF04B1F1900057"
+          },
+          "RCD": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 100,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": null
+          },
+          "SBHA": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 500,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": null
+          },
+          "Wind": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 20000,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": "CEC93D3F4E6908B1C97D52BD386049E0"
+          },
+          "Fire": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 30000,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": "8D48C5194988BAB732BAD68D23FA1C19"
+          },
+          "Lightning": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 50000,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": "7792D8DA4267867BF9CA42A8D12E7405"
+          },
+          "Bot": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": 3500,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": "46B6EBF545746F2CB7546184B38FDF4F"
+          },
+          "Failed": {
+            "Point_6_C166952442F8A4435ED86694E0459C59": -20000,
+            "ClearMessage_12_4E7640BF4F5D68E582CD69BA32908713": "E3D766B644B204686A0DE4B24B21D020"
+          }
+        }
+      }
+    ],
+    "DT_HeroRankUpAndDownPoint": [
+      {
+        "pointer": "/Exports/0/Table",
+        "rows": {
+          "N": {
+            "RankUpPoint_3_27150F124159A49CAC2ADA878AF21578": 30000,
+            "RankDownPoint_4_4579D58146F0119A7DAD659888DAAA0F": 0
+          },
+          "C": {
+            "RankUpPoint_3_27150F124159A49CAC2ADA878AF21578": 80000,
+            "RankDownPoint_4_4579D58146F0119A7DAD659888DAAA0F": 30000
+          },
+          "B": {
+            "RankUpPoint_3_27150F124159A49CAC2ADA878AF21578": 150000,
+            "RankDownPoint_4_4579D58146F0119A7DAD659888DAAA0F": 80000
+          },
+          "A": {
+            "RankUpPoint_3_27150F124159A49CAC2ADA878AF21578": 250000,
+            "RankDownPoint_4_4579D58146F0119A7DAD659888DAAA0F": 150000
+          },
+          "S": {
+            "RankUpPoint_3_27150F124159A49CAC2ADA878AF21578": 500000,
+            "RankDownPoint_4_4579D58146F0119A7DAD659888DAAA0F": 250000
+          },
+          "SS": {
+            "RankUpPoint_3_27150F124159A49CAC2ADA878AF21578": 1000000,
+            "RankDownPoint_4_4579D58146F0119A7DAD659888DAAA0F": 500000
+          },
+          "SSS": {
+            "RankUpPoint_3_27150F124159A49CAC2ADA878AF21578": 9999999,
+            "RankDownPoint_4_4579D58146F0119A7DAD659888DAAA0F": 1000000
+          }
+        }
+      }
+    ],
+    "DT_SpecialAction": [
+      {
+        "pointer": "/Exports/0/Table",
+        "rows": {
+          "1": {
+            "SpecialActionType_2_F25DCD4E4122A694ECD0E79032E2DDD1": "EPlayerSpecialActionType::NewEnumerator1",
+            "CoolTime_5_EBB1EA7F4C130F56AF1DDD802A111B43": 3.0,
+            "UsableTime_14_45B2685F49661223941DD085C6E1D416": "+0",
+            "LoopType?_11_96DAC9204C2D4D0CB9927099E9E6032A": false,
+            "Icon_8_B45852C44D7C828A7B39608DC5EA959B": -4
+          },
+          "2": {
+            "SpecialActionType_2_F25DCD4E4122A694ECD0E79032E2DDD1": "EPlayerSpecialActionType::NewEnumerator2",
+            "CoolTime_5_EBB1EA7F4C130F56AF1DDD802A111B43": 5.0,
+            "UsableTime_14_45B2685F49661223941DD085C6E1D416": 600.0,
+            "LoopType?_11_96DAC9204C2D4D0CB9927099E9E6032A": true,
+            "Icon_8_B45852C44D7C828A7B39608DC5EA959B": -3
+          }
+        }
+      }
+    ],
+    "DT_Vehicle": [
+      {
+        "pointer": "/Exports/0/Table",
+        "rows": {
+          "NewRow": {
+            "VehicleType_2_5A8E641741EAEF18523B488F1F98A328": -1
+          },
+          "NewRow_0": {
+            "VehicleType_2_5A8E641741EAEF18523B488F1F98A328": -2
+          },
+          "NewRow_1": {
+            "VehicleType_2_5A8E641741EAEF18523B488F1F98A328": -3
+          },
+          "NewRow_2": {
+            "VehicleType_2_5A8E641741EAEF18523B488F1F98A328": -4
+          },
+          "NewRow_3": {
+            "VehicleType_2_5A8E641741EAEF18523B488F1F98A328": -5
+          },
+          "NewRow_4": {
+            "VehicleType_2_5A8E641741EAEF18523B488F1F98A328": -5
+          },
+          "NewRow_5": {
+            "VehicleType_2_5A8E641741EAEF18523B488F1F98A328": -6
+          }
+        }
+      }
+    ]
+  },
+  "enums": {
+    "CitizenState_Enum": [
+      {
+        "pointer": "/Exports/0",
+        "values": [
+          {
+            "name": "CitizenState_Enum::NewEnumerator0",
+            "value": 0,
+            "display": "Normal"
+          },
+          {
+            "name": "CitizenState_Enum::NewEnumerator1",
+            "value": 1,
+            "display": "Ground"
+          },
+          {
+            "name": "CitizenState_Enum::NewEnumerator2",
+            "value": 2,
+            "display": "Sky"
+          },
+          {
+            "name": "CitizenState_Enum::NewEnumerator3",
+            "value": 3,
+            "display": "Escape"
+          },
+          {
+            "name": "CitizenState_Enum::CitizenState_MAX",
+            "value": 4,
+            "display": null
+          }
+        ]
+      }
+    ],
+    "E_BossState": [
+      {
+        "pointer": "/Exports/0",
+        "values": [
+          {
+            "name": "E_BossState::NewEnumerator0",
+            "value": 0,
+            "display": "None"
+          },
+          {
+            "name": "E_BossState::NewEnumerator1",
+            "value": 1,
+            "display": "CanMove"
+          },
+          {
+            "name": "E_BossState::NewEnumerator2",
+            "value": 2,
+            "display": "Attacking"
+          },
+          {
+            "name": "E_BossState::NewEnumerator3",
+            "value": 3,
+            "display": "PlayerAttacking"
+          },
+          {
+            "name": "E_BossState::NewEnumerator4",
+            "value": 4,
+            "display": "HeavyAttacking"
+          },
+          {
+            "name": "E_BossState::NewEnumerator5",
+            "value": 5,
+            "display": "Stun"
+          },
+          {
+            "name": "E_BossState::NewEnumerator6",
+            "value": 6,
+            "display": "Blowing"
+          },
+          {
+            "name": "E_BossState::NewEnumerator7",
+            "value": 7,
+            "display": "HitByBuilding"
+          },
+          {
+            "name": "E_BossState::NewEnumerator8",
+            "value": 8,
+            "display": "ReturnCharge"
+          },
+          {
+            "name": "E_BossState::E_MAX",
+            "value": 9,
+            "display": null
+          }
+        ]
+      }
+    ],
+    "E_HeroPlayerState": [
+      {
+        "pointer": "/Exports/0",
+        "values": [
+          {
+            "name": "E_HeroPlayerState::NewEnumerator0",
+            "value": 0,
+            "display": "CanMove"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator1",
+            "value": 1,
+            "display": "CantMove"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator2",
+            "value": 2,
+            "display": "Attacking"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator3",
+            "value": 3,
+            "display": "AirAttacking"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator8",
+            "value": 4,
+            "display": "AirAttackingStrong"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator4",
+            "value": 5,
+            "display": "DashAttacking"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator5",
+            "value": 6,
+            "display": "FistCannon"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator6",
+            "value": 7,
+            "display": "Action"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator7",
+            "value": 8,
+            "display": "AirAttackCharge"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator9",
+            "value": 9,
+            "display": "ChainAttack"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator10",
+            "value": 10,
+            "display": "Sliding"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator11",
+            "value": 11,
+            "display": "ChainLongAttack"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator12",
+            "value": 12,
+            "display": "LongRangeAttacking"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator13",
+            "value": 13,
+            "display": "LongAttackSmashDown"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator14",
+            "value": 14,
+            "display": "SuperLongAttackPunch"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator15",
+            "value": 15,
+            "display": "AirLongRangeAttacking"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator16",
+            "value": 16,
+            "display": "AirLongRangeAttackChain"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator17",
+            "value": 17,
+            "display": "AirSuperKicking"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator18",
+            "value": 18,
+            "display": "NewDashAttacking"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator19",
+            "value": 19,
+            "display": "DashAttackCharge"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator21",
+            "value": 20,
+            "display": "BossAttacking"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator22",
+            "value": 21,
+            "display": "BossAttackChain"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator23",
+            "value": 22,
+            "display": "BossBlowingAttack"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator24",
+            "value": 23,
+            "display": "BossBlowingAttackSecond"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator25",
+            "value": 24,
+            "display": "BossBlowingAttackChain"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator26",
+            "value": 25,
+            "display": "SmashBossHeavyAttack"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator27",
+            "value": 26,
+            "display": "ChainSmashBossHeavyAttack"
+          },
+          {
+            "name": "E_HeroPlayerState::NewEnumerator28",
+            "value": 27,
+            "display": "Lose"
+          },
+          {
+            "name": "E_HeroPlayerState::E_MAX",
+            "value": 28,
+            "display": null
+          }
+        ]
+      }
+    ],
+    "E_PlayerActionState": [
+      {
+        "pointer": "/Exports/0",
+        "values": [
+          {
+            "name": "E_PlayerActionState::NewEnumerator2",
+            "value": 0,
+            "display": "None"
+          },
+          {
+            "name": "E_PlayerActionState::NewEnumerator0",
+            "value": 1,
+            "display": "FireFighting"
+          },
+          {
+            "name": "E_PlayerActionState::NewEnumerator1",
+            "value": 2,
+            "display": "LiftUp"
+          },
+          {
+            "name": "E_PlayerActionState::E_MAX",
+            "value": 3,
+            "display": null
+          }
+        ]
+      }
+    ],
+    "EPlayerSpecialActionType": [
+      {
+        "pointer": "/Exports/0",
+        "values": [
+          {
+            "name": "EPlayerSpecialActionType::NewEnumerator0",
+            "value": 0,
+            "display": "None"
+          },
+          {
+            "name": "EPlayerSpecialActionType::NewEnumerator1",
+            "value": 1,
+            "display": "ShockWave"
+          },
+          {
+            "name": "EPlayerSpecialActionType::NewEnumerator2",
+            "value": 2,
+            "display": "OpticRay"
+          },
+          {
+            "name": "EPlayerSpecialActionType::EPlayerSpecialActionType_MAX",
+            "value": 3,
+            "display": null
+          }
+        ]
+      }
+    ]
+  },
+  "findings": [
+    {
+      "claim": "OpticRay actor is spawned and attached to Mesh socket Eye_Center",
+      "source": "BP_HeroSpecialActionComponent.json",
+      "pointers": [
+        "/Exports/0/ScriptBytecode/47",
+        "/Exports/0/ScriptBytecode/51"
+      ]
+    },
+    {
+      "claim": "OpticRay uses single line trace; two beam visuals use hit impact point",
+      "source": "BP_OpticRay.json",
+      "pointers": [
+        "/Exports/0/ScriptBytecode/53",
+        "/Exports/0/ScriptBytecode/65",
+        "/Exports/0/ScriptBytecode/66"
+      ]
+    },
+    {
+      "claim": "OpticRay HitInterval default is about 0.1 seconds; hit counter decreases by world delta seconds",
+      "source": "BP_OpticRay.json",
+      "pointers": [
+        "/Exports/0/ScriptBytecode/77",
+        "/Exports/0/ScriptBytecode/79",
+        "/Exports/0/ScriptBytecode/81"
+      ]
+    },
+    {
+      "claim": "GetLaserEndLocation uses camera location plus forward vector times 20000, or locked Boss location plus up vector times 60",
+      "source": "BP_OpticRay.json",
+      "pointers": [
+        "/Exports/8/ScriptBytecode/5",
+        "/Exports/8/ScriptBytecode/10",
+        "/Exports/8/ScriptBytecode/12",
+        "/Exports/8/ScriptBytecode/16"
+      ]
+    },
+    {
+      "claim": "City health changes by parameter, <=0 invokes GameOverEvent, positive healing clamps to max",
+      "source": "BP_CityManager.json",
+      "pointers": [
+        "/Exports/10/ScriptBytecode/3",
+        "/Exports/10/ScriptBytecode/5",
+        "/Exports/10/ScriptBytecode/8",
+        "/Exports/10/ScriptBytecode/15",
+        "/Exports/10/ScriptBytecode/17"
+      ]
+    }
+  ]
+}

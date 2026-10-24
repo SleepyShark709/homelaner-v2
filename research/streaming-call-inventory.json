@@ -1,0 +1,3475 @@
+{
+  "method": "UAssetAPI AST projected call scan; scope actual decoded class packages; not runtime coverage",
+  "sources": [
+    {
+      "package": "/Game/-HeroGame/BP/AnimNotify/ANS_SetMaterialScalarParam",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\AnimNotify\\ANS_SetMaterialScalarParam.json",
+      "sha256": "f6c3f22f1780bd9cb47894c648572e551a93327ad5217de6530a0a3cd045f9c7",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/AnimNotify/ANS_TakeSunglass",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\AnimNotify\\ANS_TakeSunglass.json",
+      "sha256": "f21d8f15acee3c61dfad2856035c79cb919013c504cf6b464020d536b07d551b",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/AnimNotify/AN_CameraShake",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\AnimNotify\\AN_CameraShake.json",
+      "sha256": "b95519880666f6abebe4dc0d85661960dff984a8c7beb070abeaa267c1df5529",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/AnimNotify/AN_SpawnOpticRay",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\AnimNotify\\AN_SpawnOpticRay.json",
+      "sha256": "b177481195c94574d73a175d67f005184c6f59d1a4a66a39014e37298f49ca46",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/AnimNotify/AN_SpawnShockWave",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\AnimNotify\\AN_SpawnShockWave.json",
+      "sha256": "056ff5e9a7769287a6cca1612111103a01c3e65f8dd99b888338fbfd1a5f2c20",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/BPI_Interact",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\BPI_Interact.json",
+      "sha256": "2629117ceb320c4b37f155c1967fc68cd1e14fd4b85e4eb0720988d7390ee0dc",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/BP_Blocking",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\BP_Blocking.json",
+      "sha256": "3e2ba1e24ca92a5eff9c3fc45ea51745ccef5910d8ba5bfcf3e2f3a2e93303a5",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/BP_Decal",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\BP_Decal.json",
+      "sha256": "1c880c9389042e54fd1516c56964d8d40e6cc2473f26647d6add99d6a66f34d9",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/CQTypeInterface",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\CQTypeInterface.json",
+      "sha256": "9b9d0248f48daa9d333b7829488b4d38ba1796fdb07a66039ab30326c09ba6f7",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/CheckDead_BPI",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\CheckDead_BPI.json",
+      "sha256": "c4722f2861b13e41f6abdef028c9da30c61f3c100f14d33d455215388dbe4a53",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/FinishLoadInterface",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\FinishLoadInterface.json",
+      "sha256": "e91f67026e852f46a4f22e0ff91989be32bdce571027dcca410861d181c40e83",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BPFL_BossBattleTutorialAndOther",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BPFL_BossBattleTutorialAndOther.json",
+      "sha256": "d3543a72b49b90664c7367897877d684317d6a645c33a08b5bf13dd809e4d7cb",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BPFL_Story",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BPFL_Story.json",
+      "sha256": "4370c6695909941ae317a7c3a734e7781999bda255045c46d1425db2dcefbb5a",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BPI_BackToTitleEvent",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BPI_BackToTitleEvent.json",
+      "sha256": "3e1a871cd5defb22404e21f3db9be2728fb3941c07715144c8be6f89503861d6",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BPI_BossBattleLose",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BPI_BossBattleLose.json",
+      "sha256": "88b231870d279135e15f6da948c8c202bfb8cee070675d471ff4d95aac8c46b8",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BPI_LoadData",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BPI_LoadData.json",
+      "sha256": "39b6cb175481f4c0e6b85e1949f9e26177407198075ade9911f70e6b2782b965",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BPI_StoryClear",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BPI_StoryClear.json",
+      "sha256": "f207f100ad7ab035a02798e3d825282408960d7a75a5bf4a077f931ad69a7db3",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BPI_Title",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BPI_Title.json",
+      "sha256": "8552e6cfeacc872dbac2e1d9d45d1e24f9990c017203d20d0bcacc592e353483",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "sha256": "f49018e7ffb1b2a2d4f2b305304188aa75303d00bab9f5677c4d85f49888fce5",
+      "callCount": 21
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_CityManager",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_CityManager.json",
+      "sha256": "2421176824b0a62ee63e2bc24004588e2b545f9fd7b62f2bb3a8d7484ec4fb00",
+      "callCount": 2
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_EnvironmentSound",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_EnvironmentSound.json",
+      "sha256": "2751a6aae6694ae9288ca00e396adc9bd2b65fe2649b21686d6d61610fcad079",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_FlightRing",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_FlightRing.json",
+      "sha256": "ef57659c2ae30511806b9c773099dde8bb17ff4951d42c4cd7455e76ccc8fbb9",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_RespawnAndSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_RespawnAndSpawnPoint.json",
+      "sha256": "4d2e9cb35d485ac59f3f71ac7cd7e0fd8e1522272619d56cead2799bb38c8392",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_StoryManager",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_StoryManager.json",
+      "sha256": "741b68e57fd2ebb2f51b60ecda84245d0da0f5f364cddbf593465d5a9b71c433",
+      "callCount": 3
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_StoryStartPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_StoryStartPoint.json",
+      "sha256": "39665e2244cf015df2e0484f7564a5d51da6b4e3d309698f7a8941f4efbb7ca4",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/CQParamInterface",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\CQParamInterface.json",
+      "sha256": "5932a9dd8204394f56334d76f996034504750336131fdd1b24771a846456ec21",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroCameraShake",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\HeroCameraShake.json",
+      "sha256": "eef2cc8e823690e0ea6466258f5cb7911d8348d6a49f79d1b74dacf967a6534f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroCameraShakeHand",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\HeroCameraShakeHand.json",
+      "sha256": "72bc6569f25ca82b1d7a0e8149d35fa10c454eab4eea55533af682459e695d6f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroCameraShakeLong",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\HeroCameraShakeLong.json",
+      "sha256": "5784d50045e42164b610ab98f098d96902ecf4f82f0cba0b9880224d4a35d700",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroCameraShakeQuake",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\HeroCameraShakeQuake.json",
+      "sha256": "2d1280b4cd37532a948234d8a1c3df9452cd6a02d4b3afa0fa1ce6b7ae930b01",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroCameraShake_SmallLoop",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\HeroCameraShake_SmallLoop.json",
+      "sha256": "fbfc510fcce973a2e733adb5ed7e5b18d0d1e8f411be0c0869e0e06ca15d1602",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameInstance",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameInstance.json",
+      "sha256": "76a56ee8b423b00d47b750678f477e0fa7c2bf5fa8f644ff6c59d6c9142343b9",
+      "callCount": 2
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "sha256": "1c893a771c343a3ea807093a39399ccd66cb5f650b39bfee21cf40ff0026c8a4",
+      "callCount": 18
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameModeController",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameModeController.json",
+      "sha256": "bb71c1cb07219518a0190596dcf4b67f769af5c1b3441b91a166604088d21757",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameSaveData",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\HeroGameSaveData.json",
+      "sha256": "af0540e8e69c6fdaaaf70cf485152a19917e1e5665d9165d999505d54ad92ec7",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/StoryQuestInterface",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\StoryQuestInterface.json",
+      "sha256": "8584911791c555f79921eb41b476e498e37e8e54596c9188f8323481879b3b69",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/MyFunctionLibrary",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\MyFunctionLibrary.json",
+      "sha256": "0a511db8e253847313c760d55c1137f6b569b09912cdef35d7db21fd4610ca5f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/MyMacroLibrary",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\MyMacroLibrary.json",
+      "sha256": "3a3cf111406ac7d15487323c3416280c9a0419c182ad457a79ea5ac91a500c0c",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/MySkySphere/BP_Sky_Sphere",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\MySkySphere\\BP_Sky_Sphere.json",
+      "sha256": "72ce734ba127f7200f07ae90c76db88a7c1da05128751683ad257992da928a54",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/PlayerImpact_BPI",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\PlayerImpact_BPI.json",
+      "sha256": "ab1a58233481ca660adf063b2996285ac63a3e1810aa5355cc13344f84402970",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_BaseBreakProps",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_BaseBreakProps.json",
+      "sha256": "f45538d262f9aab498938402d19e306f0b199a5687772fd00b55609a6f87585c",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_Base_EasterEgg",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_Base_EasterEgg.json",
+      "sha256": "0c4f70dd3867a73cdf05f34e1fdc444852ccde307fb257b3d6e4a7511cc86059",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_EasterEgg",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_EasterEgg.json",
+      "sha256": "923e27938af922fef51a216edf2e4b9cbea42175e945fb14c52f3505fc3008df",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_ElectricalBox",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_ElectricalBox.json",
+      "sha256": "611fd2407fb463992d088f552cc3c49351df5441b62ea372882a167ee064e9e6",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_EnelightMeteor",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_EnelightMeteor.json",
+      "sha256": "93427e523bf33f46be6266b20b168768123ecc01066bb7938598752328be248d",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_Fountain",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_Fountain.json",
+      "sha256": "b023a10fe51e83b83f8e7da1433722fdb1560e8f8802ee01ba51bb60085b99d4",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_Fountain_Child",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_Fountain_Child.json",
+      "sha256": "b7be161a1e7438f08dacdee697af0286e6f255cd9811bc45716ff66dfb9d1b37",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_Fountain_Child1",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_Fountain_Child1.json",
+      "sha256": "c1bdf99f3de65125ea72eaee126c07eafe619e765b82a837bb5afd3ab6c8ea92",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_Fountain_Child2",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_Fountain_Child2.json",
+      "sha256": "9297b75a3e2146f0ffb5ca4f07f549d392f360177aa911d77ce35477f0c239ac",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_Fountain_Child_Child",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_Fountain_Child_Child.json",
+      "sha256": "6636ed77ada375a01e8d5a97cf2557091f99260763613584e93218daabca279d",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_LightCrosswalk",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_LightCrosswalk.json",
+      "sha256": "8ebd2263e564c88bafcca50874bf8fefe4e9cecd0866c69ae26d9b56a4c9cd7c",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_LightPost",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_LightPost.json",
+      "sha256": "415216495c48ad6fa17d81369cf659909b8fe29398eb5a5152d9552a8c67617f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_LightTraffic",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_LightTraffic.json",
+      "sha256": "4b8b1723f1bf549a41d92339f84311f1f65fc3062404ba03c1a183033a40ee05",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_PropSpawner",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_PropSpawner.json",
+      "sha256": "6c6a1db7c0689570f1483b121c8cebf4dc463c74a1e3badb94a23b9895810c89",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_RoadTrees",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_RoadTrees.json",
+      "sha256": "50caffd33181e601d9d56e0c0e6f75237c73ce1d33a06faeb645e6c9379038ee",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Props/BP_Statue_CloakedWithSword",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Props\\BP_Statue_CloakedWithSword.json",
+      "sha256": "384c7edfb5516cb29bd6e34fef095098838256ea2640ec639d46c4f62f0d36e3",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/SendEnemyRef",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\SendEnemyRef.json",
+      "sha256": "1f49c4c98c4834772627de28e4e6fabdef79d568c6a210a74a95f204c9634228",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/SetBtnImageInterface",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\SetBtnImageInterface.json",
+      "sha256": "0294d16dc1a0b0db4bb68fca41863bfd1d76656758ba2591ded7aec240645065",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Story/Tutorial/BP_TutorialManager",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Story\\Tutorial\\BP_TutorialManager.json",
+      "sha256": "2fcdbc01edeb2c17ad09a013b2dd4486622c140d6b1cdc6e2af38c501e6de953",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/TutorialInterface",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\TutorialInterface.json",
+      "sha256": "04aaf34f785b3b967ff220b2af1f5540f2e953eb80f2f320a706f05caff35a77",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/BPI_FreeModeTutorial",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\BPI_FreeModeTutorial.json",
+      "sha256": "06d318286af2b4d6b464a9a03fd3f1ab175c141854c3847cf1cb43c5019983db",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/BPI_SpecialActionWidget",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\BPI_SpecialActionWidget.json",
+      "sha256": "2068db3183aa8db46ed280bc36cffb068f825f5aa2321f8895f5794b157aa827",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/BP_TitleSignboard",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\BP_TitleSignboard.json",
+      "sha256": "5b114101e1fa07d9bae76e5491617ea582e727ddb725a5bfdffd963897d2b4d8",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/FL_OptionsSetting",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\FL_OptionsSetting.json",
+      "sha256": "378ba1356980cbc882dc1a0aa94a51cda10b31e3b9f31fdb244f41d2b9ac38e0",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/HeroGameHUD",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\HeroGameHUD.json",
+      "sha256": "3da11734cd4942e14244aef72be26d15708346c1e0e14927277dfbd7f2160583",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/InputInterface",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\InputInterface.json",
+      "sha256": "4ef3c8aa4f968cf9234fb6c0609d5f460574169b117e3b1e1b89dd254474626d",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/KeyAndButton/WBP_KeyAndButton",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\KeyAndButton\\WBP_KeyAndButton.json",
+      "sha256": "35cbef6a0c5fc6ec0bc4d96b1a43829cfb5b7928d2745272297d65a3d8a14583",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_BossBattle",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_BossBattle.json",
+      "sha256": "3f1dbc9f6c5cbf76985dff4877d1ef1ce28875cab2a30423d3cdc3a7d916b7f6",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_Credit",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_Credit.json",
+      "sha256": "08be6f48e6d12dd403aae6873ac980a06e696084d460588f893218fb733583c3",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_EaserEgg",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_EaserEgg.json",
+      "sha256": "2a1d7ac5816554e43310862361108073008b23df3c6e749b0ddf0cb98c25f55a",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_FadeOut",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_FadeOut.json",
+      "sha256": "a5dd4062a38ba1caefd1b2c497900aa9973cfe8cf31da9a3eb52076d55ae9105",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_FlashMode",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_FlashMode.json",
+      "sha256": "5f4a596281ddb0eae2030111b4083d4c94d843c15def265c94e462de3615d04c",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_GameVersion",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_GameVersion.json",
+      "sha256": "8225c1cc848c20691257e616f04e84ff589662fb865d1b891c4cb8bd5c76194c",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_GenesisPR",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_GenesisPR.json",
+      "sha256": "ced3b49d818f17d33e595cbcd5f6f0de6732d68b95d7105ad8908e78f69287b2",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_HeroPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_HeroPoint.json",
+      "sha256": "c16ab7c55abee0e28d5f2eccfc08b4247e1be4b6a1d5c1ddd6c8ef4462b60894",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_HeroSpecialAction",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_HeroSpecialAction.json",
+      "sha256": "4a671c1c75c804964fadfdf77ac72ecf063228dd4482103d9edc95cb90166cbb",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_IconTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_IconTest.json",
+      "sha256": "f01a31586499bd0a3e486a5f37c296129abab929b653872196c11951afc1b260",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_InChallengeQuest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_InChallengeQuest.json",
+      "sha256": "fd222fec397eca505c873d0d3aac09e44101f4d74521e30e615a4fde473b0955",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_Load",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_Load.json",
+      "sha256": "9f306884658616c0e0412870c462e38d968b061822d99d61aa70f91da74e114f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_Lockon",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_Lockon.json",
+      "sha256": "1b661737bde438e6f5dd48044bb04a4507cc6b925b1631ff4667cd6a5b5bb224",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_OptionsAndSetting",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_OptionsAndSetting.json",
+      "sha256": "ec349127df0f33372b7d00666c6380db845ddd6450022c55985e1883141de800",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_PauseMenu",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_PauseMenu.json",
+      "sha256": "7a6db7cf651ca34ddc5d7af992c32917a933014f591c3637ca6d5332e5f07d9d",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_PlayerActionBtn",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_PlayerActionBtn.json",
+      "sha256": "27270d5c5f39b87121d512f095360136daf04224cf098e3295ac03ac1a49f326",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_QuitAndBackTitle",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_QuitAndBackTitle.json",
+      "sha256": "bfcaa9d1f4351e87f58802b6f780f31b21767eee000c29c02db144d203d8ecad",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_SaveAndLoad",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_SaveAndLoad.json",
+      "sha256": "bfdef05fad7f012ee87335ade981fbfc8d1f4abecf7690cba66cfbd02c6f0fad",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_SequenceSkip",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_SequenceSkip.json",
+      "sha256": "82489bcab97843a6dc7ff830583fb841576d8aa81e9ae69fe2c5e3ddab00e2ca",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_StartMessage",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_StartMessage.json",
+      "sha256": "1a80c9985c90c7b7a6216ddac4bccf87c2f28e310df3cb2755645af90af1827f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_TitleFream",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_TitleFream.json",
+      "sha256": "06191506e4dfb6de9330d75fcc6f68dfcb892776fda8c02c3f08c50d8c99ead6",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_TitleMovie",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_TitleMovie.json",
+      "sha256": "4a06d069a53e3d73bbe5805885aeb1594866f39706ba2f0778555c96cf70f254",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_TitleSinboard",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_TitleSinboard.json",
+      "sha256": "378059f1621c061dbd38b582534909c7d84d5553da62eb97eb6e39ca1d670daf",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_Tutorial",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_Tutorial.json",
+      "sha256": "28fb2e1fef7fdcf858f536ecae9f56c117cf7ef9815e60662ec2fbfd4c2ebed4",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_TutorialControlHint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_TutorialControlHint.json",
+      "sha256": "53c7bbd3882c4706293889c85db6bf2a5b70d398c1e9ba514db16593800bbc55",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WBP_TutorialHint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WBP_TutorialHint.json",
+      "sha256": "d5d577911bc29547c414335e08dc08ac2d251013d772a4791e07ba90aacb1ce6",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/UserInterface/WPB_ChallengeQuestSelect",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\UserInterface\\WPB_ChallengeQuestSelect.json",
+      "sha256": "13e30187652e93b76ed60ca564b1148ebf32cb837566002720cab5a9db10a7e8",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/BP/WedgetInputInterface",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\WedgetInputInterface.json",
+      "sha256": "45419088bda665ce971b7b5689af60588a828acd8c09d89ce4b0fd083caecccf",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Cinematic/BP/BP_SequenceThunder",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Cinematic\\BP\\BP_SequenceThunder.json",
+      "sha256": "e037a1dcd039f45b3cfa2f4009953ba91a6b55e8cce08087e44fe87e7c140771",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Cinematic/SpecialAction/LS_EnelightMeteor_Interact",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Cinematic\\SpecialAction\\LS_EnelightMeteor_Interact.json",
+      "sha256": "f0d262b1e40632ca97571f7840fe5bfc27b816a33c167fb79ab61c0df8b42f61",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Cinematic/SpecialAction/LS_SpecialAction_EnelightMeteor",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Cinematic\\SpecialAction\\LS_SpecialAction_EnelightMeteor.json",
+      "sha256": "13b76ef1c7fb9ec5b6205e4f5ea4735ff71af402e14f53a5acbdba482cc2ffae",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Cinematic/Story1/Story1Start/shots/shot0010/shot0010_001",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Cinematic\\Story1\\Story1Start\\shots\\shot0010\\shot0010_001.json",
+      "sha256": "6f21b5e31ffdc50449a71bf7b5f123d66754ece451b3940d7b4691e4ab73fc51",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Cinematic/Story2/Story2Start/shots/shot0010/shot0010_001",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Cinematic\\Story2\\Story2Start\\shots\\shot0010\\shot0010_001.json",
+      "sha256": "24af7b3d27963205cc2c984c3c8112a04fe53d6f3352fe071baeae9e0e56154f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Cinematic/Story3/Story3Clear/shots/shot0010/shot0010_001",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Cinematic\\Story3\\Story3Clear\\shots\\shot0010\\shot0010_001.json",
+      "sha256": "5b8578dc5b63554b41949a035e21360c5b7fd787356c9a33ed98a91314f1eaf8",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Cinematic/Story3/Story3Start/shots/shot0010/shot0010_001",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Cinematic\\Story3\\Story3Start\\shots\\shot0010\\shot0010_001.json",
+      "sha256": "d88880041c23e603f472d4702d44d3c5d833c3eda79005b4656f7045e8bc7dd8",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Animation/ABP_TutorialBoss",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Animation\\ABP_TutorialBoss.json",
+      "sha256": "72c63a4b5f31a676dc633af49c91eb76bf742f21a870fc57795362b91fc04fcd",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Animation/Boss/Fire/AnimBP_FireBoss",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Animation\\Boss\\Fire\\AnimBP_FireBoss.json",
+      "sha256": "f1b782d1599422f8160da5dcf8bb26f1280cd67f11ee6429fe9087227fb20c95",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Animation/Boss/Lightning/AnimBP_LightningBoss",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Animation\\Boss\\Lightning\\AnimBP_LightningBoss.json",
+      "sha256": "d74485c0f70c26f69600ab34309ea2d793be9e358f2c12b47da999f68808d750",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Animation/Boss/Wind/AnimBP_WindBoss",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Animation\\Boss\\Wind\\AnimBP_WindBoss.json",
+      "sha256": "4e0238a05b3bc319fdb62898b772d37000d19b6148c8cc331bb54f5011c59522",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/BPFL_SendBossSelfRef",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BPFL_SendBossSelfRef.json",
+      "sha256": "ee9de772c90772808fcf5be6bc880975b82ce7b832140963a1f912364cc14b67",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/BP_BossProjectile",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BP_BossProjectile.json",
+      "sha256": "aecc29bf7838c86232aa767df6bda922db77371a5e688f5fd6a4c766f2d5f4e0",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/BP_BossSpline",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BP_BossSpline.json",
+      "sha256": "122d406f52ddc1f5de42492baa4f961332272025a26f11f240201a7b8d36145a",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/BP_Bullet",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BP_Bullet.json",
+      "sha256": "25418c814eadbd41902681ccc1ff3f945ee5b34ae601ef6b977126f84902332f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/BP_BulletHitHole",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BP_BulletHitHole.json",
+      "sha256": "7df919a4d5cd07c5bb6f892eace4265f729627c3de39cef2213a75dc946a062d",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/BP_DestructionProp_L",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BP_DestructionProp_L.json",
+      "sha256": "002abf2aa8e90aee4276cc11146f54da1a8ab874c95ed6d8a58062d650441280",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/BP_DestructionProp_M",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BP_DestructionProp_M.json",
+      "sha256": "f305dc5822e6b9a575c93886c2b0096b5d7400f73cb346763a58c2255ed04109",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/BP_DestructionProp_S",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BP_DestructionProp_S.json",
+      "sha256": "7273f25cec23f37185971094d281ed7012b8161b691ffe2364ffc11ebad595d0",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/BP_Enemy_UseBPAI",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BP_Enemy_UseBPAI.json",
+      "sha256": "22a8705d8e35ed0896436733c44ae623933d1b1d5dafee9d69e1736a1ce2e240",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/BP_LaserBeam",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BP_LaserBeam.json",
+      "sha256": "6b66249fe6e3f93c61367e0e0315e86da9f2ef202b7a38eeb27bf49158a1954f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/BP_TutorialBoss",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\BP_TutorialBoss.json",
+      "sha256": "753a9894ddedfef93b48c425624b7ec0378d6ffdbe397fd22df158435e3109fd",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/BaseEnemy",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BaseEnemy.json",
+      "sha256": "9b9fda2f9edd92945d220ea848a27c274eee4b70125b6871b5b128e55b3c7e1c",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/AttackBP/BP_BossAttackDamage",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\AttackBP\\BP_BossAttackDamage.json",
+      "sha256": "26787936589a3b401b076e68bdacf82b2c4f94bdcf5e658bb5034d7c7edc5a30",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/AttackBP/BP_BossAttackSP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\AttackBP\\BP_BossAttackSP.json",
+      "sha256": "3d08325751f004e1492e6d55249fc1ebcd329bc43516ac525c69e06f294d8728",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/AttackBP/BP_BossHeavyAttack",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\AttackBP\\BP_BossHeavyAttack.json",
+      "sha256": "1e4fc3b417dc583a134fd4cd1a1f4858286ee4c70294103a0aa6d17123288bb5",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/AttackBP/BP_BossLightning",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\AttackBP\\BP_BossLightning.json",
+      "sha256": "80ed01684933fbf93aa2fc4c2935d7545923113815ba8ad5b1b619be9660dcad",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/BPFL_BossSpawn",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\BPFL_BossSpawn.json",
+      "sha256": "b02d321daa0f96438ab4dbcfa7c8e143359b9cb1b41728601a06c026402d940e",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/BP_BaseBoss",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_BaseBoss.json",
+      "sha256": "e71be93f880a9df663cff4756fd23477136402d5beae8b983da343f978d6bbcd",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/BP_BossAttackTarget",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\BP_BossAttackTarget.json",
+      "sha256": "88e356ac373286874a2afd886b09ba6ac6aa7c8a1b8858a83c95fa16c0883d32",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/BP_BossMovingPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\BP_BossMovingPoint.json",
+      "sha256": "44006344d2f9582eaf64102f1d6dee39442981a381b0526229b03b31ebea02ec",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/BP_FireBoss",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\BP_FireBoss.json",
+      "sha256": "d6b06f184e1e23a2001984aa3a84c6be756c859744584339961464c8146b8bfa",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/BP_LightningBoss",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\BP_LightningBoss.json",
+      "sha256": "56fd452a9ec7f9d199522a10048fa916b88f6a801ea6fc09e121bd366b05b9ec",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/NotifyState_BossAttackHandSwing",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\NotifyState_BossAttackHandSwing.json",
+      "sha256": "83078592dea6762e4bf7222276ce37f7c6a89ad7ec0639942b078f5024551fb0",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/NotifyState_BossAttackSP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\NotifyState_BossAttackSP.json",
+      "sha256": "9439fc5f50fa70add861b0b9db05510bd2c3c740a69e02fd9f308be005e7c13f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/NotifyState_BossChargeAttack",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\NotifyState_BossChargeAttack.json",
+      "sha256": "7d3e6030924d9d3910d283bd38b2235845d4afa100afc2612ef438d735938656",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/NotifyState_BossDefaultRot",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\NotifyState_BossDefaultRot.json",
+      "sha256": "1fc31d948d47b779657d4376c2a0859a94fcc1cc6648556901733d9b9ad199d9",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/NotifyState_BossHeavyAttackCharge",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\NotifyState_BossHeavyAttackCharge.json",
+      "sha256": "4011138b929255d0202b59262c71f36e683ba7115aeec19e3885aec850106218",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/NotifyState_BossPowerUpCharge",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\NotifyState_BossPowerUpCharge.json",
+      "sha256": "cc013aa00298b0cf4cd94ef4bb892c7d2621954dd21c4157430acaebbba91b56",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/NotifyState_BossSetTargetRot",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\NotifyState_BossSetTargetRot.json",
+      "sha256": "44b68c0b2421241d7ef441c55407828f395a7d54dd847ab12064bd891344c73f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/NotifyState_BossSpawn",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\NotifyState_BossSpawn.json",
+      "sha256": "88e5a168a2c4cd07860bfd1136ed3589feb220d714c785679ad1fb90b32ab844",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/NotifyState_BossVictroy",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\NotifyState_BossVictroy.json",
+      "sha256": "8eb84e12c6ed841fbd6c3186d9a2642e70b53f2f0f630babcc5710524fe7a88f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/Notify_BossAttackCity",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\Notify_BossAttackCity.json",
+      "sha256": "5ab946b4206415ef35eba95591c34f816607545b6936666cb0adf96354334db6",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/Notify_BossAttackHeavy",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\Notify_BossAttackHeavy.json",
+      "sha256": "931ccceb5c5fa91b3d22966fcab7fde02326a57cedb7bcbd2a059afe65c6803c",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/Notify_BossAttackPlayer",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\Notify_BossAttackPlayer.json",
+      "sha256": "9e85d98df95ea6aa8cc0f5e71151fa04cd30f544baffe757b19493f7d2821005",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/Notify_BossBackToIdle",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\Notify_BossBackToIdle.json",
+      "sha256": "57540709bd37a7807f6934a76259fc190bee5461f4b385485357110c790fd45c",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/Notify_BossMoveFinishAttack",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\Notify_BossMoveFinishAttack.json",
+      "sha256": "f462d161cf3e99419ab1cabc61f7d9ebc1ac634a28c83e0b05ef331ae40d3edd",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/Notify_BossNextAttack",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\Notify_BossNextAttack.json",
+      "sha256": "5c4f31b6fc3a9bbad1f07bdc979b77cebd0a7e9e1de6519caf68da8223e6f978",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/Notify_BossPlayReturnAnim",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\Notify_BossPlayReturnAnim.json",
+      "sha256": "76916aa04023aa2385a7f3038728e7386ec1d1e109532292d89c0adfa96c1c1d",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/Notify_BossPowerUp",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\Notify_BossPowerUp.json",
+      "sha256": "66aa352aa2ff545345a6de482cd0a62e8c1de1400f35b0595b0ab4bc03062dec",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/Notify_BossReturnEffectEvent",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\Notify_BossReturnEffectEvent.json",
+      "sha256": "6d984aeab36bf1faca23c1dd910f1c0bbd90021600d5fb0ff4cc6a1468f8c9b5",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Boss/Notify_BossStartStun",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Boss\\Notify_BossStartStun.json",
+      "sha256": "ddccf6f08ab930b3bd6ea0c64a7d870207fd0cefd29932c9e58445f3df93ee54",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/DecreaseCQDPropsInterface",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\DecreaseCQDPropsInterface.json",
+      "sha256": "0aa60c1e64478f7329a2fb3bd6d7b9b2e8f4ce60214c665800b24d78994167f7",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/EnemyHeavybag",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\EnemyHeavybag.json",
+      "sha256": "f22ebfce3f9080233514e6998e3bdf48bd86af71e595b2376a513d598ddc9f23",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Enemy/Mesh/Gang_AnimBPl",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Enemy\\Mesh\\Gang_AnimBPl.json",
+      "sha256": "0a74506554ccaf9e10278f063edfb8d54e8644a53ef847f6b2b171fbdeef5b43",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Localize/BPFL_Localize",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\BPFL_Localize.json",
+      "sha256": "c1cfafba0cbfe98b34760ddeb84a97f7ecd3ae8f18aaa1168781a49614a7ff26",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Localize/BPI_Localize",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Localize\\BPI_Localize.json",
+      "sha256": "3efda709776d1e6d17187cdbf01f3fcdf3a64f931796e11c64badc535fea6606",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-decoded\\MainLevel.json",
+      "sha256": "0f436d9a23f99c9d8069f0d2feb45ffc2e096666551802120cce78e4d7b3c489",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/Story1Level",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Story1Level.json",
+      "sha256": "a1c786866de1a7108f856e4aaae924968b60515137fef322e378a4ad6e966165",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/Story2Level",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Story2Level.json",
+      "sha256": "85351100b206de11c1fe58e633f362aa749cfe12420694604200f2b6e42f7fb3",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/Story3Level",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Story3Level.json",
+      "sha256": "d646cf48ee886641ce6827ee4b4430d7ca1d749a4cab682b2f0e79a64f2fd638",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/TutorialLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\TutorialLevel.json",
+      "sha256": "805ae740e29d8445465e14ac44abd7f2edd76da1628f24cb6f0d90c8fb9ffcd3",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Beach",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Beach.json",
+      "sha256": "abedc1cf266a77a03a038fde29f98cbe36f2e27b4c87dac621688007fd679530",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CustomEventLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CustomEventLevel.json",
+      "sha256": "5a44715d17ba7b9f5b2dea1040dd635c83eb5d8cff3d9a5f502c302449a590de",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/DownTown",
+      "source": "E:\\undefeated-web\\research\\exports\\city-decoded\\DownTown.json",
+      "sha256": "4dd198bfdb7d24aa587db0cf1ab5a2606659a929119e4711c55aaeb5128e6a26",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\FPropTest.json",
+      "sha256": "9ee90eadbadff362958b8c7eb7e2b2bbdb4a9f7c626ebb79ad785aa5e7c3b64c",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/FinancialDistrict",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\FinancialDistrict.json",
+      "sha256": "d179d345c7e9b75be451daf03e3d40be6f94b468f6211474e7fdc185153483e2",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/LightingTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\LightingTest.json",
+      "sha256": "809bdaca4e34192e5b17c55f715c7eb7b007bd3787a2bafb3b1f75322785b93e",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea3",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\ResidentialArea3.json",
+      "sha256": "fc519e885cc2e03650dbda61a36a5bf5155a2b193d88b98f1fd4bf9f60e66266",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelFire",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelFire.json",
+      "sha256": "14c0046def9a8ca1c303ef50c4921737050b2d74c6a30c9da07a73554fb85df5",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelLightning",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelLightning.json",
+      "sha256": "4a9202af24112f0fee095c68740546625dec913f547891f1dce955121f28fda9",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelWind",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelWind.json",
+      "sha256": "9f580ada4663f38e21e99372cec233f804a60ece56eeff3197dadabf5c65d4eb",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/TitleMenuLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\TitleMenuLevel.json",
+      "sha256": "e80723ea1c6cdbb394c5a709e61bdd94577493000aa7d0e143f09fa9c00f9cd0",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "sha256": "2641d9fd0860cb586d738b455dca1cdc7f3f418ee755532469c4cfe6bcf8f360",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/Animations/EasterEggAnimBP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\Animations\\EasterEggAnimBP.json",
+      "sha256": "1ddaeb9123f3b97cff4395379cebeb57273e61a3daf6eedbcc03a5de1167f653",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/Animations/HeroAnimBP",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroAnimBP.json",
+      "sha256": "4f6a988d4626a58897c8498cf20d8cad279add52175a87c90b7a3ec48cd7f902",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_AirAttackCollirion",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_AirAttackCollirion.json",
+      "sha256": "d7ea4105e80835c36b81d7e28697e76176a529da1fa1c8c35982515e3191913e",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_AirLongAttack_Kick",
+      "source": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_AirLongAttack_Kick.json",
+      "sha256": "779e80d8deec81375b01f9707dceb2383084c80139bb4e309e6727fe1a75df9b",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_AttackCollirion",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_AttackCollirion.json",
+      "sha256": "cf914ce5fac9412c446cb8fbef8dbef5847225b6f6456a9a4a7211f716617c85",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_AttackCollirionHeavy",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_AttackCollirionHeavy.json",
+      "sha256": "3e879f9320f800467f355c1322404fc46a8cca243e885ce6bcbd41a9a2963061",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_AttackCollirionHeavySlash",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_AttackCollirionHeavySlash.json",
+      "sha256": "87f61e3ccb7b7673c4fd80376a5d8d7cd1ba362202a976cfe439f3673b07b279",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_AttackCollirionNormal",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_AttackCollirionNormal.json",
+      "sha256": "2c4ba5e89658debdc60fff6f8d2bdee0e15517524e3b41bcfddb7823633b98d6",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_BulletShot",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_BulletShot.json",
+      "sha256": "cdf24bf39f493379ddfce4e66bf513426cf62ca720d3a67a812d7a54b632211f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_Explosion",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_Explosion.json",
+      "sha256": "f58355785cfda58327976c4169d8afee4d2dbee58b820ef41ea5c102650953c7",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_Explosion_Enemy",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_Explosion_Enemy.json",
+      "sha256": "7292c7b19ebf57e4e964bdfb0019d4d9ec34ca238eaee71d3c41303827a6e504",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_FlyCollision",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_FlyCollision.json",
+      "sha256": "217b1ce009fdfab0ed6b3d9a03fea522873cc6e6f36fee8b810b26e48ef294e0",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_LongAttack_BackHandSlash",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_LongAttack_BackHandSlash.json",
+      "sha256": "46e217c312f1134c0eb6e7db3b188ad136655d901414131250dd42e7968f8209",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_LongAttack_FlashKick",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_LongAttack_FlashKick.json",
+      "sha256": "8b28ca315fbfc93f53cb3a8149c38228ef0324fbcfe62073dea9f5aa2738b382",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_LongAttack_Smash",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_LongAttack_Smash.json",
+      "sha256": "955cb964fe465674a27e03134bf7fb75b2705dd78690466e9d15d8de12c4dd0e",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_NewDashAttackCollirion",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_NewDashAttackCollirion.json",
+      "sha256": "865044319c012f279879e76e4ab99a30cd0b421b1268e2b1f75d7775ece75c83",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_NormalLongAttackCollirion",
+      "source": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_NormalLongAttackCollirion.json",
+      "sha256": "cc11a73d0c4da2a4ed3f51eab9b953e4d173f96c8ac9b0ae40705c48dadb1182",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_OpticRay",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_OpticRay.json",
+      "sha256": "794e5f30cb8926f83f1e14308f3c017a9db601110987965c094c95e7c8735b02",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_ShockWaveCollision",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_ShockWaveCollision.json",
+      "sha256": "b5a4bdc23cb70f51d3f123a031e99f9c6d1e5db33699ae5cbfe2ec540418a876",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_SprintCollision",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\AttackBP\\BP_SprintCollision.json",
+      "sha256": "5eafcdfa2c782ad43dc5251810ecb6bc5885a846fbd24a43a9ddd2b2a0484b91",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_SuperKick",
+      "source": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_SuperKick.json",
+      "sha256": "1a8e75484dce77f8308e94b5fc6f80057a6cc44e3544078f26007e1e27e1c357",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/AttackBP/BP_SuperPunch",
+      "source": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_SuperPunch.json",
+      "sha256": "b7ac9cbc42fa0f92a068717ab885c6dbb6dddfcf44e664f082a045f82cda9ad6",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/BP_CitizenCollision",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_CitizenCollision.json",
+      "sha256": "edba4a0167aed141ff9a552e21aa4f063e37cc24a1002645c8a66bedf2d134b5",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/BP_HeroSpecialActionComponent",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_HeroSpecialActionComponent.json",
+      "sha256": "f05e679b45c74b553ad7d5a97c6cdc0f393fc5a6ce4f24a1800811e2c69b155b",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/BP_Player_Cinematic",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\BP_Player_Cinematic.json",
+      "sha256": "02aee228f1ad142b1b507fa04c1379df6273c02bdee49a95f5d73de6e4158628",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/HeroComponent",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroComponent.json",
+      "sha256": "23e454745d3dfeb949b24c763ebaa33a127dcec66bc310b499f1510e03d89fd0",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/HeroPoint/BPFL_HeroPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\Player\\HeroPoint\\BPFL_HeroPoint.json",
+      "sha256": "0923fa9f0ad03570b335fd9b9714f9400c1df6fccc16386c4fe00e934a54a531",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-HeroGame/Player/PlayerBP",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\PlayerBP.json",
+      "sha256": "019bd742f355abd84590ef35cd0c0739d94db8712ecefcf480cf8494ae2d6072",
+      "callCount": 2
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/AI/Citizen_AIController",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Citizen_AIController.json",
+      "sha256": "a187d57b6a2eb3c7baac9f96a5a94eefc585130138fe7913ab830d4a1a6923b2",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/AI/Service/CheckCitizenState_Service",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Service\\CheckCitizenState_Service.json",
+      "sha256": "99e9829c91a146adf38290fe66bc839de32499a2690c5d642de8ad4fbeff2ec3",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/AI/Service/GetNearWayPoint_Service",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Service\\GetNearWayPoint_Service.json",
+      "sha256": "41ca89ff6ec9b4f877ea97d5765e2dce04abd5424d1e028f068a22f37f9c06c1",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/AI/Task/GetPointAndEscape",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Task\\GetPointAndEscape.json",
+      "sha256": "19bc8a5fbfb2c2884eb9a70bf55928d66a738d1b2a3be3fc8a9bb4a2fbdbbe9c",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/AI/Task/GroundAnimAction_Task",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Task\\GroundAnimAction_Task.json",
+      "sha256": "bac6d195a4185d533be0fe7d509500359dcf92cee5b0f33ed2e51429dfcc45f3",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/AI/Task/MoveToChildWayPoint_Task",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Task\\MoveToChildWayPoint_Task.json",
+      "sha256": "6092ff5d15af2fb85f392f17104587026029704d3d7d4cb049406059915f9005",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/AI/Task/SkyAnimAction_Task",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\AI\\Task\\SkyAnimAction_Task.json",
+      "sha256": "2f95bb8e47f1e6174e805a69428696d8e6166d3c183bd1c39ef41b86b0416481",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/BluePrints/BPI_Citizen",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\BluePrints\\BPI_Citizen.json",
+      "sha256": "cae50895bf818f24053562009198508b5cd53f71df66a025777a206eedb19872",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/BluePrints/BaseCitizen_CharaBP",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BaseCitizen_CharaBP.json",
+      "sha256": "4885c61d8714dd48ae587d34d44e2461b7f1c360e3b3e6c8a6ba546cf5b983c8",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/BluePrints/EscapePoint_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\BluePrints\\EscapePoint_BP.json",
+      "sha256": "f66d40bd2134d198f4bdf44f917ef3d8e151c6259c25c0d8313895953ad4646b",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/BluePrints/Girl/BP_WomanCitizen",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\BluePrints\\Girl\\BP_WomanCitizen.json",
+      "sha256": "cc42068a88143c5f3fb37bbc200429836cd8351d1e332dc43ec4fda9ce6f12c4",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/BluePrints/Girl/GirlCitizen_AnimBP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\BluePrints\\Girl\\GirlCitizen_AnimBP.json",
+      "sha256": "fe78a80974afd3afc74f42eb8b896d77462da11947446730e2e33890f1f5162f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/BluePrints/Man/BP_ManCitizen",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\BluePrints\\Man\\BP_ManCitizen.json",
+      "sha256": "97872d10c34b968c75be5fa6560d6803a77cacb06fa9174c0455f161dff7968b",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/BluePrints/Man/Citizen_AnimBP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\BluePrints\\Man\\Citizen_AnimBP.json",
+      "sha256": "f5e4e581044b47ec94bebd24c13a6dd35feab7e1b4ad6d528e4e8a89c564e0bf",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Citizen/BluePrints/WayPoint_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Citizen\\BluePrints\\WayPoint_BP.json",
+      "sha256": "58ffc1410ea9b878732c4008e4c944e6268c9faa09d880b2f48961ec02c3b0c8",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/CitizenSystem/FrameWork/BP_CharaChildWaypoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\CitizenSystem\\FrameWork\\BP_CharaChildWaypoint.json",
+      "sha256": "d1b5547732ced4a167e036c8346dc0d0e73c38e57ee375d62cf41d81f07fd355",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/CitizenSystem/FrameWork/BP_CharaSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\CitizenSystem\\FrameWork\\BP_CharaSpawnPoint.json",
+      "sha256": "103a4d9e42a6662f184bfb8f102965fc919af89f00eb30206f21e6199765ef0f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/CitizenSystem/FrameWork/FuncLib_CitizenSystem",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\CitizenSystem\\FrameWork\\FuncLib_CitizenSystem.json",
+      "sha256": "1e912112fd8da58eaa47a133c2a2e725bfc9e6577b03339d63d4c1e5d6b959c4",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/CitizenSystem/SceneActor/BP_CharacterPoolArea",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\CitizenSystem\\SceneActor\\BP_CharacterPoolArea.json",
+      "sha256": "dda818234e06d76fdb0b8c477aab0dd483a9477bdf37aab840d44eb5f62674dc",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/CitizenSystem/SceneActor/BP_CharacterWayPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\CitizenSystem\\SceneActor\\BP_CharacterWayPoint.json",
+      "sha256": "a766010717d0dfa546c071589ef52c9d6346ed080b8f05cf3450ec2fed81ac57",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/CitizenSystem/SceneActor/BP_CitizenManager",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_CitizenManager.json",
+      "sha256": "cf34608c22b7608295b08eb8ee6e54be0121ae3811795fa671eda4c3365ae00e",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Gang/AI/Gang_AIController",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Gang_AIController.json",
+      "sha256": "1442260ad48dc09c3699eb9eabea1e9a33d2ce98ff216ce97c154b640f3e1d3d",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Gang/AI/Service/CheckCombatDist_Service",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Service\\CheckCombatDist_Service.json",
+      "sha256": "21ff4498efa03bf9e628533a2664f47de898cea98e1dc21e20ca019aebc4a324",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Gang/AI/Service/CheckGangState_Service",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Service\\CheckGangState_Service.json",
+      "sha256": "652166b5f8ffcd1dee0f0d97b37e0271bf8c9e197f942fd359661460d47694d1",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Gang/AI/Service/GetNearGangArea_Service",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Service\\GetNearGangArea_Service.json",
+      "sha256": "9442c7cad30c52aa5bdcd170e808fda8f4550b5e15732878a9aa851af465d1ad",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Gang/AI/Service/GroupAction_Service",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Service\\GroupAction_Service.json",
+      "sha256": "39ff89396a5ede11a29267571078a6a5d93bf2bef7e54af8e7d66ca0581e0451",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Gang/AI/Task/CombatMoveAction_Task",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Task\\CombatMoveAction_Task.json",
+      "sha256": "a748dd07964bba22336cd87952b80790adff849f2d70ccd61609652504322d58",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Gang/AI/Task/CombatShotAction_Task",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Task\\CombatShotAction_Task.json",
+      "sha256": "8311201c5d34008f8dd5fd75156af2fea1f676d1e5962d898fa9f89a8cf481ee",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Gang/AI/Task/PatrolAction_Task",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Task\\PatrolAction_Task.json",
+      "sha256": "09c222d6c07c2b48fab89ccb1fa0ea2b0b8822b3c57f8720219c28221f472bea",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Gang/AI/Task/SetWalkSpeed_Task",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Task\\SetWalkSpeed_Task.json",
+      "sha256": "69570394eb361cd69c2f4e46ad764791b128c84051dd8e7e24f44057641c9c38",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Gang/AI/Task/WaitTime_SkipToCombat_Task",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\AI\\Task\\WaitTime_SkipToCombat_Task.json",
+      "sha256": "6cb2f5bc3253d593cbf64de7c596937c02fc151795e89da8fa10a06613201346",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Gang/BluePrint/GangArea_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Gang\\BluePrint\\GangArea_BP.json",
+      "sha256": "6ba3653a157ce01277997ee701919a3944ac283914e123aa8e473f8248e06f25",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/MiniMap/NewMinimapSystem/BP_WorldCaptureCamera",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\MiniMap\\NewMinimapSystem\\BP_WorldCaptureCamera.json",
+      "sha256": "03619349f20098f10857716ec6a9dfe9459a726b5259967435cc1a84a07a206d",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/QuestBPs/BaseQuest_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\BaseQuest_BP.json",
+      "sha256": "790facf5839f51cbd935f2def3a64220a52edb8b4cc7ce485d8bd000020e54ce",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/QuestBPs/Fire/FIreDisaster_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\Fire\\FIreDisaster_BP.json",
+      "sha256": "6e0a32d43d93ff9c3ef425089f8a580b10a89bed16efe2f7cb41898d44e1e085",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/QuestBPs/Fire/FireQuest_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\Fire\\FireQuest_BP.json",
+      "sha256": "34f66f34147b05017c805303be814ebbbfc4ccd43df945d108d1c840758d1b59",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/QuestBPs/HeroGameState",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\HeroGameState.json",
+      "sha256": "fc97ec23e5f5a3881d5b74b12d2c7f4defdfaee6e4f748b632c921f55ffbd6ba",
+      "callCount": 3
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/QuestBPs/Mat/MatQuest_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\Mat\\MatQuest_BP.json",
+      "sha256": "58035f219f4ef2ecb402470e5b2e1ad3fbd3f9fc7ec780accab913ecf862dccd",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/QuestBPs/Mat/Mat_Citizen_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\Mat\\Mat_Citizen_BP.json",
+      "sha256": "1a66b0505af56ddddf2128c6e47685354e761205f239aebdb791be778a1e80fa",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/QuestBPs/QuestFuncLib",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\QuestFuncLib.json",
+      "sha256": "5b2787624882762dabcdcae911aa5df6581805dded07ffde355f38509610b632",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Example/VehicleSystem_Component",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\VehicleSystem_Component.json",
+      "sha256": "92e1e569d488f1120e4eb50b00370446cf460206fd553e6e38190195fd284cb6",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Framework/BPI_LineIntersectionTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Framework\\BPI_LineIntersectionTest.json",
+      "sha256": "ebddd24737bd18ed6ae292a3ab8ce53b24506a287023b21347b20218231e8e4c",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Framework/BPO_Line2D",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Framework\\BPO_Line2D.json",
+      "sha256": "6147200d042411c758a43735cbaa066653f02e2ad9c56a58d6a3b1ddc27dcb13",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Framework/SYS_CollisionLibrary",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Framework\\SYS_CollisionLibrary.json",
+      "sha256": "5e0f6bd3a70de91474c7e7a1684c6d11dee0188dad6257d00fe9b492066840a5",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Framework/SYS_ExtensionMacros",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Framework\\SYS_ExtensionMacros.json",
+      "sha256": "32fbad0917fa330c0b12c2dd08bcb6223d2f7ffbf2ce8510b592e6f61736657f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Framework/SplineHelper",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Framework\\SplineHelper.json",
+      "sha256": "36c279b684b5754a46d1290132fcecc45240c6c9930cd9300103660d31adce2e",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/SceneActor/BP_TrafficSystemCross",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\SceneActor\\BP_TrafficSystemCross.json",
+      "sha256": "36b397d8a84336197663ef2b3a252b7bc6b91e7184c875c52ac373ca876a2fae",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/SceneActor/BP_TrafficSystemTjunction",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\SceneActor\\BP_TrafficSystemTjunction.json",
+      "sha256": "03863066cb04f9292e46aa4cd76bb2640f31e1feb66fe4dd748ebfe04d2aaf4c",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/SceneActor/BP_VehiclePoolArea",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\SceneActor\\BP_VehiclePoolArea.json",
+      "sha256": "f981c9aa8d623c27321bcfc5aee3e80e07062ec9a98f2dde196c4d5de97c140b",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/SceneActor/BP_VehicleWaypoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\SceneActor\\BP_VehicleWaypoint.json",
+      "sha256": "2387fff87a5cc5a7959502f8add1a1bc079bd731cac6457c366a34451de2116a",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/SceneActor/BP_VehicleWpManager",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_VehicleWpManager.json",
+      "sha256": "e1e3f73e89b6e020c182e2ac817adc1e2698d61874a6d707d6957c58b358797d",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Vehicle/Blueprint/BP_ParentVehicle",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_ParentVehicle.json",
+      "sha256": "2ba7f6347310150cd7211640674accada6184b999b7c62a172a50eceb226db15",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Vehicle/Blueprint/BP_Vehicle_Generic",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Blueprint\\BP_Vehicle_Generic.json",
+      "sha256": "75485ef04c3ef42d49498c5a26e0fbad06c2348ac91f7e2ae741efce19637b4f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Vehicle/Blueprint/BP_Vehicle_Hatchback",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Blueprint\\BP_Vehicle_Hatchback.json",
+      "sha256": "7b375ec6a56eea58f015f043b462b5d849d02fda3626e528669f0d2d728859d4",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Vehicle/Blueprint/BP_Vehicle_Hybrid",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Blueprint\\BP_Vehicle_Hybrid.json",
+      "sha256": "3b5cb028c1d48c96f085c97b21d789e08f997de4ee6f6b32d01b7287a7912647",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Vehicle/Blueprint/BP_Vehicle_SUV",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Blueprint\\BP_Vehicle_SUV.json",
+      "sha256": "6f7b7edcf343e1ca21a2d85e238aef43c9a6b6173516c43d67337efc0ab7bacb",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Vehicle/Blueprint/BP_Vehicle_Sedan2Door",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Blueprint\\BP_Vehicle_Sedan2Door.json",
+      "sha256": "297d0600fe077cd296d955ed99cf0c33f43037dcbbbf36d57ad94b601c14d9e6",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Vehicle/Blueprint/BP_Vehicle_Taxi",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Blueprint\\BP_Vehicle_Taxi.json",
+      "sha256": "500a695695efb75adc5256c71d1f6598d424a0ef5c5a5cf811da5e31965c6042",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Vehicle/Sedan/Sedan_AnimBP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\Sedan\\Sedan_AnimBP.json",
+      "sha256": "41f36a2a20f724299a115f3b63543b321381457b049b7cc6795c5fd849a27193",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Vehicle/WheelBP/Sedan/Sedan_BackWheel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\WheelBP\\Sedan\\Sedan_BackWheel.json",
+      "sha256": "4cc894167fd4e19c7d767caa6f294ed127c10368f9fb544ff1b5e46cb04bdd4f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/VehicleSystem/Vehicle/WheelBP/Sedan/Sedan_FrontWheel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\VehicleSystem\\Vehicle\\WheelBP\\Sedan\\Sedan_FrontWheel.json",
+      "sha256": "31e0b6887f5d5cc163a726ff04867eeeda64f1e1c4a44a826b36221dee718518",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Ver1_1/Story/StoryStartPoint_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Story\\StoryStartPoint_BP.json",
+      "sha256": "5b420365c4e4033ccdecbcc7e6198fbfad9e0175cb3653dd742d2055898f82af",
+      "callCount": 1
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Ver1_1/Story/StorySystem/StoryNo1_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Story\\StorySystem\\StoryNo1_BP.json",
+      "sha256": "a24c915e449913e70e35c9f2db652b733e074dd09ebbe38eab8f09a1b3dbaa90",
+      "callCount": 1
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Ver1_1/Story/StorySystem/StoryNo2_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Story\\StorySystem\\StoryNo2_BP.json",
+      "sha256": "8b013527f1a2d576facc0a564bd3833490ed560815079cc9dca258ee6947436d",
+      "callCount": 1
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Ver1_1/Story/StorySystem/Storysystem_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Story\\StorySystem\\Storysystem_BP.json",
+      "sha256": "4ea20746454c23c007998145905ffdbbd5686b40ae0aa4d7e50684ce440807e2",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Ver1_1/Twitter/TwitterFunctionLib",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Twitter\\TwitterFunctionLib.json",
+      "sha256": "e39cacfd5f4fc6bac44170b941a1594f4af9697802437d80cca815a339e29656",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Ver1_2/FuncLib/FuncLib_Ver1_2",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_2\\FuncLib\\FuncLib_Ver1_2.json",
+      "sha256": "18e7af19dbd6043ba96e066aaa44d9560c7278806a40106710a03782533533a0",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/WIdget/DifenceBillls_Widget",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\WIdget\\DifenceBillls_Widget.json",
+      "sha256": "38ff850a010df7165a3122a8c4bbb77ab9918a5b113899610af30c51fbdb29f3",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/WIdget/Free_Widget",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\WIdget\\Free_Widget.json",
+      "sha256": "752d307afe855361c2db4645cd1ad15da2a00d20edf56ef68b4fd639b279861e",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/WIdget/MiniMap_Widget",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\WIdget\\MiniMap_Widget.json",
+      "sha256": "55b1df6b37c3353b8bbd6295ec4b46d65e737961cb222c3640227e1572b213d0",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/WIdget/NewMiniMap_Widget",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\WIdget\\NewMiniMap_Widget.json",
+      "sha256": "ba035f2ac27f6bd26ddd3696a84668e9090070b9b4e1e2f95e6ed2d830eeb796",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/WIdget/Twitter_Widget",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\WIdget\\Twitter_Widget.json",
+      "sha256": "85982f1d9bb19ca2d2e162b81c9759ccfd344bb3f8c507c9bda305f06da272e8",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Cinematics/Sequences/DestoryBot/shots/shot0010/shot0010_001",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Cinematics\\Sequences\\DestoryBot\\shots\\shot0010\\shot0010_001.json",
+      "sha256": "8fe56415efe52f0c69f2db1001b25a80aa40125860e4c2b7c90e651552d6a31c",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Cinematics/Sequences/QuitGame/shots/shot0010/shot0010_001",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Cinematics\\Sequences\\QuitGame\\shots\\shot0010\\shot0010_001.json",
+      "sha256": "19c43fa8405f5c8068975e9cbb1924d69ce658bc52e0f1d4701490c9cd32c443",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Cinematics/Sequences/RescueTutorial/shots/shot0010/shot0010_001",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Cinematics\\Sequences\\RescueTutorial\\shots\\shot0010\\shot0010_001.json",
+      "sha256": "898c63868db581e8328a0ba17d24f2169a33e7406e8b3f2c7d73252a777d5d60",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Cinematics/Sequences/RunEnemies/shots/shot0010/shot0010_001",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Cinematics\\Sequences\\RunEnemies\\shots\\shot0010\\shot0010_001.json",
+      "sha256": "b9c04bc100c5ee89e8c921dbdc47aa679ffe7353907b55d608c648ee95de6bd3",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Cinematics/Sequences/TutorialStart/shots/shot0010/shot0010_001",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Cinematics\\Sequences\\TutorialStart\\shots\\shot0010\\shot0010_001.json",
+      "sha256": "1bff351abfa3d78b6076ef8101da8d3ca800c782ca309ca1d32260a0fda6897f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Cinematics/Sequences/TutorialStart/shots/shot0040/shot0040_001",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Cinematics\\Sequences\\TutorialStart\\shots\\shot0040\\shot0040_001.json",
+      "sha256": "7106209b2546e7caa64c71d0a1adc8e88ba1fc1f1082cdcf212b7cc687e61b9f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Cinematics/Sequences/TutorialStart/shots/shot0050/shot0050_001",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Cinematics\\Sequences\\TutorialStart\\shots\\shot0050\\shot0050_001.json",
+      "sha256": "13446afd3edd1069d6655a24f677aecbfdfb982e2a3a58bb435a71478fc94ba5",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Downtown/Meshes/Rigged_Vehicles/Generic_AnimBP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Downtown\\Meshes\\Rigged_Vehicles\\Generic_AnimBP.json",
+      "sha256": "d15739752ec5cbc130947aff4ec7091f5e4ff9e6dbcf40991de8c2d1fb2c1ac2",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Downtown/Meshes/Rigged_Vehicles/Taxi_AnimBP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Downtown\\Meshes\\Rigged_Vehicles\\Taxi_AnimBP.json",
+      "sha256": "0db4dbac7adac611a1855983f2753c780b721f57b7e14c64d5ef00be3294f627",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/GR_Stylized_Female_01/Character/Animations/AB_MovementB",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\GR_Stylized_Female_01\\Character\\Animations\\AB_MovementB.json",
+      "sha256": "9ab66b20edb006eac9ee360bcf0da7bb31901e45d378d2494ab3c64b986c5ba5",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/GR_Stylized_Female_01/Character/Animations/Retarget_Example/Mannequin/Animations/ThirdPerson_AnimBP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\GR_Stylized_Female_01\\Character\\Animations\\Retarget_Example\\Mannequin\\Animations\\ThirdPerson_AnimBP.json",
+      "sha256": "5ab6b4a80ff80b9a977eed7a04e82258275850717162f6c13d3f32facd4eb542",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/GR_Stylized_Female_01/Character/Blueprints/BP_GRFH1_Character",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\GR_Stylized_Female_01\\Character\\Blueprints\\BP_GRFH1_Character.json",
+      "sha256": "10d67b6ad253b953efb956f78318588a44ca739641cab906585350febdd6ddfd",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/GR_Stylized_Female_01/Character/Blueprints/HUD/WB_CharacterSetup",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\GR_Stylized_Female_01\\Character\\Blueprints\\HUD\\WB_CharacterSetup.json",
+      "sha256": "aefe8b64abbff27b2121e196b9b7aa32731aaf54ab149f05f56d600ea96fb1ec",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Skies/Blueprints/BP_Sky",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Skies\\Blueprints\\BP_Sky.json",
+      "sha256": "2a294ecd7afe4463fa5e79d0b82072f02b3caf33c0adbc585a4f2a19ad4ad4b8",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Vehicles_Vol1/Blueprints/BackWheels",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Vehicles_Vol1\\Blueprints\\BackWheels.json",
+      "sha256": "3a263930423b501eedaf8f5ac0b715ace0fbeb2a156bd4027bd8155976ff0b45",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Vehicles_Vol1/Blueprints/FrontWheels",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Vehicles_Vol1\\Blueprints\\FrontWheels.json",
+      "sha256": "54fbe66fbbb72f5ed3d2a7dca872604276d56173853d9bf43c56d83ceb75ac6f",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Vehicles_Vol1/Blueprints/Hatchback_AnimBP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Vehicles_Vol1\\Blueprints\\Hatchback_AnimBP.json",
+      "sha256": "62be61ec5cb6d7ead7a0e20781185751a9f9ab8d5a7b7558b0ae340e6a3c1586",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Vehicles_Vol1/Blueprints/Hybrid_AnimBP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Vehicles_Vol1\\Blueprints\\Hybrid_AnimBP.json",
+      "sha256": "0f692ded74bc80c86dbfccc9dfe7d521a7690b5e932affbb0b3ca077f7d1235e",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Vehicles_Vol1/Blueprints/SUV_AnimBP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Vehicles_Vol1\\Blueprints\\SUV_AnimBP.json",
+      "sha256": "4c99ae05fc81549505a3f10666d2ee8b28cebefe33375b57147d35d0bd2c54ce",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/Vehicles_Vol1/Blueprints/Sedan2Door_AnimBP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\Vehicles_Vol1\\Blueprints\\Sedan2Door_AnimBP.json",
+      "sha256": "f073cb6da4181ed257111ab0fd422ae0173aeead0078453e34b918feaaf31d18",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/WaterPlane/Ocean/Blueprint/BP_OceanWater",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\WaterPlane\\Ocean\\Blueprint\\BP_OceanWater.json",
+      "sha256": "eb1db190d9c0e53a8a0abd3c135cb35ae3f3f9289a20a3be941652caf3b4d4f7",
+      "callCount": 0
+    },
+    {
+      "package": "/Game/WaterPlane/Translucent/Blueprint/BP_TranslucentWater",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\WaterPlane\\Translucent\\Blueprint\\BP_TranslucentWater.json",
+      "sha256": "44a570f6607cf2f5f26938ccad4a8196a65caa90e88e3041022c3d6a92f40127",
+      "callCount": 0
+    }
+  ],
+  "calls": [
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/97",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "CallFunc_GetLevelName_Output",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 15
+              },
+              1798479932,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/100",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "DPropTest",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 2807
+              },
+              2132415627,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/103",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "FPropTest",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 2877
+              },
+              729314509,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/143",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "CallFunc_GetLevelName_Output",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 2723
+              },
+              9179931,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/150",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "FPropTest",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 2882
+              },
+              1957970422,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/152",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "DPropTest",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 2812
+              },
+              1955897148,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/215",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "CallFunc_GetLevelName_Output_3",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 4231
+              },
+              -1775283325,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/218",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "DPropTest",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 5816
+              },
+              -706632969,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/221",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "FPropTest",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 5886
+              },
+              1623436694,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/229",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "CallFunc_GetLevelName_Output_3",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 5732
+              },
+              1264291963,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/236",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "FPropTest",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 5891
+              },
+              -648334194,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/238",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "DPropTest",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 5821
+              },
+              -1101321736,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/248",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "CallFunc_GetLevelName_Output_1",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 2947
+              },
+              1810064686,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/250",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "DPropTest",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 3855
+              },
+              -1425597596,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/259",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "FPropTest",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 3860
+              },
+              -159429137,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/267",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "CallFunc_GetLevelName_Output_2",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 3865
+              },
+              -683781859,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/269",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "DPropTest",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 4221
+              },
+              -1646835228,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/278",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "FPropTest",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 4226
+              },
+              971915485,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/446",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "CallFunc_GetLevelName_Output_4",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 6347
+              },
+              -198224694,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/453",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "FPropTest",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 5986
+              },
+              -434683453,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_ChallengQuestSpawnPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "pointer": "/Exports/0/ScriptBytecode/455",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "DPropTest",
+          {
+            "op": "EX_StructConst",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 6342
+              },
+              503186493,
+              "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_CityManager",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_CityManager.json",
+      "function": "ExecuteUbergraph_BP_CityManager",
+      "pointer": "/Exports/0/ScriptBytecode/20",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          {
+            "op": "EX_SwitchValue",
+            "EndGotoOffset": 799,
+            "IndexTerm": "Temp_bool_Variable",
+            "DefaultTerm": "K2Node_Select_Default_3",
+            "Cases": [
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": false,
+                "NextOffset": 685,
+                "CaseTerm": {
+                  "op": "EX_SwitchValue",
+                  "EndGotoOffset": 685,
+                  "IndexTerm": "Temp_byte_Variable_1",
+                  "DefaultTerm": "K2Node_Select_Default_1",
+                  "Cases": [
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 0,
+                      "NextOffset": 616,
+                      "CaseTerm": "Temp_name_Variable_9"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 1,
+                      "NextOffset": 631,
+                      "CaseTerm": "Temp_name_Variable_8"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 2,
+                      "NextOffset": 646,
+                      "CaseTerm": "Temp_name_Variable_7"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 3,
+                      "NextOffset": 661,
+                      "CaseTerm": "Temp_name_Variable_6"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 4,
+                      "NextOffset": 676,
+                      "CaseTerm": "Temp_name_Variable_5"
+                    }
+                  ]
+                }
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": true,
+                "NextOffset": 790,
+                "CaseTerm": {
+                  "op": "EX_SwitchValue",
+                  "EndGotoOffset": 790,
+                  "IndexTerm": "Temp_byte_Variable_2",
+                  "DefaultTerm": "K2Node_Select_Default_2",
+                  "Cases": [
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 0,
+                      "NextOffset": 721,
+                      "CaseTerm": "Temp_name_Variable_14"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 1,
+                      "NextOffset": 736,
+                      "CaseTerm": "Temp_name_Variable_13"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 2,
+                      "NextOffset": 751,
+                      "CaseTerm": "Temp_name_Variable_12"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 3,
+                      "NextOffset": 766,
+                      "CaseTerm": "Temp_name_Variable_11"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 4,
+                      "NextOffset": 781,
+                      "CaseTerm": "Temp_name_Variable_10"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "op": "EX_StructConst",
+            "Struct": -177,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 840
+              },
+              2146471431,
+              "ExecuteUbergraph_BP_CityManager",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_CityManager",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_CityManager.json",
+      "function": "ExecuteUbergraph_BP_CityManager",
+      "pointer": "/Exports/0/ScriptBytecode/124",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          {
+            "op": "EX_SwitchValue",
+            "EndGotoOffset": 3513,
+            "IndexTerm": "Temp_bool_Variable_1",
+            "DefaultTerm": "K2Node_Select_Default_5",
+            "Cases": [
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": false,
+                "NextOffset": 3399,
+                "CaseTerm": {
+                  "op": "EX_SwitchValue",
+                  "EndGotoOffset": 3399,
+                  "IndexTerm": "Temp_byte_Variable_3",
+                  "DefaultTerm": "K2Node_Select_Default_4",
+                  "Cases": [
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 0,
+                      "NextOffset": 3330,
+                      "CaseTerm": "Temp_name_Variable_15"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 1,
+                      "NextOffset": 3345,
+                      "CaseTerm": "Temp_name_Variable_16"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 2,
+                      "NextOffset": 3360,
+                      "CaseTerm": "Temp_name_Variable_17"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 3,
+                      "NextOffset": 3375,
+                      "CaseTerm": "Temp_name_Variable_18"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 4,
+                      "NextOffset": 3390,
+                      "CaseTerm": "Temp_name_Variable_19"
+                    }
+                  ]
+                }
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": true,
+                "NextOffset": 3504,
+                "CaseTerm": {
+                  "op": "EX_SwitchValue",
+                  "EndGotoOffset": 3504,
+                  "IndexTerm": "Temp_byte_Variable",
+                  "DefaultTerm": "K2Node_Select_Default",
+                  "Cases": [
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 0,
+                      "NextOffset": 3435,
+                      "CaseTerm": "Temp_name_Variable_4"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 1,
+                      "NextOffset": 3450,
+                      "CaseTerm": "Temp_name_Variable_3"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 2,
+                      "NextOffset": 3465,
+                      "CaseTerm": "Temp_name_Variable_2"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 3,
+                      "NextOffset": 3480,
+                      "CaseTerm": "Temp_name_Variable_1"
+                    },
+                    {
+                      "op": "FKismetSwitchCase",
+                      "CaseIndexValueTerm": 4,
+                      "NextOffset": 3495,
+                      "CaseTerm": "Temp_name_Variable"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -177,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 969
+              },
+              -692161023,
+              "ExecuteUbergraph_BP_CityManager",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_StoryManager",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_StoryManager.json",
+      "function": "ExecuteUbergraph_BP_StoryManager",
+      "pointer": "/Exports/0/ScriptBytecode/314",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "CallFunc_GetStoryLevelName_LevelName",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -234,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 1458
+              },
+              2001695922,
+              "ExecuteUbergraph_BP_StoryManager",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_StoryManager",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_StoryManager.json",
+      "function": "ExecuteUbergraph_BP_StoryManager",
+      "pointer": "/Exports/0/ScriptBytecode/317",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "CallFunc_GetStoryLevelName_LevelName_2",
+          {
+            "op": "EX_StructConst",
+            "Struct": -234,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 5234
+              },
+              1549010392,
+              "ExecuteUbergraph_BP_StoryManager",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/BP_StoryManager",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_StoryManager.json",
+      "function": "ExecuteUbergraph_BP_StoryManager",
+      "pointer": "/Exports/0/ScriptBytecode/323",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "CallFunc_GetStoryLevelName_LevelName_1",
+          {
+            "op": "EX_StructConst",
+            "Struct": -234,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 3531
+              },
+              -609992170,
+              "ExecuteUbergraph_BP_StoryManager",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameInstance",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameInstance.json",
+      "function": "ExecuteUbergraph_HeroGameInstance",
+      "pointer": "/Exports/0/ScriptBytecode/124",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "TutorialLevel",
+          {
+            "op": "EX_StructConst",
+            "Struct": -160,
+            "StructSize": 32,
+            "Value": [
+              -1,
+              1215335643,
+              "ExecuteUbergraph_HeroGameInstance",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameInstance",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameInstance.json",
+      "function": "ExecuteUbergraph_HeroGameInstance",
+      "pointer": "/Exports/0/ScriptBytecode/126",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "TutorialLevel",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -160,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 15
+              },
+              1038566785,
+              "ExecuteUbergraph_HeroGameInstance",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/27",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "EnelightMeteor",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 1479
+              },
+              1611059979,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/54",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "DynamicPropsLevelName",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 747
+              },
+              -1957880948,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/56",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "LoadLevel",
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              -1,
+              -866068155,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/60",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "ResidentialArea3",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 1729
+              },
+              741042276,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/62",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "Coast",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 1484
+              },
+              -1492583841,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/64",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "ResidentialArea2",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 1664
+              },
+              1661930520,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/66",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "Slam",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 1924
+              },
+              -2041404833,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/68",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "ResidentialArea1",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 1794
+              },
+              558598079,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/70",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "Beach",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 1859
+              },
+              -1915892448,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/72",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "IndustrialArea",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 1989
+              },
+              -717177249,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/74",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "CommercialArea",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 2054
+              },
+              1414111761,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/76",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "FinancialDistrict",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 2119
+              },
+              -1368059508,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/78",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "Park",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 2184
+              },
+              -1910411443,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/80",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "DynamicPropsLevelName",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              -1,
+              -1035019821,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/321",
+      "projectionPath": "",
+      "ast": {
+        "call": "UnloadStreamLevel",
+        "args": [
+          "self",
+          "DynamicPropsLevelName",
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 2314
+              },
+              573893122,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          },
+          false
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/553",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "EnelightMeteor",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              -1,
+              -379384806,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/830",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "LoadLevel",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 1609
+              },
+              -357615350,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/BP/Game/HeroGameMode",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameMode.json",
+      "function": "ExecuteUbergraph_HeroGameMode",
+      "pointer": "/Exports/0/ScriptBytecode/913",
+      "projectionPath": "",
+      "ast": {
+        "call": "LoadStreamLevel",
+        "args": [
+          "self",
+          "DownTown",
+          true,
+          false,
+          {
+            "op": "EX_StructConst",
+            "Struct": -320,
+            "StructSize": 32,
+            "Value": [
+              {
+                "op": "EX_SkipOffsetConst",
+                "Value": 2249
+              },
+              -996781719,
+              "ExecuteUbergraph_HeroGameMode",
+              "self"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/Player/PlayerBP",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\PlayerBP.json",
+      "function": "ExecuteUbergraph_PlayerBP",
+      "pointer": "/Exports/0/ScriptBytecode/469",
+      "projectionPath": "/do",
+      "ast": {
+        "call": "StartStory",
+        "args": [
+          "StoryType"
+        ]
+      }
+    },
+    {
+      "package": "/Game/-HeroGame/Player/PlayerBP",
+      "source": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\PlayerBP.json",
+      "function": "ExecuteUbergraph_PlayerBP",
+      "pointer": "/Exports/0/ScriptBytecode/490",
+      "projectionPath": "/do",
+      "ast": {
+        "call": "BossSpawn",
+        "args": [
+          {
+            "op": "EX_SwitchValue",
+            "EndGotoOffset": 13136,
+            "IndexTerm": "Temp_byte_Variable_2",
+            "DefaultTerm": "K2Node_Select_Default_5",
+            "Cases": [
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 0,
+                "NextOffset": 13052,
+                "CaseTerm": "Temp_byte_Variable_4"
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 1,
+                "NextOffset": 13067,
+                "CaseTerm": "Temp_byte_Variable_5"
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 2,
+                "NextOffset": 13082,
+                "CaseTerm": "Temp_byte_Variable_6"
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 3,
+                "NextOffset": 13097,
+                "CaseTerm": "Temp_byte_Variable_3"
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 4,
+                "NextOffset": 13112,
+                "CaseTerm": "Temp_byte_Variable"
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 5,
+                "NextOffset": 13127,
+                "CaseTerm": "Temp_byte_Variable_1"
+              }
+            ]
+          },
+          "self"
+        ]
+      }
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/QuestBPs/HeroGameState",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\HeroGameState.json",
+      "function": "ExecuteUbergraph_HeroGameState",
+      "pointer": "/Exports/3/ScriptBytecode/396",
+      "projectionPath": "/do",
+      "ast": {
+        "call": "BossSpawn",
+        "args": [
+          {
+            "op": "EX_SwitchValue",
+            "EndGotoOffset": 10736,
+            "IndexTerm": "Temp_int_Variable",
+            "DefaultTerm": "K2Node_Select_Default_1",
+            "Cases": [
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 0,
+                "NextOffset": 10691,
+                "CaseTerm": "Temp_byte_Variable"
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 1,
+                "NextOffset": 10709,
+                "CaseTerm": "Temp_byte_Variable_1"
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 2,
+                "NextOffset": 10727,
+                "CaseTerm": "Temp_byte_Variable_2"
+              }
+            ]
+          },
+          "self"
+        ]
+      }
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/QuestBPs/HeroGameState",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\HeroGameState.json",
+      "function": "ExecuteUbergraph_HeroGameState",
+      "pointer": "/Exports/3/ScriptBytecode/403",
+      "projectionPath": "/do",
+      "ast": {
+        "call": "BossSpawn",
+        "args": [
+          {
+            "op": "EX_SwitchValue",
+            "EndGotoOffset": 10949,
+            "IndexTerm": "Temp_int_Variable_1",
+            "DefaultTerm": "K2Node_Select_Default",
+            "Cases": [
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 0,
+                "NextOffset": 10922,
+                "CaseTerm": "Temp_byte_Variable_3"
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 1,
+                "NextOffset": 10940,
+                "CaseTerm": "Temp_byte_Variable_4"
+              }
+            ]
+          },
+          "self"
+        ]
+      }
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/QuestBPs/HeroGameState",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\QuestBPs\\HeroGameState.json",
+      "function": "ExecuteUbergraph_HeroGameState",
+      "pointer": "/Exports/3/ScriptBytecode/406",
+      "projectionPath": "/do",
+      "ast": {
+        "call": "BossSpawn",
+        "args": [
+          0,
+          "self"
+        ]
+      }
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Ver1_1/Story/StoryStartPoint_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Story\\StoryStartPoint_BP.json",
+      "function": "ExecuteUbergraph_StoryStartPoint_BP",
+      "pointer": "/Exports/0/ScriptBytecode/18",
+      "projectionPath": "/do",
+      "ast": {
+        "call": "StartStory",
+        "args": []
+      }
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Ver1_1/Story/StorySystem/StoryNo1_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Story\\StorySystem\\StoryNo1_BP.json",
+      "function": "ExecuteUbergraph_StoryNo1_BP",
+      "pointer": "/Exports/0/ScriptBytecode/3",
+      "projectionPath": "",
+      "ast": {
+        "call": "StartStory",
+        "args": []
+      }
+    },
+    {
+      "package": "/Game/-WorkSpace/Hyodo/Ver1_1/Story/StorySystem/StoryNo2_BP",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-WorkSpace\\Hyodo\\Ver1_1\\Story\\StorySystem\\StoryNo2_BP.json",
+      "function": "ExecuteUbergraph_StoryNo2_BP",
+      "pointer": "/Exports/0/ScriptBytecode/7",
+      "projectionPath": "",
+      "ast": {
+        "call": "StartStory",
+        "args": []
+      }
+    }
+  ]
+}

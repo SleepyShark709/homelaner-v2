@@ -1,0 +1,31 @@
+{
+  "materials": 605,
+  "status": {
+    "partial-pbr-projection": 443,
+    "shader-unmapped": 162
+  },
+  "texturePixelsExported": 1155,
+  "textureMetadataTotal": 1158,
+  "channelCounts": {
+    "baseColor": 256,
+    "normal": 259,
+    "roughness": 29,
+    "metallic": 30,
+    "occlusion": 49,
+    "emissive": 53,
+    "opacity": 16
+  },
+  "ormPacked": 71,
+  "normalConventionCounts": {
+    "not-normal": 824,
+    "unknown": 17,
+    "directx": 317
+  },
+  "textureStatusCounts": {
+    "exported-original-pixels": 1155,
+    "exported-original-hdr-not-bound": 3
+  },
+  "instanceOverrideComponents": 1755,
+  "sourceScriptSha256": "4032bbbb894efd54fd00af649e306eaaed29ea821f43effda46df1e83e9d8a1e",
+  "originalInstallReadOnly": true
+}

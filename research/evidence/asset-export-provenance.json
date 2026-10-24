@@ -1,0 +1,105 @@
+{
+  "tool": {
+    "name": "UE Viewer (UModel)",
+    "build": 1590,
+    "source": "https://raw.githubusercontent.com/gildor2/UEViewer/master/umodel.exe",
+    "project": "https://www.gildor.org/projects/umodel",
+    "bytes": 1468928,
+    "sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0"
+  },
+  "workflow": [
+    "repak selectively extracts installed pak; no game launched and original installation unchanged",
+    "UModel -export -game=ue4.27 -gltf -png for geometry and textures; -psk for PSA animation",
+    "publish_original.py writes portable glTF/bin/PNG and simple PBR mapping"
+  ],
+  "failures": [
+    {
+      "attempt": "official site zip link https://www.gildor.org/down/47/umodel/umodel_win32.zip",
+      "result": "HTTP 404; obtained binary from official GitHub instead"
+    },
+    {
+      "attempt": "UModel reads original pak directly",
+      "result": "Integer zero divide while reading compressed M_Eye.uexp; workaround via repak unpack succeeded",
+      "log": "asset-export-hero.log"
+    },
+    {
+      "attempt": "glTF CLI animation",
+      "result": "UModel: glTF animation could be exported from mesh viewer only. Mesh succeeds. Original animations exported as PSA instead."
+    }
+  ],
+  "animations": [
+    {
+      "file": "E:\\undefeated-web\\research\\exports\\animations\\-HeroGame\\Player\\Animations\\Hero_FlyFastSprint.psa",
+      "sha256": "9fe168d42b39590d8ca900af03b4fd6f9eb5d22d23327f063ffc1efb04e9107e",
+      "bones": 109,
+      "frames": 22,
+      "fps": 15.714285850524902,
+      "duration": 1.399999987862327
+    },
+    {
+      "file": "E:\\undefeated-web\\research\\exports\\animations\\-HeroGame\\Player\\Animations\\Hero_Idle.psa",
+      "sha256": "77b4c1fab4dd35080c5a72f12ce006b0c7971023e46385daa153a9df7d61aa0f",
+      "bones": 109,
+      "frames": 151,
+      "fps": 60.399993896484375,
+      "duration": 2.5000002526289835
+    },
+    {
+      "file": "E:\\undefeated-web\\research\\exports\\animations\\-HeroGame\\Player\\Animations\\Hero_IdleFlying.psa",
+      "sha256": "c3a9296bd5ffae015fd2e34b8111374d325cab92045e36455e46a86c27b88926",
+      "bones": 109,
+      "frames": 151,
+      "fps": 60.399993896484375,
+      "duration": 2.5000002526289835
+    },
+    {
+      "file": "E:\\undefeated-web\\research\\exports\\animations\\Action_Male\\Animations\\A_ThirdPersonRun.psa",
+      "sha256": "35f71c0abbdd5941563fb5a84b3e3e6cf29b0b0ba8dd1bfbf1ecb1803d7ac85d",
+      "bones": 109,
+      "frames": 18,
+      "fps": 29.999998092651367,
+      "duration": 0.6000000381469751
+    }
+  ],
+  "resourceChecks": [
+    {
+      "file": "E:\\undefeated-web\\public\\assets\\original\\building\\building.gltf",
+      "missingResources": [],
+      "buffersMatch": true
+    },
+    {
+      "file": "E:\\undefeated-web\\public\\assets\\original\\hair\\hair.gltf",
+      "missingResources": [],
+      "buffersMatch": true
+    },
+    {
+      "file": "E:\\undefeated-web\\public\\assets\\original\\hero\\hero.gltf",
+      "missingResources": [],
+      "buffersMatch": true
+    },
+    {
+      "file": "E:\\undefeated-web\\public\\assets\\original\\sunglasses\\sunglasses.gltf",
+      "missingResources": [],
+      "buffersMatch": true
+    },
+    {
+      "file": "E:\\undefeated-web\\public\\assets\\original\\vehicle\\vehicle.gltf",
+      "missingResources": [],
+      "buffersMatch": true
+    }
+  ],
+  "limitations": [
+    "No original UE gameplay or blueprint bytecode is translated by mesh export.",
+    "UModel material shader graphs are not glTF materials; colors and base textures reconstructed approximately. Original PNGs are preserved, no painting or synthetic geometry.",
+    "ActorX animations contain 109 skeleton bones; mesh has 93 joints. Match bones by name for conversion.",
+    "Hair and sunglasses use separate accessory coordinates and two bones; original blueprint attachment transforms required.",
+    "Building drawcalls/material submeshes and 40k triangles are not yet optimized for whole-city rendering.",
+    "No redistribution rights audit performed by this export step."
+  ],
+  "repak": {
+    "path": "E:\\undefeated-web\\tools\\asset-pipeline\\bin\\repak.exe",
+    "bytes": 4541952,
+    "sha256": "fcd538e5994b9bb833622d425ae346f4e0692f02d4b0025114a559f9b6286022",
+    "origin": "Copied from existing local analysis/tools/repak/repak.exe into this project; original download provenance belongs to prior investigation."
+  }
+}

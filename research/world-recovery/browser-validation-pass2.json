@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-25",
+  "browser": "Codex in-app browser / WebGL2",
+  "viewport": {"width": 1280, "height": 720},
+  "url": "http://127.0.0.1:5178/",
+  "scope": "Static original-world viewer; not gameplay equivalence",
+  "cases": [
+    {"region": "DownTown + MainLevel", "ready": "world", "sourceObjectsVisible": 4274, "terrainBlocks": 144, "assetFailures": 0, "textureFailures": 0, "ambiguousSlots": 0, "unresolvedMaterialCacheKeys": 0, "observedFPS": 87.4},
+    {"region": "17-package startup baseline", "ready": "world", "sourceObjectsVisible": 8824, "terrainBlocks": 144, "assetFailures": 0, "textureFailures": 0, "ambiguousSlots": 0, "unresolvedMaterialCacheKeys": 0, "observedFPS": 15.2, "activeMeshes": 10701, "screenshot": "research/screenshots/world-restored-baseline.png"},
+    {"region": "Park + MainLevel", "ready": "world", "sourceObjectsVisible": 4105, "terrainBlocks": 144, "assetFailures": 0, "textureFailures": 0, "ambiguousSlots": 0, "unresolvedMaterialCacheKeys": 0, "observedFPS": 91.0},
+    {"region": "Park + MainLevel", "ready": "world", "highQuality": true, "sourceObjectsVisible": 4105, "terrainBlocks": 144, "assetFailures": 0, "textureFailures": 0, "ambiguousSlots": 0, "unresolvedMaterialCacheKeys": 0, "observedFPS": 132.0, "screenshot": "research/screenshots/world-restored-park.png"},
+    {"region": "FireBossLevel + MainLevel", "ready": "world", "highQuality": true, "sourceObjectsVisible": 3456, "terrainBlocks": 144, "assetFailures": 0, "textureFailures": 0, "ambiguousSlots": 0, "unresolvedMaterialCacheKeys": 0, "observedFPS": 162.8, "screenshot": "research/screenshots/world-restored-fireboss.png", "note": "Scene loading/material binding checked. Boss is small at overview distance; this is not a visual verification of every bone or animated socket."}
+  ],
+  "checks": {
+    "freshDefaultNavigation": "Passed: bare / selected 17-package baseline; ready=world, 8824 objects, 144 terrain, all failure/ambiguity counters zero. No new errors after navigation; retained console errors are the earlier 15:55 UTC intermediate builds described below.",
+    "regionSwitchWithoutReload": "DownTown -> baseline -> Park -> FireBossLevel completed",
+    "highQualityTerrainSwitch": "Park LOD4 -> LOD2 completed",
+    "typecheck": "passed",
+    "productionBuild": "passed; 1188 modules transformed",
+    "worldTests": "passed",
+    "worldAssetClosure": "passed; 2276 local files checked",
+    "shaderNumericalChecks": "725 passed; independent DXBC calculations, not GPU pixel equivalence"
+  },
+  "resolvedIntegrationErrors": [
+    "An intermediate Vite dependency reload failed to fetch src/world.ts before final reload.",
+    "WorldTriplanarPlugin initially enabled before maps were initialized. Constructor now initializes texture maps before activation; all listed final scenes completed successfully."
+  ],
+  "limitations": [
+    "FPS values are individual observations, not benchmarks. Viewport differs from first-pass observations; HQ/default values were sampled at different times and cannot establish a performance ranking.",
+    "DOM data-draws currently reports active mesh count, not actual GPU draw calls.",
+    "White or incomplete materials remain visible; zero missing references does not mean visual equivalence.",
+    "Preview lighting, sky and postprocessing remain different from UE; wind, two-sided foliage subsurface and dither are not restored.",
+    "Source component coverage excludes unresolved native TestLevel foliage payload and runtime-generated objects.",
+    "No original input, animation, AI, task or gameplay equivalence was tested here."
+  ],
+  "manifestSha256": {
+    "geometry": "8f8946c6a76790d40564e9e81dc52c5de7b1bb2e1e97717b864699ac316bba32",
+    "materials": "18c61a03877ceb20d915758d79c0613aa5d9e1d31a0701e93658111b19ffda9f",
+    "streaming": "6e465d1c8289f6edf1a447615ccdff8eb2754ca9f2ba48726fa018cab9e24b23"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "frozenStartInExtras": 226,
+  "frozenBytes": 12772,
+  "frozenSHA256": "db0cc95d62ddb53a3c0ee71efae314f10e3c1a6b3b526063c399dab811ba7aa3",
+  "layoutParametersRaw": [
+    8,
+    41
+  ],
+  "scalarParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 12496,
+      "parameter": "HDRI_Contrast",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.0
+    },
+    {
+      "index": 1,
+      "frozenOffset": 12520,
+      "parameter": "HDRI_Brightness",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.0
+    },
+    {
+      "index": 2,
+      "frozenOffset": 12544,
+      "parameter": "Opacity",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.0
+    },
+    {
+      "index": 3,
+      "frozenOffset": 12568,
+      "parameter": "RefractionDepthBias",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 0.0
+    }
+  ],
+  "vectorParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 12592,
+      "parameter": "SelectionColor",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "index": 1,
+      "frozenOffset": 12628,
+      "parameter": "HDRI_Tint",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "textureParameters2D": [
+    {
+      "index": 0,
+      "frozenOffset": 12664,
+      "parameter": "HDRI_Cubemap",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 0,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Skies/Textures/T_Blank"
+    }
+  ],
+  "uniformVectorPreshaders": [
+    {
+      "offset": 21,
+      "size": 3,
+      "bytesHex": "040000"
+    },
+    {
+      "offset": 24,
+      "size": 3,
+      "bytesHex": "040100"
+    },
+    {
+      "offset": 27,
+      "size": 9,
+      "bytesHex": "0401002303000102ff"
+    },
+    {
+      "offset": 36,
+      "size": 9,
+      "bytesHex": "0400002303000102ff"
+    }
+  ],
+  "uniformScalarPreshaders": [
+    {
+      "offset": 0,
+      "size": 3,
+      "bytesHex": "030000"
+    },
+    {
+      "offset": 3,
+      "size": 3,
+      "bytesHex": "030100"
+    },
+    {
+      "offset": 6,
+      "size": 9,
+      "bytesHex": "040000230103ffffff"
+    },
+    {
+      "offset": 15,
+      "size": 3,
+      "bytesHex": "030200"
+    },
+    {
+      "offset": 18,
+      "size": 3,
+      "bytesHex": "030300"
+    }
+  ],
+  "namePatches": {
+    "12520": "HDRI_Brightness",
+    "12496": "HDRI_Contrast",
+    "12664": "HDRI_Cubemap",
+    "12628": "HDRI_Tint",
+    "12544": "Opacity",
+    "12568": "RefractionDepthBias",
+    "12592": "SelectionColor"
+  },
+  "preshaderDataHex": "030000030100040000230103ffffff0302000303000400000401000401002303000102ff0400002303000102ff",
+  "preshaderDataFrozenOffset": 12692,
+  "textureParametersCube": []
+}

@@ -1,0 +1,410 @@
+{
+  "upstreamCommit": "a0bfb468d42be831b126632fd8a0ae6b3614f981",
+  "sourceFiles": {
+    "public\\assets\\original\\hero\\hero.gltf": "63617cddfa7b3843f5e640fd1befff6764a2f1659527e3de080f588508d4b21d",
+    "public\\assets\\original\\hero\\SK_Male_Contemporary_standalone.bin": "07f2ce83afe247919f007eecd4f2c4298c452a7589f49bbe7553577e673a6430",
+    "public\\assets\\original\\hero\\textures\\T_Male_Body_D.png": "2895bd1a3c04dc78c35f9ea741acf9b795879aebb399efb58a1d9cb499828ebf",
+    "public\\assets\\original\\hero\\textures\\T_Contemporary_D.png": "5a4ce0820dab1ebc67054085a63fc171ef50ed7f7da2a40e75f48b817b79ca37",
+    "research\\exports\\animations\\-HeroGame\\Player\\Animations\\Hero_Idle.psa": "77b4c1fab4dd35080c5a72f12ce006b0c7971023e46385daa153a9df7d61aa0f",
+    "research\\exports\\animations\\-HeroGame\\Player\\Animations\\Hero_Idle.config": "74dc10df7783453091ba61962e75235c327de7b917fc6d31863208eb4b6f709b",
+    "research\\exports\\animations\\-HeroGame\\Player\\Animations\\Hero_IdleFlying.psa": "c3a9296bd5ffae015fd2e34b8111374d325cab92045e36455e46a86c27b88926",
+    "research\\exports\\animations\\-HeroGame\\Player\\Animations\\Hero_IdleFlying.config": "16880dbcf776e658b34c36759c5c24eff30ee9da906ebef9327ad86529e0ef4b",
+    "research\\exports\\animations\\-HeroGame\\Player\\Animations\\Hero_FlyFastSprint.psa": "9fe168d42b39590d8ca900af03b4fd6f9eb5d22d23327f063ffc1efb04e9107e",
+    "research\\exports\\animations\\-HeroGame\\Player\\Animations\\Hero_FlyFastSprint.config": "f8d6c52bec3d9d99c9e74c2259536471d37b6b4dd84cfa585b99fef8cfa3a87b",
+    "research\\exports\\animations\\Action_Male\\Animations\\A_ThirdPersonRun.psa": "35f71c0abbdd5941563fb5a84b3e3e6cf29b0b0ba8dd1bfbf1ecb1803d7ac85d",
+    "research\\exports\\animations\\Action_Male\\Animations\\A_ThirdPersonRun.config": "23b54b9e2e3b9e6540ad494aa7d85bd6bc1f37e38d2e92be5251a78b58ce7eb0"
+  },
+  "meshJointCount": 93,
+  "bindMatrixMaxIdentityError": 4.1861307564783345e-06,
+  "clips": [
+    {
+      "name": "Hero_Idle",
+      "frames": 151,
+      "rate": 60.399993896484375,
+      "durationSeconds": 2.4834439595652156,
+      "psaBoneCount": 109,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "channelCount": 127,
+      "removedMeshTracks": [],
+      "rotationOnlyConfig": true,
+      "maximumLocalTranslationMeters": 1.2522474635826317,
+      "rootTravelMeters": 0.0,
+      "allFrameJointBoundsMeters": {
+        "min": [
+          -0.9144527417105389,
+          -0.18089861764272758,
+          -0.3124284679221689
+        ],
+        "max": [
+          0.5664597757296909,
+          1.6458487140321099,
+          0.26836196550132635
+        ]
+      },
+      "finiteKeys": true,
+      "monotonicTimes": true,
+      "quaternionNormalized": true
+    },
+    {
+      "name": "Hero_IdleFlying",
+      "frames": 151,
+      "rate": 60.399993896484375,
+      "durationSeconds": 2.4834439595652156,
+      "psaBoneCount": 109,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "channelCount": 127,
+      "removedMeshTracks": [],
+      "rotationOnlyConfig": true,
+      "maximumLocalTranslationMeters": 1.3675467318410175,
+      "rootTravelMeters": 0.0,
+      "allFrameJointBoundsMeters": {
+        "min": [
+          -0.9144526948411262,
+          0.0,
+          -0.3124284679221689
+        ],
+        "max": [
+          0.5664597761970077,
+          2.072178638414412,
+          0.29115725585525004
+        ]
+      },
+      "finiteKeys": true,
+      "monotonicTimes": true,
+      "quaternionNormalized": true
+    },
+    {
+      "name": "Hero_FlyFastSprint",
+      "frames": 22,
+      "rate": 15.714285850524902,
+      "durationSeconds": 1.3363636247776758,
+      "psaBoneCount": 109,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "channelCount": 77,
+      "removedMeshTracks": [
+        {
+          "bone": "index_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "index_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "head_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_r_end",
+          "removed": "all"
+        }
+      ],
+      "rotationOnlyConfig": true,
+      "maximumLocalTranslationMeters": 1.2522475325173401,
+      "rootTravelMeters": 0.0,
+      "allFrameJointBoundsMeters": {
+        "min": [
+          -0.9144525014284116,
+          0.0,
+          -1.3168751093841757
+        ],
+        "max": [
+          0.5681266894566926,
+          1.5691218449911535,
+          0.5843919020123405
+        ]
+      },
+      "finiteKeys": true,
+      "monotonicTimes": true,
+      "quaternionNormalized": true
+    },
+    {
+      "name": "A_ThirdPersonRun",
+      "frames": 18,
+      "rate": 29.999998092651367,
+      "durationSeconds": 0.5666667026943654,
+      "psaBoneCount": 109,
+      "mappedJoints": 93,
+      "unmappedPsaBones": [
+        "eye_R",
+        "eye_L",
+        "necklace_01",
+        "necklace_02",
+        "outer_yure_rf_01",
+        "outer_yure_rf_02",
+        "outer_yure_r_01",
+        "outer_yure_r_02",
+        "outer_yure_rb_01",
+        "outer_yure_rb_02",
+        "outer_yure_lf_01",
+        "outer_yure_lf_02",
+        "outer_yure_l_01",
+        "outer_yure_l_02",
+        "outer_yure_lb_01",
+        "outer_yure_lb_02"
+      ],
+      "channelCount": 77,
+      "removedMeshTracks": [
+        {
+          "bone": "index_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "index_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "middle_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "pinky_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ring_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thumb_03_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "lowerarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "upperarm_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "head_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "calf_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ball_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "thigh_twist_01_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_foot_r_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_l_end",
+          "removed": "all"
+        },
+        {
+          "bone": "ik_hand_r_end",
+          "removed": "all"
+        }
+      ],
+      "rotationOnlyConfig": true,
+      "maximumLocalTranslationMeters": 1.2522475325165419,
+      "rootTravelMeters": 0.0,
+      "allFrameJointBoundsMeters": {
+        "min": [
+          -0.9144525014284116,
+          -0.2040846540386037,
+          -1.1361710830281673
+        ],
+        "max": [
+          0.5664599998431553,
+          1.56206545786058,
+          0.4748480606406378
+        ]
+      },
+      "finiteKeys": true,
+      "monotonicTimes": true,
+      "quaternionNormalized": true
+    }
+  ],
+  "validation": "numeric; browser visual QA still required",
+  "outputGltfSha256": "0acd9baa8ef43eab525f364b020f7e156f83e47d0ab6a3dc4b28ce02537e60cc",
+  "outputAnimationBufferSha256": "592aab4610549bc1e7ca18545aa25d93c987b8cc3f18bfa2f47239400198c341"
+}

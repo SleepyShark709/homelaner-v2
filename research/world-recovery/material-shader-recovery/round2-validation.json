@@ -1,0 +1,15 @@
+{
+  "trialsByKind": {
+    "grass-parallax-macro": 160,
+    "concrete-mildew": 480,
+    "standard-pbr-evidenced": 160
+  },
+  "grassRoughnessTestOutcomes": {
+    "zero": 35,
+    "interior": 125
+  },
+  "totalTrials": 800,
+  "maxFloat64Difference": 3.7470027081099033e-16,
+  "errors": [],
+  "method": "Independent original DXBC subset execution and contract expressions; native shader float32 literal values retained, varied UV/analytical distinct-channel texture samples, camera direction, nonunit interpolated TBN and original instance parameters. Not browser GPU/screenshot equivalence."
+}

@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-24",
+  "browser": "Codex in-app browser / WebGL2",
+  "url": "http://127.0.0.1:5178/",
+  "cases": [
+    {
+      "region": "DownTown + MainLevel",
+      "ready": "world",
+      "sourceObjectsVisible": 4268,
+      "terrainBlocks": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "ambiguousSlots": 0,
+      "unresolvedMaterialCacheKeys": 0,
+      "observedFPS": 35.9
+    },
+    {
+      "region": "All 35 main-world maps, static union",
+      "ready": "world",
+      "sourceObjectsVisible": 11003,
+      "terrainBlocks": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "ambiguousSlots": 28,
+      "unresolvedMaterialCacheKeys": 1,
+      "observedFPS": 4.2,
+      "screenshot": "research/screenshots/world-all.png",
+      "note": "Includes mutually conditional challenge and Boss levels. Not a reconstructed runtime streaming state. Low performance remains; after this observation loading render suppression and chunked scene disposal were added."
+    },
+    {
+      "region": "Park + MainLevel",
+      "ready": "world",
+      "sourceObjectsVisible": 4099,
+      "terrainBlocks": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "ambiguousSlots": 0,
+      "unresolvedMaterialCacheKeys": 0,
+      "observedFPS": 23.5,
+      "note": "Measured after loading-render suppression and chunked disposal changes; fresh navigation."
+    },
+    {
+      "region": "Park + MainLevel, high-quality terrain",
+      "ready": "world",
+      "highQuality": true,
+      "sourceObjectsVisible": 4099,
+      "terrainBlocks": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "ambiguousSlots": 0,
+      "unresolvedMaterialCacheKeys": 0,
+      "observedFPS": 21.3,
+      "returnedToDefaultQuality": true
+    },
+    {
+      "region": "Park -> DownTown without reload, then high quality",
+      "ready": "world",
+      "sourceObjectsVisible": 4268,
+      "terrainBlocks": 144,
+      "assetFailures": 0,
+      "textureFailures": 0,
+      "ambiguousSlots": 0,
+      "unresolvedMaterialCacheKeys": 0,
+      "highQuality": true,
+      "observedFPS": 12.3,
+      "screenshot": "research/screenshots/world-city.png",
+      "regionSwitchCompleted": true
+    }
+  ],
+  "checks": {
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "worldMaterialSlotTests": "passed",
+    "resourceValidation": "research/world-recovery/runtime-asset-validation.json",
+    "productionAssetManifestsMatchPublic": true
+  },
+  "limitations": [
+    "Original game was not launched for matched-camera comparison.",
+    "FPS are single-device point observations, not performance guarantees.",
+    "Material projection, preview illumination, template defaults and original runtime behavior remain distinct.",
+    "Before final manifest publication the dev console recorded one JSON parse error from a not-yet-generated manifest; final resource imports have no failures."
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "frozenStartInExtras": 111,
+  "frozenBytes": 13248,
+  "frozenSHA256": "bb9003cf10a3a379b3c4e51464e3c1eb560b19ed8080fdc0805fdb8163862c23",
+  "layoutParametersRaw": [
+    8,
+    41
+  ],
+  "scalarParameters": [],
+  "vectorParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 13008,
+      "parameter": "SelectionColor",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "index": 1,
+      "frozenOffset": 13044,
+      "parameter": "Color",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "textureParameters2D": [
+    {
+      "index": 0,
+      "frozenOffset": 13080,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 2,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/UrbanCity/Textures/Tileable/Concrete_Tile_N"
+    },
+    {
+      "index": 1,
+      "frozenOffset": 13108,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 0,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/UrbanCity/Textures/Tileable/Concrete_Tile_A"
+    },
+    {
+      "index": 2,
+      "frozenOffset": 13136,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 1,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/UrbanCity/Textures/Tileable/Concrete_Tile_C"
+    }
+  ],
+  "uniformVectorPreshaders": [
+    {
+      "offset": 9,
+      "size": 3,
+      "bytesHex": "040000"
+    },
+    {
+      "offset": 12,
+      "size": 9,
+      "bytesHex": "0400002303000102ff"
+    },
+    {
+      "offset": 21,
+      "size": 3,
+      "bytesHex": "040100"
+    },
+    {
+      "offset": 24,
+      "size": 9,
+      "bytesHex": "0401002303000102ff"
+    }
+  ],
+  "uniformScalarPreshaders": [
+    {
+      "offset": 0,
+      "size": 9,
+      "bytesHex": "040000230103ffffff"
+    }
+  ],
+  "namePatches": {
+    "13044": "Color",
+    "13008": "SelectionColor"
+  },
+  "preshaderDataHex": "040000230103ffffff0400000400002303000102ff0401000401002303000102ff",
+  "preshaderDataFrozenOffset": 13164
+}

@@ -1,0 +1,37 @@
+{
+  "totals": {
+    "main-worldSourceComponents": 10920,
+    "main-worldExplicitMeshComponents": 5463,
+    "referencePoseSocketAttachments": 46,
+    "main-worldObjects": 11162,
+    "splinesBaked": 1952,
+    "main-worldTemplateDefaultComponents": 5457,
+    "instancedComponentsRecovered": 11,
+    "instancesRecovered": 253,
+    "supplementalSourceComponents": 439,
+    "supplementalTemplateDefaultComponents": 205,
+    "supplementalObjects": 439,
+    "supplementalExplicitMeshComponents": 234,
+    "assets": 688,
+    "baseAssets": 476,
+    "levels": 41,
+    "gaps": 0,
+    "spawnCandidates": 39,
+    "renderObjects": 9861,
+    "splineBatches": 205,
+    "splineComponentsBatched": 1945
+  },
+  "gapReasons": {},
+  "manifestSha256": "48718ae5d490ed07f1eeab9f09ef9baa5d2492d9b0a781665cefcc22651be73c",
+  "sourceWorldSummarySha256": "07317cf6ecfdebac9a7821aaf42907bbce39896311fdde8d46d1ccdf1a6cbcb6",
+  "exportFailures": [],
+  "remainingSocketNames": {},
+  "templateResolutionSummary": {
+    "main-worldMeshComponentsWithoutExplicitMesh": 5457,
+    "main-worldTemplateMeshesResolved": 5457,
+    "main-worldTemplateMeshesWithTransforms": 5457,
+    "supplementalMeshComponentsWithoutExplicitMesh": 205,
+    "supplementalTemplateMeshesResolved": 205,
+    "supplementalTemplateMeshesWithTransforms": 205
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "tools": [
+    {
+      "path": "E:\\undefeated-web\\tools\\asset-pipeline\\umodel.exe",
+      "sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0"
+    },
+    {
+      "path": "E:\\undefeated-web\\tools\\asset-pipeline\\bin\\repak.exe",
+      "sha256": "fcd538e5994b9bb833622d425ae346f4e0692f02d4b0025114a559f9b6286022"
+    },
+    {
+      "path": "E:\\undefeated-web\\tools\\asset-pipeline\\uasset-net472\\UAssetGUI.exe",
+      "sha256": "29f5cf02d359e2d050e44d896105956c587fc8f03ca3c7e70e3fc1d6be69580d"
+    }
+  ],
+  "formatSources": [
+    {
+      "path": "E:\\undefeated-web\\research\\world-recovery\\geometry-CUE4Parse-FInstancedStaticMeshInstanceData.cs",
+      "sha256": "e83d0a63005a4c672a346f005e63cf8923a2d0bd076df8d641abba6eb35e8a5d"
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\world-recovery\\geometry-CUE4Parse-FSkeletalMaterial.cs",
+      "sha256": "7e9d78ceb7729db0f201b5f354e19eadbc07958978f024625ad6c5b71ec6ccb6"
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\world-recovery\\geometry-CUE4Parse-FStaticMeshComponentLODInfo.cs",
+      "sha256": "d4896b4751926a3ccf5936b16d1877049e7f10d6463794b99ba1329450033528"
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\world-recovery\\geometry-CUE4Parse-FStaticMeshLODResources.cs",
+      "sha256": "78f0977357e54f49e8084ec586871fa3c480491d1a289d212e8e00a6a3486346"
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\world-recovery\\geometry-CUE4Parse-FStaticMeshRenderData.cs",
+      "sha256": "4d0da8f76e3dcca1a3d076268278f671b82215c63a230d1aa75590bda9ccfd9a"
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\world-recovery\\geometry-CUE4Parse-FStaticMeshSection.cs",
+      "sha256": "435f6474370d75c738d8e864994f1172eb31c77ec1afbc4c8b229528a082e047"
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\world-recovery\\geometry-CUE4Parse-UInstancedStaticMeshComponent.cs",
+      "sha256": "79d8291323b375669c266c820b9ec7977425567870053a8ab0cc6b34eb1be6e0"
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\world-recovery\\geometry-CUE4Parse-USkeletalMesh.cs",
+      "sha256": "43b201fd58e09c8b6e6d8b43430122d46c4014f94bf2af6a2fd64ce4721e36f4"
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\world-recovery\\geometry-CUE4Parse-UStaticMesh.cs",
+      "sha256": "cab944672b502453010aefb8ab68cac7d40405cd1f3bbdb0386ab75749a3bdef"
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\world-recovery\\geometry-CUE4Parse-UStaticMeshComponent.cs",
+      "sha256": "3955761770901b41ab8a7f05f765e3a50f0e46cf56886cc2832d9bada962cf09"
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\world-recovery\\geometry-UEViewer-ExportGLTF.cpp",
+      "sha256": "299f649d1d037b173fd150063f80653767ff512ee58e00802875b34d60a45e2c"
+    }
+  ]
+}

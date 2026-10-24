@@ -1,0 +1,698 @@
+{
+  "status": "passed",
+  "assets": [
+    {
+      "sourcePackage": "/Game/Action_Male/Meshes/SK_Male_Body_sectionned",
+      "previousAmbiguousSections": 14,
+      "sectionMaterialIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "sectionTrianglesAndVertexCountsMatched": 16,
+      "sourceEvidence": {
+        "decoded": "E:\\undefeated-web\\research\\world-recovery\\geometry-decoded-meshes\\UNDEFEATED\\Content\\Action_Male\\Meshes\\SK_Male_Body_sectionned.json",
+        "sha256": "1a7e4241d87f9424c3a21850daf890835f7eec5b987515e64573b124e67ac565",
+        "nativeSkeletalMaterialArray": {
+          "count": 16,
+          "offsetInExtras": 34,
+          "endOffsetInExtras": 678,
+          "schema": "UE4.27 FSkeletalMaterial with stripped imported names and FMeshUVChannelInfo",
+          "extrasSha256": "368dea33f37cb502e2bd0fbd8f1c15ce541c2c4f96fbae3eae1f38912661c3aa"
+        },
+        "nativeLod0Sections": [
+          {
+            "sectionIndex": 0,
+            "materialSlotIndex": 0,
+            "firstIndex": 0,
+            "numTriangles": 7912,
+            "baseVertexIndex": 0,
+            "numVertices": 23736,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 5204,
+            "nativeEndOffset": 195177
+          },
+          {
+            "sectionIndex": 1,
+            "materialSlotIndex": 1,
+            "firstIndex": 23736,
+            "numTriangles": 104,
+            "baseVertexIndex": 23736,
+            "numVertices": 312,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 195177,
+            "nativeEndOffset": 197754
+          },
+          {
+            "sectionIndex": 2,
+            "materialSlotIndex": 2,
+            "firstIndex": 24048,
+            "numTriangles": 1856,
+            "baseVertexIndex": 24048,
+            "numVertices": 5568,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 197754,
+            "nativeEndOffset": 242379
+          },
+          {
+            "sectionIndex": 3,
+            "materialSlotIndex": 3,
+            "firstIndex": 29616,
+            "numTriangles": 574,
+            "baseVertexIndex": 29616,
+            "numVertices": 1722,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 242379,
+            "nativeEndOffset": 256236
+          },
+          {
+            "sectionIndex": 4,
+            "materialSlotIndex": 4,
+            "firstIndex": 31338,
+            "numTriangles": 144,
+            "baseVertexIndex": 31338,
+            "numVertices": 432,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 256236,
+            "nativeEndOffset": 259781
+          },
+          {
+            "sectionIndex": 5,
+            "materialSlotIndex": 5,
+            "firstIndex": 31770,
+            "numTriangles": 144,
+            "baseVertexIndex": 31770,
+            "numVertices": 432,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 259781,
+            "nativeEndOffset": 263326
+          },
+          {
+            "sectionIndex": 6,
+            "materialSlotIndex": 6,
+            "firstIndex": 32202,
+            "numTriangles": 1250,
+            "baseVertexIndex": 32202,
+            "numVertices": 3750,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 263326,
+            "nativeEndOffset": 293429
+          },
+          {
+            "sectionIndex": 7,
+            "materialSlotIndex": 7,
+            "firstIndex": 35952,
+            "numTriangles": 522,
+            "baseVertexIndex": 35952,
+            "numVertices": 1566,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 293429,
+            "nativeEndOffset": 306052
+          },
+          {
+            "sectionIndex": 8,
+            "materialSlotIndex": 8,
+            "firstIndex": 37518,
+            "numTriangles": 466,
+            "baseVertexIndex": 37518,
+            "numVertices": 1398,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 306052,
+            "nativeEndOffset": 317325
+          },
+          {
+            "sectionIndex": 9,
+            "materialSlotIndex": 9,
+            "firstIndex": 38916,
+            "numTriangles": 310,
+            "baseVertexIndex": 38916,
+            "numVertices": 930,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 317325,
+            "nativeEndOffset": 324856
+          },
+          {
+            "sectionIndex": 10,
+            "materialSlotIndex": 10,
+            "firstIndex": 39846,
+            "numTriangles": 3374,
+            "baseVertexIndex": 39846,
+            "numVertices": 10122,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 324856,
+            "nativeEndOffset": 405979
+          },
+          {
+            "sectionIndex": 11,
+            "materialSlotIndex": 11,
+            "firstIndex": 49968,
+            "numTriangles": 356,
+            "baseVertexIndex": 49968,
+            "numVertices": 1068,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 405979,
+            "nativeEndOffset": 414612
+          },
+          {
+            "sectionIndex": 12,
+            "materialSlotIndex": 12,
+            "firstIndex": 51036,
+            "numTriangles": 240,
+            "baseVertexIndex": 51036,
+            "numVertices": 720,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 414612,
+            "nativeEndOffset": 420459
+          },
+          {
+            "sectionIndex": 13,
+            "materialSlotIndex": 13,
+            "firstIndex": 51756,
+            "numTriangles": 288,
+            "baseVertexIndex": 51756,
+            "numVertices": 864,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 420459,
+            "nativeEndOffset": 427462
+          },
+          {
+            "sectionIndex": 14,
+            "materialSlotIndex": 14,
+            "firstIndex": 52620,
+            "numTriangles": 670,
+            "baseVertexIndex": 52620,
+            "numVertices": 2010,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 427462,
+            "nativeEndOffset": 443635
+          },
+          {
+            "sectionIndex": 15,
+            "materialSlotIndex": 15,
+            "firstIndex": 54630,
+            "numTriangles": 2006,
+            "baseVertexIndex": 54630,
+            "numVertices": 6018,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 443635,
+            "nativeEndOffset": 491872
+          }
+        ],
+        "nativeSkeletalSectionEvidence": {
+          "referenceSkeletonOffset": 678,
+          "referenceSkeletonEndOffset": 5042,
+          "referenceBoneCount": 68,
+          "lodCount": 1,
+          "requiredBoneCount": 68,
+          "sectionArrayEndOffset": 491872,
+          "schema": "UE4.27 cooked FReferenceSkeleton, FSkeletalMeshLODRenderData, FSkelMeshRenderSection; cloth-free sections only"
+        }
+      }
+    },
+    {
+      "sourcePackage": "/Game/Action_Male/Meshes/SK_Male_Contemporary",
+      "previousAmbiguousSections": 5,
+      "sectionMaterialIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sectionTrianglesAndVertexCountsMatched": 8,
+      "sourceEvidence": {
+        "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\Action_Male\\Meshes\\SK_Male_Contemporary.json",
+        "sha256": "ba9c81a60cf8eddfd237918f9829b68c7b979fe6e1bed05df81359b4967ce242",
+        "nativeSkeletalMaterialArray": {
+          "count": 8,
+          "offsetInExtras": 34,
+          "endOffsetInExtras": 358,
+          "schema": "UE4.27 FSkeletalMaterial with stripped imported names and FMeshUVChannelInfo",
+          "extrasSha256": "0d234902ba463277a1f7174d678e60578ebf8b5403689f487d90652984c1dd8a"
+        },
+        "nativeLod0Sections": [
+          {
+            "sectionIndex": 0,
+            "materialSlotIndex": 0,
+            "firstIndex": 0,
+            "numTriangles": 4580,
+            "baseVertexIndex": 0,
+            "numVertices": 13740,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 4884,
+            "nativeEndOffset": 114975
+          },
+          {
+            "sectionIndex": 1,
+            "materialSlotIndex": 1,
+            "firstIndex": 13740,
+            "numTriangles": 7008,
+            "baseVertexIndex": 13740,
+            "numVertices": 21024,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 114975,
+            "nativeEndOffset": 283252
+          },
+          {
+            "sectionIndex": 2,
+            "materialSlotIndex": 2,
+            "firstIndex": 34764,
+            "numTriangles": 104,
+            "baseVertexIndex": 34764,
+            "numVertices": 312,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 283252,
+            "nativeEndOffset": 285829
+          },
+          {
+            "sectionIndex": 3,
+            "materialSlotIndex": 3,
+            "firstIndex": 35076,
+            "numTriangles": 574,
+            "baseVertexIndex": 35076,
+            "numVertices": 1722,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 285829,
+            "nativeEndOffset": 299686
+          },
+          {
+            "sectionIndex": 4,
+            "materialSlotIndex": 4,
+            "firstIndex": 36798,
+            "numTriangles": 2688,
+            "baseVertexIndex": 36798,
+            "numVertices": 8064,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 299686,
+            "nativeEndOffset": 364279
+          },
+          {
+            "sectionIndex": 5,
+            "materialSlotIndex": 5,
+            "firstIndex": 44862,
+            "numTriangles": 3596,
+            "baseVertexIndex": 44862,
+            "numVertices": 10788,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 364279,
+            "nativeEndOffset": 450670
+          },
+          {
+            "sectionIndex": 6,
+            "materialSlotIndex": 6,
+            "firstIndex": 55650,
+            "numTriangles": 2374,
+            "baseVertexIndex": 55650,
+            "numVertices": 7122,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 450670,
+            "nativeEndOffset": 507761
+          },
+          {
+            "sectionIndex": 7,
+            "materialSlotIndex": 7,
+            "firstIndex": 62772,
+            "numTriangles": 2266,
+            "baseVertexIndex": 62772,
+            "numVertices": 6798,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 507761,
+            "nativeEndOffset": 562248
+          }
+        ],
+        "nativeSkeletalSectionEvidence": {
+          "referenceSkeletonOffset": 358,
+          "referenceSkeletonEndOffset": 4722,
+          "referenceBoneCount": 68,
+          "lodCount": 5,
+          "requiredBoneCount": 68,
+          "sectionArrayEndOffset": 562248,
+          "schema": "UE4.27 cooked FReferenceSkeleton, FSkeletalMeshLODRenderData, FSkelMeshRenderSection; cloth-free sections only"
+        }
+      }
+    },
+    {
+      "sourcePackage": "/Game/Action_Male/Meshes/SK_Male_Contemporary_standalone",
+      "previousAmbiguousSections": 5,
+      "sectionMaterialIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sectionTrianglesAndVertexCountsMatched": 7,
+      "sourceEvidence": {
+        "decoded": "E:\\undefeated-web\\research\\world-recovery\\geometry-decoded-meshes\\UNDEFEATED\\Content\\Action_Male\\Meshes\\SK_Male_Contemporary_standalone.json",
+        "sha256": "bb3d81156f888fb5d0207a91d7fba14c95885061f078af9efc06bac6f651a916",
+        "nativeSkeletalMaterialArray": {
+          "count": 7,
+          "offsetInExtras": 34,
+          "endOffsetInExtras": 318,
+          "schema": "UE4.27 FSkeletalMaterial with stripped imported names and FMeshUVChannelInfo",
+          "extrasSha256": "4d0b6ff5f18ed539849cecfc25bcb4b035657ab0d7aba2e97bc18a2d386e86b8"
+        },
+        "nativeLod0Sections": [
+          {
+            "sectionIndex": 0,
+            "materialSlotIndex": 0,
+            "firstIndex": 0,
+            "numTriangles": 2688,
+            "baseVertexIndex": 0,
+            "numVertices": 8064,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 6494,
+            "nativeEndOffset": 71087
+          },
+          {
+            "sectionIndex": 1,
+            "materialSlotIndex": 1,
+            "firstIndex": 8064,
+            "numTriangles": 11558,
+            "baseVertexIndex": 8064,
+            "numVertices": 34674,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 71087,
+            "nativeEndOffset": 348642
+          },
+          {
+            "sectionIndex": 2,
+            "materialSlotIndex": 2,
+            "firstIndex": 42738,
+            "numTriangles": 104,
+            "baseVertexIndex": 42738,
+            "numVertices": 312,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 348642,
+            "nativeEndOffset": 351219
+          },
+          {
+            "sectionIndex": 3,
+            "materialSlotIndex": 3,
+            "firstIndex": 43050,
+            "numTriangles": 574,
+            "baseVertexIndex": 43050,
+            "numVertices": 1722,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 351219,
+            "nativeEndOffset": 365076
+          },
+          {
+            "sectionIndex": 4,
+            "materialSlotIndex": 4,
+            "firstIndex": 44772,
+            "numTriangles": 3596,
+            "baseVertexIndex": 44772,
+            "numVertices": 10788,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 365076,
+            "nativeEndOffset": 451475
+          },
+          {
+            "sectionIndex": 5,
+            "materialSlotIndex": 5,
+            "firstIndex": 55560,
+            "numTriangles": 2374,
+            "baseVertexIndex": 55560,
+            "numVertices": 7122,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 451475,
+            "nativeEndOffset": 508558
+          },
+          {
+            "sectionIndex": 6,
+            "materialSlotIndex": 6,
+            "firstIndex": 62682,
+            "numTriangles": 2266,
+            "baseVertexIndex": 62682,
+            "numVertices": 6798,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 508558,
+            "nativeEndOffset": 563051
+          }
+        ],
+        "nativeSkeletalSectionEvidence": {
+          "referenceSkeletonOffset": 318,
+          "referenceSkeletonEndOffset": 6282,
+          "referenceBoneCount": 93,
+          "lodCount": 1,
+          "requiredBoneCount": 93,
+          "sectionArrayEndOffset": 563051,
+          "schema": "UE4.27 cooked FReferenceSkeleton, FSkeletalMeshLODRenderData, FSkelMeshRenderSection; cloth-free sections only"
+        }
+      }
+    },
+    {
+      "sourcePackage": "/Game/Action_Male/Meshes/SK_Sunglasses",
+      "previousAmbiguousSections": 3,
+      "sectionMaterialIndices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sectionTrianglesAndVertexCountsMatched": 4,
+      "sourceEvidence": {
+        "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\Action_Male\\Meshes\\SK_Sunglasses.json",
+        "sha256": "ce48f1da33af3296bcd71a5b772eed5e28e4c365e02e36894c9e918f50fbf5d3",
+        "nativeSkeletalMaterialArray": {
+          "count": 4,
+          "offsetInExtras": 34,
+          "endOffsetInExtras": 198,
+          "schema": "UE4.27 FSkeletalMaterial with stripped imported names and FMeshUVChannelInfo",
+          "extrasSha256": "e30c40d4693202135eee642de367bbcb518934dfbf000a4e91e371203788a2db"
+        },
+        "nativeLod0Sections": [
+          {
+            "sectionIndex": 0,
+            "materialSlotIndex": 0,
+            "firstIndex": 0,
+            "numTriangles": 404,
+            "baseVertexIndex": 0,
+            "numVertices": 1212,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 368,
+            "nativeEndOffset": 10145
+          },
+          {
+            "sectionIndex": 1,
+            "materialSlotIndex": 1,
+            "firstIndex": 1212,
+            "numTriangles": 204,
+            "baseVertexIndex": 1212,
+            "numVertices": 612,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 10145,
+            "nativeEndOffset": 15122
+          },
+          {
+            "sectionIndex": 2,
+            "materialSlotIndex": 2,
+            "firstIndex": 1824,
+            "numTriangles": 612,
+            "baseVertexIndex": 1824,
+            "numVertices": 1836,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 15122,
+            "nativeEndOffset": 29891
+          },
+          {
+            "sectionIndex": 3,
+            "materialSlotIndex": 3,
+            "firstIndex": 3660,
+            "numTriangles": 4780,
+            "baseVertexIndex": 3660,
+            "numVertices": 14340,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 29891,
+            "nativeEndOffset": 144692
+          }
+        ],
+        "nativeSkeletalSectionEvidence": {
+          "referenceSkeletonOffset": 198,
+          "referenceSkeletonEndOffset": 338,
+          "referenceBoneCount": 2,
+          "lodCount": 5,
+          "requiredBoneCount": 2,
+          "sectionArrayEndOffset": 144692,
+          "schema": "UE4.27 cooked FReferenceSkeleton, FSkeletalMeshLODRenderData, FSkelMeshRenderSection; cloth-free sections only"
+        }
+      }
+    },
+    {
+      "sourcePackage": "/Game/GR_Stylized_Female_01/Character/Meshes/SKIN/SM_GRFH1_Skin",
+      "previousAmbiguousSections": 2,
+      "sectionMaterialIndices": [
+        1,
+        4,
+        3,
+        2,
+        0,
+        6,
+        6
+      ],
+      "sectionTrianglesAndVertexCountsMatched": 7,
+      "sourceEvidence": {
+        "decoded": "E:\\undefeated-web\\research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\GR_Stylized_Female_01\\Character\\Meshes\\SKIN\\SM_GRFH1_Skin.json",
+        "sha256": "fa4473ba59746a32ff79ad2c0c0266f3db972af9ab1776f20d6171e512f972fa",
+        "nativeSkeletalMaterialArray": {
+          "count": 7,
+          "offsetInExtras": 34,
+          "endOffsetInExtras": 318,
+          "schema": "UE4.27 FSkeletalMaterial with stripped imported names and FMeshUVChannelInfo",
+          "extrasSha256": "2f56bd3b75c30d89a830f94f27320f0847f0711bd9c202fc7c2c844ccb4d5552"
+        },
+        "nativeLod0Sections": [
+          {
+            "sectionIndex": 0,
+            "materialSlotIndex": 1,
+            "firstIndex": 0,
+            "numTriangles": 3072,
+            "baseVertexIndex": 0,
+            "numVertices": 9216,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 6362,
+            "nativeEndOffset": 80173
+          },
+          {
+            "sectionIndex": 1,
+            "materialSlotIndex": 4,
+            "firstIndex": 9216,
+            "numTriangles": 256,
+            "baseVertexIndex": 9216,
+            "numVertices": 768,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 80173,
+            "nativeEndOffset": 86408
+          },
+          {
+            "sectionIndex": 2,
+            "materialSlotIndex": 3,
+            "firstIndex": 9984,
+            "numTriangles": 142,
+            "baseVertexIndex": 9984,
+            "numVertices": 426,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 86408,
+            "nativeEndOffset": 89897
+          },
+          {
+            "sectionIndex": 3,
+            "materialSlotIndex": 2,
+            "firstIndex": 10410,
+            "numTriangles": 320,
+            "baseVertexIndex": 10410,
+            "numVertices": 960,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 89897,
+            "nativeEndOffset": 97660
+          },
+          {
+            "sectionIndex": 4,
+            "materialSlotIndex": 0,
+            "firstIndex": 11370,
+            "numTriangles": 10774,
+            "baseVertexIndex": 11370,
+            "numVertices": 32322,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 97660,
+            "nativeEndOffset": 356433
+          },
+          {
+            "sectionIndex": 5,
+            "materialSlotIndex": 6,
+            "firstIndex": 43692,
+            "numTriangles": 64,
+            "baseVertexIndex": 43692,
+            "numVertices": 192,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 356433,
+            "nativeEndOffset": 358050
+          },
+          {
+            "sectionIndex": 6,
+            "materialSlotIndex": 6,
+            "firstIndex": 43884,
+            "numTriangles": 82,
+            "baseVertexIndex": 43884,
+            "numVertices": 246,
+            "castShadow": true,
+            "disabled": false,
+            "nativeOffset": 358050,
+            "nativeEndOffset": 360099
+          }
+        ],
+        "nativeSkeletalSectionEvidence": {
+          "referenceSkeletonOffset": 318,
+          "referenceSkeletonEndOffset": 6154,
+          "referenceBoneCount": 91,
+          "lodCount": 5,
+          "requiredBoneCount": 91,
+          "sectionArrayEndOffset": 360099,
+          "schema": "UE4.27 cooked FReferenceSkeleton, FSkeletalMeshLODRenderData, FSkelMeshRenderSection; cloth-free sections only"
+        }
+      }
+    }
+  ],
+  "ambiguousSectionsResolved": 29,
+  "geometryBuffersChanged": false
+}

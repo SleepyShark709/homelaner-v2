@@ -1,0 +1,7 @@
+{
+  "worldFormulaRandomTrials": 425,
+  "foliageAndBenchRandomTrials": 300,
+  "maximumFloat64Difference": 9.717920912422073e-14,
+  "errors": [],
+  "method": "Independent scalar/vector DXBC instruction subset execution from retained assembly versus contract formula, varied world positions/pre-view translations/geometric bases including nonunit interpolated frames and both handedness signs, and original instance parameters; analytical distinct-channel texture sampler. Does not establish browser GPU or complete original game visual equivalence."
+}

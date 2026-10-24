@@ -1,0 +1,9 @@
+{
+  "components": 144,
+  "componentTexels": 2359296,
+  "minAllocatedWeightSumU8": 255,
+  "maxAllocatedWeightSumU8": 256,
+  "texelsNotExactly255": 72,
+  "zeroWeightTexels": 0,
+  "interpretation": "Raw allocated-channel weights; shader uses them directly without adding normalization."
+}

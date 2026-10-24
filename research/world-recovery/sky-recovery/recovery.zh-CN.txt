@@ -1,0 +1,24 @@
+原 LightingTest 天空恢复合同
+
+实际纹理不是 cubemap。
+HDRI_Cubemap 仅是原参数名；原T_SkyCloudy11导出类为Texture2D，尺寸8192×2048，TC_HDR，SRGB=false。原frozen uniform的2D纹理表引用它；DXBC原PS将它绑定为texture2d t12，不能改为反射方向或HDRCubeTexture采样。
+
+恢复接口：contract.json。
+使用原SM_SkyDome与原几何变换，PS纹理坐标为(UV0.x, UV0.y×2)。原半球网格UV0.v范围约0…0.5，原图片覆盖整片天空上半球。网格法线向内；本地UE+Z顶点对应图片顶行，地平线对应底行。未旋转局部网格中UE+Y为u≈0.5，+X为u≈0.75，-X为u≈0.25，-Y为u≈0/1。
+
+HDR文件为RGBE，虽然头标FORMAT=32-bit_rle_rgbe，UEViewer WriteHDR实际写的是未压缩平面像素。头51字节，像素67,108,864字节；每像素RGB三字节和指数E。linearRGB=RGBbytes×2^(E-136)，E=0时为黑。行标-Y 2048 +X 8192，保留源顶行到下行，上传API翻转只按目标采样约定处理一次。原PF_FloatRGBA顶层mip来自uexp偏移312，共134,217,728字节；37个分布像素逐点核对导出的RGBE，完全符合官方UModel float2rgbe量化，不是猜测朝向。RGBE会量化原半浮点值，不宣称位级无损；原14级mip目前仅保存最高级图像。
+
+原材质公式
+读取线性HDR，RGB正值逐通道pow(HDRI_Contrast)，非正值置0，再乘HDRI_Brightness与HDRI_Tint.rgb。原SelectionColor影响为将该结果向SelectionColor.rgb插值，权重SelectionColor.a；输出emissive限制下限0，不截断上限。Opacity独立clamp到0…1，与纹理RGBE的E字节无关。
+LightingTest快照：Brightness=1、Contrast=1、Tint=(1,1,1)、SelectionColor=(0,0,0,0)、Opacity=1。EmissiveColor原材料属性、uniform preshader、D3D资源表及DXBC数据流共同支持此公式。
+完整原PS另有原引擎雾、光照/debug路径与pre-exposure；本合同只恢复天空贴图采样、发光和透明度，不冒充原渲染器全部画面效果。
+
+蓝图状态与时间变化
+原UserConstructionScript设可见性，建立MI_Skies动态材质并绑定slot0，设置亮度乘GlobalBrightness、Tint、Texture、Contrast，再将网格设为HDRI_Rotation对应世界yaw。
+LightingTest的HDRI_Rotation=35度，当前geometry世界四元数已与此匹配（角度误差小于0.001度）。不要再旋转贴图35度。
+BeginPlay随机WeatherIndex为0或1并启用Tick。Tick以ChangeSpeed×DeltaTime为Ease输入向目标Opacity（index0为1、index1为0）过渡；累计ChangeInterval后重新随机并清零计数。LightingTest保存ChangeSpeed约0.07，ChangeInterval=30秒，WeatherOpacity类默认1。蓝图函数已解析，没有实际执行或记录随机序列，因此静态快照不能称作运行时某时刻天气。
+这几个真实函数中没有camera-follow、相机位置查询或逐帧旋转调用。HDRI_RotationSpeed虽存在NameMap，但无对应函数AST使用证据，不能据名称补自动旋转。
+
+核验证据
+23份DXBC均经过完整资源前缀校验和微软D3DDisassemble，未解析DXBC标记0。shader-0-ps_5_0.asm的t12采样、UV乘法、pow/乘数和opacity均可直接查阅。uniforms.json保留原参数表和preshader字节；blueprint-evidence.json含完整函数AST、原Actor/CDO属性及源hash；sampling-evidence.json含原像素/UV/朝向验证。
+这些是原游戏包数据和编译Shader证据，不把第三方包解析称为REA原生反编译或游戏运行观察。原游戏只读；未改material-manifest或src。

@@ -1,0 +1,382 @@
+{
+  "/Game/ForgottenHotel/Materials/Tiling_Mats/WorldTilingMaster": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorAsphalt": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick1": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick2": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick3": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick4": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_FloorBrick5": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_Grass": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_Gravel": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_GroundBrick": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_Metal": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 1.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_RoofTop": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_RoofTop1": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_Stone": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/UrbanCity/Materials/Foliage/Foliage_Mat": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": 0.30000001192092896,
+      "metallic": null,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/UrbanCity/Materials/Foliage/Foliage_01_Inst": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": 0.8964110016822815,
+      "metallic": null,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/UrbanCity/Materials/Props/prp_bench_Mat": {
+    "status": "shader-unmapped",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": null,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_Concrete": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  },
+  "/Game/-HeroGame/Materials/MaterialInstance/MI_Sidewalk": {
+    "status": "partial-pbr-projection",
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": 0.0,
+      "emissive": null,
+      "opacity": null
+    }
+  }
+}

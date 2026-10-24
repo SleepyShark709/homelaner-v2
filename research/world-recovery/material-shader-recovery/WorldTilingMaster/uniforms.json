@@ -1,0 +1,188 @@
+{
+  "frozenStartInExtras": 322,
+  "frozenBytes": 23110,
+  "frozenSHA256": "eb112645763bc5fb8492e5162cb204778674ddba87d62f9456c2149f5ef6dd42",
+  "layoutParametersRaw": [
+    8,
+    41
+  ],
+  "scalarParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 22704,
+      "parameter": "World Align Normal Intensity",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 0.5
+    },
+    {
+      "index": 1,
+      "frozenOffset": 22728,
+      "parameter": "Metalness",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 0.0
+    },
+    {
+      "index": 2,
+      "frozenOffset": 22752,
+      "parameter": "RoughnessBrightness",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.0
+    }
+  ],
+  "vectorParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 22776,
+      "parameter": "SelectionColor",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "index": 1,
+      "frozenOffset": 22812,
+      "parameter": "Albedo/Normal World Scale",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        512.0,
+        512.0,
+        512.0,
+        0.0
+      ]
+    },
+    {
+      "index": 2,
+      "frozenOffset": 22848,
+      "parameter": "Albedo Tint",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "textureParameters2D": [
+    {
+      "index": 0,
+      "frozenOffset": 22884,
+      "parameter": "World Align Normal",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 4,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/ForgottenHotel/Textures/TilingTextures/Wallpaper/Wallpaper_normal"
+    },
+    {
+      "index": 1,
+      "frozenOffset": 22912,
+      "parameter": "World Aligned Albedo",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 5,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/ForgottenHotel/Textures/TilingTextures/Wallpaper/Wallpaper_basecolor"
+    },
+    {
+      "index": 2,
+      "frozenOffset": 22940,
+      "parameter": "World Aligned Roughness",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 6,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/ForgottenHotel/Textures/TilingTextures/Wallpaper/Wallpaper_roughness"
+    }
+  ],
+  "uniformVectorPreshaders": [
+    {
+      "offset": 18,
+      "size": 3,
+      "bytesHex": "040000"
+    },
+    {
+      "offset": 21,
+      "size": 3,
+      "bytesHex": "040100"
+    },
+    {
+      "offset": 24,
+      "size": 9,
+      "bytesHex": "0401002303000102ff"
+    },
+    {
+      "offset": 33,
+      "size": 10,
+      "bytesHex": "0401002303000102ff19"
+    },
+    {
+      "offset": 43,
+      "size": 28,
+      "bytesHex": "0401002303000102ff1902000080bf000080bf000080bf000080bf07"
+    },
+    {
+      "offset": 71,
+      "size": 9,
+      "bytesHex": "0400002303000102ff"
+    },
+    {
+      "offset": 80,
+      "size": 3,
+      "bytesHex": "040200"
+    },
+    {
+      "offset": 83,
+      "size": 9,
+      "bytesHex": "0402002303000102ff"
+    }
+  ],
+  "uniformScalarPreshaders": [
+    {
+      "offset": 0,
+      "size": 3,
+      "bytesHex": "030000"
+    },
+    {
+      "offset": 3,
+      "size": 9,
+      "bytesHex": "040000230103ffffff"
+    },
+    {
+      "offset": 12,
+      "size": 3,
+      "bytesHex": "030100"
+    },
+    {
+      "offset": 15,
+      "size": 3,
+      "bytesHex": "030200"
+    }
+  ],
+  "namePatches": {
+    "22848": "Albedo Tint",
+    "22812": "Albedo/Normal World Scale",
+    "22728": "Metalness",
+    "22752": "RoughnessBrightness",
+    "22776": "SelectionColor",
+    "22884": "World Align Normal",
+    "22704": "World Align Normal Intensity",
+    "22912": "World Aligned Albedo",
+    "22940": "World Aligned Roughness"
+  },
+  "preshaderDataHex": "030000040000230103ffffff0301000302000400000401000401002303000102ff0401002303000102ff190401002303000102ff1902000080bf000080bf000080bf000080bf070400002303000102ff0402000402002303000102ff",
+  "preshaderDataFrozenOffset": 22968
+}

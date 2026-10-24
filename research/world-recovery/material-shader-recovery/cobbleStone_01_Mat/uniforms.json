@@ -1,0 +1,84 @@
+{
+  "frozenStartInExtras": 97,
+  "frozenBytes": 6984,
+  "frozenSHA256": "a02c7e3730db5213ebad6b042748f5b0f90aab10e63af8f018316641340c2133",
+  "layoutParametersRaw": [
+    8,
+    41
+  ],
+  "scalarParameters": [],
+  "vectorParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 6792,
+      "parameter": "SelectionColor",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "textureParameters2D": [
+    {
+      "index": 0,
+      "frozenOffset": 6828,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 2,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/UrbanCity/Textures/Tileable/cobbleStone_01_n"
+    },
+    {
+      "index": 1,
+      "frozenOffset": 6856,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 0,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/UrbanCity/Textures/Tileable/cobbleStone_01_d"
+    },
+    {
+      "index": 2,
+      "frozenOffset": 6884,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 1,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/UrbanCity/Textures/Tileable/cobbleStone_01_r"
+    }
+  ],
+  "uniformVectorPreshaders": [
+    {
+      "offset": 9,
+      "size": 3,
+      "bytesHex": "040000"
+    },
+    {
+      "offset": 12,
+      "size": 9,
+      "bytesHex": "0400002303000102ff"
+    }
+  ],
+  "uniformScalarPreshaders": [
+    {
+      "offset": 0,
+      "size": 9,
+      "bytesHex": "040000230103ffffff"
+    }
+  ],
+  "namePatches": {
+    "6792": "SelectionColor"
+  },
+  "preshaderDataHex": "040000230103ffffff0400000400002303000102ff",
+  "preshaderDataFrozenOffset": 6912
+}

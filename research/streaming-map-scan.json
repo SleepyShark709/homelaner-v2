@@ -1,0 +1,5131 @@
+{
+  "maps": [
+    {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-decoded\\MainLevel.json",
+      "decodedSha256": "0f436d9a23f99c9d8069f0d2feb45ffc2e096666551802120cce78e4d7b3c489",
+      "functionCount": 10,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 11845,
+          "pointer": "/Exports/11844",
+          "name": "WorldSettings_1",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 6358,
+            "KillZ": -30000.0,
+            "DefaultGameMode": -51,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/Story1Level",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Story1Level.json",
+      "decodedSha256": "a1c786866de1a7108f856e4aaae924968b60515137fef322e378a4ad6e966165",
+      "functionCount": 2,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 84,
+          "pointer": "/Exports/83",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 49,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/Story2Level",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Story2Level.json",
+      "decodedSha256": "85351100b206de11c1fe58e633f362aa749cfe12420694604200f2b6e42f7fb3",
+      "functionCount": 2,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 89,
+          "pointer": "/Exports/88",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 49,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/Story3Level",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Story3Level.json",
+      "decodedSha256": "d646cf48ee886641ce6827ee4b4430d7ca1d749a4cab682b2f0e79a64f2fd638",
+      "functionCount": 3,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 92,
+          "pointer": "/Exports/91",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 55,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/TutorialLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\TutorialLevel.json",
+      "decodedSha256": "805ae740e29d8445465e14ac44abd7f2edd76da1628f24cb6f0d90c8fb9ffcd3",
+      "functionCount": 34,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 311,
+          "pointer": "/Exports/310",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 206,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Beach",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Beach.json",
+      "decodedSha256": "abedc1cf266a77a03a038fde29f98cbe36f2e27b4c87dac621688007fd679530",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 288,
+          "pointer": "/Exports/287",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 15,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Easy",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_D_Easy.json",
+      "decodedSha256": "3d398a2c528830643819dae2b59076d4e58dfd652b86f35556687b09dee9c6fa",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 1081,
+          "pointer": "/Exports/1080",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 659,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Hard",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_D_Hard.json",
+      "decodedSha256": "93161ee7896b78f6d2fed8efdb29b518ff76268518010a11a5156bbbd595962d",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 2564,
+          "pointer": "/Exports/2563",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 1666,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_D_Normal",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_D_Normal.json",
+      "decodedSha256": "e20e752937c4c73e505ee09df5f162fc8299de7f93651cf3f3dad06181e6e181",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 1556,
+          "pointer": "/Exports/1555",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 994,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_D_TU",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_D_TU.json",
+      "decodedSha256": "3d7d5046a664f743130b2c4a965d914235bf434c802d7624831a437af1e3dabe",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 565,
+          "pointer": "/Exports/564",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 353,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Easy",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_F_Easy.json",
+      "decodedSha256": "aa234224cf28ae4f87fff669437dcf4bfb2bb4e5779393f11224aaba09d09256",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 526,
+          "pointer": "/Exports/525",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 164,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Hard",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_F_Hard.json",
+      "decodedSha256": "778543ac3a26fbbd5d4878887802f6c582a7c4950253702adbad95bc4f696a85",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 591,
+          "pointer": "/Exports/590",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 184,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_F_Normal",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_F_Normal.json",
+      "decodedSha256": "574433154298a86c90ed81f598af09aec6d96c4617ecba98818a3542cc0b41f2",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 656,
+          "pointer": "/Exports/655",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 204,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CQ_F_TU",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CQ_F_TU.json",
+      "decodedSha256": "72b806106697e7c60719fe8ff87c81a44d89e4ecda28b79b02648c806a19c140",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 370,
+          "pointer": "/Exports/369",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 116,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CitizenWayPoint",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CitizenWayPoint.json",
+      "decodedSha256": "f984545fb9127b94c8561202234748886568170ae64ff7bc631d14fe4d02f88f",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 9711,
+          "pointer": "/Exports/9710",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 9624,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Coast",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Coast.json",
+      "decodedSha256": "37204f9b8849138044cd2e23fd7ce5d53ab048626194e8d5e3475c4a1cf7aab1",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 201,
+          "pointer": "/Exports/200",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 18,
+            "DefaultGameMode": -2,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CommercialArea",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CommercialArea.json",
+      "decodedSha256": "0d88858d3a0d0954b80c5161373f48fb159456d7be9a2d949a466b372c2abbe1",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 1125,
+          "pointer": "/Exports/1124",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bPrecomputeVisibility": true,
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 18,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CustomEventLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\CustomEventLevel.json",
+      "decodedSha256": "5a44715d17ba7b9f5b2dea1040dd635c83eb5d8cff3d9a5f502c302449a590de",
+      "functionCount": 23,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 31,
+          "pointer": "/Exports/30",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 29,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/DownTown",
+      "source": "E:\\undefeated-web\\research\\exports\\city-decoded\\DownTown.json",
+      "decodedSha256": "4dd198bfdb7d24aa587db0cf1ab5a2606659a929119e4711c55aaeb5128e6a26",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 1639,
+          "pointer": "/Exports/1638",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 24,
+            "DefaultGameMode": -2,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/DynamicProps",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\DynamicProps.json",
+      "decodedSha256": "80e6a36b598ae4b06257b293439c2508d514a82f8ee057206b26eb1657c73ec2",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 5037,
+          "pointer": "/Exports/5036",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 1107,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/EnelightMeteor",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\EnelightMeteor.json",
+      "decodedSha256": "2cfe917aa13ba3036381774ce570abd68e732687cb6b5082c1b6530712410862",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 16,
+          "pointer": "/Exports/15",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "NavigationSystemConfig": 8,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/FinancialDistrict",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\FinancialDistrict.json",
+      "decodedSha256": "d179d345c7e9b75be451daf03e3d40be6f94b468f6211474e7fdc185153483e2",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 649,
+          "pointer": "/Exports/648",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 12,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/FireBossLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\FireBossLevel.json",
+      "decodedSha256": "e766e87a3bf86f920cbb2865bde9b6e6295883f6722a8550bf2ec64065aa1d2f",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 78,
+          "pointer": "/Exports/77",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 40,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/IndustrialArea",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\IndustrialArea.json",
+      "decodedSha256": "ddc242ba6cc15815c027d8eadbf082a08a8f19ca57b52a8adbfd360e455343be",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 818,
+          "pointer": "/Exports/817",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 66,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/LightingTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\LightingTest.json",
+      "decodedSha256": "809bdaca4e34192e5b17c55f715c7eb7b007bd3787a2bafb3b1f75322785b93e",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 24,
+          "pointer": "/Exports/23",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 17,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/LightningBossLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\LightningBossLevel.json",
+      "decodedSha256": "5f828c7390ab4331d076f01ebc73bfa88e5908b1f40da5d4d95cda77c9d26bea",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 74,
+          "pointer": "/Exports/73",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 40,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/LoadLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\LoadLevel.json",
+      "decodedSha256": "3c9d1ffff65a9f7b397702cfeda7d959af0ecdc35014b947f1101c211386bb71",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 316,
+          "pointer": "/Exports/315",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 150,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Park",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Park.json",
+      "decodedSha256": "5fb1827a986ef1414f7153bd5679b62f14b5d2cc21c6a45b664db3104b7ceef6",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 916,
+          "pointer": "/Exports/915",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 78,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea1",
+      "source": "E:\\undefeated-web\\research\\exports\\city-decoded\\ResidentialArea1.json",
+      "decodedSha256": "f6ee54104f8af7a106ad4cdd725ff3b216022768fb5ddd2ec06a6b543de1814a",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 661,
+          "pointer": "/Exports/660",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 15,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea2",
+      "source": "E:\\undefeated-web\\research\\exports\\city-decoded\\ResidentialArea2.json",
+      "decodedSha256": "309509545fa6a63379cf800473a57603bde6760580e3fd396aa19288f7c3f66c",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 665,
+          "pointer": "/Exports/664",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 16,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea3",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\ResidentialArea3.json",
+      "decodedSha256": "fc519e885cc2e03650dbda61a36a5bf5155a2b193d88b98f1fd4bf9f60e66266",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 360,
+          "pointer": "/Exports/359",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 14,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Slam",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Slam.json",
+      "decodedSha256": "48078c2b5c6f0b1fbc50bdad67653ef7936d6761984b68a8424c2c822255b2c4",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 185,
+          "pointer": "/Exports/184",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 18,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/TitleMenuLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\TitleMenuLevel.json",
+      "decodedSha256": "e80723ea1c6cdbb394c5a709e61bdd94577493000aa7d0e143f09fa9c00f9cd0",
+      "functionCount": 12,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 70,
+          "pointer": "/Exports/69",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 30,
+            "DefaultGameMode": -5,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/WindBossLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\WindBossLevel.json",
+      "decodedSha256": "39f83837ae000ee303374b373a54586593c0c3cbee054cd9430b9653f0085110",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 73,
+          "pointer": "/Exports/72",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 40,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Lighting",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\Lighting.json",
+      "decodedSha256": "7d5f7cce5a1e26790355caba730e21cc25533cd7efc1753eafc32cad788d9e7b",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 21,
+          "pointer": "/Exports/20",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 14,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\DPropTest.json",
+      "decodedSha256": "cc691f7429a6b4d98d843f451a5e46e3e7eef0c179354a46b7c2c2efd4190034",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 332,
+          "pointer": "/Exports/331",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 197,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\FPropTest.json",
+      "decodedSha256": "9ee90eadbadff362958b8c7eb7e2b2bbdb4a9f7c626ebb79ad785aa5e7c3b64c",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 152,
+          "pointer": "/Exports/151",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 51,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelFire",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelFire.json",
+      "decodedSha256": "14c0046def9a8ca1c303ef50c4921737050b2d74c6a30c9da07a73554fb85df5",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 81,
+          "pointer": "/Exports/80",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 42,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelLightning",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelLightning.json",
+      "decodedSha256": "4a9202af24112f0fee095c68740546625dec913f547891f1dce955121f28fda9",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 77,
+          "pointer": "/Exports/76",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 42,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelWind",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelWind.json",
+      "decodedSha256": "9f580ada4663f38e21e99372cec233f804a60ece56eeff3197dadabf5c65d4eb",
+      "functionCount": 0,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 77,
+          "pointer": "/Exports/76",
+          "name": "WorldSettings",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 43,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    },
+    {
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "decodedSha256": "2641d9fd0860cb586d738b455dca1cdc7f3f418ee755532469c4cfe6bcf8f360",
+      "functionCount": 17,
+      "calls": [],
+      "worldSettings": [
+        {
+          "exportIndex": 970,
+          "pointer": "/Exports/969",
+          "name": "WorldSettings_1",
+          "class": "WorldSettings",
+          "properties": {
+            "bEnableNavigationSystem": false,
+            "NavigationSystemConfig": 220,
+            "DefaultGameMode": -40,
+            "BookmarkArray": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "streamingVolumes": []
+    }
+  ],
+  "instances": [
+    {
+      "exportIndex": 3775,
+      "pointer": "/Exports/3774",
+      "name": "CQDestruction_E",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 7276,
+        "P_QuestArea1": 6367,
+        "Arrow1": 630,
+        "P_CQArea": 6366,
+        "MainSphere": 7275,
+        "Audio": 659,
+        "Billboard": 1216,
+        "Arrow": 629,
+        "Decal": 5006,
+        "Root": 7048,
+        "ChallengeQuestStruct": {
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 8000000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 5000000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 950000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 700000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 500000
+        },
+        "RootComponent": 7048,
+        "Tags": [
+          "MiniMap",
+          "DC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          7048,
+          5006,
+          629,
+          1216,
+          659,
+          7275,
+          6366,
+          630,
+          6367,
+          7276
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-decoded\\MainLevel.json",
+      "components": [
+        {
+          "exportIndex": 629,
+          "component": "Arrow",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_E",
+          "sourceActorExportIndex": 3775,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_E",
+          "attachParentIndex": 5006,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_E/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              7230.0,
+              -1890.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 630,
+          "component": "Arrow1",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_E",
+          "sourceActorExportIndex": 3775,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_E",
+          "attachParentIndex": 7048,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_E/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              7230.0,
+              -1890.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 659,
+          "component": "Audio",
+          "class": "AudioComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_E",
+          "sourceActorExportIndex": 3775,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_E",
+          "attachParentIndex": 5006,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_E/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              7230.0,
+              -1890.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 1216,
+          "component": "Billboard",
+          "class": "BillboardComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_E",
+          "sourceActorExportIndex": 3775,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_E",
+          "attachParentIndex": 629,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_E/Arrow",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              7230.0,
+              -1890.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 5006,
+          "component": "Decal",
+          "class": "DecalComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_E",
+          "sourceActorExportIndex": 3775,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_E",
+          "attachParentIndex": 7048,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_E/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              7230.0,
+              -1890.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6366,
+          "component": "P_CQArea",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_E",
+          "sourceActorExportIndex": 3775,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_E",
+          "attachParentIndex": 7048,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_E/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              7230.0,
+              -1890.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6367,
+          "component": "P_QuestArea1",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_E",
+          "sourceActorExportIndex": 3775,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_E",
+          "attachParentIndex": 7048,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_E/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              7230.0,
+              -1890.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7048,
+          "component": "Root",
+          "class": "SceneComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_E",
+          "sourceActorExportIndex": 3775,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_E",
+          "attachParentIndex": 0,
+          "attachParent": null,
+          "attachSocket": null,
+          "relativeLocationUE": {
+            "X": 7230.0,
+            "Y": -1890.0,
+            "Z": 65.0
+          },
+          "relativeRotationUE": {
+            "Pitch": "+0",
+            "Yaw": 90.00000762939453,
+            "Roll": "+0"
+          },
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              7230.0,
+              -1890.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7275,
+          "component": "MainSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_E",
+          "sourceActorExportIndex": 3775,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_E",
+          "attachParentIndex": 7048,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_E/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              7230.0,
+              -1890.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7276,
+          "component": "TutorialSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_E",
+          "sourceActorExportIndex": 3775,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_E",
+          "attachParentIndex": 7048,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_E/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              7230.0,
+              -1890.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        }
+      ]
+    },
+    {
+      "exportIndex": 3776,
+      "pointer": "/Exports/3775",
+      "name": "CQDestruction_H",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 7278,
+        "P_QuestArea1": 6369,
+        "Arrow1": 632,
+        "P_CQArea": 6368,
+        "MainSphere": 7277,
+        "Audio": 660,
+        "Billboard": 1217,
+        "Arrow": 631,
+        "Decal": 5007,
+        "Root": 7049,
+        "ChallengeQuestStruct": {
+          "QuestDifficulty_5_D16F050049FC9424971B46A67E6829B7": "E_ChallengeQuestDifficulty::NewEnumerator2",
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 12000000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 7500000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 2400000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 1500000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 1000000
+        },
+        "RootComponent": 7049,
+        "Tags": [
+          "MiniMap",
+          "DC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          7049,
+          5007,
+          631,
+          1217,
+          660,
+          7277,
+          6368,
+          632,
+          6369,
+          7278
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-decoded\\MainLevel.json",
+      "components": [
+        {
+          "exportIndex": 631,
+          "component": "Arrow",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_H",
+          "sourceActorExportIndex": 3776,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_H",
+          "attachParentIndex": 5007,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_H/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -57637.0,
+              25120.0,
+              71.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 632,
+          "component": "Arrow1",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_H",
+          "sourceActorExportIndex": 3776,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_H",
+          "attachParentIndex": 7049,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_H/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -57637.0,
+              25120.0,
+              71.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 660,
+          "component": "Audio",
+          "class": "AudioComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_H",
+          "sourceActorExportIndex": 3776,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_H",
+          "attachParentIndex": 5007,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_H/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -57637.0,
+              25120.0,
+              71.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 1217,
+          "component": "Billboard",
+          "class": "BillboardComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_H",
+          "sourceActorExportIndex": 3776,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_H",
+          "attachParentIndex": 631,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_H/Arrow",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -57637.0,
+              25120.0,
+              71.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 5007,
+          "component": "Decal",
+          "class": "DecalComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_H",
+          "sourceActorExportIndex": 3776,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_H",
+          "attachParentIndex": 7049,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_H/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -57637.0,
+              25120.0,
+              71.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6368,
+          "component": "P_CQArea",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_H",
+          "sourceActorExportIndex": 3776,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_H",
+          "attachParentIndex": 7049,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_H/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -57637.0,
+              25120.0,
+              71.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6369,
+          "component": "P_QuestArea1",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_H",
+          "sourceActorExportIndex": 3776,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_H",
+          "attachParentIndex": 7049,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_H/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -57637.0,
+              25120.0,
+              71.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7049,
+          "component": "Root",
+          "class": "SceneComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_H",
+          "sourceActorExportIndex": 3776,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_H",
+          "attachParentIndex": 0,
+          "attachParent": null,
+          "attachSocket": null,
+          "relativeLocationUE": {
+            "X": -57637.0,
+            "Y": 25120.0,
+            "Z": 71.0
+          },
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -57637.0,
+              25120.0,
+              71.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7277,
+          "component": "MainSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_H",
+          "sourceActorExportIndex": 3776,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_H",
+          "attachParentIndex": 7049,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_H/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -57637.0,
+              25120.0,
+              71.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7278,
+          "component": "TutorialSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_H",
+          "sourceActorExportIndex": 3776,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_H",
+          "attachParentIndex": 7049,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_H/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -57637.0,
+              25120.0,
+              71.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        }
+      ]
+    },
+    {
+      "exportIndex": 3777,
+      "pointer": "/Exports/3776",
+      "name": "CQDestruction_N",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 7280,
+        "P_QuestArea1": 6371,
+        "Arrow1": 634,
+        "P_CQArea": 6370,
+        "MainSphere": 7279,
+        "Audio": 661,
+        "Billboard": 1218,
+        "Arrow": 633,
+        "Decal": 5008,
+        "Root": 7050,
+        "ChallengeQuestStruct": {
+          "QuestDifficulty_5_D16F050049FC9424971B46A67E6829B7": "E_ChallengeQuestDifficulty::NewEnumerator1",
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 6000000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 3000000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 990000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 650000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 350000
+        },
+        "RootComponent": 7050,
+        "Tags": [
+          "MiniMap",
+          "DC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          7050,
+          5008,
+          633,
+          1218,
+          661,
+          7279,
+          6370,
+          634,
+          6371,
+          7280
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-decoded\\MainLevel.json",
+      "components": [
+        {
+          "exportIndex": 633,
+          "component": "Arrow",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_N",
+          "sourceActorExportIndex": 3777,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_N",
+          "attachParentIndex": 5008,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_N/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              49988.0,
+              -32082.0,
+              265.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 634,
+          "component": "Arrow1",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_N",
+          "sourceActorExportIndex": 3777,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_N",
+          "attachParentIndex": 7050,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_N/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              49988.0,
+              -32082.0,
+              265.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 661,
+          "component": "Audio",
+          "class": "AudioComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_N",
+          "sourceActorExportIndex": 3777,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_N",
+          "attachParentIndex": 5008,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_N/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              49988.0,
+              -32082.0,
+              265.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 1218,
+          "component": "Billboard",
+          "class": "BillboardComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_N",
+          "sourceActorExportIndex": 3777,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_N",
+          "attachParentIndex": 633,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_N/Arrow",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              49988.0,
+              -32082.0,
+              265.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 5008,
+          "component": "Decal",
+          "class": "DecalComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_N",
+          "sourceActorExportIndex": 3777,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_N",
+          "attachParentIndex": 7050,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_N/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              49988.0,
+              -32082.0,
+              265.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6370,
+          "component": "P_CQArea",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_N",
+          "sourceActorExportIndex": 3777,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_N",
+          "attachParentIndex": 7050,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_N/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              49988.0,
+              -32082.0,
+              265.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6371,
+          "component": "P_QuestArea1",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_N",
+          "sourceActorExportIndex": 3777,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_N",
+          "attachParentIndex": 7050,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_N/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              49988.0,
+              -32082.0,
+              265.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7050,
+          "component": "Root",
+          "class": "SceneComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_N",
+          "sourceActorExportIndex": 3777,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_N",
+          "attachParentIndex": 0,
+          "attachParent": null,
+          "attachSocket": null,
+          "relativeLocationUE": {
+            "X": 49988.0,
+            "Y": -32082.0,
+            "Z": 265.0
+          },
+          "relativeRotationUE": {
+            "Pitch": "+0",
+            "Yaw": 90.00000762939453,
+            "Roll": "+0"
+          },
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              49988.0,
+              -32082.0,
+              265.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7279,
+          "component": "MainSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_N",
+          "sourceActorExportIndex": 3777,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_N",
+          "attachParentIndex": 7050,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_N/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              49988.0,
+              -32082.0,
+              265.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7280,
+          "component": "TutorialSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_N",
+          "sourceActorExportIndex": 3777,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_N",
+          "attachParentIndex": 7050,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_N/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              49988.0,
+              -32082.0,
+              265.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        }
+      ]
+    },
+    {
+      "exportIndex": 3778,
+      "pointer": "/Exports/3777",
+      "name": "CQDestruction_TU",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 7282,
+        "P_QuestArea1": 6373,
+        "Arrow1": 636,
+        "P_CQArea": 6372,
+        "MainSphere": 7281,
+        "Audio": 662,
+        "Billboard": 1219,
+        "Arrow": 635,
+        "Decal": 5009,
+        "Root": 7051,
+        "ChallengeQuestStruct": {
+          "QuestDifficulty_5_D16F050049FC9424971B46A67E6829B7": "E_ChallengeQuestDifficulty::NewEnumerator4",
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 450000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 350000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 250000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 15000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 500
+        },
+        "RootComponent": 7051,
+        "Tags": [
+          "MiniMap",
+          "DC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          7051,
+          5009,
+          635,
+          1219,
+          662,
+          7281,
+          6372,
+          636,
+          6373,
+          7282
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-decoded\\MainLevel.json",
+      "components": [
+        {
+          "exportIndex": 635,
+          "component": "Arrow",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "sourceActorExportIndex": 3778,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "attachParentIndex": 5009,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_TU/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              1109.0,
+              -15962.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.707106404558594,
+              0.7071071578143004
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 636,
+          "component": "Arrow1",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "sourceActorExportIndex": 3778,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "attachParentIndex": 7051,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_TU/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              1109.0,
+              -15962.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.707106404558594,
+              0.7071071578143004
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 662,
+          "component": "Audio",
+          "class": "AudioComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "sourceActorExportIndex": 3778,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "attachParentIndex": 5009,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_TU/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              1109.0,
+              -15962.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.707106404558594,
+              0.7071071578143004
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 1219,
+          "component": "Billboard",
+          "class": "BillboardComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "sourceActorExportIndex": 3778,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "attachParentIndex": 635,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_TU/Arrow",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              1109.0,
+              -15962.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.707106404558594,
+              0.7071071578143004
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 5009,
+          "component": "Decal",
+          "class": "DecalComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "sourceActorExportIndex": 3778,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "attachParentIndex": 7051,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_TU/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              1109.0,
+              -15962.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.707106404558594,
+              0.7071071578143004
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6372,
+          "component": "P_CQArea",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "sourceActorExportIndex": 3778,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "attachParentIndex": 7051,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_TU/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              1109.0,
+              -15962.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.707106404558594,
+              0.7071071578143004
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6373,
+          "component": "P_QuestArea1",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "sourceActorExportIndex": 3778,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "attachParentIndex": 7051,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_TU/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              1109.0,
+              -15962.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.707106404558594,
+              0.7071071578143004
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7051,
+          "component": "Root",
+          "class": "SceneComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "sourceActorExportIndex": 3778,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "attachParentIndex": 0,
+          "attachParent": null,
+          "attachSocket": null,
+          "relativeLocationUE": {
+            "X": 1109.0,
+            "Y": -15962.0,
+            "Z": 65.0
+          },
+          "relativeRotationUE": {
+            "Pitch": "+0",
+            "Yaw": -89.99993896484375,
+            "Roll": "+0"
+          },
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              1109.0,
+              -15962.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.707106404558594,
+              0.7071071578143004
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7281,
+          "component": "MainSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "sourceActorExportIndex": 3778,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "attachParentIndex": 7051,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_TU/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              1109.0,
+              -15962.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.707106404558594,
+              0.7071071578143004
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7282,
+          "component": "TutorialSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "sourceActorExportIndex": 3778,
+          "outer": "MainLevel/PersistentLevel/CQDestruction_TU",
+          "attachParentIndex": 7051,
+          "attachParent": "MainLevel/PersistentLevel/CQDestruction_TU/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              1109.0,
+              -15962.0,
+              65.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.707106404558594,
+              0.7071071578143004
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        }
+      ]
+    },
+    {
+      "exportIndex": 3779,
+      "pointer": "/Exports/3778",
+      "name": "CQFlight_E",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 7284,
+        "P_QuestArea1": 6375,
+        "Arrow1": 638,
+        "P_CQArea": 6374,
+        "MainSphere": 7283,
+        "Audio": 663,
+        "Billboard": 1220,
+        "Arrow": 637,
+        "Decal": 5010,
+        "Root": 7052,
+        "ChallengeQuestStruct": {
+          "QuestType_4_9857F59A439E8DAB68BB468BA97C0F89": "E_ChallengeQuestType::NewEnumerator1",
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 1000000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 512000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 250000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 160000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 80000
+        },
+        "QuestTime": 60.0,
+        "RootComponent": 7052,
+        "Tags": [
+          "MiniMap",
+          "FC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          7052,
+          5010,
+          637,
+          1220,
+          663,
+          7283,
+          6374,
+          638,
+          6375,
+          7284
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-decoded\\MainLevel.json",
+      "components": [
+        {
+          "exportIndex": 637,
+          "component": "Arrow",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_E",
+          "sourceActorExportIndex": 3779,
+          "outer": "MainLevel/PersistentLevel/CQFlight_E",
+          "attachParentIndex": 5010,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_E/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -23511.0,
+              -3761.0,
+              13866.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.7071067811865476,
+              0.7071067811865476
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 638,
+          "component": "Arrow1",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_E",
+          "sourceActorExportIndex": 3779,
+          "outer": "MainLevel/PersistentLevel/CQFlight_E",
+          "attachParentIndex": 7052,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_E/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -23511.0,
+              -3761.0,
+              13866.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.7071067811865476,
+              0.7071067811865476
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 663,
+          "component": "Audio",
+          "class": "AudioComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_E",
+          "sourceActorExportIndex": 3779,
+          "outer": "MainLevel/PersistentLevel/CQFlight_E",
+          "attachParentIndex": 5010,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_E/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -23511.0,
+              -3761.0,
+              13866.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.7071067811865476,
+              0.7071067811865476
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 1220,
+          "component": "Billboard",
+          "class": "BillboardComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_E",
+          "sourceActorExportIndex": 3779,
+          "outer": "MainLevel/PersistentLevel/CQFlight_E",
+          "attachParentIndex": 637,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_E/Arrow",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -23511.0,
+              -3761.0,
+              13866.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.7071067811865476,
+              0.7071067811865476
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 5010,
+          "component": "Decal",
+          "class": "DecalComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_E",
+          "sourceActorExportIndex": 3779,
+          "outer": "MainLevel/PersistentLevel/CQFlight_E",
+          "attachParentIndex": 7052,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_E/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -23511.0,
+              -3761.0,
+              13866.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.7071067811865476,
+              0.7071067811865476
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6374,
+          "component": "P_CQArea",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_E",
+          "sourceActorExportIndex": 3779,
+          "outer": "MainLevel/PersistentLevel/CQFlight_E",
+          "attachParentIndex": 7052,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_E/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -23511.0,
+              -3761.0,
+              13866.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.7071067811865476,
+              0.7071067811865476
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6375,
+          "component": "P_QuestArea1",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_E",
+          "sourceActorExportIndex": 3779,
+          "outer": "MainLevel/PersistentLevel/CQFlight_E",
+          "attachParentIndex": 7052,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_E/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -23511.0,
+              -3761.0,
+              13866.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.7071067811865476,
+              0.7071067811865476
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7052,
+          "component": "Root",
+          "class": "SceneComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_E",
+          "sourceActorExportIndex": 3779,
+          "outer": "MainLevel/PersistentLevel/CQFlight_E",
+          "attachParentIndex": 0,
+          "attachParent": null,
+          "attachSocket": null,
+          "relativeLocationUE": {
+            "X": -23511.0,
+            "Y": -3761.0,
+            "Z": 13866.0
+          },
+          "relativeRotationUE": {
+            "Pitch": "+0",
+            "Yaw": -90.0,
+            "Roll": "+0"
+          },
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -23511.0,
+              -3761.0,
+              13866.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.7071067811865476,
+              0.7071067811865476
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7283,
+          "component": "MainSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_E",
+          "sourceActorExportIndex": 3779,
+          "outer": "MainLevel/PersistentLevel/CQFlight_E",
+          "attachParentIndex": 7052,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_E/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -23511.0,
+              -3761.0,
+              13866.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.7071067811865476,
+              0.7071067811865476
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7284,
+          "component": "TutorialSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_E",
+          "sourceActorExportIndex": 3779,
+          "outer": "MainLevel/PersistentLevel/CQFlight_E",
+          "attachParentIndex": 7052,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_E/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -23511.0,
+              -3761.0,
+              13866.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.7071067811865476,
+              0.7071067811865476
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        }
+      ]
+    },
+    {
+      "exportIndex": 3780,
+      "pointer": "/Exports/3779",
+      "name": "CQFlight_H",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 7286,
+        "P_QuestArea1": 6377,
+        "Arrow1": 640,
+        "P_CQArea": 6376,
+        "MainSphere": 7285,
+        "Audio": 664,
+        "Billboard": 1221,
+        "Arrow": 639,
+        "Decal": 5011,
+        "Root": 7053,
+        "ChallengeQuestStruct": {
+          "QuestType_4_9857F59A439E8DAB68BB468BA97C0F89": "E_ChallengeQuestType::NewEnumerator1",
+          "QuestDifficulty_5_D16F050049FC9424971B46A67E6829B7": "E_ChallengeQuestDifficulty::NewEnumerator2",
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 1100000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 850000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 600000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 320000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 100000
+        },
+        "QuestTime": 60.0,
+        "RootComponent": 7053,
+        "Tags": [
+          "MiniMap",
+          "FC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          7053,
+          5011,
+          639,
+          1221,
+          664,
+          7285,
+          6376,
+          640,
+          6377,
+          7286
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-decoded\\MainLevel.json",
+      "components": [
+        {
+          "exportIndex": 639,
+          "component": "Arrow",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_H",
+          "sourceActorExportIndex": 3780,
+          "outer": "MainLevel/PersistentLevel/CQFlight_H",
+          "attachParentIndex": 5011,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_H/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              53299.0,
+              -11632.0,
+              13065.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 640,
+          "component": "Arrow1",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_H",
+          "sourceActorExportIndex": 3780,
+          "outer": "MainLevel/PersistentLevel/CQFlight_H",
+          "attachParentIndex": 7053,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_H/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              53299.0,
+              -11632.0,
+              13065.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 664,
+          "component": "Audio",
+          "class": "AudioComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_H",
+          "sourceActorExportIndex": 3780,
+          "outer": "MainLevel/PersistentLevel/CQFlight_H",
+          "attachParentIndex": 5011,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_H/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              53299.0,
+              -11632.0,
+              13065.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 1221,
+          "component": "Billboard",
+          "class": "BillboardComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_H",
+          "sourceActorExportIndex": 3780,
+          "outer": "MainLevel/PersistentLevel/CQFlight_H",
+          "attachParentIndex": 639,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_H/Arrow",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              53299.0,
+              -11632.0,
+              13065.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 5011,
+          "component": "Decal",
+          "class": "DecalComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_H",
+          "sourceActorExportIndex": 3780,
+          "outer": "MainLevel/PersistentLevel/CQFlight_H",
+          "attachParentIndex": 7053,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_H/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              53299.0,
+              -11632.0,
+              13065.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6376,
+          "component": "P_CQArea",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_H",
+          "sourceActorExportIndex": 3780,
+          "outer": "MainLevel/PersistentLevel/CQFlight_H",
+          "attachParentIndex": 7053,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_H/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              53299.0,
+              -11632.0,
+              13065.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6377,
+          "component": "P_QuestArea1",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_H",
+          "sourceActorExportIndex": 3780,
+          "outer": "MainLevel/PersistentLevel/CQFlight_H",
+          "attachParentIndex": 7053,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_H/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              53299.0,
+              -11632.0,
+              13065.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7053,
+          "component": "Root",
+          "class": "SceneComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_H",
+          "sourceActorExportIndex": 3780,
+          "outer": "MainLevel/PersistentLevel/CQFlight_H",
+          "attachParentIndex": 0,
+          "attachParent": null,
+          "attachSocket": null,
+          "relativeLocationUE": {
+            "X": 53299.0,
+            "Y": -11632.0,
+            "Z": 13065.0
+          },
+          "relativeRotationUE": {
+            "Pitch": "+0",
+            "Yaw": 90.00000762939453,
+            "Roll": "+0"
+          },
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              53299.0,
+              -11632.0,
+              13065.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7285,
+          "component": "MainSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_H",
+          "sourceActorExportIndex": 3780,
+          "outer": "MainLevel/PersistentLevel/CQFlight_H",
+          "attachParentIndex": 7053,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_H/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              53299.0,
+              -11632.0,
+              13065.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7286,
+          "component": "TutorialSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_H",
+          "sourceActorExportIndex": 3780,
+          "outer": "MainLevel/PersistentLevel/CQFlight_H",
+          "attachParentIndex": 7053,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_H/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              53299.0,
+              -11632.0,
+              13065.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.7071068282650276,
+              0.7071067341080643
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        }
+      ]
+    },
+    {
+      "exportIndex": 3781,
+      "pointer": "/Exports/3780",
+      "name": "CQFlight_N",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 7288,
+        "P_QuestArea1": 6379,
+        "Arrow1": 642,
+        "P_CQArea": 6378,
+        "MainSphere": 7287,
+        "Audio": 665,
+        "Billboard": 1222,
+        "Arrow": 641,
+        "Decal": 5012,
+        "Root": 7054,
+        "ChallengeQuestStruct": {
+          "QuestType_4_9857F59A439E8DAB68BB468BA97C0F89": "E_ChallengeQuestType::NewEnumerator1",
+          "QuestDifficulty_5_D16F050049FC9424971B46A67E6829B7": "E_ChallengeQuestDifficulty::NewEnumerator1",
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 1200000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 1000000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 800000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 512000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 256000
+        },
+        "QuestTime": 75.0,
+        "RootComponent": 7054,
+        "Tags": [
+          "MiniMap",
+          "FC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          7054,
+          5012,
+          641,
+          1222,
+          665,
+          7287,
+          6378,
+          642,
+          6379,
+          7288
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-decoded\\MainLevel.json",
+      "components": [
+        {
+          "exportIndex": 641,
+          "component": "Arrow",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_N",
+          "sourceActorExportIndex": 3781,
+          "outer": "MainLevel/PersistentLevel/CQFlight_N",
+          "attachParentIndex": 5012,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_N/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              38556.0,
+              42803.0,
+              14261.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 642,
+          "component": "Arrow1",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_N",
+          "sourceActorExportIndex": 3781,
+          "outer": "MainLevel/PersistentLevel/CQFlight_N",
+          "attachParentIndex": 7054,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_N/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              38556.0,
+              42803.0,
+              14261.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 665,
+          "component": "Audio",
+          "class": "AudioComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_N",
+          "sourceActorExportIndex": 3781,
+          "outer": "MainLevel/PersistentLevel/CQFlight_N",
+          "attachParentIndex": 5012,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_N/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              38556.0,
+              42803.0,
+              14261.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 1222,
+          "component": "Billboard",
+          "class": "BillboardComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_N",
+          "sourceActorExportIndex": 3781,
+          "outer": "MainLevel/PersistentLevel/CQFlight_N",
+          "attachParentIndex": 641,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_N/Arrow",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              38556.0,
+              42803.0,
+              14261.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 5012,
+          "component": "Decal",
+          "class": "DecalComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_N",
+          "sourceActorExportIndex": 3781,
+          "outer": "MainLevel/PersistentLevel/CQFlight_N",
+          "attachParentIndex": 7054,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_N/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              38556.0,
+              42803.0,
+              14261.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6378,
+          "component": "P_CQArea",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_N",
+          "sourceActorExportIndex": 3781,
+          "outer": "MainLevel/PersistentLevel/CQFlight_N",
+          "attachParentIndex": 7054,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_N/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              38556.0,
+              42803.0,
+              14261.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6379,
+          "component": "P_QuestArea1",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_N",
+          "sourceActorExportIndex": 3781,
+          "outer": "MainLevel/PersistentLevel/CQFlight_N",
+          "attachParentIndex": 7054,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_N/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              38556.0,
+              42803.0,
+              14261.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7054,
+          "component": "Root",
+          "class": "SceneComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_N",
+          "sourceActorExportIndex": 3781,
+          "outer": "MainLevel/PersistentLevel/CQFlight_N",
+          "attachParentIndex": 0,
+          "attachParent": null,
+          "attachSocket": null,
+          "relativeLocationUE": {
+            "X": 38556.0,
+            "Y": 42803.0,
+            "Z": 14261.0
+          },
+          "relativeRotationUE": {
+            "Pitch": "+0",
+            "Yaw": -179.9999542236328,
+            "Roll": "+0"
+          },
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              38556.0,
+              42803.0,
+              14261.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7287,
+          "component": "MainSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_N",
+          "sourceActorExportIndex": 3781,
+          "outer": "MainLevel/PersistentLevel/CQFlight_N",
+          "attachParentIndex": 7054,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_N/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              38556.0,
+              42803.0,
+              14261.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7288,
+          "component": "TutorialSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_N",
+          "sourceActorExportIndex": 3781,
+          "outer": "MainLevel/PersistentLevel/CQFlight_N",
+          "attachParentIndex": 7054,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_N/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              38556.0,
+              42803.0,
+              14261.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              -0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        }
+      ]
+    },
+    {
+      "exportIndex": 3782,
+      "pointer": "/Exports/3781",
+      "name": "CQFlight_TU",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 7290,
+        "P_QuestArea1": 6381,
+        "Arrow1": 644,
+        "P_CQArea": 6380,
+        "MainSphere": 7289,
+        "Audio": 666,
+        "Billboard": 1223,
+        "Arrow": 643,
+        "Decal": 5013,
+        "Root": 7055,
+        "ChallengeQuestStruct": {
+          "QuestType_4_9857F59A439E8DAB68BB468BA97C0F89": "E_ChallengeQuestType::NewEnumerator1",
+          "QuestDifficulty_5_D16F050049FC9424971B46A67E6829B7": "E_ChallengeQuestDifficulty::NewEnumerator4",
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 300000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 250000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 200000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 150000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 8000
+        },
+        "QuestTime": 90.0,
+        "RootComponent": 7055,
+        "Tags": [
+          "MiniMap",
+          "FC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          7055,
+          5013,
+          643,
+          1223,
+          666,
+          7289,
+          6380,
+          644,
+          6381,
+          7290
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "source": "E:\\undefeated-web\\research\\exports\\city-decoded\\MainLevel.json",
+      "components": [
+        {
+          "exportIndex": 643,
+          "component": "Arrow",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_TU",
+          "sourceActorExportIndex": 3782,
+          "outer": "MainLevel/PersistentLevel/CQFlight_TU",
+          "attachParentIndex": 5013,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_TU/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -26116.0,
+              -28543.0,
+              13064.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 644,
+          "component": "Arrow1",
+          "class": "ArrowComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_TU",
+          "sourceActorExportIndex": 3782,
+          "outer": "MainLevel/PersistentLevel/CQFlight_TU",
+          "attachParentIndex": 7055,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_TU/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -26116.0,
+              -28543.0,
+              13064.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 666,
+          "component": "Audio",
+          "class": "AudioComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_TU",
+          "sourceActorExportIndex": 3782,
+          "outer": "MainLevel/PersistentLevel/CQFlight_TU",
+          "attachParentIndex": 5013,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_TU/Decal",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -26116.0,
+              -28543.0,
+              13064.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 1223,
+          "component": "Billboard",
+          "class": "BillboardComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_TU",
+          "sourceActorExportIndex": 3782,
+          "outer": "MainLevel/PersistentLevel/CQFlight_TU",
+          "attachParentIndex": 643,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_TU/Arrow",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -26116.0,
+              -28543.0,
+              13064.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 5013,
+          "component": "Decal",
+          "class": "DecalComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_TU",
+          "sourceActorExportIndex": 3782,
+          "outer": "MainLevel/PersistentLevel/CQFlight_TU",
+          "attachParentIndex": 7055,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_TU/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -26116.0,
+              -28543.0,
+              13064.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6380,
+          "component": "P_CQArea",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_TU",
+          "sourceActorExportIndex": 3782,
+          "outer": "MainLevel/PersistentLevel/CQFlight_TU",
+          "attachParentIndex": 7055,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_TU/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -26116.0,
+              -28543.0,
+              13064.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 6381,
+          "component": "P_QuestArea1",
+          "class": "ParticleSystemComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_TU",
+          "sourceActorExportIndex": 3782,
+          "outer": "MainLevel/PersistentLevel/CQFlight_TU",
+          "attachParentIndex": 7055,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_TU/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -26116.0,
+              -28543.0,
+              13064.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7055,
+          "component": "Root",
+          "class": "SceneComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_TU",
+          "sourceActorExportIndex": 3782,
+          "outer": "MainLevel/PersistentLevel/CQFlight_TU",
+          "attachParentIndex": 0,
+          "attachParent": null,
+          "attachSocket": null,
+          "relativeLocationUE": {
+            "X": -26116.0,
+            "Y": -28543.0,
+            "Z": 13064.0
+          },
+          "relativeRotationUE": {
+            "Pitch": "+0",
+            "Yaw": 179.9999542236328,
+            "Roll": "+0"
+          },
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -26116.0,
+              -28543.0,
+              13064.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7289,
+          "component": "MainSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_TU",
+          "sourceActorExportIndex": 3782,
+          "outer": "MainLevel/PersistentLevel/CQFlight_TU",
+          "attachParentIndex": 7055,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_TU/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -26116.0,
+              -28543.0,
+              13064.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        },
+        {
+          "exportIndex": 7290,
+          "component": "TutorialSphere",
+          "class": "SphereComponent",
+          "sourceActor": "MainLevel/PersistentLevel/CQFlight_TU",
+          "sourceActorExportIndex": 3782,
+          "outer": "MainLevel/PersistentLevel/CQFlight_TU",
+          "attachParentIndex": 7055,
+          "attachParent": "MainLevel/PersistentLevel/CQFlight_TU/Root",
+          "attachSocket": null,
+          "relativeLocationUE": null,
+          "relativeRotationUE": null,
+          "relativeScaleUE": null,
+          "absoluteFlags": {},
+          "serializedPropertiesAbsentUseDefaults": true,
+          "composedComponentTransformUE": {
+            "position": [
+              -26116.0,
+              -28543.0,
+              13064.0
+            ],
+            "rotationQuaternion": [
+              0.0,
+              0.0,
+              0.9999999999999202,
+              3.9947416358725856e-07
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+          "visibilityProperties": {},
+          "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+        }
+      ]
+    },
+    {
+      "exportIndex": 119,
+      "pointer": "/Exports/118",
+      "name": "BP_ChallengQuestSpawnPoint2",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 356,
+        "P_QuestArea1": 224,
+        "Arrow1": 25,
+        "P_CQArea": 223,
+        "MainSphere": 355,
+        "Audio": 47,
+        "Billboard": 70,
+        "Arrow": 24,
+        "Decal": 177,
+        "Root": 275,
+        "ChallengeQuestStruct": {
+          "QuestDifficulty_5_D16F050049FC9424971B46A67E6829B7": "E_ChallengeQuestDifficulty::NewEnumerator1",
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 6000000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 3000000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 990000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 650000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 350000
+        },
+        "RootComponent": 275,
+        "Tags": [
+          "MiniMap",
+          "DC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          275,
+          177,
+          24,
+          70,
+          47,
+          355,
+          223,
+          25,
+          224,
+          356
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "components": []
+    },
+    {
+      "exportIndex": 120,
+      "pointer": "/Exports/119",
+      "name": "BP_ChallengQuestSpawnPoint3_4432",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 358,
+        "P_QuestArea1": 226,
+        "Arrow1": 27,
+        "P_CQArea": 225,
+        "MainSphere": 357,
+        "Audio": 48,
+        "Billboard": 71,
+        "Arrow": 26,
+        "Decal": 178,
+        "Root": 276,
+        "ChallengeQuestStruct": {
+          "QuestDifficulty_5_D16F050049FC9424971B46A67E6829B7": "E_ChallengeQuestDifficulty::NewEnumerator2",
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 12000000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 7500000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 2400000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 1500000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 1000000
+        },
+        "RootComponent": 276,
+        "Tags": [
+          "MiniMap",
+          "DC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          276,
+          178,
+          26,
+          71,
+          48,
+          357,
+          225,
+          27,
+          226,
+          358
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "components": []
+    },
+    {
+      "exportIndex": 121,
+      "pointer": "/Exports/120",
+      "name": "BP_ChallengQuestSpawnPoint4_4535",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 360,
+        "P_QuestArea1": 228,
+        "Arrow1": 29,
+        "P_CQArea": 227,
+        "MainSphere": 359,
+        "Audio": 49,
+        "Billboard": 72,
+        "Arrow": 28,
+        "Decal": 179,
+        "Root": 277,
+        "ChallengeQuestStruct": {
+          "QuestType_4_9857F59A439E8DAB68BB468BA97C0F89": "E_ChallengeQuestType::NewEnumerator1",
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 1000000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 512000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 250000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 160000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 80000
+        },
+        "QuestTime": 60.0,
+        "RootComponent": 277,
+        "Tags": [
+          "MiniMap",
+          "FC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          277,
+          179,
+          28,
+          72,
+          49,
+          359,
+          227,
+          29,
+          228,
+          360
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "components": []
+    },
+    {
+      "exportIndex": 122,
+      "pointer": "/Exports/121",
+      "name": "BP_ChallengQuestSpawnPoint5_4554",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 362,
+        "P_QuestArea1": 230,
+        "Arrow1": 31,
+        "P_CQArea": 229,
+        "MainSphere": 361,
+        "Audio": 50,
+        "Billboard": 73,
+        "Arrow": 30,
+        "Decal": 180,
+        "Root": 278,
+        "ChallengeQuestStruct": {
+          "QuestType_4_9857F59A439E8DAB68BB468BA97C0F89": "E_ChallengeQuestType::NewEnumerator1",
+          "QuestDifficulty_5_D16F050049FC9424971B46A67E6829B7": "E_ChallengeQuestDifficulty::NewEnumerator1",
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 1200000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 1000000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 800000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 512000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 256000
+        },
+        "QuestTime": 75.0,
+        "RootComponent": 278,
+        "Tags": [
+          "MiniMap",
+          "FC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          278,
+          180,
+          30,
+          73,
+          50,
+          361,
+          229,
+          31,
+          230,
+          362
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "components": []
+    },
+    {
+      "exportIndex": 123,
+      "pointer": "/Exports/122",
+      "name": "BP_ChallengQuestSpawnPoint6_4573",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 364,
+        "P_QuestArea1": 232,
+        "Arrow1": 33,
+        "P_CQArea": 231,
+        "MainSphere": 363,
+        "Audio": 51,
+        "Billboard": 74,
+        "Arrow": 32,
+        "Decal": 181,
+        "Root": 279,
+        "ChallengeQuestStruct": {
+          "QuestType_4_9857F59A439E8DAB68BB468BA97C0F89": "E_ChallengeQuestType::NewEnumerator1",
+          "QuestDifficulty_5_D16F050049FC9424971B46A67E6829B7": "E_ChallengeQuestDifficulty::NewEnumerator2",
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 1100000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 850000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 600000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 320000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 100000
+        },
+        "QuestTime": 60.0,
+        "RootComponent": 279,
+        "Tags": [
+          "MiniMap",
+          "FC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          279,
+          181,
+          32,
+          74,
+          51,
+          363,
+          231,
+          33,
+          232,
+          364
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "components": []
+    },
+    {
+      "exportIndex": 124,
+      "pointer": "/Exports/123",
+      "name": "BP_ChallengQuestSpawnPoint7",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 366,
+        "P_QuestArea1": 234,
+        "Arrow1": 35,
+        "P_CQArea": 233,
+        "MainSphere": 365,
+        "Audio": 52,
+        "Billboard": 75,
+        "Arrow": 34,
+        "Decal": 182,
+        "Root": 280,
+        "ChallengeQuestStruct": {
+          "QuestDifficulty_5_D16F050049FC9424971B46A67E6829B7": "E_ChallengeQuestDifficulty::NewEnumerator4",
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 450000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 350000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 250000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 15000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 500
+        },
+        "RootComponent": 280,
+        "Tags": [
+          "MiniMap",
+          "DC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          280,
+          182,
+          34,
+          75,
+          52,
+          365,
+          233,
+          35,
+          234,
+          366
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "components": []
+    },
+    {
+      "exportIndex": 125,
+      "pointer": "/Exports/124",
+      "name": "BP_ChallengQuestSpawnPoint8",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 368,
+        "P_QuestArea1": 236,
+        "Arrow1": 37,
+        "P_CQArea": 235,
+        "MainSphere": 367,
+        "Audio": 53,
+        "Billboard": 76,
+        "Arrow": 36,
+        "Decal": 183,
+        "Root": 281,
+        "ChallengeQuestStruct": {
+          "QuestType_4_9857F59A439E8DAB68BB468BA97C0F89": "E_ChallengeQuestType::NewEnumerator1",
+          "QuestDifficulty_5_D16F050049FC9424971B46A67E6829B7": "E_ChallengeQuestDifficulty::NewEnumerator4",
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 300000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 250000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 200000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 150000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 8000
+        },
+        "QuestTime": 90.0,
+        "RootComponent": 281,
+        "Tags": [
+          "MiniMap",
+          "FC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          281,
+          183,
+          36,
+          76,
+          53,
+          367,
+          235,
+          37,
+          236,
+          368
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "components": []
+    },
+    {
+      "exportIndex": 126,
+      "pointer": "/Exports/125",
+      "name": "BP_ChallengQuestSpawnPoint_1206",
+      "class": "BP_ChallengQuestSpawnPoint_C",
+      "properties": {
+        "TutorialSphere": 370,
+        "P_QuestArea1": 238,
+        "Arrow1": 39,
+        "P_CQArea": 237,
+        "MainSphere": 369,
+        "Audio": 54,
+        "Billboard": 77,
+        "Arrow": 38,
+        "Decal": 184,
+        "Root": 282,
+        "ChallengeQuestStruct": {
+          "Score5_15_C15F4D51469F5E8D273A938DE9885C4D": 8000000,
+          "Score4_16_CD8C382C4EF396586DF631A47ECA6855": 5000000,
+          "Score3_17_1C08DA5040CB03010B7EA9815D46BFB4": 950000,
+          "Score2_18_3D60488743A599EBA0A128869670E52F": 700000,
+          "Score1_19_952F2A0A4E0B6218E0CEE2A3883EC7B7": 500000
+        },
+        "RootComponent": 282,
+        "Tags": [
+          "MiniMap",
+          "DC",
+          "CQ"
+        ],
+        "BlueprintCreatedComponents": [
+          282,
+          184,
+          38,
+          77,
+          54,
+          369,
+          237,
+          39,
+          238,
+          370
+        ]
+      },
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "components": []
+    },
+    {
+      "exportIndex": 269,
+      "pointer": "/Exports/268",
+      "name": "PlayerStart_1",
+      "class": "PlayerStart",
+      "properties": {
+        "CapsuleComponent": 169,
+        "GoodSprite": 0,
+        "BadSprite": 0,
+        "RootComponent": 169
+      },
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "components": []
+    }
+  ]
+}

@@ -1,0 +1,471 @@
+{
+  "schemaVersion": 1,
+  "status": "original-sampling-and-emission-recovered; full-original-view-compositing-not-recovered",
+  "sourceMaterial": "/Game/-HeroGame/Maps/SubLevel/LightingTest#export:14",
+  "baseMaterial": "/Game/Skies/Materials/M_Skies_Master",
+  "meshObject": {
+    "id": "LightingTest:22",
+    "assetId": "SM_SkyDome-4c22c8a73d6a",
+    "position": [
+      0.0,
+      4.0,
+      0.0
+    ],
+    "rotation": [
+      -1.514978712618964e-07,
+      -0.30070580573682604,
+      3.3236889795951186e-08,
+      0.9537169487830979
+    ],
+    "scale": [
+      5000.0,
+      5000.0,
+      5000.0
+    ],
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/LightingTest",
+      "actor": "LightingTest/PersistentLevel/BP_Sky_142",
+      "component": "SM_SkyDome",
+      "exportIndex": 22
+    },
+    "componentClass": "StaticMeshComponent",
+    "geometryMode": "template-default",
+    "materialOverrides": [
+      {
+        "slotIndex": 0,
+        "material": {
+          "package": "/Game/-HeroGame/Maps/SubLevel/LightingTest#export:14",
+          "reference": "/Game/-HeroGame/Maps/SubLevel/LightingTest#export:14",
+          "ownerPackage": "/Game/-HeroGame/Maps/SubLevel/LightingTest",
+          "object": "MaterialInstanceDynamic_1",
+          "objectPath": "LightingTest/PersistentLevel/BP_Sky_142/MaterialInstanceDynamic_1",
+          "exportIndex": 14,
+          "isEmbedded": true
+        }
+      }
+    ],
+    "visibilityProperties": {
+      "bVisible": true,
+      "CastShadow": false,
+      "actorHidden": null
+    },
+    "sourceActorVisibilityProperties": {},
+    "sourceLocalTransformUE": {
+      "relativeLocationUE": null,
+      "relativeRotationUE": {
+        "Pitch": -0.30038487911224365,
+        "Yaw": 90.26508331298828,
+        "Roll": 48.605430603027344
+      },
+      "relativeScaleUE": null,
+      "absoluteFlags": {}
+    },
+    "transformCaveat": "Serialized template/instance default composition; construction/runtime mutations are not executed.",
+    "templateRecovery": {
+      "chain": [
+        {
+          "package": "/Game/-HeroGame/Maps/SubLevel/LightingTest",
+          "exportIndex": 22,
+          "objectPath": "LightingTest/PersistentLevel/BP_Sky_142/SM_SkyDome"
+        },
+        {
+          "package": "/Game/Skies/Blueprints/BP_Sky",
+          "exportIndex": 13,
+          "objectPath": "BP_Sky_C/SM_SkyDome_GEN_VARIABLE"
+        }
+      ],
+      "meshPropertySource": {
+        "package": "/Game/Skies/Blueprints/BP_Sky",
+        "exportIndex": 13,
+        "referenceIndex": -47
+      },
+      "materialOverrideSource": {
+        "package": "/Game/-HeroGame/Maps/SubLevel/LightingTest",
+        "exportIndex": 22
+      },
+      "caveat": "Recovered serialized instance/template defaults. Construction-script and runtime reassignment are not executed."
+    }
+  },
+  "sampling": {
+    "textureType": "Texture2D",
+    "parameterName": "HDRI_Cubemap",
+    "sourceTexture": "/Game/Skies/Textures/T_SkyCloudy11",
+    "textureUrl": "/assets/world/textures/Game/Skies/Textures/T_SkyCloudy11.hdr",
+    "width": 8192,
+    "height": 2048,
+    "hdrEncoding": "flat RGBE payload after byte 51; original HDR header -Y 2048 +X 8192",
+    "colorSpace": "linear, original SRGB=false; never apply sRGB decoding to this data",
+    "coordinateFormula": "uvSample = vec2(originalMeshUV0.x, 2.0 * originalMeshUV0.y)",
+    "usesWorldDirection": false,
+    "usesCameraDirection": false,
+    "rowConvention": "preserve source top-to-bottom rows; shader v=0 addresses source top row; apply any API upload inversion exactly once to realize this, not a guessed panorama flip",
+    "wrapMode": "Texture address modes absent in serialized Texture2D properties; UE class-default wrap inferred, not an explicitly serialized override",
+    "filtering": "original PS SampleBias with View.MaterialTextureMipBias; original texture has 14 mips. Single-level RGBE file only preserves top mip. Web mip/filter selection is a boundary.",
+    "axisUVReference": "sampling-evidence.json#/mesh/axisUVSamples"
+  },
+  "formula": {
+    "sample": "h = texture2D(HDRI_Cubemap, uvSample).rgb (linear HDR)",
+    "contrast": "p = componentwise(h > 0 ? exp2(log2(h) * HDRI_Contrast) : 0)",
+    "emissive": "c = p * HDRI_Brightness * HDRI_Tint.rgb; emissive = max(mix(c, SelectionColor.rgb, SelectionColor.a), 0)",
+    "opacity": "alpha = clamp(Opacity, 0, 1)",
+    "noUpperClamp": "Original emissive preserves HDR values above 1; do not clamp or tone-map the texture before applying the material.",
+    "fullPixelBoundary": "Original PS additionally contains view fog, lighting/debug paths and pre-exposure cb0[135].y; this contract covers original texture/emissive/opacity, not full original renderer output."
+  },
+  "effectiveParameters": {
+    "HDRI_Contrast": 1.0,
+    "HDRI_Brightness": 1.0,
+    "HDRI_Tint": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "SelectionColor": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Opacity": 1.0
+  },
+  "bindings": {
+    "pixelShader": {
+      "dxbcLiteralOffsetInExtras": 15769,
+      "lz4CandidateStart": 15622,
+      "lz4ConsumedEnd": 19730,
+      "decodedPrefixHex": "0f00000007000000040000000000000000000000000000000331000004340000ffffffff0900000004000000060000000000000007000000002b0000013c0000021b000103010003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991ed50e5600f7089505f70888051000000004000000080000000c0000000e0000000002000001030000020a0000053b0000061a0001071c000108380001093a00010a0000020b0100020c000003ffffffff",
+      "bytes": 11684,
+      "sha256": "3e035f3f9df181745d28f06717fe5bafbf703d35d1d1c7113ae1da25e0542e9e",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\sky-recovery\\shader-0-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12547,
+          13316,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          6,
+          0,
+          7,
+          11008,
+          15361,
+          16784130,
+          50331907,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          5639893,
+          93653239,
+          92801271
+        ],
+        "textureMap": [
+          4,
+          8,
+          12,
+          14,
+          512,
+          769,
+          2562,
+          15109,
+          16783878,
+          16784391,
+          16791560,
+          16792073,
+          33554442,
+          33554699,
+          50331660,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 3,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 10,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 59,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 26,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 28,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 56,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 58,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 12
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 60,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 27,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          }
+        ]
+      }
+    },
+    "materialConstantBuffer": 3,
+    "textureRegister": 12,
+    "samplerRegister": 3,
+    "emissiveTextureDimension": "texture2d",
+    "vectorRegisters": [
+      {
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "expression": "SelectionColor",
+        "bytesHex": "040000",
+        "offset": 21
+      },
+      {
+        "value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "expression": "HDRI_Tint",
+        "bytesHex": "040100",
+        "offset": 24
+      },
+      {
+        "value": [
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "expression": "HDRI_Tint.rgb",
+        "bytesHex": "0401002303000102ff",
+        "offset": 27
+      },
+      {
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "expression": "SelectionColor.rgb",
+        "bytesHex": "0400002303000102ff",
+        "offset": 36
+      }
+    ],
+    "scalarRegisters": [
+      {
+        "value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "expression": "HDRI_Contrast",
+        "bytesHex": "030000",
+        "offset": 0,
+        "register": 4,
+        "component": "x"
+      },
+      {
+        "value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "expression": "HDRI_Brightness",
+        "bytesHex": "030100",
+        "offset": 3,
+        "register": 4,
+        "component": "y"
+      },
+      {
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "expression": "SelectionColor.a",
+        "bytesHex": "040000230103ffffff",
+        "offset": 6,
+        "register": 4,
+        "component": "z"
+      },
+      {
+        "value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "expression": "Opacity",
+        "bytesHex": "030200",
+        "offset": 15,
+        "register": 4,
+        "component": "w"
+      },
+      {
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "expression": "RefractionDepthBias",
+        "bytesHex": "030300",
+        "offset": 18,
+        "register": 5,
+        "component": "x"
+      }
+    ],
+    "sourceMaterialProperty": "M_Skies_Master Exports/0/Data/0 is EmissiveColor with original expression MaterialExpressionMultiply_4"
+  },
+  "blueprint": {
+    "sourcePackage": "/Game/Skies/Blueprints/BP_Sky",
+    "sourceSha256": "2a294ecd7afe4463fa5e79d0b82072f02b3caf33c0adbc585a4f2a19ad4ad4b8",
+    "construction": {
+      "functionExport": 4,
+      "actions": [
+        "SetVisibility(IsSkyDomeVisibility,false)",
+        "SetWorldRotation(0,0,0)",
+        "CreateDynamicMaterialInstance(MI_Skies); SetMaterial(slot 0, dynamic instance)",
+        "Set HDRI_Brightness = actor.HDRI_Brightness * actor.GlobalBrightness",
+        "Set HDRI_Tint and HDRI_Cubemap from actor properties",
+        "MakeRotator(0,0,HDRI_Rotation); SetWorldRotation",
+        "Set HDRI_Contrast from actor property"
+      ],
+      "lightingTestHDRIRotationDegrees": 35,
+      "geometryAlreadyContainsRotation": true,
+      "worldQuaternionMatchesYaw35MaximumAngleErrorDegrees": 7.488577935532703e-07,
+      "avoidDoubleRotation": "Use original world transform; do not add another 35-degree shader rotation."
+    },
+    "beginPlay": {
+      "entryPoint": 214,
+      "actions": [
+        "WeatherIndex = RandomIntegerInRange(0,1)",
+        "SetActorTickEnabled(true)"
+      ]
+    },
+    "tick": {
+      "entryPoint": 295,
+      "actions": [
+        "DeltaTime = DeltaSeconds",
+        "target = WeatherIndex==0 ? 1 : 0",
+        "WeatherOpacity = Ease(WeatherOpacity,target,DeltaTime*ChangeSpeed, easingEnum=0, BlendExp=2, Steps=2)",
+        "WeatherChangeCounter += DeltaTime",
+        "if WeatherChangeCounter>=ChangeInterval: choose new random WeatherIndex 0..1; reset WeatherChangeCounter=0",
+        "else: HDRI_MInst.SetScalarParameterValue(Opacity,WeatherOpacity)"
+      ],
+      "lightingTestChangeSpeed": 0.07000000029802322,
+      "lightingTestChangeIntervalSeconds": 30,
+      "defaultWeatherOpacity": 1,
+      "runtimeRandomSequenceObserved": false
+    },
+    "cameraAndRotation": "No camera position lookup, camera following, or per-tick rotation call in these exact BP_Sky functions. HDRI_RotationSpeed appears in NameMap but is not used by recovered function AST; do not infer automatic sky rotation from that name.",
+    "staticVsRuntime": "Cooked material snapshot Opacity=1; original BeginPlay/Tick can fade it. Construction/Tick functions were decoded, not executed."
+  },
+  "verification": {
+    "validatedDXBCShaders": 23,
+    "unresolvedDXBCLiterals": 0,
+    "originalFloat16ToRGBEExactSamples": 37,
+    "sourceUVRange": [
+      [
+        3.0517578125e-05,
+        3.0517578125e-05
+      ],
+      [
+        0.99951171875,
+        0.5
+      ]
+    ],
+    "materialPackageUnmodified": true,
+    "sourceGameNotExecuted": true
+  },
+  "files": {
+    "index.json": {
+      "sha256": "b093023c2bfec0f1e3385c581f09620fce94bdea48b3e551c468bf8bc302bde3"
+    },
+    "uniforms.json": {
+      "sha256": "9a41614be79f43bbcde0e210cc2582b15913849763884f75738f183a7d5c5c45"
+    },
+    "sampling-evidence.json": {
+      "sha256": "894058e06738704a7c627b85855929520a35ab84e72fb635f10c0f082360ae8c"
+    },
+    "blueprint-evidence.json": {
+      "sha256": "e5e647cac4d5b863a0918cfa8a265d2b4d2296327dab90765ab3b93ddd56745c"
+    },
+    "UEViewer-ExportTexture.cpp": {
+      "sha256": "2b5bb34ff909b97cbae0be7863fcdcd103c611468e66ab53a49fc777a658facb"
+    }
+  }
+}

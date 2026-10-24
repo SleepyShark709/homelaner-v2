@@ -1,0 +1,241 @@
+{
+  "sourceFiles": {
+    "E:\\undefeated-web\\research\\exports\\decoded\\PlayerBP.json": "019bd742f355abd84590ef35cd0c0739d94db8712ecefcf480cf8494ae2d6072",
+    "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\Action_Male\\Meshes\\SKEL_Male.uasset": "e7a57c2e3588ac88eff946da2c840e19a7d338d56d63cf4664694ad1be568b0c",
+    "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\Action_Male\\Meshes\\SKEL_Male.uexp": "7fd3190cd45a4ed75f8c6ae48e638eebeb632f9e2f7d5fbf577070706fcbfec0",
+    "E:\\undefeated-web\\tools\\asset-pipeline\\uasset-net472\\UAssetGUI.exe": "29f5cf02d359e2d050e44d896105956c587fc8f03ca3c7e70e3fc1d6be69580d",
+    "E:\\undefeated-web\\public\\assets\\animated\\hero.gltf": "0acd9baa8ef43eab525f364b020f7e156f83e47d0ab6a3dc4b28ce02537e60cc",
+    "E:\\undefeated-web\\public\\assets\\animated\\SK_Male_Contemporary_standalone.bin": "07f2ce83afe247919f007eecd4f2c4298c452a7589f49bbe7553577e673a6430",
+    "E:\\undefeated-web\\public\\assets\\animated\\animations.bin": "592aab4610549bc1e7ca18545aa25d93c987b8cc3f18bfa2f47239400198c341",
+    "E:\\undefeated-web\\public\\assets\\animated\\textures\\T_Male_Body_D.png": "2895bd1a3c04dc78c35f9ea741acf9b795879aebb399efb58a1d9cb499828ebf",
+    "E:\\undefeated-web\\public\\assets\\animated\\textures\\T_Contemporary_D.png": "5a4ce0820dab1ebc67054085a63fc171ef50ed7f7da2a40e75f48b817b79ca37",
+    "E:\\undefeated-web\\public\\assets\\original\\hair\\hair.gltf": "3734a569edfb083e0be4fa8e4850028e67899d66932f977b4186dea0b2ded23f",
+    "E:\\undefeated-web\\public\\assets\\original\\hair\\SK_Hair_001_pompadour.bin": "40793dd35462c20e32a980c2262c7c771f01586890ea6e82735a1af3072a5971",
+    "E:\\undefeated-web\\public\\assets\\original\\hair\\textures\\T_Hair1_color.png": "862be74ff1b346111d9839cafdf6fe92cb3c119067f6a282ec1e6fcf2e54dafe",
+    "E:\\undefeated-web\\public\\assets\\original\\sunglasses\\sunglasses.gltf": "ab5a54442018a0100d2172d44f621fdfab0d9a05572e1af4be90487e254a558d",
+    "E:\\undefeated-web\\public\\assets\\original\\sunglasses\\SK_Sunglasses.bin": "18db1ff2aecd784b2b057e65b161ad5c3c2a73631987ad68c3b0e743513954b5"
+  },
+  "socketSource": {
+    "asset": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\Action_Male\\Meshes\\SKEL_Male.uasset",
+    "exportIndex": 1,
+    "objectName": "SkeletalMeshSocket_0",
+    "properties": {
+      "SocketName": "head_accessories",
+      "BoneName": "head",
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 1.5,
+        "Roll": 0.0
+      }
+    }
+  },
+  "socketGltfTransform": {
+    "translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.009255741791487056,
+      -0.009255741791487056,
+      -0.7070462016331672,
+      0.7070462016331672
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "socketBindWorldMatrix": [
+    [
+      1.000001128276113,
+      -1.1413154079280293e-06,
+      -8.845378625695071e-07,
+      -8.363185403748723e-07
+    ],
+    [
+      1.1385434119287257e-06,
+      0.9999961497044668,
+      -0.0031362317992171714,
+      1.6551623977641945
+    ],
+    [
+      8.839892719334723e-07,
+      0.0031362323819487635,
+      0.999995021427791,
+      -0.03977570211855907
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "attachments": [
+    {
+      "name": "SK_Hair",
+      "scsExport": 127,
+      "scsName": "SCS_Node_5",
+      "componentExport": 134,
+      "attachTo": "head_accessories",
+      "relativeTransform": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          -0.0,
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "retainedAccessorySkinJointCount": 2,
+      "componentNode": 98,
+      "sourceAsset": -227
+    },
+    {
+      "name": "SK_Sunglasses",
+      "scsExport": 110,
+      "scsName": "SCS_Node_27",
+      "componentExport": 135,
+      "attachTo": "head_accessories",
+      "relativeTransform": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          -0.0,
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "retainedAccessorySkinJointCount": 2,
+      "componentNode": 102,
+      "sourceAsset": -229
+    }
+  ],
+  "accessoryBindBoundsMeters": {
+    "hair/SK_Hair_001_pompadour": {
+      "min": [
+        -0.09259003295500795,
+        1.6428248122798734,
+        -0.14205369854852776
+      ],
+      "max": [
+        0.09258797156564566,
+        1.8510607824622032,
+        0.10327015542168377
+      ]
+    },
+    "sunglasses/SK_Sunglasses": {
+      "min": [
+        -0.0807678747069461,
+        1.6795084968682321,
+        -0.023791916471564215
+      ],
+      "max": [
+        0.08076588677784131,
+        1.7155741348715756,
+        0.09082376236674758
+      ]
+    }
+  },
+  "originalCharacterMeshTransform": {
+    "RelativeLocation": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": -99.5
+    },
+    "RelativeRotation": {
+      "Pitch": 0.0,
+      "Yaw": -90.0,
+      "Roll": 0.0
+    },
+    "RelativeScale3D": {
+      "X": 1.0499999523162842,
+      "Y": 1.0499999523162842,
+      "Z": 1.0499999523162842
+    }
+  },
+  "meshMetadata": {
+    "forwardAxis": "+Z",
+    "upAxis": "+Y",
+    "units": "meters",
+    "gameplayScaleApplied": false,
+    "suggestedGameplayUniformScale": 1.0499999523162842,
+    "bindPoseBodyBoundsMeters": {
+      "min": [
+        -0.6933372616767883,
+        -0.004566127434372902,
+        -0.20799168944358826
+      ],
+      "max": [
+        0.6933368444442749,
+        1.8257546424865723,
+        0.16575853526592255
+      ]
+    },
+    "bindPoseSoleY": -0.004566127434372902,
+    "bindPoseAssembledBoundsMeters": {
+      "min": [
+        -0.6933372616767883,
+        -0.004566127434372902,
+        -0.20799168944358826
+      ],
+      "max": [
+        0.6933368444442749,
+        1.8510607824622032,
+        0.16575853526592255
+      ]
+    },
+    "idleFirstFrameSoleY": -0.024180633592101094,
+    "idleFirstFrameBodyTopY": 1.7934444295498257,
+    "originalCapsuleMeshOffsetApplied": false
+  },
+  "forwardEvidenceToeMinusAnkleMeters": {
+    "l": [
+      0.008324465823678878,
+      -0.10654024685142277,
+      0.1642906513856753
+    ],
+    "r": [
+      -0.008323946263059767,
+      -0.10654016498215024,
+      0.1642892715128903
+    ]
+  },
+  "checks": {
+    "original93JointSkinUnchanged": true,
+    "originalFourAnimationsUnchanged": true,
+    "originalBoneTransformsUnchanged": true,
+    "totalSkins": 3,
+    "totalNodes": 103,
+    "bufferBoundsValid": true,
+    "allIdleSkinnedVertexHeightsFinite": true,
+    "accessorySkinBindMaxError": 0
+  },
+  "output": "E:\\undefeated-web\\public\\assets\\character\\hero.gltf",
+  "outputSha256": "ad1d62dea05401db6f6f76e2e931c58614a277703f1ce93ec6a755e331c49e40",
+  "limitations": [
+    "原材质由先前Web材质转换提供，此装配不重新调色。",
+    "装配挂点来自静态资产；尚未复刻摘墨镜动画与手部挂点切换。",
+    "脚底高度随动作变化，当前仅计算绑定姿势和待机第0帧，不是运行时全动作地面IK。"
+  ]
+}

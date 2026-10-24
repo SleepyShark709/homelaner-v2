@@ -1,0 +1,102 @@
+[
+  {
+    "Path": "\\Config\\CrashReportClient\\UE4CC-Windows-24BA246D458D3672FC00D2BD58027540\\CrashReportClient.ini",
+    "Bytes": 112,
+    "SHA256": "FFD2F515D5B546C4D9F3A65C58AF871CFE2C11812AE3CBD7A5B3A15718906B65"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\Compat.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\DeviceProfiles.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\Engine.ini",
+    "Bytes": 1538,
+    "SHA256": "543540FF17867BE598AD8C55961E83CF2EC65C0F10EB2A43BD74CFFEDC093AC3"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\Game.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\GameUserSettings.ini",
+    "Bytes": 1041,
+    "SHA256": "127B374627D87CD2232894E8B6360E3DACE972640C6BD27EB5E91690261F4040"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\Hardware.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\Input.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\LiveLink.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\MagicLeap.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\MagicLeapLightEstimation.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\MotoSynth.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\Niagara.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\Paper2D.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\PhysXVehicles.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\RuntimeOptions.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\Scalability.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\Synthesis.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\Config\\WindowsNoEditor\\VariantManagerContent.ini",
+    "Bytes": 2,
+    "SHA256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "\\SaveGames\\SaveData.sav",
+    "Bytes": 4558,
+    "SHA256": "559F6BF1DFA8A2FE23390B3FDEF2FE5F7F97474664E907B58CC202B6A0672DBB"
+  }
+]

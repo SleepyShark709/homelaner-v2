@@ -1,0 +1,20 @@
+[
+  {
+    "name": "BP_CityManager",
+    "exit": 0,
+    "sourceSha256": "ad6394e94dff4fe300a757dd6919bfccd436b087bb0d63ac5a18583c8104dbef",
+    "decodedSha256": "2421176824b0a62ee63e2bc24004588e2b545f9fd7b62f2bb3a8d7484ec4fb00"
+  },
+  {
+    "name": "BP_StoryManager",
+    "exit": 0,
+    "sourceSha256": "ec54f4f7f5a3c672ab4db97c6bda764ca7bcb5aa21fc7c3d8c2339be447ca914",
+    "decodedSha256": "741b68e57fd2ebb2f51b60ecda84245d0da0f5f364cddbf593465d5a9b71c433"
+  },
+  {
+    "name": "HeroGameMode",
+    "exit": 0,
+    "sourceSha256": "40ede8e9c32c8bb50841a6b627a58d51a7712a45e11729500c5c01f417ce3abb",
+    "decodedSha256": "1c893a771c343a3ea807093a39399ccd66cb5f650b39bfee21cf40ff0026c8a4"
+  }
+]

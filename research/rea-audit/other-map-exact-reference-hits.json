@@ -1,0 +1,2098 @@
+{
+  "hits": [
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/262",
+      "value": "DPropTest",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/293",
+      "value": "FPropTest",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/100/Parameters/1/Value",
+      "value": "DPropTest",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "DPropTest"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -127,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "DPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 2807
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": 2132415627
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/103/Parameters/1/Value",
+      "value": "FPropTest",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "FPropTest"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -127,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "FPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 2877
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": 729314509
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/150/Parameters/1/Value",
+      "value": "FPropTest",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "FPropTest"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "FPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 2882
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": 1957970422
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/152/Parameters/1/Value",
+      "value": "DPropTest",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "DPropTest"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "DPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 2812
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": 1955897148
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/218/Parameters/1/Value",
+      "value": "DPropTest",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "DPropTest"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -127,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "DPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 5816
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": -706632969
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/221/Parameters/1/Value",
+      "value": "FPropTest",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "FPropTest"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -127,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "FPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 5886
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": 1623436694
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/236/Parameters/1/Value",
+      "value": "FPropTest",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "FPropTest"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "FPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 5891
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": -648334194
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/238/Parameters/1/Value",
+      "value": "DPropTest",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "DPropTest"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "DPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 5821
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": -1101321736
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/250/Parameters/1/Value",
+      "value": "DPropTest",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "DPropTest"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "DPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 3855
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": -1425597596
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/259/Parameters/1/Value",
+      "value": "FPropTest",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "FPropTest"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "FPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 3860
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": -159429137
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/269/Parameters/1/Value",
+      "value": "DPropTest",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "DPropTest"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "DPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 4221
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": -1646835228
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/278/Parameters/1/Value",
+      "value": "FPropTest",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "FPropTest"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "FPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 4226
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": 971915485
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/453/Parameters/1/Value",
+      "value": "FPropTest",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "FPropTest"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "FPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 5986
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": -434683453
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/455/Parameters/1/Value",
+      "value": "DPropTest",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "DPropTest"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "DPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 6342
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": 503186493
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "TestBossLevelFire",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\BP_CityManager.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/307",
+      "value": "TestBossLevelFire",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelLightning",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\BP_CityManager.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/308",
+      "value": "TestBossLevelLightning",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelWind",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\BP_CityManager.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/309",
+      "value": "TestBossLevelWind",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelLightning",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\BP_CityManager.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_CityManager",
+      "jsonPath": "/Exports/0/ScriptBytecode/9/Expression/Value",
+      "value": "TestBossLevelLightning",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "TestBossLevelLightning"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Let, UAssetAPI",
+        "Value": {
+          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+          "New": {
+            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+            "Path": [
+              "Temp_name_Variable_7"
+            ],
+            "ResolvedOwner": 1
+          }
+        },
+        "Variable": {
+          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+          "Variable": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [
+                "Temp_name_Variable_7"
+              ],
+              "ResolvedOwner": 1
+            }
+          }
+        },
+        "Expression": {
+          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+          "Value": "TestBossLevelLightning"
+        }
+      }
+    },
+    {
+      "targetMap": "TestBossLevelFire",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\BP_CityManager.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_CityManager",
+      "jsonPath": "/Exports/0/ScriptBytecode/10/Expression/Value",
+      "value": "TestBossLevelFire",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "TestBossLevelFire"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Let, UAssetAPI",
+        "Value": {
+          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+          "New": {
+            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+            "Path": [
+              "Temp_name_Variable_8"
+            ],
+            "ResolvedOwner": 1
+          }
+        },
+        "Variable": {
+          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+          "Variable": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [
+                "Temp_name_Variable_8"
+              ],
+              "ResolvedOwner": 1
+            }
+          }
+        },
+        "Expression": {
+          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+          "Value": "TestBossLevelFire"
+        }
+      }
+    },
+    {
+      "targetMap": "TestBossLevelWind",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\BP_CityManager.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_CityManager",
+      "jsonPath": "/Exports/0/ScriptBytecode/11/Expression/Value",
+      "value": "TestBossLevelWind",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "TestBossLevelWind"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Let, UAssetAPI",
+        "Value": {
+          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+          "New": {
+            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+            "Path": [
+              "Temp_name_Variable_9"
+            ],
+            "ResolvedOwner": 1
+          }
+        },
+        "Variable": {
+          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+          "Variable": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [
+                "Temp_name_Variable_9"
+              ],
+              "ResolvedOwner": 1
+            }
+          }
+        },
+        "Expression": {
+          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+          "Value": "TestBossLevelWind"
+        }
+      }
+    },
+    {
+      "targetMap": "TestBossLevelWind",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\BP_CityManager.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_CityManager",
+      "jsonPath": "/Exports/0/ScriptBytecode/116/Expression/Value",
+      "value": "TestBossLevelWind",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "TestBossLevelWind"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Let, UAssetAPI",
+        "Value": {
+          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+          "New": {
+            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+            "Path": [
+              "Temp_name_Variable_15"
+            ],
+            "ResolvedOwner": 1
+          }
+        },
+        "Variable": {
+          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+          "Variable": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [
+                "Temp_name_Variable_15"
+              ],
+              "ResolvedOwner": 1
+            }
+          }
+        },
+        "Expression": {
+          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+          "Value": "TestBossLevelWind"
+        }
+      }
+    },
+    {
+      "targetMap": "TestBossLevelFire",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\BP_CityManager.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_CityManager",
+      "jsonPath": "/Exports/0/ScriptBytecode/117/Expression/Value",
+      "value": "TestBossLevelFire",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "TestBossLevelFire"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Let, UAssetAPI",
+        "Value": {
+          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+          "New": {
+            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+            "Path": [
+              "Temp_name_Variable_16"
+            ],
+            "ResolvedOwner": 1
+          }
+        },
+        "Variable": {
+          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+          "Variable": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [
+                "Temp_name_Variable_16"
+              ],
+              "ResolvedOwner": 1
+            }
+          }
+        },
+        "Expression": {
+          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+          "Value": "TestBossLevelFire"
+        }
+      }
+    },
+    {
+      "targetMap": "TestBossLevelLightning",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-blueprints\\BP_CityManager.json",
+      "exportIndex": 1,
+      "exportName": "ExecuteUbergraph_BP_CityManager",
+      "jsonPath": "/Exports/0/ScriptBytecode/118/Expression/Value",
+      "value": "TestBossLevelLightning",
+      "kind": "bytecode-exact-name-or-string",
+      "isOwnPackage": false,
+      "expression": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+        "Value": "TestBossLevelLightning"
+      },
+      "statementContext": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Let, UAssetAPI",
+        "Value": {
+          "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+          "New": {
+            "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+            "Path": [
+              "Temp_name_Variable_17"
+            ],
+            "ResolvedOwner": 1
+          }
+        },
+        "Variable": {
+          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_LocalVariable, UAssetAPI",
+          "Variable": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [
+                "Temp_name_Variable_17"
+              ],
+              "ResolvedOwner": 1
+            }
+          }
+        },
+        "Expression": {
+          "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+          "Value": "TestBossLevelLightning"
+        }
+      }
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\DPropTest.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/6",
+      "value": "/Game/-HeroGame/Maps/SubLevel/DPropTest",
+      "kind": "name-table-only",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\DPropTest.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/154",
+      "value": "DPropTest",
+      "kind": "name-table-only",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\DPropTest.json",
+      "exportIndex": 331,
+      "exportName": "DPropTest",
+      "jsonPath": "/Exports/330/ObjectName",
+      "value": "DPropTest",
+      "kind": "serialized-reference-or-value",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\FPropTest.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/2",
+      "value": "/Game/-HeroGame/Maps/SubLevel/FPropTest",
+      "kind": "name-table-only",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\FPropTest.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/72",
+      "value": "FPropTest",
+      "kind": "name-table-only",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\FPropTest.json",
+      "exportIndex": 151,
+      "exportName": "FPropTest",
+      "jsonPath": "/Exports/150/ObjectName",
+      "value": "FPropTest",
+      "kind": "serialized-reference-or-value",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "TestBossLevelFire",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelFire.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/14",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelFire",
+      "kind": "name-table-only",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "TestBossLevelFire",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelFire.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/289",
+      "value": "TestBossLevelFire",
+      "kind": "name-table-only",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "TestBossLevelFire",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelFire.json",
+      "exportIndex": 80,
+      "exportName": "TestBossLevelFire",
+      "jsonPath": "/Exports/79/ObjectName",
+      "value": "TestBossLevelFire",
+      "kind": "serialized-reference-or-value",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "TestBossLevelLightning",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelLightning.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/14",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelLightning",
+      "kind": "name-table-only",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "TestBossLevelLightning",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelLightning.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/277",
+      "value": "TestBossLevelLightning",
+      "kind": "name-table-only",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "TestBossLevelLightning",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelLightning.json",
+      "exportIndex": 76,
+      "exportName": "TestBossLevelLightning",
+      "jsonPath": "/Exports/75/ObjectName",
+      "value": "TestBossLevelLightning",
+      "kind": "serialized-reference-or-value",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "TestBossLevelWind",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelWind.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/3",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelWind",
+      "kind": "name-table-only",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "TestBossLevelWind",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelWind.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/254",
+      "value": "TestBossLevelWind",
+      "kind": "name-table-only",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "TestBossLevelWind",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestBossLevelWind.json",
+      "exportIndex": 76,
+      "exportName": "TestBossLevelWind",
+      "jsonPath": "/Exports/75/ObjectName",
+      "value": "TestBossLevelWind",
+      "kind": "serialized-reference-or-value",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/42",
+      "value": "/Game/-HeroGame/Maps/SubLevel/DPropTest",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/43",
+      "value": "/Game/-HeroGame/Maps/SubLevel/DPropTest.DPropTest",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/46",
+      "value": "/Game/-HeroGame/Maps/SubLevel/FPropTest",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/47",
+      "value": "/Game/-HeroGame/Maps/SubLevel/FPropTest.FPropTest",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelFire",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/50",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelFire",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelFire",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/51",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelFire.TestBossLevelFire",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelLightning",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/52",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelLightning",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelLightning",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/53",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelLightning.TestBossLevelLightning",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelWind",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/54",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelWind",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelWind",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/55",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelWind.TestBossLevelWind",
+      "kind": "name-table-only",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/56",
+      "value": "/Game/-HeroGame/Maps/TestLevel",
+      "kind": "name-table-only",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "TestLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": null,
+      "exportName": null,
+      "jsonPath": "/NameMap/1222",
+      "value": "TestLevel",
+      "kind": "name-table-only",
+      "isOwnPackage": true
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": 204,
+      "exportName": "LevelStreamingKismet_0",
+      "jsonPath": "/Exports/203/Data/0/Value/AssetPath/AssetName",
+      "value": "/Game/-HeroGame/Maps/SubLevel/DPropTest.DPropTest",
+      "kind": "soft-object-reference",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": 205,
+      "exportName": "LevelStreamingKismet_1",
+      "jsonPath": "/Exports/204/Data/0/Value/AssetPath/AssetName",
+      "value": "/Game/-HeroGame/Maps/SubLevel/FPropTest.FPropTest",
+      "kind": "soft-object-reference",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelWind",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": 207,
+      "exportName": "LevelStreamingKismet_3",
+      "jsonPath": "/Exports/206/Data/0/Value/AssetPath/AssetName",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelWind.TestBossLevelWind",
+      "kind": "soft-object-reference",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelFire",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": 208,
+      "exportName": "LevelStreamingKismet_4",
+      "jsonPath": "/Exports/207/Data/0/Value/AssetPath/AssetName",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelFire.TestBossLevelFire",
+      "kind": "soft-object-reference",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelLightning",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": 209,
+      "exportName": "LevelStreamingKismet_5",
+      "jsonPath": "/Exports/208/Data/0/Value/AssetPath/AssetName",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelLightning.TestBossLevelLightning",
+      "kind": "soft-object-reference",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestLevel",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": 969,
+      "exportName": "TestLevel",
+      "jsonPath": "/Exports/968/ObjectName",
+      "value": "TestLevel",
+      "kind": "serialized-reference-or-value",
+      "isOwnPackage": true
+    }
+  ],
+  "calls": [
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/100",
+      "callee": "LoadStreamLevel",
+      "node": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -127,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "DPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 2807
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": 2132415627
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/103",
+      "callee": "LoadStreamLevel",
+      "node": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -127,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "FPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 2877
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": 729314509
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/150",
+      "callee": "UnloadStreamLevel",
+      "node": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "FPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 2882
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": 1957970422
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/152",
+      "callee": "UnloadStreamLevel",
+      "node": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "DPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 2812
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": 1955897148
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/218",
+      "callee": "LoadStreamLevel",
+      "node": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -127,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "DPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 5816
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": -706632969
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/221",
+      "callee": "LoadStreamLevel",
+      "node": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -127,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "FPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_True, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 5886
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": 1623436694
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/236",
+      "callee": "UnloadStreamLevel",
+      "node": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "FPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 5891
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": -648334194
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/238",
+      "callee": "UnloadStreamLevel",
+      "node": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "DPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 5821
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": -1101321736
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/250",
+      "callee": "UnloadStreamLevel",
+      "node": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "DPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 3855
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": -1425597596
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/259",
+      "callee": "UnloadStreamLevel",
+      "node": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "FPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 3860
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": -159429137
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/269",
+      "callee": "UnloadStreamLevel",
+      "node": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "DPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 4221
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": -1646835228
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/278",
+      "callee": "UnloadStreamLevel",
+      "node": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "FPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 4226
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": 971915485
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/453",
+      "callee": "UnloadStreamLevel",
+      "node": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "FPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 5986
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": -434683453
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    },
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded\\-HeroGame\\BP\\Game\\BP_ChallengQuestSpawnPoint.json",
+      "exportIndex": 1,
+      "function": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint",
+      "jsonPath": "/Exports/0/ScriptBytecode/455",
+      "callee": "UnloadStreamLevel",
+      "node": {
+        "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_CallMath, UAssetAPI",
+        "StackNode": -128,
+        "Parameters": [
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+            "Value": "DPropTest"
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_StructConst, UAssetAPI",
+            "Struct": -270,
+            "StructSize": 32,
+            "Value": [
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_SkipOffsetConst, UAssetAPI",
+                "Value": 6342
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_IntConst, UAssetAPI",
+                "Value": 503186493
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_NameConst, UAssetAPI",
+                "Value": "ExecuteUbergraph_BP_ChallengQuestSpawnPoint"
+              },
+              {
+                "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_Self, UAssetAPI"
+              }
+            ]
+          },
+          {
+            "$type": "UAssetAPI.Kismet.Bytecode.Expressions.EX_False, UAssetAPI"
+          }
+        ]
+      }
+    }
+  ],
+  "softObjects": [
+    {
+      "targetMap": "DPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": 204,
+      "exportName": "LevelStreamingKismet_0",
+      "jsonPath": "/Exports/203/Data/0/Value/AssetPath/AssetName",
+      "value": "/Game/-HeroGame/Maps/SubLevel/DPropTest.DPropTest",
+      "kind": "soft-object-reference",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "FPropTest",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": 205,
+      "exportName": "LevelStreamingKismet_1",
+      "jsonPath": "/Exports/204/Data/0/Value/AssetPath/AssetName",
+      "value": "/Game/-HeroGame/Maps/SubLevel/FPropTest.FPropTest",
+      "kind": "soft-object-reference",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelWind",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": 207,
+      "exportName": "LevelStreamingKismet_3",
+      "jsonPath": "/Exports/206/Data/0/Value/AssetPath/AssetName",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelWind.TestBossLevelWind",
+      "kind": "soft-object-reference",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelFire",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": 208,
+      "exportName": "LevelStreamingKismet_4",
+      "jsonPath": "/Exports/207/Data/0/Value/AssetPath/AssetName",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelFire.TestBossLevelFire",
+      "kind": "soft-object-reference",
+      "isOwnPackage": false
+    },
+    {
+      "targetMap": "TestBossLevelLightning",
+      "source": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "exportIndex": 209,
+      "exportName": "LevelStreamingKismet_5",
+      "jsonPath": "/Exports/208/Data/0/Value/AssetPath/AssetName",
+      "value": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelLightning.TestBossLevelLightning",
+      "kind": "soft-object-reference",
+      "isOwnPackage": false
+    }
+  ]
+}

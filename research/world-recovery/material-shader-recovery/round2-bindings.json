@@ -1,0 +1,1791 @@
+{
+  "materials": {
+    "/Game/GTFreeMaterials/Materials/Ground_GrassThickGreen": {
+      "package": "/Game/GTFreeMaterials/Materials/Ground_GrassThickGreen",
+      "materialConstantBuffer": 2,
+      "textures": {
+        "14": {
+          "package": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_h1",
+          "parameter": null,
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "15": {
+          "package": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_n",
+          "parameter": null,
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "16": {
+          "package": "/Game/GTFreeMaterials/Textures/T_MacroVariation2",
+          "parameter": null,
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        },
+        "17": {
+          "package": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_alb",
+          "parameter": null,
+          "textureParameterIndex": 3,
+          "resourceIndex": 6
+        },
+        "18": {
+          "package": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_g",
+          "parameter": null,
+          "textureParameterIndex": 4,
+          "resourceIndex": 8
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 12
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 15
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 0,
+          "register": 2,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Macro_roughnessContrast",
+          "bytesHex": "030000",
+          "offset": 9,
+          "register": 2,
+          "component": "y"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 15638,
+        "lz4CandidateStart": 15463,
+        "lz4ConsumedEnd": 19511,
+        "decodedPrefixHex": "0d00000006000000040000000000000000000000000000000a340000ffffffff0c0000000400000000000000050000000a000000002b0000020100020303000204050002050700020609000201270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991e00000000f7089805810ac50c1700000004000000000000000e000000130000000002000001030000020400000305000004060000050700000608000007090000080a0000090b00000e0000020f0200021004000211060002120800020b2600030c2800030d2a0003ffffffff",
+        "bytes": 11096,
+        "sha256": "c0d733d115c91e6d607f1bf7f98c1a76a8888f7d12a3951ac626521f46768089",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Ground_GrassThickGreen\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 13,
+          "srvMap": [
+            4,
+            0,
+            0,
+            0,
+            13322,
+            4294967295
+          ],
+          "samplerMap": [
+            4,
+            0,
+            5,
+            10,
+            11008,
+            33554690,
+            33555203,
+            33555716,
+            33556229,
+            33556742,
+            50341633,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            0,
+            93849847,
+            214239873
+          ],
+          "textureMap": [
+            4,
+            0,
+            14,
+            19,
+            512,
+            769,
+            1026,
+            1283,
+            1540,
+            1797,
+            2054,
+            2311,
+            2568,
+            2825,
+            33554446,
+            33554959,
+            33555472,
+            33555985,
+            33556498,
+            50341387,
+            50341900,
+            50342413,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 3,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 4,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 5,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 6,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 7,
+              "bindIndex": 5
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 8,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 9,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 10,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 9
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 0,
+              "bindIndex": 14
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 2,
+              "bindIndex": 15
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 4,
+              "bindIndex": 16
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 6,
+              "bindIndex": 17
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 8,
+              "bindIndex": 18
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 38,
+              "bindIndex": 11
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 40,
+              "bindIndex": 12
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 42,
+              "bindIndex": 13
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 1,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 3,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 5,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 7,
+              "bindIndex": 5
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 9,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 3,
+              "resourceIndex": 39,
+              "bindIndex": 1
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\GTFreeMaterials\\Materials\\Ground_GrassThickGreen.json",
+        "decodedSha256": "b43b3f5ef71be10ff01251e43d3eac5ba47085419d08c9932d6529260aa6918f",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\GTFreeMaterials\\Materials\\Ground_GrassThickGreen.uasset",
+            "existsLocally": true,
+            "bytes": 2766,
+            "sha256": "b5da2dda1e587e78d38e485725e439a5503f2df172936bd22b82b58e13dfc71e"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\GTFreeMaterials\\Materials\\Ground_GrassThickGreen.uexp",
+            "existsLocally": true,
+            "bytes": 122007,
+            "sha256": "f353c3887302557ec6473c2b31423b55a9dca6a24e51decf1d78db9321394bc7"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\GTFreeMaterials\\Materials\\Ground_GrassThickGreen.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Ground_GrassThickGreen\\index.json",
+      "instanceStaticPermutationCheck": "No serialized bHasStaticPermutationResource=true; named instance parameters evaluated against inherited original shader",
+      "literalEvidence": {
+        "0.100000": {
+          "value": 0.10000000149011612,
+          "dxbcByteOffsets": [
+            1696
+          ]
+        },
+        "-0.036000": {
+          "value": -0.035999998450279236,
+          "dxbcByteOffsets": [
+            1704
+          ]
+        },
+        "0.800000": {
+          "value": 0.800000011920929,
+          "dxbcByteOffsets": [
+            2136
+          ]
+        },
+        "0.213400": {
+          "value": 0.2134000062942505,
+          "dxbcByteOffsets": [
+            2492,
+            2496
+          ]
+        },
+        "0.053410": {
+          "value": 0.05341000109910965,
+          "dxbcByteOffsets": [
+            2500,
+            2504
+          ]
+        },
+        "0.002000": {
+          "value": 0.0020000000949949026,
+          "dxbcByteOffsets": [
+            2708,
+            2712,
+            10196
+          ]
+        },
+        "0.200000": {
+          "value": 0.20000000298023224,
+          "dxbcByteOffsets": [
+            2588,
+            2672
+          ]
+        },
+        "0.500000": {
+          "value": 0.5,
+          "dxbcByteOffsets": [
+            2796,
+            3040,
+            3044,
+            3048,
+            3456,
+            3460,
+            3464,
+            5340,
+            5344,
+            5348,
+            10236,
+            10676,
+            10680,
+            10684,
+            10696,
+            10700,
+            10704,
+            10832
+          ]
+        },
+        "0.400000": {
+          "value": 0.4000000059604645,
+          "variantValues": {
+            "scalarMacroMultiply": 0.3999999761581421,
+            "vectorColorPower": 0.4000000059604645
+          },
+          "candidates": [
+            {
+              "value": 0.3999999761581421,
+              "dxbcByteOffsets": [
+                2880
+              ]
+            },
+            {
+              "value": 0.4000000059604645,
+              "dxbcByteOffsets": [
+                3140,
+                3144,
+                3148
+              ]
+            }
+          ],
+          "note": "Disassembly rounds both to six decimals; scalar multiply adjacent to 0.6 differs from repeated xyz power literal."
+        },
+        "0.600000": {
+          "value": 0.6000000238418579,
+          "dxbcByteOffsets": [
+            2888
+          ]
+        },
+        "0.824033": {
+          "value": 0.8240334987640381,
+          "dxbcByteOffsets": [
+            2920
+          ]
+        },
+        "0.185000": {
+          "value": 0.1850000023841858,
+          "dxbcByteOffsets": [
+            2924
+          ]
+        },
+        "0.000100": {
+          "value": 9.999999747378752e-05,
+          "dxbcByteOffsets": [
+            3340,
+            8340
+          ]
+        },
+        "-3.500000": {
+          "value": -3.5,
+          "dxbcByteOffsets": [
+            3728
+          ]
+        },
+        "0.150000": {
+          "value": 0.15000000596046448,
+          "dxbcByteOffsets": [
+            4728,
+            4868
+          ]
+        }
+      }
+    },
+    "/Game/ModularStreetPack/Materials/Concrete_Mat": {
+      "package": "/Game/ModularStreetPack/Materials/Concrete_Mat",
+      "materialConstantBuffer": 1,
+      "textures": {
+        "15": {
+          "package": "/Game/ModularStreetPack/Textures/T_Concrete_NRM",
+          "parameter": null,
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "16": {
+          "package": "/Game/ModularStreetPack/Textures/T_Concrete",
+          "parameter": null,
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "17": {
+          "package": "/Game/ModularStreetPack/Textures/T_Mildew_GradientMap",
+          "parameter": null,
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        },
+        "18": {
+          "package": "/Game/ModularStreetPack/Textures/T_Mildew_Map",
+          "parameter": null,
+          "textureParameterIndex": 3,
+          "resourceIndex": 6
+        },
+        "19": {
+          "package": "/Game/ModularStreetPack/Textures/T_Concrete_Roughness",
+          "parameter": null,
+          "textureParameterIndex": 4,
+          "resourceIndex": 8
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 15
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 18
+        },
+        {
+          "value": [
+            0.0,
+            0.10499999672174454,
+            0.0002704918442759663,
+            1.0
+          ],
+          "expression": "Mildew Color",
+          "bytesHex": "040100",
+          "offset": 27
+        },
+        {
+          "value": [
+            0.0,
+            0.10499999672174454,
+            0.0002704918442759663,
+            0.0
+          ],
+          "expression": "Mildew Color.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 30
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 0,
+          "register": 4,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.02568800002336502,
+            0.02568800002336502,
+            0.02568800002336502,
+            0.02568800002336502
+          ],
+          "expression": "Mildew Gradient Amount",
+          "bytesHex": "030000",
+          "offset": 9,
+          "register": 4,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Mildew Amount",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 4,
+          "component": "z"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 9203,
+        "lz4CandidateStart": 9025,
+        "lz4ConsumedEnd": 12652,
+        "decodedPrefixHex": "07000000060000000300000000000000000000000a3100000b340000ffffffff0b000000030000000400000009000000002b0000020100010303000104050001050700010609000101270002ffffffff04000000000000000000000000000000ffffffff03000000f407991ef708b805810ac50c16000000030000000d000000120000000002000001030000020400000305000004060000050700000608000007090000080a0000090b00000f000001100200011104000112060001130800010c2600020d2800020e2a0002ffffffff",
+        "bytes": 9640,
+        "sha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 7,
+          "srvMap": [
+            3,
+            0,
+            0,
+            12554,
+            13323,
+            4294967295
+          ],
+          "samplerMap": [
+            3,
+            4,
+            9,
+            11008,
+            16777474,
+            16777987,
+            16778500,
+            16779013,
+            16779526,
+            33564417,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            95946999,
+            214239873
+          ],
+          "textureMap": [
+            3,
+            13,
+            18,
+            512,
+            769,
+            1026,
+            1283,
+            1540,
+            1797,
+            2054,
+            2311,
+            2568,
+            2825,
+            16777231,
+            16777744,
+            16778257,
+            16778770,
+            16779283,
+            33564172,
+            33564685,
+            33565198,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 3,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 4,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 5,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 6,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 7,
+              "bindIndex": 5
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 8,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 9,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 10,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 9
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 0,
+              "bindIndex": 15
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 2,
+              "bindIndex": 16
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 4,
+              "bindIndex": 17
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 6,
+              "bindIndex": 18
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 8,
+              "bindIndex": 19
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 38,
+              "bindIndex": 12
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 40,
+              "bindIndex": 13
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 42,
+              "bindIndex": 14
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 1,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 3,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 5,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 7,
+              "bindIndex": 5
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 9,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 39,
+              "bindIndex": 1
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ModularStreetPack\\Materials\\Concrete_Mat.json",
+        "decodedSha256": "3dc1a72e1463dec331d21171ae83e8104d5ef8a2d8d766845df12e76fe8e6dc0",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ModularStreetPack\\Materials\\Concrete_Mat.uasset",
+            "existsLocally": true,
+            "bytes": 2361,
+            "sha256": "01c29e9a02d4362217bf5de6fd6e8b73b397577521c98a29d4c06d7c1e675514"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ModularStreetPack\\Materials\\Concrete_Mat.uexp",
+            "existsLocally": true,
+            "bytes": 57021,
+            "sha256": "ea4aabea43897c8b7c937186f6d9ee063b523d0a11f8dd02be5f4acc44f673f4"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ModularStreetPack\\Materials\\Concrete_Mat.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\index.json",
+      "instanceStaticPermutationCheck": "No serialized bHasStaticPermutationResource=true; named instance parameters evaluated against inherited original shader"
+    },
+    "/Game/ModularStreetPack/Materials/Material_Instances/Concrete_Mat_Inst": {
+      "package": "/Game/ModularStreetPack/Materials/Concrete_Mat",
+      "materialConstantBuffer": 1,
+      "textures": {
+        "15": {
+          "package": "/Game/ModularStreetPack/Textures/T_Concrete_NRM",
+          "parameter": null,
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "16": {
+          "package": "/Game/ModularStreetPack/Textures/T_Concrete",
+          "parameter": null,
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "17": {
+          "package": "/Game/ModularStreetPack/Textures/T_Mildew_GradientMap",
+          "parameter": null,
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        },
+        "18": {
+          "package": "/Game/ModularStreetPack/Textures/T_Mildew_Map",
+          "parameter": null,
+          "textureParameterIndex": 3,
+          "resourceIndex": 6
+        },
+        "19": {
+          "package": "/Game/ModularStreetPack/Textures/T_Concrete_Roughness",
+          "parameter": null,
+          "textureParameterIndex": 4,
+          "resourceIndex": 8
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 15
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 18
+        },
+        {
+          "value": [
+            0.0,
+            0.07000000029802322,
+            0.00018000000272877514,
+            1.0
+          ],
+          "expression": "Mildew Color",
+          "bytesHex": "040100",
+          "offset": 27
+        },
+        {
+          "value": [
+            0.0,
+            0.07000000029802322,
+            0.00018000000272877514,
+            0.0
+          ],
+          "expression": "Mildew Color.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 30
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 0,
+          "register": 4,
+          "component": "x"
+        },
+        {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "expression": "Mildew Gradient Amount",
+          "bytesHex": "030000",
+          "offset": 9,
+          "register": 4,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Mildew Amount",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 4,
+          "component": "z"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 9203,
+        "lz4CandidateStart": 9025,
+        "lz4ConsumedEnd": 12652,
+        "decodedPrefixHex": "07000000060000000300000000000000000000000a3100000b340000ffffffff0b000000030000000400000009000000002b0000020100010303000104050001050700010609000101270002ffffffff04000000000000000000000000000000ffffffff03000000f407991ef708b805810ac50c16000000030000000d000000120000000002000001030000020400000305000004060000050700000608000007090000080a0000090b00000f000001100200011104000112060001130800010c2600020d2800020e2a0002ffffffff",
+        "bytes": 9640,
+        "sha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 7,
+          "srvMap": [
+            3,
+            0,
+            0,
+            12554,
+            13323,
+            4294967295
+          ],
+          "samplerMap": [
+            3,
+            4,
+            9,
+            11008,
+            16777474,
+            16777987,
+            16778500,
+            16779013,
+            16779526,
+            33564417,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            95946999,
+            214239873
+          ],
+          "textureMap": [
+            3,
+            13,
+            18,
+            512,
+            769,
+            1026,
+            1283,
+            1540,
+            1797,
+            2054,
+            2311,
+            2568,
+            2825,
+            16777231,
+            16777744,
+            16778257,
+            16778770,
+            16779283,
+            33564172,
+            33564685,
+            33565198,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 3,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 4,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 5,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 6,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 7,
+              "bindIndex": 5
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 8,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 9,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 10,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 9
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 0,
+              "bindIndex": 15
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 2,
+              "bindIndex": 16
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 4,
+              "bindIndex": 17
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 6,
+              "bindIndex": 18
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 8,
+              "bindIndex": 19
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 38,
+              "bindIndex": 12
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 40,
+              "bindIndex": 13
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 42,
+              "bindIndex": 14
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 1,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 3,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 5,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 7,
+              "bindIndex": 5
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 9,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 39,
+              "bindIndex": 1
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ModularStreetPack\\Materials\\Concrete_Mat.json",
+        "decodedSha256": "3dc1a72e1463dec331d21171ae83e8104d5ef8a2d8d766845df12e76fe8e6dc0",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ModularStreetPack\\Materials\\Concrete_Mat.uasset",
+            "existsLocally": true,
+            "bytes": 2361,
+            "sha256": "01c29e9a02d4362217bf5de6fd6e8b73b397577521c98a29d4c06d7c1e675514"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ModularStreetPack\\Materials\\Concrete_Mat.uexp",
+            "existsLocally": true,
+            "bytes": 57021,
+            "sha256": "ea4aabea43897c8b7c937186f6d9ee063b523d0a11f8dd02be5f4acc44f673f4"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ModularStreetPack\\Materials\\Concrete_Mat.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\index.json",
+      "instanceStaticPermutationCheck": "No serialized bHasStaticPermutationResource=true; named instance parameters evaluated against inherited original shader"
+    },
+    "/Game/ModularStreetPack/Materials/Material_Instances/Concrete_Mat_Inst2": {
+      "package": "/Game/ModularStreetPack/Materials/Concrete_Mat",
+      "materialConstantBuffer": 1,
+      "textures": {
+        "15": {
+          "package": "/Game/ModularStreetPack/Textures/T_Concrete_NRM",
+          "parameter": null,
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "16": {
+          "package": "/Game/ModularStreetPack/Textures/T_Concrete",
+          "parameter": null,
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "17": {
+          "package": "/Game/ModularStreetPack/Textures/T_Mildew_GradientMap",
+          "parameter": null,
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        },
+        "18": {
+          "package": "/Game/ModularStreetPack/Textures/T_Mildew_Map",
+          "parameter": null,
+          "textureParameterIndex": 3,
+          "resourceIndex": 6
+        },
+        "19": {
+          "package": "/Game/ModularStreetPack/Textures/T_Concrete_Roughness",
+          "parameter": null,
+          "textureParameterIndex": 4,
+          "resourceIndex": 8
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 15
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 18
+        },
+        {
+          "value": [
+            0.0,
+            0.07000000029802322,
+            0.00018000000272877514,
+            1.0
+          ],
+          "expression": "Mildew Color",
+          "bytesHex": "040100",
+          "offset": 27
+        },
+        {
+          "value": [
+            0.0,
+            0.07000000029802322,
+            0.00018000000272877514,
+            0.0
+          ],
+          "expression": "Mildew Color.rgb",
+          "bytesHex": "0401002303000102ff",
+          "offset": 30
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 0,
+          "register": 4,
+          "component": "x"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Mildew Gradient Amount",
+          "bytesHex": "030000",
+          "offset": 9,
+          "register": 4,
+          "component": "y"
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "Mildew Amount",
+          "bytesHex": "030100",
+          "offset": 12,
+          "register": 4,
+          "component": "z"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 9203,
+        "lz4CandidateStart": 9025,
+        "lz4ConsumedEnd": 12652,
+        "decodedPrefixHex": "07000000060000000300000000000000000000000a3100000b340000ffffffff0b000000030000000400000009000000002b0000020100010303000104050001050700010609000101270002ffffffff04000000000000000000000000000000ffffffff03000000f407991ef708b805810ac50c16000000030000000d000000120000000002000001030000020400000305000004060000050700000608000007090000080a0000090b00000f000001100200011104000112060001130800010c2600020d2800020e2a0002ffffffff",
+        "bytes": 9640,
+        "sha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 7,
+          "srvMap": [
+            3,
+            0,
+            0,
+            12554,
+            13323,
+            4294967295
+          ],
+          "samplerMap": [
+            3,
+            4,
+            9,
+            11008,
+            16777474,
+            16777987,
+            16778500,
+            16779013,
+            16779526,
+            33564417,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            95946999,
+            214239873
+          ],
+          "textureMap": [
+            3,
+            13,
+            18,
+            512,
+            769,
+            1026,
+            1283,
+            1540,
+            1797,
+            2054,
+            2311,
+            2568,
+            2825,
+            16777231,
+            16777744,
+            16778257,
+            16778770,
+            16779283,
+            33564172,
+            33564685,
+            33565198,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 3,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 4,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 5,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 6,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 7,
+              "bindIndex": 5
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 8,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 9,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 10,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 9
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 0,
+              "bindIndex": 15
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 2,
+              "bindIndex": 16
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 4,
+              "bindIndex": 17
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 6,
+              "bindIndex": 18
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 8,
+              "bindIndex": 19
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 38,
+              "bindIndex": 12
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 40,
+              "bindIndex": 13
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 42,
+              "bindIndex": 14
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 1,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 3,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 5,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 7,
+              "bindIndex": 5
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 9,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 39,
+              "bindIndex": 1
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-materials\\UNDEFEATED\\Content\\ModularStreetPack\\Materials\\Concrete_Mat.json",
+        "decodedSha256": "3dc1a72e1463dec331d21171ae83e8104d5ef8a2d8d766845df12e76fe8e6dc0",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ModularStreetPack\\Materials\\Concrete_Mat.uasset",
+            "existsLocally": true,
+            "bytes": 2361,
+            "sha256": "01c29e9a02d4362217bf5de6fd6e8b73b397577521c98a29d4c06d7c1e675514"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ModularStreetPack\\Materials\\Concrete_Mat.uexp",
+            "existsLocally": true,
+            "bytes": 57021,
+            "sha256": "ea4aabea43897c8b7c937186f6d9ee063b523d0a11f8dd02be5f4acc44f673f4"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\exports\\unpacked\\UNDEFEATED\\Content\\ModularStreetPack\\Materials\\Concrete_Mat.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\index.json",
+      "instanceStaticPermutationCheck": "No serialized bHasStaticPermutationResource=true; named instance parameters evaluated against inherited original shader"
+    },
+    "/Game/UrbanCity/Materials/Tileable/cobbleStone_01_Mat": {
+      "package": "/Game/UrbanCity/Materials/Tileable/cobbleStone_01_Mat",
+      "materialConstantBuffer": 1,
+      "textures": {
+        "13": {
+          "package": "/Game/UrbanCity/Textures/Tileable/cobbleStone_01_n",
+          "parameter": null,
+          "textureParameterIndex": 0,
+          "resourceIndex": 0
+        },
+        "14": {
+          "package": "/Game/UrbanCity/Textures/Tileable/cobbleStone_01_d",
+          "parameter": null,
+          "textureParameterIndex": 1,
+          "resourceIndex": 2
+        },
+        "15": {
+          "package": "/Game/UrbanCity/Textures/Tileable/cobbleStone_01_r",
+          "parameter": null,
+          "textureParameterIndex": 2,
+          "resourceIndex": 4
+        }
+      },
+      "vectorRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor",
+          "bytesHex": "040000",
+          "offset": 9
+        },
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.rgb",
+          "bytesHex": "0400002303000102ff",
+          "offset": 12
+        }
+      ],
+      "scalarRegisters": [
+        {
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expression": "SelectionColor.a",
+          "bytesHex": "040000230103ffffff",
+          "offset": 0,
+          "register": 2,
+          "component": "x"
+        }
+      ],
+      "shader": {
+        "dxbcLiteralOffsetInExtras": 8819,
+        "lz4CandidateStart": 8665,
+        "lz4ConsumedEnd": 11829,
+        "decodedPrefixHex": "070000000500000003000000000000000000000009310000ffffffff09000000030000000400000007000000002b000002010001030300010405000101270002ffffffff04000000000000000000000000000000ffffffff03000000f407991eff0d7000810ac50c13000000030000000c0000000f0000000002000001030000020400000305000004060000050700000608000007090000080b00000d0000010e0200010f0400010a2600020b2800020c2a0002ffffffff",
+        "bytes": 7968,
+        "sha256": "9c9d80d6b25289ef764b47ad1a1f87d193ec80125679a508ffef03069aff21ee",
+        "stage": "ps_5_0",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-0-ps_5_0.asm",
+        "resourceTable": {
+          "resourceTableBits": 7,
+          "srvMap": [
+            3,
+            0,
+            0,
+            12553,
+            4294967295
+          ],
+          "samplerMap": [
+            3,
+            4,
+            7,
+            11008,
+            16777474,
+            16777987,
+            16778500,
+            33564417,
+            4294967295
+          ],
+          "uavMap": [
+            0,
+            0,
+            0,
+            4294967295
+          ],
+          "layoutHashes": [
+            513345524,
+            7343615,
+            214239873
+          ],
+          "textureMap": [
+            3,
+            12,
+            15,
+            512,
+            769,
+            1026,
+            1283,
+            1540,
+            1797,
+            2054,
+            2311,
+            2824,
+            16777229,
+            16777742,
+            16778255,
+            33564170,
+            33564683,
+            33565196,
+            4294967295
+          ],
+          "textureBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 2,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 3,
+              "bindIndex": 1
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 4,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 5,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 6,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 7,
+              "bindIndex": 5
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 8,
+              "bindIndex": 6
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 9,
+              "bindIndex": 7
+            },
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 11,
+              "bindIndex": 8
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 0,
+              "bindIndex": 13
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 2,
+              "bindIndex": 14
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 4,
+              "bindIndex": 15
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 38,
+              "bindIndex": 10
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 40,
+              "bindIndex": 11
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 42,
+              "bindIndex": 12
+            }
+          ],
+          "samplerBindings": [
+            {
+              "constantBuffer": 0,
+              "resourceIndex": 43,
+              "bindIndex": 0
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 1,
+              "bindIndex": 2
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 3,
+              "bindIndex": 3
+            },
+            {
+              "constantBuffer": 1,
+              "resourceIndex": 5,
+              "bindIndex": 4
+            },
+            {
+              "constantBuffer": 2,
+              "resourceIndex": 39,
+              "bindIndex": 1
+            }
+          ]
+        }
+      },
+      "source": {
+        "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Tileable\\cobbleStone_01_Mat.json",
+        "decodedSha256": "a175501aa21145b7701d10f94e82f2c398432b8656b654bfdb9ef2c7019baaf4",
+        "exportPointer": "/Exports/0",
+        "sourceFiles": [
+          {
+            "extension": ".uasset",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Tileable\\cobbleStone_01_Mat.uasset",
+            "existsLocally": true,
+            "bytes": 1772,
+            "sha256": "3a11b4132b0bf07ba6f917e13c4de5ac3fadcdad5521555dd3fdabbce4c22516"
+          },
+          {
+            "extension": ".uexp",
+            "presentInPak": true,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Tileable\\cobbleStone_01_Mat.uexp",
+            "existsLocally": true,
+            "bytes": 54347,
+            "sha256": "706dcf2f7305749636bba1d9796a63eda4a68b79377e357ff95b18574b83daa7"
+          },
+          {
+            "extension": ".ubulk",
+            "presentInPak": false,
+            "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Tileable\\cobbleStone_01_Mat.ubulk",
+            "existsLocally": false,
+            "notReadReason": "Bulk payload intentionally not extracted"
+          }
+        ]
+      },
+      "indexFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\index.json",
+      "instanceStaticPermutationCheck": "No serialized bHasStaticPermutationResource=true; named instance parameters evaluated against inherited original shader",
+      "literalEvidence": {
+        "0.389381": {
+          "value": 0.3893809914588928,
+          "dxbcByteOffsets": [
+            2812,
+            2952
+          ]
+        }
+      }
+    }
+  },
+  "provenance": "Original cooked shader bytes, frozen uniforms, complete D3D11 tables and DXBC; not REA retained Evidence"
+}

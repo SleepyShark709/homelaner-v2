@@ -1,0 +1,471 @@
+Found 4158 game files (0 skipped) in 148 folders at path "E:/undefeated-web/research/exports/world-unpacked"
+Scanned game directory in 0.0 sec, 4579 allocs, 0.00 MBytes serialized in 0 calls.
+Loading package: UNDEFEATED/Content/Action_Male/Meshes/SK_Male_Contemporary.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 198 Exports: 4 Imports: 21 Game: 10001B0
+Export "SK_Male_Contemporary" was found in package "UNDEFEATED/Content/Action_Male/Meshes/SK_Male_Contemporary.uasset"
+Found 1 object(s)
+Loading SkeletalMesh4 SK_Male_Contemporary from package UNDEFEATED/Content/Action_Male/Meshes/SK_Male_Contemporary.uasset
+Loading package: UNDEFEATED/Content/Action_Male/Meshes/SKEL_Male.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 259 Exports: 20 Imports: 5 Game: 10001B0
+BoolProperty: unknown USkeletalMesh4 bEnablePerPolyCollision
+Loading package: UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 94 Exports: 1 Imports: 41 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Materials/M_ShadowTrim.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 59 Exports: 1 Imports: 11 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Materials/M_Eye.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 107 Exports: 1 Imports: 25 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_AllBlack.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 80 Exports: 1 Imports: 23 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_BAW.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 66 Exports: 1 Imports: 23 Game: 10001B0
+Loading Skeleton SKEL_Male from package UNDEFEATED/Content/Action_Male/Meshes/SKEL_Male.uasset
+StructProperty: unknown USkeleton VirtualBoneGuid
+Loading MorphTarget Smile from package UNDEFEATED/Content/Action_Male/Meshes/SK_Male_Contemporary.uasset
+Loading MorphTarget Open_mouth from package UNDEFEATED/Content/Action_Male/Meshes/SK_Male_Contemporary.uasset
+Loading MaterialInstanceConstant MI_Body_asian from package UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.uasset
+Loading package: UNDEFEATED/Content/Action_Male/Materials/MI_Body_black.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 87 Exports: 1 Imports: 39 Game: 10001B0
+ArrayProperty: unknown UMaterialInstanceConstant CachedReferencedTextures
+Loading Material3 M_ShadowTrim from package UNDEFEATED/Content/Action_Male/Materials/M_ShadowTrim.uasset
+Loading Material3 M_Eye from package UNDEFEATED/Content/Action_Male/Materials/M_Eye.uasset
+StructProperty: unknown UMaterial3 Metallic
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_R.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 23 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_N_Ydown.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 26 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_AO.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 23 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_D.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 19 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Black.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 23 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_SSS.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 21 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_EyeMask.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 17 Exports: 1 Imports: 3 Game: 10001B0
+Loading MaterialInstanceConstant MI_Clothes_Contemporary_AllBlack from package UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_AllBlack.uasset
+Loading package: UNDEFEATED/Content/Action_Male/Materials/M_Clothes_master.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 94 Exports: 1 Imports: 29 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Contemporary_AO.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 17 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Contemporary_D.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 17 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Contemporary_ID.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 17 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Contemporary_M.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 17 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Contemporary_N_Ydown.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 26 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Contemporary_R.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 17 Exports: 1 Imports: 3 Game: 10001B0
+ArrayProperty: unknown UMaterialInstanceConstant CachedReferencedTextures
+Loading MaterialInstanceConstant MI_Clothes_Contemporary_BAW from package UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_BAW.uasset
+ArrayProperty: unknown UMaterialInstanceConstant CachedReferencedTextures
+Loading MaterialInstanceConstant MI_Body_black from package UNDEFEATED/Content/Action_Male/Materials/MI_Body_black.uasset
+Loading package: UNDEFEATED/Content/Action_Male/Materials/M_Body_master.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 138 Exports: 1 Imports: 47 Game: 10001B0
+ArrayProperty: unknown UMaterialInstanceConstant CachedReferencedTextures
+Loading Texture2D T_Male_Body_R from package UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_R.uasset
+Loading Texture2D T_Male_Body_N_Ydown from package UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_N_Ydown.uasset
+Loading Texture2D T_Male_Body_AO from package UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_AO.uasset
+Loading Texture2D T_Male_Body_D from package UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_D.uasset
+Loading Texture2D T_Black from package UNDEFEATED/Content/Action_Male/Textures/T_Black.uasset
+Loading Texture2D T_Male_Body_SSS from package UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_SSS.uasset
+Loading Texture2D T_Male_Body_EyeMask from package UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_EyeMask.uasset
+Loading Material3 M_Clothes_master from package UNDEFEATED/Content/Action_Male/Materials/M_Clothes_master.uasset
+StructProperty: unknown UMaterial3 Metallic
+Loading Texture2D T_Contemporary_AO from package UNDEFEATED/Content/Action_Male/Textures/T_Contemporary_AO.uasset
+Loading Texture2D T_Contemporary_D from package UNDEFEATED/Content/Action_Male/Textures/T_Contemporary_D.uasset
+Loading Texture2D T_Contemporary_ID from package UNDEFEATED/Content/Action_Male/Textures/T_Contemporary_ID.uasset
+Loading Texture2D T_Contemporary_M from package UNDEFEATED/Content/Action_Male/Textures/T_Contemporary_M.uasset
+Loading Texture2D T_Contemporary_N_Ydown from package UNDEFEATED/Content/Action_Male/Textures/T_Contemporary_N_Ydown.uasset
+Loading Texture2D T_Contemporary_R from package UNDEFEATED/Content/Action_Male/Textures/T_Contemporary_R.uasset
+Loading Material3 M_Body_master from package UNDEFEATED/Content/Action_Male/Materials/M_Body_master.uasset
+StructProperty: unknown UMaterial3 Metallic
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_N_Ydown_smooth.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 26 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_AO_smooth.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 23 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_D_smooth.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 21 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_Beard_Mask.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 17 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_ID.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 26 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_Scalp_Mask.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 17 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_White.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 23 Exports: 1 Imports: 3 Game: 10001B0
+Loading package: UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_PowerMask.uasset Ver: 522/0 Engine: 0 [Unversioned] Names: 19 Exports: 1 Imports: 3 Game: 10001B0
+Loading Texture2D T_Male_Body_N_Ydown_smooth from package UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_N_Ydown_smooth.uasset
+Loading Texture2D T_Male_Body_AO_smooth from package UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_AO_smooth.uasset
+Loading Texture2D T_Male_Body_D_smooth from package UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_D_smooth.uasset
+Loading Texture2D T_Male_Body_Beard_Mask from package UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_Beard_Mask.uasset
+Loading Texture2D T_Male_Body_ID from package UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_ID.uasset
+Loading Texture2D T_Male_Body_Scalp_Mask from package UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_Scalp_Mask.uasset
+Loading Texture2D T_White from package UNDEFEATED/Content/Action_Male/Textures/T_White.uasset
+Loading Texture2D T_Male_Body_PowerMask from package UNDEFEATED/Content/Action_Male/Textures/T_Male_Body_PowerMask.uasset
+Loaded in 0.0 sec, 1659 allocs, 6.23 MBytes serialized in 505 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh4 ObjectName: SK_Male_Contemporary
+    Skeleton = Skeleton'UNDEFEATED/Content/Action_Male/Meshes/SKEL_Male.SKEL_Male'
+    bHasVertexColors = true
+    LODInfo[5] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[0] = {}
+            BonesToRemove[0] = {}
+            BonesToPrioritize[0] = {}
+            SourceImportFilename = ""
+        }
+        LODInfo[1] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[0] = {}
+            BonesToRemove[0] = {}
+            BonesToPrioritize[0] = {}
+            SourceImportFilename = ""
+        }
+        LODInfo[2] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[0] = {}
+            BonesToRemove[0] = {}
+            BonesToPrioritize[0] = {}
+            SourceImportFilename = ""
+        }
+        LODInfo[3] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[0] = {}
+            BonesToRemove[0] = {}
+            BonesToPrioritize[0] = {}
+            SourceImportFilename = ""
+        }
+        LODInfo[4] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[0] = {}
+            BonesToRemove[0] = {}
+            BonesToPrioritize[0] = {}
+            SourceImportFilename = ""
+        }
+    }
+    MorphTargets[2] =
+    {
+        MorphTargets[0] = MorphTarget'UNDEFEATED/Content/Action_Male/Meshes/SK_Male_Contemporary.Smile'
+        MorphTargets[1] = MorphTarget'UNDEFEATED/Content/Action_Male/Meshes/SK_Male_Contemporary.Open_mouth'
+    }
+    Sockets[0] = {}
+    SamplingInfo =
+    {
+        Regions[0] = {}
+        BuiltData =
+        {
+            WholeMeshBuiltData[5] = { , , , ,  }
+            RegionBuiltData[0] = {}
+        }
+    }
+    SkinWeightProfiles[0] = {}
+    NumVertexColorChannels = 0
+
+    Lods[5] =
+    {
+        Lods[0] =
+        {
+            Sections[8] =
+            {
+                Sections[0] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 0
+                    NumFaces = 4580
+                }
+                Sections[1] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 13740
+                    NumFaces = 7008
+                }
+                Sections[2] =
+                {
+                    Material = Material3'UNDEFEATED/Content/Action_Male/Materials/M_ShadowTrim.M_ShadowTrim'
+                    FirstIndex = 34764
+                    NumFaces = 104
+                }
+                Sections[3] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 35076
+                    NumFaces = 574
+                }
+                Sections[4] =
+                {
+                    Material = Material3'UNDEFEATED/Content/Action_Male/Materials/M_Eye.M_Eye'
+                    FirstIndex = 36798
+                    NumFaces = 2688
+                }
+                Sections[5] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_AllBlack.MI_Clothes_Contemporary_AllBlack'
+                    FirstIndex = 44862
+                    NumFaces = 3596
+                }
+                Sections[6] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_AllBlack.MI_Clothes_Contemporary_AllBlack'
+                    FirstIndex = 55650
+                    NumFaces = 2374
+                }
+                Sections[7] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_BAW.MI_Clothes_Contemporary_BAW'
+                    FirstIndex = 62772
+                    NumFaces = 2266
+                }
+            }
+            NumVerts = 69570
+            IndexCount = 0
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[8] =
+            {
+                Sections[0] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 0
+                    NumFaces = 2601
+                }
+                Sections[1] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 7803
+                    NumFaces = 2165
+                }
+                Sections[2] =
+                {
+                    Material = Material3'UNDEFEATED/Content/Action_Male/Materials/M_ShadowTrim.M_ShadowTrim'
+                    FirstIndex = 14298
+                    NumFaces = 37
+                }
+                Sections[3] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 14409
+                    NumFaces = 388
+                }
+                Sections[4] =
+                {
+                    Material = Material3'UNDEFEATED/Content/Action_Male/Materials/M_Eye.M_Eye'
+                    FirstIndex = 15573
+                    NumFaces = 350
+                }
+                Sections[5] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_AllBlack.MI_Clothes_Contemporary_AllBlack'
+                    FirstIndex = 16623
+                    NumFaces = 1738
+                }
+                Sections[6] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_AllBlack.MI_Clothes_Contemporary_AllBlack'
+                    FirstIndex = 21837
+                    NumFaces = 2133
+                }
+                Sections[7] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_BAW.MI_Clothes_Contemporary_BAW'
+                    FirstIndex = 28236
+                    NumFaces = 2182
+                }
+            }
+            NumVerts = 7484
+            IndexCount = 34782
+            NumTexCoords = 1
+        }
+        Lods[2] =
+        {
+            Sections[8] =
+            {
+                Sections[0] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 0
+                    NumFaces = 1435
+                }
+                Sections[1] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 4305
+                    NumFaces = 719
+                }
+                Sections[2] =
+                {
+                    Material = Material3'UNDEFEATED/Content/Action_Male/Materials/M_ShadowTrim.M_ShadowTrim'
+                    FirstIndex = 6462
+                    NumFaces = 14
+                }
+                Sections[3] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 6504
+                    NumFaces = 194
+                }
+                Sections[4] =
+                {
+                    Material = Material3'UNDEFEATED/Content/Action_Male/Materials/M_Eye.M_Eye'
+                    FirstIndex = 7086
+                    NumFaces = 152
+                }
+                Sections[5] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_AllBlack.MI_Clothes_Contemporary_AllBlack'
+                    FirstIndex = 7542
+                    NumFaces = 664
+                }
+                Sections[6] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_AllBlack.MI_Clothes_Contemporary_AllBlack'
+                    FirstIndex = 9534
+                    NumFaces = 1210
+                }
+                Sections[7] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_BAW.MI_Clothes_Contemporary_BAW'
+                    FirstIndex = 13164
+                    NumFaces = 1408
+                }
+            }
+            NumVerts = 4168
+            IndexCount = 17388
+            NumTexCoords = 1
+        }
+        Lods[3] =
+        {
+            Sections[8] =
+            {
+                Sections[0] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 0
+                    NumFaces = 644
+                }
+                Sections[1] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 1932
+                    NumFaces = 386
+                }
+                Sections[2] =
+                {
+                    Material = Material3'UNDEFEATED/Content/Action_Male/Materials/M_ShadowTrim.M_ShadowTrim'
+                    FirstIndex = 3090
+                    NumFaces = 6
+                }
+                Sections[3] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 3108
+                    NumFaces = 98
+                }
+                Sections[4] =
+                {
+                    Material = Material3'UNDEFEATED/Content/Action_Male/Materials/M_Eye.M_Eye'
+                    FirstIndex = 3402
+                    NumFaces = 82
+                }
+                Sections[5] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_AllBlack.MI_Clothes_Contemporary_AllBlack'
+                    FirstIndex = 3648
+                    NumFaces = 324
+                }
+                Sections[6] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_AllBlack.MI_Clothes_Contemporary_AllBlack'
+                    FirstIndex = 4620
+                    NumFaces = 620
+                }
+                Sections[7] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_BAW.MI_Clothes_Contemporary_BAW'
+                    FirstIndex = 6480
+                    NumFaces = 738
+                }
+            }
+            NumVerts = 2440
+            IndexCount = 8694
+            NumTexCoords = 1
+        }
+        Lods[4] =
+        {
+            Sections[8] =
+            {
+                Sections[0] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 0
+                    NumFaces = 306
+                }
+                Sections[1] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 918
+                    NumFaces = 218
+                }
+                Sections[2] =
+                {
+                    Material = Material3'UNDEFEATED/Content/Action_Male/Materials/M_ShadowTrim.M_ShadowTrim'
+                    FirstIndex = 1572
+                    NumFaces = 4
+                }
+                Sections[3] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Body_asian.MI_Body_asian'
+                    FirstIndex = 1584
+                    NumFaces = 48
+                }
+                Sections[4] =
+                {
+                    Material = Material3'UNDEFEATED/Content/Action_Male/Materials/M_Eye.M_Eye'
+                    FirstIndex = 1728
+                    NumFaces = 56
+                }
+                Sections[5] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_AllBlack.MI_Clothes_Contemporary_AllBlack'
+                    FirstIndex = 1896
+                    NumFaces = 136
+                }
+                Sections[6] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_AllBlack.MI_Clothes_Contemporary_AllBlack'
+                    FirstIndex = 2304
+                    NumFaces = 298
+                }
+                Sections[7] =
+                {
+                    Material = MaterialInstanceConstant'UNDEFEATED/Content/Action_Male/Materials/MI_Clothes_Contemporary_BAW.MI_Clothes_Contemporary_BAW'
+                    FirstIndex = 3198
+                    NumFaces = 324
+                }
+            }
+            NumVerts = 1462
+            IndexCount = 4170
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 5
+    MeshOrigin = { X=0, Y=0, Z=0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 68
+    Sockets[19] =
+    {
+        Sockets[0] = { Name=head_accessories, Bone=head }
+        Sockets[1] = { Name=LeftToeSocket, Bone=ball_l }
+        Sockets[2] = { Name=LeftHeelSocket, Bone=ball_l }
+        Sockets[3] = { Name=RightToeSocket, Bone=ball_r }
+        Sockets[4] = { Name=RightHeelSocket, Bone=ball_r }
+        Sockets[5] = { Name=Bullet, Bone=spine_01 }
+        Sockets[6] = { Name=RightGroundSocket, Bone=ball_r }
+        Sockets[7] = { Name=LeftGroundSocket, Bone=ball_l }
+        Sockets[8] = { Name=spine_01_Socket, Bone=spine_01 }
+        Sockets[9] = { Name=spine_03_Socket, Bone=spine_03 }
+        Sockets[10] = { Name=Hand_L_Socket, Bone=Hand_L }
+        Sockets[11] = { Name=Hand_R_Socket, Bone=Hand_R }
+        Sockets[12] = { Name=HandPowerL, Bone=Hand_L }
+        Sockets[13] = { Name=HandPowerR, Bone=Hand_R }
+        Sockets[14] = { Name=HandRCharge, Bone=Hand_R }
+        Sockets[15] = { Name=Eye_R, Bone=head }
+        Sockets[16] = { Name=Eye_L, Bone=head }
+        Sockets[17] = { Name=Eye_Center, Bone=head }
+        Sockets[18] = { Name=CC_R_Hand_Eyewear, Bone=index_03_r }
+    }
+    SocketCount = 19

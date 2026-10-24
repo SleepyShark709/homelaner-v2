@@ -1,0 +1,51 @@
+{
+  "geometryMaterialReferences": 3940,
+  "missingMaterialDescriptors": [],
+  "materialDescriptors": 4221,
+  "allOriginalOverrideMaterialReferences": 3575,
+  "missingOriginalOverrideDescriptors": [],
+  "referencedMaterialStatuses": {
+    "shader-unmapped": 2045,
+    "partial-pbr-projection": 1873,
+    "partial-dxbc-recovery": 22
+  },
+  "statuses": {
+    "partial-pbr-projection": 2123,
+    "shader-unmapped": 2073,
+    "partial-dxbc-recovery": 25
+  },
+  "textureStatuses": {
+    "exported-original-pixels": 1155,
+    "exported-original-hdr-not-bound": 3
+  },
+  "publishedTextureBytes": 853600647,
+  "channelCounts": {
+    "baseColor": 855,
+    "normal": 268,
+    "roughness": 36,
+    "metallic": 31,
+    "occlusion": 50,
+    "emissive": 647,
+    "opacity": 18
+  },
+  "channelEvidencePointersValidated": 1970,
+  "normalTextureConventions": {
+    "not-normal": 824,
+    "unknown": 17,
+    "directx": 317
+  },
+  "runtimeReadyNormalBindings": 235,
+  "ormPackedMaterials": 78,
+  "opacityPackedMaterials": 18,
+  "errors": [],
+  "shaderRecoveryKinds": {
+    "world-triplanar": 17,
+    "grass-parallax-macro": 1,
+    "concrete-mildew": 3,
+    "foliage-vertex-mask": 2,
+    "standard-pbr-evidenced": 2
+  },
+  "manifestSha256": "8634f2b9a4afebf209d7d3403c3cc0d399e14a4f0cf20e4eaf44b3bcd67f5057",
+  "geometryManifestSha256": "48718ae5d490ed07f1eeab9f09ef9baa5d2492d9b0a781665cefcc22651be73c",
+  "validationScope": "References/files/dimensions/hashes/source pointers/normal proof/ORM contract only. Not matched-camera original visual equivalence."
+}

@@ -1,0 +1,451 @@
+{
+  "/Game/Skies/Materials/M_Skies_Master": {
+    "sourcePackage": "/Game/Skies/Materials/M_Skies_Master",
+    "parent": null,
+    "baseMaterial": "/Game/Skies/Materials/M_Skies_Master",
+    "parameters": {
+      "scalar": {
+        "HDRI_Contrast": {
+          "value": 1.0,
+          "origin": "master-cached-default",
+          "evidence": {
+            "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\Skies\\Materials\\M_Skies_Master.json",
+            "pointer": "/Exports/0/Data/6",
+            "package": "/Game/Skies/Materials/M_Skies_Master"
+          }
+        },
+        "HDRI_Brightness": {
+          "value": 1.0,
+          "origin": "master-cached-default",
+          "evidence": {
+            "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\Skies\\Materials\\M_Skies_Master.json",
+            "pointer": "/Exports/0/Data/6",
+            "package": "/Game/Skies/Materials/M_Skies_Master"
+          }
+        },
+        "Opacity": {
+          "value": 1.0,
+          "origin": "master-cached-default",
+          "evidence": {
+            "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\Skies\\Materials\\M_Skies_Master.json",
+            "pointer": "/Exports/0/Data/6",
+            "package": "/Game/Skies/Materials/M_Skies_Master"
+          }
+        }
+      },
+      "vector": {
+        "HDRI_Tint": {
+          "value": {
+            "$type": "UAssetAPI.PropertyTypes.Structs.LinearColor, UAssetAPI",
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0
+          },
+          "origin": "master-cached-default",
+          "evidence": {
+            "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\Skies\\Materials\\M_Skies_Master.json",
+            "pointer": "/Exports/0/Data/6",
+            "package": "/Game/Skies/Materials/M_Skies_Master"
+          }
+        }
+      },
+      "texture": {
+        "HDRI_Cubemap": {
+          "value": "/Game/Skies/Textures/T_Blank",
+          "origin": "master-cached-default",
+          "evidence": {
+            "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\Skies\\Materials\\M_Skies_Master.json",
+            "pointer": "/Exports/0/Data/6",
+            "package": "/Game/Skies/Materials/M_Skies_Master"
+          }
+        }
+      }
+    },
+    "sourceProperties": {
+      "BlendMode": {
+        "value": "BLEND_Translucent",
+        "evidence": {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\Skies\\Materials\\M_Skies_Master.json",
+          "pointer": "/Exports/0/Data/1",
+          "package": "/Game/Skies/Materials/M_Skies_Master"
+        }
+      }
+    },
+    "source": {
+      "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\Skies\\Materials\\M_Skies_Master.json",
+      "decodedSha256": "a1de9253dad48a7a2de048cf51fefd277db3591e8bbfd81347be50e0e8c5bcac",
+      "exportPointer": "/Exports/0",
+      "sourceFiles": [
+        {
+          "extension": ".uasset",
+          "presentInPak": true,
+          "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\Skies\\Materials\\M_Skies_Master.uasset",
+          "existsLocally": true,
+          "bytes": 1820,
+          "sha256": "4e91a7763cbe92445c79bea8c1a567ec106e065165af1e21ed812af1dcb3c3bd"
+        },
+        {
+          "extension": ".uexp",
+          "presentInPak": true,
+          "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\Skies\\Materials\\M_Skies_Master.uexp",
+          "existsLocally": true,
+          "bytes": 83611,
+          "sha256": "d3aab88c2493b57c515e8b9fc8fca91237f02f1656ff8895b247062edd374934"
+        },
+        {
+          "extension": ".ubulk",
+          "presentInPak": false,
+          "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\Skies\\Materials\\M_Skies_Master.ubulk",
+          "existsLocally": false,
+          "notReadReason": "Bulk payload intentionally not extracted"
+        }
+      ]
+    },
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": null,
+      "emissive": null,
+      "opacity": 1.0
+    },
+    "unsupported": [
+      "Base color shader connection unknown; no texture selected by filename",
+      "Translucency/refraction shader only partially represented by blend state",
+      "Compiled shader math and non-primary UV transforms not reconstructed"
+    ],
+    "blendMode": "BLEND_Translucent",
+    "doubleSided": false,
+    "alphaCutoff": 0.3333,
+    "packedPBR": null,
+    "status": "partial-pbr-projection"
+  },
+  "/Game/-HeroGame/Maps/SubLevel/LightingTest#export:14": {
+    "sourcePackage": "/Game/-HeroGame/Maps/SubLevel/LightingTest#export:14",
+    "parent": "/Game/Skies/Materials/MI_Skies",
+    "baseMaterial": "/Game/Skies/Materials/M_Skies_Master",
+    "parameters": {
+      "scalar": {
+        "HDRI_Contrast": {
+          "value": 1.0,
+          "origin": "instance-override",
+          "evidence": {
+            "file": "research\\rea-audit\\decoded-world\\LightingTest.json",
+            "pointer": "/Exports/13/Data/1/Value/1",
+            "package": "/Game/-HeroGame/Maps/SubLevel/LightingTest#export:14"
+          }
+        },
+        "HDRI_Brightness": {
+          "value": 1.0,
+          "origin": "instance-override",
+          "evidence": {
+            "file": "research\\rea-audit\\decoded-world\\LightingTest.json",
+            "pointer": "/Exports/13/Data/1/Value/0",
+            "package": "/Game/-HeroGame/Maps/SubLevel/LightingTest#export:14"
+          }
+        },
+        "Opacity": {
+          "value": 1.0,
+          "origin": "instance-override",
+          "evidence": {
+            "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\Skies\\Materials\\MI_Skies.json",
+            "pointer": "/Exports/0/Data/1/Value/0",
+            "package": "/Game/Skies/Materials/MI_Skies"
+          }
+        },
+        "RefractionDepthBias": {
+          "value": 0.0,
+          "origin": "instance-override",
+          "evidence": {
+            "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\Skies\\Materials\\MI_Skies.json",
+            "pointer": "/Exports/0/Data/1/Value/1",
+            "package": "/Game/Skies/Materials/MI_Skies"
+          }
+        }
+      },
+      "vector": {
+        "HDRI_Tint": {
+          "value": {
+            "$type": "UAssetAPI.PropertyTypes.Structs.LinearColor, UAssetAPI",
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0
+          },
+          "origin": "instance-override",
+          "evidence": {
+            "file": "research\\rea-audit\\decoded-world\\LightingTest.json",
+            "pointer": "/Exports/13/Data/2/Value/0",
+            "package": "/Game/-HeroGame/Maps/SubLevel/LightingTest#export:14"
+          }
+        }
+      },
+      "texture": {
+        "HDRI_Cubemap": {
+          "value": "/Game/Skies/Textures/T_SkyCloudy11",
+          "origin": "instance-override",
+          "evidence": {
+            "file": "research\\rea-audit\\decoded-world\\LightingTest.json",
+            "pointer": "/Exports/13/Data/3/Value/0",
+            "package": "/Game/-HeroGame/Maps/SubLevel/LightingTest#export:14"
+          }
+        }
+      }
+    },
+    "sourceProperties": {
+      "BlendMode": {
+        "value": "BLEND_Translucent",
+        "evidence": {
+          "file": "research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\Skies\\Materials\\M_Skies_Master.json",
+          "pointer": "/Exports/0/Data/1",
+          "package": "/Game/Skies/Materials/M_Skies_Master"
+        }
+      }
+    },
+    "source": {
+      "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-world\\LightingTest.json",
+      "decodedSha256": "809bdaca4e34192e5b17c55f715c7eb7b007bd3787a2bafb3b1f75322785b93e",
+      "exportPointer": "/Exports/13",
+      "ownerPackage": "/Game/-HeroGame/Maps/SubLevel/LightingTest",
+      "exportIndex": 14,
+      "objectPath": "LightingTest/PersistentLevel/BP_Sky_142/MaterialInstanceDynamic_1",
+      "sourceFiles": [
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\LightingTest.umap",
+          "bytes": 12140,
+          "sha256": "9c9fd6d4e5eb1f08da8613b8ba4918a1b5af8dc2025a2b32b5ace1cb844765b6"
+        },
+        {
+          "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\SubLevel\\LightingTest.uexp",
+          "bytes": 8469101,
+          "sha256": "c8eb5f8cc62e54ed6ace31246d01166d3ecffe2cb2104c4092afada125e15177"
+        }
+      ],
+      "isEmbedded": true
+    },
+    "channels": {
+      "baseColor": null,
+      "normal": null,
+      "roughness": null,
+      "metallic": null,
+      "occlusion": null,
+      "emissive": null,
+      "opacity": null
+    },
+    "factors": {
+      "baseColor": null,
+      "roughness": null,
+      "metallic": null,
+      "emissive": null,
+      "opacity": 1.0
+    },
+    "unsupported": [
+      "Base color shader connection unknown; no texture selected by filename",
+      "Translucency/refraction shader only partially represented by blend state",
+      "Compiled shader math and non-primary UV transforms not reconstructed"
+    ],
+    "blendMode": "BLEND_Translucent",
+    "doubleSided": false,
+    "alphaCutoff": 0.3333,
+    "packedPBR": null,
+    "status": "partial-pbr-projection",
+    "embeddedInstance": {
+      "isEmbedded": true,
+      "ownerPackage": "/Game/-HeroGame/Maps/SubLevel/LightingTest",
+      "exportIndex": 14,
+      "objectName": "MaterialInstanceDynamic_1",
+      "objectPath": "LightingTest/PersistentLevel/BP_Sky_142/MaterialInstanceDynamic_1",
+      "className": "MaterialInstanceDynamic",
+      "parentReferenceIndex": -38,
+      "resolvedParent": "/Game/Skies/Materials/MI_Skies",
+      "sourceParameters": [
+        {
+          "kind": "ScalarParameterValues",
+          "name": "HDRI_Brightness",
+          "association": "GlobalParameter",
+          "index": -1,
+          "value": 1.0,
+          "pointer": "/Exports/13/Data/1/Value/0",
+          "rawParameterInfo": {
+            "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+            "StructType": "MaterialParameterInfo",
+            "SerializeNone": true,
+            "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+            "Name": "ParameterInfo",
+            "DuplicationIndex": 0,
+            "Value": [
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+                "Name": "Name",
+                "DuplicationIndex": 0,
+                "Value": "HDRI_Brightness"
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "EMaterialParameterAssociation",
+                "EnumValue": "GlobalParameter",
+                "Name": "Association",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                "Name": "Index",
+                "DuplicationIndex": 0,
+                "Value": -1
+              }
+            ]
+          },
+          "projectionUses": [],
+          "status": "retained-not-mapped"
+        },
+        {
+          "kind": "ScalarParameterValues",
+          "name": "HDRI_Contrast",
+          "association": "GlobalParameter",
+          "index": -1,
+          "value": 1.0,
+          "pointer": "/Exports/13/Data/1/Value/1",
+          "rawParameterInfo": {
+            "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+            "StructType": "MaterialParameterInfo",
+            "SerializeNone": true,
+            "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+            "Name": "ParameterInfo",
+            "DuplicationIndex": 0,
+            "Value": [
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+                "Name": "Name",
+                "DuplicationIndex": 0,
+                "Value": "HDRI_Contrast"
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "EMaterialParameterAssociation",
+                "EnumValue": "GlobalParameter",
+                "Name": "Association",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                "Name": "Index",
+                "DuplicationIndex": 0,
+                "Value": -1
+              }
+            ]
+          },
+          "projectionUses": [],
+          "status": "retained-not-mapped"
+        },
+        {
+          "kind": "VectorParameterValues",
+          "name": "HDRI_Tint",
+          "association": "GlobalParameter",
+          "index": -1,
+          "value": {
+            "$type": "UAssetAPI.PropertyTypes.Structs.LinearColor, UAssetAPI",
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0
+          },
+          "pointer": "/Exports/13/Data/2/Value/0",
+          "rawParameterInfo": {
+            "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+            "StructType": "MaterialParameterInfo",
+            "SerializeNone": true,
+            "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+            "Name": "ParameterInfo",
+            "DuplicationIndex": 0,
+            "Value": [
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+                "Name": "Name",
+                "DuplicationIndex": 0,
+                "Value": "HDRI_Tint"
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "EMaterialParameterAssociation",
+                "EnumValue": "GlobalParameter",
+                "Name": "Association",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                "Name": "Index",
+                "DuplicationIndex": 0,
+                "Value": -1
+              }
+            ]
+          },
+          "projectionUses": [],
+          "status": "retained-not-mapped"
+        },
+        {
+          "kind": "TextureParameterValues",
+          "name": "HDRI_Cubemap",
+          "association": "GlobalParameter",
+          "index": -1,
+          "value": "/Game/Skies/Textures/T_SkyCloudy11",
+          "pointer": "/Exports/13/Data/3/Value/0",
+          "rawParameterInfo": {
+            "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+            "StructType": "MaterialParameterInfo",
+            "SerializeNone": true,
+            "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+            "Name": "ParameterInfo",
+            "DuplicationIndex": 0,
+            "Value": [
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+                "Name": "Name",
+                "DuplicationIndex": 0,
+                "Value": "HDRI_Cubemap"
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                "ByteType": "FName",
+                "EnumType": "EMaterialParameterAssociation",
+                "EnumValue": "GlobalParameter",
+                "Name": "Association",
+                "DuplicationIndex": 0
+              },
+              {
+                "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                "Name": "Index",
+                "DuplicationIndex": 0,
+                "Value": -1
+              }
+            ]
+          },
+          "projectionUses": [],
+          "status": "retained-not-mapped"
+        }
+      ],
+      "remainingProperties": [
+        {
+          "name": "CachedReferencedTextures",
+          "value": [
+            "/Game/Skies/Textures/T_Blank"
+          ],
+          "pointer": "/Exports/13/Data/4"
+        }
+      ],
+      "unmappedParameterAssociations": [],
+      "parameterSnapshotMeaning": "Serialized cooked map instance values; later runtime mutations not simulated"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "provenance": "Auxiliary raw PE byte search; not REA Evidence. Addresses are query anchors, not identified procedures.",
+  "source": "E:\\SteamLibrary\\steamapps\\common\\UNDEFEATED\\UNDEFEATED\\Binaries\\Win64\\UNDEFEATED-Win64-Shipping.exe",
+  "sha256": "0790a47508668dafb64f097c855745abd91a8ff027c8c6b5b0766db2d01669ef",
+  "imageBase": "0x140000000",
+  "matches": [
+    {
+      "anchor": "ActivitySystemLibrary",
+      "encoding": "utf-16le",
+      "fileOffset": "0x38e7702",
+      "address": "0x1438e8b02",
+      "section": ".rdata"
+    },
+    {
+      "anchor": "UndefeatedGameInstance",
+      "encoding": "utf-16le",
+      "fileOffset": "0x38e7d32",
+      "address": "0x1438e9132",
+      "section": ".rdata"
+    },
+    {
+      "anchor": "GameActivitySubsystem",
+      "encoding": "utf-16le",
+      "fileOffset": "0x38e79ba",
+      "address": "0x1438e8dba",
+      "section": ".rdata"
+    },
+    {
+      "anchor": "StartActivity",
+      "encoding": "ascii",
+      "fileOffset": "0x38e7378",
+      "address": "0x1438e8778",
+      "section": ".rdata"
+    },
+    {
+      "anchor": "FinishActivity",
+      "encoding": "ascii",
+      "fileOffset": "0x38e7340",
+      "address": "0x1438e8740",
+      "section": ".rdata"
+    },
+    {
+      "anchor": "GetActivityID",
+      "encoding": "ascii",
+      "fileOffset": "0x38e7350",
+      "address": "0x1438e8750",
+      "section": ".rdata"
+    },
+    {
+      "anchor": "SetEnableActivity",
+      "encoding": "ascii",
+      "fileOffset": "0x38e7360",
+      "address": "0x1438e8760",
+      "section": ".rdata"
+    }
+  ],
+  "pointerOccurrences": [
+    {
+      "string": "StartActivity",
+      "pointerFileOffset": "0x38e7688",
+      "nextQword": "0x0",
+      "interpretation": "raw adjacent pointer; candidate only, not yet a proven registration binding"
+    },
+    {
+      "string": "StartActivity",
+      "pointerFileOffset": "0x38e7760",
+      "nextQword": "0x140ea9d80",
+      "interpretation": "raw adjacent pointer; candidate only, not yet a proven registration binding"
+    },
+    {
+      "string": "StartActivity",
+      "pointerFileOffset": "0x456e820",
+      "nextQword": "0x0",
+      "interpretation": "raw adjacent pointer; candidate only, not yet a proven registration binding"
+    },
+    {
+      "string": "FinishActivity",
+      "pointerFileOffset": "0x38e7658",
+      "nextQword": "0x140ea9a20",
+      "interpretation": "raw adjacent pointer; candidate only, not yet a proven registration binding"
+    },
+    {
+      "string": "FinishActivity",
+      "pointerFileOffset": "0x38e7730",
+      "nextQword": "0x140ea9b00",
+      "interpretation": "raw adjacent pointer; candidate only, not yet a proven registration binding"
+    },
+    {
+      "string": "FinishActivity",
+      "pointerFileOffset": "0x456e730",
+      "nextQword": "0x0",
+      "interpretation": "raw adjacent pointer; candidate only, not yet a proven registration binding"
+    },
+    {
+      "string": "GetActivityID",
+      "pointerFileOffset": "0x38e7668",
+      "nextQword": "0x140ea9a50",
+      "interpretation": "raw adjacent pointer; candidate only, not yet a proven registration binding"
+    },
+    {
+      "string": "GetActivityID",
+      "pointerFileOffset": "0x38e7740",
+      "nextQword": "0x140ea9bc0",
+      "interpretation": "raw adjacent pointer; candidate only, not yet a proven registration binding"
+    },
+    {
+      "string": "GetActivityID",
+      "pointerFileOffset": "0x456e780",
+      "nextQword": "0x0",
+      "interpretation": "raw adjacent pointer; candidate only, not yet a proven registration binding"
+    },
+    {
+      "string": "SetEnableActivity",
+      "pointerFileOffset": "0x38e7678",
+      "nextQword": "0x140ea9a80",
+      "interpretation": "raw adjacent pointer; candidate only, not yet a proven registration binding"
+    },
+    {
+      "string": "SetEnableActivity",
+      "pointerFileOffset": "0x38e7750",
+      "nextQword": "0x140ea9cc0",
+      "interpretation": "raw adjacent pointer; candidate only, not yet a proven registration binding"
+    },
+    {
+      "string": "SetEnableActivity",
+      "pointerFileOffset": "0x456e7d0",
+      "nextQword": "0x0",
+      "interpretation": "raw adjacent pointer; candidate only, not yet a proven registration binding"
+    }
+  ]
+}

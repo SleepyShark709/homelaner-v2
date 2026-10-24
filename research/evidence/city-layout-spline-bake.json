@@ -1,0 +1,2332 @@
+{
+  "count": 211,
+  "sources": [
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_102",
+      "sourceExportIndex": 7363,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_108",
+      "sourceExportIndex": 7369,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_111",
+      "sourceExportIndex": 7374,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_127",
+      "sourceExportIndex": 7392,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_128",
+      "sourceExportIndex": 7395,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_134",
+      "sourceExportIndex": 7400,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_136",
+      "sourceExportIndex": 7403,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_146",
+      "sourceExportIndex": 7419,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_153",
+      "sourceExportIndex": 7429,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_154",
+      "sourceExportIndex": 7433,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_155",
+      "sourceExportIndex": 7434,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_184",
+      "sourceExportIndex": 7560,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_185",
+      "sourceExportIndex": 7571,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1859",
+      "sourceExportIndex": 7581,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_186",
+      "sourceExportIndex": 7582,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1860",
+      "sourceExportIndex": 7583,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1861",
+      "sourceExportIndex": 7584,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1862",
+      "sourceExportIndex": 7585,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1863",
+      "sourceExportIndex": 7586,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1864",
+      "sourceExportIndex": 7587,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1865",
+      "sourceExportIndex": 7588,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1866",
+      "sourceExportIndex": 7589,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1867",
+      "sourceExportIndex": 7590,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1868",
+      "sourceExportIndex": 7591,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1869",
+      "sourceExportIndex": 7592,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1870",
+      "sourceExportIndex": 7593,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1871",
+      "sourceExportIndex": 7594,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1872",
+      "sourceExportIndex": 7595,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1873",
+      "sourceExportIndex": 7596,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1874",
+      "sourceExportIndex": 7597,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1875",
+      "sourceExportIndex": 7598,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1876",
+      "sourceExportIndex": 7599,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1877",
+      "sourceExportIndex": 7600,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1878",
+      "sourceExportIndex": 7601,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1879",
+      "sourceExportIndex": 7602,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1880",
+      "sourceExportIndex": 7603,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1881",
+      "sourceExportIndex": 7604,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1882",
+      "sourceExportIndex": 7605,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1883",
+      "sourceExportIndex": 7606,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1884",
+      "sourceExportIndex": 7607,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1885",
+      "sourceExportIndex": 7608,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_1886",
+      "sourceExportIndex": 7609,
+      "package": "/Game/Downtown/Meshes/Road_Small_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2119",
+      "sourceExportIndex": 7840,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2120",
+      "sourceExportIndex": 7841,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2121",
+      "sourceExportIndex": 7842,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2122",
+      "sourceExportIndex": 7843,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2123",
+      "sourceExportIndex": 7844,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2124",
+      "sourceExportIndex": 7845,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2125",
+      "sourceExportIndex": 7846,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2126",
+      "sourceExportIndex": 7847,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2127",
+      "sourceExportIndex": 7848,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2128",
+      "sourceExportIndex": 7849,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2129",
+      "sourceExportIndex": 7850,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2130",
+      "sourceExportIndex": 7851,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2131",
+      "sourceExportIndex": 7852,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2132",
+      "sourceExportIndex": 7853,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2133",
+      "sourceExportIndex": 7854,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2134",
+      "sourceExportIndex": 7855,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2135",
+      "sourceExportIndex": 7856,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2136",
+      "sourceExportIndex": 7857,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2137",
+      "sourceExportIndex": 7858,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2138",
+      "sourceExportIndex": 7859,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2139",
+      "sourceExportIndex": 7860,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2140",
+      "sourceExportIndex": 7861,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2141",
+      "sourceExportIndex": 7862,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2142",
+      "sourceExportIndex": 7863,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2143",
+      "sourceExportIndex": 7864,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2144",
+      "sourceExportIndex": 7865,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2145",
+      "sourceExportIndex": 7866,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2146",
+      "sourceExportIndex": 7867,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2147",
+      "sourceExportIndex": 7868,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2148",
+      "sourceExportIndex": 7869,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2149",
+      "sourceExportIndex": 7870,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2150",
+      "sourceExportIndex": 7871,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2151",
+      "sourceExportIndex": 7872,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2229",
+      "sourceExportIndex": 7950,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2230",
+      "sourceExportIndex": 7951,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2231",
+      "sourceExportIndex": 7952,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2232",
+      "sourceExportIndex": 7953,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2233",
+      "sourceExportIndex": 7954,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2234",
+      "sourceExportIndex": 7955,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2235",
+      "sourceExportIndex": 7956,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2236",
+      "sourceExportIndex": 7957,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2237",
+      "sourceExportIndex": 7958,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2238",
+      "sourceExportIndex": 7959,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2239",
+      "sourceExportIndex": 7960,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2240",
+      "sourceExportIndex": 7961,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2241",
+      "sourceExportIndex": 7962,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2242",
+      "sourceExportIndex": 7963,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2243",
+      "sourceExportIndex": 7964,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2244",
+      "sourceExportIndex": 7965,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2245",
+      "sourceExportIndex": 7966,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2547",
+      "sourceExportIndex": 8271,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2548",
+      "sourceExportIndex": 8272,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2549",
+      "sourceExportIndex": 8273,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2550",
+      "sourceExportIndex": 8275,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2551",
+      "sourceExportIndex": 8276,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2552",
+      "sourceExportIndex": 8277,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2553",
+      "sourceExportIndex": 8278,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2554",
+      "sourceExportIndex": 8279,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2555",
+      "sourceExportIndex": 8280,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2556",
+      "sourceExportIndex": 8281,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2557",
+      "sourceExportIndex": 8282,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2558",
+      "sourceExportIndex": 8283,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2559",
+      "sourceExportIndex": 8284,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2560",
+      "sourceExportIndex": 8285,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2561",
+      "sourceExportIndex": 8286,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2562",
+      "sourceExportIndex": 8287,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2563",
+      "sourceExportIndex": 8288,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2564",
+      "sourceExportIndex": 8289,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2565",
+      "sourceExportIndex": 8290,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2566",
+      "sourceExportIndex": 8291,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2567",
+      "sourceExportIndex": 8292,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2568",
+      "sourceExportIndex": 8293,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2569",
+      "sourceExportIndex": 8294,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2570",
+      "sourceExportIndex": 8295,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2571",
+      "sourceExportIndex": 8296,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2572",
+      "sourceExportIndex": 8297,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2573",
+      "sourceExportIndex": 8298,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2574",
+      "sourceExportIndex": 8299,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2575",
+      "sourceExportIndex": 8300,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2576",
+      "sourceExportIndex": 8301,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_2577",
+      "sourceExportIndex": 8302,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3028",
+      "sourceExportIndex": 8341,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3029",
+      "sourceExportIndex": 8342,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3030",
+      "sourceExportIndex": 8343,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3039",
+      "sourceExportIndex": 8344,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3040",
+      "sourceExportIndex": 8346,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3041",
+      "sourceExportIndex": 8347,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3043",
+      "sourceExportIndex": 8348,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3044",
+      "sourceExportIndex": 8349,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3045",
+      "sourceExportIndex": 8350,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3046",
+      "sourceExportIndex": 8351,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3047",
+      "sourceExportIndex": 8352,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3048",
+      "sourceExportIndex": 8353,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3050",
+      "sourceExportIndex": 8354,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3051",
+      "sourceExportIndex": 8355,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3052",
+      "sourceExportIndex": 8356,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3053",
+      "sourceExportIndex": 8357,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3055",
+      "sourceExportIndex": 8358,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3056",
+      "sourceExportIndex": 8359,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3057",
+      "sourceExportIndex": 8360,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3059",
+      "sourceExportIndex": 8361,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3089",
+      "sourceExportIndex": 8362,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3090",
+      "sourceExportIndex": 8363,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3091",
+      "sourceExportIndex": 8364,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3092",
+      "sourceExportIndex": 8365,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3093",
+      "sourceExportIndex": 8366,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3105",
+      "sourceExportIndex": 8367,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3106",
+      "sourceExportIndex": 8368,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3107",
+      "sourceExportIndex": 8369,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3108",
+      "sourceExportIndex": 8370,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3109",
+      "sourceExportIndex": 8371,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3110",
+      "sourceExportIndex": 8372,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3111",
+      "sourceExportIndex": 8373,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3112",
+      "sourceExportIndex": 8374,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3113",
+      "sourceExportIndex": 8375,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_3114",
+      "sourceExportIndex": 8376,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Small_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4086",
+      "sourceExportIndex": 8731,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4087",
+      "sourceExportIndex": 8732,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4094",
+      "sourceExportIndex": 8733,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4095",
+      "sourceExportIndex": 8734,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4096",
+      "sourceExportIndex": 8735,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4097",
+      "sourceExportIndex": 8736,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4098",
+      "sourceExportIndex": 8737,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4099",
+      "sourceExportIndex": 8738,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4100",
+      "sourceExportIndex": 8739,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4102",
+      "sourceExportIndex": 8740,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4103",
+      "sourceExportIndex": 8741,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4104",
+      "sourceExportIndex": 8742,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4105",
+      "sourceExportIndex": 8743,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4106",
+      "sourceExportIndex": 8744,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4107",
+      "sourceExportIndex": 8745,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4108",
+      "sourceExportIndex": 8746,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4109",
+      "sourceExportIndex": 8747,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4116",
+      "sourceExportIndex": 8748,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4117",
+      "sourceExportIndex": 8749,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4118",
+      "sourceExportIndex": 8750,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4135",
+      "sourceExportIndex": 8751,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4136",
+      "sourceExportIndex": 8752,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4145",
+      "sourceExportIndex": 8754,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4152",
+      "sourceExportIndex": 8756,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4153",
+      "sourceExportIndex": 8757,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4154",
+      "sourceExportIndex": 8758,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4155",
+      "sourceExportIndex": 8759,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4156",
+      "sourceExportIndex": 8760,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4157",
+      "sourceExportIndex": 8761,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4166",
+      "sourceExportIndex": 8762,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4167",
+      "sourceExportIndex": 8763,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4168",
+      "sourceExportIndex": 8764,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4169",
+      "sourceExportIndex": 8765,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4170",
+      "sourceExportIndex": 8766,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4171",
+      "sourceExportIndex": 8767,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4172",
+      "sourceExportIndex": 8768,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4173",
+      "sourceExportIndex": 8769,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4174",
+      "sourceExportIndex": 8770,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4175",
+      "sourceExportIndex": 8771,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4211",
+      "sourceExportIndex": 8772,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_4221",
+      "sourceExportIndex": 8773,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_5138",
+      "sourceExportIndex": 9169,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_5139",
+      "sourceExportIndex": 9170,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_5140",
+      "sourceExportIndex": 9171,
+      "package": "/Game/Downtown/Meshes/Sidewalk_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_57",
+      "sourceExportIndex": 9216,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_58",
+      "sourceExportIndex": 9217,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_59",
+      "sourceExportIndex": 9220,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_63",
+      "sourceExportIndex": 9236,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_71",
+      "sourceExportIndex": 9275,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_741",
+      "sourceExportIndex": 9282,
+      "package": "/Game/Downtown/Meshes/Road_Medium_B"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_83",
+      "sourceExportIndex": 9291,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_935",
+      "sourceExportIndex": 9299,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    },
+    {
+      "sourceActor": "MainLevel/PersistentLevel/Landscape_2",
+      "sourceComponent": "SplineMeshComponent_936",
+      "sourceExportIndex": 9300,
+      "package": "/Game/Downtown/Meshes/Road_Large_A"
+    }
+  ],
+  "triangles": 29424,
+  "materialGroups": 4,
+  "midpoints": [
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        -110.47702839917635
+      ],
+      "sourceComponent": "SplineMeshComponent_102"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        -99.45596465015508
+      ],
+      "sourceComponent": "SplineMeshComponent_108"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        -88.44035057752554
+      ],
+      "sourceComponent": "SplineMeshComponent_111"
+    },
+    {
+      "point": [
+        -201.99999128710556,
+        0.42999999038875103,
+        77.79452165287054
+      ],
+      "sourceComponent": "SplineMeshComponent_127"
+    },
+    {
+      "point": [
+        -202.00003035178472,
+        0.42999999038875103,
+        88.64324791184751
+      ],
+      "sourceComponent": "SplineMeshComponent_128"
+    },
+    {
+      "point": [
+        -202.0000303539399,
+        0.42999999038875103,
+        99.51564619790297
+      ],
+      "sourceComponent": "SplineMeshComponent_134"
+    },
+    {
+      "point": [
+        -170.35766415630812,
+        0.42999999038875103,
+        -127.99999614715547
+      ],
+      "sourceComponent": "SplineMeshComponent_136"
+    },
+    {
+      "point": [
+        -159.19502143096153,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_146"
+    },
+    {
+      "point": [
+        -148.0162342967937,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_153"
+    },
+    {
+      "point": [
+        -181.49496767934747,
+        0.42999999038875103,
+        -127.99999614715547
+      ],
+      "sourceComponent": "SplineMeshComponent_154"
+    },
+    {
+      "point": [
+        -136.8291999399098,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_155"
+    },
+    {
+      "point": [
+        91.62074742270791,
+        0.43000000946223693,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_184"
+    },
+    {
+      "point": [
+        81.79878765079074,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_185"
+    },
+    {
+      "point": [
+        -125.64084401933476,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1859"
+    },
+    {
+      "point": [
+        71.99688647217523,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_186"
+    },
+    {
+      "point": [
+        -114.45727783253938,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1860"
+    },
+    {
+      "point": [
+        -103.28433023681522,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1861"
+    },
+    {
+      "point": [
+        -92.12755604160851,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1862"
+    },
+    {
+      "point": [
+        -80.99229032980773,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1863"
+    },
+    {
+      "point": [
+        -69.88401237985491,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1864"
+    },
+    {
+      "point": [
+        -58.80824511032775,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1865"
+    },
+    {
+      "point": [
+        -47.770805934426335,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1866"
+    },
+    {
+      "point": [
+        -36.777919064658,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1867"
+    },
+    {
+      "point": [
+        -25.836253354633445,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1868"
+    },
+    {
+      "point": [
+        -14.953366024642747,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1869"
+    },
+    {
+      "point": [
+        -4.137677637241832,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1870"
+    },
+    {
+      "point": [
+        6.601281320721774,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1871"
+    },
+    {
+      "point": [
+        17.252234146619266,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1872"
+    },
+    {
+      "point": [
+        27.801864495533437,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1873"
+    },
+    {
+      "point": [
+        101.46072263611694,
+        0.43000000946223693,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1874"
+    },
+    {
+      "point": [
+        111.31212958144818,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1875"
+    },
+    {
+      "point": [
+        121.16100684849121,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1876"
+    },
+    {
+      "point": [
+        130.98376808828598,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1877"
+    },
+    {
+      "point": [
+        140.7516691761087,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1878"
+    },
+    {
+      "point": [
+        150.44514330941826,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1879"
+    },
+    {
+      "point": [
+        160.06256084957917,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1880"
+    },
+    {
+      "point": [
+        169.61175153884807,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1881"
+    },
+    {
+      "point": [
+        179.10216277996793,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1882"
+    },
+    {
+      "point": [
+        188.54345514096008,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1883"
+    },
+    {
+      "point": [
+        197.94467006449355,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1884"
+    },
+    {
+      "point": [
+        207.31353132053727,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1885"
+    },
+    {
+      "point": [
+        218.82984850697517,
+        0.42999999038875103,
+        -128.00000102996782
+      ],
+      "sourceComponent": "SplineMeshComponent_1886"
+    },
+    {
+      "point": [
+        -202.00001081409002,
+        0.42999999038875103,
+        56.15163319010346
+      ],
+      "sourceComponent": "SplineMeshComponent_2119"
+    },
+    {
+      "point": [
+        -202.00001081211107,
+        0.43000000946223693,
+        45.346981026821084
+      ],
+      "sourceComponent": "SplineMeshComponent_2120"
+    },
+    {
+      "point": [
+        -202.0000108103187,
+        0.43000000946223693,
+        34.54487967524925
+      ],
+      "sourceComponent": "SplineMeshComponent_2121"
+    },
+    {
+      "point": [
+        -202.00001080877817,
+        0.42999999038875103,
+        23.73775421490296
+      ],
+      "sourceComponent": "SplineMeshComponent_2122"
+    },
+    {
+      "point": [
+        -202.0000108075545,
+        0.42999999038875103,
+        12.917297761202354
+      ],
+      "sourceComponent": "SplineMeshComponent_2123"
+    },
+    {
+      "point": [
+        -202.00001080670395,
+        0.42999999038875103,
+        2.074765654919029
+      ],
+      "sourceComponent": "SplineMeshComponent_2124"
+    },
+    {
+      "point": [
+        -202.00001080626726,
+        0.42999999038875103,
+        -8.798824495103764
+      ],
+      "sourceComponent": "SplineMeshComponent_2125"
+    },
+    {
+      "point": [
+        -202.0000108062678,
+        0.42999999038875103,
+        -19.71224130439259
+      ],
+      "sourceComponent": "SplineMeshComponent_2126"
+    },
+    {
+      "point": [
+        -202.00001080670424,
+        0.42999999038875103,
+        -30.673731843075586
+      ],
+      "sourceComponent": "SplineMeshComponent_2127"
+    },
+    {
+      "point": [
+        -202.00001080755527,
+        0.42999999038875103,
+        -41.690702574610334
+      ],
+      "sourceComponent": "SplineMeshComponent_2128"
+    },
+    {
+      "point": [
+        -202.00001080877826,
+        0.42999999038875103,
+        -52.76946117707848
+      ],
+      "sourceComponent": "SplineMeshComponent_2129"
+    },
+    {
+      "point": [
+        -202.00001081031874,
+        0.42999999038875103,
+        -63.915020925514405
+      ],
+      "sourceComponent": "SplineMeshComponent_2130"
+    },
+    {
+      "point": [
+        -202.00001081211184,
+        0.42999999038875103,
+        -75.13093025123533
+      ],
+      "sourceComponent": "SplineMeshComponent_2131"
+    },
+    {
+      "point": [
+        -202.00001081409067,
+        0.42999999038875103,
+        -86.41942716078302
+      ],
+      "sourceComponent": "SplineMeshComponent_2132"
+    },
+    {
+      "point": [
+        -202.00001081619052,
+        0.42999999038875103,
+        -97.78157397102827
+      ],
+      "sourceComponent": "SplineMeshComponent_2133"
+    },
+    {
+      "point": [
+        -202.00001138520253,
+        0.42999999038875103,
+        -109.21726295492249
+      ],
+      "sourceComponent": "SplineMeshComponent_2134"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        66.76124309089974
+      ],
+      "sourceComponent": "SplineMeshComponent_2135"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.43000000946223693,
+        55.86586140694024
+      ],
+      "sourceComponent": "SplineMeshComponent_2136"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.43000000946223693,
+        44.97456419554575
+      ],
+      "sourceComponent": "SplineMeshComponent_2137"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        34.08355217091245
+      ],
+      "sourceComponent": "SplineMeshComponent_2138"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        23.18880174304235
+      ],
+      "sourceComponent": "SplineMeshComponent_2139"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        12.286026870771602
+      ],
+      "sourceComponent": "SplineMeshComponent_2140"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        1.3708073881832388
+      ],
+      "sourceComponent": "SplineMeshComponent_2141"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        -9.561253524692656
+      ],
+      "sourceComponent": "SplineMeshComponent_2142"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        -20.51452644270976
+      ],
+      "sourceComponent": "SplineMeshComponent_2143"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        -31.49327543437612
+      ],
+      "sourceComponent": "SplineMeshComponent_2144"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        -42.501381725191024
+      ],
+      "sourceComponent": "SplineMeshComponent_2145"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        -53.54240961561183
+      ],
+      "sourceComponent": "SplineMeshComponent_2146"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        -64.61960342929655
+      ],
+      "sourceComponent": "SplineMeshComponent_2147"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        -75.73565329069672
+      ],
+      "sourceComponent": "SplineMeshComponent_2148"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        -86.89287838311022
+      ],
+      "sourceComponent": "SplineMeshComponent_2149"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        -98.09307161421167
+      ],
+      "sourceComponent": "SplineMeshComponent_2150"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        -109.33745231380789
+      ],
+      "sourceComponent": "SplineMeshComponent_2151"
+    },
+    {
+      "point": [
+        243.00002131942279,
+        0.43000000946223693,
+        -77.4288452389482
+      ],
+      "sourceComponent": "SplineMeshComponent_2229"
+    },
+    {
+      "point": [
+        243.00002131942279,
+        0.43000000946223693,
+        -66.42007335974304
+      ],
+      "sourceComponent": "SplineMeshComponent_2230"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999997131526513,
+        -55.4125852024724
+      ],
+      "sourceComponent": "SplineMeshComponent_2231"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999997131526513,
+        -44.404892272244034
+      ],
+      "sourceComponent": "SplineMeshComponent_2232"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        -33.39544610719153
+      ],
+      "sourceComponent": "SplineMeshComponent_2233"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        -22.38268878498646
+      ],
+      "sourceComponent": "SplineMeshComponent_2234"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        -11.365091069823174
+      ],
+      "sourceComponent": "SplineMeshComponent_2235"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        -0.3410747451842326
+      ],
+      "sourceComponent": "SplineMeshComponent_2236"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        10.690938558035779
+      ],
+      "sourceComponent": "SplineMeshComponent_2237"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        21.732478533406102
+      ],
+      "sourceComponent": "SplineMeshComponent_2238"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        32.785074111556604
+      ],
+      "sourceComponent": "SplineMeshComponent_2239"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        43.850196697483774
+      ],
+      "sourceComponent": "SplineMeshComponent_2240"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        54.929199440571466
+      ],
+      "sourceComponent": "SplineMeshComponent_2241"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        66.02345441110141
+      ],
+      "sourceComponent": "SplineMeshComponent_2242"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        77.13427508560672
+      ],
+      "sourceComponent": "SplineMeshComponent_2243"
+    },
+    {
+      "point": [
+        242.99998225692366,
+        0.42999999038875103,
+        88.26279915937462
+      ],
+      "sourceComponent": "SplineMeshComponent_2244"
+    },
+    {
+      "point": [
+        242.99998192308638,
+        0.42999999038875103,
+        99.41021147734929
+      ],
+      "sourceComponent": "SplineMeshComponent_2245"
+    },
+    {
+      "point": [
+        -147.36607455180442,
+        0.43000000946223693,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2547"
+    },
+    {
+      "point": [
+        -135.94035672857584,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2548"
+    },
+    {
+      "point": [
+        -124.52138512101679,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2549"
+    },
+    {
+      "point": [
+        -113.12071536241388,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2550"
+    },
+    {
+      "point": [
+        -101.74850995864348,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2551"
+    },
+    {
+      "point": [
+        -90.41429970172892,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2552"
+    },
+    {
+      "point": [
+        -79.12743044717419,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2553"
+    },
+    {
+      "point": [
+        -67.89750333001855,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2554"
+    },
+    {
+      "point": [
+        -56.7347933134113,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2555"
+    },
+    {
+      "point": [
+        -45.650654156864256,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2556"
+    },
+    {
+      "point": [
+        -34.657982893780535,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2557"
+    },
+    {
+      "point": [
+        -23.77185780141104,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2558"
+    },
+    {
+      "point": [
+        -13.010475137893955,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2559"
+    },
+    {
+      "point": [
+        -2.396363436661286,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2560"
+    },
+    {
+      "point": [
+        8.041729439160008,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2561"
+    },
+    {
+      "point": [
+        18.265840309876484,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2562"
+    },
+    {
+      "point": [
+        28.22374665773449,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_2563"
+    },
+    {
+      "point": [
+        200.87579884420688,
+        0.42999997131526513,
+        121.99999278459407
+      ],
+      "sourceComponent": "SplineMeshComponent_2564"
+    },
+    {
+      "point": [
+        190.7451821577805,
+        0.42999999038875103,
+        122.00001231584363
+      ],
+      "sourceComponent": "SplineMeshComponent_2565"
+    },
+    {
+      "point": [
+        180.62271839478458,
+        0.42999999038875103,
+        121.99999278459407
+      ],
+      "sourceComponent": "SplineMeshComponent_2566"
+    },
+    {
+      "point": [
+        170.50493747774613,
+        0.42999999038875103,
+        121.99999278459407
+      ],
+      "sourceComponent": "SplineMeshComponent_2567"
+    },
+    {
+      "point": [
+        160.38980365537506,
+        0.42999999038875103,
+        121.99999278459407
+      ],
+      "sourceComponent": "SplineMeshComponent_2568"
+    },
+    {
+      "point": [
+        150.27577136496186,
+        0.42999999038875103,
+        121.99999278459407
+      ],
+      "sourceComponent": "SplineMeshComponent_2569"
+    },
+    {
+      "point": [
+        140.1617543333373,
+        0.42999999038875103,
+        121.99999278459407
+      ],
+      "sourceComponent": "SplineMeshComponent_2570"
+    },
+    {
+      "point": [
+        130.04670641794675,
+        0.42999999038875103,
+        121.99999278459407
+      ],
+      "sourceComponent": "SplineMeshComponent_2571"
+    },
+    {
+      "point": [
+        119.929444070843,
+        0.42999999038875103,
+        121.99999278459407
+      ],
+      "sourceComponent": "SplineMeshComponent_2572"
+    },
+    {
+      "point": [
+        109.80839021991775,
+        0.42999999038875103,
+        121.99999278459407
+      ],
+      "sourceComponent": "SplineMeshComponent_2573"
+    },
+    {
+      "point": [
+        99.68104402599351,
+        0.42999999038875103,
+        121.99999278459407
+      ],
+      "sourceComponent": "SplineMeshComponent_2574"
+    },
+    {
+      "point": [
+        89.54288759061167,
+        0.42999999038875103,
+        121.99999278459407
+      ],
+      "sourceComponent": "SplineMeshComponent_2575"
+    },
+    {
+      "point": [
+        79.38432260160883,
+        0.42999999038875103,
+        121.99999278459407
+      ],
+      "sourceComponent": "SplineMeshComponent_2576"
+    },
+    {
+      "point": [
+        70.60759710503491,
+        0.42999999038875103,
+        121.99999278459407
+      ],
+      "sourceComponent": "SplineMeshComponent_2577"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        77.66423723196444
+      ],
+      "sourceComponent": "SplineMeshComponent_57"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        88.5779720344102
+      ],
+      "sourceComponent": "SplineMeshComponent_58"
+    },
+    {
+      "point": [
+        49.999984103704946,
+        0.42999999038875103,
+        99.50522795471778
+      ],
+      "sourceComponent": "SplineMeshComponent_59"
+    },
+    {
+      "point": [
+        -181.51908953549534,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_63"
+    },
+    {
+      "point": [
+        -170.1775094362162,
+        0.42999999038875103,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_71"
+    },
+    {
+      "point": [
+        -201.99999128494056,
+        0.42999999038875103,
+        66.96556544352039
+      ],
+      "sourceComponent": "SplineMeshComponent_741"
+    },
+    {
+      "point": [
+        -158.78453849946274,
+        0.43000000946223693,
+        121.99999031748914
+      ],
+      "sourceComponent": "SplineMeshComponent_83"
+    },
+    {
+      "point": [
+        221.20107403991165,
+        0.42999999038875103,
+        121.99999278459407
+      ],
+      "sourceComponent": "SplineMeshComponent_935"
+    },
+    {
+      "point": [
+        211.0220390806561,
+        0.42999997131526513,
+        121.9999732533445
+      ],
+      "sourceComponent": "SplineMeshComponent_936"
+    }
+  ],
+  "method": "Original source vertex x normalized to mesh bounds -> cubic Hermite StartPos/EndPos/tangents; interpolated slice scale/roll/offset; transform full component parent chain; UE to glTF Y/Z exchange."
+}

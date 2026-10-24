@@ -1,0 +1,897 @@
+[
+  {
+    "id": "hero",
+    "file": "E:\\undefeated-web\\public\\assets\\original\\hero\\hero.gltf",
+    "sha256": "63617cddfa7b3843f5e640fd1befff6764a2f1659527e3de080f588508d4b21d",
+    "joints": 93,
+    "triangles": 23160,
+    "materials": [
+      {
+        "material": "M_Eye",
+        "baseColorTexture": "T_Male_Body_D",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "MI_Body_asian",
+        "baseColorTexture": "T_Male_Body_D",
+        "baseColorFactor": [
+          0.743119,
+          0.743119,
+          0.743119,
+          1
+        ]
+      },
+      {
+        "material": "M_ShadowTrim",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.006,
+          0.006,
+          0.006,
+          1
+        ]
+      },
+      {
+        "material": "MI_Body_asian",
+        "baseColorTexture": "T_Male_Body_D",
+        "baseColorFactor": [
+          0.743119,
+          0.743119,
+          0.743119,
+          1
+        ]
+      },
+      {
+        "material": "MI_Clothes_Contemporary_AllBlack",
+        "baseColorTexture": "T_Contemporary_D",
+        "baseColorFactor": [
+          0.045,
+          0.045,
+          0.045,
+          1
+        ]
+      },
+      {
+        "material": "MI_Clothes_Contemporary_AllBlack",
+        "baseColorTexture": "T_Contemporary_D",
+        "baseColorFactor": [
+          0.045,
+          0.045,
+          0.045,
+          1
+        ]
+      },
+      {
+        "material": "MI_Clothes_Contemporary_AllBlack",
+        "baseColorTexture": "T_Contemporary_D",
+        "baseColorFactor": [
+          0.045,
+          0.045,
+          0.045,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hair",
+    "file": "E:\\undefeated-web\\public\\assets\\original\\hair\\hair.gltf",
+    "sha256": "3734a569edfb083e0be4fa8e4850028e67899d66932f977b4186dea0b2ded23f",
+    "joints": 2,
+    "triangles": 1974,
+    "materials": [
+      {
+        "material": "MI_Hair_Black",
+        "baseColorTexture": "T_Hair1_color",
+        "baseColorFactor": [
+          0.025,
+          0.025,
+          0.025,
+          1
+        ]
+      },
+      {
+        "material": "M_ShadowTrim",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.006,
+          0.006,
+          0.006,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sunglasses",
+    "file": "E:\\undefeated-web\\public\\assets\\original\\sunglasses\\sunglasses.gltf",
+    "sha256": "ab5a54442018a0100d2172d44f621fdfab0d9a05572e1af4be90487e254a558d",
+    "joints": 2,
+    "triangles": 6000,
+    "materials": [
+      {
+        "material": "MI_Sunglasses_003",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.025,
+          0.04,
+          0.05,
+          1
+        ]
+      },
+      {
+        "material": "MI_Sunglasses_003",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.025,
+          0.04,
+          0.05,
+          1
+        ]
+      },
+      {
+        "material": "M_GlassLens_master_Black",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.025,
+          0.04,
+          0.05,
+          1
+        ]
+      },
+      {
+        "material": "MI_Sunglasses_003",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.025,
+          0.04,
+          0.05,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "building",
+    "file": "E:\\undefeated-web\\public\\assets\\original\\building\\building.gltf",
+    "sha256": "ee99e74bdffb2bde86861032557621e70f0ee83dfb34fa5d3860e9604f464c55",
+    "joints": 0,
+    "triangles": 40061,
+    "materials": [
+      {
+        "material": "Red_Brick_Mat_Inst",
+        "baseColorTexture": "T_Red_Brick",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "PlasteredWall_MAT_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "material": "Generic_Color_Mat_Inst9",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.02,
+          0.02,
+          0.02,
+          1.0
+        ]
+      },
+      {
+        "material": "Generic_Color_Mat_Inst9",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.02,
+          0.02,
+          0.02,
+          1.0
+        ]
+      },
+      {
+        "material": "L_Aircon_Mat",
+        "baseColorTexture": "T_AirCon",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Steel_Mesh_Mat",
+        "baseColorTexture": "T_Steel_Mesh",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Roof_Felt_Mat",
+        "baseColorTexture": "T_Roof_Felt",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Concrete_Mat_Inst",
+        "baseColorTexture": "T_Concrete",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Roof_Felt_Mat",
+        "baseColorTexture": "T_Roof_Felt",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Door2_Mat",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Galvanized_Steel_Mat",
+        "baseColorTexture": "T_Galvanized_Steel",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Steel_Mesh_Mat",
+        "baseColorTexture": "T_Steel_Mesh",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "PolishedConcrete_MAT_Inst",
+        "baseColorTexture": "T_Polished_Concrete",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Generic_Color_Mat_Inst9",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.02,
+          0.02,
+          0.02,
+          1.0
+        ]
+      },
+      {
+        "material": "Red_Brick_Mat_Inst",
+        "baseColorTexture": "T_Red_Brick",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "PlasteredWall_MAT_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "material": "WindowGlass_Mat_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.025,
+          0.04,
+          0.05,
+          1
+        ]
+      },
+      {
+        "material": "Generic_Color_Mat_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "PlasteredWall_MAT_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "material": "Red_Brick_Mat_Inst",
+        "baseColorTexture": "T_Red_Brick",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "PlasteredWall_MAT_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "material": "Generic_Color_Mat_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "WindowGlass_Mat_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.025,
+          0.04,
+          0.05,
+          1
+        ]
+      },
+      {
+        "material": "Generic_Color_Mat_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "PlasteredWall_MAT_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "material": "Red_Brick_Mat_Inst",
+        "baseColorTexture": "T_Red_Brick",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "WindowGlass_Mat_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.025,
+          0.04,
+          0.05,
+          1
+        ]
+      },
+      {
+        "material": "PlasteredWall_MAT_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "material": "PolishedConcrete_MAT_Inst",
+        "baseColorTexture": "T_Polished_Concrete",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Generic_Color_Mat_Inst4",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "WindowGlass_Mat_Inst2",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.025,
+          0.04,
+          0.05,
+          1
+        ]
+      },
+      {
+        "material": "Door_Mat_Inst7",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "PlasteredWall_MAT_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "material": "Red_Brick_Mat_Inst",
+        "baseColorTexture": "T_Red_Brick",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Generic_Color_Mat_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "WindowGlass_Mat_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.025,
+          0.04,
+          0.05,
+          1
+        ]
+      },
+      {
+        "material": "Red_Brick_Mat_Inst",
+        "baseColorTexture": "T_Red_Brick",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "PlasteredWall_MAT_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "material": "Generic_Color_Mat_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "WindowGlass_Mat_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.025,
+          0.04,
+          0.05,
+          1
+        ]
+      },
+      {
+        "material": "Gravel_Mat",
+        "baseColorTexture": "T_Gravel",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Concrete_Mat_Inst2",
+        "baseColorTexture": "T_Concrete",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Generic_Color_Mat_Inst2",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.015,
+          0.015,
+          0.015,
+          1.0
+        ]
+      },
+      {
+        "material": "Red_Brick_Mat_Inst",
+        "baseColorTexture": "T_Red_Brick",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Red_Brick_Mat_Inst",
+        "baseColorTexture": "T_Red_Brick",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Gravel_Mat",
+        "baseColorTexture": "T_Gravel",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Generic_Color_Mat_Inst2",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.015,
+          0.015,
+          0.015,
+          1.0
+        ]
+      },
+      {
+        "material": "Concrete_Mat_Inst2",
+        "baseColorTexture": "T_Concrete",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Roof_Tiles_Mat",
+        "baseColorTexture": "T_Roof_Tiles",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Generic_Color_Mat_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Red_Brick_Mat_Inst2",
+        "baseColorTexture": "T_Red_Brick",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "PlasteredWall_MAT_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "material": "Generic_Color_Mat_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "WindowGlass_Mat_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.025,
+          0.04,
+          0.05,
+          1
+        ]
+      },
+      {
+        "material": "Red_Brick_Mat_Inst",
+        "baseColorTexture": "T_Red_Brick",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Door_Mat_Inst9",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Generic_Color_Mat_Inst",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Roof_Felt_Mat",
+        "baseColorTexture": "T_Roof_Felt",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Gravel_Mat",
+        "baseColorTexture": "T_Gravel",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "FireEscape_MAT",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "FireEscape_Bars_MAT",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "Rusted_DiamondPlate_Mat",
+        "baseColorTexture": "T_Rusted_DiamondPlate",
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      },
+      {
+        "material": "FireEscape_MAT",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.65,
+          0.65,
+          0.65,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vehicle",
+    "file": "E:\\undefeated-web\\public\\assets\\original\\vehicle\\vehicle.gltf",
+    "sha256": "9713c7e69c9e6aee22280770fa19775d73fdfc766c38a4ebf687e148af90d500",
+    "joints": 6,
+    "triangles": 12732,
+    "materials": [
+      {
+        "material": "M_Vehicle_Sedan_Inst_Plastic",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.025,
+          0.025,
+          0.025,
+          1
+        ]
+      },
+      {
+        "material": "M_Vehicle_Sedan_Inst_Plastic",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.025,
+          0.025,
+          0.025,
+          1
+        ]
+      },
+      {
+        "material": "M_Vehicle_Sedan",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.11,
+          0.27,
+          0.36,
+          1
+        ]
+      },
+      {
+        "material": "M_Vehicle_Sedan_Inst_TailLights",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.5,
+          0.015,
+          0.01,
+          1
+        ]
+      },
+      {
+        "material": "M_Vehicle_Sedan_Inst_Glass",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.025,
+          0.04,
+          0.05,
+          1
+        ]
+      },
+      {
+        "material": "M_Vehicle_Sedan_Inst_Headlights",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.8,
+          0.85,
+          0.8,
+          1
+        ]
+      },
+      {
+        "material": "M_Vehicle_Sedan_Inst_Tires",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.012,
+          0.012,
+          0.012,
+          1
+        ]
+      },
+      {
+        "material": "M_Vehicle_Sedan_Inst_Wheels",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.4,
+          0.4,
+          0.4,
+          1
+        ]
+      },
+      {
+        "material": "M_Vehicle_Sedan_Inst_Wheels",
+        "baseColorTexture": null,
+        "baseColorFactor": [
+          0.4,
+          0.4,
+          0.4,
+          1
+        ]
+      }
+    ]
+  }
+]

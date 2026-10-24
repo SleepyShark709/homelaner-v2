@@ -1,0 +1,11 @@
+{
+  "wave": 6,
+  "elapsed_seconds": 55.4,
+  "processed": 306,
+  "pending": 0,
+  "decoded_ok": 306,
+  "reused": 36,
+  "failed": 0,
+  "edges": 966,
+  "finished": true
+}

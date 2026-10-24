@@ -1,0 +1,30 @@
+[
+  {
+    "asset": "C:\\Users\\Shark\\OneDrive\\\u6587\u6863\\ChatGPT\\homerlander\\analysis\\extracted\\UNDEFEATED\\Content\\-HeroGame\\Player\\AttackBP\\BP_NormalLongAttackCollirion.uasset",
+    "sha256": "2f1b5fcbcf1a4b61df509d43c6c91040a296b4c5ec1e3cd1d78f01047462477e",
+    "uexp_sha256": "e4f39cc6e16ad3eaae337208d5cff66f42118d5d9eaeb7a259ccb73a561e10c1",
+    "decoded": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_NormalLongAttackCollirion.json",
+    "returncode": 0
+  },
+  {
+    "asset": "C:\\Users\\Shark\\OneDrive\\\u6587\u6863\\ChatGPT\\homerlander\\analysis\\extracted\\UNDEFEATED\\Content\\-HeroGame\\Player\\AttackBP\\BP_SuperPunch.uasset",
+    "sha256": "7e28ed4807d5b46c478af5aa2d9d1456f0642a7360575ee45e33aa821383d7d4",
+    "uexp_sha256": "33e6dcec797b9fe218bb87f58150d822671be47fde36e446995d293d2c9513d6",
+    "decoded": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_SuperPunch.json",
+    "returncode": 0
+  },
+  {
+    "asset": "C:\\Users\\Shark\\OneDrive\\\u6587\u6863\\ChatGPT\\homerlander\\analysis\\extracted\\UNDEFEATED\\Content\\-HeroGame\\Player\\AttackBP\\BP_SuperKick.uasset",
+    "sha256": "6639ef7988cab1ece7a794130d67edae0b4b549e26bf7156a70478dd6166bdb2",
+    "uexp_sha256": "c6f99dddd32e80207dbda32b0c6bdab68d32eac5e64e08ee7ea53bd1d07f922c",
+    "decoded": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_SuperKick.json",
+    "returncode": 0
+  },
+  {
+    "asset": "C:\\Users\\Shark\\OneDrive\\\u6587\u6863\\ChatGPT\\homerlander\\analysis\\extracted\\UNDEFEATED\\Content\\-HeroGame\\Player\\AttackBP\\BP_AirLongAttack_Kick.uasset",
+    "sha256": "f84c549935159d442c5e7e6e1375453d0ef1991ab95a47d1a26079ec5e6a9541",
+    "uexp_sha256": "1957bab8034f821cb24459be39fbd0ca499277603d9299dada8a5aff9e9cf869",
+    "decoded": "E:\\undefeated-web\\research\\evidence\\combat-decoded\\BP_AirLongAttack_Kick.json",
+    "returncode": 0
+  }
+]

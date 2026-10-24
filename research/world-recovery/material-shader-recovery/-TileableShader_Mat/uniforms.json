@@ -1,0 +1,174 @@
+{
+  "frozenStartInExtras": 243,
+  "frozenBytes": 19470,
+  "frozenSHA256": "09ac95a921ffc5ffe06a1f07bfc8738978a90dc2bcd6011c896c9b4fa9e74c1a",
+  "layoutParametersRaw": [
+    8,
+    41
+  ],
+  "scalarParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 18976,
+      "parameter": "Base Layer Scale",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.0
+    },
+    {
+      "index": 1,
+      "frozenOffset": 19000,
+      "parameter": "BaseColor Contrast",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 0.0
+    },
+    {
+      "index": 2,
+      "frozenOffset": 19024,
+      "parameter": "Roughness Contrast",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 0.0
+    },
+    {
+      "index": 3,
+      "frozenOffset": 19048,
+      "parameter": "Roughness",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.0
+    }
+  ],
+  "vectorParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 19072,
+      "parameter": "SelectionColor",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "textureParameters2D": [
+    {
+      "index": 0,
+      "frozenOffset": 19108,
+      "parameter": "Normal",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 2,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/Brick_N"
+    },
+    {
+      "index": 1,
+      "frozenOffset": 19136,
+      "parameter": "BaseColor",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 1,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/Brick_A"
+    },
+    {
+      "index": 2,
+      "frozenOffset": 19164,
+      "parameter": "Compact",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 0,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/Brick_C"
+    }
+  ],
+  "uniformVectorPreshaders": [
+    {
+      "offset": 105,
+      "size": 3,
+      "bytesHex": "040000"
+    },
+    {
+      "offset": 108,
+      "size": 9,
+      "bytesHex": "0400002303000102ff"
+    },
+    {
+      "offset": 117,
+      "size": 44,
+      "bytesHex": "0200000000000000000000000000000000030100060200000000000000000000000000000000030100062401"
+    },
+    {
+      "offset": 161,
+      "size": 67,
+      "bytesHex": "02000000000000000000000000000000000301000602000000000000000000000000000000000301000624010200000000000000000000000000000000030100062402"
+    }
+  ],
+  "uniformScalarPreshaders": [
+    {
+      "offset": 0,
+      "size": 3,
+      "bytesHex": "030000"
+    },
+    {
+      "offset": 3,
+      "size": 9,
+      "bytesHex": "040000230103ffffff"
+    },
+    {
+      "offset": 12,
+      "size": 3,
+      "bytesHex": "030100"
+    },
+    {
+      "offset": 15,
+      "size": 21,
+      "bytesHex": "020000000000000000000000000000000003010006"
+    },
+    {
+      "offset": 36,
+      "size": 21,
+      "bytesHex": "030100020000803f0000803f0000803f0000803f05"
+    },
+    {
+      "offset": 57,
+      "size": 3,
+      "bytesHex": "030200"
+    },
+    {
+      "offset": 60,
+      "size": 21,
+      "bytesHex": "030200020000803f0000803f0000803f0000803f05"
+    },
+    {
+      "offset": 81,
+      "size": 21,
+      "bytesHex": "020000000000000000000000000000000003020006"
+    },
+    {
+      "offset": 102,
+      "size": 3,
+      "bytesHex": "030300"
+    }
+  ],
+  "namePatches": {
+    "18976": "Base Layer Scale",
+    "19136": "BaseColor",
+    "19000": "BaseColor Contrast",
+    "19164": "Compact",
+    "19108": "Normal",
+    "19048": "Roughness",
+    "19024": "Roughness Contrast",
+    "19072": "SelectionColor"
+  },
+  "preshaderDataHex": "030000040000230103ffffff030100020000000000000000000000000000000003010006030100020000803f0000803f0000803f0000803f05030200030200020000803f0000803f0000803f0000803f050200000000000000000000000000000000030200060303000400000400002303000102ff020000000000000000000000000000000003010006020000000000000000000000000000000003010006240102000000000000000000000000000000000301000602000000000000000000000000000000000301000624010200000000000000000000000000000000030100062402",
+  "preshaderDataFrozenOffset": 19192
+}

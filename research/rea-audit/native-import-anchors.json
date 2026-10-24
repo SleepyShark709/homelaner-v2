@@ -1,0 +1,243 @@
+{
+  "evidence_kind": "UAssetAPI native import identities, NOT decompilation or REA evidence",
+  "scope": "All306 decoded closure packages",
+  "script_module": "/Script/UNDEFEATED",
+  "anchors": [
+    {
+      "kind": "Class",
+      "qualified_identity": "/Script/UNDEFEATED.ActivitySystemLibrary",
+      "references": [
+        {
+          "module": "/Script/UNDEFEATED",
+          "name": "ActivitySystemLibrary",
+          "import_type": "Class",
+          "outer_chain": [
+            "/Script/UNDEFEATED",
+            "ActivitySystemLibrary"
+          ],
+          "source_package": "/Game/-HeroGame/BP/Game/BP_StoryManager",
+          "source_json": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_StoryManager.json",
+          "pointer": "/Imports/98",
+          "export_reference_pointers": []
+        },
+        {
+          "module": "/Script/UNDEFEATED",
+          "name": "ActivitySystemLibrary",
+          "import_type": "Class",
+          "outer_chain": [
+            "/Script/UNDEFEATED",
+            "ActivitySystemLibrary"
+          ],
+          "source_package": "/Game/-HeroGame/BP/Game/HeroGameInstance",
+          "source_json": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameInstance.json",
+          "pointer": "/Imports/46",
+          "export_reference_pointers": []
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "qualified_identity": "/Script/UNDEFEATED.ActivitySystemLibrary.StartActivity",
+      "references": [
+        {
+          "module": "/Script/UNDEFEATED",
+          "name": "StartActivity",
+          "import_type": "Function",
+          "outer_chain": [
+            "/Script/UNDEFEATED",
+            "ActivitySystemLibrary",
+            "StartActivity"
+          ],
+          "source_package": "/Game/-HeroGame/BP/Game/BP_StoryManager",
+          "source_json": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_StoryManager.json",
+          "pointer": "/Imports/127",
+          "export_reference_pointers": [
+            "/Exports/0/ScriptBytecode/124/StackNode",
+            "/Exports/0/ScriptBytecode/126/StackNode",
+            "/Exports/0/ScriptBytecode/131/StackNode"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "Class",
+      "qualified_identity": "/Script/UNDEFEATED.GameActivitySubsystem",
+      "references": [
+        {
+          "module": "/Script/UNDEFEATED",
+          "name": "GameActivitySubsystem",
+          "import_type": "Class",
+          "outer_chain": [
+            "/Script/UNDEFEATED",
+            "GameActivitySubsystem"
+          ],
+          "source_package": "/Game/-HeroGame/BP/Game/HeroGameInstance",
+          "source_json": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameInstance.json",
+          "pointer": "/Imports/47",
+          "export_reference_pointers": [
+            "/Exports/0/ScriptBytecode/18/AssignmentExpression/Parameters/1/Value",
+            "/Exports/0/ScriptBytecode/21/AssignmentExpression/Parameters/1/Value"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "Class",
+      "qualified_identity": "/Script/UNDEFEATED.UndefeatedGameInstance",
+      "references": [
+        {
+          "module": "/Script/UNDEFEATED",
+          "name": "UndefeatedGameInstance",
+          "import_type": "Class",
+          "outer_chain": [
+            "/Script/UNDEFEATED",
+            "UndefeatedGameInstance"
+          ],
+          "source_package": "/Game/-HeroGame/BP/Game/HeroGameInstance",
+          "source_json": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameInstance.json",
+          "pointer": "/Imports/48",
+          "export_reference_pointers": [
+            "/Exports/27/SuperStruct"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "DelegateFunction",
+      "qualified_identity": "/Script/UNDEFEATED.OnActivityRequested__DelegateSignature",
+      "references": [
+        {
+          "module": "/Script/UNDEFEATED",
+          "name": "OnActivityRequested__DelegateSignature",
+          "import_type": "DelegateFunction",
+          "outer_chain": [
+            "/Script/UNDEFEATED",
+            "OnActivityRequested__DelegateSignature"
+          ],
+          "source_package": "/Game/-HeroGame/BP/Game/HeroGameInstance",
+          "source_json": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameInstance.json",
+          "pointer": "/Imports/52",
+          "export_reference_pointers": []
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "qualified_identity": "/Script/UNDEFEATED.ActivitySystemLibrary.FinishActivity",
+      "references": [
+        {
+          "module": "/Script/UNDEFEATED",
+          "name": "FinishActivity",
+          "import_type": "Function",
+          "outer_chain": [
+            "/Script/UNDEFEATED",
+            "ActivitySystemLibrary",
+            "FinishActivity"
+          ],
+          "source_package": "/Game/-HeroGame/BP/Game/HeroGameInstance",
+          "source_json": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameInstance.json",
+          "pointer": "/Imports/86",
+          "export_reference_pointers": [
+            "/Exports/0/ScriptBytecode/244/StackNode",
+            "/Exports/0/ScriptBytecode/253/StackNode",
+            "/Exports/0/ScriptBytecode/256/StackNode",
+            "/Exports/0/ScriptBytecode/257/StackNode",
+            "/Exports/0/ScriptBytecode/300/StackNode",
+            "/Exports/0/ScriptBytecode/302/StackNode",
+            "/Exports/0/ScriptBytecode/304/StackNode",
+            "/Exports/0/ScriptBytecode/306/StackNode",
+            "/Exports/0/ScriptBytecode/307/StackNode"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "qualified_identity": "/Script/UNDEFEATED.ActivitySystemLibrary.GetActivityID",
+      "references": [
+        {
+          "module": "/Script/UNDEFEATED",
+          "name": "GetActivityID",
+          "import_type": "Function",
+          "outer_chain": [
+            "/Script/UNDEFEATED",
+            "ActivitySystemLibrary",
+            "GetActivityID"
+          ],
+          "source_package": "/Game/-HeroGame/BP/Game/HeroGameInstance",
+          "source_json": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameInstance.json",
+          "pointer": "/Imports/87",
+          "export_reference_pointers": [
+            "/Exports/0/ScriptBytecode/82/AssignmentExpression/StackNode"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "qualified_identity": "/Script/UNDEFEATED.ActivitySystemLibrary.SetEnableActivity",
+      "references": [
+        {
+          "module": "/Script/UNDEFEATED",
+          "name": "SetEnableActivity",
+          "import_type": "Function",
+          "outer_chain": [
+            "/Script/UNDEFEATED",
+            "ActivitySystemLibrary",
+            "SetEnableActivity"
+          ],
+          "source_package": "/Game/-HeroGame/BP/Game/HeroGameInstance",
+          "source_json": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameInstance.json",
+          "pointer": "/Imports/88",
+          "export_reference_pointers": [
+            "/Exports/0/ScriptBytecode/258/StackNode",
+            "/Exports/0/ScriptBytecode/308/StackNode"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "UndefeatedGameInstance",
+      "qualified_identity": "/Script/UNDEFEATED.Default__UndefeatedGameInstance",
+      "references": [
+        {
+          "module": "/Script/UNDEFEATED",
+          "name": "Default__UndefeatedGameInstance",
+          "import_type": "UndefeatedGameInstance",
+          "outer_chain": [
+            "/Script/UNDEFEATED",
+            "Default__UndefeatedGameInstance"
+          ],
+          "source_package": "/Game/-HeroGame/BP/Game/HeroGameInstance",
+          "source_json": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroGameInstance.json",
+          "pointer": "/Imports/175",
+          "export_reference_pointers": []
+        }
+      ]
+    }
+  ],
+  "all_script_module_import_counts": {
+    "/Script/Engine": 4880,
+    "/Script/CoreUObject": 755,
+    "/Script/LevelSequence": 13,
+    "/Script/MovieScene": 146,
+    "/Script/NavigationSystem": 21,
+    "/Script/UMG": 1164,
+    "/Script/UNDEFEATED": 10,
+    "/Script/GameplayCameras": 10,
+    "/Script/CinematicCamera": 1,
+    "/Script/SlateCore": 35,
+    "/Script/InputCore": 5,
+    "/Script/PhysicsCore": 20,
+    "/Script/AnimGraphRuntime": 39,
+    "/Script/AIModule": 192,
+    "/Script/ClothingSystemRuntimeNv": 7,
+    "/Script/Niagara": 7,
+    "/Script/PhysXVehicles": 53,
+    "/Script/MovieSceneTracks": 322,
+    "/Script/MediaAssets": 21,
+    "/Script/GameplayTasks": 6,
+    "/Script/HeadMountedDisplay": 2
+  },
+  "note": "Class/Function/DelegateFunction identities are real serialized imports. BlueprintGeneratedClass packages are excluded. A reference does not prove Windows native function implementation or behavior."
+}

@@ -1,0 +1,47 @@
+{
+  "originalSources": [
+    {
+      "package": "/Game/GTFreeMaterials/Materials/Ground_GrassThickGreen",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Ground_GrassThickGreen\\shader-0-ps_5_0.asm",
+      "shaderSha256": "c0d733d115c91e6d607f1bf7f98c1a76a8888f7d12a3951ac626521f46768089",
+      "instruction": "mul ..., specular, l(0.080000)",
+      "line": 206
+    },
+    {
+      "package": "/Game/ModularStreetPack/Materials/Concrete_Mat",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+      "shaderSha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+      "instruction": "mul ..., specular, l(0.080000)",
+      "line": 154
+    },
+    {
+      "package": "/Game/UrbanCity/Materials/Tileable/cobbleStone_01_Mat",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-0-ps_5_0.asm",
+      "shaderSha256": "9c9d80d6b25289ef764b47ad1a1f87d193ec80125679a508ffef03069aff21ee",
+      "instruction": "mul ..., specular, l(0.080000)",
+      "line": 143
+    }
+  ],
+  "originalFormula": "dielectricF0=0.08*UESpecular; mix with baseColor by metallic",
+  "babylonSources": [
+    {
+      "file": "node_modules/@babylonjs/core/Materials/PBR/pbrBaseMaterial.pure.js",
+      "sha256": "fc3a71a18055e31c9e222a81294ad352d5d8a2088d97a65b04b208402302fbf5",
+      "lines": [
+        1653,
+        1662
+      ]
+    },
+    {
+      "file": "node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrBlockReflectivity.js",
+      "sha256": "b3ca93fa8b302538508eac4f1eccb331b946cfbcffc5f24d2275351f36dcba6c",
+      "lines": [
+        82,
+        109
+      ]
+    }
+  ],
+  "babylonFormula": "defaultF0=((IOR-1)/(IOR+1))^2; dielectricF0=defaultF0*metallicF0Factor*metallicReflectanceColor",
+  "mappingAtIOR1_5AndWhiteReflectance": "metallicF0Factor=2*UESpecular",
+  "scope": "Matches dielectric F0 only. Current Babylon also uses specularWeight/factor in F90 and energy terms; full UE Fresnel/lighting equivalence not claimed."
+}

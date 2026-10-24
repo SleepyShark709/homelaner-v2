@@ -1,0 +1,121 @@
+{
+  "frozenStartInExtras": 129,
+  "frozenBytes": 13290,
+  "frozenSHA256": "2c69d45fe540eb4aab6bc1725cfce6083cc166de01d12bae5f556ecbe266a74b",
+  "layoutParametersRaw": [
+    8,
+    41
+  ],
+  "scalarParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 13000,
+      "parameter": "Macro_roughnessContrast",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 0.0
+    }
+  ],
+  "vectorParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 13024,
+      "parameter": "SelectionColor",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "textureParameters2D": [
+    {
+      "index": 0,
+      "frozenOffset": 13060,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 4,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_h1"
+    },
+    {
+      "index": 1,
+      "frozenOffset": 13088,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 1,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_n"
+    },
+    {
+      "index": 2,
+      "frozenOffset": 13116,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 3,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/GTFreeMaterials/Textures/T_MacroVariation2"
+    },
+    {
+      "index": 3,
+      "frozenOffset": 13144,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 0,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_alb"
+    },
+    {
+      "index": 4,
+      "frozenOffset": 13172,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 2,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_g"
+    }
+  ],
+  "uniformVectorPreshaders": [
+    {
+      "offset": 12,
+      "size": 3,
+      "bytesHex": "040000"
+    },
+    {
+      "offset": 15,
+      "size": 9,
+      "bytesHex": "0400002303000102ff"
+    }
+  ],
+  "uniformScalarPreshaders": [
+    {
+      "offset": 0,
+      "size": 9,
+      "bytesHex": "040000230103ffffff"
+    },
+    {
+      "offset": 9,
+      "size": 3,
+      "bytesHex": "030000"
+    }
+  ],
+  "namePatches": {
+    "13000": "Macro_roughnessContrast",
+    "13024": "SelectionColor"
+  },
+  "preshaderDataHex": "040000230103ffffff0300000400000400002303000102ff",
+  "preshaderDataFrozenOffset": 13200
+}

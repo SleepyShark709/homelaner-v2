@@ -1,0 +1,63 @@
+0x140ea9bc0: MOV qword ptr [RSP + 0x8], RBX
+0x140ea9bc5: MOV qword ptr [RSP + 0x18], RSI
+0x140ea9bca: MOV qword ptr [RSP + 0x20], RDI
+0x140ea9bcf: PUSH R14
+0x140ea9bd1: SUB RSP, 0x30
+0x140ea9bd5: XOR EDI, EDI
+0x140ea9bd7: MOV byte ptr [RSP + 0x48], 0x0
+0x140ea9bdc: MOV R14, R8
+0x140ea9bdf: MOV RBX, RDX
+0x140ea9be2: MOV RCX, RDX
+0x140ea9be5: MOV qword ptr [RDX + 0x38], RDI
+0x140ea9be9: CMP qword ptr [RDX + 0x20], RDI
+0x140ea9bed: JZ 0x140ea9bff
+0x140ea9bef: MOV RDX, qword ptr [RDX + 0x18]
+0x140ea9bf3: LEA R8, [RSP + 0x48]
+0x140ea9bf8: CALL 0x1411e66f0
+0x140ea9bfd: JMP 0x140ea9c1b
+0x140ea9bff: MOV R8, qword ptr [RDX + 0x80]
+0x140ea9c06: MOV RAX, qword ptr [R8 + 0x20]
+0x140ea9c0a: MOV qword ptr [RDX + 0x80], RAX
+0x140ea9c11: LEA RDX, [RSP + 0x48]
+0x140ea9c16: CALL 0x1411e6720
+0x140ea9c1b: MOV RAX, qword ptr [RBX + 0x38]
+0x140ea9c1f: LEA RSI, [RSP + 0x48]
+0x140ea9c24: TEST RAX, RAX
+0x140ea9c27: MOV qword ptr [RSP + 0x20], RDI
+0x140ea9c2c: MOV qword ptr [RSP + 0x28], RDI
+0x140ea9c31: MOV RCX, RBX
+0x140ea9c34: CMOVNZ RSI, RAX
+0x140ea9c38: MOV qword ptr [RBX + 0x38], RDI
+0x140ea9c3c: CMP qword ptr [RBX + 0x20], RDI
+0x140ea9c40: JZ 0x140ea9c52
+0x140ea9c42: MOV RDX, qword ptr [RBX + 0x18]
+0x140ea9c46: LEA R8, [RSP + 0x20]
+0x140ea9c4b: CALL 0x1411e66f0
+0x140ea9c50: JMP 0x140ea9c6e
+0x140ea9c52: MOV R8, qword ptr [RBX + 0x80]
+0x140ea9c59: LEA RDX, [RSP + 0x20]
+0x140ea9c5e: MOV RAX, qword ptr [R8 + 0x20]
+0x140ea9c62: MOV qword ptr [RBX + 0x80], RAX
+0x140ea9c69: CALL 0x1411e6720
+0x140ea9c6e: MOV RAX, qword ptr [RBX + 0x38]
+0x140ea9c72: LEA RDX, [RSP + 0x20]
+0x140ea9c77: TEST RAX, RAX
+0x140ea9c7a: MOV RCX, RSI
+0x140ea9c7d: CMOVNZ RDX, RAX
+0x140ea9c81: MOV RAX, qword ptr [RBX + 0x20]
+0x140ea9c85: TEST RAX, RAX
+0x140ea9c88: SETNZ DIL
+0x140ea9c8c: ADD RDI, RAX
+0x140ea9c8f: MOV qword ptr [RBX + 0x20], RDI
+0x140ea9c93: CALL 0x140ea7680
+0x140ea9c98: MOV RCX, qword ptr [RSP + 0x20]
+0x140ea9c9d: MOV byte ptr [R14], AL
+0x140ea9ca0: TEST RCX, RCX
+0x140ea9ca3: JZ 0x140ea9caa
+0x140ea9ca5: CALL 0x140ef49c0
+0x140ea9caa: MOV RBX, qword ptr [RSP + 0x40]
+0x140ea9caf: MOV RSI, qword ptr [RSP + 0x50]
+0x140ea9cb4: MOV RDI, qword ptr [RSP + 0x58]
+0x140ea9cb9: ADD RSP, 0x30
+0x140ea9cbd: POP R14
+0x140ea9cbf: RET

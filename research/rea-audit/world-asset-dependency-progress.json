@@ -1,0 +1,15 @@
+{
+  "seedPackages": 640,
+  "processedPackages": 2084,
+  "pendingPackages": 0,
+  "decodedPackages": 2084,
+  "failedPackages": 0,
+  "rawExports": 2,
+  "packagesWithRawExports": 1,
+  "reusedMaterialAuditPackages": 139,
+  "importsEdges": 11641,
+  "followedEdges": 5741,
+  "newThisRun": 484,
+  "elapsedSecondsThisRun": 148.54,
+  "queueExhausted": true
+}

@@ -1,0 +1,82 @@
+{
+  "verifiedUTC": "2026-10-24T12:49:43.019166+00:00",
+  "webFilesCompared": [
+    {
+      "path": "E:\\undefeated-web\\src\\game\\World.ts",
+      "matchesAuditedSnapshot": true
+    },
+    {
+      "path": "E:\\undefeated-web\\src\\game\\Character.ts",
+      "matchesAuditedSnapshot": true
+    },
+    {
+      "path": "E:\\undefeated-web\\src\\game\\Population.ts",
+      "matchesAuditedSnapshot": true
+    },
+    {
+      "path": "E:\\undefeated-web\\src\\game\\PlayerMotor.ts",
+      "matchesAuditedSnapshot": true
+    },
+    {
+      "path": "E:\\undefeated-web\\src\\game\\collision.ts",
+      "matchesAuditedSnapshot": true
+    },
+    {
+      "path": "E:\\undefeated-web\\src\\game\\Game.ts",
+      "matchesAuditedSnapshot": true
+    },
+    {
+      "path": "E:\\undefeated-web\\src\\game\\Combat.ts",
+      "matchesAuditedSnapshot": true
+    },
+    {
+      "path": "E:\\undefeated-web\\src\\game\\combat-rules.ts",
+      "matchesAuditedSnapshot": true
+    },
+    {
+      "path": "E:\\undefeated-web\\src\\game\\Effects.ts",
+      "matchesAuditedSnapshot": true
+    },
+    {
+      "path": "E:\\undefeated-web\\src\\game\\Input.ts",
+      "matchesAuditedSnapshot": true
+    }
+  ],
+  "originalExecutableMatchesInitialSHA256": true,
+  "gameMapCount": 41,
+  "worldResourceQueueExhausted": true,
+  "worldResourcePackages": 2084,
+  "auditReportLinksExist": {
+    "all-package-type-coverage.zh-CN.md": true,
+    "world-coverage.zh-CN.txt": true,
+    "all-map-inventory.zh-CN.txt": true,
+    "material-coverage.md": true,
+    "world-asset-dependency-closure.zh-CN.md": true,
+    "dependency-closure.md": true,
+    "all-blueprint-coverage.md": true,
+    "player-state-contract.md": true,
+    "logic-coverage.md": true,
+    "native-analysis.md": true,
+    "toolchain-provenance.json": true
+  },
+  "limitations": [
+    "Only listed Web files were compared.",
+    "No original-game runtime verification.",
+    "No new geometry/texture conversion or Web rendering validation this audit turn.",
+    "Registry type classification and generated-class identity matching are not complete behavior reconstruction.",
+    "Default native profile timed out; limited-profile static analysis succeeded for the reported samples, not all semantics."
+  ],
+  "originalPakMatchesInitialSHA256": true,
+  "originalPakSHA256": "4aecf43f0983c756aeb0e2ef1a2030915b19858c58bd47c2179a4c3a504625cf",
+  "allPakTypesClassified": 5310,
+  "allRegisteredProjectGeneratedClassPackagesDecoded": 291,
+  "nativeREA": {
+    "inventorySucceeded": true,
+    "functionDossiers": 10,
+    "evidenceRecords": 17,
+    "allReportedEvidenceIdsRetained": true,
+    "bundleSHA256": "b14774194c8416e0a89310db2b99c64ad5fd420f6c32c6b6e0552182ee31a0d4",
+    "limitedAnalysisProfile": true,
+    "runtimeVerified": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "sourcePackage": "/Game/Skies/Textures/T_SkyCloudy11",
+  "colorSpace": "linear",
+  "srgbExplicit": false,
+  "compression": "TC_HDR",
+  "flipGreenMetadata": null,
+  "source": {
+    "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\Skies\\Textures\\T_SkyCloudy11.json",
+    "decodedSha256": "4c68686cbe8808cfd98fdddfb3fe15c9c01c95c61dfea6c94cdf681952a1f0be"
+  },
+  "status": "exported-original-hdr-not-bound",
+  "url": "/assets/world/textures/Game/Skies/Textures/T_SkyCloudy11.hdr",
+  "sha256": "30ef3404089790bd49f75d5a61a522e75a621365982d2a1c2c9affa952d5dde6",
+  "bytes": 67108915,
+  "unsupported": "HDR image preserved; not bound to ordinary PNG/PBR slots"
+}

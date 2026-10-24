@@ -1,0 +1,600 @@
+[
+  {
+    "sourcePackage": "/Game/GTFreeMaterials/Materials/Ground_GrassThickGreen",
+    "shaderRecovery": {
+      "version": 1,
+      "kind": "grass-parallax-macro",
+      "status": "original-cooked-computation-statically-recovered",
+      "authoritativeRoles": [
+        "baseColor",
+        "normal",
+        "roughness",
+        "metallic"
+      ],
+      "textures": {
+        "height": {
+          "url": "/assets/world/textures/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_h1.png",
+          "colorSpace": "srgb",
+          "texturePackage": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_h1",
+          "channel": "r",
+          "texCoord": 0,
+          "sourceParameter": "DXBC:t14",
+          "evidence": {
+            "file": "research\\world-recovery\\material-shader-recovery\\Ground_GrassThickGreen\\index.json",
+            "pointer": "/shaders/0",
+            "package": "/Game/GTFreeMaterials/Materials/Ground_GrassThickGreen"
+          },
+          "shaderEvidence": {
+            "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Ground_GrassThickGreen\\shader-0-ps_5_0.asm",
+            "assemblyLines": [
+              87,
+              92
+            ],
+            "shaderSha256": "c0d733d115c91e6d607f1bf7f98c1a76a8888f7d12a3951ac626521f46768089",
+            "textureRegister": 14,
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "componentSwizzle": "r"
+          },
+          "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+          "uvMappingStatus": "original TEXCOORD0"
+        },
+        "normal": {
+          "url": "/assets/world/textures/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_n.png",
+          "colorSpace": "linear",
+          "texturePackage": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_n",
+          "channel": "rgb",
+          "texCoord": 0,
+          "sourceParameter": "DXBC:t15",
+          "evidence": {
+            "file": "research\\world-recovery\\material-shader-recovery\\Ground_GrassThickGreen\\index.json",
+            "pointer": "/shaders/0",
+            "package": "/Game/GTFreeMaterials/Materials/Ground_GrassThickGreen"
+          },
+          "shaderEvidence": {
+            "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Ground_GrassThickGreen\\shader-0-ps_5_0.asm",
+            "assemblyLines": [
+              93,
+              114
+            ],
+            "shaderSha256": "c0d733d115c91e6d607f1bf7f98c1a76a8888f7d12a3951ac626521f46768089",
+            "textureRegister": 15,
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "componentSwizzle": "rgb"
+          },
+          "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+          "uvMappingStatus": "original TEXCOORD0",
+          "normalConvention": "directx",
+          "normalValidation": {
+            "greenChannelTransformation": "unchanged-from-cooked-BC5",
+            "validation": "592 pixels / 37 distributed BC5 blocks: original R/G match within 1; inverted G hypothesis rejected",
+            "sourceBulkSha256": "69b14edb9e24beb40807e0de6e3e6e9841147ee7097a75c7dfbebcc50a235b8a"
+          }
+        },
+        "macro": {
+          "url": "/assets/world/textures/Game/GTFreeMaterials/Textures/T_MacroVariation2.png",
+          "colorSpace": "srgb",
+          "texturePackage": "/Game/GTFreeMaterials/Textures/T_MacroVariation2",
+          "channel": "r",
+          "texCoord": 0,
+          "sourceParameter": "DXBC:t16",
+          "evidence": {
+            "file": "research\\world-recovery\\material-shader-recovery\\Ground_GrassThickGreen\\index.json",
+            "pointer": "/shaders/0",
+            "package": "/Game/GTFreeMaterials/Materials/Ground_GrassThickGreen"
+          },
+          "shaderEvidence": {
+            "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Ground_GrassThickGreen\\shader-0-ps_5_0.asm",
+            "assemblyLines": [
+              116,
+              126
+            ],
+            "shaderSha256": "c0d733d115c91e6d607f1bf7f98c1a76a8888f7d12a3951ac626521f46768089",
+            "textureRegister": 16,
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "componentSwizzle": "r"
+          },
+          "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+          "uvMappingStatus": "original TEXCOORD0"
+        },
+        "baseColor": {
+          "url": "/assets/world/textures/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_alb.png",
+          "colorSpace": "srgb",
+          "texturePackage": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_alb",
+          "channel": "rgb",
+          "texCoord": 0,
+          "sourceParameter": "DXBC:t17",
+          "evidence": {
+            "file": "research\\world-recovery\\material-shader-recovery\\Ground_GrassThickGreen\\index.json",
+            "pointer": "/shaders/0",
+            "package": "/Game/GTFreeMaterials/Materials/Ground_GrassThickGreen"
+          },
+          "shaderEvidence": {
+            "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Ground_GrassThickGreen\\shader-0-ps_5_0.asm",
+            "assemblyLines": [
+              129,
+              148
+            ],
+            "shaderSha256": "c0d733d115c91e6d607f1bf7f98c1a76a8888f7d12a3951ac626521f46768089",
+            "textureRegister": 17,
+            "constantBuffer": 2,
+            "resourceIndex": 6,
+            "componentSwizzle": "rgb"
+          },
+          "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+          "uvMappingStatus": "original TEXCOORD0"
+        },
+        "gloss": {
+          "url": "/assets/world/textures/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_g.png",
+          "colorSpace": "srgb",
+          "texturePackage": "/Game/GTFreeMaterials/Textures/Ground_GrassThickGreen/Ground_GrassThickGreen_2k_g",
+          "channel": "r",
+          "texCoord": 0,
+          "sourceParameter": "DXBC:t18",
+          "evidence": {
+            "file": "research\\world-recovery\\material-shader-recovery\\Ground_GrassThickGreen\\index.json",
+            "pointer": "/shaders/0",
+            "package": "/Game/GTFreeMaterials/Materials/Ground_GrassThickGreen"
+          },
+          "shaderEvidence": {
+            "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Ground_GrassThickGreen\\shader-0-ps_5_0.asm",
+            "assemblyLines": [
+              151,
+              154
+            ],
+            "shaderSha256": "c0d733d115c91e6d607f1bf7f98c1a76a8888f7d12a3951ac626521f46768089",
+            "textureRegister": 18,
+            "constantBuffer": 2,
+            "resourceIndex": 8,
+            "componentSwizzle": "r"
+          },
+          "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+          "uvMappingStatus": "original TEXCOORD0"
+        }
+      },
+      "uvSource": "TEXCOORD0",
+      "heightUVScale": 2.0,
+      "heightScale": 0.10000000149011612,
+      "heightBias": -0.035999998450279236,
+      "normalZScale": 0.800000011920929,
+      "macroUVScales": [
+        0.2134000062942505,
+        0.05341000109910965,
+        0.0020000000949949026
+      ],
+      "macroOffsets": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.5
+      ],
+      "macroColorScale": 0.3999999761581421,
+      "macroColorBias": 0.6000000238418579,
+      "tintLinear": [
+        1.0,
+        0.8240334987640381,
+        0.1850000023841858
+      ],
+      "facingColorScale": 0.5,
+      "grazingColorPower": 0.4000000059604645,
+      "fresnelMinimum": 9.999999747378752e-05,
+      "fresnelPower": 6.0,
+      "macroRoughnessContrast": 0.0,
+      "glossScale": 2.0,
+      "roughnessScale": -3.5,
+      "roughnessBias": 1.0,
+      "metallic": 0.0,
+      "specular": 0.15000000596046448,
+      "formula": {
+        "viewVector": "V=normalize(cameraAbsoluteUEcm - surfaceAbsoluteUEcm). Original shader uses normalize(-translatedWorldPosition) with camera-relative origin. For Web convert absolute world/camera positions .xzy before subtraction.",
+        "tangentFrame": "Use original interpolated T,N without normalization and B=cross(N,T)*hand, as vertex-frame.json; keep original UE handedness.",
+        "parallaxUV": "h=height(uv0*heightUVScale).r*heightScale+heightBias; uvP=uv0+h*vec2(dot(T,V),dot(B,V)); no division by view.z",
+        "macro": "k=(macro(uv0*macroUVScales.x).r+macroOffsets.x)*(macro(uv0*macroUVScales.y).r+macroOffsets.y)*(macro(uv0*macroUVScales.z).r+macroOffsets.z); use uv0, not uvP",
+        "tintedColor": "C=albedo(uvP).rgb*tintLinear*(k*macroColorScale+macroColorBias)",
+        "fresnel": "f=pow(max(abs(1-max(dot(N,V),0)),fresnelMinimum),fresnelPower); do not normalize interpolated N or clamp f before color mix",
+        "baseColor": "clamp(mix(C*facingColorScale,pow(max(C,0),vec3(grazingColorPower)),f),0,1)",
+        "roughness": "clamp(roughnessBias + roughnessScale*(gloss(uvP).r*glossScale)*(k*(1-macroRoughnessContrast)+macroRoughnessContrast),0,1)",
+        "normal": "xy=2*normal(uvP).rg-1; z=sqrt(max(1-dot(xy,xy),0)); nT=normalize(vec3(xy,z*normalZScale)); worldNormalUE=normalize(T*nT.x+B*nT.y+N*nT.z); worldNormalRH=worldNormalUE.xzy",
+        "colorSpace": "Decode each texture RGB using original per-texture colorSpace before taking any R value; alpha stays linear. Repeat wrap, original PNG rows."
+      },
+      "factorPolicy": "Plugin writes all authoritative roles and uses raw recovered textures; no generic UV0 normal or packed ORM substitution and no duplicate factors.",
+      "evidence": {
+        "bindingFile": "research/world-recovery/material-shader-recovery/round2-bindings.json",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Ground_GrassThickGreen\\shader-0-ps_5_0.asm",
+        "shaderSha256": "c0d733d115c91e6d607f1bf7f98c1a76a8888f7d12a3951ac626521f46768089",
+        "materialConstantBuffer": 2
+      },
+      "limitations": [
+        "Original view mip-bias, instanced LOD dithering, lighting and postprocessing are not reconstructed by this material contract.",
+        "Uses existing glTF T/N normalization; original packed-vector magnitude precision is retained as a known geometry difference."
+      ]
+    }
+  },
+  {
+    "sourcePackage": "/Game/ModularStreetPack/Materials/Concrete_Mat",
+    "shaderRecovery": {
+      "version": 1,
+      "kind": "concrete-mildew",
+      "status": "original-cooked-computation-statically-recovered",
+      "authoritativeRoles": [
+        "baseColor"
+      ],
+      "textures": {
+        "baseColor": {
+          "url": "/assets/world/textures/Game/ModularStreetPack/Textures/T_Concrete.png",
+          "colorSpace": "srgb",
+          "texturePackage": "/Game/ModularStreetPack/Textures/T_Concrete",
+          "channel": "rgb",
+          "texCoord": 0,
+          "sourceParameter": "DXBC:t16",
+          "evidence": {
+            "file": "research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\index.json",
+            "pointer": "/shaders/0",
+            "package": "/Game/ModularStreetPack/Materials/Concrete_Mat"
+          },
+          "shaderEvidence": {
+            "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+            "assemblyLines": [
+              103,
+              110
+            ],
+            "shaderSha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+            "textureRegister": 16,
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "componentSwizzle": "rgb"
+          },
+          "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+          "uvMappingStatus": "original TEXCOORD0"
+        },
+        "gradientMask": {
+          "url": "/assets/world/textures/Game/ModularStreetPack/Textures/T_Mildew_GradientMap.png",
+          "colorSpace": "linear",
+          "texturePackage": "/Game/ModularStreetPack/Textures/T_Mildew_GradientMap",
+          "channel": "r",
+          "texCoord": 0,
+          "sourceParameter": "DXBC:t17",
+          "evidence": {
+            "file": "research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\index.json",
+            "pointer": "/shaders/0",
+            "package": "/Game/ModularStreetPack/Materials/Concrete_Mat"
+          },
+          "shaderEvidence": {
+            "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+            "assemblyLines": [
+              104,
+              107
+            ],
+            "shaderSha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+            "textureRegister": 17,
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "componentSwizzle": "r"
+          },
+          "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+          "uvMappingStatus": "original TEXCOORD0"
+        },
+        "mildewMask": {
+          "url": "/assets/world/textures/Game/ModularStreetPack/Textures/T_Mildew_Map.png",
+          "colorSpace": "linear",
+          "texturePackage": "/Game/ModularStreetPack/Textures/T_Mildew_Map",
+          "channel": "r",
+          "texCoord": 0,
+          "sourceParameter": "DXBC:t18",
+          "evidence": {
+            "file": "research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\index.json",
+            "pointer": "/shaders/0",
+            "package": "/Game/ModularStreetPack/Materials/Concrete_Mat"
+          },
+          "shaderEvidence": {
+            "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+            "assemblyLines": [
+              105,
+              107
+            ],
+            "shaderSha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+            "textureRegister": 18,
+            "constantBuffer": 1,
+            "resourceIndex": 6,
+            "componentSwizzle": "r"
+          },
+          "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+          "uvMappingStatus": "original TEXCOORD0"
+        }
+      },
+      "uvSource": "TEXCOORD0",
+      "gradientAmount": 0.02568800002336502,
+      "mildewAmount": 0.0,
+      "mildewColorLinear": [
+        0.0,
+        0.10499999672174454,
+        0.0002704918442759663
+      ],
+      "specular": 0.5,
+      "formula": {
+        "weight": "sampleGradient(UV0).r*gradientAmount + sampleMildew(UV0).r*mildewAmount; do not clamp this weight",
+        "baseColor": "clamp(albedo(UV0).rgb + weight*(mildewColorLinear-albedo(UV0).rgb),0,1)",
+        "normal": "ordinary original RG tangent normal at UV0",
+        "roughness": "clamp(sampleRoughness(UV0).r,0,1)",
+        "metallic": 0
+      },
+      "factorPolicy": "Plugin replaces final albedo only; ordinary channels/packedPBR provide original normal and roughness. Do not apply generic vertex color to final albedo.",
+      "evidence": {
+        "bindingFile": "research/world-recovery/material-shader-recovery/round2-bindings.json",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+        "shaderSha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+        "materialConstantBuffer": 1
+      },
+      "limitations": [
+        "Original engine lighting, decals and view overrides are outside recovered material computation."
+      ]
+    }
+  },
+  {
+    "sourcePackage": "/Game/ModularStreetPack/Materials/Material_Instances/Concrete_Mat_Inst",
+    "shaderRecovery": {
+      "version": 1,
+      "kind": "concrete-mildew",
+      "status": "original-cooked-computation-statically-recovered",
+      "authoritativeRoles": [
+        "baseColor"
+      ],
+      "textures": {
+        "baseColor": {
+          "url": "/assets/world/textures/Game/ModularStreetPack/Textures/T_Concrete.png",
+          "colorSpace": "srgb",
+          "texturePackage": "/Game/ModularStreetPack/Textures/T_Concrete",
+          "channel": "rgb",
+          "texCoord": 0,
+          "sourceParameter": "DXBC:t16",
+          "evidence": {
+            "file": "research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\index.json",
+            "pointer": "/shaders/0",
+            "package": "/Game/ModularStreetPack/Materials/Concrete_Mat"
+          },
+          "shaderEvidence": {
+            "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+            "assemblyLines": [
+              103,
+              110
+            ],
+            "shaderSha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+            "textureRegister": 16,
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "componentSwizzle": "rgb"
+          },
+          "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+          "uvMappingStatus": "original TEXCOORD0"
+        },
+        "gradientMask": {
+          "url": "/assets/world/textures/Game/ModularStreetPack/Textures/T_Mildew_GradientMap.png",
+          "colorSpace": "linear",
+          "texturePackage": "/Game/ModularStreetPack/Textures/T_Mildew_GradientMap",
+          "channel": "r",
+          "texCoord": 0,
+          "sourceParameter": "DXBC:t17",
+          "evidence": {
+            "file": "research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\index.json",
+            "pointer": "/shaders/0",
+            "package": "/Game/ModularStreetPack/Materials/Concrete_Mat"
+          },
+          "shaderEvidence": {
+            "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+            "assemblyLines": [
+              104,
+              107
+            ],
+            "shaderSha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+            "textureRegister": 17,
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "componentSwizzle": "r"
+          },
+          "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+          "uvMappingStatus": "original TEXCOORD0"
+        },
+        "mildewMask": {
+          "url": "/assets/world/textures/Game/ModularStreetPack/Textures/T_Mildew_Map.png",
+          "colorSpace": "linear",
+          "texturePackage": "/Game/ModularStreetPack/Textures/T_Mildew_Map",
+          "channel": "r",
+          "texCoord": 0,
+          "sourceParameter": "DXBC:t18",
+          "evidence": {
+            "file": "research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\index.json",
+            "pointer": "/shaders/0",
+            "package": "/Game/ModularStreetPack/Materials/Concrete_Mat"
+          },
+          "shaderEvidence": {
+            "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+            "assemblyLines": [
+              105,
+              107
+            ],
+            "shaderSha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+            "textureRegister": 18,
+            "constantBuffer": 1,
+            "resourceIndex": 6,
+            "componentSwizzle": "r"
+          },
+          "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+          "uvMappingStatus": "original TEXCOORD0"
+        }
+      },
+      "uvSource": "TEXCOORD0",
+      "gradientAmount": 1.0,
+      "mildewAmount": 0.0,
+      "mildewColorLinear": [
+        0.0,
+        0.07000000029802322,
+        0.00018000000272877514
+      ],
+      "specular": 0.5,
+      "formula": {
+        "weight": "sampleGradient(UV0).r*gradientAmount + sampleMildew(UV0).r*mildewAmount; do not clamp this weight",
+        "baseColor": "clamp(albedo(UV0).rgb + weight*(mildewColorLinear-albedo(UV0).rgb),0,1)",
+        "normal": "ordinary original RG tangent normal at UV0",
+        "roughness": "clamp(sampleRoughness(UV0).r,0,1)",
+        "metallic": 0
+      },
+      "factorPolicy": "Plugin replaces final albedo only; ordinary channels/packedPBR provide original normal and roughness. Do not apply generic vertex color to final albedo.",
+      "evidence": {
+        "bindingFile": "research/world-recovery/material-shader-recovery/round2-bindings.json",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+        "shaderSha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+        "materialConstantBuffer": 1
+      },
+      "limitations": [
+        "Original engine lighting, decals and view overrides are outside recovered material computation."
+      ]
+    }
+  },
+  {
+    "sourcePackage": "/Game/ModularStreetPack/Materials/Material_Instances/Concrete_Mat_Inst2",
+    "shaderRecovery": {
+      "version": 1,
+      "kind": "concrete-mildew",
+      "status": "original-cooked-computation-statically-recovered",
+      "authoritativeRoles": [
+        "baseColor"
+      ],
+      "textures": {
+        "baseColor": {
+          "url": "/assets/world/textures/Game/ModularStreetPack/Textures/T_Concrete.png",
+          "colorSpace": "srgb",
+          "texturePackage": "/Game/ModularStreetPack/Textures/T_Concrete",
+          "channel": "rgb",
+          "texCoord": 0,
+          "sourceParameter": "DXBC:t16",
+          "evidence": {
+            "file": "research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\index.json",
+            "pointer": "/shaders/0",
+            "package": "/Game/ModularStreetPack/Materials/Concrete_Mat"
+          },
+          "shaderEvidence": {
+            "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+            "assemblyLines": [
+              103,
+              110
+            ],
+            "shaderSha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+            "textureRegister": 16,
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "componentSwizzle": "rgb"
+          },
+          "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+          "uvMappingStatus": "original TEXCOORD0"
+        },
+        "gradientMask": {
+          "url": "/assets/world/textures/Game/ModularStreetPack/Textures/T_Mildew_GradientMap.png",
+          "colorSpace": "linear",
+          "texturePackage": "/Game/ModularStreetPack/Textures/T_Mildew_GradientMap",
+          "channel": "r",
+          "texCoord": 0,
+          "sourceParameter": "DXBC:t17",
+          "evidence": {
+            "file": "research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\index.json",
+            "pointer": "/shaders/0",
+            "package": "/Game/ModularStreetPack/Materials/Concrete_Mat"
+          },
+          "shaderEvidence": {
+            "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+            "assemblyLines": [
+              104,
+              107
+            ],
+            "shaderSha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+            "textureRegister": 17,
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "componentSwizzle": "r"
+          },
+          "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+          "uvMappingStatus": "original TEXCOORD0"
+        },
+        "mildewMask": {
+          "url": "/assets/world/textures/Game/ModularStreetPack/Textures/T_Mildew_Map.png",
+          "colorSpace": "linear",
+          "texturePackage": "/Game/ModularStreetPack/Textures/T_Mildew_Map",
+          "channel": "r",
+          "texCoord": 0,
+          "sourceParameter": "DXBC:t18",
+          "evidence": {
+            "file": "research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\index.json",
+            "pointer": "/shaders/0",
+            "package": "/Game/ModularStreetPack/Materials/Concrete_Mat"
+          },
+          "shaderEvidence": {
+            "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+            "assemblyLines": [
+              105,
+              107
+            ],
+            "shaderSha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+            "textureRegister": 18,
+            "constantBuffer": 1,
+            "resourceIndex": 6,
+            "componentSwizzle": "r"
+          },
+          "mappingBasis": "Original DXBC sampler swizzle and dataflow plus frozen texture table and complete D3D11 resource binding, not texture-name inference",
+          "uvMappingStatus": "original TEXCOORD0"
+        }
+      },
+      "uvSource": "TEXCOORD0",
+      "gradientAmount": 0.0,
+      "mildewAmount": 0.0,
+      "mildewColorLinear": [
+        0.0,
+        0.07000000029802322,
+        0.00018000000272877514
+      ],
+      "specular": 0.5,
+      "formula": {
+        "weight": "sampleGradient(UV0).r*gradientAmount + sampleMildew(UV0).r*mildewAmount; do not clamp this weight",
+        "baseColor": "clamp(albedo(UV0).rgb + weight*(mildewColorLinear-albedo(UV0).rgb),0,1)",
+        "normal": "ordinary original RG tangent normal at UV0",
+        "roughness": "clamp(sampleRoughness(UV0).r,0,1)",
+        "metallic": 0
+      },
+      "factorPolicy": "Plugin replaces final albedo only; ordinary channels/packedPBR provide original normal and roughness. Do not apply generic vertex color to final albedo.",
+      "evidence": {
+        "bindingFile": "research/world-recovery/material-shader-recovery/round2-bindings.json",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\Concrete_Mat\\shader-0-ps_5_0.asm",
+        "shaderSha256": "d917107894dc9f044ed8662a5262365c002320a1469d4d03f146df5fb2233ad3",
+        "materialConstantBuffer": 1
+      },
+      "limitations": [
+        "Original engine lighting, decals and view overrides are outside recovered material computation."
+      ]
+    }
+  },
+  {
+    "sourcePackage": "/Game/UrbanCity/Materials/Tileable/cobbleStone_01_Mat",
+    "shaderRecovery": {
+      "version": 1,
+      "kind": "standard-pbr-evidenced",
+      "status": "original-material-inputs-recovered",
+      "specular": 0.3893809914588928,
+      "formula": {
+        "baseColor": "clamp(sampleAlbedo(UV0).rgb,0,1)",
+        "roughness": "clamp(sampleRoughness(UV0).r,0,1)",
+        "normal": "original RG tangent normal at UV0",
+        "metallic": 0,
+        "specular": "original DXBC constant, see numeric specular"
+      },
+      "evidence": {
+        "bindingFile": "research/world-recovery/material-shader-recovery/round2-bindings.json",
+        "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-0-ps_5_0.asm",
+        "shaderSha256": "9c9d80d6b25289ef764b47ad1a1f87d193ec80125679a508ffef03069aff21ee",
+        "materialConstantBuffer": 1
+      },
+      "limitations": [
+        "UE specular scalar must use the correct dielectric F0 conversion, not an unrelated shininess parameter.",
+        "Ordinary PBR does not reproduce original baked lighting or view overrides."
+      ]
+    }
+  }
+]

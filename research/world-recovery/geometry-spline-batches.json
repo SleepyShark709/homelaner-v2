@@ -1,0 +1,1437 @@
+[
+  {
+    "id": "spline-batch-MainLevel-c39c4805e7d8",
+    "sources": 13,
+    "sourceTriangles": 1872,
+    "batchedTriangles": 1872,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-8017ea9d6240",
+    "sources": 20,
+    "sourceTriangles": 2880,
+    "batchedTriangles": 2880,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-0eb5eeebdc63",
+    "sources": 5,
+    "sourceTriangles": 9245,
+    "batchedTriangles": 9245,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-53b43dacfa3f",
+    "sources": 9,
+    "sourceTriangles": 1296,
+    "batchedTriangles": 1296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-3adcd3ddc595",
+    "sources": 2,
+    "sourceTriangles": 288,
+    "batchedTriangles": 288,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-944a69fd09ec",
+    "sources": 10,
+    "sourceTriangles": 1040,
+    "batchedTriangles": 1040,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-da55cd9b4841",
+    "sources": 8,
+    "sourceTriangles": 832,
+    "batchedTriangles": 832,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-503c51ba5d2a",
+    "sources": 9,
+    "sourceTriangles": 936,
+    "batchedTriangles": 936,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-398380db944d",
+    "sources": 12,
+    "sourceTriangles": 1728,
+    "batchedTriangles": 1728,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-5e6ecafb08cf",
+    "sources": 12,
+    "sourceTriangles": 1248,
+    "batchedTriangles": 1248,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-d5a258a6f9f1",
+    "sources": 9,
+    "sourceTriangles": 990,
+    "batchedTriangles": 990,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-e570d88f24f2",
+    "sources": 12,
+    "sourceTriangles": 1392,
+    "batchedTriangles": 1392,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-2a377033fb34",
+    "sources": 2,
+    "sourceTriangles": 232,
+    "batchedTriangles": 232,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-a54f0aa60325",
+    "sources": 12,
+    "sourceTriangles": 1728,
+    "batchedTriangles": 1728,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-cc0634bd13e2",
+    "sources": 9,
+    "sourceTriangles": 1044,
+    "batchedTriangles": 1044,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-8c3b4bbb2110",
+    "sources": 8,
+    "sourceTriangles": 928,
+    "batchedTriangles": 928,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-3762ab2c5e37",
+    "sources": 9,
+    "sourceTriangles": 990,
+    "batchedTriangles": 990,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-cd719bd52a65",
+    "sources": 18,
+    "sourceTriangles": 2592,
+    "batchedTriangles": 2592,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-cbd32567136c",
+    "sources": 9,
+    "sourceTriangles": 1296,
+    "batchedTriangles": 1296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-553d52e74343",
+    "sources": 10,
+    "sourceTriangles": 1040,
+    "batchedTriangles": 1040,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-baead18ce560",
+    "sources": 9,
+    "sourceTriangles": 990,
+    "batchedTriangles": 990,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-cd6ea6c1fb76",
+    "sources": 4,
+    "sourceTriangles": 7396,
+    "batchedTriangles": 7396,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-055252a23165",
+    "sources": 10,
+    "sourceTriangles": 1100,
+    "batchedTriangles": 1100,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-fd0367bb83f0",
+    "sources": 9,
+    "sourceTriangles": 936,
+    "batchedTriangles": 936,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-ba327cf85a1a",
+    "sources": 9,
+    "sourceTriangles": 1296,
+    "batchedTriangles": 1296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-12614052f236",
+    "sources": 9,
+    "sourceTriangles": 936,
+    "batchedTriangles": 936,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-e0d2fe4a733a",
+    "sources": 11,
+    "sourceTriangles": 1144,
+    "batchedTriangles": 1144,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-b13ec42d4750",
+    "sources": 2,
+    "sourceTriangles": 288,
+    "batchedTriangles": 288,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-0d2c55520eff",
+    "sources": 12,
+    "sourceTriangles": 1728,
+    "batchedTriangles": 1728,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-d7a27427095e",
+    "sources": 17,
+    "sourceTriangles": 2448,
+    "batchedTriangles": 2448,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-af7c2cadd47f",
+    "sources": 10,
+    "sourceTriangles": 1040,
+    "batchedTriangles": 1040,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-aac20a85ff4c",
+    "sources": 9,
+    "sourceTriangles": 936,
+    "batchedTriangles": 936,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-ae1dc26f62c9",
+    "sources": 5,
+    "sourceTriangles": 520,
+    "batchedTriangles": 520,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-2dd3497f3d9f",
+    "sources": 14,
+    "sourceTriangles": 1456,
+    "batchedTriangles": 1456,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-1d426bdd0550",
+    "sources": 9,
+    "sourceTriangles": 936,
+    "batchedTriangles": 936,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-eac2bc3bb8bf",
+    "sources": 19,
+    "sourceTriangles": 1976,
+    "batchedTriangles": 1976,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-dd198f106739",
+    "sources": 15,
+    "sourceTriangles": 1560,
+    "batchedTriangles": 1560,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-560da420f862",
+    "sources": 13,
+    "sourceTriangles": 1872,
+    "batchedTriangles": 1872,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-9743e052afbd",
+    "sources": 7,
+    "sourceTriangles": 728,
+    "batchedTriangles": 728,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-4a9cdad8e1db",
+    "sources": 12,
+    "sourceTriangles": 1248,
+    "batchedTriangles": 1248,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-9a511e7bdd57",
+    "sources": 9,
+    "sourceTriangles": 936,
+    "batchedTriangles": 936,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-ab398c772ab8",
+    "sources": 11,
+    "sourceTriangles": 1144,
+    "batchedTriangles": 1144,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-a13a891b3c42",
+    "sources": 13,
+    "sourceTriangles": 1352,
+    "batchedTriangles": 1352,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-96caa82406c0",
+    "sources": 12,
+    "sourceTriangles": 1248,
+    "batchedTriangles": 1248,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-0e0ce72a7a46",
+    "sources": 10,
+    "sourceTriangles": 1040,
+    "batchedTriangles": 1040,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-1fb4ee5e34d2",
+    "sources": 9,
+    "sourceTriangles": 936,
+    "batchedTriangles": 936,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-91416abaa50e",
+    "sources": 13,
+    "sourceTriangles": 1352,
+    "batchedTriangles": 1352,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-11128db9e1fb",
+    "sources": 10,
+    "sourceTriangles": 1040,
+    "batchedTriangles": 1040,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-749cd4eb93fd",
+    "sources": 2,
+    "sourceTriangles": 208,
+    "batchedTriangles": 208,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-0247312814ef",
+    "sources": 8,
+    "sourceTriangles": 832,
+    "batchedTriangles": 832,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-8fa639bfd7f1",
+    "sources": 12,
+    "sourceTriangles": 1248,
+    "batchedTriangles": 1248,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-ba5d385e621f",
+    "sources": 9,
+    "sourceTriangles": 936,
+    "batchedTriangles": 936,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-46af2d609b2f",
+    "sources": 13,
+    "sourceTriangles": 1352,
+    "batchedTriangles": 1352,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-d92eb9c0a98a",
+    "sources": 9,
+    "sourceTriangles": 936,
+    "batchedTriangles": 936,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-7af3497f5e5e",
+    "sources": 11,
+    "sourceTriangles": 1144,
+    "batchedTriangles": 1144,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-dc90e30ed860",
+    "sources": 8,
+    "sourceTriangles": 832,
+    "batchedTriangles": 832,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-2d32410a10cf",
+    "sources": 3,
+    "sourceTriangles": 312,
+    "batchedTriangles": 312,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-d3a4afb19d6a",
+    "sources": 4,
+    "sourceTriangles": 416,
+    "batchedTriangles": 416,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-6a1d3ae6f90f",
+    "sources": 11,
+    "sourceTriangles": 1144,
+    "batchedTriangles": 1144,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-f0a1e3393742",
+    "sources": 10,
+    "sourceTriangles": 1040,
+    "batchedTriangles": 1040,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-25c1b3ab4d38",
+    "sources": 13,
+    "sourceTriangles": 1352,
+    "batchedTriangles": 1352,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-81699ca5d41b",
+    "sources": 9,
+    "sourceTriangles": 990,
+    "batchedTriangles": 990,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-1dfe26d3d75d",
+    "sources": 2,
+    "sourceTriangles": 220,
+    "batchedTriangles": 220,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-7726621e7784",
+    "sources": 11,
+    "sourceTriangles": 1210,
+    "batchedTriangles": 1210,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-911bdd19bbf1",
+    "sources": 13,
+    "sourceTriangles": 1430,
+    "batchedTriangles": 1430,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-f6bef491a4f7",
+    "sources": 11,
+    "sourceTriangles": 1210,
+    "batchedTriangles": 1210,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-4e6504960bdd",
+    "sources": 12,
+    "sourceTriangles": 1320,
+    "batchedTriangles": 1320,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-52b2623067db",
+    "sources": 2,
+    "sourceTriangles": 220,
+    "batchedTriangles": 220,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-6c7a211eb812",
+    "sources": 19,
+    "sourceTriangles": 2736,
+    "batchedTriangles": 2736,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-02ae247378be",
+    "sources": 12,
+    "sourceTriangles": 1728,
+    "batchedTriangles": 1728,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-733bd77285dc",
+    "sources": 2,
+    "sourceTriangles": 288,
+    "batchedTriangles": 288,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-4eac81847467",
+    "sources": 12,
+    "sourceTriangles": 1728,
+    "batchedTriangles": 1728,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-ea1e9dffe186",
+    "sources": 10,
+    "sourceTriangles": 1440,
+    "batchedTriangles": 1440,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-58f93a398e73",
+    "sources": 9,
+    "sourceTriangles": 1296,
+    "batchedTriangles": 1296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-30dca918bd1e",
+    "sources": 2,
+    "sourceTriangles": 288,
+    "batchedTriangles": 288,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-5b2bb631efe2",
+    "sources": 9,
+    "sourceTriangles": 1296,
+    "batchedTriangles": 1296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-9ec9aac6eb15",
+    "sources": 2,
+    "sourceTriangles": 288,
+    "batchedTriangles": 288,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-b26fabe38b6b",
+    "sources": 10,
+    "sourceTriangles": 1440,
+    "batchedTriangles": 1440,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-34a3d368bd86",
+    "sources": 19,
+    "sourceTriangles": 2736,
+    "batchedTriangles": 2736,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-4ad5dec197b6",
+    "sources": 9,
+    "sourceTriangles": 990,
+    "batchedTriangles": 990,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-5519770f2217",
+    "sources": 12,
+    "sourceTriangles": 1320,
+    "batchedTriangles": 1320,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-baf84cfb9959",
+    "sources": 2,
+    "sourceTriangles": 220,
+    "batchedTriangles": 220,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-45769807a52b",
+    "sources": 12,
+    "sourceTriangles": 1320,
+    "batchedTriangles": 1320,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-49120fed5223",
+    "sources": 9,
+    "sourceTriangles": 990,
+    "batchedTriangles": 990,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-41f9bf7c26b6",
+    "sources": 13,
+    "sourceTriangles": 1430,
+    "batchedTriangles": 1430,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-59e7d31c336a",
+    "sources": 9,
+    "sourceTriangles": 990,
+    "batchedTriangles": 990,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-755f315d6e3f",
+    "sources": 11,
+    "sourceTriangles": 1210,
+    "batchedTriangles": 1210,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-adbf920caa07",
+    "sources": 9,
+    "sourceTriangles": 990,
+    "batchedTriangles": 990,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-1c9fd03d5481",
+    "sources": 9,
+    "sourceTriangles": 990,
+    "batchedTriangles": 990,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-0ccac011a054",
+    "sources": 2,
+    "sourceTriangles": 220,
+    "batchedTriangles": 220,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-242e282d5070",
+    "sources": 10,
+    "sourceTriangles": 1160,
+    "batchedTriangles": 1160,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-6f01566112cb",
+    "sources": 8,
+    "sourceTriangles": 928,
+    "batchedTriangles": 928,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-68ec3d667bc4",
+    "sources": 10,
+    "sourceTriangles": 1160,
+    "batchedTriangles": 1160,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-d5de6e595878",
+    "sources": 9,
+    "sourceTriangles": 1044,
+    "batchedTriangles": 1044,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-767775c493b1",
+    "sources": 12,
+    "sourceTriangles": 1392,
+    "batchedTriangles": 1392,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-8a8ea7e215cb",
+    "sources": 12,
+    "sourceTriangles": 1392,
+    "batchedTriangles": 1392,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-f712bb5bb9be",
+    "sources": 12,
+    "sourceTriangles": 1728,
+    "batchedTriangles": 1728,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-02bb90f31480",
+    "sources": 2,
+    "sourceTriangles": 288,
+    "batchedTriangles": 288,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-ff3aa9c6e5b5",
+    "sources": 12,
+    "sourceTriangles": 1728,
+    "batchedTriangles": 1728,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-cb078093fc73",
+    "sources": 9,
+    "sourceTriangles": 1296,
+    "batchedTriangles": 1296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-41391ccf27ea",
+    "sources": 9,
+    "sourceTriangles": 1296,
+    "batchedTriangles": 1296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-c7ec081b453a",
+    "sources": 9,
+    "sourceTriangles": 1296,
+    "batchedTriangles": 1296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-1c889423e580",
+    "sources": 8,
+    "sourceTriangles": 1152,
+    "batchedTriangles": 1152,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-37e51981abc2",
+    "sources": 10,
+    "sourceTriangles": 1440,
+    "batchedTriangles": 1440,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-23065f953603",
+    "sources": 9,
+    "sourceTriangles": 1296,
+    "batchedTriangles": 1296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-3f355706bb9c",
+    "sources": 18,
+    "sourceTriangles": 2592,
+    "batchedTriangles": 2592,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-aab5c4febcae",
+    "sources": 12,
+    "sourceTriangles": 1728,
+    "batchedTriangles": 1728,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-af12f71b85b4",
+    "sources": 9,
+    "sourceTriangles": 1296,
+    "batchedTriangles": 1296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-c526e6bc8ca3",
+    "sources": 12,
+    "sourceTriangles": 1728,
+    "batchedTriangles": 1728,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-8fe63affe921",
+    "sources": 9,
+    "sourceTriangles": 1296,
+    "batchedTriangles": 1296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-1fb2dcbf3a35",
+    "sources": 11,
+    "sourceTriangles": 1584,
+    "batchedTriangles": 1584,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-2ba355fbd9b7",
+    "sources": 12,
+    "sourceTriangles": 1728,
+    "batchedTriangles": 1728,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-62fcb5583b90",
+    "sources": 9,
+    "sourceTriangles": 1296,
+    "batchedTriangles": 1296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-ea96e41d23a7",
+    "sources": 9,
+    "sourceTriangles": 1296,
+    "batchedTriangles": 1296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-3349cc6c5621",
+    "sources": 9,
+    "sourceTriangles": 1296,
+    "batchedTriangles": 1296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-badcce9df2eb",
+    "sources": 12,
+    "sourceTriangles": 1824,
+    "batchedTriangles": 1824,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-0be74f1948ac",
+    "sources": 9,
+    "sourceTriangles": 1368,
+    "batchedTriangles": 1368,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-8e8a3e4aa3c4",
+    "sources": 2,
+    "sourceTriangles": 304,
+    "batchedTriangles": 304,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-347a81937a28",
+    "sources": 12,
+    "sourceTriangles": 1824,
+    "batchedTriangles": 1824,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-e98de8c9369c",
+    "sources": 9,
+    "sourceTriangles": 1368,
+    "batchedTriangles": 1368,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-ad92ba04fa04",
+    "sources": 8,
+    "sourceTriangles": 1216,
+    "batchedTriangles": 1216,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-b2ae4c578e45",
+    "sources": 18,
+    "sourceTriangles": 2736,
+    "batchedTriangles": 2736,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-dcc96cda06f7",
+    "sources": 10,
+    "sourceTriangles": 1520,
+    "batchedTriangles": 1520,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-b2d0964de9a4",
+    "sources": 3,
+    "sourceTriangles": 456,
+    "batchedTriangles": 456,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-2413851d2a30",
+    "sources": 5,
+    "sourceTriangles": 760,
+    "batchedTriangles": 760,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-36a899e45947",
+    "sources": 12,
+    "sourceTriangles": 1968,
+    "batchedTriangles": 1968,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-c98171d2b311",
+    "sources": 2,
+    "sourceTriangles": 328,
+    "batchedTriangles": 328,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-6b65cb945c1b",
+    "sources": 8,
+    "sourceTriangles": 1312,
+    "batchedTriangles": 1312,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-e1d2edceb47b",
+    "sources": 12,
+    "sourceTriangles": 1968,
+    "batchedTriangles": 1968,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-6c4490ebadc9",
+    "sources": 8,
+    "sourceTriangles": 1312,
+    "batchedTriangles": 1312,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-871c28364b9a",
+    "sources": 11,
+    "sourceTriangles": 1804,
+    "batchedTriangles": 1804,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-164ead107311",
+    "sources": 10,
+    "sourceTriangles": 1640,
+    "batchedTriangles": 1640,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-1c9bc6adccac",
+    "sources": 13,
+    "sourceTriangles": 2132,
+    "batchedTriangles": 2132,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-b53ab8df3df3",
+    "sources": 7,
+    "sourceTriangles": 1148,
+    "batchedTriangles": 1148,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-96cd8bf599c7",
+    "sources": 7,
+    "sourceTriangles": 1148,
+    "batchedTriangles": 1148,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-86a3355d334f",
+    "sources": 2,
+    "sourceTriangles": 328,
+    "batchedTriangles": 328,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-e2ae19952ba8",
+    "sources": 9,
+    "sourceTriangles": 1368,
+    "batchedTriangles": 1368,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-d8b24c07e58d",
+    "sources": 6,
+    "sourceTriangles": 912,
+    "batchedTriangles": 912,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-1c5d0eb3c9b9",
+    "sources": 12,
+    "sourceTriangles": 1824,
+    "batchedTriangles": 1824,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-c70309dd1e10",
+    "sources": 7,
+    "sourceTriangles": 1064,
+    "batchedTriangles": 1064,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-3eb0f7c5e199",
+    "sources": 13,
+    "sourceTriangles": 1976,
+    "batchedTriangles": 1976,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-4420b22d5592",
+    "sources": 7,
+    "sourceTriangles": 1064,
+    "batchedTriangles": 1064,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-d48f2ecd73cd",
+    "sources": 8,
+    "sourceTriangles": 832,
+    "batchedTriangles": 832,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-396bcddeded5",
+    "sources": 5,
+    "sourceTriangles": 760,
+    "batchedTriangles": 760,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-77bf6fa47609",
+    "sources": 13,
+    "sourceTriangles": 1976,
+    "batchedTriangles": 1976,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-7ae4ec1ade25",
+    "sources": 5,
+    "sourceTriangles": 760,
+    "batchedTriangles": 760,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-318e46821be7",
+    "sources": 10,
+    "sourceTriangles": 1520,
+    "batchedTriangles": 1520,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-33642d448afa",
+    "sources": 10,
+    "sourceTriangles": 1640,
+    "batchedTriangles": 1640,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-851b08ea4ef5",
+    "sources": 8,
+    "sourceTriangles": 1312,
+    "batchedTriangles": 1312,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-4908ee0d2445",
+    "sources": 12,
+    "sourceTriangles": 1968,
+    "batchedTriangles": 1968,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-5fc54e444903",
+    "sources": 8,
+    "sourceTriangles": 1312,
+    "batchedTriangles": 1312,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-b0b35ce7e329",
+    "sources": 12,
+    "sourceTriangles": 1968,
+    "batchedTriangles": 1968,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-4f122507b712",
+    "sources": 8,
+    "sourceTriangles": 1312,
+    "batchedTriangles": 1312,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-365110cb8281",
+    "sources": 8,
+    "sourceTriangles": 1312,
+    "batchedTriangles": 1312,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-63fd14e8387e",
+    "sources": 7,
+    "sourceTriangles": 1148,
+    "batchedTriangles": 1148,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-628684664702",
+    "sources": 8,
+    "sourceTriangles": 1312,
+    "batchedTriangles": 1312,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-aa8e0ec21384",
+    "sources": 5,
+    "sourceTriangles": 820,
+    "batchedTriangles": 820,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-3769e5a2709b",
+    "sources": 10,
+    "sourceTriangles": 1640,
+    "batchedTriangles": 1640,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-ef0ca5ca63e4",
+    "sources": 13,
+    "sourceTriangles": 2132,
+    "batchedTriangles": 2132,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-2bc7c3827a19",
+    "sources": 13,
+    "sourceTriangles": 2132,
+    "batchedTriangles": 2132,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-303c0834b508",
+    "sources": 13,
+    "sourceTriangles": 2132,
+    "batchedTriangles": 2132,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-bc7a359bf639",
+    "sources": 13,
+    "sourceTriangles": 2132,
+    "batchedTriangles": 2132,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-ad44652f7c8a",
+    "sources": 11,
+    "sourceTriangles": 1804,
+    "batchedTriangles": 1804,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-e27ea06864ca",
+    "sources": 13,
+    "sourceTriangles": 2132,
+    "batchedTriangles": 2132,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-3340ed72cbe6",
+    "sources": 2,
+    "sourceTriangles": 328,
+    "batchedTriangles": 328,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-afa5a004625d",
+    "sources": 15,
+    "sourceTriangles": 2460,
+    "batchedTriangles": 2460,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-a7841592e3ae",
+    "sources": 3,
+    "sourceTriangles": 492,
+    "batchedTriangles": 492,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-aed44e32de1c",
+    "sources": 13,
+    "sourceTriangles": 2132,
+    "batchedTriangles": 2132,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-1ee86bd6aa2b",
+    "sources": 11,
+    "sourceTriangles": 1804,
+    "batchedTriangles": 1804,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-4191fcd9c6c0",
+    "sources": 12,
+    "sourceTriangles": 1968,
+    "batchedTriangles": 1968,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-787ee0a97f1c",
+    "sources": 11,
+    "sourceTriangles": 1804,
+    "batchedTriangles": 1804,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-d72ef64f12c4",
+    "sources": 11,
+    "sourceTriangles": 1804,
+    "batchedTriangles": 1804,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-66059c73232c",
+    "sources": 11,
+    "sourceTriangles": 1804,
+    "batchedTriangles": 1804,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-c1f98bd00c06",
+    "sources": 8,
+    "sourceTriangles": 1312,
+    "batchedTriangles": 1312,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-65cfed4d5e69",
+    "sources": 5,
+    "sourceTriangles": 820,
+    "batchedTriangles": 820,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-e837a655748b",
+    "sources": 15,
+    "sourceTriangles": 2460,
+    "batchedTriangles": 2460,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-36f841ea538d",
+    "sources": 14,
+    "sourceTriangles": 2296,
+    "batchedTriangles": 2296,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-a8061bd76e27",
+    "sources": 12,
+    "sourceTriangles": 1968,
+    "batchedTriangles": 1968,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-b36f44d8c7f0",
+    "sources": 13,
+    "sourceTriangles": 2132,
+    "batchedTriangles": 2132,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-07047496a1db",
+    "sources": 12,
+    "sourceTriangles": 1968,
+    "batchedTriangles": 1968,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-5e2155399f04",
+    "sources": 13,
+    "sourceTriangles": 2132,
+    "batchedTriangles": 2132,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-7bcbd9276c77",
+    "sources": 12,
+    "sourceTriangles": 1968,
+    "batchedTriangles": 1968,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-82def8bdfb8e",
+    "sources": 11,
+    "sourceTriangles": 1804,
+    "batchedTriangles": 1804,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-d2b737f1213d",
+    "sources": 3,
+    "sourceTriangles": 5547,
+    "batchedTriangles": 5547,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-2b34c35b3702",
+    "sources": 10,
+    "sourceTriangles": 1640,
+    "batchedTriangles": 1640,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-819b58b093d0",
+    "sources": 6,
+    "sourceTriangles": 984,
+    "batchedTriangles": 984,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-e8fbb2953e6a",
+    "sources": 10,
+    "sourceTriangles": 1640,
+    "batchedTriangles": 1640,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-2877ab243466",
+    "sources": 12,
+    "sourceTriangles": 1968,
+    "batchedTriangles": 1968,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-44910b143b45",
+    "sources": 12,
+    "sourceTriangles": 1968,
+    "batchedTriangles": 1968,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-7e4355f24ca7",
+    "sources": 13,
+    "sourceTriangles": 2132,
+    "batchedTriangles": 2132,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-29c5e4ab698e",
+    "sources": 10,
+    "sourceTriangles": 1640,
+    "batchedTriangles": 1640,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-1b0a6cf4ecf0",
+    "sources": 11,
+    "sourceTriangles": 1804,
+    "batchedTriangles": 1804,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-248906beacbd",
+    "sources": 12,
+    "sourceTriangles": 1968,
+    "batchedTriangles": 1968,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-58a1f3650cb9",
+    "sources": 11,
+    "sourceTriangles": 1804,
+    "batchedTriangles": 1804,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-8d9d37721b5d",
+    "sources": 12,
+    "sourceTriangles": 1968,
+    "batchedTriangles": 1968,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-868eb0edb7e6",
+    "sources": 3,
+    "sourceTriangles": 492,
+    "batchedTriangles": 492,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-883472285f55",
+    "sources": 11,
+    "sourceTriangles": 1804,
+    "batchedTriangles": 1804,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-ee9a64d1021e",
+    "sources": 3,
+    "sourceTriangles": 36,
+    "batchedTriangles": 36,
+    "primitives": 1
+  },
+  {
+    "id": "spline-batch-MainLevel-ab51beabfe25",
+    "sources": 2,
+    "sourceTriangles": 24,
+    "batchedTriangles": 24,
+    "primitives": 1
+  },
+  {
+    "id": "spline-batch-MainLevel-16f8234dc6cc",
+    "sources": 3,
+    "sourceTriangles": 36,
+    "batchedTriangles": 36,
+    "primitives": 1
+  },
+  {
+    "id": "spline-batch-MainLevel-6fd8cca186cc",
+    "sources": 3,
+    "sourceTriangles": 36,
+    "batchedTriangles": 36,
+    "primitives": 1
+  },
+  {
+    "id": "spline-batch-MainLevel-259464a8e321",
+    "sources": 3,
+    "sourceTriangles": 36,
+    "batchedTriangles": 36,
+    "primitives": 1
+  },
+  {
+    "id": "spline-batch-MainLevel-9fe458d88f61",
+    "sources": 13,
+    "sourceTriangles": 1872,
+    "batchedTriangles": 1872,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-e92bf03ef2f2",
+    "sources": 12,
+    "sourceTriangles": 1728,
+    "batchedTriangles": 1728,
+    "primitives": 2
+  },
+  {
+    "id": "spline-batch-MainLevel-b103e21b3739",
+    "sources": 2,
+    "sourceTriangles": 288,
+    "batchedTriangles": 288,
+    "primitives": 2
+  }
+]

@@ -1,0 +1,2429 @@
+{
+  "shaders": [
+    {
+      "dxbcLiteralOffsetInExtras": 8996,
+      "lz4CandidateStart": 8833,
+      "lz4ConsumedEnd": 11802,
+      "decodedPrefixHex": "0f000000060000000400000000000000000000000000000002310000ffffffff0d0000000400000005000000060000000b000000002b000002030001030100020403000205050002060700020709000201270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991efa081d04f7089805810ac50c120000000400000006000000090000000e00000000020000010b0000060000010701000108020001090000020a0200020b0400020c0600020d0800020326000304280003052a0003ffffffff",
+      "bytes": 7084,
+      "sha256": "52abab99cd0d91f5b4ed96f8eb9dc312837f297f8e640bc2bb900de0d8efc567",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-0-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12546,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          5,
+          6,
+          11,
+          11008,
+          16777986,
+          33554691,
+          33555204,
+          33555717,
+          33556230,
+          33556743,
+          50341633,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          69011706,
+          93849847,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          6,
+          9,
+          14,
+          512,
+          2817,
+          16777222,
+          16777479,
+          16777736,
+          33554441,
+          33554954,
+          33555467,
+          33555980,
+          33556493,
+          50341379,
+          50341892,
+          50342405,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 6,
+            "bindIndex": 12
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 8,
+            "bindIndex": 13
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 3,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 5,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 7,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 9,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 12041,
+      "lz4CandidateStart": 11895,
+      "lz4ConsumedEnd": 14592,
+      "decodedPrefixHex": "0f00000007000000040000000000000000000000000000000031000001330000ffffffff0c0000000000000004000000090000000a00000002010001030300010405000105070001060900010027000201090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991ef7089805810ac50cf10e830d0e0000000000000004000000090000000c000000060000010702000108040001090600010a0800010226000203280002042a000205000003ffffffff",
+      "bytes": 6412,
+      "sha256": "9d6f8146d382ce072a330bf1490710e40cd76822894e9844f64396e76b47b451",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-1-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          4,
+          9,
+          10,
+          16777474,
+          16777987,
+          16778500,
+          16779013,
+          16779526,
+          33564416,
+          50333953,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          93849847,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          9,
+          12,
+          16777222,
+          16777735,
+          16778248,
+          16778761,
+          16779274,
+          33564162,
+          33564675,
+          33565188,
+          50331653,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 6,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 8,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 9,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 14844,
+      "lz4CandidateStart": 14687,
+      "lz4ConsumedEnd": 17900,
+      "decodedPrefixHex": "0f0000000800000004000000000000000000000000000000003100000133000002340000ffffffff0c0000000000000004000000090000000a00000002010001030300010405000105070001060900010027000201090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991ef7089805810ac50cf10e830d100000000000000004000000090000000c000000090000010a0200010b0400010c0600010d0800010326000204280002052a0002060000030701000308030003ffffffff",
+      "bytes": 8148,
+      "sha256": "9b01a8f511da2be53ab3a80610eb048af23809e86ea10f7fe73d7888fd9a5f65",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-2-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          4,
+          9,
+          10,
+          16777474,
+          16777987,
+          16778500,
+          16779013,
+          16779526,
+          33564416,
+          50333953,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          93849847,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          9,
+          12,
+          16777225,
+          16777738,
+          16778251,
+          16778764,
+          16779277,
+          33564163,
+          33564676,
+          33565189,
+          50331654,
+          50331911,
+          50332424,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 6,
+            "bindIndex": 12
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 8,
+            "bindIndex": 13
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 3,
+            "bindIndex": 8
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 9,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 18055,
+      "lz4CandidateStart": 17995,
+      "lz4ConsumedEnd": 19266,
+      "decodedPrefixHex": "0300000007000000020000000400000000310000013300000200000103030001ffffffff030000000000000000000000ffffffff030000000000000000000000ffffffff02000000f407991ee7064606030000000000000000000000ffffffff",
+      "bytes": 2596,
+      "sha256": "a4f5b1d2a4ca4d85fa85f870c41d1aa50fc1433dba97db8b1b224aa668a98a8c",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-3-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 3,
+        "srvMap": [
+          2,
+          4,
+          12544,
+          13057,
+          16777218,
+          16777987,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          105252583
+        ],
+        "textureMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 19478,
+      "lz4CandidateStart": 19309,
+      "lz4ConsumedEnd": 22601,
+      "decodedPrefixHex": "070000000500000003000000000000000000000009310000ffffffff0b000000030000000400000009000000002b0000020100010303000104050001050700010609000101270002ffffffff04000000000000000000000000000000ffffffff03000000f407991ef7089805810ac50c15000000030000000c000000110000000002000001030000020400000305000004060000050700000608000007090000080b00000d0000010e0200010f04000110060001110800010a2600020b2800020c2a0002ffffffff",
+      "bytes": 8272,
+      "sha256": "f78599762a7fb3f8aa8f6ae1e000e9a204d4c2f4fb8e7f997332a05f1e472a42",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-4-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 7,
+        "srvMap": [
+          3,
+          0,
+          0,
+          12553,
+          4294967295
+        ],
+        "samplerMap": [
+          3,
+          4,
+          9,
+          11008,
+          16777474,
+          16777987,
+          16778500,
+          16779013,
+          16779526,
+          33564417,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          93849847,
+          214239873
+        ],
+        "textureMap": [
+          3,
+          12,
+          17,
+          512,
+          769,
+          1026,
+          1283,
+          1540,
+          1797,
+          2054,
+          2311,
+          2824,
+          16777229,
+          16777742,
+          16778255,
+          16778768,
+          16779281,
+          33564170,
+          33564683,
+          33565196,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 3,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 4,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 5,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 6,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 8,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 9,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 13
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 14
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 15
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 6,
+            "bindIndex": 16
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 8,
+            "bindIndex": 17
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 12
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 9,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 22728,
+      "lz4CandidateStart": 22668,
+      "lz4ConsumedEnd": 23914,
+      "decodedPrefixHex": "0300000007000000020000000400000000310000013300000200000103030001ffffffff030000000000000000000000ffffffff030000000000000000000000ffffffff02000000f407991ee7064606030000000000000000000000ffffffff",
+      "bytes": 2524,
+      "sha256": "3a59c07407db1a3f362f0d67231e81429ec637ba07903985a112faafeed1beca",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-5-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 3,
+        "srvMap": [
+          2,
+          4,
+          12544,
+          13057,
+          16777218,
+          16777987,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          105252583
+        ],
+        "textureMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 24101,
+      "lz4CandidateStart": 23958,
+      "lz4ConsumedEnd": 26903,
+      "decodedPrefixHex": "0d000000060000000400000000000000000000000000000002310000ffffffff0c0000000400000000000000050000000a000000002b0000020100020303000204050002050700020609000201270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991efa081d04f7089805810ac50c0f0000000400000000000000060000000b00000000020000010b0000060000020702000208040002090600020a0800020326000304280003052a0003ffffffff",
+      "bytes": 7096,
+      "sha256": "77dc1c4b3ca39cc3883ca55200461ae9b79415308fb110ae0b6f76603c581f2f",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-6-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 13,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12546,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          0,
+          5,
+          10,
+          11008,
+          33554690,
+          33555203,
+          33555716,
+          33556229,
+          33556742,
+          50341633,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          69011706,
+          93849847,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          0,
+          6,
+          11,
+          512,
+          2817,
+          33554438,
+          33554951,
+          33555464,
+          33555977,
+          33556490,
+          50341379,
+          50341892,
+          50342405,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 6,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 8,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 9,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 27053,
+      "lz4CandidateStart": 26996,
+      "lz4ConsumedEnd": 28054,
+      "decodedPrefixHex": "03000000060000000200000003000000003100000100000102030001ffffffff030000000000000000000000ffffffff030000000000000000000000ffffffff02000000f407991ee7064606030000000000000000000000ffffffff",
+      "bytes": 2076,
+      "sha256": "531603048d9fff3c0c95b828e0787f8eaa8c1e77a4563bc1b6f63b9e27cfcb23",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-7-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 3,
+        "srvMap": [
+          2,
+          3,
+          12544,
+          16777217,
+          16777986,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          105252583
+        ],
+        "textureMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 28249,
+      "lz4CandidateStart": 28096,
+      "lz4ConsumedEnd": 31203,
+      "decodedPrefixHex": "0f0000000800000004000000000000000000000000000000003100000133000002340000ffffffff0c0000000000000004000000090000000a00000002010001030300010405000105070001060900010027000201090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991ef7089805810ac50cf10e830d0f0000000000000004000000090000000c00000008000001090200010a0400010b0600010c0800010326000204280002052a00020600000307010003ffffffff",
+      "bytes": 7824,
+      "sha256": "a52fa8fdbbc8b05e6c3f5b4f1cbbdc9f302dabf3eed126aa53e798a1fa00b456",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-8-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          4,
+          9,
+          10,
+          16777474,
+          16777987,
+          16778500,
+          16779013,
+          16779526,
+          33564416,
+          50333953,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          93849847,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          9,
+          12,
+          16777224,
+          16777737,
+          16778250,
+          16778763,
+          16779276,
+          33564163,
+          33564676,
+          33565189,
+          50331654,
+          50331911,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 6,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 8,
+            "bindIndex": 12
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 7
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 9,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 31449,
+      "lz4CandidateStart": 31298,
+      "lz4ConsumedEnd": 34188,
+      "decodedPrefixHex": "0f0000000800000004000000000000000000000000000000003100000133000002340000ffffffff0c0000000000000004000000090000000a00000002010001030300010405000105070001060900010027000201090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991ef7089805810ac50cf10e830d0e0000000000000004000000090000000c0000000700000108020001090400010a0600010b0800010326000204280002052a000206000003ffffffff",
+      "bytes": 7144,
+      "sha256": "a8c4aae016cdb3b296b0569b0e4d9fe233f12b1ee90ab7d63651213bbdf7e685",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-9-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          4,
+          9,
+          10,
+          16777474,
+          16777987,
+          16778500,
+          16779013,
+          16779526,
+          33564416,
+          50333953,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          93849847,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          9,
+          12,
+          16777223,
+          16777736,
+          16778249,
+          16778762,
+          16779275,
+          33564163,
+          33564676,
+          33565189,
+          50331654,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 6,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 8,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 9,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 34454,
+      "lz4CandidateStart": 34283,
+      "lz4ConsumedEnd": 37628,
+      "decodedPrefixHex": "0f00000007000000040000000000000000000000000000000231000003340000ffffffff0d0000000400000005000000060000000b000000002b000002030001030100020403000205050002060700020709000201270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991efa081d04f7089805810ac50c120000000400000006000000090000000e00000000020000010b00000700000108010001090200010a0000020b0200020c0400020d0600020e0800020426000305280003062a0003ffffffff",
+      "bytes": 8292,
+      "sha256": "39aeb32721871e018c5afe2a674f1940e0c22d681880dc6cbbb6978d5269f2ae",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-10-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12546,
+          13315,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          5,
+          6,
+          11,
+          11008,
+          16777986,
+          33554691,
+          33555204,
+          33555717,
+          33556230,
+          33556743,
+          50341633,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          69011706,
+          93849847,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          6,
+          9,
+          14,
+          512,
+          2817,
+          16777223,
+          16777480,
+          16777737,
+          33554442,
+          33554955,
+          33555468,
+          33555981,
+          33556494,
+          50341380,
+          50341893,
+          50342406,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 12
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 6,
+            "bindIndex": 13
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 8,
+            "bindIndex": 14
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 3,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 5,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 7,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 9,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 37870,
+      "lz4CandidateStart": 37722,
+      "lz4ConsumedEnd": 40523,
+      "decodedPrefixHex": "0f00000007000000040000000000000000000000000000000031000001330000ffffffff0c0000000000000004000000090000000a00000002010001030300010405000105070001060900010027000201090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991ef7089805810ac50cf10e830d0f0000000000000004000000090000000c0000000700000108020001090400010a0600010b0800010226000203280002042a00020500000306030003ffffffff",
+      "bytes": 6760,
+      "sha256": "33152c7854cd7c5be97f3cbcfeb7035c4725bcc6f130cf7db78caa8787ff7543",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-11-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          4,
+          9,
+          10,
+          16777474,
+          16777987,
+          16778500,
+          16779013,
+          16779526,
+          33564416,
+          50333953,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          93849847,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          9,
+          12,
+          16777223,
+          16777736,
+          16778249,
+          16778762,
+          16779275,
+          33564162,
+          33564675,
+          33565188,
+          50331653,
+          50332422,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 6,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 8,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 3,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 9,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 40750,
+      "lz4CandidateStart": 40618,
+      "lz4ConsumedEnd": 42912,
+      "decodedPrefixHex": "070000000500000003000000000000000000000002310000ffffffff0a000000030000000400000008000000002b00000201000103030001040500010507000101270002ffffffff04000000000000000000000000000000ffffffff03000000f407991ef7089805810ac50c0d00000003000000050000000900000000020000010b0000060000010702000108040001090600010326000204280002052a0002ffffffff",
+      "bytes": 5236,
+      "sha256": "f4e31e6a0e81f7fba1f91c8e8b8010ef165a4543911334ab252cc13d225eeef7",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-12-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 7,
+        "srvMap": [
+          3,
+          0,
+          0,
+          12546,
+          4294967295
+        ],
+        "samplerMap": [
+          3,
+          4,
+          8,
+          11008,
+          16777474,
+          16777987,
+          16778500,
+          16779013,
+          33564417,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          93849847,
+          214239873
+        ],
+        "textureMap": [
+          3,
+          5,
+          9,
+          512,
+          2817,
+          16777222,
+          16777735,
+          16778248,
+          16778761,
+          33564163,
+          33564676,
+          33565189,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 6,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 43126,
+      "lz4CandidateStart": 42978,
+      "lz4ConsumedEnd": 46312,
+      "decodedPrefixHex": "0d00000007000000040000000000000000000000000000000231000003340000ffffffff0c0000000400000000000000050000000a000000002b0000020100020303000204050002050700020609000201270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991efa081d04f7089805810ac50c0f0000000400000000000000060000000b00000000020000010b00000700000208020002090400020a0600020b0800020426000305280003062a0003ffffffff",
+      "bytes": 8304,
+      "sha256": "9f1a838ef38133215a9f3e0d8c17c9e320dc91a35c583412d41f58220bc44dba",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-13-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 13,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12546,
+          13315,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          0,
+          5,
+          10,
+          11008,
+          33554690,
+          33555203,
+          33555716,
+          33556229,
+          33556742,
+          50341633,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          69011706,
+          93849847,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          0,
+          6,
+          11,
+          512,
+          2817,
+          33554439,
+          33554952,
+          33555465,
+          33555978,
+          33556491,
+          50341380,
+          50341893,
+          50342406,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 6,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 8,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 9,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 46551,
+      "lz4CandidateStart": 46406,
+      "lz4ConsumedEnd": 49060,
+      "decodedPrefixHex": "07000000060000000300000000000000000000000231000003340000ffffffff0b000000030000000400000009000000002b0000020100010303000104050001050700010609000101270002ffffffff04000000000000000000000000000000ffffffff03000000f407991ef7089805810ac50c0e00000003000000050000000a00000000020000010b00000700000108020001090400010a0600010b0800010426000205280002062a0002ffffffff",
+      "bytes": 6476,
+      "sha256": "c516985a9f0d24e39edeb33127fc27c817f119a9249096bceb0f16effd38595b",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-14-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 7,
+        "srvMap": [
+          3,
+          0,
+          0,
+          12546,
+          13315,
+          4294967295
+        ],
+        "samplerMap": [
+          3,
+          4,
+          9,
+          11008,
+          16777474,
+          16777987,
+          16778500,
+          16779013,
+          16779526,
+          33564417,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          93849847,
+          214239873
+        ],
+        "textureMap": [
+          3,
+          5,
+          10,
+          512,
+          2817,
+          16777223,
+          16777736,
+          16778249,
+          16778762,
+          16779275,
+          33564164,
+          33564677,
+          33565190,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 6,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 8,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 9,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 49273,
+      "lz4CandidateStart": 49127,
+      "lz4ConsumedEnd": 51831,
+      "decodedPrefixHex": "0f00000007000000040000000000000000000000000000000031000001330000ffffffff0c0000000000000004000000090000000a00000002010001030300010405000105070001060900010027000201090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991ef7089805810ac50cf10e830d0e0000000000000004000000090000000c000000060000010702000108040001090600010a0800010226000203280002042a000205000003ffffffff",
+      "bytes": 6436,
+      "sha256": "02159f9043f5697f3d10f2d4a15edf5ad9a1478196e436e43467e3bebb9d3eaf",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-15-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          4,
+          9,
+          10,
+          16777474,
+          16777987,
+          16778500,
+          16779013,
+          16779526,
+          33564416,
+          50333953,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          93849847,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          9,
+          12,
+          16777222,
+          16777735,
+          16778248,
+          16778761,
+          16779274,
+          33564162,
+          33564675,
+          33565188,
+          50331653,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 6,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 8,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 9,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 52104,
+      "lz4CandidateStart": 51926,
+      "lz4ConsumedEnd": 55590,
+      "decodedPrefixHex": "07000000060000000300000000000000000000000a3100000b340000ffffffff0b000000030000000400000009000000002b0000020100010303000104050001050700010609000101270002ffffffff04000000000000000000000000000000ffffffff03000000f407991ef7089805810ac50c16000000030000000d000000120000000002000001030000020400000305000004060000050700000608000007090000080a0000090b00000f000001100200011104000112060001130800010c2600020d2800020e2a0002ffffffff",
+      "bytes": 9652,
+      "sha256": "aa796fd23840f1888aa52445fbe524c4a8dcc04dfaf6c18eb3a8946e744296ab",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\prp_bench_Mat\\shader-16-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 7,
+        "srvMap": [
+          3,
+          0,
+          0,
+          12554,
+          13323,
+          4294967295
+        ],
+        "samplerMap": [
+          3,
+          4,
+          9,
+          11008,
+          16777474,
+          16777987,
+          16778500,
+          16779013,
+          16779526,
+          33564417,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          93849847,
+          214239873
+        ],
+        "textureMap": [
+          3,
+          13,
+          18,
+          512,
+          769,
+          1026,
+          1283,
+          1540,
+          1797,
+          2054,
+          2311,
+          2568,
+          2825,
+          16777231,
+          16777744,
+          16778257,
+          16778770,
+          16779283,
+          33564172,
+          33564685,
+          33565198,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 3,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 4,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 5,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 6,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 8,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 9,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 10,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 15
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 16
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 17
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 6,
+            "bindIndex": 18
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 8,
+            "bindIndex": 19
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 12
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 13
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 14
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 9,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    }
+  ],
+  "unresolvedDxbcLiterals": [],
+  "package": "/Game/UrbanCity/Materials/Props/prp_bench_Mat",
+  "extrasSha256": "27a3aade1bbb92180c9917e3392b7f249ae958c500e999b61937bdd85ee565ed",
+  "source": {
+    "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Props\\prp_bench_Mat.json",
+    "decodedSha256": "07732737437be5d4c7f7d0b220123a7162ca34335e8f416f8338b4c45e241526",
+    "exportPointer": "/Exports/0",
+    "sourceFiles": [
+      {
+        "extension": ".uasset",
+        "presentInPak": true,
+        "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Props\\prp_bench_Mat.uasset",
+        "existsLocally": true,
+        "bytes": 2458,
+        "sha256": "c04e58f92e2ec53a66489424e2d9036b86da8c9cb4607dc4602bc3f4f002e4e1"
+      },
+      {
+        "extension": ".uexp",
+        "presentInPak": true,
+        "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Props\\prp_bench_Mat.uexp",
+        "existsLocally": true,
+        "bytes": 56764,
+        "sha256": "6983112aba2162eddc64559e9fe9c96ea43b1c7b41844648a03364feeb48ecf3"
+      },
+      {
+        "extension": ".ubulk",
+        "presentInPak": false,
+        "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Props\\prp_bench_Mat.ubulk",
+        "existsLocally": false,
+        "notReadReason": "Bulk payload intentionally not extracted"
+      }
+    ]
+  },
+  "method": "Bounded LZ4 candidate extraction; complete D3D11 resource-table prefix and Microsoft D3DDisassemble validation; not REA retained Evidence"
+}

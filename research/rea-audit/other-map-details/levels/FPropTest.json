@@ -1,0 +1,5145 @@
+{
+  "package": "/Game/-HeroGame/Maps/SubLevel/FPropTest",
+  "actors": [
+    {
+      "exportIndex": 36,
+      "name": "BP_FlightRing",
+      "class": "BP_FlightRing_C",
+      "rootComponentIndex": 74,
+      "rootComponent": "FPropTest/PersistentLevel/BP_FlightRing/Root",
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 37,
+      "name": "BP_FlightRing10_70273",
+      "class": "BP_FlightRing_C",
+      "rootComponentIndex": 75,
+      "rootComponent": "FPropTest/PersistentLevel/BP_FlightRing10_70273/Root",
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 38,
+      "name": "BP_FlightRing11_70311",
+      "class": "BP_FlightRing_C",
+      "rootComponentIndex": 76,
+      "rootComponent": "FPropTest/PersistentLevel/BP_FlightRing11_70311/Root",
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 39,
+      "name": "BP_FlightRing2",
+      "class": "BP_FlightRing_C",
+      "rootComponentIndex": 77,
+      "rootComponent": "FPropTest/PersistentLevel/BP_FlightRing2/Root",
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 40,
+      "name": "BP_FlightRing3",
+      "class": "BP_FlightRing_C",
+      "rootComponentIndex": 78,
+      "rootComponent": "FPropTest/PersistentLevel/BP_FlightRing3/Root",
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 41,
+      "name": "BP_FlightRing4",
+      "class": "BP_FlightRing_C",
+      "rootComponentIndex": 79,
+      "rootComponent": "FPropTest/PersistentLevel/BP_FlightRing4/Root",
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 42,
+      "name": "BP_FlightRing5",
+      "class": "BP_FlightRing_C",
+      "rootComponentIndex": 80,
+      "rootComponent": "FPropTest/PersistentLevel/BP_FlightRing5/Root",
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 43,
+      "name": "BP_FlightRing6",
+      "class": "BP_FlightRing_C",
+      "rootComponentIndex": 81,
+      "rootComponent": "FPropTest/PersistentLevel/BP_FlightRing6/Root",
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 44,
+      "name": "BP_FlightRing7",
+      "class": "BP_FlightRing_C",
+      "rootComponentIndex": 82,
+      "rootComponent": "FPropTest/PersistentLevel/BP_FlightRing7/Root",
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 45,
+      "name": "BP_FlightRing8_70197",
+      "class": "BP_FlightRing_C",
+      "rootComponentIndex": 83,
+      "rootComponent": "FPropTest/PersistentLevel/BP_FlightRing8_70197/Root",
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 46,
+      "name": "BP_FlightRing9_70235",
+      "class": "BP_FlightRing_C",
+      "rootComponentIndex": 84,
+      "rootComponent": "FPropTest/PersistentLevel/BP_FlightRing9_70235/Root",
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 47,
+      "name": "FPropTest_C_0",
+      "class": "FPropTest_C",
+      "rootComponentIndex": null,
+      "rootComponent": null,
+      "visibilityProperties": {}
+    },
+    {
+      "exportIndex": 152,
+      "name": "WorldSettings",
+      "class": "WorldSettings",
+      "rootComponentIndex": null,
+      "rootComponent": null,
+      "visibilityProperties": {}
+    }
+  ],
+  "componentTransforms": [
+    {
+      "exportIndex": 3,
+      "component": "Arrow",
+      "class": "ArrowComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing",
+      "sourceActorExportIndex": 36,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing",
+      "attachParentIndex": 74,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          3950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 4,
+      "component": "Arrow",
+      "class": "ArrowComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "sourceActorExportIndex": 37,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "attachParentIndex": 75,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing10_70273/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          28000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 5,
+      "component": "Arrow",
+      "class": "ArrowComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "sourceActorExportIndex": 38,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "attachParentIndex": 76,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing11_70311/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          33000.0,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 6,
+      "component": "Arrow",
+      "class": "ArrowComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "sourceActorExportIndex": 39,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "attachParentIndex": 77,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing2/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          4950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 7,
+      "component": "Arrow",
+      "class": "ArrowComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "sourceActorExportIndex": 40,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "attachParentIndex": 78,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing3/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          5950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 8,
+      "component": "Arrow",
+      "class": "ArrowComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "sourceActorExportIndex": 41,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "attachParentIndex": 79,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing4/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          6950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 9,
+      "component": "Arrow",
+      "class": "ArrowComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "sourceActorExportIndex": 42,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "attachParentIndex": 80,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing5/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          7950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 10,
+      "component": "Arrow",
+      "class": "ArrowComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "sourceActorExportIndex": 43,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "attachParentIndex": 81,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing6/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          8950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 11,
+      "component": "Arrow",
+      "class": "ArrowComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "sourceActorExportIndex": 44,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "attachParentIndex": 82,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing7/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          12999.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 12,
+      "component": "Arrow",
+      "class": "ArrowComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "sourceActorExportIndex": 45,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "attachParentIndex": 83,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing8_70197/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          18000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 13,
+      "component": "Arrow",
+      "class": "ArrowComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "sourceActorExportIndex": 46,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "attachParentIndex": 84,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing9_70235/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          23000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 14,
+      "component": "Back",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing",
+      "sourceActorExportIndex": 36,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing",
+      "attachParentIndex": 74,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          3950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 15,
+      "component": "Forward",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing",
+      "sourceActorExportIndex": 36,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing",
+      "attachParentIndex": 74,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          3950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 16,
+      "component": "Back",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "sourceActorExportIndex": 37,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "attachParentIndex": 75,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing10_70273/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          28000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 17,
+      "component": "Forward",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "sourceActorExportIndex": 37,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "attachParentIndex": 75,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing10_70273/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          28000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 18,
+      "component": "Back",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "sourceActorExportIndex": 38,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "attachParentIndex": 76,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing11_70311/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          33000.0,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 19,
+      "component": "Forward",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "sourceActorExportIndex": 38,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "attachParentIndex": 76,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing11_70311/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          33000.0,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 20,
+      "component": "Back",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "sourceActorExportIndex": 39,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "attachParentIndex": 77,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing2/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          4950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 21,
+      "component": "Forward",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "sourceActorExportIndex": 39,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "attachParentIndex": 77,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing2/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          4950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 22,
+      "component": "Back",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "sourceActorExportIndex": 40,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "attachParentIndex": 78,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing3/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          5950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 23,
+      "component": "Forward",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "sourceActorExportIndex": 40,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "attachParentIndex": 78,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing3/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          5950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 24,
+      "component": "Back",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "sourceActorExportIndex": 41,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "attachParentIndex": 79,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing4/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          6950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 25,
+      "component": "Forward",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "sourceActorExportIndex": 41,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "attachParentIndex": 79,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing4/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          6950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 26,
+      "component": "Back",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "sourceActorExportIndex": 42,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "attachParentIndex": 80,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing5/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          7950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 27,
+      "component": "Forward",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "sourceActorExportIndex": 42,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "attachParentIndex": 80,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing5/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          7950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 28,
+      "component": "Back",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "sourceActorExportIndex": 43,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "attachParentIndex": 81,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing6/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          8950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 29,
+      "component": "Forward",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "sourceActorExportIndex": 43,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "attachParentIndex": 81,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing6/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          8950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 30,
+      "component": "Back",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "sourceActorExportIndex": 44,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "attachParentIndex": 82,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing7/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          12999.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 31,
+      "component": "Forward",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "sourceActorExportIndex": 44,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "attachParentIndex": 82,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing7/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          12999.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 32,
+      "component": "Back",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "sourceActorExportIndex": 45,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "attachParentIndex": 83,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing8_70197/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          18000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 33,
+      "component": "Forward",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "sourceActorExportIndex": 45,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "attachParentIndex": 83,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing8_70197/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          18000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 34,
+      "component": "Back",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "sourceActorExportIndex": 46,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "attachParentIndex": 84,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing9_70235/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          23000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 35,
+      "component": "Forward",
+      "class": "BoxComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "sourceActorExportIndex": 46,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "attachParentIndex": 84,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing9_70235/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          23000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 52,
+      "component": "P_FCRingClash",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing",
+      "sourceActorExportIndex": 36,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing",
+      "attachParentIndex": 74,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          3950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 53,
+      "component": "P_FCRingGlass",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing",
+      "sourceActorExportIndex": 36,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing",
+      "attachParentIndex": 74,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          3950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 54,
+      "component": "P_FCRingClash",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "sourceActorExportIndex": 37,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "attachParentIndex": 75,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing10_70273/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          28000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 55,
+      "component": "P_FCRingGlass",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "sourceActorExportIndex": 37,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "attachParentIndex": 75,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing10_70273/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          28000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 56,
+      "component": "P_FCRingClash",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "sourceActorExportIndex": 38,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "attachParentIndex": 76,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing11_70311/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          33000.0,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 57,
+      "component": "P_FCRingGlass",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "sourceActorExportIndex": 38,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "attachParentIndex": 76,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing11_70311/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          33000.0,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 58,
+      "component": "P_FCRingClash",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "sourceActorExportIndex": 39,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "attachParentIndex": 77,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing2/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          4950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 59,
+      "component": "P_FCRingGlass",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "sourceActorExportIndex": 39,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "attachParentIndex": 77,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing2/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          4950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 60,
+      "component": "P_FCRingClash",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "sourceActorExportIndex": 40,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "attachParentIndex": 78,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing3/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          5950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 61,
+      "component": "P_FCRingGlass",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "sourceActorExportIndex": 40,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "attachParentIndex": 78,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing3/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          5950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 62,
+      "component": "P_FCRingClash",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "sourceActorExportIndex": 41,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "attachParentIndex": 79,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing4/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          6950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 63,
+      "component": "P_FCRingGlass",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "sourceActorExportIndex": 41,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "attachParentIndex": 79,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing4/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          6950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 64,
+      "component": "P_FCRingClash",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "sourceActorExportIndex": 42,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "attachParentIndex": 80,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing5/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          7950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 65,
+      "component": "P_FCRingGlass",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "sourceActorExportIndex": 42,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "attachParentIndex": 80,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing5/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          7950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 66,
+      "component": "P_FCRingClash",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "sourceActorExportIndex": 43,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "attachParentIndex": 81,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing6/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          8950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 67,
+      "component": "P_FCRingGlass",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "sourceActorExportIndex": 43,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "attachParentIndex": 81,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing6/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          8950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 68,
+      "component": "P_FCRingClash",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "sourceActorExportIndex": 44,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "attachParentIndex": 82,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing7/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          12999.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 69,
+      "component": "P_FCRingGlass",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "sourceActorExportIndex": 44,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "attachParentIndex": 82,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing7/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          12999.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 70,
+      "component": "P_FCRingClash",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "sourceActorExportIndex": 45,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "attachParentIndex": 83,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing8_70197/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          18000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 71,
+      "component": "P_FCRingGlass",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "sourceActorExportIndex": 45,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "attachParentIndex": 83,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing8_70197/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          18000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 72,
+      "component": "P_FCRingClash",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "sourceActorExportIndex": 46,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "attachParentIndex": 84,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing9_70235/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          23000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 73,
+      "component": "P_FCRingGlass",
+      "class": "ParticleSystemComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "sourceActorExportIndex": 46,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "attachParentIndex": 84,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing9_70235/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          23000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 74,
+      "component": "Root",
+      "class": "SceneComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing",
+      "sourceActorExportIndex": 36,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing",
+      "attachParentIndex": 0,
+      "attachParent": null,
+      "attachSocket": null,
+      "relativeLocationUE": {
+        "X": 17000.0,
+        "Y": 7000.0,
+        "Z": 3950.0
+      },
+      "relativeRotationUE": {
+        "Pitch": -90.0,
+        "Yaw": "+0",
+        "Roll": "+0"
+      },
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          3950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 75,
+      "component": "Root",
+      "class": "SceneComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "sourceActorExportIndex": 37,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "attachParentIndex": 0,
+      "attachParent": null,
+      "attachSocket": null,
+      "relativeLocationUE": {
+        "X": 28000.001953125,
+        "Y": 2000.0,
+        "Z": 1950.0107421875
+      },
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          28000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 76,
+      "component": "Root",
+      "class": "SceneComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "sourceActorExportIndex": 38,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "attachParentIndex": 0,
+      "attachParent": null,
+      "attachSocket": null,
+      "relativeLocationUE": {
+        "X": 33000.0,
+        "Y": 2000.0,
+        "Z": 1950.0107421875
+      },
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          33000.0,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 77,
+      "component": "Root",
+      "class": "SceneComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "sourceActorExportIndex": 39,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "attachParentIndex": 0,
+      "attachParent": null,
+      "attachSocket": null,
+      "relativeLocationUE": {
+        "X": 17000.0,
+        "Y": 7000.0,
+        "Z": 4950.0
+      },
+      "relativeRotationUE": {
+        "Pitch": -90.0,
+        "Yaw": "+0",
+        "Roll": "+0"
+      },
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          4950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 78,
+      "component": "Root",
+      "class": "SceneComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "sourceActorExportIndex": 40,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "attachParentIndex": 0,
+      "attachParent": null,
+      "attachSocket": null,
+      "relativeLocationUE": {
+        "X": 17000.0,
+        "Y": 7000.0,
+        "Z": 5950.0
+      },
+      "relativeRotationUE": {
+        "Pitch": -90.0,
+        "Yaw": "+0",
+        "Roll": "+0"
+      },
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          5950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 79,
+      "component": "Root",
+      "class": "SceneComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "sourceActorExportIndex": 41,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "attachParentIndex": 0,
+      "attachParent": null,
+      "attachSocket": null,
+      "relativeLocationUE": {
+        "X": 17000.0,
+        "Y": 7000.0,
+        "Z": 6950.0
+      },
+      "relativeRotationUE": {
+        "Pitch": -90.0,
+        "Yaw": "+0",
+        "Roll": "+0"
+      },
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          6950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 80,
+      "component": "Root",
+      "class": "SceneComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "sourceActorExportIndex": 42,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "attachParentIndex": 0,
+      "attachParent": null,
+      "attachSocket": null,
+      "relativeLocationUE": {
+        "X": 17000.0,
+        "Y": 7000.0,
+        "Z": 7950.0
+      },
+      "relativeRotationUE": {
+        "Pitch": -90.0,
+        "Yaw": "+0",
+        "Roll": "+0"
+      },
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          7950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 81,
+      "component": "Root",
+      "class": "SceneComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "sourceActorExportIndex": 43,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "attachParentIndex": 0,
+      "attachParent": null,
+      "attachSocket": null,
+      "relativeLocationUE": {
+        "X": 17000.0,
+        "Y": 7000.0,
+        "Z": 8950.0
+      },
+      "relativeRotationUE": {
+        "Pitch": -90.0,
+        "Yaw": "+0",
+        "Roll": "+0"
+      },
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          8950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 82,
+      "component": "Root",
+      "class": "SceneComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "sourceActorExportIndex": 44,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "attachParentIndex": 0,
+      "attachParent": null,
+      "attachSocket": null,
+      "relativeLocationUE": {
+        "X": 12999.001953125,
+        "Y": 2000.0,
+        "Z": 1950.0107421875
+      },
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          12999.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 83,
+      "component": "Root",
+      "class": "SceneComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "sourceActorExportIndex": 45,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "attachParentIndex": 0,
+      "attachParent": null,
+      "attachSocket": null,
+      "relativeLocationUE": {
+        "X": 18000.001953125,
+        "Y": 2000.0,
+        "Z": 1950.0107421875
+      },
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          18000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 84,
+      "component": "Root",
+      "class": "SceneComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "sourceActorExportIndex": 46,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "attachParentIndex": 0,
+      "attachParent": null,
+      "attachSocket": null,
+      "relativeLocationUE": {
+        "X": 23000.001953125,
+        "Y": 2000.0,
+        "Z": 1950.0107421875
+      },
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          23000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 85,
+      "component": "SM_Arrow",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing",
+      "sourceActorExportIndex": 36,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing",
+      "attachParentIndex": 74,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          3950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 86,
+      "component": "StaticMesh",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing",
+      "sourceActorExportIndex": 36,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing",
+      "attachParentIndex": 74,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          3950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 87,
+      "component": "StaticMesh1",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing",
+      "sourceActorExportIndex": 36,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing",
+      "attachParentIndex": 74,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          3950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 88,
+      "component": "StaticMesh2",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing",
+      "sourceActorExportIndex": 36,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing",
+      "attachParentIndex": 74,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          3950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 89,
+      "component": "StaticMesh3",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing",
+      "sourceActorExportIndex": 36,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing",
+      "attachParentIndex": 74,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          3950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 90,
+      "component": "StaticMesh4",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing",
+      "sourceActorExportIndex": 36,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing",
+      "attachParentIndex": 74,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          3950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 91,
+      "component": "SM_Arrow",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "sourceActorExportIndex": 37,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "attachParentIndex": 75,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing10_70273/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          28000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 92,
+      "component": "StaticMesh",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "sourceActorExportIndex": 37,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "attachParentIndex": 75,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing10_70273/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          28000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 93,
+      "component": "StaticMesh1",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "sourceActorExportIndex": 37,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "attachParentIndex": 75,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing10_70273/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          28000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 94,
+      "component": "StaticMesh2",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "sourceActorExportIndex": 37,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "attachParentIndex": 75,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing10_70273/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          28000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 95,
+      "component": "StaticMesh3",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "sourceActorExportIndex": 37,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "attachParentIndex": 75,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing10_70273/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          28000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 96,
+      "component": "StaticMesh4",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "sourceActorExportIndex": 37,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing10_70273",
+      "attachParentIndex": 75,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing10_70273/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          28000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 97,
+      "component": "SM_Arrow",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "sourceActorExportIndex": 38,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "attachParentIndex": 76,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing11_70311/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          33000.0,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 98,
+      "component": "StaticMesh",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "sourceActorExportIndex": 38,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "attachParentIndex": 76,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing11_70311/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          33000.0,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 99,
+      "component": "StaticMesh1",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "sourceActorExportIndex": 38,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "attachParentIndex": 76,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing11_70311/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          33000.0,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 100,
+      "component": "StaticMesh2",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "sourceActorExportIndex": 38,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "attachParentIndex": 76,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing11_70311/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          33000.0,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 101,
+      "component": "StaticMesh3",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "sourceActorExportIndex": 38,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "attachParentIndex": 76,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing11_70311/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          33000.0,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 102,
+      "component": "StaticMesh4",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "sourceActorExportIndex": 38,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing11_70311",
+      "attachParentIndex": 76,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing11_70311/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          33000.0,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 103,
+      "component": "SM_Arrow",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "sourceActorExportIndex": 39,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "attachParentIndex": 77,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing2/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          4950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 104,
+      "component": "StaticMesh",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "sourceActorExportIndex": 39,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "attachParentIndex": 77,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing2/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          4950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 105,
+      "component": "StaticMesh1",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "sourceActorExportIndex": 39,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "attachParentIndex": 77,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing2/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          4950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 106,
+      "component": "StaticMesh2",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "sourceActorExportIndex": 39,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "attachParentIndex": 77,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing2/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          4950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 107,
+      "component": "StaticMesh3",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "sourceActorExportIndex": 39,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "attachParentIndex": 77,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing2/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          4950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 108,
+      "component": "StaticMesh4",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "sourceActorExportIndex": 39,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing2",
+      "attachParentIndex": 77,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing2/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          4950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 109,
+      "component": "SM_Arrow",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "sourceActorExportIndex": 40,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "attachParentIndex": 78,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing3/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          5950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 110,
+      "component": "StaticMesh",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "sourceActorExportIndex": 40,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "attachParentIndex": 78,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing3/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          5950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 111,
+      "component": "StaticMesh1",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "sourceActorExportIndex": 40,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "attachParentIndex": 78,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing3/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          5950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 112,
+      "component": "StaticMesh2",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "sourceActorExportIndex": 40,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "attachParentIndex": 78,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing3/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          5950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 113,
+      "component": "StaticMesh3",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "sourceActorExportIndex": 40,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "attachParentIndex": 78,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing3/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          5950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 114,
+      "component": "StaticMesh4",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "sourceActorExportIndex": 40,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing3",
+      "attachParentIndex": 78,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing3/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          5950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 115,
+      "component": "SM_Arrow",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "sourceActorExportIndex": 41,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "attachParentIndex": 79,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing4/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          6950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 116,
+      "component": "StaticMesh",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "sourceActorExportIndex": 41,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "attachParentIndex": 79,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing4/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          6950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 117,
+      "component": "StaticMesh1",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "sourceActorExportIndex": 41,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "attachParentIndex": 79,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing4/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          6950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 118,
+      "component": "StaticMesh2",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "sourceActorExportIndex": 41,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "attachParentIndex": 79,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing4/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          6950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 119,
+      "component": "StaticMesh3",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "sourceActorExportIndex": 41,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "attachParentIndex": 79,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing4/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          6950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 120,
+      "component": "StaticMesh4",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "sourceActorExportIndex": 41,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing4",
+      "attachParentIndex": 79,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing4/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          6950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 121,
+      "component": "SM_Arrow",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "sourceActorExportIndex": 42,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "attachParentIndex": 80,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing5/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          7950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 122,
+      "component": "StaticMesh",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "sourceActorExportIndex": 42,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "attachParentIndex": 80,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing5/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          7950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 123,
+      "component": "StaticMesh1",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "sourceActorExportIndex": 42,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "attachParentIndex": 80,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing5/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          7950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 124,
+      "component": "StaticMesh2",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "sourceActorExportIndex": 42,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "attachParentIndex": 80,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing5/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          7950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 125,
+      "component": "StaticMesh3",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "sourceActorExportIndex": 42,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "attachParentIndex": 80,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing5/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          7950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 126,
+      "component": "StaticMesh4",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "sourceActorExportIndex": 42,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing5",
+      "attachParentIndex": 80,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing5/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          7950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 127,
+      "component": "SM_Arrow",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "sourceActorExportIndex": 43,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "attachParentIndex": 81,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing6/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          8950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 128,
+      "component": "StaticMesh",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "sourceActorExportIndex": 43,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "attachParentIndex": 81,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing6/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          8950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 129,
+      "component": "StaticMesh1",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "sourceActorExportIndex": 43,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "attachParentIndex": 81,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing6/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          8950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 130,
+      "component": "StaticMesh2",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "sourceActorExportIndex": 43,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "attachParentIndex": 81,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing6/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          8950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 131,
+      "component": "StaticMesh3",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "sourceActorExportIndex": 43,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "attachParentIndex": 81,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing6/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          8950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 132,
+      "component": "StaticMesh4",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "sourceActorExportIndex": 43,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing6",
+      "attachParentIndex": 81,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing6/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          17000.0,
+          7000.0,
+          8950.0
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.7071067811865476,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 133,
+      "component": "SM_Arrow",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "sourceActorExportIndex": 44,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "attachParentIndex": 82,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing7/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          12999.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 134,
+      "component": "StaticMesh",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "sourceActorExportIndex": 44,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "attachParentIndex": 82,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing7/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          12999.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 135,
+      "component": "StaticMesh1",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "sourceActorExportIndex": 44,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "attachParentIndex": 82,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing7/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          12999.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 136,
+      "component": "StaticMesh2",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "sourceActorExportIndex": 44,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "attachParentIndex": 82,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing7/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          12999.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 137,
+      "component": "StaticMesh3",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "sourceActorExportIndex": 44,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "attachParentIndex": 82,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing7/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          12999.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 138,
+      "component": "StaticMesh4",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "sourceActorExportIndex": 44,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing7",
+      "attachParentIndex": 82,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing7/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          12999.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 139,
+      "component": "SM_Arrow",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "sourceActorExportIndex": 45,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "attachParentIndex": 83,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing8_70197/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          18000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 140,
+      "component": "StaticMesh",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "sourceActorExportIndex": 45,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "attachParentIndex": 83,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing8_70197/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          18000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 141,
+      "component": "StaticMesh1",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "sourceActorExportIndex": 45,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "attachParentIndex": 83,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing8_70197/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          18000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 142,
+      "component": "StaticMesh2",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "sourceActorExportIndex": 45,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "attachParentIndex": 83,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing8_70197/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          18000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 143,
+      "component": "StaticMesh3",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "sourceActorExportIndex": 45,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "attachParentIndex": 83,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing8_70197/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          18000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 144,
+      "component": "StaticMesh4",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "sourceActorExportIndex": 45,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing8_70197",
+      "attachParentIndex": 83,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing8_70197/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          18000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 145,
+      "component": "SM_Arrow",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "sourceActorExportIndex": 46,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "attachParentIndex": 84,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing9_70235/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          23000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 146,
+      "component": "StaticMesh",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "sourceActorExportIndex": 46,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "attachParentIndex": 84,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing9_70235/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          23000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 147,
+      "component": "StaticMesh1",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "sourceActorExportIndex": 46,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "attachParentIndex": 84,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing9_70235/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          23000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 148,
+      "component": "StaticMesh2",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "sourceActorExportIndex": 46,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "attachParentIndex": 84,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing9_70235/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          23000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 149,
+      "component": "StaticMesh3",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "sourceActorExportIndex": 46,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "attachParentIndex": 84,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing9_70235/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          23000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    },
+    {
+      "exportIndex": 150,
+      "component": "StaticMesh4",
+      "class": "StaticMeshComponent",
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "sourceActorExportIndex": 46,
+      "outer": "FPropTest/PersistentLevel/BP_FlightRing9_70235",
+      "attachParentIndex": 84,
+      "attachParent": "FPropTest/PersistentLevel/BP_FlightRing9_70235/Root",
+      "attachSocket": null,
+      "relativeLocationUE": null,
+      "relativeRotationUE": null,
+      "relativeScaleUE": null,
+      "absoluteFlags": {},
+      "serializedPropertiesAbsentUseDefaults": true,
+      "composedComponentTransformUE": {
+        "position": [
+          23000.001953125,
+          2000.0,
+          1950.0107421875
+        ],
+        "rotationQuaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "worldTransformCaveat": "In level coordinates; absent values use zero/identity. Native/Blueprint template overrides and socket transforms are not applied; LevelStreaming transform is recorded separately.",
+      "visibilityProperties": {},
+      "visibilityCaveat": "Absent flags do not establish actual rendered visibility; owner/template/runtime state can override."
+    }
+  ],
+  "meshReferences": [],
+  "materialOverrides": [
+    {
+      "componentExportIndex": 87,
+      "sourceActor": "FPropTest/PersistentLevel/BP_FlightRing",
+      "slots": [
+        null,
+        "FPropTest/PersistentLevel/BP_FlightRing/StaticMesh1/MaterialInstanceDynamic_0"
+      ]
+    }
+  ],
+  "lightsAndReflection": [],
+  "environmentActors": [
+    {
+      "exportIndex": 152,
+      "class": "WorldSettings",
+      "name": "WorldSettings",
+      "properties": {
+        "bEnableNavigationSystem": false,
+        "NavigationSystemConfig": 51,
+        "BookmarkArray": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        }
+      }
+    }
+  ],
+  "terrain": [],
+  "foliageAndInstancing": [],
+  "streamingRecords": [],
+  "streamingTables": [
+    {
+      "worldExport": 151,
+      "tailBytes": 16,
+      "tailWords": [
+        0,
+        48,
+        0,
+        0
+      ],
+      "verifiedCountedTable": false
+    }
+  ],
+  "levelActorReferenceTables": [
+    {
+      "levelExportIndex": 48,
+      "slots": 14,
+      "nullSlots": 1,
+      "actorExports": [
+        152,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    }
+  ],
+  "materialImports": [
+    "/Game/-HeroGame/Materials/M_FRing_OutFream_Inst/M_FRing_OutFream_Inst",
+    "/Script/Engine/Default__MaterialInstanceDynamic"
+  ],
+  "meshImports": [],
+  "embeddedMaterialExports": [
+    "FPropTest/PersistentLevel/BP_FlightRing/StaticMesh1/MaterialInstanceDynamic_0"
+  ],
+  "rawExports": []
+}

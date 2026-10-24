@@ -1,0 +1,3513 @@
+{
+  "schema_version": 1,
+  "scope": "Static review of eight local UAssetAPI decoded assets; not native decompilation or runtime observation",
+  "generated_date": "2026-10-24",
+  "evidence_kind": "local_decoded_blueprint",
+  "findings": [
+    {
+      "id": "citizen-path",
+      "status": "observed_static",
+      "claim_zh": "市民使用 WayPointArray 的最近节点作为起点，随机 AddCount? 方向；LoopSpline? 分支越界环绕，非循环分支到端点反向。正常移动通过 CreateMoveToProxyObject 以 waypoint actor 为目标，接受半径150。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 12,
+          "export_name": "GetTheMostNearWP",
+          "json_pointer": "/Exports/12"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/33"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/35"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/73"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/92"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/101"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/110"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/160"
+        }
+      ],
+      "limits_zh": "关卡内具体路点数组由外部赋值，未恢复完整地图导航。数值均为原始 Unreal 单位。"
+    },
+    {
+      "id": "citizen-runtime-tuning",
+      "status": "observed_static",
+      "claim_zh": "市民初始化从 DT_CitizenSysyem 读取视角、地面距离、高度差、近距发现、交通检测距离、最小/最大步速、逃跑速度；普通步速 RandomFloatInRange(MinSpeed,MaxSpeed)。类默认 SightDegrees=70、GroundDistance=1000、SkyDistance=50、MostFindDistance=100、CheckTrafficDist=1000 不是最终运行值保证。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/2"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/38"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/62"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/67"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 16,
+          "export_name": "Default__BaseCitizen_CharaBP_C",
+          "json_pointer": "/Exports/16"
+        }
+      ],
+      "limits_zh": "数据表行可覆盖类默认；当前八个文件不包含该数据表取值。"
+    },
+    {
+      "id": "citizen-reaction",
+      "status": "observed_static",
+      "claim_zh": "市民具有正常行走、停止/转头观察与逃跑分支。视线判断使用方向点积→DegAcos 与 SightDegrees 比较，并比较水平距离；高度差选择 SkyAnim/GroundAnim。逃跑分支设置 EscapeAnim=true、CharacterMovement.MaxWalkSpeed=EscapeSpeed，并导航至逐个比较距离得到的最近 EscapePoint_BP。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/169"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/172"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/180"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/189"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/238"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/245"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/253"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 14,
+          "export_name": "GetNearEspacePoint",
+          "json_pointer": "/Exports/14"
+        }
+      ],
+      "limits_zh": "本轮未进行字节偏移到指令索引的完整CFG映射，不能仅凭邻近指令给所有枚举编号命名；State引用 Enum_CharacterState，不能套用另一个 CitizenState_Enum。"
+    },
+    {
+      "id": "citizen-traffic",
+      "status": "observed_static",
+      "claim_zh": "市民前向 LineTraceSingle 结合命中对象 StopWalk 标签和 InCrossWalk? 分支设置状态；默认 RVO 避让开启，AvoidanceConsiderationRadius=200，朝移动方向旋转。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/279"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/285"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/288"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 18,
+          "export_name": "CharMoveComp",
+          "json_pointer": "/Exports/18"
+        }
+      ],
+      "limits_zh": "Trace channel数字4的项目映射未在这八个文件中确认。"
+    },
+    {
+      "id": "citizen-protection",
+      "status": "observed_static",
+      "claim_zh": "BaseCitizen_CharaBP 继承 Character，仅声明 BPI_Citizen 接口；胶囊碰撞默认忽略 Bullet、Hero、OpticRay，角色网格也忽略 OpticRay。本类全部函数导出/字节码中未见生命值扣减、ApplyDamage、死亡或 PlayerImpact_BPI.ImpactForce 实现。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 15,
+          "export_name": "BaseCitizen_CharaBP_C",
+          "json_pointer": "/Exports/15/Interfaces"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 17,
+          "export_name": "CollisionCylinder",
+          "json_pointer": "/Exports/17/Data/1"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 22,
+          "export_name": "CharacterMesh0",
+          "json_pointer": "/Exports/22/Data/4"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 15,
+          "export_name": "BaseCitizen_CharaBP_C",
+          "json_pointer": "/Exports/15/FuncMap"
+        }
+      ],
+      "limits_zh": "这支持“所检市民基类未实现一般可杀伤对象”的有限结论，不能推出所有派生市民、关卡脚本或外部事件都无法改变状态。"
+    },
+    {
+      "id": "citizen-protection-inference",
+      "status": "inference",
+      "claim_zh": "原游戏市民更接近导航/观察/逃跑的环境角色；若 Web 目标是自由攻击并杀伤路人，需要独立生命/伤害/死亡规则，不能照搬此基类的保护通道与接口设置。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 17,
+          "export_name": "CollisionCylinder",
+          "json_pointer": "/Exports/17"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 15,
+          "export_name": "BaseCitizen_CharaBP_C",
+          "json_pointer": "/Exports/15"
+        },
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "json_pointer": "/Exports/0/ScriptBytecode/169"
+        }
+      ],
+      "limits_zh": "没有运行时攻击测试；应与主调查的 BP_OpticRay.SetCitizenState(4) 证据合并，状态4确切命名仍待枚举/CFG确认。"
+    },
+    {
+      "id": "citizen-pool",
+      "status": "observed_static",
+      "claim_zh": "BP_CitizenManager 获取 BP_CharacterPoolArea，第一个实例作为 PoolArea；从 DT_CitizenSysyem 读取 MaxCitizen/VisibleDistance，调用 PoolCitizen，并在 Update 调 RemoveCitizen(VisibleDistance) 后经 Delay(0) 重入更新。BP_CitizenCollision 在 CanSpawn? 为真且重叠对象是 BP_CharaSpawnPoint 时调用 CheckSpawnCitizen；默认 CanSpawn?=true，球体半径11000。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BP_CitizenManager.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_CitizenManager",
+          "json_pointer": "/Exports/0/ScriptBytecode/14"
+        },
+        {
+          "file": "analysis/decoded/BP_CitizenManager.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_CitizenManager",
+          "json_pointer": "/Exports/0/ScriptBytecode/18"
+        },
+        {
+          "file": "analysis/decoded/BP_CitizenManager.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_CitizenManager",
+          "json_pointer": "/Exports/0/ScriptBytecode/23"
+        },
+        {
+          "file": "analysis/decoded/BP_CitizenManager.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_CitizenManager",
+          "json_pointer": "/Exports/0/ScriptBytecode/26"
+        },
+        {
+          "file": "analysis/decoded/BP_CitizenManager.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_CitizenManager",
+          "json_pointer": "/Exports/0/ScriptBytecode/28"
+        },
+        {
+          "file": "analysis/decoded/BP_CitizenCollision.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_CitizenCollision",
+          "json_pointer": "/Exports/0/ScriptBytecode/1"
+        },
+        {
+          "file": "analysis/decoded/BP_CitizenCollision.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_CitizenCollision",
+          "json_pointer": "/Exports/0/ScriptBytecode/5"
+        },
+        {
+          "file": "analysis/decoded/BP_CitizenCollision.json",
+          "export_index": 3,
+          "export_name": "Default__BP_CitizenCollision_C",
+          "json_pointer": "/Exports/3"
+        },
+        {
+          "file": "analysis/decoded/BP_CitizenCollision.json",
+          "export_index": 11,
+          "export_name": "Sphere_GEN_VARIABLE",
+          "json_pointer": "/Exports/11"
+        }
+      ],
+      "limits_zh": "池创建、回收、重复利用以及出生点具体条件在 BP_CharacterPoolArea/BP_CharaSpawnPoint 内，不属于本次八文件；这里只确认调用机制，不声称已恢复池内部。"
+    },
+    {
+      "id": "vehicle-path",
+      "status": "observed_static",
+      "claim_zh": "车辆以 MyPath.Spline 的距离参数追踪转向/油门目标；接近前瞻目标时每步加25，超过样条长度归零。转向将目标偏航差从[-90,90]映射到[-1,1]传给 SetSteeringInput；速度选择根据归一化偏航绝对值是否小于0.25选择 TopSpeed 或 CurveSpeed。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 8,
+          "export_name": "SetSteeringTarget",
+          "json_pointer": "/Exports/8"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 10,
+          "export_name": "SetThrottleTarget",
+          "json_pointer": "/Exports/10"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 6,
+          "export_name": "SteeringFunction",
+          "json_pointer": "/Exports/6"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 9,
+          "export_name": "SetSpeed",
+          "json_pointer": "/Exports/9"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 13,
+          "export_name": "SetSpawnInitialize",
+          "json_pointer": "/Exports/13"
+        }
+      ],
+      "limits_zh": "原始默认 SteeringTarget=700、ThrottleTargetLength=1400、TopSpeed=833、CurveSpeed=400；是目标值，不是实际测速。"
+    },
+    {
+      "id": "vehicle-stop",
+      "status": "observed_static",
+      "claim_zh": "车辆前方 BoxTrace 检查 Stop 标签，置 Hit?/Stop?；Stop? 时油门0并启用手刹，否则目标速度已达到时油门0.2，未达到时油门1并释放手刹。对 Character 命中还存在5秒重复 PlayKlaxon 定时器。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_ParentVehicle",
+          "json_pointer": "/Exports/0/ScriptBytecode/82"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_ParentVehicle",
+          "json_pointer": "/Exports/0/ScriptBytecode/85"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_ParentVehicle",
+          "json_pointer": "/Exports/0/ScriptBytecode/49"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_ParentVehicle",
+          "json_pointer": "/Exports/0/ScriptBytecode/18"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 7,
+          "export_name": "ThrottleFunction",
+          "json_pointer": "/Exports/7"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 22,
+          "export_name": "Default__BP_ParentVehicle_C",
+          "json_pointer": "/Exports/22"
+        }
+      ],
+      "limits_zh": "BoxTraceDistance默认1100；实际子类/关卡可覆盖。没有证明真实道路交通信号或车道变换。"
+    },
+    {
+      "id": "vehicle-damage",
+      "status": "observed_static",
+      "claim_zh": "车辆 ImpactForce 以 IsStrong 分流。非强击路径生成 P_Spark 并播 ImpactHand_Cue；强击在 Destory? 尚未设置时置真、生成 P_CarExplosion、播放 Cue_MissileExplosion、将碰撞通道15设Ignore、隐藏Actor、调用AttackDestroy。若 IsEnemyAttack=false，调用 Default__BPFL_HeroPoint_C.SendHeroPoint(self,0,self)。Lockon 和 KillMove 均直接返回false。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 18,
+          "export_name": "ImpactForce",
+          "json_pointer": "/Exports/18/ScriptBytecode/0"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 18,
+          "export_name": "ImpactForce",
+          "json_pointer": "/Exports/18/ScriptBytecode/4"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 18,
+          "export_name": "ImpactForce",
+          "json_pointer": "/Exports/18/ScriptBytecode/8"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 18,
+          "export_name": "ImpactForce",
+          "json_pointer": "/Exports/18/ScriptBytecode/10"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 18,
+          "export_name": "ImpactForce",
+          "json_pointer": "/Exports/18/ScriptBytecode/13"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 18,
+          "export_name": "ImpactForce",
+          "json_pointer": "/Exports/18/ScriptBytecode/15"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 18,
+          "export_name": "ImpactForce",
+          "json_pointer": "/Exports/18/ScriptBytecode/16"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 18,
+          "export_name": "ImpactForce",
+          "json_pointer": "/Exports/18/ScriptBytecode/18"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 19,
+          "export_name": "Lockon",
+          "json_pointer": "/Exports/19"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 20,
+          "export_name": "KillMove",
+          "json_pointer": "/Exports/20"
+        }
+      ],
+      "limits_zh": "SendHeroPoint第二参数为0，不是直接在本函数写-2000；Vehicle行的惩罚需与BPFL_HeroPoint/DT_HeroPoint另证连接。通道15语义未在这里确认。"
+    },
+    {
+      "id": "vehicle-removal",
+      "status": "observed_static",
+      "claim_zh": "AttackDestroy包装函数进入主图；主图含Delay(1.0)后获取 BP_VehiclePoolArea 并调用 SpecificRemoveVehicle(self)。更新由 Pool? 门控，StartUpdate可切换该标志；CheckPlayerDistance按距离隐藏/显示 Mesh。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 1,
+          "export_name": "AttackDestroy",
+          "json_pointer": "/Exports/1"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_ParentVehicle",
+          "json_pointer": "/Exports/0/ScriptBytecode/2"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_ParentVehicle",
+          "json_pointer": "/Exports/0/ScriptBytecode/7"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_ParentVehicle",
+          "json_pointer": "/Exports/0/ScriptBytecode/29"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 12,
+          "export_name": "StartUpdate",
+          "json_pointer": "/Exports/12"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 11,
+          "export_name": "CheckPlayerDistance",
+          "json_pointer": "/Exports/11"
+        }
+      ],
+      "limits_zh": "回收池内部具体复位方式未检查；不能断言销毁Actor或保留实体复用。"
+    },
+    {
+      "id": "vehicle-spawn",
+      "status": "observed_static",
+      "claim_zh": "VehicleSystem_Component 获取 WaypointManager 与 PoolManager，将 RemoveDistance传入池，调用CreatePoolVehicle(MaxVehicle)。周期过程围绕组件所属Actor位置请求DetectIntersection(innerRad,outerRad)，调用RemoveVehicle；CanSpawn?允许时随机选路段、线性插值采点、投影至Spline，BoxTrace检查已有车辆，再调用LaunchVehicle(位置,旋转,沿路距离,路径)。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/VehicleSystem_Component.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_VehicleSystem_Component",
+          "json_pointer": "/Exports/0/ScriptBytecode/30"
+        },
+        {
+          "file": "analysis/decoded/VehicleSystem_Component.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_VehicleSystem_Component",
+          "json_pointer": "/Exports/0/ScriptBytecode/38"
+        },
+        {
+          "file": "analysis/decoded/VehicleSystem_Component.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_VehicleSystem_Component",
+          "json_pointer": "/Exports/0/ScriptBytecode/39"
+        },
+        {
+          "file": "analysis/decoded/VehicleSystem_Component.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_VehicleSystem_Component",
+          "json_pointer": "/Exports/0/ScriptBytecode/59"
+        },
+        {
+          "file": "analysis/decoded/VehicleSystem_Component.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_VehicleSystem_Component",
+          "json_pointer": "/Exports/0/ScriptBytecode/61"
+        },
+        {
+          "file": "analysis/decoded/VehicleSystem_Component.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_VehicleSystem_Component",
+          "json_pointer": "/Exports/0/ScriptBytecode/67"
+        },
+        {
+          "file": "analysis/decoded/VehicleSystem_Component.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_VehicleSystem_Component",
+          "json_pointer": "/Exports/0/ScriptBytecode/71"
+        },
+        {
+          "file": "analysis/decoded/VehicleSystem_Component.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_VehicleSystem_Component",
+          "json_pointer": "/Exports/0/ScriptBytecode/77"
+        },
+        {
+          "file": "analysis/decoded/VehicleSystem_Component.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_VehicleSystem_Component",
+          "json_pointer": "/Exports/0/ScriptBytecode/92"
+        },
+        {
+          "file": "analysis/decoded/VehicleSystem_Component.json",
+          "export_index": 9,
+          "export_name": "Default__VehicleSystem_Component_C",
+          "json_pointer": "/Exports/9"
+        }
+      ],
+      "limits_zh": "默认MaxVehicle=10、innerRad=500、outerRad=600、RemoveDistance=1000、CheckInterval=0.5、CheckBoxSize=(250,250,100)。初始化/实例覆盖未知；未见视锥检查，不能声称一定在视野外生成。"
+    },
+    {
+      "id": "vehicle-waypoint-manager",
+      "status": "observed_static",
+      "claim_zh": "BP_VehicleWpManager 收集 BP_VehicleWaypoint，预分配 results(maxResult默认10)。DetectIntersection计算内外半径平方和圆AABB，逐路径调用TestDiscVSLines；AddResult受maxResult上限保护，存路点引用与segment索引；GetRandomLocation在有效结果中随机取一项并调用GetRandomLocInSegment。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BP_VehicleWpManager.json",
+          "export_index": 5,
+          "export_name": "GetAllReference",
+          "json_pointer": "/Exports/5"
+        },
+        {
+          "file": "analysis/decoded/BP_VehicleWpManager.json",
+          "export_index": 1,
+          "export_name": "DetectIntersection",
+          "json_pointer": "/Exports/1"
+        },
+        {
+          "file": "analysis/decoded/BP_VehicleWpManager.json",
+          "export_index": 4,
+          "export_name": "AddResult",
+          "json_pointer": "/Exports/4"
+        },
+        {
+          "file": "analysis/decoded/BP_VehicleWpManager.json",
+          "export_index": 6,
+          "export_name": "GetRandomLocation",
+          "json_pointer": "/Exports/6"
+        },
+        {
+          "file": "analysis/decoded/BP_VehicleWpManager.json",
+          "export_index": 8,
+          "export_name": "Default__BP_VehicleWpManager_C",
+          "json_pointer": "/Exports/8"
+        }
+      ],
+      "limits_zh": "圆环与线段的精确相交算法在外部 BP_VehicleWaypoint/TestDiscVSLines，本轮只确认调用及结果管理。"
+    },
+    {
+      "id": "attack-dispatch",
+      "status": "observed_static",
+      "claim_zh": "BP_AttackCollirion 重叠时调用RadialForce.FireImpulse，以OverlapActor和OverlapActors数组Contains/AddUnique阻止重复逻辑派发；目标需实现 PlayerImpact_BPI 才调用ImpactForce，首个布尔参数为true。默认寿命约0.9秒、RadialForce半径250、ImpulseStrength=2000、bImpulseVelChange=true。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BP_AttackCollirion.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_AttackCollirion",
+          "json_pointer": "/Exports/0/ScriptBytecode/5"
+        },
+        {
+          "file": "analysis/decoded/BP_AttackCollirion.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_AttackCollirion",
+          "json_pointer": "/Exports/0/ScriptBytecode/8"
+        },
+        {
+          "file": "analysis/decoded/BP_AttackCollirion.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_AttackCollirion",
+          "json_pointer": "/Exports/0/ScriptBytecode/20"
+        },
+        {
+          "file": "analysis/decoded/BP_AttackCollirion.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_AttackCollirion",
+          "json_pointer": "/Exports/0/ScriptBytecode/21"
+        },
+        {
+          "file": "analysis/decoded/BP_AttackCollirion.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_AttackCollirion",
+          "json_pointer": "/Exports/0/ScriptBytecode/26"
+        },
+        {
+          "file": "analysis/decoded/BP_AttackCollirion.json",
+          "export_index": 6,
+          "export_name": "Default__BP_AttackCollirion_C",
+          "json_pointer": "/Exports/6"
+        },
+        {
+          "file": "analysis/decoded/BP_AttackCollirion.json",
+          "export_index": 10,
+          "export_name": "RadialForce_GEN_VARIABLE",
+          "json_pointer": "/Exports/10"
+        }
+      ],
+      "limits_zh": "RadialForce的物理效果和接口逻辑去重不同：FireImpulse在数组Contains判断前，不能声称所有物理冲量也每目标仅一次。首布尔名需由接口签名核对；车辆签名为IsStrong。"
+    },
+    {
+      "id": "fly-collision",
+      "status": "observed_static",
+      "claim_zh": "BP_FlyCollision.OverlapEvent 对 BP_DestructionProp_S、BaseEnemy 或 boss标签对象走提前结束分支；其余支持 PlayerImpact_BPI 的目标收到ImpactForce，前五个布尔参数全false。默认寿命0，RadialForce的ImpulseStrength与ForceStrength为0。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BP_FlyCollision.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_FlyCollision",
+          "json_pointer": "/Exports/0/ScriptBytecode/6"
+        },
+        {
+          "file": "analysis/decoded/BP_FlyCollision.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_FlyCollision",
+          "json_pointer": "/Exports/0/ScriptBytecode/8"
+        },
+        {
+          "file": "analysis/decoded/BP_FlyCollision.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_FlyCollision",
+          "json_pointer": "/Exports/0/ScriptBytecode/10"
+        },
+        {
+          "file": "analysis/decoded/BP_FlyCollision.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_FlyCollision",
+          "json_pointer": "/Exports/0/ScriptBytecode/13"
+        },
+        {
+          "file": "analysis/decoded/BP_FlyCollision.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_FlyCollision",
+          "json_pointer": "/Exports/0/ScriptBytecode/18"
+        },
+        {
+          "file": "analysis/decoded/BP_FlyCollision.json",
+          "export_index": 4,
+          "export_name": "Default__BP_FlyCollision_C",
+          "json_pointer": "/Exports/4"
+        },
+        {
+          "file": "analysis/decoded/BP_FlyCollision.json",
+          "export_index": 7,
+          "export_name": "RadialForce_GEN_VARIABLE",
+          "json_pointer": "/Exports/7"
+        }
+      ],
+      "limits_zh": "这只描述该碰撞子类，不能外推所有高速冲刺/砸地能力均不伤敌。"
+    },
+    {
+      "id": "performance",
+      "status": "observed_static",
+      "claim_zh": "市民和车辆网格均使用OnlyTickPoseWhenRendered并启用动画更新率优化；市民关闭投影，车辆主Actor默认不开Tick但通过显式Update/Delay驱动。",
+      "evidence": [
+        {
+          "file": "analysis/decoded/BaseCitizen_CharaBP.json",
+          "export_index": 22,
+          "export_name": "CharacterMesh0",
+          "json_pointer": "/Exports/22"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 34,
+          "export_name": "VehicleMesh",
+          "json_pointer": "/Exports/34"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 22,
+          "export_name": "Default__BP_ParentVehicle_C",
+          "json_pointer": "/Exports/22"
+        },
+        {
+          "file": "analysis/decoded/BP_ParentVehicle.json",
+          "export_index": 0,
+          "export_name": "ExecuteUbergraph_BP_ParentVehicle",
+          "json_pointer": "/Exports/0/ScriptBytecode/47"
+        }
+      ],
+      "limits_zh": "未进行运行时帧率和活跃数量测量。"
+    }
+  ],
+  "sources": [
+    {
+      "path": "analysis/decoded/BaseCitizen_CharaBP.json",
+      "sha256": "4885c61d8714dd48ae587d34d44e2461b7f1c360e3b3e6c8a6ba546cf5b983c8",
+      "function_exports": [
+        {
+          "json_pointer": "/Exports/0",
+          "name": "ExecuteUbergraph_BaseCitizen_CharaBP",
+          "instructions": 294
+        },
+        {
+          "json_pointer": "/Exports/1",
+          "name": "CheckFrontTraffic",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/2",
+          "name": "Sight",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/3",
+          "name": "SetCitizenState",
+          "instructions": 4
+        },
+        {
+          "json_pointer": "/Exports/4",
+          "name": "ResetDoone_Escape",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/5",
+          "name": "ReceiveBeginPlay",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/6",
+          "name": "ReceiveTick",
+          "instructions": 4
+        },
+        {
+          "json_pointer": "/Exports/7",
+          "name": "SpawnInitialize",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/8",
+          "name": "OnSuccess_07F120D341F38E249FD5F4B2F9DAC484",
+          "instructions": 4
+        },
+        {
+          "json_pointer": "/Exports/9",
+          "name": "OnFail_07F120D341F38E249FD5F4B2F9DAC484",
+          "instructions": 4
+        },
+        {
+          "json_pointer": "/Exports/10",
+          "name": "OnSuccess_2DA248384888CAA70B041BB6B17698C1",
+          "instructions": 4
+        },
+        {
+          "json_pointer": "/Exports/11",
+          "name": "OnFail_2DA248384888CAA70B041BB6B17698C1",
+          "instructions": 4
+        },
+        {
+          "json_pointer": "/Exports/12",
+          "name": "GetTheMostNearWP",
+          "instructions": 35
+        },
+        {
+          "json_pointer": "/Exports/13",
+          "name": "GetSecondNearWP",
+          "instructions": 25
+        },
+        {
+          "json_pointer": "/Exports/14",
+          "name": "GetNearEspacePoint",
+          "instructions": 35
+        }
+      ],
+      "default_data": [
+        {
+          "json_pointer": "/Exports/16/Data",
+          "export_name": "Default__BaseCitizen_CharaBP_C",
+          "simplified_data": [
+            {
+              "name": "UberGraphFrame",
+              "StructType": "PointerToUberGraphFrame",
+              "Value": []
+            },
+            {
+              "name": "SightDegrees",
+              "Value": 70.0
+            },
+            {
+              "name": "GroundDistance",
+              "Value": 1000.0
+            },
+            {
+              "name": "SkyDistance",
+              "Value": 50.0
+            },
+            {
+              "name": "MostFindDistance",
+              "Value": 100.0
+            },
+            {
+              "name": "CheckTrafficDist",
+              "Value": 1000.0
+            },
+            {
+              "name": "Mesh",
+              "Value": 23
+            },
+            {
+              "name": "CharacterMovement",
+              "Value": 19
+            },
+            {
+              "name": "CapsuleComponent",
+              "Value": 18
+            },
+            {
+              "name": "RootComponent",
+              "Value": 18
+            },
+            {
+              "name": "Tags",
+              "ArrayType": "NameProperty",
+              "Value": [
+                {
+                  "name": "0",
+                  "Value": "TargetChara"
+                },
+                {
+                  "name": "1",
+                  "Value": "Stop"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/17/Data",
+          "export_name": "CollisionCylinder",
+          "simplified_data": [
+            {
+              "name": "AreaClass",
+              "Value": -45
+            },
+            {
+              "name": "BodyInstance",
+              "StructType": "BodyInstance",
+              "Value": [
+                {
+                  "name": "CollisionProfileName",
+                  "Value": "Custom"
+                },
+                {
+                  "name": "CollisionResponses",
+                  "StructType": "CollisionResponse",
+                  "Value": [
+                    {
+                      "name": "ResponseArray",
+                      "ArrayType": "StructProperty",
+                      "Value": [
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Camera"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Bullet"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Hero"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "OpticRay"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/18/Data",
+          "export_name": "CharMoveComp",
+          "simplified_data": [
+            {
+              "name": "bOrientRotationToMovement",
+              "Value": true
+            },
+            {
+              "name": "bSweepWhileNavWalking",
+              "Value": false
+            },
+            {
+              "name": "bAlwaysCheckFloor",
+              "Value": false
+            },
+            {
+              "name": "bUseRVOAvoidance",
+              "Value": true
+            },
+            {
+              "name": "AvoidanceConsiderationRadius",
+              "Value": 200.0
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/22/Data",
+          "export_name": "CharacterMesh0",
+          "simplified_data": [
+            {
+              "name": "ClothingSimulationFactory",
+              "Value": -26
+            },
+            {
+              "name": "VisibilityBasedAnimTickOption",
+              "EnumType": "EVisibilityBasedAnimTickOption",
+              "InnerType": null,
+              "Value": "EVisibilityBasedAnimTickOption::OnlyTickPoseWhenRendered"
+            },
+            {
+              "name": "bEnableUpdateRateOptimizations",
+              "Value": true
+            },
+            {
+              "name": "CastShadow",
+              "Value": false
+            },
+            {
+              "name": "BodyInstance",
+              "StructType": "BodyInstance",
+              "Value": [
+                {
+                  "name": "CollisionProfileName",
+                  "Value": "Custom"
+                },
+                {
+                  "name": "CollisionResponses",
+                  "StructType": "CollisionResponse",
+                  "Value": [
+                    {
+                      "name": "ResponseArray",
+                      "ArrayType": "StructProperty",
+                      "Value": [
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Pawn"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Visibility"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Vehicle"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "OpticRay"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "AttachParent",
+              "Value": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "analysis/decoded/BP_ParentVehicle.json",
+      "sha256": "2ba7f6347310150cd7211640674accada6184b999b7c62a172a50eceb226db15",
+      "function_exports": [
+        {
+          "json_pointer": "/Exports/0",
+          "name": "ExecuteUbergraph_BP_ParentVehicle",
+          "instructions": 91
+        },
+        {
+          "json_pointer": "/Exports/1",
+          "name": "AttackDestroy",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/2",
+          "name": "SetHitArea",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/3",
+          "name": "CheckStop",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/4",
+          "name": "Update",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/5",
+          "name": "ReceiveTick",
+          "instructions": 4
+        },
+        {
+          "json_pointer": "/Exports/6",
+          "name": "SteeringFunction",
+          "instructions": 9
+        },
+        {
+          "json_pointer": "/Exports/7",
+          "name": "ThrottleFunction",
+          "instructions": 15
+        },
+        {
+          "json_pointer": "/Exports/8",
+          "name": "SetSteeringTarget",
+          "instructions": 20
+        },
+        {
+          "json_pointer": "/Exports/9",
+          "name": "SetSpeed",
+          "instructions": 15
+        },
+        {
+          "json_pointer": "/Exports/10",
+          "name": "SetThrottleTarget",
+          "instructions": 20
+        },
+        {
+          "json_pointer": "/Exports/11",
+          "name": "CheckPlayerDistance",
+          "instructions": 9
+        },
+        {
+          "json_pointer": "/Exports/12",
+          "name": "StartUpdate",
+          "instructions": 7
+        },
+        {
+          "json_pointer": "/Exports/13",
+          "name": "SetSpawnInitialize",
+          "instructions": 6
+        },
+        {
+          "json_pointer": "/Exports/14",
+          "name": "SetDMIVectorValue",
+          "instructions": 12
+        },
+        {
+          "json_pointer": "/Exports/15",
+          "name": "SetEnginePitch",
+          "instructions": 7
+        },
+        {
+          "json_pointer": "/Exports/16",
+          "name": "SetEngineSound",
+          "instructions": 7
+        },
+        {
+          "json_pointer": "/Exports/17",
+          "name": "PlayKlaxon",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/18",
+          "name": "ImpactForce",
+          "instructions": 21
+        },
+        {
+          "json_pointer": "/Exports/19",
+          "name": "Lockon",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/20",
+          "name": "KillMove",
+          "instructions": 3
+        }
+      ],
+      "default_data": [
+        {
+          "json_pointer": "/Exports/22/Data",
+          "export_name": "Default__BP_ParentVehicle_C",
+          "simplified_data": [
+            {
+              "name": "UberGraphFrame",
+              "StructType": "PointerToUberGraphFrame",
+              "Value": []
+            },
+            {
+              "name": "SteeringLocation",
+              "StructType": "Vector",
+              "Value": [
+                {
+                  "name": "SteeringLocation",
+                  "Value": {
+                    "X": "+0",
+                    "Y": "+0",
+                    "Z": "+0"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "BoxTraceDistance",
+              "Value": 1100.0
+            },
+            {
+              "name": "SteeringTarget",
+              "Value": 700.0
+            },
+            {
+              "name": "ThrottleTargetLength",
+              "Value": 1400.0
+            },
+            {
+              "name": "ThrottleLocation",
+              "StructType": "Vector",
+              "Value": [
+                {
+                  "name": "ThrottleLocation",
+                  "Value": {
+                    "X": "+0",
+                    "Y": "+0",
+                    "Z": "+0"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "TopSpeed",
+              "Value": 833.0
+            },
+            {
+              "name": "CurveSpeed",
+              "Value": 400.0
+            },
+            {
+              "name": "Mesh",
+              "Value": 35
+            },
+            {
+              "name": "VehicleMovement",
+              "Value": 36
+            },
+            {
+              "name": "PrimaryActorTick",
+              "StructType": "ActorTickFunction",
+              "Value": [
+                {
+                  "name": "bStartWithTickEnabled",
+                  "Value": false
+                }
+              ]
+            },
+            {
+              "name": "RootComponent",
+              "Value": 35
+            },
+            {
+              "name": "Tags",
+              "ArrayType": "NameProperty",
+              "Value": [
+                {
+                  "name": "0",
+                  "Value": "Stop"
+                },
+                {
+                  "name": "1",
+                  "Value": "Vehicle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/23/Data",
+          "export_name": "Arrow_GEN_VARIABLE",
+          "simplified_data": [
+            {
+              "name": "RelativeLocation",
+              "StructType": "Vector",
+              "Value": [
+                {
+                  "name": "RelativeLocation",
+                  "Value": {
+                    "X": -34.0,
+                    "Y": "+0",
+                    "Z": 50.0
+                  }
+                }
+              ]
+            },
+            {
+              "name": "bHiddenInGame",
+              "Value": false
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/24/Data",
+          "export_name": "Engine_GEN_VARIABLE",
+          "simplified_data": [
+            {
+              "name": "Sound",
+              "Value": -126
+            },
+            {
+              "name": "bOverrideAttenuation",
+              "Value": true
+            },
+            {
+              "name": "AttenuationOverrides",
+              "StructType": "SoundAttenuationSettings",
+              "Value": [
+                {
+                  "name": "FalloffDistance",
+                  "Value": 2000.0
+                }
+              ]
+            },
+            {
+              "name": "bAutoActivate",
+              "Value": false
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/25/Data",
+          "export_name": "Klaxon_GEN_VARIABLE",
+          "simplified_data": [
+            {
+              "name": "Sound",
+              "Value": -125
+            },
+            {
+              "name": "bAutoActivate",
+              "Value": false
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/27/Data",
+          "export_name": "StartPoint_GEN_VARIABLE",
+          "simplified_data": [
+            {
+              "name": "RelativeLocation",
+              "StructType": "Vector",
+              "Value": [
+                {
+                  "name": "RelativeLocation",
+                  "Value": {
+                    "X": 34.0,
+                    "Y": "+0",
+                    "Z": 100.0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/34/Data",
+          "export_name": "VehicleMesh",
+          "simplified_data": [
+            {
+              "name": "AnimClass",
+              "Value": -1
+            },
+            {
+              "name": "SkeletalMesh",
+              "Value": -122
+            },
+            {
+              "name": "VisibilityBasedAnimTickOption",
+              "EnumType": "EVisibilityBasedAnimTickOption",
+              "InnerType": null,
+              "Value": "EVisibilityBasedAnimTickOption::OnlyTickPoseWhenRendered"
+            },
+            {
+              "name": "bEnableUpdateRateOptimizations",
+              "Value": true
+            },
+            {
+              "name": "BodyInstance",
+              "StructType": "BodyInstance",
+              "Value": [
+                {
+                  "name": "bOverrideMaxAngularVelocity",
+                  "Value": true
+                },
+                {
+                  "name": "bOverrideMaxDepenetrationVelocity",
+                  "Value": true
+                },
+                {
+                  "name": "bOverrideWalkableSlopeOnInstance",
+                  "Value": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/35/Data",
+          "export_name": "MovementComp",
+          "simplified_data": [
+            {
+              "name": "EngineSetup",
+              "StructType": "VehicleEngineData",
+              "Value": [
+                {
+                  "name": "TorqueCurve",
+                  "StructType": "RuntimeFloatCurve",
+                  "Value": [
+                    {
+                      "name": "EditorCurveData",
+                      "StructType": "RichCurve",
+                      "Value": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "TransmissionSetup",
+              "StructType": "VehicleTransmissionData",
+              "Value": [
+                {
+                  "name": "GearSwitchTime",
+                  "Value": 0.20000000298023224
+                }
+              ]
+            },
+            {
+              "name": "SteeringCurve",
+              "StructType": "RuntimeFloatCurve",
+              "Value": [
+                {
+                  "name": "EditorCurveData",
+                  "StructType": "RichCurve",
+                  "Value": []
+                }
+              ]
+            },
+            {
+              "name": "WheelSetups",
+              "ArrayType": "StructProperty",
+              "Value": [
+                {
+                  "name": "WheelSetups",
+                  "StructType": "WheelSetup",
+                  "Value": [
+                    {
+                      "name": "WheelClass",
+                      "Value": -11
+                    },
+                    {
+                      "name": "BoneName",
+                      "Value": "Wheel_Front_Left"
+                    },
+                    {
+                      "name": "AdditionalOffset",
+                      "StructType": "Vector",
+                      "Value": [
+                        {
+                          "name": "AdditionalOffset",
+                          "Value": {
+                            "X": "+0",
+                            "Y": -12.0,
+                            "Z": "+0"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bDisableSteering",
+                      "Value": false
+                    }
+                  ]
+                },
+                {
+                  "name": "WheelSetups",
+                  "StructType": "WheelSetup",
+                  "Value": [
+                    {
+                      "name": "WheelClass",
+                      "Value": -11
+                    },
+                    {
+                      "name": "BoneName",
+                      "Value": "Wheel_Front_Right"
+                    },
+                    {
+                      "name": "AdditionalOffset",
+                      "StructType": "Vector",
+                      "Value": [
+                        {
+                          "name": "AdditionalOffset",
+                          "Value": {
+                            "X": "+0",
+                            "Y": 12.0,
+                            "Z": "+0"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bDisableSteering",
+                      "Value": false
+                    }
+                  ]
+                },
+                {
+                  "name": "WheelSetups",
+                  "StructType": "WheelSetup",
+                  "Value": [
+                    {
+                      "name": "WheelClass",
+                      "Value": -10
+                    },
+                    {
+                      "name": "BoneName",
+                      "Value": "Wheel_Rear_Left"
+                    },
+                    {
+                      "name": "AdditionalOffset",
+                      "StructType": "Vector",
+                      "Value": [
+                        {
+                          "name": "AdditionalOffset",
+                          "Value": {
+                            "X": "+0",
+                            "Y": -12.0,
+                            "Z": "+0"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bDisableSteering",
+                      "Value": false
+                    }
+                  ]
+                },
+                {
+                  "name": "WheelSetups",
+                  "StructType": "WheelSetup",
+                  "Value": [
+                    {
+                      "name": "WheelClass",
+                      "Value": -10
+                    },
+                    {
+                      "name": "BoneName",
+                      "Value": "Wheel_Rear_Right"
+                    },
+                    {
+                      "name": "AdditionalOffset",
+                      "StructType": "Vector",
+                      "Value": [
+                        {
+                          "name": "AdditionalOffset",
+                          "Value": {
+                            "X": "+0",
+                            "Y": 12.0,
+                            "Z": "+0"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "bDisableSteering",
+                      "Value": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "analysis/decoded/BP_CitizenManager.json",
+      "sha256": "cf34608c22b7608295b08eb8ee6e54be0121ae3811795fa671eda4c3365ae00e",
+      "function_exports": [
+        {
+          "json_pointer": "/Exports/0",
+          "name": "ExecuteUbergraph_BP_CitizenManager",
+          "instructions": 32
+        },
+        {
+          "json_pointer": "/Exports/1",
+          "name": "Update",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/2",
+          "name": "ReceiveBeginPlay",
+          "instructions": 3
+        }
+      ],
+      "default_data": [
+        {
+          "json_pointer": "/Exports/4/Data",
+          "export_name": "Default__BP_CitizenManager_C",
+          "simplified_data": [
+            {
+              "name": "UberGraphFrame",
+              "StructType": "PointerToUberGraphFrame",
+              "Value": []
+            },
+            {
+              "name": "VisibleDistance",
+              "Value": 20000.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "analysis/decoded/VehicleSystem_Component.json",
+      "sha256": "92e1e569d488f1120e4eb50b00370446cf460206fd553e6e38190195fd284cb6",
+      "function_exports": [
+        {
+          "json_pointer": "/Exports/0",
+          "name": "ExecuteUbergraph_VehicleSystem_Component",
+          "instructions": 103
+        },
+        {
+          "json_pointer": "/Exports/1",
+          "name": "test",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/2",
+          "name": "StartGate",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/3",
+          "name": "CheckHItSpline",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/4",
+          "name": "ReceiveTick",
+          "instructions": 4
+        },
+        {
+          "json_pointer": "/Exports/5",
+          "name": "ReceiveBeginPlay",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/6",
+          "name": "OnIntersectionDetected",
+          "instructions": 4
+        },
+        {
+          "json_pointer": "/Exports/7",
+          "name": "GetVehicleClass",
+          "instructions": 11
+        }
+      ],
+      "default_data": [
+        {
+          "json_pointer": "/Exports/9/Data",
+          "export_name": "Default__VehicleSystem_Component_C",
+          "simplified_data": [
+            {
+              "name": "UberGraphFrame",
+              "StructType": "PointerToUberGraphFrame",
+              "Value": []
+            },
+            {
+              "name": "innerRad",
+              "Value": 500.0
+            },
+            {
+              "name": "outerRad",
+              "Value": 600.0
+            },
+            {
+              "name": "CheckInterval",
+              "Value": 0.5
+            },
+            {
+              "name": "RemoveDistance",
+              "Value": 1000.0
+            },
+            {
+              "name": "CheckBoxSize",
+              "StructType": "Vector",
+              "Value": [
+                {
+                  "name": "CheckBoxSize",
+                  "Value": {
+                    "X": 250.0,
+                    "Y": 250.0,
+                    "Z": 100.0
+                  }
+                }
+              ]
+            },
+            {
+              "name": "MaxVehicle",
+              "Value": 10
+            },
+            {
+              "name": "tempLoc",
+              "StructType": "Vector",
+              "Value": [
+                {
+                  "name": "tempLoc",
+                  "Value": {
+                    "X": "+0",
+                    "Y": "+0",
+                    "Z": "+0"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "CanSpawn?",
+              "Value": true
+            },
+            {
+              "name": "PrimaryComponentTick",
+              "StructType": "ActorComponentTickFunction",
+              "Value": [
+                {
+                  "name": "bCanEverTick",
+                  "Value": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "analysis/decoded/BP_VehicleWpManager.json",
+      "sha256": "e1e3f73e89b6e020c182e2ac817adc1e2698d61874a6d707d6957c58b358797d",
+      "function_exports": [
+        {
+          "json_pointer": "/Exports/0",
+          "name": "UserConstructionScript",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/1",
+          "name": "DetectIntersection",
+          "instructions": 23
+        },
+        {
+          "json_pointer": "/Exports/2",
+          "name": "DebugDraw",
+          "instructions": 17
+        },
+        {
+          "json_pointer": "/Exports/3",
+          "name": "DrawCircle",
+          "instructions": 4
+        },
+        {
+          "json_pointer": "/Exports/4",
+          "name": "AddResult",
+          "instructions": 10
+        },
+        {
+          "json_pointer": "/Exports/5",
+          "name": "GetAllReference",
+          "instructions": 6
+        },
+        {
+          "json_pointer": "/Exports/6",
+          "name": "GetRandomLocation",
+          "instructions": 17
+        }
+      ],
+      "default_data": [
+        {
+          "json_pointer": "/Exports/8/Data",
+          "export_name": "Default__BP_VehicleWpManager_C",
+          "simplified_data": [
+            {
+              "name": "maxResult",
+              "Value": 10
+            },
+            {
+              "name": "PrimaryActorTick",
+              "StructType": "ActorTickFunction",
+              "Value": [
+                {
+                  "name": "bStartWithTickEnabled",
+                  "Value": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "analysis/decoded/BP_AttackCollirion.json",
+      "sha256": "cf914ce5fac9412c446cb8fbef8dbef5847225b6f6456a9a4a7211f716617c85",
+      "function_exports": [
+        {
+          "json_pointer": "/Exports/0",
+          "name": "ExecuteUbergraph_BP_AttackCollirion",
+          "instructions": 39
+        },
+        {
+          "json_pointer": "/Exports/1",
+          "name": "BndEvt__Sphere1_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature",
+          "instructions": 9
+        },
+        {
+          "json_pointer": "/Exports/2",
+          "name": "ReceiveBeginPlay",
+          "instructions": 3
+        },
+        {
+          "json_pointer": "/Exports/3",
+          "name": "OverlapEvent",
+          "instructions": 5
+        },
+        {
+          "json_pointer": "/Exports/4",
+          "name": "BndEvt__Sphere_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature",
+          "instructions": 9
+        }
+      ],
+      "default_data": [
+        {
+          "json_pointer": "/Exports/6/Data",
+          "export_name": "Default__BP_AttackCollirion_C",
+          "simplified_data": [
+            {
+              "name": "UberGraphFrame",
+              "StructType": "PointerToUberGraphFrame",
+              "Value": []
+            },
+            {
+              "name": "SphereRadius",
+              "Value": 160.0
+            },
+            {
+              "name": "PrimaryActorTick",
+              "StructType": "ActorTickFunction",
+              "Value": [
+                {
+                  "name": "bStartWithTickEnabled",
+                  "Value": false
+                }
+              ]
+            },
+            {
+              "name": "InitialLifeSpan",
+              "Value": 0.8999999761581421
+            },
+            {
+              "name": "Tags",
+              "ArrayType": "NameProperty",
+              "Value": [
+                {
+                  "name": "0",
+                  "Value": "attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/8/Data",
+          "export_name": "Box_GEN_VARIABLE",
+          "simplified_data": [
+            {
+              "name": "BoxExtent",
+              "StructType": "Vector",
+              "Value": [
+                {
+                  "name": "BoxExtent",
+                  "Value": {
+                    "X": 50.0,
+                    "Y": 175.0,
+                    "Z": 175.0
+                  }
+                }
+              ]
+            },
+            {
+              "name": "AreaClass",
+              "Value": -28
+            },
+            {
+              "name": "BodyInstance",
+              "StructType": "BodyInstance",
+              "Value": [
+                {
+                  "name": "ObjectType",
+                  "ByteType": "FName",
+                  "EnumType": "ECollisionChannel",
+                  "EnumValue": "ECC_Destructible"
+                },
+                {
+                  "name": "CollisionEnabled",
+                  "ByteType": "FName",
+                  "EnumType": "ECollisionEnabled",
+                  "EnumValue": "ECollisionEnabled::QueryAndPhysics"
+                },
+                {
+                  "name": "CollisionProfileName",
+                  "Value": "Custom"
+                },
+                {
+                  "name": "CollisionResponses",
+                  "StructType": "CollisionResponse",
+                  "Value": [
+                    {
+                      "name": "ResponseArray",
+                      "ArrayType": "StructProperty",
+                      "Value": [
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "WorldStatic"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Visibility"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Camera"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Destructible"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Hero"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Bullet"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "CheckWater"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Vehicle"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "IKFoot"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "BossMove"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "OpticRay"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "RelativeLocation",
+              "StructType": "Vector",
+              "Value": [
+                {
+                  "name": "RelativeLocation",
+                  "Value": {
+                    "X": 523.0,
+                    "Y": "+0",
+                    "Z": "+0"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "bCanEverAffectNavigation",
+              "Value": false
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/10/Data",
+          "export_name": "RadialForce_GEN_VARIABLE",
+          "simplified_data": [
+            {
+              "name": "Radius",
+              "Value": 250.0
+            },
+            {
+              "name": "ImpulseStrength",
+              "Value": 2000.0
+            },
+            {
+              "name": "bImpulseVelChange",
+              "Value": true
+            },
+            {
+              "name": "ForceStrength",
+              "Value": 100.0
+            },
+            {
+              "name": "ObjectTypesToAffect",
+              "ArrayType": "ByteProperty",
+              "Value": [
+                {
+                  "name": "0",
+                  "ByteType": "FName",
+                  "EnumType": null,
+                  "EnumValue": "ObjectTypeQuery2"
+                },
+                {
+                  "name": "1",
+                  "ByteType": "FName",
+                  "EnumType": null,
+                  "EnumValue": "ObjectTypeQuery4"
+                },
+                {
+                  "name": "2",
+                  "ByteType": "FName",
+                  "EnumType": null,
+                  "EnumValue": "ObjectTypeQuery6"
+                },
+                {
+                  "name": "3",
+                  "ByteType": "FName",
+                  "EnumType": null,
+                  "EnumValue": "ObjectTypeQuery1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/19/Data",
+          "export_name": "Sphere1_GEN_VARIABLE",
+          "simplified_data": [
+            {
+              "name": "SphereRadius",
+              "Value": 256.0
+            },
+            {
+              "name": "AreaClass",
+              "Value": -28
+            },
+            {
+              "name": "BodyInstance",
+              "StructType": "BodyInstance",
+              "Value": [
+                {
+                  "name": "CollisionEnabled",
+                  "ByteType": "FName",
+                  "EnumType": "ECollisionEnabled",
+                  "EnumValue": "ECollisionEnabled::QueryAndPhysics"
+                },
+                {
+                  "name": "CollisionProfileName",
+                  "Value": "Custom"
+                },
+                {
+                  "name": "CollisionResponses",
+                  "StructType": "CollisionResponse",
+                  "Value": [
+                    {
+                      "name": "ResponseArray",
+                      "ArrayType": "StructProperty",
+                      "Value": [
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "WorldStatic"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Pawn"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Visibility"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Camera"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Destructible"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "WorldDynamic"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Vehicle"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "PhysicsBody"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Hero"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Bullet"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "CheckWater"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "IKFoot"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "BossMove"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "OpticRay"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "RelativeLocation",
+              "StructType": "Vector",
+              "Value": [
+                {
+                  "name": "RelativeLocation",
+                  "Value": {
+                    "X": 450.0,
+                    "Y": "+0",
+                    "Z": "+0"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "bCanEverAffectNavigation",
+              "Value": false
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/20/Data",
+          "export_name": "Sphere_GEN_VARIABLE",
+          "simplified_data": [
+            {
+              "name": "SphereRadius",
+              "Value": 256.0
+            },
+            {
+              "name": "AreaClass",
+              "Value": -28
+            },
+            {
+              "name": "BodyInstance",
+              "StructType": "BodyInstance",
+              "Value": [
+                {
+                  "name": "CollisionEnabled",
+                  "ByteType": "FName",
+                  "EnumType": "ECollisionEnabled",
+                  "EnumValue": "ECollisionEnabled::QueryAndPhysics"
+                },
+                {
+                  "name": "CollisionProfileName",
+                  "Value": "Custom"
+                },
+                {
+                  "name": "CollisionResponses",
+                  "StructType": "CollisionResponse",
+                  "Value": [
+                    {
+                      "name": "ResponseArray",
+                      "ArrayType": "StructProperty",
+                      "Value": [
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "WorldStatic"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Pawn"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Visibility"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Camera"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Destructible"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "WorldDynamic"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Vehicle"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Hero"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "CheckWater"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "IKFoot"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "BossMove"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "OpticRay"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "bCanEverAffectNavigation",
+              "Value": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "analysis/decoded/BP_FlyCollision.json",
+      "sha256": "217b1ce009fdfab0ed6b3d9a03fea522873cc6e6f36fee8b810b26e48ef294e0",
+      "function_exports": [
+        {
+          "json_pointer": "/Exports/0",
+          "name": "ExecuteUbergraph_BP_FlyCollision",
+          "instructions": 23
+        },
+        {
+          "json_pointer": "/Exports/1",
+          "name": "OverlapEvent",
+          "instructions": 5
+        },
+        {
+          "json_pointer": "/Exports/2",
+          "name": "ReceiveBeginPlay",
+          "instructions": 3
+        }
+      ],
+      "default_data": [
+        {
+          "json_pointer": "/Exports/4/Data",
+          "export_name": "Default__BP_FlyCollision_C",
+          "simplified_data": [
+            {
+              "name": "UberGraphFrame",
+              "StructType": "PointerToUberGraphFrame",
+              "Value": []
+            },
+            {
+              "name": "InitialLifeSpan",
+              "Value": "+0"
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/5/Data",
+          "export_name": "Box_GEN_VARIABLE",
+          "simplified_data": [
+            {
+              "name": "BodyInstance",
+              "StructType": "BodyInstance",
+              "Value": [
+                {
+                  "name": "CollisionResponses",
+                  "StructType": "CollisionResponse",
+                  "Value": [
+                    {
+                      "name": "ResponseArray",
+                      "ArrayType": "StructProperty",
+                      "Value": [
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "WorldStatic"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Visibility"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Camera"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Destructible"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Pawn"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Hero"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Bullet"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "BossMove"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "OpticRay"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/7/Data",
+          "export_name": "RadialForce_GEN_VARIABLE",
+          "simplified_data": [
+            {
+              "name": "ImpulseStrength",
+              "Value": "+0"
+            },
+            {
+              "name": "ForceStrength",
+              "Value": "+0"
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/11/Data",
+          "export_name": "Sphere_GEN_VARIABLE",
+          "simplified_data": [
+            {
+              "name": "SphereRadius",
+              "Value": 300.0
+            },
+            {
+              "name": "BodyInstance",
+              "StructType": "BodyInstance",
+              "Value": [
+                {
+                  "name": "CollisionResponses",
+                  "StructType": "CollisionResponse",
+                  "Value": [
+                    {
+                      "name": "ResponseArray",
+                      "ArrayType": "StructProperty",
+                      "Value": [
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "WorldStatic"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Pawn"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Visibility"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Camera"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Destructible"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "WorldDynamic"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Vehicle"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Hero"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "CheckWater"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "IKFoot"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Bullet"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "BossMove"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "OpticRay"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "analysis/decoded/BP_CitizenCollision.json",
+      "sha256": "edba4a0167aed141ff9a552e21aa4f063e37cc24a1002645c8a66bedf2d134b5",
+      "function_exports": [
+        {
+          "json_pointer": "/Exports/0",
+          "name": "ExecuteUbergraph_BP_CitizenCollision",
+          "instructions": 10
+        },
+        {
+          "json_pointer": "/Exports/1",
+          "name": "BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature",
+          "instructions": 9
+        }
+      ],
+      "default_data": [
+        {
+          "json_pointer": "/Exports/3/Data",
+          "export_name": "Default__BP_CitizenCollision_C",
+          "simplified_data": [
+            {
+              "name": "UberGraphFrame",
+              "StructType": "PointerToUberGraphFrame",
+              "Value": []
+            },
+            {
+              "name": "CanSpawn?",
+              "Value": true
+            }
+          ]
+        },
+        {
+          "json_pointer": "/Exports/11/Data",
+          "export_name": "Sphere_GEN_VARIABLE",
+          "simplified_data": [
+            {
+              "name": "SphereRadius",
+              "Value": 11000.0
+            },
+            {
+              "name": "AreaClass",
+              "Value": -19
+            },
+            {
+              "name": "BodyInstance",
+              "StructType": "BodyInstance",
+              "Value": [
+                {
+                  "name": "CollisionProfileName",
+                  "Value": "Custom"
+                },
+                {
+                  "name": "CollisionResponses",
+                  "StructType": "CollisionResponse",
+                  "Value": [
+                    {
+                      "name": "ResponseArray",
+                      "ArrayType": "StructProperty",
+                      "Value": [
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "WorldStatic"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "WorldDynamic"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Pawn"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Visibility"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Camera"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Overlap"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "PhysicsBody"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Vehicle"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Destructible"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "IKFoot"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "CheckWater"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Bullet"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "Hero"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "BossMove"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ResponseArray",
+                          "StructType": "ResponseChannel",
+                          "Value": [
+                            {
+                              "name": "Channel",
+                              "Value": "OpticRay"
+                            },
+                            {
+                              "name": "Response",
+                              "ByteType": "FName",
+                              "EnumType": "ECollisionResponse",
+                              "EnumValue": "ECR_Ignore"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "unknowns_zh": [
+    "完整对象池内部、出生点资格和数据表运行覆盖未检查。",
+    "Enum_CharacterState的标签以及主图字节偏移CFG未完整解析；保留数值状态而不按另一枚举命名。",
+    "这些默认属性/静态路径并不能证明游戏实际每一实例均使用相同数值。",
+    "未执行游戏，无运行时车辆速度、NPC数量、攻击结果实测。"
+  ]
+}

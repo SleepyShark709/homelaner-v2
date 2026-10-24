@@ -1,0 +1,554 @@
+[
+  {
+    "export_index": 0,
+    "name": "ExecuteUbergraph_StoryStartPoint_BP",
+    "statements": [
+      {
+        "pointer": "/Exports/0/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_PushExecutionFlow",
+          "PushingAddress": 551
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_ComputedJump",
+          "CodeOffsetExpression": "EntryPoint"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_AsPlayer_BP",
+          "Expression": {
+            "op": "EX_DynamicCast",
+            "ClassPtr": -7,
+            "TargetExpression": "K2Node_ComponentBoundEvent_OtherActor_1"
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_bSuccess",
+          "Expression": {
+            "op": "EX_PrimitiveCast",
+            "ConversionType": "ObjectToBool",
+            "Target": "K2Node_DynamicCast_AsPlayer_BP"
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "K2Node_DynamicCast_bSuccess"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "InPlayer?",
+          "AssignmentExpression": true
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/6",
+        "ast": {
+          "op": "EX_PushExecutionFlow",
+          "PushingAddress": 121
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/7",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 419,
+          "BooleanExpression": "Temp_bool_Has_Been_Initd_Variable"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/8",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/9",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 136,
+          "BooleanExpression": "Temp_bool_IsClosed_Variable"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/10",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/11",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "Temp_bool_IsClosed_Variable",
+          "AssignmentExpression": true
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/12",
+        "ast": {
+          "on": "HeroGameState",
+          "do": {
+            "call": "EndContent_Event",
+            "args": []
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/13",
+        "ast": {
+          "on": "HeroGameState",
+          "do": {
+            "call": "StartContent_Event",
+            "args": [
+              2
+            ]
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/14",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_SpawnObject_ReturnValue",
+          "AssignmentExpression": {
+            "call": "SpawnObject",
+            "args": [
+              "StoryNo",
+              "self"
+            ]
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/15",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Debug",
+          "Variable": {
+            "on": "CallFunc_SpawnObject_ReturnValue",
+            "do": "Debug"
+          },
+          "Expression": "StoryNumber"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/16",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": {
+            "on": "CallFunc_SpawnObject_ReturnValue",
+            "do": "HeroGameState"
+          },
+          "AssignmentExpression": "HeroGameState"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/17",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": {
+            "on": "HeroGameState",
+            "do": "CurrentStoryRef"
+          },
+          "AssignmentExpression": "CallFunc_SpawnObject_ReturnValue"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/18",
+        "ast": {
+          "on": "CallFunc_SpawnObject_ReturnValue",
+          "do": {
+            "call": "StartStory",
+            "args": []
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/19",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/20",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "Temp_bool_Has_Been_Initd_Variable",
+          "AssignmentExpression": true
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/21",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": false
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/22",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "Temp_bool_IsClosed_Variable",
+          "AssignmentExpression": true
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/23",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/24",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/25",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_GetGameState_ReturnValue",
+          "AssignmentExpression": {
+            "call": "GetGameState",
+            "args": [
+              "self"
+            ]
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/26",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_AsHero_Game_State",
+          "Expression": {
+            "op": "EX_DynamicCast",
+            "ClassPtr": -8,
+            "TargetExpression": "CallFunc_GetGameState_ReturnValue"
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/27",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_bSuccess_1",
+          "Expression": {
+            "op": "EX_PrimitiveCast",
+            "ConversionType": "ObjectToBool",
+            "Target": "K2Node_DynamicCast_AsHero_Game_State"
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/28",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "HeroGameState",
+          "AssignmentExpression": "K2Node_DynamicCast_AsHero_Game_State"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/29",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/30",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/31",
+        "ast": {
+          "op": "EX_EndOfScript"
+        }
+      }
+    ]
+  },
+  {
+    "export_index": 1,
+    "name": "BndEvt__Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature",
+    "statements": [
+      {
+        "pointer": "/Exports/1/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OverlappedComponent",
+          "AssignmentExpression": "OverlappedComponent"
+        }
+      },
+      {
+        "pointer": "/Exports/1/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OtherActor",
+          "AssignmentExpression": "OtherActor"
+        }
+      },
+      {
+        "pointer": "/Exports/1/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OtherComp",
+          "AssignmentExpression": "OtherComp"
+        }
+      },
+      {
+        "pointer": "/Exports/1/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OtherBodyIndex",
+          "AssignmentExpression": "OtherBodyIndex"
+        }
+      },
+      {
+        "pointer": "/Exports/1/ScriptBytecode/4",
+        "ast": {
+          "call": "ExecuteUbergraph_StoryStartPoint_BP",
+          "args": [
+            444
+          ]
+        }
+      },
+      {
+        "pointer": "/Exports/1/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/1/ScriptBytecode/6",
+        "ast": {
+          "op": "EX_EndOfScript"
+        }
+      }
+    ]
+  },
+  {
+    "export_index": 2,
+    "name": "BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature",
+    "statements": [
+      {
+        "pointer": "/Exports/2/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OverlappedComponent_1",
+          "AssignmentExpression": "OverlappedComponent"
+        }
+      },
+      {
+        "pointer": "/Exports/2/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OtherActor_1",
+          "AssignmentExpression": "OtherActor"
+        }
+      },
+      {
+        "pointer": "/Exports/2/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OtherComp_1",
+          "AssignmentExpression": "OtherComp"
+        }
+      },
+      {
+        "pointer": "/Exports/2/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_OtherBodyIndex_1",
+          "AssignmentExpression": "OtherBodyIndex"
+        }
+      },
+      {
+        "pointer": "/Exports/2/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_bFromSweep",
+          "AssignmentExpression": "bFromSweep"
+        }
+      },
+      {
+        "pointer": "/Exports/2/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_ComponentBoundEvent_SweepResult",
+          "AssignmentExpression": "SweepResult"
+        }
+      },
+      {
+        "pointer": "/Exports/2/ScriptBytecode/6",
+        "ast": {
+          "call": "ExecuteUbergraph_StoryStartPoint_BP",
+          "args": [
+            15
+          ]
+        }
+      },
+      {
+        "pointer": "/Exports/2/ScriptBytecode/7",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/2/ScriptBytecode/8",
+        "ast": {
+          "op": "EX_EndOfScript"
+        }
+      }
+    ]
+  },
+  {
+    "export_index": 3,
+    "name": "ReceiveBeginPlay",
+    "statements": [
+      {
+        "pointer": "/Exports/3/ScriptBytecode/0",
+        "ast": {
+          "call": "ExecuteUbergraph_StoryStartPoint_BP",
+          "args": [
+            445
+          ]
+        }
+      },
+      {
+        "pointer": "/Exports/3/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/3/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_EndOfScript"
+        }
+      }
+    ]
+  },
+  {
+    "export_index": 4,
+    "name": "SetCollisionInBool",
+    "statements": [
+      {
+        "pointer": "/Exports/4/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 69,
+          "BooleanExpression": "Enable?"
+        }
+      },
+      {
+        "pointer": "/Exports/4/ScriptBytecode/1",
+        "ast": {
+          "on": "Sphere",
+          "do": {
+            "call": "SetCollisionProfileName",
+            "args": [
+              "OverlapAllDynamic",
+              true
+            ]
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/4/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 107
+        }
+      },
+      {
+        "pointer": "/Exports/4/ScriptBytecode/3",
+        "ast": {
+          "on": "Sphere",
+          "do": {
+            "call": "SetCollisionEnabled",
+            "args": [
+              0
+            ]
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/4/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        }
+      },
+      {
+        "pointer": "/Exports/4/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_EndOfScript"
+        }
+      }
+    ]
+  }
+]

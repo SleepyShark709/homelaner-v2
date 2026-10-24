@@ -1,0 +1,86 @@
+{
+  "status": "verified-original-empty-foliage-map",
+  "sourceFiles": [
+    {
+      "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\TestLevel.umap",
+      "bytes": 187653,
+      "sha256": "f89275802397fd14543e0610eb5a1f63d9f3d76bc65ac90bd782daaba7701597"
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\exports\\city-unpacked\\UNDEFEATED\\Content\\-HeroGame\\Maps\\TestLevel.uexp",
+      "bytes": 1233384,
+      "sha256": "442392d0f843efb56dbc980982b3a6da8c52ca2425fcbe6fc41bf9de14a81b37"
+    },
+    {
+      "path": "E:\\undefeated-web\\research\\rea-audit\\decoded-other-maps\\TestLevel.json",
+      "bytes": 7514976,
+      "sha256": "2641d9fd0860cb586d738b455dca1cdc7f3f418ee755532469c4cfe6bcf8f360"
+    }
+  ],
+  "records": [
+    {
+      "sourcePackage": "/Game/-HeroGame/Maps/TestLevel",
+      "exportIndex": 199,
+      "actor": "InstancedFoliageActor_1",
+      "objectPath": "TestLevel/PersistentLevel/InstancedFoliageActor_1",
+      "class": "InstancedFoliageActor",
+      "templateIndex": -220,
+      "templatePath": "/Script/Foliage/Default__InstancedFoliageActor",
+      "scope": "supplemental; runtime use not proven",
+      "serialOffsetInCombinedPackage": 262840,
+      "offsetInUexp": 75187,
+      "serializedBytes": 45,
+      "rawHex": "260400000000000091030000000000000400000000000000005a0100008b030000000000000000000000000000",
+      "rawSha256": "7098fec265f2d1b534c1a6f1143e7f22ccea5b9126c6a82586e733f065398aff",
+      "taggedProperties": {
+        "RootComponent": 346
+      },
+      "nativeFields": [
+        {
+          "offsetInExport": 37,
+          "field": "UObject.bHasGuid",
+          "value": 0,
+          "bytes": 4
+        },
+        {
+          "offsetInExport": 41,
+          "field": "AInstancedFoliageActor.FoliageInfos.Num",
+          "value": 0,
+          "bytes": 4
+        }
+      ],
+      "nativeBytesConsumed": 8,
+      "nativeBytesRemaining": 0,
+      "foliageTypesSerialized": 0,
+      "foliageInstancesSerialized": 0,
+      "children": [
+        {
+          "exportIndex": 346,
+          "class": "SceneComponent",
+          "object": "RootComponent0",
+          "properties": {}
+        }
+      ],
+      "explicitActorHidden": null,
+      "explicitActorHiddenInGame": null,
+      "visibilityConclusion": "No actor visibility mutation is inferred; no render instances are stored irrespective of visibility.",
+      "runtimeGeneration": "not observed or executed; an empty cooked map does not prove no later runtime generation"
+    }
+  ],
+  "summary": {
+    "serializedFoliageActors": 1,
+    "emptyFoliageActors": 1,
+    "serializedFoliageTypeEntries": 0,
+    "serializedFoliageInstances": 0,
+    "addedGeometryObjects": 0,
+    "unparsedNativeBytes": 0
+  },
+  "formatSources": [
+    {
+      "url": "https://github.com/FabianFG/CUE4Parse/blob/master/CUE4Parse/UE4/Assets/Exports/Actor/AInstancedFoliageActor.cs",
+      "snapshot": "research/world-recovery/geometry-CUE4Parse-AInstancedFoliageActor.cs",
+      "sha256": "75f78c0ee36c9d47c9bf6a50037c7dccdc0ea0f2e5b616ef3f8d2e848673d4ed"
+    }
+  ],
+  "conclusion": "Earlier unresolved-foliage wording is superseded: the sole supplemental TestLevel actor contains an exactly empty cooked FoliageInfos map. No transforms or models can be added from absent entries. Runtime foliage creation remains outside this static audit."
+}

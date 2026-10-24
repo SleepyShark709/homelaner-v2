@@ -1,0 +1,82 @@
+全部已打包游戏地图补充调查
+
+Pak 包含41份 /Game 地图；既有 MainLevel 存储引用闭包为35份。本次单独解析剩余6份，不将它们混入现有主世界统计。另有 Engine/Content/Maps/Entry.umap，不计作游戏地图。
+
+引用扫描范围：322份现有解码JSON的快照。精确匹配短关卡名、完整包路径及World对象路径，名称表与自身包标识单列，不视作调用证据。
+
+重要发现：不能因为名字含 Test 就判定未使用。DPropTest、FPropTest有明确 LoadStreamLevel / UnloadStreamLevel 字节码调用；三份 TestBossLevel 名字出现在 BP_CityManager 的名字变量赋值中。当前证据未证明这些分支在正式流程实际执行、对应动态流对象注册或异步加载成功；故仍标记为“未证明在主游戏运行时使用”。
+
+DPropTest
+  原包：UNDEFEATED/Content/-HeroGame/Maps/SubLevel/DPropTest.umap
+  Actor 20；组件 144；显式mesh组件引用 0；直接mesh import 0；直接material import 25；地形组件 0；灯光组件 0。
+  Actor类：{"BP_DestructionProp_M_C": 11, "BP_DestructionProp_S_C": 7, "BP_DestructionProp_L_C": 1, "WorldSettings": 1}
+  向外存储Streaming引用：未找到可验证的非空计数表
+  外部精确值/代码引用 8 条；直接名字实参调用 7 处。
+  资源与原始变换详情：other-map-details\levels\DPropTest.json
+  引用来源：('BP_ChallengQuestSpawnPoint', 'ExecuteUbergraph_BP_ChallengQuestSpawnPoint', 'bytecode-exact-name-or-string')，7条
+  引用来源：('TestLevel', 'LevelStreamingKismet_0', 'soft-object-reference')，1条
+  调用：('BP_ChallengQuestSpawnPoint', 'LoadStreamLevel')，2处
+  调用：('BP_ChallengQuestSpawnPoint', 'UnloadStreamLevel')，5处
+
+FPropTest
+  原包：UNDEFEATED/Content/-HeroGame/Maps/SubLevel/FPropTest.umap
+  Actor 13；组件 132；显式mesh组件引用 0；直接mesh import 0；直接material import 2；地形组件 0；灯光组件 0。
+  Actor类：{"BP_FlightRing_C": 11, "FPropTest_C": 1, "WorldSettings": 1}
+  向外存储Streaming引用：未找到可验证的非空计数表
+  外部精确值/代码引用 8 条；直接名字实参调用 7 处。
+  资源与原始变换详情：other-map-details\levels\FPropTest.json
+  引用来源：('BP_ChallengQuestSpawnPoint', 'ExecuteUbergraph_BP_ChallengQuestSpawnPoint', 'bytecode-exact-name-or-string')，7条
+  引用来源：('TestLevel', 'LevelStreamingKismet_1', 'soft-object-reference')，1条
+  调用：('BP_ChallengQuestSpawnPoint', 'LoadStreamLevel')，2处
+  调用：('BP_ChallengQuestSpawnPoint', 'UnloadStreamLevel')，5处
+
+TestBossLevelFire
+  原包：UNDEFEATED/Content/-HeroGame/Maps/SubLevel/TestBossLevelFire.umap
+  Actor 4；组件 71；显式mesh组件引用 0；直接mesh import 0；直接material import 0；地形组件 0；灯光组件 0。
+  Actor类：{"WorldSettings": 1, "BP_FireBoss_C": 1, "TestBossLevelFire_C": 1, "WindDirectionalSource": 1}
+  向外存储Streaming引用：未找到可验证的非空计数表
+  外部精确值/代码引用 3 条；直接名字实参调用 0 处。
+  资源与原始变换详情：other-map-details\levels\TestBossLevelFire.json
+  引用来源：('BP_CityManager', 'ExecuteUbergraph_BP_CityManager', 'bytecode-exact-name-or-string')，2条
+  引用来源：('TestLevel', 'LevelStreamingKismet_4', 'soft-object-reference')，1条
+
+TestBossLevelLightning
+  原包：UNDEFEATED/Content/-HeroGame/Maps/SubLevel/TestBossLevelLightning.umap
+  Actor 4；组件 67；显式mesh组件引用 0；直接mesh import 0；直接material import 0；地形组件 0；灯光组件 0。
+  Actor类：{"TestBossLevelLightning_C": 1, "WindDirectionalSource": 1, "BP_LightningBoss_C": 1, "WorldSettings": 1}
+  向外存储Streaming引用：未找到可验证的非空计数表
+  外部精确值/代码引用 3 条；直接名字实参调用 0 处。
+  资源与原始变换详情：other-map-details\levels\TestBossLevelLightning.json
+  引用来源：('BP_CityManager', 'ExecuteUbergraph_BP_CityManager', 'bytecode-exact-name-or-string')，2条
+  引用来源：('TestLevel', 'LevelStreamingKismet_5', 'soft-object-reference')，1条
+
+TestBossLevelWind
+  原包：UNDEFEATED/Content/-HeroGame/Maps/SubLevel/TestBossLevelWind.umap
+  Actor 4；组件 66；显式mesh组件引用 0；直接mesh import 0；直接material import 0；地形组件 0；灯光组件 0。
+  Actor类：{"TestBossLevelWind_C": 1, "WindDirectionalSource": 1, "BP_BaseBoss_C": 1, "WorldSettings": 1}
+  向外存储Streaming引用：未找到可验证的非空计数表
+  外部精确值/代码引用 3 条；直接名字实参调用 0 处。
+  资源与原始变换详情：other-map-details\levels\TestBossLevelWind.json
+  引用来源：('BP_CityManager', 'ExecuteUbergraph_BP_CityManager', 'bytecode-exact-name-or-string')，2条
+  引用来源：('TestLevel', 'LevelStreamingKismet_3', 'soft-object-reference')，1条
+
+TestLevel
+  原包：UNDEFEATED/Content/-HeroGame/Maps/TestLevel.umap
+  Actor 302；组件 622；显式mesh组件引用 234；直接mesh import 73；直接material import 16；地形组件 0；灯光组件 0。
+  Actor类：{"StaticMeshActor": 234, "BP_LightPost_C": 12, "BP_ChallengQuestSpawnPoint_C": 8, "GangArea_BP_C": 6, "EnemyHeavybag_C": 5, "AmbientSound": 4, "BP_PropSpawner_C": 4, "BP_StoryStartPoint_C": 3, "BP_OceanWater_C": 2, "BP_Base_EasterEgg_C": 1, "BP_BossAttackTarget_C": 1, "BP_BulletShot_C": 1, "BP_BossMovingPoint_C": 1, "BP_CityManager_C": 1, "BP_ElectricalBox_C": 1, "BP_RespawnAndSpawnPoint_C": 1, "BP_StoryManager_C": 1, "BP_TitleSignboard_C": 1, "BP_TranslucentWater_C": 1, "BP_VehiclePoolArea_C": 1, "BP_VehicleWaypoint_C": 1, "BP_VehicleWpManager_C": 1, "BP_WorldCaptureCamera_C": 1, "CineCameraActor": 1, "BP_EnelightMeteor_C": 1, "FireQuest_BP_C": 1, "InstancedFoliageActor": 1, "MatQuest_BP_C": 1, "NavMeshBoundsVolume": 1, "TestLevel_C": 1, "PlayerStart": 1, "RecastNavMesh": 1, "WorldSettings": 1}
+  向外存储Streaming引用：/Game/-HeroGame/Maps/SubLevel/DPropTest, /Game/-HeroGame/Maps/SubLevel/FPropTest, /Game/-HeroGame/Maps/SubLevel/LightingTest, /Game/-HeroGame/Maps/SubLevel/CustomEventLevel, /Game/-HeroGame/Maps/StoryLevel/TutorialLevel, /Game/-HeroGame/Maps/SubLevel/TestBossLevelWind, /Game/-HeroGame/Maps/SubLevel/TestBossLevelFire, /Game/-HeroGame/Maps/SubLevel/TestBossLevelLightning, /Game/-HeroGame/Maps/StoryLevel/Story1Level, /Game/-HeroGame/Maps/StoryLevel/Story2Level, /Game/-HeroGame/Maps/StoryLevel/Story3Level, /Game/-HeroGame/Maps/SubLevel/EnelightMeteor
+  外部精确值/代码引用 0 条；直接名字实参调用 0 处。
+  资源与原始变换详情：other-map-details\levels\TestLevel.json
+  此快照扫描中未发现外部精确引用；这不是未使用的证明，也未覆盖原生代码计算名称。
+
+这六份地图之间的确切关系
+TestLevel 的 UWorld 计数表含12个 StreamingLevels：2个 AlwaysLoaded（LightingTest、CustomEventLevel）和10个 Dynamic。后者包括剩余五份 DPropTest、FPropTest、TestBossLevelWind/Fire/Lightning，以及 TutorialLevel、Story1/2/3、EnelightMeteor。五份补充子图通过 WorldAsset 软对象路径被 TestLevel 明确引用，不只是名字相似。
+BP_ChallengQuestSpawnPoint 对 DPropTest、FPropTest 各有2处 LoadStreamLevel、5处 UnloadStreamLevel。加载参数均为可见true、不阻塞false。这些编译代码与 TestLevel 的流式子图配置相符；尚未证明它们在 MainLevel 正式流程中实际生效。
+BP_CityManager 对三个 TestBossLevel 各保留2处 EX_NameConst 赋值。不能将赋值本身等同已加载；精确上下文已保留。
+未发现指向 TestLevel 的外部精确名字/软对象引用，但扫描范围仅限列明的已解码JSON快照，不排除原生代码、配置、命令行或动态拼接路径。
+DPropTest有19个原破坏道具蓝图Actor；FPropTest有11个飞行环；三份Boss子图各含对应Boss Actor。它们显式mesh组件引用为0，不代表没有可见模型，模型可能由蓝图模板继承。TestLevel还含真实InstancedFoliageActor，不能套用35图闭包中没有此类Actor的结论。
+
+统计边界与完成状态
+world-coverage.json 的35图、8,817 Actor、5,463个显式mesh引用分母保持不变；这只是存储引用闭包，不可称所有可能活动地图。新增6图的内容与关系独立存放。
+这次完成41份已打包游戏地图的静态内容调查范围，不等于41图全导出、全渲染或运行时使用状态全部确定。
+all-map-inventory.json 为总入口；other-map-decode-manifest.json 保留源文件和解码哈希；other-map-exact-reference-hits.json 保留精确JSON路径、表达式和调用节点；扫描快照清单保留于 other-map-reference-scan-corpus.json。

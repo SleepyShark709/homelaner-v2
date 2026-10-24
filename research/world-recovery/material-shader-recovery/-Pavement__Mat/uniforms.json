@@ -1,0 +1,420 @@
+{
+  "frozenStartInExtras": 514,
+  "frozenBytes": 20074,
+  "frozenSHA256": "2f8c2119f6eb9671e81de29e318254dd554ea78887dbdf11ec31630d419abacd",
+  "layoutParametersRaw": [
+    8,
+    41
+  ],
+  "scalarParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 19072,
+      "parameter": "Shoe Tiling",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 0.3182410001754761
+    },
+    {
+      "index": 1,
+      "frozenOffset": 19096,
+      "parameter": "Snow Edge Variance Scale",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 2.1678268909454346
+    },
+    {
+      "index": 2,
+      "frozenOffset": 19120,
+      "parameter": "Bottom Layer Height Blend Strength",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 9.511468887329102
+    },
+    {
+      "index": 3,
+      "frozenOffset": 19144,
+      "parameter": "Snow Edge Position",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.3505779504776
+    },
+    {
+      "index": 4,
+      "frozenOffset": 19168,
+      "parameter": "Wetness Cloud Scale",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 0.6957820057868958
+    },
+    {
+      "index": 5,
+      "frozenOffset": 19192,
+      "parameter": "Wetness Clouds Falloff",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.437729001045227
+    },
+    {
+      "index": 6,
+      "frozenOffset": 19216,
+      "parameter": "Strength",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 2.608336925506592
+    },
+    {
+      "index": 7,
+      "frozenOffset": 19240,
+      "parameter": "Wetness Darkness",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 0.5770639777183533
+    },
+    {
+      "index": 8,
+      "frozenOffset": 19264,
+      "parameter": "Wetness Roughness",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 0.18085500597953796
+    },
+    {
+      "index": 9,
+      "frozenOffset": 19288,
+      "parameter": "Footprint Roughness",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": -0.4909270107746124
+    },
+    {
+      "index": 10,
+      "frozenOffset": 19312,
+      "parameter": "sss",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 0.0
+    },
+    {
+      "index": 11,
+      "frozenOffset": 19336,
+      "parameter": "__SubsurfaceProfile",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.0
+    }
+  ],
+  "vectorParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 19360,
+      "parameter": "SelectionColor",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "index": 1,
+      "frozenOffset": 19396,
+      "parameter": "Base Tint",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        0.39500001072883606,
+        0.39500001072883606,
+        0.39500001072883606,
+        1.0
+      ]
+    },
+    {
+      "index": 2,
+      "frozenOffset": 19432,
+      "parameter": "Snow SSS",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        0.6399999856948853,
+        0.9137110114097595,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "textureParameters2D": [
+    {
+      "index": 0,
+      "frozenOffset": 19468,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 10,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Blank_Normal"
+    },
+    {
+      "index": 1,
+      "frozenOffset": 19496,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 6,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/ShoePrints_N"
+    },
+    {
+      "index": 2,
+      "frozenOffset": 19524,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 2,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/Snow_N"
+    },
+    {
+      "index": 3,
+      "frozenOffset": 19552,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 3,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/Clouds_A"
+    },
+    {
+      "index": 4,
+      "frozenOffset": 19580,
+      "parameter": "Normal",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 9,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/Sidewalk_A_N"
+    },
+    {
+      "index": 5,
+      "frozenOffset": 19608,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 5,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/ShoePrints_H"
+    },
+    {
+      "index": 6,
+      "frozenOffset": 19636,
+      "parameter": "Compact",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 8,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/Sidewalk_A_C"
+    },
+    {
+      "index": 7,
+      "frozenOffset": 19664,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 1,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/Snow_C"
+    },
+    {
+      "index": 8,
+      "frozenOffset": 19692,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 4,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/Grunge_A"
+    },
+    {
+      "index": 9,
+      "frozenOffset": 19720,
+      "parameter": "Height",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 13,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/GroundBrick_B_H"
+    },
+    {
+      "index": 10,
+      "frozenOffset": 19748,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 11,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Clouds_A2"
+    },
+    {
+      "index": 11,
+      "frozenOffset": 19776,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 0,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/Snow_A"
+    },
+    {
+      "index": 12,
+      "frozenOffset": 19804,
+      "parameter": "BaseColor",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 7,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/Template/Sidewalk_A_A"
+    }
+  ],
+  "uniformVectorPreshaders": [
+    {
+      "offset": 45,
+      "size": 3,
+      "bytesHex": "040000"
+    },
+    {
+      "offset": 48,
+      "size": 9,
+      "bytesHex": "0400002303000102ff"
+    },
+    {
+      "offset": 57,
+      "size": 3,
+      "bytesHex": "040100"
+    },
+    {
+      "offset": 60,
+      "size": 9,
+      "bytesHex": "0401002303000102ff"
+    },
+    {
+      "offset": 69,
+      "size": 3,
+      "bytesHex": "040200"
+    },
+    {
+      "offset": 72,
+      "size": 9,
+      "bytesHex": "0402002303000102ff"
+    },
+    {
+      "offset": 81,
+      "size": 13,
+      "bytesHex": "0402002303000102ff030a0007"
+    }
+  ],
+  "uniformScalarPreshaders": [
+    {
+      "offset": 0,
+      "size": 3,
+      "bytesHex": "030000"
+    },
+    {
+      "offset": 3,
+      "size": 3,
+      "bytesHex": "030100"
+    },
+    {
+      "offset": 6,
+      "size": 3,
+      "bytesHex": "030200"
+    },
+    {
+      "offset": 9,
+      "size": 3,
+      "bytesHex": "030300"
+    },
+    {
+      "offset": 12,
+      "size": 3,
+      "bytesHex": "030400"
+    },
+    {
+      "offset": 15,
+      "size": 3,
+      "bytesHex": "030500"
+    },
+    {
+      "offset": 18,
+      "size": 3,
+      "bytesHex": "030600"
+    },
+    {
+      "offset": 21,
+      "size": 9,
+      "bytesHex": "040000230103ffffff"
+    },
+    {
+      "offset": 30,
+      "size": 3,
+      "bytesHex": "030700"
+    },
+    {
+      "offset": 33,
+      "size": 3,
+      "bytesHex": "030900"
+    },
+    {
+      "offset": 36,
+      "size": 3,
+      "bytesHex": "030800"
+    },
+    {
+      "offset": 39,
+      "size": 3,
+      "bytesHex": "030a00"
+    },
+    {
+      "offset": 42,
+      "size": 3,
+      "bytesHex": "030b00"
+    }
+  ],
+  "namePatches": {
+    "19336": "__SubsurfaceProfile",
+    "19396": "Base Tint",
+    "19804": "BaseColor",
+    "19120": "Bottom Layer Height Blend Strength",
+    "19636": "Compact",
+    "19288": "Footprint Roughness",
+    "19720": "Height",
+    "19580": "Normal",
+    "19360": "SelectionColor",
+    "19072": "Shoe Tiling",
+    "19144": "Snow Edge Position",
+    "19096": "Snow Edge Variance Scale",
+    "19432": "Snow SSS",
+    "19312": "sss",
+    "19216": "Strength",
+    "19168": "Wetness Cloud Scale",
+    "19192": "Wetness Clouds Falloff",
+    "19240": "Wetness Darkness",
+    "19264": "Wetness Roughness"
+  },
+  "preshaderDataHex": "030000030100030200030300030400030500030600040000230103ffffff030700030900030800030a00030b000400000400002303000102ff0401000401002303000102ff0402000402002303000102ff0402002303000102ff030a0007",
+  "preshaderDataFrozenOffset": 19832
+}

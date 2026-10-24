@@ -1,0 +1,14 @@
+{
+  "priorContractCount": 20,
+  "priorContractsUnchanged": true,
+  "priorContractsSha256": "4629f0ba5c3778b6ade414ca2d3595da91d74c9808481e661fc98786ebcd3f48",
+  "newContractCount": 5,
+  "newPackages": [
+    "/Game/GTFreeMaterials/Materials/Ground_GrassThickGreen",
+    "/Game/ModularStreetPack/Materials/Concrete_Mat",
+    "/Game/ModularStreetPack/Materials/Material_Instances/Concrete_Mat_Inst",
+    "/Game/ModularStreetPack/Materials/Material_Instances/Concrete_Mat_Inst2",
+    "/Game/UrbanCity/Materials/Tileable/cobbleStone_01_Mat"
+  ],
+  "originalTexturesReexported": false
+}

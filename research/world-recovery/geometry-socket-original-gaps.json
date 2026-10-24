@@ -1,0 +1,1495 @@
+[
+  {
+    "id": "MainLevel:7268",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "actor": "MainLevel/PersistentLevel/SK_Hair_001_pompadour_60",
+      "component": "SkeletalMeshComponent0",
+      "exportIndex": 7268
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_001_pompadour",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -361.89886474609375,
+        -3941.64208984375,
+        13900.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "MainLevel:7270",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "actor": "MainLevel/PersistentLevel/SK_Sunglasses_63",
+      "component": "SkeletalMeshComponent0",
+      "exportIndex": 7270
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Sunglasses",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -361.89886474609375,
+        -3941.64208984375,
+        13900.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "MainLevel:7266",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "actor": "MainLevel/PersistentLevel/PlayerBP_4886",
+      "component": "SK_Hair",
+      "exportIndex": 7266
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_001_pompadour",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -312.0,
+        943.0,
+        67.5
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0000000000000002
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": [
+      {
+        "slotIndex": 0,
+        "material": null
+      },
+      {
+        "slotIndex": 1,
+        "material": {
+          "package": "/Game/Action_Male/Materials/M_ShadowTrim_Inst",
+          "object": "M_ShadowTrim_Inst",
+          "reference": "/Game/Action_Male/Materials/M_ShadowTrim_Inst.M_ShadowTrim_Inst"
+        }
+      }
+    ]
+  },
+  {
+    "id": "MainLevel:7267",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "actor": "MainLevel/PersistentLevel/PlayerBP_4886",
+      "component": "SK_Sunglasses",
+      "exportIndex": 7267
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Sunglasses",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -312.0,
+        943.0,
+        67.5
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0000000000000002
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "MainLevel:10800",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "actor": "MainLevel/PersistentLevel/EnemyHeavybag2",
+      "component": "RifleMesh",
+      "exportIndex": 10800
+    },
+    "sourceMesh": "/Game/Geometry/Meshes/1M_Cube",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        -14119.0,
+        -5296.0,
+        628.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "MainLevel:10801",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "actor": "MainLevel/PersistentLevel/EnemyHeavybag3",
+      "component": "RifleMesh",
+      "exportIndex": 10801
+    },
+    "sourceMesh": "/Game/Geometry/Meshes/1M_Cube",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        -13727.0,
+        -5296.0,
+        628.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "MainLevel:10802",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "actor": "MainLevel/PersistentLevel/EnemyHeavybag4_692",
+      "component": "RifleMesh",
+      "exportIndex": 10802
+    },
+    "sourceMesh": "/Game/Geometry/Meshes/1M_Cube",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        -47066.0,
+        -47365.0,
+        612.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.9999999999998582,
+        -5.326322179977083e-07
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "MainLevel:10803",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "actor": "MainLevel/PersistentLevel/EnemyHeavybag5_1645",
+      "component": "RifleMesh",
+      "exportIndex": 10803
+    },
+    "sourceMesh": "/Game/Geometry/Meshes/1M_Cube",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        -47466.0,
+        -47365.0,
+        612.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.9999999999998582,
+        -5.326322179977083e-07
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "MainLevel:10804",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "actor": "MainLevel/PersistentLevel/EnemyHeavybag6",
+      "component": "RifleMesh",
+      "exportIndex": 10804
+    },
+    "sourceMesh": "/Game/Geometry/Meshes/1M_Cube",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        -47866.0,
+        -47365.0,
+        612.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.9999999999998582,
+        -5.326322179977083e-07
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "MainLevel:10805",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "actor": "MainLevel/PersistentLevel/EnemyHeavybag7",
+      "component": "RifleMesh",
+      "exportIndex": 10805
+    },
+    "sourceMesh": "/Game/Geometry/Meshes/1M_Cube",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        -48866.0,
+        -47365.0,
+        612.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.9999999999998582,
+        -5.326322179977083e-07
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "MainLevel:10806",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "actor": "MainLevel/PersistentLevel/EnemyHeavybag8",
+      "component": "RifleMesh",
+      "exportIndex": 10806
+    },
+    "sourceMesh": "/Game/Geometry/Meshes/1M_Cube",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        -49266.0,
+        -47365.0,
+        612.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.9999999999998582,
+        -5.326322179977083e-07
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "MainLevel:10807",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "actor": "MainLevel/PersistentLevel/EnemyHeavybag9",
+      "component": "RifleMesh",
+      "exportIndex": 10807
+    },
+    "sourceMesh": "/Game/Geometry/Meshes/1M_Cube",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        -49666.0,
+        -47365.0,
+        612.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.9999999999998582,
+        -5.326322179977083e-07
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "MainLevel:10808",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/MainLevel",
+      "actor": "MainLevel/PersistentLevel/EnemyHeavybag_1902",
+      "component": "RifleMesh",
+      "exportIndex": 10808
+    },
+    "sourceMesh": "/Game/Geometry/Meshes/1M_Cube",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        -14560.0,
+        -5296.0,
+        628.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "Story2Level:83",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/Story2Level",
+      "actor": "Story2Level/PersistentLevel/BP_FireBoss2_5510",
+      "component": "SK_Hair_000_slicked_back",
+      "exportIndex": 83
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_000_Slicked_back",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        14304.773437433816,
+        -18154.904296800043,
+        10472.525009155273
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.9999999999999978,
+        6.657902712481345e-08
+      ],
+      "scale": [
+        1.5499999523162842,
+        1.5499998331069946,
+        1.5499998331069946
+      ]
+    },
+    "materialOverrides": [
+      {
+        "slotIndex": 0,
+        "material": {
+          "package": "/Game/Action_Male/Materials/M_Hair_Fire_Inst",
+          "object": "M_Hair_Fire_Inst",
+          "reference": "/Game/Action_Male/Materials/M_Hair_Fire_Inst.M_Hair_Fire_Inst"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Story3Level:86",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/Story3Level",
+      "actor": "Story3Level/PersistentLevel/BP_LightningBoss2_6085",
+      "component": "SK_Hair_005_short",
+      "exportIndex": 86
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_005_short",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -5002.93798828125,
+        5228.81494140625,
+        4156.4951171875
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067576473077,
+        0.7071068047257866
+      ],
+      "scale": [
+        1.5499999523162842,
+        1.5499999523162842,
+        1.5499999523162842
+      ]
+    },
+    "materialOverrides": [
+      {
+        "slotIndex": 0,
+        "material": {
+          "package": "/Game/Action_Male/Materials/MI_Hair_005a1",
+          "object": "MI_Hair_005a1",
+          "reference": "/Game/Action_Male/Materials/MI_Hair_005a1.MI_Hair_005a1"
+        }
+      }
+    ]
+  },
+  {
+    "id": "TutorialLevel:292",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/StoryLevel/TutorialLevel",
+      "actor": "TutorialLevel/PersistentLevel/SM_Hair_Ponytail2_6",
+      "component": "SkeletalMeshComponent0",
+      "exportIndex": 292
+    },
+    "sourceMesh": "/Game/GR_Stylized_Female_01/Character/Meshes/HAIR_Ponytail/SM_Hair_Ponytail",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Head_Dummy",
+    "transformBeforeSocketUE": {
+      "position": [
+        -4190.0,
+        13960.0,
+        50.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        0.9999997615814209,
+        0.9999996423721313,
+        1.0
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "Beach:21",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Beach",
+      "actor": "Beach/PersistentLevel/BP_EasterEgg_2162",
+      "component": "SK_Hair_001_pompadour",
+      "exportIndex": 21
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_001_pompadour",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -39224.99998482,
+        -52739.99984754527,
+        65.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        6.657902712481345e-08,
+        0.9999999999999978
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "Beach:22",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Beach",
+      "actor": "Beach/PersistentLevel/BP_EasterEgg_2162",
+      "component": "SK_Sunglasses",
+      "exportIndex": 22
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Sunglasses",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -39224.99998482,
+        -52739.99984754527,
+        65.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        6.657902712481345e-08,
+        0.9999999999999978
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "CommercialArea:24",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CommercialArea",
+      "actor": "CommercialArea/PersistentLevel/BP_EasterEgg_2437",
+      "component": "SK_Hair_001_pompadour",
+      "exportIndex": 24
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_001_pompadour",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -16883.99984741211,
+        22138.0,
+        65.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "CommercialArea:25",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/CommercialArea",
+      "actor": "CommercialArea/PersistentLevel/BP_EasterEgg_2437",
+      "component": "SK_Sunglasses",
+      "exportIndex": 25
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Sunglasses",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -16883.99984741211,
+        22138.0,
+        65.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "DownTown:30",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/DownTown",
+      "actor": "DownTown/PersistentLevel/BP_EasterEgg_898",
+      "component": "SK_Hair_001_pompadour",
+      "exportIndex": 30
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_001_pompadour",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        8533.999846613126,
+        -34427.000091079986,
+        65.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        0.7071064987156012,
+        0.7071070636573812
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "DownTown:31",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/DownTown",
+      "actor": "DownTown/PersistentLevel/BP_EasterEgg_898",
+      "component": "SK_Sunglasses",
+      "exportIndex": 31
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Sunglasses",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        8533.999846613126,
+        -34427.000091079986,
+        65.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        0.7071064987156012,
+        0.7071070636573812
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "FinancialDistrict:18",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/FinancialDistrict",
+      "actor": "FinancialDistrict/PersistentLevel/BP_EasterEgg_866",
+      "component": "SK_Hair_001_pompadour",
+      "exportIndex": 18
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_001_pompadour",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        27125.00015258789,
+        -25723.0,
+        8455.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "FinancialDistrict:19",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/FinancialDistrict",
+      "actor": "FinancialDistrict/PersistentLevel/BP_EasterEgg_866",
+      "component": "SK_Sunglasses",
+      "exportIndex": 19
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Sunglasses",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        27125.00015258789,
+        -25723.0,
+        8455.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "FireBossLevel:73",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/FireBossLevel",
+      "actor": "FireBossLevel/PersistentLevel/BP_FireBoss_6887",
+      "component": "SK_Hair_000_slicked_back",
+      "exportIndex": 73
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_000_Slicked_back",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        14291.327148503684,
+        -17950.195312574957,
+        11302.575790405273
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        6.657902712481345e-08,
+        0.9999999999999978
+      ],
+      "scale": [
+        1.5499999523162842,
+        1.5499998331069946,
+        1.5499998331069946
+      ]
+    },
+    "materialOverrides": [
+      {
+        "slotIndex": 0,
+        "material": {
+          "package": "/Game/Action_Male/Materials/M_Hair_Fire_Inst",
+          "object": "M_Hair_Fire_Inst",
+          "reference": "/Game/Action_Male/Materials/M_Hair_Fire_Inst.M_Hair_Fire_Inst"
+        }
+      }
+    ]
+  },
+  {
+    "id": "IndustrialArea:134",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/IndustrialArea",
+      "actor": "IndustrialArea/PersistentLevel/BP_EasterEgg_626",
+      "component": "SK_Hair_001_pompadour",
+      "exportIndex": 134
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_001_pompadour",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        54690.00015258789,
+        -54824.0,
+        63.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "IndustrialArea:135",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/IndustrialArea",
+      "actor": "IndustrialArea/PersistentLevel/BP_EasterEgg_626",
+      "component": "SK_Sunglasses",
+      "exportIndex": 135
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Sunglasses",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        54690.00015258789,
+        -54824.0,
+        63.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "LightningBossLevel:69",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/LightningBossLevel",
+      "actor": "LightningBossLevel/PersistentLevel/BP_LightningBoss_6778",
+      "component": "SK_Hair_005_short",
+      "exportIndex": 69
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_005_short",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -300.39019775390625,
+        1086.38623046875,
+        64.99993896484375
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        6.657902712481345e-08,
+        0.9999999999999978
+      ],
+      "scale": [
+        1.5499999523162842,
+        1.5499999523162842,
+        1.5499999523162842
+      ]
+    },
+    "materialOverrides": [
+      {
+        "slotIndex": 0,
+        "material": {
+          "package": "/Game/Action_Male/Materials/MI_Hair_005a1",
+          "object": "MI_Hair_005a1",
+          "reference": "/Game/Action_Male/Materials/MI_Hair_005a1.MI_Hair_005a1"
+        }
+      }
+    ]
+  },
+  {
+    "id": "LoadLevel:304",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/LoadLevel",
+      "actor": "LoadLevel/PersistentLevel/BaseEnemy_802",
+      "component": "RifleMesh",
+      "exportIndex": 304
+    },
+    "sourceMesh": "/Game/-HeroGame/Enemy/Mesh/SM_Rifle",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        -2396.0,
+        -2400.0,
+        -5077.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "Park:127",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Park",
+      "actor": "Park/PersistentLevel/BP_EasterEgg_1234",
+      "component": "SK_Hair_001_pompadour",
+      "exportIndex": 127
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_001_pompadour",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        21479.0,
+        -1517.0001525878906,
+        260.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -1.0000000000000002,
+        0.0
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "Park:128",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Park",
+      "actor": "Park/PersistentLevel/BP_EasterEgg_1234",
+      "component": "SK_Sunglasses",
+      "exportIndex": 128
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Sunglasses",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        21479.0,
+        -1517.0001525878906,
+        260.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -1.0000000000000002,
+        0.0
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "ResidentialArea1:21",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea1",
+      "actor": "ResidentialArea1/PersistentLevel/BP_EasterEgg_2322",
+      "component": "SK_Hair_001_pompadour",
+      "exportIndex": 21
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_001_pompadour",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        8308.99984821102,
+        -63993.999908920014,
+        265.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071070636573812,
+        -0.7071064987156012
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "ResidentialArea1:22",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea1",
+      "actor": "ResidentialArea1/PersistentLevel/BP_EasterEgg_2322",
+      "component": "SK_Sunglasses",
+      "exportIndex": 22
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Sunglasses",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        8308.99984821102,
+        -63993.999908920014,
+        265.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071070636573812,
+        -0.7071064987156012
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "ResidentialArea2:22",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea2",
+      "actor": "ResidentialArea2/PersistentLevel/BP_EasterEgg_1202",
+      "component": "SK_Hair_001_pompadour",
+      "exportIndex": 22
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_001_pompadour",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -44453.0,
+        -33401.00015258789,
+        75.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -1.0000000000000002,
+        0.0
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "ResidentialArea2:23",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea2",
+      "actor": "ResidentialArea2/PersistentLevel/BP_EasterEgg_1202",
+      "component": "SK_Sunglasses",
+      "exportIndex": 23
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Sunglasses",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -44453.0,
+        -33401.00015258789,
+        75.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -1.0000000000000002,
+        0.0
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "ResidentialArea3:21",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea3",
+      "actor": "ResidentialArea3/PersistentLevel/BP_EasterEgg_1666",
+      "component": "SK_Hair_001_pompadour",
+      "exportIndex": 21
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_001_pompadour",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -13514.99984741211,
+        33733.0,
+        70.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "ResidentialArea3:22",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/ResidentialArea3",
+      "actor": "ResidentialArea3/PersistentLevel/BP_EasterEgg_1666",
+      "component": "SK_Sunglasses",
+      "exportIndex": 22
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Sunglasses",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -13514.99984741211,
+        33733.0,
+        70.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "Slam:30",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Slam",
+      "actor": "Slam/PersistentLevel/BP_EasterEgg_3010",
+      "component": "SK_Hair_001_pompadour",
+      "exportIndex": 30
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_001_pompadour",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        61469.00015258789,
+        20507.0,
+        65.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "Slam:31",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/Slam",
+      "actor": "Slam/PersistentLevel/BP_EasterEgg_3010",
+      "component": "SK_Sunglasses",
+      "exportIndex": 31
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Sunglasses",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        61469.00015258789,
+        20507.0,
+        65.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "TestBossLevelFire:75",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelFire",
+      "actor": "TestBossLevelFire/PersistentLevel/BP_FireBoss_3842",
+      "component": "SK_Hair_000_slicked_back",
+      "exportIndex": 75
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_000_Slicked_back",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -2980.5871582780837,
+        1697.4691161447545,
+        1277.695541381836
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1.5499999523162842,
+        1.5499998331069946,
+        1.5499998331069946
+      ]
+    },
+    "materialOverrides": [
+      {
+        "slotIndex": 0,
+        "material": {
+          "package": "/Game/Action_Male/Materials/M_Hair_Fire_Inst",
+          "object": "M_Hair_Fire_Inst",
+          "reference": "/Game/Action_Male/Materials/M_Hair_Fire_Inst.M_Hair_Fire_Inst"
+        }
+      }
+    ]
+  },
+  {
+    "id": "TestBossLevelLightning:71",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/SubLevel/TestBossLevelLightning",
+      "actor": "TestBossLevelLightning/PersistentLevel/BP_LightningBoss_4776",
+      "component": "SK_Hair_005_short",
+      "exportIndex": 71
+    },
+    "sourceMesh": "/Game/Action_Male/Meshes/SK_Hair_005_short",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "head_accessories",
+    "transformBeforeSocketUE": {
+      "position": [
+        -3564.17626953125,
+        443.40283203125,
+        50.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1.5499999523162842,
+        1.5499999523162842,
+        1.5499999523162842
+      ]
+    },
+    "materialOverrides": [
+      {
+        "slotIndex": 0,
+        "material": {
+          "package": "/Game/Action_Male/Materials/MI_Hair_005a1",
+          "object": "MI_Hair_005a1",
+          "reference": "/Game/Action_Male/Materials/MI_Hair_005a1.MI_Hair_005a1"
+        }
+      }
+    ]
+  },
+  {
+    "id": "TestLevel:709",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "actor": "TestLevel/PersistentLevel/EnemyHeavybag2_81",
+      "component": "RifleMesh",
+      "exportIndex": 709
+    },
+    "sourceMesh": "/Game/Geometry/Meshes/1M_Cube",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        1585.0,
+        -11384.0,
+        354.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "TestLevel:710",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "actor": "TestLevel/PersistentLevel/EnemyHeavybag3_163",
+      "component": "RifleMesh",
+      "exportIndex": 710
+    },
+    "sourceMesh": "/Game/Geometry/Meshes/1M_Cube",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        2585.0,
+        -12384.0,
+        354.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "TestLevel:711",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "actor": "TestLevel/PersistentLevel/EnemyHeavybag4_245",
+      "component": "RifleMesh",
+      "exportIndex": 711
+    },
+    "sourceMesh": "/Game/Geometry/Meshes/1M_Cube",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        1585.0,
+        -13384.0,
+        354.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "TestLevel:712",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "actor": "TestLevel/PersistentLevel/EnemyHeavybag5",
+      "component": "RifleMesh",
+      "exportIndex": 712
+    },
+    "sourceMesh": "/Game/Geometry/Meshes/1M_Cube",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        2585.0,
+        -14384.0,
+        354.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  },
+  {
+    "id": "TestLevel:713",
+    "source": {
+      "package": "/Game/-HeroGame/Maps/TestLevel",
+      "actor": "TestLevel/PersistentLevel/EnemyHeavybag_492",
+      "component": "RifleMesh",
+      "exportIndex": 713
+    },
+    "sourceMesh": "/Game/Geometry/Meshes/1M_Cube",
+    "reason": "attachment-socket-transform-not-applied",
+    "socket": "Weapon",
+    "transformBeforeSocketUE": {
+      "position": [
+        2585.0,
+        -10384.0,
+        354.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "materialOverrides": []
+  }
+]

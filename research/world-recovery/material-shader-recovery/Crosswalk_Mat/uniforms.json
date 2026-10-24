@@ -1,0 +1,134 @@
+{
+  "frozenStartInExtras": 141,
+  "frozenBytes": 4580,
+  "frozenSHA256": "5738cf22395a33adadb638d12b4395ea80cfd67641a1e279d04a46e07881c804",
+  "layoutParametersRaw": [
+    8,
+    41
+  ],
+  "scalarParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 4256,
+      "parameter": "Emissive_Red",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.0
+    },
+    {
+      "index": 1,
+      "frozenOffset": 4280,
+      "parameter": "Emissive_White",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": 1.0
+    }
+  ],
+  "vectorParameters": [
+    {
+      "index": 0,
+      "frozenOffset": 4304,
+      "parameter": "SelectionColor",
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "defaultValue": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "textureParameters2D": [
+    {
+      "index": 0,
+      "frozenOffset": 4340,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 2,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/TrafficLight_N"
+    },
+    {
+      "index": 1,
+      "frozenOffset": 4368,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 3,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/TrafficLight_Mask"
+    },
+    {
+      "index": 2,
+      "frozenOffset": 4396,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 0,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/TrafficLight_A"
+    },
+    {
+      "index": 3,
+      "frozenOffset": 4424,
+      "parameter": null,
+      "parameterIndex": -1,
+      "associationByte": 2,
+      "textureIndex": 1,
+      "samplerSource": 0,
+      "virtualTextureLayerIndex": 255,
+      "defaultTextureObject": "/Game/Downtown/Textures/TrafficLight_C"
+    }
+  ],
+  "uniformVectorPreshaders": [
+    {
+      "offset": 36,
+      "size": 3,
+      "bytesHex": "040000"
+    },
+    {
+      "offset": 39,
+      "size": 21,
+      "bytesHex": "030000020000803f00000000000000000000000007"
+    },
+    {
+      "offset": 60,
+      "size": 9,
+      "bytesHex": "0400002303000102ff"
+    }
+  ],
+  "uniformScalarPreshaders": [
+    {
+      "offset": 0,
+      "size": 3,
+      "bytesHex": "030000"
+    },
+    {
+      "offset": 3,
+      "size": 3,
+      "bytesHex": "030100"
+    },
+    {
+      "offset": 6,
+      "size": 21,
+      "bytesHex": "020000803f0000803f0000803f0000803f03010007"
+    },
+    {
+      "offset": 27,
+      "size": 9,
+      "bytesHex": "040000230103ffffff"
+    }
+  ],
+  "namePatches": {
+    "4256": "Emissive_Red",
+    "4280": "Emissive_White",
+    "4304": "SelectionColor"
+  },
+  "preshaderDataHex": "030000030100020000803f0000803f0000803f0000803f03010007040000230103ffffff040000030000020000803f000000000000000000000000070400002303000102ff",
+  "preshaderDataFrozenOffset": 4452
+}

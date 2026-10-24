@@ -1,0 +1,63 @@
+{
+  "alphaCheck": "All 9 original and published material baseColor alpha=1; no alphaMode, alphaCutoff, texture alpha or transmission. glTF default is opaque.",
+  "geometry": [
+    {
+      "material": "M_Vehicle_Sedan_Inst_Plastic",
+      "triangles": 1272,
+      "above1_3": 71,
+      "cabinRoofRegion": 4
+    },
+    {
+      "material": "M_Vehicle_Sedan_Inst_Plastic",
+      "triangles": 1924,
+      "above1_3": 180,
+      "cabinRoofRegion": 0
+    },
+    {
+      "material": "M_Vehicle_Sedan",
+      "triangles": 1524,
+      "above1_3": 28,
+      "cabinRoofRegion": 0
+    },
+    {
+      "material": "M_Vehicle_Sedan_Inst_TailLights",
+      "triangles": 88,
+      "above1_3": 0,
+      "cabinRoofRegion": 0
+    },
+    {
+      "material": "M_Vehicle_Sedan_Inst_Glass",
+      "triangles": 24,
+      "above1_3": 8,
+      "cabinRoofRegion": 0
+    },
+    {
+      "material": "M_Vehicle_Sedan_Inst_Headlights",
+      "triangles": 72,
+      "above1_3": 0,
+      "cabinRoofRegion": 0
+    },
+    {
+      "material": "M_Vehicle_Sedan_Inst_Tires",
+      "triangles": 4576,
+      "above1_3": 0,
+      "cabinRoofRegion": 0
+    },
+    {
+      "material": "M_Vehicle_Sedan_Inst_Wheels",
+      "triangles": 3232,
+      "above1_3": 0,
+      "cabinRoofRegion": 0
+    },
+    {
+      "material": "M_Vehicle_Sedan_Inst_Wheels",
+      "triangles": 20,
+      "above1_3": 0,
+      "cabinRoofRegion": 0
+    }
+  ],
+  "roofRegion": "Above Y=1.3m inside X(-0.8,0.2), Z(-0.5,0.5), only 4 plastic triangles form two small rectangles at Z -0.51..-0.30 and +0.31..+0.53, consistent with seat headrests; zero body-paint or glass triangles. No full cabin canopy in this exported mesh.",
+  "conclusion": "The current Sedan_SkelMesh export is open-top geometry, not a transparency regression. Separate roof attachment in original blueprint is not established; do not describe this sample as a complete closed-roof sedan.",
+  "buildingKnownLimitation": "White/flat window appearance observed in browser QA; original custom window/reflection shader not reconstructed.",
+  "changed": "Explicit alphaMode OPAQUE applied to all 9 materials as a guard; previously default OPAQUE, so no visible geometry correction expected."
+}

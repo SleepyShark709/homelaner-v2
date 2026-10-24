@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { AttackTimeline, applyDamage, traceTargets } from '../src/game/combat-rules.ts';
+const timings = JSON.parse(readFileSync(new URL('../public/assets/character/combat-timings.json', import.meta.url))).clips;
+assert.equal(timings.length, 14);
+for (const clip of timings) {
+  const timeline = new AttackTimeline(clip); let count = 0;
+  for (let t = 0; t < 8; t += 1 / 30) if (timeline.step(1 / 30).hit) count++;
+  assert.equal(count, clip.hit === null ? 0 : 1, `${clip.name}: notify dispatched once`);
+  assert.equal(timeline.finished, true);
+  assert.ok(clip.hit === null || clip.hit < clip.finish);
+}
+const punch = new AttackTimeline(timings.find(clip => clip.name === 'Hero_Attack1'));
+assert.equal(punch.step(.38).hit, false); assert.equal(punch.step(.01).hit, true);
+const strong = new AttackTimeline(timings.find(clip => clip.name === 'Hero_SuperPunch'));
+assert.equal(strong.step(1.15).hit, false); assert.equal(strong.step(.02).hit, true);
+const make = kind => ({ id: kind, kind, alive: true, health: 100, min: [-1, 0, 9], max: [1, 2, 11] });
+const weak = { kind: 'ranged', strong: false, damage: 100, direction: [0, 0, 1] };
+const civilian = make('citizen'), car = make('vehicle');
+assert.equal(applyDamage('baseline', civilian, weak), 'ignored');
+assert.equal(applyDamage('baseline', car, weak), 'ignored');
+assert.equal(applyDamage('baseline', car, { ...weak, strong: true }), 'destroyed');
+assert.equal(applyDamage('baseline', car, { ...weak, strong: true }), 'ignored');
+assert.equal(applyDamage('free', civilian, { ...weak, damage: 12 }), 'hit');
+assert.equal(civilian.health, 88);
+assert.equal(applyDamage('free', civilian, weak), 'destroyed');
+assert.equal(applyDamage('free', civilian, weak), 'ignored');
+const wall = { id: 'wall', min: [-5, 0, 4], max: [5, 10, 5] };
+assert.equal(traceTargets([0, 1, 0], [0, 0, 20], [wall], [make('vehicle')]).target, false);
+assert.equal(traceTargets([0, 1, 0], [0, 0, 20], [], [make('vehicle')]).target, true);
+assert.equal(traceTargets([0, 1, 0], [0, 0, 20], [], [{ ...make('vehicle'), alive: false }]), null);
+console.log('Combat: 14 source timelines, rate scaling, one-shot hits, mode policies and occlusion passed.');

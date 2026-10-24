@@ -1,0 +1,2382 @@
+[
+  {
+    "package": "/Engine/BasicShapes/Cone",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\BasicShapes\\Cone.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Engine/BasicShapes/Cube",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\BasicShapes\\Cube.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/BP/MySkySphere/SM_SkySphere",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\BP\\MySkySphere\\SM_SkySphere.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Enemy/Mesh/SM_Rifle",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Enemy\\Mesh\\SM_Rifle.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Enemy/Mesh/Trooper_Full_NoKnife_LOD0",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Enemy\\Mesh\\Trooper_Full_NoKnife_LOD0.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/Crane1",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\Crane1.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_Building_01d4_MERGED",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_Building_01d4_MERGED.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Apartment_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Apartment_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Apartment_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Apartment_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Apartment_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Apartment_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Apartment_D",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Apartment_D.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Apartment_E",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Apartment_E.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Apartment_F",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Apartment_F.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_BG_Building_E",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_BG_Building_E.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_01d7_200",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_01d7_200.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_01d_2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_01d_2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_01g_110",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_01g_110.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_13",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_13.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_148",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_148.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_2_01_9",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_2_01_9.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_2_02_12",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_2_02_12.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_3_01_15",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_3_01_15.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_3_02_18",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_3_02_18.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_4_01_21",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_4_01_21.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_4_02_24",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_4_02_24.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_5_01_27",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_5_01_27.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_6_01_30",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_6_01_30.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_6_02_33",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_6_02_33.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_7_01_36",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_7_01_36.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_7_02_39",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_7_02_39.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_9",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_9.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_9_01_42",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_9_01_42.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_9_02_45",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_9_02_45.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_Hero",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_Hero.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_X",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_X.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Building_Z",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Building_Z.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Buildings_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Buildings_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Buildings_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Buildings_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Buildings_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Buildings_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Buildings_D",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Buildings_D.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_GymFloor_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_GymFloor_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Infil_Building",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Infil_Building.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_OrnateWall_Pillar_Short48",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_OrnateWall_Pillar_Short48.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_OrnateWall_Pillar_Short_19",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_OrnateWall_Pillar_Short_19.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_OrnateWall_Pillar_Short_5",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_OrnateWall_Pillar_Short_5.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_OrnateWall_Pillar_Short_75",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_OrnateWall_Pillar_Short_75.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_OrnateWall_Wall_LongShort18_25",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_OrnateWall_Wall_LongShort18_25.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_OrnateWall_Wall_LongShort26",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_OrnateWall_Wall_LongShort26.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_OrnateWall_Wall_LongShort4",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_OrnateWall_Wall_LongShort4.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_OrnateWall_Wall_LongShort48",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_OrnateWall_Wall_LongShort48.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_OrnateWall_Wall_TallLong21",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_OrnateWall_Wall_TallLong21.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_OrnateWall_Wall_TallLong_681",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_OrnateWall_Wall_TallLong_681.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Ornate_Floor_RA1",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Ornate_Floor_RA1.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Ornate_Floor_RA1_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Ornate_Floor_RA1_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Ornate_Floor_RA1_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Ornate_Floor_RA1_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Ornate_Slam_Wall_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Ornate_Slam_Wall_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Ornate_Slam_Wall_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Ornate_Slam_Wall_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Ornate_Walls_RA1",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Ornate_Walls_RA1.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Ornate_Walls_RA1_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Ornate_Walls_RA1_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Ornate_Walls_RA1_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Ornate_Walls_RA1_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Path_A18_96",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Path_A18_96.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Path_A19",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Path_A19.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Path_A22",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Path_A22.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Path_AFloor",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Path_AFloor.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_SM_Building01_231",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_SM_Building01_231.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_SM_Building02_202",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_SM_Building02_202.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_SM_Building07_216",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_SM_Building07_216.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_SM_Building07_219",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_SM_Building07_219.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_SM_HighRise01_108",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_SM_HighRise01_108.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_SM_HighRise01_127",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_SM_HighRise01_127.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_SM_HighRise01_74",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_SM_HighRise01_74.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_SM_HighRise02_118",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_SM_HighRise02_118.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_SM_HighRise02_86",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_SM_HighRise02_86.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_SM_MERGED_OrnateWall_Pillar_TallA",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_SM_MERGED_OrnateWall_Pillar_TallA.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Scaffolding_Bot_Corner2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Scaffolding_Bot_Corner2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Scaffolding_Bot_Corner21",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Scaffolding_Bot_Corner21.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Scaffolding_Bot_Corner31",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Scaffolding_Bot_Corner31.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_Scaffolding_Bot_Corner4",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_Scaffolding_Bot_Corner4.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_building_1_01_3",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_building_1_01_3.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_building_1_02_6",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_building_1_02_6.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_gardenPlanter_A_64",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_gardenPlanter_A_64.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_gardenPlanter_B11",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_gardenPlanter_B11.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_gardenPlanter_B1_117",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_gardenPlanter_B1_117.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_MERGED_gardenPlanter_B41",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_MERGED_gardenPlanter_B41.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_OrnateWall_Pillar_Short25_99_MERGED",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_OrnateWall_Pillar_Short25_99_MERGED.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Buildings/SM_OrnateWall_Wall_LongShort10_MERGED",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Buildings\\SM_OrnateWall_Wall_LongShort10_MERGED.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Enelight/SM_Common_ENV_RockA",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Enelight\\SM_Common_ENV_RockA.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Enelight/SM_EnelightMeteorCrater_PivotFix",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Enelight\\SM_EnelightMeteorCrater_PivotFix.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Fence/SM_MERGED_fence_x11_1",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Fence\\SM_MERGED_fence_x11_1.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Fence/SM_MERGED_fence_x11_2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Fence\\SM_MERGED_fence_x11_2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Fence/SM_MERGED_fence_x11_3",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Fence\\SM_MERGED_fence_x11_3.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Fence/SM_MERGED_fence_x11_4",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Fence\\SM_MERGED_fence_x11_4.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Fence/SM_MERGED_fence_x11_5",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Fence\\SM_MERGED_fence_x11_5.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Fence/SM_MERGED_fence_x11_6",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Fence\\SM_MERGED_fence_x11_6.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Fence/SM_MERGED_fence_x11_7",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Fence\\SM_MERGED_fence_x11_7.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Fence/SM_MERGED_fence_x15",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Fence\\SM_MERGED_fence_x15.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Fence/SM_MERGED_fence_x16",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Fence\\SM_MERGED_fence_x16.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Fence/SM_MERGED_fence_x20",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Fence\\SM_MERGED_fence_x20.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Fence/SM_MERGED_fence_x21",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Fence\\SM_MERGED_fence_x21.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Fence/SM_MERGED_fence_x22",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Fence\\SM_MERGED_fence_x22.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Fence/SM_MERGED_fence_x55",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Fence\\SM_MERGED_fence_x55.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Floor/DebugFloor",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Floor\\DebugFloor.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Floor/SM_Coast_Floor",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Floor\\SM_Coast_Floor.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Floor/SM_Floor12000x15000",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Floor\\SM_Floor12000x15000.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Floor/SM_Floor_100kx100k",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Floor\\SM_Floor_100kx100k.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Floor/SM_MERGED_Path_A_133",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Floor\\SM_MERGED_Path_A_133.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Floor/SM_MERGED_SM_Walkway_25",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Floor\\SM_MERGED_SM_Walkway_25.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Floor/SM_Plane",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Floor\\SM_Plane.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpA",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpA.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpB",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpB.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpC",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpC.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpD",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpD.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpE",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpE.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpF",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpF.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpG",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpG.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpH",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpH.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpI",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpI.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpJ",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpJ.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpK",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpK.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpN",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpN.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpO",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpO.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpP",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpP.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_GymprpQ",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_GymprpQ.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_HeavybagStand",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_HeavybagStand.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_LockerA",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_LockerA.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_LockerB",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_LockerB.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_BarbellRack2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_BarbellRack2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_BarbellRack5",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_BarbellRack5.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_BarbellRack6",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_BarbellRack6.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_BarbellRack8",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_BarbellRack8.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_BarbellRack_8",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_BarbellRack_8.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_BenchPressA_25",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_BenchPressA_25.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_BenchPressB2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_BenchPressB2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_BenchPressB_28",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_BenchPressB_28.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_CabinetA10",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_CabinetA10.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_CabinetA_303",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_CabinetA_303.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_DumbellRack3",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_DumbellRack3.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_DumbellRack4",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_DumbellRack4.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_FlatBench10",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_FlatBench10.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_FlatBench11",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_FlatBench11.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_FlatBench12",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_FlatBench12.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_FlatBench5_116",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_FlatBench5_116.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_FlatBench6_117",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_FlatBench6_117.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_FlatBench7",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_FlatBench7.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_FlatBench8",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_FlatBench8.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_Rack5_240",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_Rack5_240.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_Rack6",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_Rack6.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_Rack7",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_Rack7.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_Rack8",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_Rack8.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Gym/SM_MERGED_SM_WeightPlateRack3",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Gym\\SM_MERGED_SM_WeightPlateRack3.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/Pillar_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\Pillar_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_Ax4",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_Ax4.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_B3",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_B3.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_B3_166",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_B3_166.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_B4_147",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_B4_147.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_Bx11",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_Bx11.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_Bx3",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_Bx3.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_C19_102",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_C19_102.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_C26",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_C26.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_C28",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_C28.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_C500x6",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_C500x6.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_C72",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_C72.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_C79_12360",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_C79_12360.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_x4",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_x4.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_x5",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_x5.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_Pillar_x6",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_Pillar_x6.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_PillarsX4_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_PillarsX4_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/PIllars/SM_MERGED_SM_MERGED_Pillar_B6",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\PIllars\\SM_MERGED_SM_MERGED_Pillar_B6.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Park/OrnateWall_Pillar_Short",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Park\\OrnateWall_Pillar_Short.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Park/OrnateWall_Pillar_Tall",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Park\\OrnateWall_Pillar_Tall.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Park/OrnateWall_Stairs",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Park\\OrnateWall_Stairs.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Park/OrnateWall_Wall_LongShort",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Park\\OrnateWall_Wall_LongShort.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Park/OrnateWall_Wall_ShortLong",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Park\\OrnateWall_Wall_ShortLong.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Park/OrnateWall_Wall_TallLong",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Park\\OrnateWall_Wall_TallLong.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Park/Path_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Park\\Path_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Park/Path_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Park\\Path_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Park/Path_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Park\\Path_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Park/Path_D",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Park\\Path_D.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/Bush_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\Bush_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/Infil1_BuildingSetA_Tree_02",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\Infil1_BuildingSetA_Tree_02.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_Grass_Patch_B6_MERGED",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_Grass_Patch_B6_MERGED.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_CommunityArea",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_CommunityArea.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Flg_hedge",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Flg_hedge.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Flg_hedge_Tall2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Flg_hedge_Tall2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Flg_hedge_Tall3",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Flg_hedge_Tall3.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_PalmTreeAndPlant",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_PalmTreeAndPlant.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_PlanterLarge_A42_2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_PlanterLarge_A42_2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_PlanterLarge_A44",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_PlanterLarge_A44.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Planter_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Planter_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Planter_A1",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Planter_A1.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Planter_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Planter_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_RoadTree_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_RoadTree_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_RoadTree_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_RoadTree_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_RoadTree_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_RoadTree_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_SM_MERGED_PlanterLarge_A59",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_SM_MERGED_PlanterLarge_A59.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Tree_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Tree_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Tree_And_Plant",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Tree_And_Plant.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Tree_And_Plant_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Tree_And_Plant_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Tree_And_Plant_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Tree_And_Plant_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Tree_And_Plant_D",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Tree_And_Plant_D.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Tree_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Tree_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Tree_Fence1",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Tree_Fence1.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Tree_Fence2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Tree_Fence2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_Trees",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_Trees.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_gardenPlanter_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_gardenPlanter_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_gardenPlanter_Ax2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_gardenPlanter_Ax2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_gardenPlanter_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_gardenPlanter_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_gardenPlanter_C2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_gardenPlanter_C2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_gardenPlanter_Cx2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_gardenPlanter_Cx2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_gardenPlanter_D",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_gardenPlanter_D.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_gardenPlanter_F",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_gardenPlanter_F.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_gardenPlanters_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_gardenPlanters_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_gardenPlanters_D",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_gardenPlanters_D.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_gardenPlanters_E",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_gardenPlanters_E.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_gardenPlanters_F",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_gardenPlanters_F.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_MERGED_prp_potRoung2_160",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_MERGED_prp_potRoung2_160.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_PalmTree_01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_PalmTree_01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_Plains_Fern01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_Plains_Fern01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_Plains_Fern02",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_Plains_Fern02.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_Plains_Fern03",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_Plains_Fern03.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/SM_Plains_Fern04",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\SM_Plains_Fern04.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/Tree_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\Tree_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/Tree_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\Tree_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Plant/Tree_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Plant\\Tree_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/BarrierMetal_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\BarrierMetal_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/Bench",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\Bench.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/Flower_bed_01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\Flower_bed_01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/NewspaperBox",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\NewspaperBox.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/NewspaperBox2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\NewspaperBox2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/Rock_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\Rock_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/Rock_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\Rock_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/Rock_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\Rock_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/Rock_D",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\Rock_D.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/Rock_E",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\Rock_E.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_0384_BuildingBlock_03_assemble",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_0384_BuildingBlock_03_assemble.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_HU_Deco_SM_Trashcan",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_HU_Deco_SM_Trashcan.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_HU_Deco_SM_Trashcan_03",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_HU_Deco_SM_Trashcan_03.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_Infil1_City_Decos_Bench",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_Infil1_City_Decos_Bench.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_Bench143",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_Bench143.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_Bench241",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_Bench241.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_Bench29_140",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_Bench29_140.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_Bench4",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_Bench4.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_Bench66",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_Bench66.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_BikeRack_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_BikeRack_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_Containers",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_Containers.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_Infil_City_Benchx4",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_Infil_City_Benchx4.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_PatioFurniture_Umbrella_A13_316",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_PatioFurniture_Umbrella_A13_316.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_PatioFurniture_Umbrella_A23",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_PatioFurniture_Umbrella_A23.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_PatioFurniture_Umbrella_And_prp",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_PatioFurniture_Umbrella_And_prp.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_PatioFurniture_Umbrella_And_prpB",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_PatioFurniture_Umbrella_And_prpB.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_SM_MERGED_Fountain_mdl14_2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_SM_MERGED_Fountain_mdl14_2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_SM_MERGED_prp_table_B23",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_SM_MERGED_prp_table_B23.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_Statue_CloakedWithSword",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_Statue_CloakedWithSword.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_Stone",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_Stone.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_Switchboard_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_Switchboard_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_Switchboard_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_Switchboard_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_Switchboard_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_Switchboard_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_Transformer",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_Transformer.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_Trashcan_MetalBench",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_Trashcan_MetalBench.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_VendingMachine_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_VendingMachine_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_VendingMachine_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_VendingMachine_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_barrier_Lrg_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_barrier_Lrg_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_barrier_Sml_L",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_barrier_Sml_L.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_barrier_Smlx2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_barrier_Smlx2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_bench2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_bench2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_bench_can",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_bench_can.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_bench_can_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_bench_can_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_bench_can_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_bench_can_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_bench_can_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_bench_can_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_bench_can_D",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_bench_can_D.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_bench_can_E",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_bench_can_E.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_bench_can_x4",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_bench_can_x4.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_bench_canbox",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_bench_canbox.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_bench_canfire",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_bench_canfire.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_metalFence",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_metalFence.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_metalFence4",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_metalFence4.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_metalFence_55",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_metalFence_55.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_metalFence_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_metalFence_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_table",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_table.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/SM_MERGED_prp_table_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\SM_MERGED_prp_table_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/StreetContainer",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\StreetContainer.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/TrafficCone_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\TrafficCone_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Props/garbageCan",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Props\\garbageCan.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/ConcreteBarrier_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\ConcreteBarrier_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/RoadDecal_Gutter_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\RoadDecal_Gutter_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/RoadDecal_Manhole_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\RoadDecal_Manhole_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/RoadDecal_Manhole_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\RoadDecal_Manhole_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/RoadDecal_Manhole_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\RoadDecal_Manhole_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/RoadDecal_Manhole_D",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\RoadDecal_Manhole_D.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/RoadGrate_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\RoadGrate_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Intersection_MediumMedium4",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Intersection_MediumMedium4.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Intersection_SmallMedium3_734",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Intersection_SmallMedium3_734.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Intersection_SmallMedium9_807",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Intersection_SmallMedium9_807.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Road_Crosswalk_Large_A18",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Road_Crosswalk_Large_A18.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_SM_Road_105",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_SM_Road_105.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_SM_Road_5",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_SM_Road_5.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Corner_Large_A26_1021",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Corner_Large_A26_1021.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Corner_Large_A28",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Corner_Large_A28.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Corner_Large_A32",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Corner_Large_A32.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Corner_Large_A33",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Corner_Large_A33.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Corner_Large_A34_10",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Corner_Large_A34_10.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Corner_Large_A7_894",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Corner_Large_A7_894.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Corner_Large_Small_A_834",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Corner_Large_Small_A_834.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Corner_Small_A32",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Corner_Small_A32.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Corner_Small_A34_1066",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Corner_Small_A34_1066.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Corner_Small_A36",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Corner_Small_A36.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Corner_Small_Large_A7",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Corner_Small_Large_A7.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Large_B107",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Large_B107.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_A101",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_A101.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_A121",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_A121.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_A186",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_A186.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_A360",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_A360.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_A581_645",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_A581_645.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_A601_705",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_A601_705.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_A821",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_A821.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_A861",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_A861.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_A923",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_A923.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_A964",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_A964.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_B106",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_B106.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_B122_1336",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_B122_1336.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_B194",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_B194.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_B230",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_B230.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_B284",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_B284.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/RoadProps/SM_MERGED_Sidewalk_Small_B77",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\RoadProps\\SM_MERGED_Sidewalk_Small_B77.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/SM_Arrow",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\SM_Arrow.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/SM_Blocking",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\SM_Blocking.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/SM_BlockingCeiling",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\SM_BlockingCeiling.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/SM_CQF_CenterRing",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\SM_CQF_CenterRing.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/SM_CQF_OutRing",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\SM_CQF_OutRing.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/SM_Cube100x100",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\SM_Cube100x100.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Signboard/SM_Ad_00",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Signboard\\SM_Ad_00.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Signboard/SM_Ad_06",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Signboard\\SM_Ad_06.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Signboard/SM_Ad_08",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Signboard\\SM_Ad_08.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Signboard/SM_Ad_10",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Signboard\\SM_Ad_10.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Signboard/SM_Ad_11",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Signboard\\SM_Ad_11.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Signboard/SM_Hallway_Poster01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Signboard\\SM_Hallway_Poster01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Signboard/SM_Hallway_Poster02",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Signboard\\SM_Hallway_Poster02.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Signboard/SM_Hallway_Poster03",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Signboard\\SM_Hallway_Poster03.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Signboard/SM_Hallway_Poster04",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Signboard\\SM_Hallway_Poster04.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Signboard/SM_Hallway_Poster05",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Signboard\\SM_Hallway_Poster05.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Signboard/SM_Hallway_Poster06",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Signboard\\SM_Hallway_Poster06.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Signboard/SM_Hallway_Poster07",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Signboard\\SM_Hallway_Poster07.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Signboard/SM_Hallway_Poster08",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Signboard\\SM_Hallway_Poster08.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Signboard/SM_MERGED_Sidewalk_Corner_Small_Large_A8",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Signboard\\SM_MERGED_Sidewalk_Corner_Small_Large_A8.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Tablet/SM_Tablet04",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Tablet\\SM_Tablet04.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/LitterPile_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\LitterPile_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/LitterPile_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\LitterPile_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/LitterPile_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\LitterPile_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/LitterPile_D",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\LitterPile_D.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/LitterPile_E",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\LitterPile_E.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/SM_Boxes",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\SM_Boxes.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/SM_Dumpster",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\SM_Dumpster.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/SM_MERGED_LitterPiles_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\SM_MERGED_LitterPiles_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/SM_MERGED_LitterPiles_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\SM_MERGED_LitterPiles_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/SM_MERGED_SM_MERGED_Dumpster_A_53",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\SM_MERGED_SM_MERGED_Dumpster_A_53.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/SM_MERGED_SM_MERGED_Dumpster_B2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\SM_MERGED_SM_MERGED_Dumpster_B2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/SM_MERGED_Trashes_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\SM_MERGED_Trashes_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/SM_MERGED_Trashes_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\SM_MERGED_Trashes_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/SM_MERGED_Trashes_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\SM_MERGED_Trashes_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/SM_Trash01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\SM_Trash01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/SM_Trash03",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\SM_Trash03.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/SM_TrashBag_01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\SM_TrashBag_01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/SM_TrashBag_04",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\SM_TrashBag_04.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/Trash/SM_TrashBag_05",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\Trash\\SM_TrashBag_05.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/UI/SM_TitleSignborad_NexChallenge",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\UI\\SM_TitleSignborad_NexChallenge.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/UI/kanban_a_kanban",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\UI\\kanban_a_kanban.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/UI/kanban_a_tekkotu",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\UI\\kanban_a_tekkotu.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/UmbrellaS/SM_MERGED_Umbrella_A_2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\UmbrellaS\\SM_MERGED_Umbrella_A_2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/UmbrellaS/SM_MERGED_Umbrella_B_13",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\UmbrellaS\\SM_MERGED_Umbrella_B_13.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/UmbrellaS/SM_MERGED_Umbrella_C_19",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\UmbrellaS\\SM_MERGED_Umbrella_C_19.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/UmbrellaS/SM_MERGED_Umbrella_D_25",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\UmbrellaS\\SM_MERGED_Umbrella_D_25.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/UmbrellaS/SM_MERGED_Umbrella_E_28",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\UmbrellaS\\SM_MERGED_Umbrella_E_28.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/UmbrellaS/SM_MERGED_Umbrella_F_34",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\UmbrellaS\\SM_MERGED_Umbrella_F_34.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/UmbrellaS/SM_MERGED_Umbrella_G_37",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\UmbrellaS\\SM_MERGED_Umbrella_G_37.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/UmbrellaS/SM_MERGED_Umbrella_H_40",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\UmbrellaS\\SM_MERGED_Umbrella_H_40.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/UmbrellaS/SM_MERGED_prp_table32_35",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\UmbrellaS\\SM_MERGED_prp_table32_35.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/UmbrellaS/SM_MERGED_prp_table_A6_38",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\UmbrellaS\\SM_MERGED_prp_table_A6_38.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/-HeroGame/Mesh/UmbrellaS/SM_MERGED_prp_table_B_11",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\-HeroGame\\Mesh\\UmbrellaS\\SM_MERGED_prp_table_B_11.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Action_Male/Meshes/Male_jeans",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Action_Male\\Meshes\\Male_jeans.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Action_Male/Meshes/Male_sleeveless_hoodie",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Action_Male\\Meshes\\Male_sleeveless_hoodie.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Action_Male/Meshes/SK_Hair_000_Slicked_back",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Action_Male\\Meshes\\SK_Hair_000_Slicked_back.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Action_Male/Meshes/SK_Hair_001_pompadour",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Action_Male\\Meshes\\SK_Hair_001_pompadour.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Action_Male/Meshes/SK_Hair_005_short",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Action_Male\\Meshes\\SK_Hair_005_short.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Action_Male/Meshes/SK_Male_Body_sectionned",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Action_Male\\Meshes\\SK_Male_Body_sectionned.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Action_Male/Meshes/SK_Male_Contemporary",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Action_Male\\Meshes\\SK_Male_Contemporary.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Action_Male/Meshes/SK_Male_Contemporary_standalone",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Action_Male\\Meshes\\SK_Male_Contemporary_standalone.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Action_Male/Meshes/SK_Sunglasses",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Action_Male\\Meshes\\SK_Sunglasses.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Character/Samaritan_bot/SkeletalMesh/SK_Samaritan_Bot_GDC",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Character\\Samaritan_bot\\SkeletalMesh\\SK_Samaritan_Bot_GDC.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Character/Trooper/Mesh/Trooper_Lead",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Character\\Trooper\\Mesh\\Trooper_Lead.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/DT_Laptops_Pack/Meshes/SM_Laptop_01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\DT_Laptops_Pack\\Meshes\\SM_Laptop_01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/BG_Building_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\BG_Building_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/BG_Building_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\BG_Building_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/BG_Building_C",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\BG_Building_C.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/BG_Building_D",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\BG_Building_D.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/BG_Building_F",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\BG_Building_F.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/CrossWalk",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\CrossWalk.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/LightPost",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\LightPost.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/LightPostLamp",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\LightPostLamp.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/OrnateWall_Stairs",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\OrnateWall_Stairs.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/OrnateWall_Wall_LongShort",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\OrnateWall_Wall_LongShort.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/Road_Large_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\Road_Large_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/Road_Medium_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\Road_Medium_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/Road_Medium_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\Road_Medium_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/Road_Small_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\Road_Small_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/Sidewalk_Large_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\Sidewalk_Large_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/Sidewalk_Large_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\Sidewalk_Large_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/Sidewalk_Small_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\Sidewalk_Small_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/SupportBeam_Long",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\SupportBeam_Long.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Downtown/Meshes/TrafficLight",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Downtown\\Meshes\\TrafficLight.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/ElectricalUtility/Meshes/SM_ControlShed",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\ElectricalUtility\\Meshes\\SM_ControlShed.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/ElectricalUtility/Meshes/SM_DangerSign",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\ElectricalUtility\\Meshes\\SM_DangerSign.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/ElectricalUtility/Meshes/SM_FencingB",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\ElectricalUtility\\Meshes\\SM_FencingB.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Env/Infil1_Background/Mesh/SM_Infil1_City_Antenna_Cluster01b",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Env\\Infil1_Background\\Mesh\\SM_Infil1_City_Antenna_Cluster01b.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Env/Infil1_Background/Mesh/SM_Infil1_City_Antenna_Cluster02",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Env\\Infil1_Background\\Mesh\\SM_Infil1_City_Antenna_Cluster02.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Env/Infil1_Buildings/Mesh/Building_Alpha_LOD2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Env\\Infil1_Buildings\\Mesh\\Building_Alpha_LOD2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Env/Infil1_Courthouse/Mesh/Infil1_BuildingSetA_FootPillar_01a",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Env\\Infil1_Courthouse\\Mesh\\Infil1_BuildingSetA_FootPillar_01a.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Env/Infil1_Maglev/Mesh_part2/S_Maglev_StandAlone",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Env\\Infil1_Maglev\\Mesh_part2\\S_Maglev_StandAlone.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Env/NYC_Deco_Exterior/NYC_Deco_Exterior_01/StaticMesh/SM_FireHydrant",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Env\\NYC_Deco_Exterior\\NYC_Deco_Exterior_01\\StaticMesh\\SM_FireHydrant.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Env/Underground/Hero/Model/SM_Underground_Cooler_01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Env\\Underground\\Hero\\Model\\SM_Underground_Cooler_01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Env/Underground/Infrastructure/Model/Pipe_Big_2",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Env\\Underground\\Infrastructure\\Model\\Pipe_Big_2.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Env/Underground/Infrastructure/Model/Robot_Tech_1b",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Env\\Underground\\Infrastructure\\Model\\Robot_Tech_1b.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Env/Underground/Infrastructure/Model/S_Infil1_City_Deco_MetalBox",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Env\\Underground\\Infrastructure\\Model\\S_Infil1_City_Deco_MetalBox.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Environment/meshes/Platformer_Bridge_01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Environment\\meshes\\Platformer_Bridge_01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Environment/meshes/Platformer_Bridge_05_Pillar_01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Environment\\meshes\\Platformer_Bridge_05_Pillar_01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/GR_Stylized_Female_01/Character/Meshes/CLOTH_Casual_Shirt_01b/SM_Cloth_CasualShirt01b",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\GR_Stylized_Female_01\\Character\\Meshes\\CLOTH_Casual_Shirt_01b\\SM_Cloth_CasualShirt01b.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/GR_Stylized_Female_01/Character/Meshes/CLOTH_Casual_Shorts_01b/SM_Cloth_CasualsShorts01b",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\GR_Stylized_Female_01\\Character\\Meshes\\CLOTH_Casual_Shorts_01b\\SM_Cloth_CasualsShorts01b.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/GR_Stylized_Female_01/Character/Meshes/CLOTH_Shoes_01/SM_Cloth_Shoes01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\GR_Stylized_Female_01\\Character\\Meshes\\CLOTH_Shoes_01\\SM_Cloth_Shoes01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/GR_Stylized_Female_01/Character/Meshes/HAIR_Ponytail/SM_Hair_Ponytail",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\GR_Stylized_Female_01\\Character\\Meshes\\HAIR_Ponytail\\SM_Hair_Ponytail.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/GR_Stylized_Female_01/Character/Meshes/SKIN/SM_GRFH1_Skin",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\GR_Stylized_Female_01\\Character\\Meshes\\SKIN\\SM_GRFH1_Skin.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Geometry/Meshes/1M_Cube",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Geometry\\Meshes\\1M_Cube.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Gym_Environment/Meshes/SK_Heavybag",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Gym_Environment\\Meshes\\SK_Heavybag.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Gym_Environment/Meshes/SM_Bench",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Gym_Environment\\Meshes\\SM_Bench.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Gym_Environment/Meshes/SM_FlatBench",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Gym_Environment\\Meshes\\SM_FlatBench.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Gym_Environment/Meshes/SM_Gate",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Gym_Environment\\Meshes\\SM_Gate.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Gym_Environment/Meshes/SM_Trampoline",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Gym_Environment\\Meshes\\SM_Trampoline.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/IndustryPropsPack5/Meshes/Can4",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\IndustryPropsPack5\\Meshes\\Can4.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/IndustryPropsPack5/Meshes/Switchboard4",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\IndustryPropsPack5\\Meshes\\Switchboard4.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/InfinityBladeEffects/Effects/FX/SM_FogPlane01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\InfinityBladeEffects\\Effects\\FX\\SM_FogPlane01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/InfinityBladeGrassLands/Effects/FX_Meshes/Env/SM_Plains_Fountain_02",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\InfinityBladeGrassLands\\Effects\\FX_Meshes\\Env\\SM_Plains_Fountain_02.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/InfinityBladeGrassLands/Environments/Plains/Env_Plains_Background/StaticMesh/SM_Env_Plains_Mountain_01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\InfinityBladeGrassLands\\Environments\\Plains\\Env_Plains_Background\\StaticMesh\\SM_Env_Plains_Mountain_01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_Road_01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_Road_01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_Road_02",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_Road_02.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_Road_03",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_Road_03.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_Road_04",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_Road_04.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_oil_refinery_01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_oil_refinery_01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_oil_refinery_02",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_oil_refinery_02.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_oil_refinery_03",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_oil_refinery_03.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_oil_refinery_04",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_oil_refinery_04.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_oil_refinery_06",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_oil_refinery_06.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_oil_refinery_07",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_oil_refinery_07.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_oil_refinery_08",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_oil_refinery_08.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_oil_refinery_09",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_oil_refinery_09.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_oil_refinery_10",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_oil_refinery_10.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_oil_refinery_11",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_oil_refinery_11.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_oil_refinery_12",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_oil_refinery_12.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/OilRefinery/Meshes/SM_oil_refinery_13",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\OilRefinery\\Meshes\\SM_oil_refinery_13.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/Skies/Meshes/SM_SkyDome",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\Skies\\Meshes\\SM_SkyDome.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/Fountain_mdl",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\Fountain_mdl.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/prp_ac_01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\prp_ac_01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/prp_ac_02",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\prp_ac_02.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/prp_barrier_Sml",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\prp_barrier_Sml.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/prp_bench",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\prp_bench.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/prp_cementBarrier",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\prp_cementBarrier.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/prp_chainlinkFence",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\prp_chainlinkFence.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/prp_chainlinkPost",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\prp_chainlinkPost.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/prp_chair",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\prp_chair.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/prp_electricalBox",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\prp_electricalBox.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/prp_fireHydrant_A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\prp_fireHydrant_A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/prp_fireHydrant_B",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\prp_fireHydrant_B.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/prp_garbageCan",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\prp_garbageCan.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/prp_table",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\prp_table.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/UrbanCity/Models/props/prp_tableUmbrella",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\UrbanCity\\Models\\props\\prp_tableUmbrella.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/WalkingStreet/Meshes/SM_AdvertisingLightBox01",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\WalkingStreet\\Meshes\\SM_AdvertisingLightBox01.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/WalkingStreet/Meshes/SM_TreePalm01_1A",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\WalkingStreet\\Meshes\\SM_TreePalm01_1A.gltf",
+    "cached": true
+  },
+  {
+    "package": "/Game/WaterPlane/Meshes/SM_OceanWater",
+    "raw": "E:\\undefeated-web\\research\\exports\\world-meshes\\WaterPlane\\Meshes\\SM_OceanWater.gltf",
+    "cached": true
+  }
+]

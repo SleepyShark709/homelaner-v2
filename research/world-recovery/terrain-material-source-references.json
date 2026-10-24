@@ -1,0 +1,56 @@
+[
+  {
+    "path": "research/world-recovery/terrain-UE-LandscapeVertexFactory-4.26.ush",
+    "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Shaders/Private/LandscapeVertexFactory.ush",
+    "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+    "sha256": "99a7f78613ac200d923dc66164327051de13e3ca106cf9869a5b13c85eeb79f8"
+  },
+  {
+    "path": "research/world-recovery/terrain-UE-LandscapeRender-4.26.cpp",
+    "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/Landscape/Private/LandscapeRender.cpp",
+    "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+    "sha256": "485dc968694ca318c35096784e6410957a042dc120e1f2427a75b38d743b65af"
+  },
+  {
+    "path": "research/world-recovery/terrain-UE-MaterialUniformExpressions-4.26.h",
+    "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/Engine/Private/Materials/MaterialUniformExpressions.h",
+    "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+    "sha256": "4a391d56da59bcfa466a35ede09aa7e2a2bcd5d15dda10d8c7f0dbc4239d56e6"
+  },
+  {
+    "path": "research/world-recovery/terrain-UE-MaterialUniformExpressions-4.26.cpp",
+    "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/Engine/Private/Materials/MaterialUniformExpressions.cpp",
+    "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+    "sha256": "cb5ed2ca1a3fe019dae3bad4d6e9f134c2a9091cda1b5bf60eff8eb12aaa9396"
+  },
+  {
+    "path": "research/world-recovery/terrain-UE-MaterialShared-4.26.h",
+    "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/Engine/Public/MaterialShared.h",
+    "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+    "sha256": "203796b50b2189fa04436b93f943160ada65edc0013392182bf57ac8b475d624"
+  },
+  {
+    "path": "research/world-recovery/terrain-UE-D3D11Shaders-4.26.cpp",
+    "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/Windows/D3D11RHI/Private/D3D11Shaders.cpp",
+    "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+    "sha256": "c54baccfd8a8ae99ec50d272401a84a8605b64b54212935e2c695c6805301901"
+  },
+  {
+    "path": "research/world-recovery/terrain-UE-RHIDefinitions-4.26.h",
+    "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/RHI/Public/RHIDefinitions.h",
+    "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+    "sha256": "6824998a41708ca4c6eb94008855a2d436419b3e7c75eefa68f85818b5f9d168"
+  },
+  {
+    "path": "research/world-recovery/terrain-UE-ShaderCore-4.26.h",
+    "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/RenderCore/Public/ShaderCore.h",
+    "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+    "sha256": "75699b5d761bb01f9dc9f398e41cc0017b23b68f653f733aece04cc0016a1126"
+  },
+  {
+    "path": "research/world-recovery/terrain-UE-D3D11ShaderResources-4.26.h",
+    "url": "https://api.github.com/repos/CFHH/UnrealEngine-4.26/contents/Engine/Source/Runtime/Windows/D3D11RHI/Public/D3D11ShaderResources.h",
+    "role": "Epic UE4.26 source code retained in public mirror; layout corroborated against original game bytes, not a claim that this mirror is exact game source",
+    "sha256": "87da418de7ea9a2b4cfc054c7b4013280c0f6f81ffe1a9d38df60c7795189a63"
+  }
+]

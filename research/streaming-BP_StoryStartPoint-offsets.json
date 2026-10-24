@@ -1,0 +1,1354 @@
+﻿[
+    {
+        "exportIndex":  0,
+        "computedSize":  4575,
+        "statements":  [
+                           {
+                               "offset":  0,
+                               "projection":  "{\r\n  \"Inst\": \"PushExecutionFlow\",\r\n  \"Offset\": 4572,\r\n  \"StatementIndex\": 0\r\n}",
+                               "endOffset":  5,
+                               "index":  0
+                           },
+                           {
+                               "offset":  5,
+                               "projection":  "{\r\n  \"Inst\": \"ComputedJump\",\r\n  \"OffsetExpression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Int\",\r\n      \"PinSubCategory\": \"Int\"\r\n    },\r\n    \"Variable Name\": \"EntryPoint\"\r\n  },\r\n  \"StatementIndex\": 5\r\n}",
+                               "endOffset":  15,
+                               "index":  1
+                           },
+                           {
+                               "offset":  15,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"IsSotryClear\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"True\"\r\n  },\r\n  \"StatementIndex\": 15\r\n}",
+                               "endOffset":  26,
+                               "index":  2
+                           },
+                           {
+                               "offset":  26,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 26\r\n}",
+                               "endOffset":  27,
+                               "index":  3
+                           },
+                           {
+                               "offset":  27,
+                               "projection":  "{\r\n  \"Inst\": \"LetObj\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.GameModeBase\"\r\n    },\r\n    \"Variable Name\": \"CallFunc_GetGameMode_ReturnValue\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"GetGameMode\",\r\n    \"ContextClass\": \"/Script/Engine.GameplayStatics\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"Self\"\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 27\r\n}",
+                               "endOffset":  48,
+                               "index":  4
+                           },
+                           {
+                               "offset":  48,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameMode.HeroGameMode_C\"\r\n    },\r\n    \"Variable Name\": \"K2Node_DynamicCast_AsHero_Game_Mode\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"DynamicCast\",\r\n    \"Class\": \"/Game/-HeroGame/BP/Game/HeroGameMode.HeroGameMode_C\",\r\n    \"Expression\": {\r\n      \"Inst\": \"LocalVariable\",\r\n      \"Variable Outer\": {\r\n        \"PinCategory\": \"Object\",\r\n        \"PinSubCategory\": \"Object\",\r\n        \"PinSubCategoryObject\": \"/Script/Engine.GameModeBase\"\r\n      },\r\n      \"Variable Name\": \"CallFunc_GetGameMode_ReturnValue\"\r\n    }\r\n  },\r\n  \"StatementIndex\": 48\r\n}",
+                               "endOffset":  84,
+                               "index":  5
+                           },
+                           {
+                               "offset":  84,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_DynamicCast_bSuccess\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"PrimitiveCast\",\r\n    \"CastType\": \"ObjectToBool\",\r\n    \"Expression\": {\r\n      \"Inst\": \"LocalVariable\",\r\n      \"Variable Outer\": {\r\n        \"PinCategory\": \"Object\",\r\n        \"PinSubCategory\": \"Object\",\r\n        \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameMode.HeroGameMode_C\"\r\n      },\r\n      \"Variable Name\": \"K2Node_DynamicCast_AsHero_Game_Mode\"\r\n    }\r\n  },\r\n  \"StatementIndex\": 84\r\n}",
+                               "endOffset":  113,
+                               "index":  6
+                           },
+                           {
+                               "offset":  113,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlowIfNot\",\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_DynamicCast_bSuccess\"\r\n  },\r\n  \"StatementIndex\": 113\r\n}",
+                               "endOffset":  123,
+                               "index":  7
+                           },
+                           {
+                               "offset":  123,
+                               "projection":  "{\r\n  \"Inst\": \"LetObj\",\r\n  \"Variable\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameMode.HeroGameMode_C\"\r\n    },\r\n    \"Variable Name\": \"HeroGameMode\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameMode.HeroGameMode_C\"\r\n    },\r\n    \"Variable Name\": \"K2Node_DynamicCast_AsHero_Game_Mode\"\r\n  },\r\n  \"StatementIndex\": 123\r\n}",
+                               "endOffset":  142,
+                               "index":  8
+                           },
+                           {
+                               "offset":  142,
+                               "projection":  "{\r\n  \"Inst\": \"LetObj\",\r\n  \"Variable\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Game/-WorkSpace/Hyodo/QuestBPs/HeroGameState.HeroGameState_C\"\r\n    },\r\n    \"Variable Name\": \"HeroGameState\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"Context\",\r\n    \"Context\": {\r\n      \"Inst\": \"LocalVariable\",\r\n      \"Variable Outer\": {\r\n        \"PinCategory\": \"Object\",\r\n        \"PinSubCategory\": \"Object\",\r\n        \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameMode.HeroGameMode_C\"\r\n      },\r\n      \"Variable Name\": \"K2Node_DynamicCast_AsHero_Game_Mode\"\r\n    },\r\n    \"SkipOffsetForNull\": 9,\r\n    \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n    \"RValuePropertyName\": \"HeroGameState\",\r\n    \"Expression\": {\r\n      \"Inst\": \"InstanceVariable\",\r\n      \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n      \"Variable Name\": \"HeroGameState\"\r\n    }\r\n  },\r\n  \"StatementIndex\": 142\r\n}",
+                               "endOffset":  183,
+                               "index":  9
+                           },
+                           {
+                               "offset":  183,
+                               "projection":  "{\r\n  \"Inst\": \"LetObj\",\r\n  \"Variable\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameInstance.HeroGameInstance_C\"\r\n    },\r\n    \"Variable Name\": \"HeroGameInstance\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"Context\",\r\n    \"Context\": {\r\n      \"Inst\": \"LocalVariable\",\r\n      \"Variable Outer\": {\r\n        \"PinCategory\": \"Object\",\r\n        \"PinSubCategory\": \"Object\",\r\n        \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameMode.HeroGameMode_C\"\r\n      },\r\n      \"Variable Name\": \"K2Node_DynamicCast_AsHero_Game_Mode\"\r\n    },\r\n    \"SkipOffsetForNull\": 9,\r\n    \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n    \"RValuePropertyName\": \"HeroGameInstance\",\r\n    \"Expression\": {\r\n      \"Inst\": \"InstanceVariable\",\r\n      \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n      \"Variable Name\": \"HeroGameInstance\"\r\n    }\r\n  },\r\n  \"StatementIndex\": 183\r\n}",
+                               "endOffset":  224,
+                               "index":  10
+                           },
+                           {
+                               "offset":  224,
+                               "projection":  "{\r\n  \"Inst\": \"LetObj\",\r\n  \"Variable\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/Player/PlayerBP.PlayerBP_C\"\r\n    },\r\n    \"Variable Name\": \"Player\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"Context\",\r\n    \"Context\": {\r\n      \"Inst\": \"LocalVariable\",\r\n      \"Variable Outer\": {\r\n        \"PinCategory\": \"Object\",\r\n        \"PinSubCategory\": \"Object\",\r\n        \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameMode.HeroGameMode_C\"\r\n      },\r\n      \"Variable Name\": \"K2Node_DynamicCast_AsHero_Game_Mode\"\r\n    },\r\n    \"SkipOffsetForNull\": 9,\r\n    \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n    \"RValuePropertyName\": \"PlayerRef\",\r\n    \"Expression\": {\r\n      \"Inst\": \"InstanceVariable\",\r\n      \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n      \"Variable Name\": \"PlayerRef\"\r\n    }\r\n  },\r\n  \"StatementIndex\": 224\r\n}",
+                               "endOffset":  265,
+                               "index":  11
+                           },
+                           {
+                               "offset":  265,
+                               "projection":  "{\r\n  \"Inst\": \"SetArray\",\r\n  \"LeftSideExpression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/BP_StoryManager.BP_StoryManager_C\",\r\n      \"ContainerType\": 1\r\n    },\r\n    \"Variable Name\": \"CallFunc_GetAllActorsOfClass_OutActors\"\r\n  },\r\n  \"Values\": [],\r\n  \"StatementIndex\": 265\r\n}",
+                               "endOffset":  276,
+                               "index":  12
+                           },
+                           {
+                               "offset":  276,
+                               "projection":  "{\r\n  \"Inst\": \"CallMath\",\r\n  \"Function\": \"GetAllActorsOfClass\",\r\n  \"ContextClass\": \"/Script/Engine.GameplayStatics\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"Self\"\r\n    },\r\n    {\r\n      \"Inst\": \"ObjectConst\",\r\n      \"Object\": \"/Game/-HeroGame/BP/Game/BP_StoryManager.BP_StoryManager_C\"\r\n    },\r\n    {\r\n      \"Inst\": \"LocalVariable\",\r\n      \"Variable Outer\": {\r\n        \"PinCategory\": \"Object\",\r\n        \"PinSubCategory\": \"Object\",\r\n        \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/BP_StoryManager.BP_StoryManager_C\",\r\n        \"ContainerType\": 1\r\n      },\r\n      \"Variable Name\": \"CallFunc_GetAllActorsOfClass_OutActors\"\r\n    }\r\n  ],\r\n  \"StatementIndex\": 276\r\n}",
+                               "endOffset":  305,
+                               "index":  13
+                           },
+                           {
+                               "offset":  305,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"ObjectConst\",\r\n    \"Object\": \"/Script/Engine.Default__KismetArrayLibrary\"\r\n  },\r\n  \"SkipOffsetForNull\": 33,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"FinalFunction\",\r\n    \"Function\": \"Array_Get\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"LocalVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Object\",\r\n          \"PinSubCategory\": \"Object\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/BP_StoryManager.BP_StoryManager_C\",\r\n          \"ContainerType\": 1\r\n        },\r\n        \"Variable Name\": \"CallFunc_GetAllActorsOfClass_OutActors\"\r\n      },\r\n      {\r\n        \"Inst\": \"IntConst\",\r\n        \"Value\": 0\r\n      },\r\n      {\r\n        \"Inst\": \"LocalVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Object\",\r\n          \"PinSubCategory\": \"Object\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/BP_StoryManager.BP_StoryManager_C\"\r\n        },\r\n        \"Variable Name\": \"CallFunc_Array_Get_Item\"\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 305\r\n}",
+                               "endOffset":  360,
+                               "index":  14
+                           },
+                           {
+                               "offset":  360,
+                               "projection":  "{\r\n  \"Inst\": \"LetObj\",\r\n  \"Variable\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/BP_StoryManager.BP_StoryManager_C\"\r\n    },\r\n    \"Variable Name\": \"StoryManager\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/BP_StoryManager.BP_StoryManager_C\"\r\n    },\r\n    \"Variable Name\": \"CallFunc_Array_Get_Item\"\r\n  },\r\n  \"StatementIndex\": 360\r\n}",
+                               "endOffset":  379,
+                               "index":  15
+                           },
+                           {
+                               "offset":  379,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.AudioComponent\"\r\n    },\r\n    \"Variable Name\": \"S_StoryStartPoint\"\r\n  },\r\n  \"SkipOffsetForNull\": 14,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"VirtualFunction\",\r\n    \"Function\": \"Stop\",\r\n    \"Parameters\": []\r\n  },\r\n  \"StatementIndex\": 379\r\n}",
+                               "endOffset":  415,
+                               "index":  16
+                           },
+                           {
+                               "offset":  415,
+                               "projection":  "{\r\n  \"Inst\": \"LetObj\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystem\"\r\n    },\r\n    \"Variable Name\": \"Temp_object_Variable\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"NoObject\"\r\n  },\r\n  \"StatementIndex\": 415\r\n}",
+                               "endOffset":  426,
+                               "index":  17
+                           },
+                           {
+                               "offset":  426,
+                               "projection":  "{\r\n  \"Inst\": \"LetObj\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystem\"\r\n    },\r\n    \"Variable Name\": \"Temp_object_Variable_1\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"NoObject\"\r\n  },\r\n  \"StatementIndex\": 426\r\n}",
+                               "endOffset":  437,
+                               "index":  18
+                           },
+                           {
+                               "offset":  437,
+                               "projection":  "{\r\n  \"Inst\": \"LetObj\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystem\"\r\n    },\r\n    \"Variable Name\": \"Temp_object_Variable_2\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"ObjectConst\",\r\n    \"Object\": \"/Game/-HeroGame/Effect/Boss/P_BossBattleArea_Lightning.P_BossBattleArea_Lightning\"\r\n  },\r\n  \"StatementIndex\": 437\r\n}",
+                               "endOffset":  456,
+                               "index":  19
+                           },
+                           {
+                               "offset":  456,
+                               "projection":  "{\r\n  \"Inst\": \"LetObj\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystem\"\r\n    },\r\n    \"Variable Name\": \"Temp_object_Variable_3\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"ObjectConst\",\r\n    \"Object\": \"/Game/-HeroGame/Effect/Boss/P_BossBattleArea_Fire.P_BossBattleArea_Fire\"\r\n  },\r\n  \"StatementIndex\": 456\r\n}",
+                               "endOffset":  475,
+                               "index":  20
+                           },
+                           {
+                               "offset":  475,
+                               "projection":  "{\r\n  \"Inst\": \"LetObj\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystem\"\r\n    },\r\n    \"Variable Name\": \"Temp_object_Variable_4\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"ObjectConst\",\r\n    \"Object\": \"/Game/-HeroGame/Effect/Boss/P_BossBattleArea_Wind.P_BossBattleArea_Wind\"\r\n  },\r\n  \"StatementIndex\": 475\r\n}",
+                               "endOffset":  494,
+                               "index":  21
+                           },
+                           {
+                               "offset":  494,
+                               "projection":  "{\r\n  \"Inst\": \"LetObj\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystem\"\r\n    },\r\n    \"Variable Name\": \"Temp_object_Variable_5\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"NoObject\"\r\n  },\r\n  \"StatementIndex\": 494\r\n}",
+                               "endOffset":  505,
+                               "index":  22
+                           },
+                           {
+                               "offset":  505,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Byte\",\r\n      \"PinSubCategory\": \"Byte\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n    },\r\n    \"Variable Name\": \"Temp_byte_Variable_4\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Byte\",\r\n      \"PinSubCategory\": \"Byte\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n    },\r\n    \"Variable Name\": \"StoryType\"\r\n  },\r\n  \"StatementIndex\": 505\r\n}",
+                               "endOffset":  532,
+                               "index":  23
+                           },
+                           {
+                               "offset":  532,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystemComponent\"\r\n    },\r\n    \"Variable Name\": \"P_StartBossBattle\"\r\n  },\r\n  \"SkipOffsetForNull\": 125,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"FinalFunction\",\r\n    \"Function\": \"SetTemplate\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"SwitchValue\",\r\n        \"Expression\": {\r\n          \"Inst\": \"LocalVariable\",\r\n          \"Variable Outer\": {\r\n            \"PinCategory\": \"Byte\",\r\n            \"PinSubCategory\": \"Byte\",\r\n            \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n          },\r\n          \"Variable Name\": \"Temp_byte_Variable_4\"\r\n        },\r\n        \"OffsetToSwitchEnd\": 678,\r\n        \"Cases\": [\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"ByteConst\",\r\n              \"Value\": 0\r\n            },\r\n            \"OffsetToNextCase\": 594,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Object\",\r\n                \"PinSubCategory\": \"Object\",\r\n                \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystem\"\r\n              },\r\n              \"Variable Name\": \"Temp_object_Variable_5\"\r\n            }\r\n          },\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"ByteConst\",\r\n              \"Value\": 1\r\n            },\r\n            \"OffsetToNextCase\": 609,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Object\",\r\n                \"PinSubCategory\": \"Object\",\r\n                \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystem\"\r\n              },\r\n              \"Variable Name\": \"Temp_object_Variable_4\"\r\n            }\r\n          },\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"ByteConst\",\r\n              \"Value\": 2\r\n            },\r\n            \"OffsetToNextCase\": 624,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Object\",\r\n                \"PinSubCategory\": \"Object\",\r\n                \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystem\"\r\n              },\r\n              \"Variable Name\": \"Temp_object_Variable_3\"\r\n            }\r\n          },\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"ByteConst\",\r\n              \"Value\": 3\r\n            },\r\n            \"OffsetToNextCase\": 639,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Object\",\r\n                \"PinSubCategory\": \"Object\",\r\n                \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystem\"\r\n              },\r\n              \"Variable Name\": \"Temp_object_Variable_2\"\r\n            }\r\n          },\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"ByteConst\",\r\n              \"Value\": 4\r\n            },\r\n            \"OffsetToNextCase\": 654,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Object\",\r\n                \"PinSubCategory\": \"Object\",\r\n                \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystem\"\r\n              },\r\n              \"Variable Name\": \"Temp_object_Variable_1\"\r\n            }\r\n          },\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"ByteConst\",\r\n              \"Value\": 5\r\n            },\r\n            \"OffsetToNextCase\": 669,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Object\",\r\n                \"PinSubCategory\": \"Object\",\r\n                \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystem\"\r\n              },\r\n              \"Variable Name\": \"Temp_object_Variable\"\r\n            }\r\n          }\r\n        ],\r\n        \"DefaultResult\": {\r\n          \"Inst\": \"LocalVariable\",\r\n          \"Variable Outer\": {\r\n            \"PinCategory\": \"Object\",\r\n            \"PinSubCategory\": \"Object\",\r\n            \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystem\"\r\n          },\r\n          \"Variable Name\": \"K2Node_Select_Default_5\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 532\r\n}",
+                               "endOffset":  679,
+                               "index":  24
+                           },
+                           {
+                               "offset":  679,
+                               "projection":  "{\r\n  \"Inst\": \"PushExecutionFlow\",\r\n  \"Offset\": 820,\r\n  \"StatementIndex\": 679\r\n}",
+                               "endOffset":  684,
+                               "index":  25
+                           },
+                           {
+                               "offset":  684,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_4\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 1\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 684\r\n}",
+                               "endOffset":  715,
+                               "index":  26
+                           },
+                           {
+                               "offset":  715,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1537,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_4\"\r\n  },\r\n  \"StatementIndex\": 715\r\n}",
+                               "endOffset":  729,
+                               "index":  27
+                           },
+                           {
+                               "offset":  729,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_4\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 2\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 729\r\n}",
+                               "endOffset":  760,
+                               "index":  28
+                           },
+                           {
+                               "offset":  760,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1612,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_4\"\r\n  },\r\n  \"StatementIndex\": 760\r\n}",
+                               "endOffset":  774,
+                               "index":  29
+                           },
+                           {
+                               "offset":  774,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_4\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 3\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 774\r\n}",
+                               "endOffset":  805,
+                               "index":  30
+                           },
+                           {
+                               "offset":  805,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1694,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_4\"\r\n  },\r\n  \"StatementIndex\": 805\r\n}",
+                               "endOffset":  819,
+                               "index":  31
+                           },
+                           {
+                               "offset":  819,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 819\r\n}",
+                               "endOffset":  820,
+                               "index":  32
+                           },
+                           {
+                               "offset":  820,
+                               "projection":  "{\r\n  \"Inst\": \"CallMath\",\r\n  \"Function\": \"Delay\",\r\n  \"ContextClass\": \"/Script/Engine.KismetSystemLibrary\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"Self\"\r\n    },\r\n    {\r\n      \"Inst\": \"FloatConst\",\r\n      \"Value\": 0.0\r\n    },\r\n    {\r\n      \"Inst\": \"StructConst\",\r\n      \"Struct\": \"/Script/Engine.LatentActionInfo\",\r\n      \"Properties\": {\r\n        \"Missing property name0\": [\r\n          {\r\n            \"Inst\": \"SkipOffsetConst\",\r\n            \"Value\": 875\r\n          }\r\n        ],\r\n        \"Missing property name1\": [\r\n          {\r\n            \"Inst\": \"IntConst\",\r\n            \"Value\": 765787396\r\n          }\r\n        ],\r\n        \"Missing property name2\": [\r\n          {\r\n            \"Inst\": \"NameConst\",\r\n            \"Value\": \"ExecuteUbergraph_BP_StoryStartPoint\"\r\n          }\r\n        ],\r\n        \"Missing property name3\": [\r\n          {\r\n            \"Inst\": \"Self\"\r\n          }\r\n        ]\r\n      }\r\n    }\r\n  ],\r\n  \"StatementIndex\": 820\r\n}",
+                               "endOffset":  874,
+                               "index":  33
+                           },
+                           {
+                               "offset":  874,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 874\r\n}",
+                               "endOffset":  875,
+                               "index":  34
+                           },
+                           {
+                               "offset":  875,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.SphereComponent\"\r\n    },\r\n    \"Variable Name\": \"Sphere\"\r\n  },\r\n  \"SkipOffsetForNull\": 11,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"FinalFunction\",\r\n    \"Function\": \"SetGenerateOverlapEvents\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"False\"\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 875\r\n}",
+                               "endOffset":  908,
+                               "index":  35
+                           },
+                           {
+                               "offset":  908,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"CallFunc_EqualEqual_IntInt_ReturnValue\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"EqualEqual_IntInt\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"Context\",\r\n        \"Context\": {\r\n          \"Inst\": \"Context\",\r\n          \"Context\": {\r\n            \"Inst\": \"InstanceVariable\",\r\n            \"Variable Outer\": {\r\n              \"PinCategory\": \"Object\",\r\n              \"PinSubCategory\": \"Object\",\r\n              \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameInstance.HeroGameInstance_C\"\r\n            },\r\n            \"Variable Name\": \"HeroGameInstance\"\r\n          },\r\n          \"SkipOffsetForNull\": 9,\r\n          \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n          \"RValuePropertyName\": \"SaveData\",\r\n          \"Expression\": {\r\n            \"Inst\": \"InstanceVariable\",\r\n            \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n            \"Variable Name\": \"SaveData\"\r\n          }\r\n        },\r\n        \"SkipOffsetForNull\": 9,\r\n        \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n        \"RValuePropertyName\": \"Story\",\r\n        \"Expression\": {\r\n          \"Inst\": \"InstanceVariable\",\r\n          \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n          \"Variable Name\": \"Story\"\r\n        }\r\n      },\r\n      {\r\n        \"Inst\": \"IntConst\",\r\n        \"Value\": -1\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 908\r\n}",
+                               "endOffset":  986,
+                               "index":  36
+                           },
+                           {
+                               "offset":  986,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1016,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"CallFunc_EqualEqual_IntInt_ReturnValue\"\r\n  },\r\n  \"StatementIndex\": 986\r\n}",
+                               "endOffset":  1000,
+                               "index":  37
+                           },
+                           {
+                               "offset":  1000,
+                               "projection":  "{\r\n  \"Inst\": \"LocalVirtualFunction\",\r\n  \"FunctionName\": \"SetActiveStory\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"False\"\r\n    }\r\n  ],\r\n  \"StatementIndex\": 1000\r\n}",
+                               "endOffset":  1015,
+                               "index":  38
+                           },
+                           {
+                               "offset":  1015,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 1015\r\n}",
+                               "endOffset":  1016,
+                               "index":  39
+                           },
+                           {
+                               "offset":  1016,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchInteger_CmpSuccess\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_IntInt\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"Context\",\r\n        \"Context\": {\r\n          \"Inst\": \"Context\",\r\n          \"Context\": {\r\n            \"Inst\": \"InstanceVariable\",\r\n            \"Variable Outer\": {\r\n              \"PinCategory\": \"Object\",\r\n              \"PinSubCategory\": \"Object\",\r\n              \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameInstance.HeroGameInstance_C\"\r\n            },\r\n            \"Variable Name\": \"HeroGameInstance\"\r\n          },\r\n          \"SkipOffsetForNull\": 9,\r\n          \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n          \"RValuePropertyName\": \"SaveData\",\r\n          \"Expression\": {\r\n            \"Inst\": \"InstanceVariable\",\r\n            \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n            \"Variable Name\": \"SaveData\"\r\n          }\r\n        },\r\n        \"SkipOffsetForNull\": 9,\r\n        \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n        \"RValuePropertyName\": \"Story\",\r\n        \"Expression\": {\r\n          \"Inst\": \"InstanceVariable\",\r\n          \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n          \"Variable Name\": \"Story\"\r\n        }\r\n      },\r\n      {\r\n        \"Inst\": \"IntConst\",\r\n        \"Value\": 0\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 1016\r\n}",
+                               "endOffset":  1094,
+                               "index":  40
+                           },
+                           {
+                               "offset":  1094,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1385,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchInteger_CmpSuccess\"\r\n  },\r\n  \"StatementIndex\": 1094\r\n}",
+                               "endOffset":  1108,
+                               "index":  41
+                           },
+                           {
+                               "offset":  1108,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchInteger_CmpSuccess\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_IntInt\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"Context\",\r\n        \"Context\": {\r\n          \"Inst\": \"Context\",\r\n          \"Context\": {\r\n            \"Inst\": \"InstanceVariable\",\r\n            \"Variable Outer\": {\r\n              \"PinCategory\": \"Object\",\r\n              \"PinSubCategory\": \"Object\",\r\n              \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameInstance.HeroGameInstance_C\"\r\n            },\r\n            \"Variable Name\": \"HeroGameInstance\"\r\n          },\r\n          \"SkipOffsetForNull\": 9,\r\n          \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n          \"RValuePropertyName\": \"SaveData\",\r\n          \"Expression\": {\r\n            \"Inst\": \"InstanceVariable\",\r\n            \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n            \"Variable Name\": \"SaveData\"\r\n          }\r\n        },\r\n        \"SkipOffsetForNull\": 9,\r\n        \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n        \"RValuePropertyName\": \"Story\",\r\n        \"Expression\": {\r\n          \"Inst\": \"InstanceVariable\",\r\n          \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n          \"Variable Name\": \"Story\"\r\n        }\r\n      },\r\n      {\r\n        \"Inst\": \"IntConst\",\r\n        \"Value\": 1\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 1108\r\n}",
+                               "endOffset":  1186,
+                               "index":  42
+                           },
+                           {
+                               "offset":  1186,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1776,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchInteger_CmpSuccess\"\r\n  },\r\n  \"StatementIndex\": 1186\r\n}",
+                               "endOffset":  1200,
+                               "index":  43
+                           },
+                           {
+                               "offset":  1200,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchInteger_CmpSuccess\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_IntInt\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"Context\",\r\n        \"Context\": {\r\n          \"Inst\": \"Context\",\r\n          \"Context\": {\r\n            \"Inst\": \"InstanceVariable\",\r\n            \"Variable Outer\": {\r\n              \"PinCategory\": \"Object\",\r\n              \"PinSubCategory\": \"Object\",\r\n              \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameInstance.HeroGameInstance_C\"\r\n            },\r\n            \"Variable Name\": \"HeroGameInstance\"\r\n          },\r\n          \"SkipOffsetForNull\": 9,\r\n          \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n          \"RValuePropertyName\": \"SaveData\",\r\n          \"Expression\": {\r\n            \"Inst\": \"InstanceVariable\",\r\n            \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n            \"Variable Name\": \"SaveData\"\r\n          }\r\n        },\r\n        \"SkipOffsetForNull\": 9,\r\n        \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n        \"RValuePropertyName\": \"Story\",\r\n        \"Expression\": {\r\n          \"Inst\": \"InstanceVariable\",\r\n          \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n          \"Variable Name\": \"Story\"\r\n        }\r\n      },\r\n      {\r\n        \"Inst\": \"IntConst\",\r\n        \"Value\": 2\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 1200\r\n}",
+                               "endOffset":  1278,
+                               "index":  44
+                           },
+                           {
+                               "offset":  1278,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1912,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchInteger_CmpSuccess\"\r\n  },\r\n  \"StatementIndex\": 1278\r\n}",
+                               "endOffset":  1292,
+                               "index":  45
+                           },
+                           {
+                               "offset":  1292,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchInteger_CmpSuccess\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_IntInt\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"Context\",\r\n        \"Context\": {\r\n          \"Inst\": \"Context\",\r\n          \"Context\": {\r\n            \"Inst\": \"InstanceVariable\",\r\n            \"Variable Outer\": {\r\n              \"PinCategory\": \"Object\",\r\n              \"PinSubCategory\": \"Object\",\r\n              \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameInstance.HeroGameInstance_C\"\r\n            },\r\n            \"Variable Name\": \"HeroGameInstance\"\r\n          },\r\n          \"SkipOffsetForNull\": 9,\r\n          \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n          \"RValuePropertyName\": \"SaveData\",\r\n          \"Expression\": {\r\n            \"Inst\": \"InstanceVariable\",\r\n            \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n            \"Variable Name\": \"SaveData\"\r\n          }\r\n        },\r\n        \"SkipOffsetForNull\": 9,\r\n        \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n        \"RValuePropertyName\": \"Story\",\r\n        \"Expression\": {\r\n          \"Inst\": \"InstanceVariable\",\r\n          \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n          \"Variable Name\": \"Story\"\r\n        }\r\n      },\r\n      {\r\n        \"Inst\": \"IntConst\",\r\n        \"Value\": 3\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 1292\r\n}",
+                               "endOffset":  1370,
+                               "index":  46
+                           },
+                           {
+                               "offset":  1370,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 2048,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchInteger_CmpSuccess\"\r\n  },\r\n  \"StatementIndex\": 1370\r\n}",
+                               "endOffset":  1384,
+                               "index":  47
+                           },
+                           {
+                               "offset":  1384,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 1384\r\n}",
+                               "endOffset":  1385,
+                               "index":  48
+                           },
+                           {
+                               "offset":  1385,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 1\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 1385\r\n}",
+                               "endOffset":  1416,
+                               "index":  49
+                           },
+                           {
+                               "offset":  1416,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1521,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess\"\r\n  },\r\n  \"StatementIndex\": 1416\r\n}",
+                               "endOffset":  1430,
+                               "index":  50
+                           },
+                           {
+                               "offset":  1430,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 2\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 1430\r\n}",
+                               "endOffset":  1461,
+                               "index":  51
+                           },
+                           {
+                               "offset":  1461,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 2184,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess\"\r\n  },\r\n  \"StatementIndex\": 1461\r\n}",
+                               "endOffset":  1475,
+                               "index":  52
+                           },
+                           {
+                               "offset":  1475,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 3\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 1475\r\n}",
+                               "endOffset":  1506,
+                               "index":  53
+                           },
+                           {
+                               "offset":  1506,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 2184,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess\"\r\n  },\r\n  \"StatementIndex\": 1506\r\n}",
+                               "endOffset":  1520,
+                               "index":  54
+                           },
+                           {
+                               "offset":  1520,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 1520\r\n}",
+                               "endOffset":  1521,
+                               "index":  55
+                           },
+                           {
+                               "offset":  1521,
+                               "projection":  "{\r\n  \"Inst\": \"LocalVirtualFunction\",\r\n  \"FunctionName\": \"SetActiveStory\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"True\"\r\n    }\r\n  ],\r\n  \"StatementIndex\": 1521\r\n}",
+                               "endOffset":  1536,
+                               "index":  56
+                           },
+                           {
+                               "offset":  1536,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 1536\r\n}",
+                               "endOffset":  1537,
+                               "index":  57
+                           },
+                           {
+                               "offset":  1537,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1600,\r\n  \"Condition\": {\r\n    \"Inst\": \"Context\",\r\n    \"Context\": {\r\n      \"Inst\": \"Context\",\r\n      \"Context\": {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Object\",\r\n          \"PinSubCategory\": \"Object\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameInstance.HeroGameInstance_C\"\r\n        },\r\n        \"Variable Name\": \"HeroGameInstance\"\r\n      },\r\n      \"SkipOffsetForNull\": 9,\r\n      \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n      \"RValuePropertyName\": \"SaveData\",\r\n      \"Expression\": {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n        \"Variable Name\": \"SaveData\"\r\n      }\r\n    },\r\n    \"SkipOffsetForNull\": 9,\r\n    \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n    \"RValuePropertyName\": \"IsFirstClearStory1\",\r\n    \"Expression\": {\r\n      \"Inst\": \"InstanceVariable\",\r\n      \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n      \"Variable Name\": \"IsFirstClearStory1\"\r\n    }\r\n  },\r\n  \"StatementIndex\": 1537\r\n}",
+                               "endOffset":  1595,
+                               "index":  58
+                           },
+                           {
+                               "offset":  1595,
+                               "projection":  "{\r\n  \"Inst\": \"Jump\",\r\n  \"Offset\": 15,\r\n  \"StatementIndex\": 1595\r\n}",
+                               "endOffset":  1600,
+                               "index":  59
+                           },
+                           {
+                               "offset":  1600,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"IsSotryClear\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"False\"\r\n  },\r\n  \"StatementIndex\": 1600\r\n}",
+                               "endOffset":  1611,
+                               "index":  60
+                           },
+                           {
+                               "offset":  1611,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 1611\r\n}",
+                               "endOffset":  1612,
+                               "index":  61
+                           },
+                           {
+                               "offset":  1612,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1682,\r\n  \"Condition\": {\r\n    \"Inst\": \"Context\",\r\n    \"Context\": {\r\n      \"Inst\": \"Context\",\r\n      \"Context\": {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Object\",\r\n          \"PinSubCategory\": \"Object\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameInstance.HeroGameInstance_C\"\r\n        },\r\n        \"Variable Name\": \"HeroGameInstance\"\r\n      },\r\n      \"SkipOffsetForNull\": 9,\r\n      \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n      \"RValuePropertyName\": \"SaveData\",\r\n      \"Expression\": {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n        \"Variable Name\": \"SaveData\"\r\n      }\r\n    },\r\n    \"SkipOffsetForNull\": 9,\r\n    \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n    \"RValuePropertyName\": \"IsFirstClearStory2\",\r\n    \"Expression\": {\r\n      \"Inst\": \"InstanceVariable\",\r\n      \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n      \"Variable Name\": \"IsFirstClearStory2\"\r\n    }\r\n  },\r\n  \"StatementIndex\": 1612\r\n}",
+                               "endOffset":  1670,
+                               "index":  62
+                           },
+                           {
+                               "offset":  1670,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"IsSotryClear\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"True\"\r\n  },\r\n  \"StatementIndex\": 1670\r\n}",
+                               "endOffset":  1681,
+                               "index":  63
+                           },
+                           {
+                               "offset":  1681,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 1681\r\n}",
+                               "endOffset":  1682,
+                               "index":  64
+                           },
+                           {
+                               "offset":  1682,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"IsSotryClear\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"False\"\r\n  },\r\n  \"StatementIndex\": 1682\r\n}",
+                               "endOffset":  1693,
+                               "index":  65
+                           },
+                           {
+                               "offset":  1693,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 1693\r\n}",
+                               "endOffset":  1694,
+                               "index":  66
+                           },
+                           {
+                               "offset":  1694,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1764,\r\n  \"Condition\": {\r\n    \"Inst\": \"Context\",\r\n    \"Context\": {\r\n      \"Inst\": \"Context\",\r\n      \"Context\": {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Object\",\r\n          \"PinSubCategory\": \"Object\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameInstance.HeroGameInstance_C\"\r\n        },\r\n        \"Variable Name\": \"HeroGameInstance\"\r\n      },\r\n      \"SkipOffsetForNull\": 9,\r\n      \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n      \"RValuePropertyName\": \"SaveData\",\r\n      \"Expression\": {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n        \"Variable Name\": \"SaveData\"\r\n      }\r\n    },\r\n    \"SkipOffsetForNull\": 9,\r\n    \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n    \"RValuePropertyName\": \"IsFirstClearStory3\",\r\n    \"Expression\": {\r\n      \"Inst\": \"InstanceVariable\",\r\n      \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n      \"Variable Name\": \"IsFirstClearStory3\"\r\n    }\r\n  },\r\n  \"StatementIndex\": 1694\r\n}",
+                               "endOffset":  1752,
+                               "index":  67
+                           },
+                           {
+                               "offset":  1752,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"IsSotryClear\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"True\"\r\n  },\r\n  \"StatementIndex\": 1752\r\n}",
+                               "endOffset":  1763,
+                               "index":  68
+                           },
+                           {
+                               "offset":  1763,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 1763\r\n}",
+                               "endOffset":  1764,
+                               "index":  69
+                           },
+                           {
+                               "offset":  1764,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"IsSotryClear\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"False\"\r\n  },\r\n  \"StatementIndex\": 1764\r\n}",
+                               "endOffset":  1775,
+                               "index":  70
+                           },
+                           {
+                               "offset":  1775,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 1775\r\n}",
+                               "endOffset":  1776,
+                               "index":  71
+                           },
+                           {
+                               "offset":  1776,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_3\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 1\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 1776\r\n}",
+                               "endOffset":  1807,
+                               "index":  72
+                           },
+                           {
+                               "offset":  1807,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1521,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_3\"\r\n  },\r\n  \"StatementIndex\": 1807\r\n}",
+                               "endOffset":  1821,
+                               "index":  73
+                           },
+                           {
+                               "offset":  1821,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_3\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 2\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 1821\r\n}",
+                               "endOffset":  1852,
+                               "index":  74
+                           },
+                           {
+                               "offset":  1852,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1521,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_3\"\r\n  },\r\n  \"StatementIndex\": 1852\r\n}",
+                               "endOffset":  1866,
+                               "index":  75
+                           },
+                           {
+                               "offset":  1866,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_3\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 3\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 1866\r\n}",
+                               "endOffset":  1897,
+                               "index":  76
+                           },
+                           {
+                               "offset":  1897,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 2184,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_3\"\r\n  },\r\n  \"StatementIndex\": 1897\r\n}",
+                               "endOffset":  1911,
+                               "index":  77
+                           },
+                           {
+                               "offset":  1911,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 1911\r\n}",
+                               "endOffset":  1912,
+                               "index":  78
+                           },
+                           {
+                               "offset":  1912,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_2\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 1\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 1912\r\n}",
+                               "endOffset":  1943,
+                               "index":  79
+                           },
+                           {
+                               "offset":  1943,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1521,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_2\"\r\n  },\r\n  \"StatementIndex\": 1943\r\n}",
+                               "endOffset":  1957,
+                               "index":  80
+                           },
+                           {
+                               "offset":  1957,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_2\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 2\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 1957\r\n}",
+                               "endOffset":  1988,
+                               "index":  81
+                           },
+                           {
+                               "offset":  1988,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1521,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_2\"\r\n  },\r\n  \"StatementIndex\": 1988\r\n}",
+                               "endOffset":  2002,
+                               "index":  82
+                           },
+                           {
+                               "offset":  2002,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_2\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 3\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 2002\r\n}",
+                               "endOffset":  2033,
+                               "index":  83
+                           },
+                           {
+                               "offset":  2033,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1521,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_2\"\r\n  },\r\n  \"StatementIndex\": 2033\r\n}",
+                               "endOffset":  2047,
+                               "index":  84
+                           },
+                           {
+                               "offset":  2047,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 2047\r\n}",
+                               "endOffset":  2048,
+                               "index":  85
+                           },
+                           {
+                               "offset":  2048,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_1\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 1\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 2048\r\n}",
+                               "endOffset":  2079,
+                               "index":  86
+                           },
+                           {
+                               "offset":  2079,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1521,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_1\"\r\n  },\r\n  \"StatementIndex\": 2079\r\n}",
+                               "endOffset":  2093,
+                               "index":  87
+                           },
+                           {
+                               "offset":  2093,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_1\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 2\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 2093\r\n}",
+                               "endOffset":  2124,
+                               "index":  88
+                           },
+                           {
+                               "offset":  2124,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1521,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_1\"\r\n  },\r\n  \"StatementIndex\": 2124\r\n}",
+                               "endOffset":  2138,
+                               "index":  89
+                           },
+                           {
+                               "offset":  2138,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_1\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"NotEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 3\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 2138\r\n}",
+                               "endOffset":  2169,
+                               "index":  90
+                           },
+                           {
+                               "offset":  2169,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 1521,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_SwitchEnum_CmpSuccess_1\"\r\n  },\r\n  \"StatementIndex\": 2169\r\n}",
+                               "endOffset":  2183,
+                               "index":  91
+                           },
+                           {
+                               "offset":  2183,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 2183\r\n}",
+                               "endOffset":  2184,
+                               "index":  92
+                           },
+                           {
+                               "offset":  2184,
+                               "projection":  "{\r\n  \"Inst\": \"LocalVirtualFunction\",\r\n  \"FunctionName\": \"SetActiveStory\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"False\"\r\n    }\r\n  ],\r\n  \"StatementIndex\": 2184\r\n}",
+                               "endOffset":  2199,
+                               "index":  93
+                           },
+                           {
+                               "offset":  2199,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 2199\r\n}",
+                               "endOffset":  2200,
+                               "index":  94
+                           },
+                           {
+                               "offset":  2200,
+                               "projection":  "{\r\n  \"Inst\": \"Jump\",\r\n  \"Offset\": 875,\r\n  \"StatementIndex\": 2200\r\n}",
+                               "endOffset":  2205,
+                               "index":  95
+                           },
+                           {
+                               "offset":  2205,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"CallFunc_ActorHasTag_ReturnValue\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"Context\",\r\n    \"Context\": {\r\n      \"Inst\": \"LocalVariable\",\r\n      \"Variable Outer\": {\r\n        \"PinCategory\": \"Object\",\r\n        \"PinSubCategory\": \"Object\",\r\n        \"PinSubCategoryObject\": \"/Script/Engine.Actor\"\r\n      },\r\n      \"Variable Name\": \"K2Node_ComponentBoundEvent_OtherActor_1\"\r\n    },\r\n    \"SkipOffsetForNull\": 23,\r\n    \"RValuePropertyOuter\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"RValuePropertyName\": \"CallFunc_ActorHasTag_ReturnValue\",\r\n    \"Expression\": {\r\n      \"Inst\": \"FinalFunction\",\r\n      \"Function\": \"ActorHasTag\",\r\n      \"Parameters\": [\r\n        {\r\n          \"Inst\": \"NameConst\",\r\n          \"Value\": \"Player\"\r\n        }\r\n      ]\r\n    }\r\n  },\r\n  \"StatementIndex\": 2205\r\n}",
+                               "endOffset":  2260,
+                               "index":  96
+                           },
+                           {
+                               "offset":  2260,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlowIfNot\",\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"CallFunc_ActorHasTag_ReturnValue\"\r\n  },\r\n  \"StatementIndex\": 2260\r\n}",
+                               "endOffset":  2270,
+                               "index":  97
+                           },
+                           {
+                               "offset":  2270,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"CallFunc_EqualEqual_ByteByte_ReturnValue\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"CallMath\",\r\n    \"Function\": \"EqualEqual_ByteByte\",\r\n    \"ContextClass\": \"/Script/Engine.KismetMathLibrary\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"Context\",\r\n        \"Context\": {\r\n          \"Inst\": \"InstanceVariable\",\r\n          \"Variable Outer\": {\r\n            \"PinCategory\": \"Object\",\r\n            \"PinSubCategory\": \"Object\",\r\n            \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameMode.HeroGameMode_C\"\r\n          },\r\n          \"Variable Name\": \"HeroGameMode\"\r\n        },\r\n        \"SkipOffsetForNull\": 9,\r\n        \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n        \"RValuePropertyName\": \"GameInputState\",\r\n        \"Expression\": {\r\n          \"Inst\": \"InstanceVariable\",\r\n          \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n          \"Variable Name\": \"GameInputState\"\r\n        }\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 4\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 2270\r\n}",
+                               "endOffset":  2323,
+                               "index":  98
+                           },
+                           {
+                               "offset":  2323,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlowIfNot\",\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"CallFunc_EqualEqual_ByteByte_ReturnValue\"\r\n  },\r\n  \"StatementIndex\": 2323\r\n}",
+                               "endOffset":  2333,
+                               "index":  99
+                           },
+                           {
+                               "offset":  2333,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Byte\",\r\n      \"PinSubCategory\": \"Byte\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n    },\r\n    \"Variable Name\": \"Temp_byte_Variable_5\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"ByteConst\",\r\n    \"Value\": 2\r\n  },\r\n  \"StatementIndex\": 2333\r\n}",
+                               "endOffset":  2353,
+                               "index":  100
+                           },
+                           {
+                               "offset":  2353,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Byte\",\r\n      \"PinSubCategory\": \"Byte\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n    },\r\n    \"Variable Name\": \"Temp_byte_Variable_6\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"ByteConst\",\r\n    \"Value\": 1\r\n  },\r\n  \"StatementIndex\": 2353\r\n}",
+                               "endOffset":  2373,
+                               "index":  101
+                           },
+                           {
+                               "offset":  2373,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"Temp_bool_Variable_3\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"IsSotryClear\"\r\n  },\r\n  \"StatementIndex\": 2373\r\n}",
+                               "endOffset":  2392,
+                               "index":  102
+                           },
+                           {
+                               "offset":  2392,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/Player/PlayerBP.PlayerBP_C\"\r\n    },\r\n    \"Variable Name\": \"Player\"\r\n  },\r\n  \"SkipOffsetForNull\": 76,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVirtualFunction\",\r\n    \"FunctionName\": \"SetStartMassageTypeAndStoryType\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"SwitchValue\",\r\n        \"Expression\": {\r\n          \"Inst\": \"LocalVariable\",\r\n          \"Variable Outer\": {\r\n            \"PinCategory\": \"Bool\",\r\n            \"PinSubCategory\": \"Bool\"\r\n          },\r\n          \"Variable Name\": \"Temp_bool_Variable_3\"\r\n        },\r\n        \"OffsetToSwitchEnd\": 2480,\r\n        \"Cases\": [\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"False\"\r\n            },\r\n            \"OffsetToNextCase\": 2457,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Byte\",\r\n                \"PinSubCategory\": \"Byte\",\r\n                \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n              },\r\n              \"Variable Name\": \"Temp_byte_Variable_6\"\r\n            }\r\n          },\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"True\"\r\n            },\r\n            \"OffsetToNextCase\": 2471,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Byte\",\r\n                \"PinSubCategory\": \"Byte\",\r\n                \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n              },\r\n              \"Variable Name\": \"Temp_byte_Variable_5\"\r\n            }\r\n          }\r\n        ],\r\n        \"DefaultResult\": {\r\n          \"Inst\": \"LocalVariable\",\r\n          \"Variable Outer\": {\r\n            \"PinCategory\": \"Byte\",\r\n            \"PinSubCategory\": \"Byte\",\r\n            \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n          },\r\n          \"Variable Name\": \"K2Node_Select_Default_6\"\r\n        }\r\n      },\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Byte\",\r\n          \"PinSubCategory\": \"Byte\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n        },\r\n        \"Variable Name\": \"StoryType\"\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 2392\r\n}",
+                               "endOffset":  2490,
+                               "index":  103
+                           },
+                           {
+                               "offset":  2490,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Byte\",\r\n      \"PinSubCategory\": \"Byte\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n    },\r\n    \"Variable Name\": \"Temp_byte_Variable_5\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"ByteConst\",\r\n    \"Value\": 2\r\n  },\r\n  \"StatementIndex\": 2490\r\n}",
+                               "endOffset":  2510,
+                               "index":  104
+                           },
+                           {
+                               "offset":  2510,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Byte\",\r\n      \"PinSubCategory\": \"Byte\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n    },\r\n    \"Variable Name\": \"Temp_byte_Variable_6\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"ByteConst\",\r\n    \"Value\": 1\r\n  },\r\n  \"StatementIndex\": 2510\r\n}",
+                               "endOffset":  2530,
+                               "index":  105
+                           },
+                           {
+                               "offset":  2530,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"Temp_bool_Variable_3\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"IsSotryClear\"\r\n  },\r\n  \"StatementIndex\": 2530\r\n}",
+                               "endOffset":  2549,
+                               "index":  106
+                           },
+                           {
+                               "offset":  2549,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Text\",\r\n      \"PinSubCategory\": \"Text\"\r\n    },\r\n    \"Variable Name\": \"CallFunc_GetStartMassageText_ReturnValue\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"Context\",\r\n    \"Context\": {\r\n      \"Inst\": \"ObjectConst\",\r\n      \"Object\": \"/Game/-HeroGame/Localize/BPFL_Localize.Default__BPFL_Localize_C\"\r\n    },\r\n    \"SkipOffsetForNull\": 68,\r\n    \"RValuePropertyOuter\": {\r\n      \"PinCategory\": \"Text\",\r\n      \"PinSubCategory\": \"Text\"\r\n    },\r\n    \"RValuePropertyName\": \"CallFunc_GetStartMassageText_ReturnValue\",\r\n    \"Expression\": {\r\n      \"Inst\": \"LocalVirtualFunction\",\r\n      \"FunctionName\": \"GetStartMassageText\",\r\n      \"Parameters\": [\r\n        {\r\n          \"Inst\": \"SwitchValue\",\r\n          \"Expression\": {\r\n            \"Inst\": \"LocalVariable\",\r\n            \"Variable Outer\": {\r\n              \"PinCategory\": \"Bool\",\r\n              \"PinSubCategory\": \"Bool\"\r\n            },\r\n            \"Variable Name\": \"Temp_bool_Variable_3\"\r\n          },\r\n          \"OffsetToSwitchEnd\": 2655,\r\n          \"Cases\": [\r\n            {\r\n              \"CaseValue\": {\r\n                \"Inst\": \"False\"\r\n              },\r\n              \"OffsetToNextCase\": 2632,\r\n              \"CaseResult\": {\r\n                \"Inst\": \"LocalVariable\",\r\n                \"Variable Outer\": {\r\n                  \"PinCategory\": \"Byte\",\r\n                  \"PinSubCategory\": \"Byte\",\r\n                  \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n                },\r\n                \"Variable Name\": \"Temp_byte_Variable_6\"\r\n              }\r\n            },\r\n            {\r\n              \"CaseValue\": {\r\n                \"Inst\": \"True\"\r\n              },\r\n              \"OffsetToNextCase\": 2646,\r\n              \"CaseResult\": {\r\n                \"Inst\": \"LocalVariable\",\r\n                \"Variable Outer\": {\r\n                  \"PinCategory\": \"Byte\",\r\n                  \"PinSubCategory\": \"Byte\",\r\n                  \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n                },\r\n                \"Variable Name\": \"Temp_byte_Variable_5\"\r\n              }\r\n            }\r\n          ],\r\n          \"DefaultResult\": {\r\n            \"Inst\": \"LocalVariable\",\r\n            \"Variable Outer\": {\r\n              \"PinCategory\": \"Byte\",\r\n              \"PinSubCategory\": \"Byte\",\r\n              \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n            },\r\n            \"Variable Name\": \"K2Node_Select_Default_6\"\r\n          }\r\n        },\r\n        {\r\n          \"Inst\": \"Self\"\r\n        }\r\n      ]\r\n    }\r\n  },\r\n  \"StatementIndex\": 2549\r\n}",
+                               "endOffset":  2657,
+                               "index":  107
+                           },
+                           {
+                               "offset":  2657,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"Context\",\r\n    \"Context\": {\r\n      \"Inst\": \"InstanceVariable\",\r\n      \"Variable Outer\": {\r\n        \"PinCategory\": \"Object\",\r\n        \"PinSubCategory\": \"Object\",\r\n        \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameMode.HeroGameMode_C\"\r\n      },\r\n      \"Variable Name\": \"HeroGameMode\"\r\n    },\r\n    \"SkipOffsetForNull\": 9,\r\n    \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n    \"RValuePropertyName\": \"WBP_CQTest\",\r\n    \"Expression\": {\r\n      \"Inst\": \"InstanceVariable\",\r\n      \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n      \"Variable Name\": \"WBP_CQTest\"\r\n    }\r\n  },\r\n  \"SkipOffsetForNull\": 77,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVirtualFunction\",\r\n    \"FunctionName\": \"SetVisibilityCQPanel\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"True\"\r\n      },\r\n      {\r\n        \"Inst\": \"LocalVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Text\",\r\n          \"PinSubCategory\": \"Text\"\r\n        },\r\n        \"Variable Name\": \"CallFunc_GetStartMassageText_ReturnValue\"\r\n      },\r\n      {\r\n        \"Inst\": \"SwitchValue\",\r\n        \"Expression\": {\r\n          \"Inst\": \"LocalVariable\",\r\n          \"Variable Outer\": {\r\n            \"PinCategory\": \"Bool\",\r\n            \"PinSubCategory\": \"Bool\"\r\n          },\r\n          \"Variable Name\": \"Temp_bool_Variable_3\"\r\n        },\r\n        \"OffsetToSwitchEnd\": 2777,\r\n        \"Cases\": [\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"False\"\r\n            },\r\n            \"OffsetToNextCase\": 2754,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Byte\",\r\n                \"PinSubCategory\": \"Byte\",\r\n                \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n              },\r\n              \"Variable Name\": \"Temp_byte_Variable_6\"\r\n            }\r\n          },\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"True\"\r\n            },\r\n            \"OffsetToNextCase\": 2768,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Byte\",\r\n                \"PinSubCategory\": \"Byte\",\r\n                \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n              },\r\n              \"Variable Name\": \"Temp_byte_Variable_5\"\r\n            }\r\n          }\r\n        ],\r\n        \"DefaultResult\": {\r\n          \"Inst\": \"LocalVariable\",\r\n          \"Variable Outer\": {\r\n            \"PinCategory\": \"Byte\",\r\n            \"PinSubCategory\": \"Byte\",\r\n            \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n          },\r\n          \"Variable Name\": \"K2Node_Select_Default_6\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 2657\r\n}",
+                               "endOffset":  2778,
+                               "index":  108
+                           },
+                           {
+                               "offset":  2778,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 2778\r\n}",
+                               "endOffset":  2779,
+                               "index":  109
+                           },
+                           {
+                               "offset":  2779,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/Player/PlayerBP.PlayerBP_C\"\r\n    },\r\n    \"Variable Name\": \"Player\"\r\n  },\r\n  \"SkipOffsetForNull\": 18,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVirtualFunction\",\r\n    \"FunctionName\": \"SetStartMassageTypeAndStoryType\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 3\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 4\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 2779\r\n}",
+                               "endOffset":  2819,
+                               "index":  110
+                           },
+                           {
+                               "offset":  2819,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Byte\",\r\n      \"PinSubCategory\": \"Byte\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n    },\r\n    \"Variable Name\": \"Temp_byte_Variable\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"ByteConst\",\r\n    \"Value\": 2\r\n  },\r\n  \"StatementIndex\": 2819\r\n}",
+                               "endOffset":  2839,
+                               "index":  111
+                           },
+                           {
+                               "offset":  2839,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Byte\",\r\n      \"PinSubCategory\": \"Byte\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n    },\r\n    \"Variable Name\": \"Temp_byte_Variable_1\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"ByteConst\",\r\n    \"Value\": 1\r\n  },\r\n  \"StatementIndex\": 2839\r\n}",
+                               "endOffset":  2859,
+                               "index":  112
+                           },
+                           {
+                               "offset":  2859,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"Temp_bool_Variable_2\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"IsSotryClear\"\r\n  },\r\n  \"StatementIndex\": 2859\r\n}",
+                               "endOffset":  2878,
+                               "index":  113
+                           },
+                           {
+                               "offset":  2878,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"Context\",\r\n    \"Context\": {\r\n      \"Inst\": \"InstanceVariable\",\r\n      \"Variable Outer\": {\r\n        \"PinCategory\": \"Object\",\r\n        \"PinSubCategory\": \"Object\",\r\n        \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameMode.HeroGameMode_C\"\r\n      },\r\n      \"Variable Name\": \"HeroGameMode\"\r\n    },\r\n    \"SkipOffsetForNull\": 9,\r\n    \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n    \"RValuePropertyName\": \"WBP_CQTest\",\r\n    \"Expression\": {\r\n      \"Inst\": \"InstanceVariable\",\r\n      \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n      \"Variable Name\": \"WBP_CQTest\"\r\n    }\r\n  },\r\n  \"SkipOffsetForNull\": 70,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVirtualFunction\",\r\n    \"FunctionName\": \"SetVisibilityCQPanel\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"False\"\r\n      },\r\n      {\r\n        \"Inst\": \"TextConst\",\r\n        \"TextLiteralType\": \"Empty\"\r\n      },\r\n      {\r\n        \"Inst\": \"SwitchValue\",\r\n        \"Expression\": {\r\n          \"Inst\": \"LocalVariable\",\r\n          \"Variable Outer\": {\r\n            \"PinCategory\": \"Bool\",\r\n            \"PinSubCategory\": \"Bool\"\r\n          },\r\n          \"Variable Name\": \"Temp_bool_Variable_2\"\r\n        },\r\n        \"OffsetToSwitchEnd\": 2991,\r\n        \"Cases\": [\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"False\"\r\n            },\r\n            \"OffsetToNextCase\": 2968,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Byte\",\r\n                \"PinSubCategory\": \"Byte\",\r\n                \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n              },\r\n              \"Variable Name\": \"Temp_byte_Variable_1\"\r\n            }\r\n          },\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"True\"\r\n            },\r\n            \"OffsetToNextCase\": 2982,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Byte\",\r\n                \"PinSubCategory\": \"Byte\",\r\n                \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n              },\r\n              \"Variable Name\": \"Temp_byte_Variable\"\r\n            }\r\n          }\r\n        ],\r\n        \"DefaultResult\": {\r\n          \"Inst\": \"LocalVariable\",\r\n          \"Variable Outer\": {\r\n            \"PinCategory\": \"Byte\",\r\n            \"PinSubCategory\": \"Byte\",\r\n            \"PinSubCategoryObject\": \"/Game/-HeroGame/Localize/E_StartMassageType.E_StartMassageType\"\r\n          },\r\n          \"Variable Name\": \"K2Node_Select_Default\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 2878\r\n}",
+                               "endOffset":  2992,
+                               "index":  114
+                           },
+                           {
+                               "offset":  2992,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 2992\r\n}",
+                               "endOffset":  2993,
+                               "index":  115
+                           },
+                           {
+                               "offset":  2993,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 3022,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_CustomEvent_bGenerateOverlapEvents\"\r\n  },\r\n  \"StatementIndex\": 2993\r\n}",
+                               "endOffset":  3007,
+                               "index":  116
+                           },
+                           {
+                               "offset":  3007,
+                               "projection":  "{\r\n  \"Inst\": \"LocalVirtualFunction\",\r\n  \"FunctionName\": \"SetCurrentStoryActive\",\r\n  \"Parameters\": [],\r\n  \"StatementIndex\": 3007\r\n}",
+                               "endOffset":  3021,
+                               "index":  117
+                           },
+                           {
+                               "offset":  3021,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 3021\r\n}",
+                               "endOffset":  3022,
+                               "index":  118
+                           },
+                           {
+                               "offset":  3022,
+                               "projection":  "{\r\n  \"Inst\": \"LocalVirtualFunction\",\r\n  \"FunctionName\": \"SetActiveStory\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"False\"\r\n    }\r\n  ],\r\n  \"StatementIndex\": 3022\r\n}",
+                               "endOffset":  3037,
+                               "index":  119
+                           },
+                           {
+                               "offset":  3037,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"CallFunc_IsInViewport_ReturnValue\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"Context\",\r\n    \"Context\": {\r\n      \"Inst\": \"Context\",\r\n      \"Context\": {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Object\",\r\n          \"PinSubCategory\": \"Object\",\r\n          \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/HeroGameMode.HeroGameMode_C\"\r\n        },\r\n        \"Variable Name\": \"HeroGameMode\"\r\n      },\r\n      \"SkipOffsetForNull\": 9,\r\n      \"RValuePropertyOuter\": \"##NOT SERIALIZED##\",\r\n      \"RValuePropertyName\": \"WBP_CQTest\",\r\n      \"Expression\": {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n        \"Variable Name\": \"WBP_CQTest\"\r\n      }\r\n    },\r\n    \"SkipOffsetForNull\": 10,\r\n    \"RValuePropertyOuter\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"RValuePropertyName\": \"CallFunc_IsInViewport_ReturnValue\",\r\n    \"Expression\": {\r\n      \"Inst\": \"FinalFunction\",\r\n      \"Function\": \"IsInViewport\",\r\n      \"Parameters\": []\r\n    }\r\n  },\r\n  \"StatementIndex\": 3037\r\n}",
+                               "endOffset":  3101,
+                               "index":  120
+                           },
+                           {
+                               "offset":  3101,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlowIfNot\",\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"CallFunc_IsInViewport_ReturnValue\"\r\n  },\r\n  \"StatementIndex\": 3101\r\n}",
+                               "endOffset":  3111,
+                               "index":  121
+                           },
+                           {
+                               "offset":  3111,
+                               "projection":  "{\r\n  \"Inst\": \"LocalVirtualFunction\",\r\n  \"FunctionName\": \"ForceHiddenStartMsaageWidget\",\r\n  \"Parameters\": [],\r\n  \"StatementIndex\": 3111\r\n}",
+                               "endOffset":  3125,
+                               "index":  122
+                           },
+                           {
+                               "offset":  3125,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 3125\r\n}",
+                               "endOffset":  3126,
+                               "index":  123
+                           },
+                           {
+                               "offset":  3126,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"CallFunc_ActorHasTag_ReturnValue_1\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"Context\",\r\n    \"Context\": {\r\n      \"Inst\": \"LocalVariable\",\r\n      \"Variable Outer\": {\r\n        \"PinCategory\": \"Object\",\r\n        \"PinSubCategory\": \"Object\",\r\n        \"PinSubCategoryObject\": \"/Script/Engine.Actor\"\r\n      },\r\n      \"Variable Name\": \"K2Node_ComponentBoundEvent_OtherActor\"\r\n    },\r\n    \"SkipOffsetForNull\": 23,\r\n    \"RValuePropertyOuter\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"RValuePropertyName\": \"CallFunc_ActorHasTag_ReturnValue_1\",\r\n    \"Expression\": {\r\n      \"Inst\": \"FinalFunction\",\r\n      \"Function\": \"ActorHasTag\",\r\n      \"Parameters\": [\r\n        {\r\n          \"Inst\": \"NameConst\",\r\n          \"Value\": \"Player\"\r\n        }\r\n      ]\r\n    }\r\n  },\r\n  \"StatementIndex\": 3126\r\n}",
+                               "endOffset":  3181,
+                               "index":  124
+                           },
+                           {
+                               "offset":  3181,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlowIfNot\",\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"CallFunc_ActorHasTag_ReturnValue_1\"\r\n  },\r\n  \"StatementIndex\": 3181\r\n}",
+                               "endOffset":  3191,
+                               "index":  125
+                           },
+                           {
+                               "offset":  3191,
+                               "projection":  "{\r\n  \"Inst\": \"Jump\",\r\n  \"Offset\": 2779,\r\n  \"StatementIndex\": 3191\r\n}",
+                               "endOffset":  3196,
+                               "index":  126
+                           },
+                           {
+                               "offset":  3196,
+                               "projection":  "{\r\n  \"Inst\": \"Jump\",\r\n  \"Offset\": 2779,\r\n  \"StatementIndex\": 3196\r\n}",
+                               "endOffset":  3201,
+                               "index":  127
+                           },
+                           {
+                               "offset":  3201,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.SphereComponent\"\r\n    },\r\n    \"Variable Name\": \"Sphere\"\r\n  },\r\n  \"SkipOffsetForNull\": 19,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"FinalFunction\",\r\n    \"Function\": \"SetGenerateOverlapEvents\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"LocalVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Bool\",\r\n          \"PinSubCategory\": \"Bool\"\r\n        },\r\n        \"Variable Name\": \"K2Node_CustomEvent_IsActive\"\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 3201\r\n}",
+                               "endOffset":  3242,
+                               "index":  128
+                           },
+                           {
+                               "offset":  3242,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystemComponent\"\r\n    },\r\n    \"Variable Name\": \"P_StartBossBattle\"\r\n  },\r\n  \"SkipOffsetForNull\": 14,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"VirtualFunction\",\r\n    \"Function\": \"Deactivate\",\r\n    \"Parameters\": []\r\n  },\r\n  \"StatementIndex\": 3242\r\n}",
+                               "endOffset":  3278,
+                               "index":  129
+                           },
+                           {
+                               "offset":  3278,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystemComponent\"\r\n    },\r\n    \"Variable Name\": \"P_StartStory\"\r\n  },\r\n  \"SkipOffsetForNull\": 14,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"VirtualFunction\",\r\n    \"Function\": \"Deactivate\",\r\n    \"Parameters\": []\r\n  },\r\n  \"StatementIndex\": 3278\r\n}",
+                               "endOffset":  3314,
+                               "index":  130
+                           },
+                           {
+                               "offset":  3314,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 4337,\r\n  \"Condition\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"K2Node_CustomEvent_IsActive\"\r\n  },\r\n  \"StatementIndex\": 3314\r\n}",
+                               "endOffset":  3328,
+                               "index":  131
+                           },
+                           {
+                               "offset":  3328,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"Temp_bool_Variable_1\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"IsSotryClear\"\r\n  },\r\n  \"StatementIndex\": 3328\r\n}",
+                               "endOffset":  3347,
+                               "index":  132
+                           },
+                           {
+                               "offset":  3347,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"SwitchValue\",\r\n    \"Expression\": {\r\n      \"Inst\": \"LocalVariable\",\r\n      \"Variable Outer\": {\r\n        \"PinCategory\": \"Bool\",\r\n        \"PinSubCategory\": \"Bool\"\r\n      },\r\n      \"Variable Name\": \"Temp_bool_Variable_1\"\r\n    },\r\n    \"OffsetToSwitchEnd\": 3401,\r\n    \"Cases\": [\r\n      {\r\n        \"CaseValue\": {\r\n          \"Inst\": \"False\"\r\n        },\r\n        \"OffsetToNextCase\": 3378,\r\n        \"CaseResult\": {\r\n          \"Inst\": \"InstanceVariable\",\r\n          \"Variable Outer\": {\r\n            \"PinCategory\": \"Object\",\r\n            \"PinSubCategory\": \"Object\",\r\n            \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystemComponent\"\r\n          },\r\n          \"Variable Name\": \"P_StartStory\"\r\n        }\r\n      },\r\n      {\r\n        \"CaseValue\": {\r\n          \"Inst\": \"True\"\r\n        },\r\n        \"OffsetToNextCase\": 3392,\r\n        \"CaseResult\": {\r\n          \"Inst\": \"InstanceVariable\",\r\n          \"Variable Outer\": {\r\n            \"PinCategory\": \"Object\",\r\n            \"PinSubCategory\": \"Object\",\r\n            \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystemComponent\"\r\n          },\r\n          \"Variable Name\": \"P_StartBossBattle\"\r\n        }\r\n      }\r\n    ],\r\n    \"DefaultResult\": {\r\n      \"Inst\": \"LocalVariable\",\r\n      \"Variable Outer\": {\r\n        \"PinCategory\": \"Object\",\r\n        \"PinSubCategory\": \"Object\",\r\n        \"PinSubCategoryObject\": \"/Script/Engine.ParticleSystemComponent\"\r\n      },\r\n      \"Variable Name\": \"K2Node_Select_Default_3\"\r\n    }\r\n  },\r\n  \"SkipOffsetForNull\": 15,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"VirtualFunction\",\r\n    \"Function\": \"Activate\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"False\"\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 3347\r\n}",
+                               "endOffset":  3428,
+                               "index":  133
+                           },
+                           {
+                               "offset":  3428,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Name\",\r\n      \"PinSubCategory\": \"Name\"\r\n    },\r\n    \"Variable Name\": \"Temp_name_Variable\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"NameConst\",\r\n    \"Value\": \"None\"\r\n  },\r\n  \"StatementIndex\": 3428\r\n}",
+                               "endOffset":  3459,
+                               "index":  134
+                           },
+                           {
+                               "offset":  3459,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Name\",\r\n      \"PinSubCategory\": \"Name\"\r\n    },\r\n    \"Variable Name\": \"Temp_name_Variable_1\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"NameConst\",\r\n    \"Value\": \"None\"\r\n  },\r\n  \"StatementIndex\": 3459\r\n}",
+                               "endOffset":  3490,
+                               "index":  135
+                           },
+                           {
+                               "offset":  3490,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Name\",\r\n      \"PinSubCategory\": \"Name\"\r\n    },\r\n    \"Variable Name\": \"Temp_name_Variable_2\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"NameConst\",\r\n    \"Value\": \"LightningBoss\"\r\n  },\r\n  \"StatementIndex\": 3490\r\n}",
+                               "endOffset":  3521,
+                               "index":  136
+                           },
+                           {
+                               "offset":  3521,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Name\",\r\n      \"PinSubCategory\": \"Name\"\r\n    },\r\n    \"Variable Name\": \"Temp_name_Variable_3\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"NameConst\",\r\n    \"Value\": \"FireBoss\"\r\n  },\r\n  \"StatementIndex\": 3521\r\n}",
+                               "endOffset":  3552,
+                               "index":  137
+                           },
+                           {
+                               "offset":  3552,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Name\",\r\n      \"PinSubCategory\": \"Name\"\r\n    },\r\n    \"Variable Name\": \"Temp_name_Variable_4\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"NameConst\",\r\n    \"Value\": \"WindBoss\"\r\n  },\r\n  \"StatementIndex\": 3552\r\n}",
+                               "endOffset":  3583,
+                               "index":  138
+                           },
+                           {
+                               "offset":  3583,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Name\",\r\n      \"PinSubCategory\": \"Name\"\r\n    },\r\n    \"Variable Name\": \"Temp_name_Variable_5\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"NameConst\",\r\n    \"Value\": \"None\"\r\n  },\r\n  \"StatementIndex\": 3583\r\n}",
+                               "endOffset":  3614,
+                               "index":  139
+                           },
+                           {
+                               "offset":  3614,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Name\",\r\n      \"PinSubCategory\": \"Name\"\r\n    },\r\n    \"Variable Name\": \"Temp_name_Variable_6\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"NameConst\",\r\n    \"Value\": \"Story\"\r\n  },\r\n  \"StatementIndex\": 3614\r\n}",
+                               "endOffset":  3645,
+                               "index":  140
+                           },
+                           {
+                               "offset":  3645,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Byte\",\r\n      \"PinSubCategory\": \"Byte\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n    },\r\n    \"Variable Name\": \"Temp_byte_Variable_2\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Byte\",\r\n      \"PinSubCategory\": \"Byte\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n    },\r\n    \"Variable Name\": \"StoryType\"\r\n  },\r\n  \"StatementIndex\": 3645\r\n}",
+                               "endOffset":  3672,
+                               "index":  141
+                           },
+                           {
+                               "offset":  3672,
+                               "projection":  "{\r\n  \"Inst\": \"LetBool\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"Temp_bool_Variable\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"IsSotryClear\"\r\n  },\r\n  \"StatementIndex\": 3672\r\n}",
+                               "endOffset":  3691,
+                               "index":  142
+                           },
+                           {
+                               "offset":  3691,
+                               "projection":  "{\r\n  \"Inst\": \"SetArray\",\r\n  \"LeftSideExpression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Name\",\r\n      \"PinSubCategory\": \"Name\",\r\n      \"ContainerType\": 1\r\n    },\r\n    \"Variable Name\": \"K2Node_MakeArray_Array\"\r\n  },\r\n  \"Values\": [\r\n    {\r\n      \"Inst\": \"NameConst\",\r\n      \"Value\": \"MiniMap\"\r\n    },\r\n    {\r\n      \"Inst\": \"SwitchValue\",\r\n      \"Expression\": {\r\n        \"Inst\": \"LocalVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Bool\",\r\n          \"PinSubCategory\": \"Bool\"\r\n        },\r\n        \"Variable Name\": \"Temp_bool_Variable\"\r\n      },\r\n      \"OffsetToSwitchEnd\": 3873,\r\n      \"Cases\": [\r\n        {\r\n          \"CaseValue\": {\r\n            \"Inst\": \"False\"\r\n          },\r\n          \"OffsetToNextCase\": 3744,\r\n          \"CaseResult\": {\r\n            \"Inst\": \"LocalVariable\",\r\n            \"Variable Outer\": {\r\n              \"PinCategory\": \"Name\",\r\n              \"PinSubCategory\": \"Name\"\r\n            },\r\n            \"Variable Name\": \"Temp_name_Variable_6\"\r\n          }\r\n        },\r\n        {\r\n          \"CaseValue\": {\r\n            \"Inst\": \"True\"\r\n          },\r\n          \"OffsetToNextCase\": 3864,\r\n          \"CaseResult\": {\r\n            \"Inst\": \"SwitchValue\",\r\n            \"Expression\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Byte\",\r\n                \"PinSubCategory\": \"Byte\",\r\n                \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n              },\r\n              \"Variable Name\": \"Temp_byte_Variable_2\"\r\n            },\r\n            \"OffsetToSwitchEnd\": 3864,\r\n            \"Cases\": [\r\n              {\r\n                \"CaseValue\": {\r\n                  \"Inst\": \"ByteConst\",\r\n                  \"Value\": 0\r\n                },\r\n                \"OffsetToNextCase\": 3780,\r\n                \"CaseResult\": {\r\n                  \"Inst\": \"LocalVariable\",\r\n                  \"Variable Outer\": {\r\n                    \"PinCategory\": \"Name\",\r\n                    \"PinSubCategory\": \"Name\"\r\n                  },\r\n                  \"Variable Name\": \"Temp_name_Variable_5\"\r\n                }\r\n              },\r\n              {\r\n                \"CaseValue\": {\r\n                  \"Inst\": \"ByteConst\",\r\n                  \"Value\": 1\r\n                },\r\n                \"OffsetToNextCase\": 3795,\r\n                \"CaseResult\": {\r\n                  \"Inst\": \"LocalVariable\",\r\n                  \"Variable Outer\": {\r\n                    \"PinCategory\": \"Name\",\r\n                    \"PinSubCategory\": \"Name\"\r\n                  },\r\n                  \"Variable Name\": \"Temp_name_Variable_4\"\r\n                }\r\n              },\r\n              {\r\n                \"CaseValue\": {\r\n                  \"Inst\": \"ByteConst\",\r\n                  \"Value\": 2\r\n                },\r\n                \"OffsetToNextCase\": 3810,\r\n                \"CaseResult\": {\r\n                  \"Inst\": \"LocalVariable\",\r\n                  \"Variable Outer\": {\r\n                    \"PinCategory\": \"Name\",\r\n                    \"PinSubCategory\": \"Name\"\r\n                  },\r\n                  \"Variable Name\": \"Temp_name_Variable_3\"\r\n                }\r\n              },\r\n              {\r\n                \"CaseValue\": {\r\n                  \"Inst\": \"ByteConst\",\r\n                  \"Value\": 3\r\n                },\r\n                \"OffsetToNextCase\": 3825,\r\n                \"CaseResult\": {\r\n                  \"Inst\": \"LocalVariable\",\r\n                  \"Variable Outer\": {\r\n                    \"PinCategory\": \"Name\",\r\n                    \"PinSubCategory\": \"Name\"\r\n                  },\r\n                  \"Variable Name\": \"Temp_name_Variable_2\"\r\n                }\r\n              },\r\n              {\r\n                \"CaseValue\": {\r\n                  \"Inst\": \"ByteConst\",\r\n                  \"Value\": 4\r\n                },\r\n                \"OffsetToNextCase\": 3840,\r\n                \"CaseResult\": {\r\n                  \"Inst\": \"LocalVariable\",\r\n                  \"Variable Outer\": {\r\n                    \"PinCategory\": \"Name\",\r\n                    \"PinSubCategory\": \"Name\"\r\n                  },\r\n                  \"Variable Name\": \"Temp_name_Variable_1\"\r\n                }\r\n              },\r\n              {\r\n                \"CaseValue\": {\r\n                  \"Inst\": \"ByteConst\",\r\n                  \"Value\": 5\r\n                },\r\n                \"OffsetToNextCase\": 3855,\r\n                \"CaseResult\": {\r\n                  \"Inst\": \"LocalVariable\",\r\n                  \"Variable Outer\": {\r\n                    \"PinCategory\": \"Name\",\r\n                    \"PinSubCategory\": \"Name\"\r\n                  },\r\n                  \"Variable Name\": \"Temp_name_Variable\"\r\n                }\r\n              }\r\n            ],\r\n            \"DefaultResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Name\",\r\n                \"PinSubCategory\": \"Name\"\r\n              },\r\n              \"Variable Name\": \"K2Node_Select_Default_1\"\r\n            }\r\n          }\r\n        }\r\n      ],\r\n      \"DefaultResult\": {\r\n        \"Inst\": \"LocalVariable\",\r\n        \"Variable Outer\": {\r\n          \"PinCategory\": \"Name\",\r\n          \"PinSubCategory\": \"Name\"\r\n        },\r\n        \"Variable Name\": \"K2Node_Select_Default_2\"\r\n      }\r\n    }\r\n  ],\r\n  \"StatementIndex\": 3691\r\n}",
+                               "endOffset":  3874,
+                               "index":  143
+                           },
+                           {
+                               "offset":  3874,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n    \"Variable Name\": \"Tags\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Name\",\r\n      \"PinSubCategory\": \"Name\",\r\n      \"ContainerType\": 1\r\n    },\r\n    \"Variable Name\": \"K2Node_MakeArray_Array\"\r\n  },\r\n  \"StatementIndex\": 3874\r\n}",
+                               "endOffset":  3901,
+                               "index":  144
+                           },
+                           {
+                               "offset":  3901,
+                               "projection":  "{\r\n  \"Inst\": \"JumpIfNot\",\r\n  \"Offset\": 4282,\r\n  \"Condition\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"IsSotryClear\"\r\n  },\r\n  \"StatementIndex\": 3901\r\n}",
+                               "endOffset":  3915,
+                               "index":  145
+                           },
+                           {
+                               "offset":  3915,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Int\",\r\n      \"PinSubCategory\": \"Int\"\r\n    },\r\n    \"Variable Name\": \"Temp_int_Variable\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"IntConst\",\r\n    \"Value\": 3\r\n  },\r\n  \"StatementIndex\": 3915\r\n}",
+                               "endOffset":  3938,
+                               "index":  146
+                           },
+                           {
+                               "offset":  3938,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Int\",\r\n      \"PinSubCategory\": \"Int\"\r\n    },\r\n    \"Variable Name\": \"Temp_int_Variable_1\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"IntConst\",\r\n    \"Value\": 3\r\n  },\r\n  \"StatementIndex\": 3938\r\n}",
+                               "endOffset":  3961,
+                               "index":  147
+                           },
+                           {
+                               "offset":  3961,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Int\",\r\n      \"PinSubCategory\": \"Int\"\r\n    },\r\n    \"Variable Name\": \"Temp_int_Variable_2\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"IntConst\",\r\n    \"Value\": 2\r\n  },\r\n  \"StatementIndex\": 3961\r\n}",
+                               "endOffset":  3984,
+                               "index":  148
+                           },
+                           {
+                               "offset":  3984,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Int\",\r\n      \"PinSubCategory\": \"Int\"\r\n    },\r\n    \"Variable Name\": \"Temp_int_Variable_3\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"IntConst\",\r\n    \"Value\": 1\r\n  },\r\n  \"StatementIndex\": 3984\r\n}",
+                               "endOffset":  4007,
+                               "index":  149
+                           },
+                           {
+                               "offset":  4007,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Int\",\r\n      \"PinSubCategory\": \"Int\"\r\n    },\r\n    \"Variable Name\": \"Temp_int_Variable_4\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"IntConst\",\r\n    \"Value\": 0\r\n  },\r\n  \"StatementIndex\": 4007\r\n}",
+                               "endOffset":  4030,
+                               "index":  150
+                           },
+                           {
+                               "offset":  4030,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Int\",\r\n      \"PinSubCategory\": \"Int\"\r\n    },\r\n    \"Variable Name\": \"Temp_int_Variable_5\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"IntConst\",\r\n    \"Value\": 3\r\n  },\r\n  \"StatementIndex\": 4030\r\n}",
+                               "endOffset":  4053,
+                               "index":  151
+                           },
+                           {
+                               "offset":  4053,
+                               "projection":  "{\r\n  \"Inst\": \"Let\",\r\n  \"Variable\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Byte\",\r\n      \"PinSubCategory\": \"Byte\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n    },\r\n    \"Variable Name\": \"Temp_byte_Variable_3\"\r\n  },\r\n  \"Expression\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Byte\",\r\n      \"PinSubCategory\": \"Byte\",\r\n      \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n    },\r\n    \"Variable Name\": \"StoryType\"\r\n  },\r\n  \"StatementIndex\": 4053\r\n}",
+                               "endOffset":  4080,
+                               "index":  152
+                           },
+                           {
+                               "offset":  4080,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.AudioComponent\"\r\n    },\r\n    \"Variable Name\": \"S_StoryStartPoint\"\r\n  },\r\n  \"SkipOffsetForNull\": 138,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"FinalFunction\",\r\n    \"Function\": \"SetIntParameter\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"NameConst\",\r\n        \"Value\": \"BossType\"\r\n      },\r\n      {\r\n        \"Inst\": \"SwitchValue\",\r\n        \"Expression\": {\r\n          \"Inst\": \"LocalVariable\",\r\n          \"Variable Outer\": {\r\n            \"PinCategory\": \"Byte\",\r\n            \"PinSubCategory\": \"Byte\",\r\n            \"PinSubCategoryObject\": \"/Game/-HeroGame/BP/Game/E_Story.E_Story\"\r\n          },\r\n          \"Variable Name\": \"Temp_byte_Variable_3\"\r\n        },\r\n        \"OffsetToSwitchEnd\": 4239,\r\n        \"Cases\": [\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"ByteConst\",\r\n              \"Value\": 0\r\n            },\r\n            \"OffsetToNextCase\": 4155,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Int\",\r\n                \"PinSubCategory\": \"Int\"\r\n              },\r\n              \"Variable Name\": \"Temp_int_Variable_5\"\r\n            }\r\n          },\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"ByteConst\",\r\n              \"Value\": 1\r\n            },\r\n            \"OffsetToNextCase\": 4170,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Int\",\r\n                \"PinSubCategory\": \"Int\"\r\n              },\r\n              \"Variable Name\": \"Temp_int_Variable_4\"\r\n            }\r\n          },\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"ByteConst\",\r\n              \"Value\": 2\r\n            },\r\n            \"OffsetToNextCase\": 4185,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Int\",\r\n                \"PinSubCategory\": \"Int\"\r\n              },\r\n              \"Variable Name\": \"Temp_int_Variable_3\"\r\n            }\r\n          },\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"ByteConst\",\r\n              \"Value\": 3\r\n            },\r\n            \"OffsetToNextCase\": 4200,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Int\",\r\n                \"PinSubCategory\": \"Int\"\r\n              },\r\n              \"Variable Name\": \"Temp_int_Variable_2\"\r\n            }\r\n          },\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"ByteConst\",\r\n              \"Value\": 4\r\n            },\r\n            \"OffsetToNextCase\": 4215,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Int\",\r\n                \"PinSubCategory\": \"Int\"\r\n              },\r\n              \"Variable Name\": \"Temp_int_Variable_1\"\r\n            }\r\n          },\r\n          {\r\n            \"CaseValue\": {\r\n              \"Inst\": \"ByteConst\",\r\n              \"Value\": 5\r\n            },\r\n            \"OffsetToNextCase\": 4230,\r\n            \"CaseResult\": {\r\n              \"Inst\": \"LocalVariable\",\r\n              \"Variable Outer\": {\r\n                \"PinCategory\": \"Int\",\r\n                \"PinSubCategory\": \"Int\"\r\n              },\r\n              \"Variable Name\": \"Temp_int_Variable\"\r\n            }\r\n          }\r\n        ],\r\n        \"DefaultResult\": {\r\n          \"Inst\": \"LocalVariable\",\r\n          \"Variable Outer\": {\r\n            \"PinCategory\": \"Int\",\r\n            \"PinSubCategory\": \"Int\"\r\n          },\r\n          \"Variable Name\": \"K2Node_Select_Default_4\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 4080\r\n}",
+                               "endOffset":  4240,
+                               "index":  153
+                           },
+                           {
+                               "offset":  4240,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.AudioComponent\"\r\n    },\r\n    \"Variable Name\": \"S_StoryStartPoint\"\r\n  },\r\n  \"SkipOffsetForNull\": 19,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"VirtualFunction\",\r\n    \"Function\": \"Play\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"FloatConst\",\r\n        \"Value\": 0.0\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 4240\r\n}",
+                               "endOffset":  4281,
+                               "index":  154
+                           },
+                           {
+                               "offset":  4281,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 4281\r\n}",
+                               "endOffset":  4282,
+                               "index":  155
+                           },
+                           {
+                               "offset":  4282,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.AudioComponent\"\r\n    },\r\n    \"Variable Name\": \"S_StoryStartPoint\"\r\n  },\r\n  \"SkipOffsetForNull\": 28,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"FinalFunction\",\r\n    \"Function\": \"SetIntParameter\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"NameConst\",\r\n        \"Value\": \"BossType\"\r\n      },\r\n      {\r\n        \"Inst\": \"IntConst\",\r\n        \"Value\": 3\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 4282\r\n}",
+                               "endOffset":  4332,
+                               "index":  156
+                           },
+                           {
+                               "offset":  4332,
+                               "projection":  "{\r\n  \"Inst\": \"Jump\",\r\n  \"Offset\": 4240,\r\n  \"StatementIndex\": 4332\r\n}",
+                               "endOffset":  4337,
+                               "index":  157
+                           },
+                           {
+                               "offset":  4337,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"ObjectConst\",\r\n    \"Object\": \"/Script/Engine.Default__KismetArrayLibrary\"\r\n  },\r\n  \"SkipOffsetForNull\": 19,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"FinalFunction\",\r\n    \"Function\": \"Array_Clear\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"InstanceVariable\",\r\n        \"Variable Outer\": \"##NOT SERIALIZED##\",\r\n        \"Variable Name\": \"Tags\"\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 4337\r\n}",
+                               "endOffset":  4378,
+                               "index":  158
+                           },
+                           {
+                               "offset":  4378,
+                               "projection":  "{\r\n  \"Inst\": \"Context\",\r\n  \"Context\": {\r\n    \"Inst\": \"InstanceVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.AudioComponent\"\r\n    },\r\n    \"Variable Name\": \"S_StoryStartPoint\"\r\n  },\r\n  \"SkipOffsetForNull\": 26,\r\n  \"RValuePropertyOuter\": \"#Pointer Error#\",\r\n  \"RValuePropertyName\": \"^^^^^\",\r\n  \"Expression\": {\r\n    \"Inst\": \"VirtualFunction\",\r\n    \"Function\": \"FadeOut\",\r\n    \"Parameters\": [\r\n      {\r\n        \"Inst\": \"FloatConst\",\r\n        \"Value\": 1.0\r\n      },\r\n      {\r\n        \"Inst\": \"FloatConst\",\r\n        \"Value\": 0.0\r\n      },\r\n      {\r\n        \"Inst\": \"ByteConst\",\r\n        \"Value\": 0\r\n      }\r\n    ]\r\n  },\r\n  \"StatementIndex\": 4378\r\n}",
+                               "endOffset":  4426,
+                               "index":  159
+                           },
+                           {
+                               "offset":  4426,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 4426\r\n}",
+                               "endOffset":  4427,
+                               "index":  160
+                           },
+                           {
+                               "offset":  4427,
+                               "projection":  "{\r\n  \"Inst\": \"CallMath\",\r\n  \"Function\": \"Delay\",\r\n  \"ContextClass\": \"/Script/Engine.KismetSystemLibrary\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"Self\"\r\n    },\r\n    {\r\n      \"Inst\": \"FloatConst\",\r\n      \"Value\": 0.2\r\n    },\r\n    {\r\n      \"Inst\": \"StructConst\",\r\n      \"Struct\": \"/Script/Engine.LatentActionInfo\",\r\n      \"Properties\": {\r\n        \"Missing property name0\": [\r\n          {\r\n            \"Inst\": \"SkipOffsetConst\",\r\n            \"Value\": 27\r\n          }\r\n        ],\r\n        \"Missing property name1\": [\r\n          {\r\n            \"Inst\": \"IntConst\",\r\n            \"Value\": 1656623300\r\n          }\r\n        ],\r\n        \"Missing property name2\": [\r\n          {\r\n            \"Inst\": \"NameConst\",\r\n            \"Value\": \"ExecuteUbergraph_BP_StoryStartPoint\"\r\n          }\r\n        ],\r\n        \"Missing property name3\": [\r\n          {\r\n            \"Inst\": \"Self\"\r\n          }\r\n        ]\r\n      }\r\n    }\r\n  ],\r\n  \"StatementIndex\": 4427\r\n}",
+                               "endOffset":  4481,
+                               "index":  161
+                           },
+                           {
+                               "offset":  4481,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 4481\r\n}",
+                               "endOffset":  4482,
+                               "index":  162
+                           },
+                           {
+                               "offset":  4482,
+                               "projection":  "{\r\n  \"Inst\": \"LocalVirtualFunction\",\r\n  \"FunctionName\": \"SetClearFlag\",\r\n  \"Parameters\": [],\r\n  \"StatementIndex\": 4482\r\n}",
+                               "endOffset":  4496,
+                               "index":  163
+                           },
+                           {
+                               "offset":  4496,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 4496\r\n}",
+                               "endOffset":  4497,
+                               "index":  164
+                           },
+                           {
+                               "offset":  4497,
+                               "projection":  "{\r\n  \"Inst\": \"CallMath\",\r\n  \"Function\": \"Delay\",\r\n  \"ContextClass\": \"/Script/Engine.KismetSystemLibrary\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"Self\"\r\n    },\r\n    {\r\n      \"Inst\": \"FloatConst\",\r\n      \"Value\": 0.0\r\n    },\r\n    {\r\n      \"Inst\": \"StructConst\",\r\n      \"Struct\": \"/Script/Engine.LatentActionInfo\",\r\n      \"Properties\": {\r\n        \"Missing property name0\": [\r\n          {\r\n            \"Inst\": \"SkipOffsetConst\",\r\n            \"Value\": 2200\r\n          }\r\n        ],\r\n        \"Missing property name1\": [\r\n          {\r\n            \"Inst\": \"IntConst\",\r\n            \"Value\": 925144850\r\n          }\r\n        ],\r\n        \"Missing property name2\": [\r\n          {\r\n            \"Inst\": \"NameConst\",\r\n            \"Value\": \"ExecuteUbergraph_BP_StoryStartPoint\"\r\n          }\r\n        ],\r\n        \"Missing property name3\": [\r\n          {\r\n            \"Inst\": \"Self\"\r\n          }\r\n        ]\r\n      }\r\n    }\r\n  ],\r\n  \"StatementIndex\": 4497\r\n}",
+                               "endOffset":  4551,
+                               "index":  165
+                           },
+                           {
+                               "offset":  4551,
+                               "projection":  "{\r\n  \"Inst\": \"PopExecutionFlow\",\r\n  \"StatementIndex\": 4551\r\n}",
+                               "endOffset":  4552,
+                               "index":  166
+                           },
+                           {
+                               "offset":  4552,
+                               "projection":  "{\r\n  \"Inst\": \"PushExecutionFlow\",\r\n  \"Offset\": 4497,\r\n  \"StatementIndex\": 4552\r\n}",
+                               "endOffset":  4557,
+                               "index":  167
+                           },
+                           {
+                               "offset":  4557,
+                               "projection":  "{\r\n  \"Inst\": \"Jump\",\r\n  \"Offset\": 4482,\r\n  \"StatementIndex\": 4557\r\n}",
+                               "endOffset":  4562,
+                               "index":  168
+                           },
+                           {
+                               "offset":  4562,
+                               "projection":  "{\r\n  \"Inst\": \"Jump\",\r\n  \"Offset\": 4552,\r\n  \"StatementIndex\": 4562\r\n}",
+                               "endOffset":  4567,
+                               "index":  169
+                           },
+                           {
+                               "offset":  4567,
+                               "projection":  "{\r\n  \"Inst\": \"Jump\",\r\n  \"Offset\": 684,\r\n  \"StatementIndex\": 4567\r\n}",
+                               "endOffset":  4572,
+                               "index":  170
+                           },
+                           {
+                               "offset":  4572,
+                               "projection":  "{\r\n  \"Inst\": \"Return\",\r\n  \"Expression\": {\r\n    \"Inst\": \"Nothing\"\r\n  },\r\n  \"StatementIndex\": 4572\r\n}",
+                               "endOffset":  4574,
+                               "index":  171
+                           },
+                           {
+                               "offset":  4574,
+                               "projection":  "{\r\n  \"Inst\": \"EndOfScript\",\r\n  \"StatementIndex\": 4574\r\n}",
+                               "endOffset":  4575,
+                               "index":  172
+                           }
+                       ],
+        "declaredSize":  4575,
+        "function":  "ExecuteUbergraph_BP_StoryStartPoint"
+    },
+    {
+        "exportIndex":  1,
+        "computedSize":  18,
+        "statements":  [
+                           {
+                               "offset":  0,
+                               "projection":  "{\r\n  \"Inst\": \"LocalFinalFunction\",\r\n  \"Function\": \"ExecuteUbergraph_BP_StoryStartPoint\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"IntConst\",\r\n      \"Value\": 4567\r\n    }\r\n  ],\r\n  \"StatementIndex\": 0\r\n}",
+                               "endOffset":  15,
+                               "index":  0
+                           },
+                           {
+                               "offset":  15,
+                               "projection":  "{\r\n  \"Inst\": \"Return\",\r\n  \"Expression\": {\r\n    \"Inst\": \"Nothing\"\r\n  },\r\n  \"StatementIndex\": 15\r\n}",
+                               "endOffset":  17,
+                               "index":  1
+                           },
+                           {
+                               "offset":  17,
+                               "projection":  "{\r\n  \"Inst\": \"EndOfScript\",\r\n  \"StatementIndex\": 17\r\n}",
+                               "endOffset":  18,
+                               "index":  2
+                           }
+                       ],
+        "declaredSize":  18,
+        "function":  "SetClearFlag"
+    },
+    {
+        "exportIndex":  2,
+        "computedSize":  18,
+        "statements":  [
+                           {
+                               "offset":  0,
+                               "projection":  "{\r\n  \"Inst\": \"LocalFinalFunction\",\r\n  \"Function\": \"ExecuteUbergraph_BP_StoryStartPoint\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"IntConst\",\r\n      \"Value\": 4562\r\n    }\r\n  ],\r\n  \"StatementIndex\": 0\r\n}",
+                               "endOffset":  15,
+                               "index":  0
+                           },
+                           {
+                               "offset":  15,
+                               "projection":  "{\r\n  \"Inst\": \"Return\",\r\n  \"Expression\": {\r\n    \"Inst\": \"Nothing\"\r\n  },\r\n  \"StatementIndex\": 15\r\n}",
+                               "endOffset":  17,
+                               "index":  1
+                           },
+                           {
+                               "offset":  17,
+                               "projection":  "{\r\n  \"Inst\": \"EndOfScript\",\r\n  \"StatementIndex\": 17\r\n}",
+                               "endOffset":  18,
+                               "index":  2
+                           }
+                       ],
+        "declaredSize":  18,
+        "function":  "SetCurrentStoryActive"
+    },
+    {
+        "exportIndex":  3,
+        "computedSize":  18,
+        "statements":  [
+                           {
+                               "offset":  0,
+                               "projection":  "{\r\n  \"Inst\": \"LocalFinalFunction\",\r\n  \"Function\": \"ExecuteUbergraph_BP_StoryStartPoint\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"IntConst\",\r\n      \"Value\": 4427\r\n    }\r\n  ],\r\n  \"StatementIndex\": 0\r\n}",
+                               "endOffset":  15,
+                               "index":  0
+                           },
+                           {
+                               "offset":  15,
+                               "projection":  "{\r\n  \"Inst\": \"Return\",\r\n  \"Expression\": {\r\n    \"Inst\": \"Nothing\"\r\n  },\r\n  \"StatementIndex\": 15\r\n}",
+                               "endOffset":  17,
+                               "index":  1
+                           },
+                           {
+                               "offset":  17,
+                               "projection":  "{\r\n  \"Inst\": \"EndOfScript\",\r\n  \"StatementIndex\": 17\r\n}",
+                               "endOffset":  18,
+                               "index":  2
+                           }
+                       ],
+        "declaredSize":  18,
+        "function":  "ReceiveBeginPlay"
+    },
+    {
+        "exportIndex":  4,
+        "computedSize":  36,
+        "statements":  [
+                           {
+                               "offset":  0,
+                               "projection":  "{\r\n  \"Inst\": \"LetValueOnPersistentFrame\",\r\n  \"Property Outer\": {\r\n    \"PinCategory\": \"Bool\",\r\n    \"PinSubCategory\": \"Bool\"\r\n  },\r\n  \"Property Name\": \"K2Node_CustomEvent_IsActive\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"IsActive\"\r\n  },\r\n  \"StatementIndex\": 0\r\n}",
+                               "endOffset":  18,
+                               "index":  0
+                           },
+                           {
+                               "offset":  18,
+                               "projection":  "{\r\n  \"Inst\": \"LocalFinalFunction\",\r\n  \"Function\": \"ExecuteUbergraph_BP_StoryStartPoint\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"IntConst\",\r\n      \"Value\": 3201\r\n    }\r\n  ],\r\n  \"StatementIndex\": 18\r\n}",
+                               "endOffset":  33,
+                               "index":  1
+                           },
+                           {
+                               "offset":  33,
+                               "projection":  "{\r\n  \"Inst\": \"Return\",\r\n  \"Expression\": {\r\n    \"Inst\": \"Nothing\"\r\n  },\r\n  \"StatementIndex\": 33\r\n}",
+                               "endOffset":  35,
+                               "index":  2
+                           },
+                           {
+                               "offset":  35,
+                               "projection":  "{\r\n  \"Inst\": \"EndOfScript\",\r\n  \"StatementIndex\": 35\r\n}",
+                               "endOffset":  36,
+                               "index":  3
+                           }
+                       ],
+        "declaredSize":  36,
+        "function":  "SetActiveStory"
+    },
+    {
+        "exportIndex":  5,
+        "computedSize":  18,
+        "statements":  [
+                           {
+                               "offset":  0,
+                               "projection":  "{\r\n  \"Inst\": \"LocalFinalFunction\",\r\n  \"Function\": \"ExecuteUbergraph_BP_StoryStartPoint\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"IntConst\",\r\n      \"Value\": 3196\r\n    }\r\n  ],\r\n  \"StatementIndex\": 0\r\n}",
+                               "endOffset":  15,
+                               "index":  0
+                           },
+                           {
+                               "offset":  15,
+                               "projection":  "{\r\n  \"Inst\": \"Return\",\r\n  \"Expression\": {\r\n    \"Inst\": \"Nothing\"\r\n  },\r\n  \"StatementIndex\": 15\r\n}",
+                               "endOffset":  17,
+                               "index":  1
+                           },
+                           {
+                               "offset":  17,
+                               "projection":  "{\r\n  \"Inst\": \"EndOfScript\",\r\n  \"StatementIndex\": 17\r\n}",
+                               "endOffset":  18,
+                               "index":  2
+                           }
+                       ],
+        "declaredSize":  18,
+        "function":  "ForceHiddenStartMsaageWidget"
+    },
+    {
+        "exportIndex":  6,
+        "computedSize":  90,
+        "statements":  [
+                           {
+                               "offset":  0,
+                               "projection":  "{\r\n  \"Inst\": \"LetValueOnPersistentFrame\",\r\n  \"Property Outer\": {\r\n    \"PinCategory\": \"Object\",\r\n    \"PinSubCategory\": \"Object\",\r\n    \"PinSubCategoryObject\": \"/Script/Engine.PrimitiveComponent\"\r\n  },\r\n  \"Property Name\": \"K2Node_ComponentBoundEvent_OverlappedComponent\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.PrimitiveComponent\"\r\n    },\r\n    \"Variable Name\": \"OverlappedComponent\"\r\n  },\r\n  \"StatementIndex\": 0\r\n}",
+                               "endOffset":  18,
+                               "index":  0
+                           },
+                           {
+                               "offset":  18,
+                               "projection":  "{\r\n  \"Inst\": \"LetValueOnPersistentFrame\",\r\n  \"Property Outer\": {\r\n    \"PinCategory\": \"Object\",\r\n    \"PinSubCategory\": \"Object\",\r\n    \"PinSubCategoryObject\": \"/Script/Engine.Actor\"\r\n  },\r\n  \"Property Name\": \"K2Node_ComponentBoundEvent_OtherActor\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.Actor\"\r\n    },\r\n    \"Variable Name\": \"OtherActor\"\r\n  },\r\n  \"StatementIndex\": 18\r\n}",
+                               "endOffset":  36,
+                               "index":  1
+                           },
+                           {
+                               "offset":  36,
+                               "projection":  "{\r\n  \"Inst\": \"LetValueOnPersistentFrame\",\r\n  \"Property Outer\": {\r\n    \"PinCategory\": \"Object\",\r\n    \"PinSubCategory\": \"Object\",\r\n    \"PinSubCategoryObject\": \"/Script/Engine.PrimitiveComponent\"\r\n  },\r\n  \"Property Name\": \"K2Node_ComponentBoundEvent_OtherComp\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.PrimitiveComponent\"\r\n    },\r\n    \"Variable Name\": \"OtherComp\"\r\n  },\r\n  \"StatementIndex\": 36\r\n}",
+                               "endOffset":  54,
+                               "index":  2
+                           },
+                           {
+                               "offset":  54,
+                               "projection":  "{\r\n  \"Inst\": \"LetValueOnPersistentFrame\",\r\n  \"Property Outer\": {\r\n    \"PinCategory\": \"Int\",\r\n    \"PinSubCategory\": \"Int\"\r\n  },\r\n  \"Property Name\": \"K2Node_ComponentBoundEvent_OtherBodyIndex\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Int\",\r\n      \"PinSubCategory\": \"Int\"\r\n    },\r\n    \"Variable Name\": \"OtherBodyIndex\"\r\n  },\r\n  \"StatementIndex\": 54\r\n}",
+                               "endOffset":  72,
+                               "index":  3
+                           },
+                           {
+                               "offset":  72,
+                               "projection":  "{\r\n  \"Inst\": \"LocalFinalFunction\",\r\n  \"Function\": \"ExecuteUbergraph_BP_StoryStartPoint\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"IntConst\",\r\n      \"Value\": 3126\r\n    }\r\n  ],\r\n  \"StatementIndex\": 72\r\n}",
+                               "endOffset":  87,
+                               "index":  4
+                           },
+                           {
+                               "offset":  87,
+                               "projection":  "{\r\n  \"Inst\": \"Return\",\r\n  \"Expression\": {\r\n    \"Inst\": \"Nothing\"\r\n  },\r\n  \"StatementIndex\": 87\r\n}",
+                               "endOffset":  89,
+                               "index":  5
+                           },
+                           {
+                               "offset":  89,
+                               "projection":  "{\r\n  \"Inst\": \"EndOfScript\",\r\n  \"StatementIndex\": 89\r\n}",
+                               "endOffset":  90,
+                               "index":  6
+                           }
+                       ],
+        "declaredSize":  90,
+        "function":  "BndEvt__Sphere_K2Node_ComponentBoundEvent_55_ComponentEndOverlapSignature__DelegateSignature"
+    },
+    {
+        "exportIndex":  7,
+        "computedSize":  36,
+        "statements":  [
+                           {
+                               "offset":  0,
+                               "projection":  "{\r\n  \"Inst\": \"LetValueOnPersistentFrame\",\r\n  \"Property Outer\": {\r\n    \"PinCategory\": \"Bool\",\r\n    \"PinSubCategory\": \"Bool\"\r\n  },\r\n  \"Property Name\": \"K2Node_CustomEvent_bGenerateOverlapEvents\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"bGenerateOverlapEvents\"\r\n  },\r\n  \"StatementIndex\": 0\r\n}",
+                               "endOffset":  18,
+                               "index":  0
+                           },
+                           {
+                               "offset":  18,
+                               "projection":  "{\r\n  \"Inst\": \"LocalFinalFunction\",\r\n  \"Function\": \"ExecuteUbergraph_BP_StoryStartPoint\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"IntConst\",\r\n      \"Value\": 2993\r\n    }\r\n  ],\r\n  \"StatementIndex\": 18\r\n}",
+                               "endOffset":  33,
+                               "index":  1
+                           },
+                           {
+                               "offset":  33,
+                               "projection":  "{\r\n  \"Inst\": \"Return\",\r\n  \"Expression\": {\r\n    \"Inst\": \"Nothing\"\r\n  },\r\n  \"StatementIndex\": 33\r\n}",
+                               "endOffset":  35,
+                               "index":  2
+                           },
+                           {
+                               "offset":  35,
+                               "projection":  "{\r\n  \"Inst\": \"EndOfScript\",\r\n  \"StatementIndex\": 35\r\n}",
+                               "endOffset":  36,
+                               "index":  3
+                           }
+                       ],
+        "declaredSize":  36,
+        "function":  "SetGenerateOverlapEvents"
+    },
+    {
+        "exportIndex":  8,
+        "computedSize":  126,
+        "statements":  [
+                           {
+                               "offset":  0,
+                               "projection":  "{\r\n  \"Inst\": \"LetValueOnPersistentFrame\",\r\n  \"Property Outer\": {\r\n    \"PinCategory\": \"Object\",\r\n    \"PinSubCategory\": \"Object\",\r\n    \"PinSubCategoryObject\": \"/Script/Engine.PrimitiveComponent\"\r\n  },\r\n  \"Property Name\": \"K2Node_ComponentBoundEvent_OverlappedComponent_1\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.PrimitiveComponent\"\r\n    },\r\n    \"Variable Name\": \"OverlappedComponent\"\r\n  },\r\n  \"StatementIndex\": 0\r\n}",
+                               "endOffset":  18,
+                               "index":  0
+                           },
+                           {
+                               "offset":  18,
+                               "projection":  "{\r\n  \"Inst\": \"LetValueOnPersistentFrame\",\r\n  \"Property Outer\": {\r\n    \"PinCategory\": \"Object\",\r\n    \"PinSubCategory\": \"Object\",\r\n    \"PinSubCategoryObject\": \"/Script/Engine.Actor\"\r\n  },\r\n  \"Property Name\": \"K2Node_ComponentBoundEvent_OtherActor_1\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.Actor\"\r\n    },\r\n    \"Variable Name\": \"OtherActor\"\r\n  },\r\n  \"StatementIndex\": 18\r\n}",
+                               "endOffset":  36,
+                               "index":  1
+                           },
+                           {
+                               "offset":  36,
+                               "projection":  "{\r\n  \"Inst\": \"LetValueOnPersistentFrame\",\r\n  \"Property Outer\": {\r\n    \"PinCategory\": \"Object\",\r\n    \"PinSubCategory\": \"Object\",\r\n    \"PinSubCategoryObject\": \"/Script/Engine.PrimitiveComponent\"\r\n  },\r\n  \"Property Name\": \"K2Node_ComponentBoundEvent_OtherComp_1\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Object\",\r\n      \"PinSubCategory\": \"Object\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.PrimitiveComponent\"\r\n    },\r\n    \"Variable Name\": \"OtherComp\"\r\n  },\r\n  \"StatementIndex\": 36\r\n}",
+                               "endOffset":  54,
+                               "index":  2
+                           },
+                           {
+                               "offset":  54,
+                               "projection":  "{\r\n  \"Inst\": \"LetValueOnPersistentFrame\",\r\n  \"Property Outer\": {\r\n    \"PinCategory\": \"Int\",\r\n    \"PinSubCategory\": \"Int\"\r\n  },\r\n  \"Property Name\": \"K2Node_ComponentBoundEvent_OtherBodyIndex_1\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Int\",\r\n      \"PinSubCategory\": \"Int\"\r\n    },\r\n    \"Variable Name\": \"OtherBodyIndex\"\r\n  },\r\n  \"StatementIndex\": 54\r\n}",
+                               "endOffset":  72,
+                               "index":  3
+                           },
+                           {
+                               "offset":  72,
+                               "projection":  "{\r\n  \"Inst\": \"LetValueOnPersistentFrame\",\r\n  \"Property Outer\": {\r\n    \"PinCategory\": \"Bool\",\r\n    \"PinSubCategory\": \"Bool\"\r\n  },\r\n  \"Property Name\": \"K2Node_ComponentBoundEvent_bFromSweep\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Bool\",\r\n      \"PinSubCategory\": \"Bool\"\r\n    },\r\n    \"Variable Name\": \"bFromSweep\"\r\n  },\r\n  \"StatementIndex\": 72\r\n}",
+                               "endOffset":  90,
+                               "index":  4
+                           },
+                           {
+                               "offset":  90,
+                               "projection":  "{\r\n  \"Inst\": \"LetValueOnPersistentFrame\",\r\n  \"Property Outer\": {\r\n    \"PinCategory\": \"Struct\",\r\n    \"PinSubCategory\": \"Struct\",\r\n    \"PinSubCategoryObject\": \"/Script/Engine.HitResult\",\r\n    \"IsConst\": true\r\n  },\r\n  \"Property Name\": \"K2Node_ComponentBoundEvent_SweepResult\",\r\n  \"Expression\": {\r\n    \"Inst\": \"LocalOutVariable\",\r\n    \"Variable Outer\": {\r\n      \"PinCategory\": \"Struct\",\r\n      \"PinSubCategory\": \"Struct\",\r\n      \"PinSubCategoryObject\": \"/Script/Engine.HitResult\",\r\n      \"IsReference\": true,\r\n      \"IsConst\": true\r\n    },\r\n    \"Variable Name\": \"SweepResult\"\r\n  },\r\n  \"StatementIndex\": 90\r\n}",
+                               "endOffset":  108,
+                               "index":  5
+                           },
+                           {
+                               "offset":  108,
+                               "projection":  "{\r\n  \"Inst\": \"LocalFinalFunction\",\r\n  \"Function\": \"ExecuteUbergraph_BP_StoryStartPoint\",\r\n  \"Parameters\": [\r\n    {\r\n      \"Inst\": \"IntConst\",\r\n      \"Value\": 2205\r\n    }\r\n  ],\r\n  \"StatementIndex\": 108\r\n}",
+                               "endOffset":  123,
+                               "index":  6
+                           },
+                           {
+                               "offset":  123,
+                               "projection":  "{\r\n  \"Inst\": \"Return\",\r\n  \"Expression\": {\r\n    \"Inst\": \"Nothing\"\r\n  },\r\n  \"StatementIndex\": 123\r\n}",
+                               "endOffset":  125,
+                               "index":  7
+                           },
+                           {
+                               "offset":  125,
+                               "projection":  "{\r\n  \"Inst\": \"EndOfScript\",\r\n  \"StatementIndex\": 125\r\n}",
+                               "endOffset":  126,
+                               "index":  8
+                           }
+                       ],
+        "declaredSize":  126,
+        "function":  "BndEvt__Sphere_K2Node_ComponentBoundEvent_54_ComponentBeginOverlapSignature__DelegateSignature"
+    },
+    {
+        "exportIndex":  9,
+        "computedSize":  17,
+        "statements":  [
+                           {
+                               "offset":  0,
+                               "projection":  "{\r\n  \"Inst\": \"LocalVirtualFunction\",\r\n  \"FunctionName\": \"SetCurrentStoryActive\",\r\n  \"Parameters\": [],\r\n  \"StatementIndex\": 0\r\n}",
+                               "endOffset":  14,
+                               "index":  0
+                           },
+                           {
+                               "offset":  14,
+                               "projection":  "{\r\n  \"Inst\": \"Return\",\r\n  \"Expression\": {\r\n    \"Inst\": \"Nothing\"\r\n  },\r\n  \"StatementIndex\": 14\r\n}",
+                               "endOffset":  16,
+                               "index":  1
+                           },
+                           {
+                               "offset":  16,
+                               "projection":  "{\r\n  \"Inst\": \"EndOfScript\",\r\n  \"StatementIndex\": 16\r\n}",
+                               "endOffset":  17,
+                               "index":  2
+                           }
+                       ],
+        "declaredSize":  17,
+        "function":  "FinishStoryQuest"
+    }
+]

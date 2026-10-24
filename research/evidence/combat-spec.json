@@ -1,0 +1,1731 @@
+{
+  "schema_version": 1,
+  "scope": "Original combat minimum reconstruction specification; static evidence, no runtime observation",
+  "created": "2026-10-24",
+  "evidence_types": {
+    "recovered_control_flow": "Decoded Kismet branch/call evidence, not observed gameplay",
+    "serialized_defaults": "Cooked CDO/component/table values, may be overridden",
+    "bounded_negative_evidence": "Absent in inspected class only",
+    "inference": "Derived interpretation requiring runtime/conversion validation",
+    "new_design": "Approved reconstruction behavior"
+  },
+  "sources": {
+    "HeroComponent": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroComponent.json",
+      "sha256": "23e454745d3dfeb949b24c763ebaa33a127dcec66bc310b499f1510e03d89fd0"
+    },
+    "HeroAnimBP": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\HeroAnimBP.json",
+      "sha256": "4f6a988d4626a58897c8498cf20d8cad279add52175a87c90b7a3ec48cd7f902"
+    },
+    "BP_AttackCollirionNormal": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_AttackCollirionNormal.json",
+      "sha256": "2c4ba5e89658debdc60fff6f8d2bdee0e15517524e3b41bcfddb7823633b98d6"
+    },
+    "BP_AttackCollirion": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_AttackCollirion.json",
+      "sha256": "cf914ce5fac9412c446cb8fbef8dbef5847225b6f6456a9a4a7211f716617c85"
+    },
+    "PlayerBP": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\PlayerBP.json",
+      "sha256": "019bd742f355abd84590ef35cd0c0739d94db8712ecefcf480cf8494ae2d6072"
+    },
+    "BP_OpticRay": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_OpticRay.json",
+      "sha256": "794e5f30cb8926f83f1e14308f3c017a9db601110987965c094c95e7c8735b02"
+    },
+    "BaseCitizen_CharaBP": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BaseCitizen_CharaBP.json",
+      "sha256": "4885c61d8714dd48ae587d34d44e2461b7f1c360e3b3e6c8a6ba546cf5b983c8"
+    },
+    "EPlayerSpecialActionType": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\EPlayerSpecialActionType.json",
+      "sha256": "bc409cc487e35126e977709f7f7d4600a3d2aec60d4cd141fba45b217c83a206"
+    },
+    "DT_SpecialAction": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\DT_SpecialAction.json",
+      "sha256": "f3dc754f6c1ce45f45664e7cd91ab7260d0edc91040259619f7c05e692a1212c"
+    },
+    "BP_HeroSpecialActionComponent": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_HeroSpecialActionComponent.json",
+      "sha256": "f05e679b45c74b553ad7d5a97c6cdc0f393fc5a6ce4f24a1800811e2c69b155b"
+    },
+    "BP_ParentVehicle": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BP_ParentVehicle.json",
+      "sha256": "2ba7f6347310150cd7211640674accada6184b999b7c62a172a50eceb226db15"
+    },
+    "DT_HeroPoint": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\DT_HeroPoint.json",
+      "sha256": "eafd5c21b9b764cbf35714566123dd3c0f640482d69a83144ffeac158fa029e7"
+    },
+    "BaseEnemy": {
+      "path": "C:\\Users\\Shark\\OneDrive\\文档\\ChatGPT\\homerlander\\analysis\\decoded\\BaseEnemy.json",
+      "sha256": "9b9fda2f9edd92945d220ea848a27c274eee4b70125b6871b5b128e55b3c7e1c"
+    },
+    "animation_manifest": {
+      "path": "E:\\undefeated-web\\research\\exports\\combat-animations\\manifest.json",
+      "sha256": "35b5f1ee99e9c90d095d20aa6ee46e7c4ca207201b110445569d96958c6e2cf2"
+    }
+  },
+  "facts": [
+    {
+      "id": "normal-chain",
+      "status": "recovered_control_flow",
+      "claim_zh": "HeroAttackFunc设置Attacking(2)，按AttackIndex 0..3播放四段蒙太奇并循环；进入时清冲刺、寻找最近敌人、重置连招计数。",
+      "parameters": {
+        "montages": [
+          "Hero_Attack1_Montage",
+          "Hero_Attack2_Montage",
+          "Hero_Attack3_Montage",
+          "Hero_Attack4_Montage"
+        ],
+        "play_rate": "AttackAnimRate",
+        "default_attack_anim_rate": 1
+      },
+      "evidence": [
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/171/ScriptBytecode"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/196/Data/26"
+        }
+      ]
+    },
+    {
+      "id": "normal-hit-notify",
+      "status": "recovered_control_flow",
+      "claim_zh": "普通拳StopAttackMove通知先停止移动，再调用SpawnAttackCollisionEvent；该分支在AttackLocation生成BP_AttackCollirionNormal。不能因不存在同名spawn通知而漏掉命中。",
+      "parameters": {
+        "notify": "StopAttackMove",
+        "spawn_class": "BP_AttackCollirionNormal_C",
+        "location_component": "AttackLocation",
+        "spawn_rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "evidence": [
+        {
+          "source": "HeroAnimBP",
+          "pointer": "/Exports/5/ScriptBytecode/0"
+        },
+        {
+          "source": "HeroAnimBP",
+          "pointer": "/Exports/0/ScriptBytecode/575"
+        },
+        {
+          "source": "HeroAnimBP",
+          "pointer": "/Exports/0/ScriptBytecode/19"
+        },
+        {
+          "source": "HeroAnimBP",
+          "pointer": "/Exports/0/ScriptBytecode/15"
+        },
+        {
+          "source": "HeroAnimBP",
+          "pointer": "/Exports/0/ScriptBytecode/16"
+        },
+        {
+          "source": "HeroAnimBP",
+          "pointer": "/Exports/0/ScriptBytecode/8"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/85/ScriptBytecode/0"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4734"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4735"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4731"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4724"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4726"
+        }
+      ]
+    },
+    {
+      "id": "normal-hitbox",
+      "status": "serialized_defaults",
+      "claim_zh": "补证确认普通近战主Sphere静态继承半径256，scale1；Sphere1/Box关闭碰撞。寿命0.1秒；RadialForce半径255/冲量400，非数值伤害。运行观察仍未执行。",
+      "parameters": {
+        "life_seconds": 0.1,
+        "radial_radius_ue": 255,
+        "radial_impulse": 400,
+        "base_primary_sphere_radius_ue": 256,
+        "base_sphere_radius_variable_ue": 160,
+        "effective_radius_runtime": null,
+        "damage_number": null,
+        "effective_radius_static_ue": 256
+      },
+      "evidence": [
+        {
+          "source": "BP_AttackCollirionNormal",
+          "pointer": "/Exports/3/Data/1"
+        },
+        {
+          "source": "BP_AttackCollirionNormal",
+          "pointer": "/Exports/6/Data"
+        },
+        {
+          "source": "BP_AttackCollirionNormal",
+          "pointer": "/Exports/0/ScriptBytecode/6"
+        },
+        {
+          "source": "BP_AttackCollirion",
+          "pointer": "/Exports/20/Data"
+        },
+        {
+          "source": "BP_AttackCollirion",
+          "pointer": "/Exports/6/Data/1"
+        }
+      ]
+    },
+    {
+      "id": "attack-origin",
+      "status": "serialized_defaults",
+      "claim_zh": "AttackLocation模板相对偏移为(95,0,30)，实际世界坐标仍受组件父级/运行更新影响。",
+      "parameters": {
+        "relative_position_ue": [
+          95,
+          0,
+          30
+        ]
+      },
+      "evidence": [
+        {
+          "source": "PlayerBP",
+          "pointer": "/Exports/88/Data/0"
+        }
+      ]
+    },
+    {
+      "id": "combo-reset",
+      "status": "recovered_control_flow",
+      "claim_zh": "连招序号超时归零。默认1.5秒会被运行分支覆盖：空中远攻状态15/16为0.5秒，其他路径1秒；不能将默认1.5直接当攻击冷却。",
+      "parameters": {
+        "serialized_interval_seconds": 1.5,
+        "air_interval_seconds": 0.5,
+        "other_branch_interval_seconds": 1,
+        "is_global_cooldown": false
+      },
+      "evidence": [
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/196/Data/6"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4673"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4674"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4677"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4688"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4690"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4691"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4692"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/4702"
+        }
+      ]
+    },
+    {
+      "id": "ranged-dispatch",
+      "status": "recovered_control_flow",
+      "claim_zh": "FistCannon输入调用LongRangeAttack；状态与移动/飞行分支选择站立普通拳波、移动三连招、超级拳或空中远攻，GetIsHitReaction为原版阻断之一。",
+      "parameters": {
+        "original_input": "FistCannon / right mouse (project accepted mapping)",
+        "entry": "LongRangeAttack",
+        "state_ground_normal": 6,
+        "state_ground_combo": 12,
+        "state_super_punch": 14,
+        "state_air_normal": 15,
+        "state_air_super": 17
+      },
+      "evidence": [
+        {
+          "source": "PlayerBP",
+          "pointer": "/Exports/42/ScriptBytecode"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/97/ScriptBytecode"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/604"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/650"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/657"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/660"
+        }
+      ]
+    },
+    {
+      "id": "ranged-normal",
+      "status": "recovered_control_flow",
+      "claim_zh": "站立普通远攻R/L交替，播放速率是AttackAnimRate乘等级倍率；NormalLongAttack通知从AttackLocation世界变换生成拳波。",
+      "parameters": {
+        "montages": [
+          "Hero_LongRAttack_Montage",
+          "Hero_LongLAttack_Montage"
+        ],
+        "rank_multipliers": [
+          1,
+          1.12,
+          1.14,
+          1.16,
+          1.18,
+          1.2,
+          1.22
+        ],
+        "spawn_class": "BP_NormalLongAttackCollirion_C",
+        "projectile_speed_ue_per_second": 15000,
+        "projectile_lifetime_seconds": 4,
+        "projectile_hit_radius_ue": 256
+      },
+      "evidence": [
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/182/ScriptBytecode"
+        },
+        {
+          "source": "HeroAnimBP",
+          "pointer": "/Exports/0/ScriptBytecode/441"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/5487"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/5488"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/5496"
+        }
+      ]
+    },
+    {
+      "id": "ranged-combo",
+      "status": "recovered_control_flow",
+      "claim_zh": "移动远攻索引0/1/2依次BackHandSlash、FlashKick、Smash；通知分别控制追敌、移动、spawn与可衔接状态。",
+      "parameters": {
+        "montages": [
+          "Hero_BackHandSlash_Montage",
+          "Hero_FlashKick_Montage",
+          "Hero_Smash_Montage"
+        ],
+        "play_rate_factors": [
+          1,
+          1.2,
+          1
+        ],
+        "base_rate": "AttackAnimRate"
+      },
+      "evidence": [
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/183/ScriptBytecode"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/39/ScriptBytecode"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/5459"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/5461"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/5463"
+        },
+        {
+          "source": "HeroAnimBP",
+          "pointer": "/Exports/0/ScriptBytecode/487"
+        },
+        {
+          "source": "HeroAnimBP",
+          "pointer": "/Exports/0/ScriptBytecode/509"
+        }
+      ]
+    },
+    {
+      "id": "super-punch",
+      "status": "recovered_control_flow",
+      "claim_zh": "移动远攻分支检查SuperPunchCounter>=1；HeroSuperLongAttackPunchFunc还检查IsDeathblowEnable，否则回落三连招。播放超级拳0.75倍并开启移动，通知生成BP_SuperPunch。",
+      "parameters": {
+        "counter_threshold_seconds": 1,
+        "requires_deathblow_enable": true,
+        "montage": "Hero_SuperPunch_Montage",
+        "play_rate": 0.75,
+        "moving_fx_interval_seconds": 0.07,
+        "spawn_class": "BP_SuperPunch_C",
+        "projectile_speed": 15000,
+        "damage": null
+      },
+      "evidence": [
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/660"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/184/ScriptBytecode"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/5350"
+        },
+        {
+          "source": "HeroAnimBP",
+          "pointer": "/Exports/0/ScriptBytecode/544"
+        }
+      ]
+    },
+    {
+      "id": "air-ranged",
+      "status": "recovered_control_flow",
+      "claim_zh": "空中远攻通常R/L踢交替，采用普通远攻等级速率；Direction在[-20,20]且counter>=1且IsDeathblowEnable转AirSuperKick。",
+      "parameters": {
+        "normal_montages": [
+          "Hero_AirKick_R_Montage",
+          "Hero_AirKick_L_Montage"
+        ],
+        "normal_spawn": "BP_AirLongAttack_Kick_C",
+        "super_montage": "Hero_AirSuperKick_Montage",
+        "super_spawn": "BP_SuperKick_C",
+        "super_rate": 1,
+        "super_direction_range_degrees": [
+          -20,
+          20
+        ]
+      },
+      "evidence": [
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/185/ScriptBytecode"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/187/ScriptBytecode"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/5330"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/5376"
+        },
+        {
+          "source": "HeroComponent",
+          "pointer": "/Exports/2/ScriptBytecode/5408"
+        }
+      ]
+    },
+    {
+      "id": "heat-trace",
+      "status": "recovered_control_flow",
+      "claim_zh": "激活后从OpticRay actor位置做单条LineTraceSingle，通道值7、非complex、忽略自己/玩家；端点由摄像机forward*20000+位置，锁定Boss时改为Boss位置+up*60。双眼光束只是共享端点的视觉表现。",
+      "parameters": {
+        "trace_kind": "single_ray",
+        "trace_channel_byte": 7,
+        "trace_complex": false,
+        "camera_aim_distance_ue": 20000,
+        "boss_target_up_offset_ue": 60,
+        "eye_sockets": [
+          "Eye_L",
+          "Eye_R"
+        ],
+        "beam_count_visual": 2,
+        "damage_rays": 1
+      },
+      "evidence": [
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/50"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/53"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/8/ScriptBytecode"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/127"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/128"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/130"
+        }
+      ]
+    },
+    {
+      "id": "heat-cadence",
+      "status": "recovered_control_flow",
+      "claim_zh": "Pawn连续命中按HitCounter减delta，<=0时恢复HitInterval并派发弱ImpactForce；新目标/首次命中进入派发路径。非Pawn在另一分支直接ImpactForce，未经过此计数器；不能说所有物体统一10Hz。",
+      "parameters": {
+        "pawn_hit_interval_seconds": 0.1,
+        "pawn_first_five_impact_flags": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "nonpawn_first_five_impact_flags": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "numeric_damage": null,
+        "nonpawn_interval_seconds": null
+      },
+      "evidence": [
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/10/Data/2"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/68"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/70"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/72"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/75"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/76"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/77"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/78"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/79"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/80"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/81"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/86"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/97"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/98"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/99"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/118"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/119"
+        }
+      ]
+    },
+    {
+      "id": "heat-citizen",
+      "status": "recovered_control_flow",
+      "claim_zh": "Pawn处理链还尝试BPI_Citizen.SetCitizenState(4)，但市民模板忽略OpticRay碰撞；接口调用存在不等于原版一定能命中或杀死市民。",
+      "parameters": {
+        "citizen_state_argument": 4,
+        "citizen_hp_damage_confirmed": false,
+        "state4_semantics_verified": false
+      },
+      "evidence": [
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/88"
+        },
+        {
+          "source": "BP_OpticRay",
+          "pointer": "/Exports/0/ScriptBytecode/91"
+        },
+        {
+          "source": "BaseCitizen_CharaBP",
+          "pointer": "/Exports/17/Data"
+        },
+        {
+          "source": "BaseCitizen_CharaBP",
+          "pointer": "/Exports/22/Data"
+        }
+      ]
+    },
+    {
+      "id": "heat-resource",
+      "status": "recovered_control_flow",
+      "claim_zh": "OpticRay对应特殊动作枚举2，表值cool=5、usable=600、loop=true；激光连续使用时ActionCoolTime累加到Max即停火/冷却，停用后以ActionCoolTimeMulti衰减；ActionUsableTime另按delta消耗。自由模式需绕过这些资源限制。",
+      "parameters": {
+        "table_cool_seconds": 5,
+        "table_usable_seconds": 600,
+        "loop_type": true,
+        "cool_recovery_multiplier_default": 1,
+        "trigger_overlap_delay_default_seconds": 10
+      },
+      "evidence": [
+        {
+          "source": "EPlayerSpecialActionType",
+          "pointer": "/Exports/0/Data/0"
+        },
+        {
+          "source": "DT_SpecialAction",
+          "pointer": "/Exports/0/Table/Data/1"
+        },
+        {
+          "source": "BP_HeroSpecialActionComponent",
+          "pointer": "/Exports/25/ScriptBytecode"
+        },
+        {
+          "source": "BP_HeroSpecialActionComponent",
+          "pointer": "/Exports/27/Data"
+        },
+        {
+          "source": "BP_HeroSpecialActionComponent",
+          "pointer": "/Exports/0/ScriptBytecode/110"
+        },
+        {
+          "source": "BP_HeroSpecialActionComponent",
+          "pointer": "/Exports/0/ScriptBytecode/115"
+        },
+        {
+          "source": "BP_HeroSpecialActionComponent",
+          "pointer": "/Exports/0/ScriptBytecode/151"
+        },
+        {
+          "source": "BP_HeroSpecialActionComponent",
+          "pointer": "/Exports/0/ScriptBytecode/152"
+        },
+        {
+          "source": "BP_HeroSpecialActionComponent",
+          "pointer": "/Exports/0/ScriptBytecode/156"
+        },
+        {
+          "source": "BP_HeroSpecialActionComponent",
+          "pointer": "/Exports/0/ScriptBytecode/162"
+        },
+        {
+          "source": "BP_HeroSpecialActionComponent",
+          "pointer": "/Exports/0/ScriptBytecode/164"
+        },
+        {
+          "source": "BP_HeroSpecialActionComponent",
+          "pointer": "/Exports/0/ScriptBytecode/167"
+        },
+        {
+          "source": "BP_HeroSpecialActionComponent",
+          "pointer": "/Exports/0/ScriptBytecode/173"
+        },
+        {
+          "source": "BP_HeroSpecialActionComponent",
+          "pointer": "/Exports/0/ScriptBytecode/174"
+        },
+        {
+          "source": "BP_HeroSpecialActionComponent",
+          "pointer": "/Exports/0/ScriptBytecode/184"
+        }
+      ]
+    },
+    {
+      "id": "vehicle-impact",
+      "status": "recovered_control_flow",
+      "claim_zh": "车辆ImpactForce仅IsStrong且未Destory?才设摧毁、爆炸、隐藏并AttackDestroy；弱命中只火花/音效。非敌方造成摧毁才SendHeroPoint(self,0,self)。",
+      "parameters": {
+        "weak_hit": "spark_and_sound",
+        "strong_hit": "destroy_once",
+        "removal_delay_seconds": 1,
+        "negative_point_table_candidate": -2000,
+        "score_mapping_fully_verified": false
+      },
+      "evidence": [
+        {
+          "source": "BP_ParentVehicle",
+          "pointer": "/Exports/18/ScriptBytecode"
+        },
+        {
+          "source": "BP_ParentVehicle",
+          "pointer": "/Exports/0/ScriptBytecode/2"
+        },
+        {
+          "source": "BP_ParentVehicle",
+          "pointer": "/Exports/0/ScriptBytecode/7"
+        },
+        {
+          "source": "DT_HeroPoint",
+          "pointer": "/Exports/0/Table"
+        }
+      ]
+    },
+    {
+      "id": "citizen-protection",
+      "status": "bounded_negative_evidence",
+      "claim_zh": "已解码BaseCitizen_CharaBP实现BPI_Citizen，未见PlayerImpact_BPI、数值HP或死亡流程；默认碰撞忽略Bullet/Hero/OpticRay，原逻辑主要走路、观察、逃跑。自由伤害需新接口/状态而非仅取消分数。",
+      "parameters": {
+        "ordinary_damage_interface_in_this_class": false,
+        "free_mode_requires_new_hurt_state": true
+      },
+      "evidence": [
+        {
+          "source": "BaseCitizen_CharaBP",
+          "pointer": "/Exports/15"
+        },
+        {
+          "source": "BaseCitizen_CharaBP",
+          "pointer": "/Exports/17/Data"
+        },
+        {
+          "source": "BaseCitizen_CharaBP",
+          "pointer": "/Exports/22/Data"
+        },
+        {
+          "source": "BaseCitizen_CharaBP",
+          "pointer": "/Exports/0/ScriptBytecode/169"
+        },
+        {
+          "source": "BaseCitizen_CharaBP",
+          "pointer": "/Exports/0/ScriptBytecode/170"
+        }
+      ]
+    },
+    {
+      "id": "enemy-impact",
+      "status": "recovered_control_flow",
+      "claim_zh": "BaseEnemy把ImpactForce.IsStrong转给HitAttack.IsAirAttack，碰撞接口没有显式数值伤害参数；存在物理布娃娃与LaunchCharacter分支。该分支不能概括Boss数值血量。",
+      "parameters": {
+        "launch_horizontal_base_ue_per_second": 2048,
+        "launch_xy_random_multiplier": [
+          1,
+          2
+        ],
+        "launch_add_z_ue_per_second": 1280,
+        "launch_xy_override": true,
+        "launch_z_override": false,
+        "numeric_hp_damage": null
+      },
+      "evidence": [
+        {
+          "source": "BaseEnemy",
+          "pointer": "/Exports/30/ScriptBytecode/1"
+        },
+        {
+          "source": "BaseEnemy",
+          "pointer": "/Exports/0/ScriptBytecode/28"
+        },
+        {
+          "source": "BaseEnemy",
+          "pointer": "/Exports/0/ScriptBytecode/54"
+        },
+        {
+          "source": "BaseEnemy",
+          "pointer": "/Exports/0/ScriptBytecode/55"
+        },
+        {
+          "source": "BaseEnemy",
+          "pointer": "/Exports/0/ScriptBytecode/59"
+        },
+        {
+          "source": "BaseEnemy",
+          "pointer": "/Exports/0/ScriptBytecode/63"
+        },
+        {
+          "source": "BaseEnemy",
+          "pointer": "/Exports/0/ScriptBytecode/65"
+        },
+        {
+          "source": "BaseEnemy",
+          "pointer": "/Exports/0/ScriptBytecode/66"
+        },
+        {
+          "source": "BaseEnemy",
+          "pointer": "/Exports/0/ScriptBytecode/67"
+        },
+        {
+          "source": "BaseEnemy",
+          "pointer": "/Exports/0/ScriptBytecode/69"
+        }
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "montage": "/Game/-HeroGame/Player/Animations/Hero_Attack1_Montage",
+      "sequence": "/Game/Animations/Hero_Attack1",
+      "montage_length_seconds": 1.6666667461395264,
+      "sequence_length_seconds": 1.8333334922790527,
+      "sequence_rate_scale": 1.100000023841858,
+      "sequence_rate_scale_is_default_assumption": false,
+      "psa_clip": {
+        "name": "Hero_Attack1",
+        "frames": 111,
+        "fps": 66.59999084472656,
+        "lastKeySeconds": 1.6516518786985672,
+        "nominalSeconds": 1.6666668957776452
+      },
+      "psa_file": "research\\exports\\combat-animations\\Animations\\Hero_Attack1.psa",
+      "evidence": {
+        "source": "animation_manifest",
+        "pointer": "/combat/0"
+      },
+      "notifies": [
+        {
+          "name": "StartAttackMove",
+          "sequence_time_seconds": 0.008530602790415287,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/10/decodedExports/2/data/Notifies/0"
+        },
+        {
+          "name": "VisibleMesh",
+          "sequence_time_seconds": 0.2468097060918808,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/10/decodedExports/2/data/Notifies/1"
+        },
+        {
+          "name": "StopAttackMove",
+          "sequence_time_seconds": 0.4250306487083435,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/10/decodedExports/2/data/Notifies/3"
+        },
+        {
+          "name": "FinishAction",
+          "sequence_time_seconds": 0.9002944231033325,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/10/decodedExports/2/data/Notifies/5"
+        },
+        {
+          "name": "PlayFootStepR",
+          "sequence_time_seconds": 1.6317030191421509,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/10/decodedExports/2/data/Notifies/6"
+        },
+        {
+          "name": "PlayFootStepL",
+          "sequence_time_seconds": 1.8079352378845215,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/10/decodedExports/2/data/Notifies/7"
+        }
+      ]
+    },
+    {
+      "montage": "/Game/-HeroGame/Player/Animations/Hero_Attack2_Montage",
+      "sequence": "/Game/Animations/Hero_Attack2",
+      "montage_length_seconds": 1.6666667461395264,
+      "sequence_length_seconds": 1.8333334922790527,
+      "sequence_rate_scale": 1.100000023841858,
+      "sequence_rate_scale_is_default_assumption": false,
+      "psa_clip": {
+        "name": "Hero_Attack2",
+        "frames": 111,
+        "fps": 66.59999084472656,
+        "lastKeySeconds": 1.6516518786985672,
+        "nominalSeconds": 1.6666668957776452
+      },
+      "psa_file": "research\\exports\\combat-animations\\Animations\\Hero_Attack2.psa",
+      "evidence": {
+        "source": "animation_manifest",
+        "pointer": "/combat/1"
+      },
+      "notifies": [
+        {
+          "name": "StartAttackMove",
+          "sequence_time_seconds": 0.01066325418651104,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/11/decodedExports/2/data/Notifies/0"
+        },
+        {
+          "name": "VisibleMesh",
+          "sequence_time_seconds": 0.2506661117076874,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/11/decodedExports/2/data/Notifies/1"
+        },
+        {
+          "name": "StopAttackMove",
+          "sequence_time_seconds": 0.44998931884765625,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/11/decodedExports/2/data/Notifies/3"
+        },
+        {
+          "name": "FinishAction",
+          "sequence_time_seconds": 0.8992426991462708,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/11/decodedExports/2/data/Notifies/5"
+        },
+        {
+          "name": "PlayFootStepL",
+          "sequence_time_seconds": 1.6420695781707764,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/11/decodedExports/2/data/Notifies/6"
+        },
+        {
+          "name": "PlayFootStepR",
+          "sequence_time_seconds": 1.8203752040863037,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/11/decodedExports/2/data/Notifies/7"
+        }
+      ]
+    },
+    {
+      "montage": "/Game/-HeroGame/Player/Animations/Hero_Attack3_Montage",
+      "sequence": "/Game/Animations/Hero_Attack3",
+      "montage_length_seconds": 1.6666667461395264,
+      "sequence_length_seconds": 1.8333334922790527,
+      "sequence_rate_scale": 1.100000023841858,
+      "sequence_rate_scale_is_default_assumption": false,
+      "psa_clip": {
+        "name": "Hero_Attack3",
+        "frames": 111,
+        "fps": 66.59999084472656,
+        "lastKeySeconds": 1.6516518786985672,
+        "nominalSeconds": 1.6666668957776452
+      },
+      "psa_file": "research\\exports\\combat-animations\\Animations\\Hero_Attack3.psa",
+      "evidence": {
+        "source": "animation_manifest",
+        "pointer": "/combat/2"
+      },
+      "notifies": [
+        {
+          "name": "StartAttackMove",
+          "sequence_time_seconds": 0.007362220901995897,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/12/decodedExports/2/data/Notifies/0"
+        },
+        {
+          "name": "VisibleMesh",
+          "sequence_time_seconds": 0.2506661117076874,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/12/decodedExports/2/data/Notifies/1"
+        },
+        {
+          "name": "StopAttackMove",
+          "sequence_time_seconds": 0.43539726734161377,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/12/decodedExports/2/data/Notifies/3"
+        },
+        {
+          "name": "FinishAction",
+          "sequence_time_seconds": 0.9002944231033325,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/12/decodedExports/2/data/Notifies/5"
+        },
+        {
+          "name": "PlayFootStepR",
+          "sequence_time_seconds": 1.6171897649765015,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/12/decodedExports/2/data/Notifies/6"
+        },
+        {
+          "name": "PlayFootStepL",
+          "sequence_time_seconds": 1.8224483728408813,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/12/decodedExports/2/data/Notifies/7"
+        }
+      ]
+    },
+    {
+      "montage": "/Game/-HeroGame/Player/Animations/Hero_Attack4_Montage",
+      "sequence": "/Game/Animations/Hero_Attack4",
+      "montage_length_seconds": 1.6666667461395264,
+      "sequence_length_seconds": 1.8333334922790527,
+      "sequence_rate_scale": 1.100000023841858,
+      "sequence_rate_scale_is_default_assumption": false,
+      "psa_clip": {
+        "name": "Hero_Attack4",
+        "frames": 111,
+        "fps": 66.59999084472656,
+        "lastKeySeconds": 1.6516518786985672,
+        "nominalSeconds": 1.6666668957776452
+      },
+      "psa_file": "research\\exports\\combat-animations\\Animations\\Hero_Attack4.psa",
+      "evidence": {
+        "source": "animation_manifest",
+        "pointer": "/combat/3"
+      },
+      "notifies": [
+        {
+          "name": "StartAttackMove",
+          "sequence_time_seconds": 0.009465713053941727,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/13/decodedExports/4/data/Notifies/0"
+        },
+        {
+          "name": "VisibleMesh",
+          "sequence_time_seconds": 0.25218597054481506,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/13/decodedExports/4/data/Notifies/1"
+        },
+        {
+          "name": "StopAttackMove",
+          "sequence_time_seconds": 0.43125060200691223,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/13/decodedExports/4/data/Notifies/4"
+        },
+        {
+          "name": "FinishAction",
+          "sequence_time_seconds": 0.9010449647903442,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/13/decodedExports/4/data/Notifies/7"
+        },
+        {
+          "name": "PlayFootStepL",
+          "sequence_time_seconds": 1.6254829168319702,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/13/decodedExports/4/data/Notifies/8"
+        },
+        {
+          "name": "PlayFootStepR",
+          "sequence_time_seconds": 1.8224483728408813,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/13/decodedExports/4/data/Notifies/9"
+        }
+      ]
+    },
+    {
+      "montage": "/Game/-HeroGame/Player/Animations/Hero_LongLAttack_Montage",
+      "sequence": "/Game/-HeroGame/Player/Animations/Hero_LongFistForce_L",
+      "montage_length_seconds": 2.000000238418579,
+      "sequence_length_seconds": 2.000000238418579,
+      "sequence_rate_scale": 1,
+      "sequence_rate_scale_is_default_assumption": true,
+      "psa_clip": {
+        "name": "Hero_LongFistForce_L",
+        "frames": 121,
+        "fps": 60.49999237060547,
+        "lastKeySeconds": 1.9834713245071947,
+        "nominalSeconds": 2.000000252211421
+      },
+      "psa_file": "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_LongFistForce_L.psa",
+      "evidence": {
+        "source": "animation_manifest",
+        "pointer": "/combat/4"
+      },
+      "notifies": [
+        {
+          "name": "StartLongAttack",
+          "sequence_time_seconds": 0.008413967676460743,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/6/decodedExports/1/data/Notifies/0"
+        },
+        {
+          "name": "NormalLongAttack",
+          "sequence_time_seconds": 0.41649141907691956,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/6/decodedExports/1/data/Notifies/1"
+        },
+        {
+          "name": "FinishLongAttack",
+          "sequence_time_seconds": 1.1022298336029053,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/6/decodedExports/1/data/Notifies/3"
+        },
+        {
+          "name": "PlayFootStepR",
+          "sequence_time_seconds": 1.6891040802001953,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/6/decodedExports/1/data/Notifies/4"
+        },
+        {
+          "name": "PlayFootStepL",
+          "sequence_time_seconds": 1.9751789569854736,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/6/decodedExports/1/data/Notifies/5"
+        }
+      ]
+    },
+    {
+      "montage": "/Game/-HeroGame/Player/Animations/Hero_LongRAttack_Montage",
+      "sequence": "/Game/-HeroGame/Player/Animations/Hero_LongFistForce_R",
+      "montage_length_seconds": 2.000000238418579,
+      "sequence_length_seconds": 2.000000238418579,
+      "sequence_rate_scale": 1,
+      "sequence_rate_scale_is_default_assumption": true,
+      "psa_clip": {
+        "name": "Hero_LongFistForce_R",
+        "frames": 121,
+        "fps": 60.49999237060547,
+        "lastKeySeconds": 1.9834713245071947,
+        "nominalSeconds": 2.000000252211421
+      },
+      "psa_file": "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_LongFistForce_R.psa",
+      "evidence": {
+        "source": "animation_manifest",
+        "pointer": "/combat/5"
+      },
+      "notifies": [
+        {
+          "name": "StartLongAttack",
+          "sequence_time_seconds": 0.008413967676460743,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/7/decodedExports/1/data/Notifies/0"
+        },
+        {
+          "name": "NormalLongAttack",
+          "sequence_time_seconds": 0.4185948967933655,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/7/decodedExports/1/data/Notifies/1"
+        },
+        {
+          "name": "FinishLongAttack",
+          "sequence_time_seconds": 1.0980228185653687,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/7/decodedExports/1/data/Notifies/3"
+        },
+        {
+          "name": "PlayFootStepR",
+          "sequence_time_seconds": 1.6912075281143188,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/7/decodedExports/1/data/Notifies/4"
+        },
+        {
+          "name": "PlayFootStepL",
+          "sequence_time_seconds": 1.9751789569854736,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/7/decodedExports/1/data/Notifies/5"
+        }
+      ]
+    },
+    {
+      "montage": "/Game/-HeroGame/Player/Animations/Hero_BackHandSlash_Montage",
+      "sequence": "/Game/-HeroGame/Player/Animations/Hero_BackHandSlash_New",
+      "montage_length_seconds": 2.000000238418579,
+      "sequence_length_seconds": 2.000000238418579,
+      "sequence_rate_scale": 1,
+      "sequence_rate_scale_is_default_assumption": true,
+      "psa_clip": {
+        "name": "Hero_BackHandSlash_New",
+        "frames": 121,
+        "fps": 60.49999237060547,
+        "lastKeySeconds": 1.9834713245071947,
+        "nominalSeconds": 2.000000252211421
+      },
+      "psa_file": "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_BackHandSlash_New.psa",
+      "evidence": {
+        "source": "animation_manifest",
+        "pointer": "/combat/6"
+      },
+      "notifies": [
+        {
+          "name": "MoveToEnemy",
+          "sequence_time_seconds": 0.16827934980392456,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/4/decodedExports/2/data/Notifies/0"
+        },
+        {
+          "name": "AttackMoveTo",
+          "sequence_time_seconds": 0.3491796553134918,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/4/decodedExports/2/data/Notifies/2"
+        },
+        {
+          "name": "SpawnComboLongAttack",
+          "sequence_time_seconds": 0.4354228377342224,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/4/decodedExports/2/data/Notifies/4"
+        },
+        {
+          "name": "ChainComboLongAttack",
+          "sequence_time_seconds": 0.4564577639102936,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/4/decodedExports/2/data/Notifies/5"
+        },
+        {
+          "name": "FinishAction",
+          "sequence_time_seconds": 1.0033656358718872,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/4/decodedExports/2/data/Notifies/6"
+        },
+        {
+          "name": "PlayFootStepL",
+          "sequence_time_seconds": 1.7080354690551758,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/4/decodedExports/2/data/Notifies/7"
+        },
+        {
+          "name": "PlayFootStepR",
+          "sequence_time_seconds": 1.9814894199371338,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/4/decodedExports/2/data/Notifies/8"
+        }
+      ]
+    },
+    {
+      "montage": "/Game/-HeroGame/Player/Animations/Hero_FlashKick_Montage",
+      "sequence": "/Game/-HeroGame/Player/Animations/Hero_FlashKick",
+      "montage_length_seconds": 1.1666666269302368,
+      "sequence_length_seconds": 1.1666666269302368,
+      "sequence_rate_scale": 1,
+      "sequence_rate_scale_is_default_assumption": true,
+      "psa_clip": {
+        "name": "Hero_FlashKick",
+        "frames": 71,
+        "fps": 60.85714340209961,
+        "lastKeySeconds": 1.150234731484044,
+        "nominalSeconds": 1.1666666562195303
+      },
+      "psa_file": "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_FlashKick.psa",
+      "evidence": {
+        "source": "animation_manifest",
+        "pointer": "/combat/7"
+      },
+      "notifies": [
+        {
+          "name": "MoveToEnemy",
+          "sequence_time_seconds": 0.25767773389816284,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/5/decodedExports/2/data/Notifies/0"
+        },
+        {
+          "name": "AttackMoveTo",
+          "sequence_time_seconds": 0.33988919854164124,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/5/decodedExports/2/data/Notifies/2"
+        },
+        {
+          "name": "SpawnComboLongAttack",
+          "sequence_time_seconds": 0.4994039833545685,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/5/decodedExports/2/data/Notifies/4"
+        },
+        {
+          "name": "ChainComboLongAttack",
+          "sequence_time_seconds": 0.6527835726737976,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/5/decodedExports/2/data/Notifies/5"
+        },
+        {
+          "name": "PlayLandFootStep",
+          "sequence_time_seconds": 0.8994179368019104,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/5/decodedExports/2/data/Notifies/6"
+        },
+        {
+          "name": "FinishAction",
+          "sequence_time_seconds": 1.1497334241867065,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/5/decodedExports/2/data/Notifies/7"
+        }
+      ]
+    },
+    {
+      "montage": "/Game/-HeroGame/Player/Animations/Hero_Smash_Montage",
+      "sequence": "/Game/-HeroGame/Player/Animations/Hero_Smash_A",
+      "montage_length_seconds": 1.3333333730697632,
+      "sequence_length_seconds": 1.3333333730697632,
+      "sequence_rate_scale": 1,
+      "sequence_rate_scale_is_default_assumption": true,
+      "psa_clip": {
+        "name": "Hero_Smash_A",
+        "frames": 81,
+        "fps": 60.75,
+        "lastKeySeconds": 1.316872427983539,
+        "nominalSeconds": 1.3333333333333333
+      },
+      "psa_file": "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_Smash_A.psa",
+      "evidence": {
+        "source": "animation_manifest",
+        "pointer": "/combat/8"
+      },
+      "notifies": [
+        {
+          "name": "StartJumpSmahAttack",
+          "sequence_time_seconds": 0.016827933490276337,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/8/decodedExports/1/data/Notifies/0"
+        },
+        {
+          "name": "VisibleMesh",
+          "sequence_time_seconds": 0.3298499882221222,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/8/decodedExports/1/data/Notifies/1"
+        },
+        {
+          "name": "StopSmashJumpUp",
+          "sequence_time_seconds": 0.3828354775905609,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/8/decodedExports/1/data/Notifies/2"
+        },
+        {
+          "name": "StartSmashMoveDown",
+          "sequence_time_seconds": 0.5931846499443054,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/8/decodedExports/1/data/Notifies/3"
+        },
+        {
+          "name": "SpawnComboLongAttack",
+          "sequence_time_seconds": 0.6710740923881531,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/8/decodedExports/1/data/Notifies/5"
+        },
+        {
+          "name": "ChainComboLongAttack",
+          "sequence_time_seconds": 0.8666386008262634,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/8/decodedExports/1/data/Notifies/6"
+        },
+        {
+          "name": "FinishAction",
+          "sequence_time_seconds": 1.2999578714370728,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/8/decodedExports/1/data/Notifies/7"
+        }
+      ]
+    },
+    {
+      "montage": "/Game/-HeroGame/Player/Animations/Hero_SuperPunch_Montage",
+      "sequence": "/Game/-HeroGame/Player/Animations/Hero_SuperPunch",
+      "montage_length_seconds": 2.0,
+      "sequence_length_seconds": 2.0,
+      "sequence_rate_scale": 1,
+      "sequence_rate_scale_is_default_assumption": true,
+      "psa_clip": {
+        "name": "Hero_SuperPunch",
+        "frames": 121,
+        "fps": 60.5,
+        "lastKeySeconds": 1.9834710743801653,
+        "nominalSeconds": 2.0
+      },
+      "psa_file": "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_SuperPunch.psa",
+      "evidence": {
+        "source": "animation_manifest",
+        "pointer": "/combat/9"
+      },
+      "notifies": [
+        {
+          "name": "StopSuperPunchSlidMove",
+          "sequence_time_seconds": 0.6962557435035706,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/9/decodedExports/2/data/Notifies/0"
+        },
+        {
+          "name": "Trail",
+          "sequence_time_seconds": 0.7004627585411072,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.30500632524490356,
+          "state_class": "AnimNotifyState_Trail_0",
+          "pointer": "/combatSequences/9/decodedExports/2/data/Notifies/1"
+        },
+        {
+          "name": "SpawnSuperLongAttack",
+          "sequence_time_seconds": 0.8701215386390686,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/9/decodedExports/2/data/Notifies/3"
+        },
+        {
+          "name": "FinishAction",
+          "sequence_time_seconds": 1.89734947681427,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/9/decodedExports/2/data/Notifies/4"
+        }
+      ]
+    },
+    {
+      "montage": "/Game/-HeroGame/Player/Animations/Hero_AirKick_L_Montage",
+      "sequence": "/Game/-HeroGame/Player/Animations/Hero_AirKick_L",
+      "montage_length_seconds": 1.1666666269302368,
+      "sequence_length_seconds": 1.1666666269302368,
+      "sequence_rate_scale": 1,
+      "sequence_rate_scale_is_default_assumption": true,
+      "psa_clip": {
+        "name": "Hero_AirKick_L",
+        "frames": 71,
+        "fps": 60.85714340209961,
+        "lastKeySeconds": 1.150234731484044,
+        "nominalSeconds": 1.1666666562195303
+      },
+      "psa_file": "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_AirKick_L.psa",
+      "evidence": {
+        "source": "animation_manifest",
+        "pointer": "/combat/10"
+      },
+      "notifies": [
+        {
+          "name": "SpawnAirLongAttack",
+          "sequence_time_seconds": 0.4319169521331787,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/1/decodedExports/2/data/Notifies/2"
+        },
+        {
+          "name": "ChainAirLongAttack",
+          "sequence_time_seconds": 0.5025947093963623,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/1/decodedExports/2/data/Notifies/3"
+        },
+        {
+          "name": "FinishAction",
+          "sequence_time_seconds": 1.1006519794464111,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/1/decodedExports/2/data/Notifies/4"
+        }
+      ]
+    },
+    {
+      "montage": "/Game/-HeroGame/Player/Animations/Hero_AirKick_R_Montage",
+      "sequence": "/Game/-HeroGame/Player/Animations/Hero_AirKick_R",
+      "montage_length_seconds": 1.1666666269302368,
+      "sequence_length_seconds": 1.1666666269302368,
+      "sequence_rate_scale": 1,
+      "sequence_rate_scale_is_default_assumption": true,
+      "psa_clip": {
+        "name": "Hero_AirKick_R",
+        "frames": 71,
+        "fps": 60.85714340209961,
+        "lastKeySeconds": 1.150234731484044,
+        "nominalSeconds": 1.1666666562195303
+      },
+      "psa_file": "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_AirKick_R.psa",
+      "evidence": {
+        "source": "animation_manifest",
+        "pointer": "/combat/11"
+      },
+      "notifies": [
+        {
+          "name": "SpawnAirLongAttack",
+          "sequence_time_seconds": 0.4988625645637512,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/2/decodedExports/2/data/Notifies/2"
+        },
+        {
+          "name": "ChainAirLongAttack",
+          "sequence_time_seconds": 0.5536006093025208,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/2/decodedExports/2/data/Notifies/3"
+        },
+        {
+          "name": "FinishAction",
+          "sequence_time_seconds": 1.1345702409744263,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/2/decodedExports/2/data/Notifies/4"
+        }
+      ]
+    },
+    {
+      "montage": "/Game/-HeroGame/Player/Animations/Hero_AirSuperKick_Montage",
+      "sequence": "/Game/-HeroGame/Player/Animations/Hero_AirSuperKick",
+      "montage_length_seconds": 2.0,
+      "sequence_length_seconds": 2.0,
+      "sequence_rate_scale": 1,
+      "sequence_rate_scale_is_default_assumption": true,
+      "psa_clip": {
+        "name": "Hero_AirSuperKick",
+        "frames": 121,
+        "fps": 60.5,
+        "lastKeySeconds": 1.9834710743801653,
+        "nominalSeconds": 2.0
+      },
+      "psa_file": "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_AirSuperKick.psa",
+      "evidence": {
+        "source": "animation_manifest",
+        "pointer": "/combat/12"
+      },
+      "notifies": [
+        {
+          "name": "SpawnSuperLongAttack",
+          "sequence_time_seconds": 0.6547237634658813,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/3/decodedExports/3/data/Notifies/2"
+        },
+        {
+          "name": "StopSuperPunchSlidMove",
+          "sequence_time_seconds": 0.9383663535118103,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/3/decodedExports/3/data/Notifies/4"
+        },
+        {
+          "name": "ChainAirLongAttack",
+          "sequence_time_seconds": 0.9511622190475464,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/3/decodedExports/3/data/Notifies/5"
+        },
+        {
+          "name": "FinishAction",
+          "sequence_time_seconds": 1.9015564918518066,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/3/decodedExports/3/data/Notifies/6"
+        }
+      ]
+    },
+    {
+      "montage": "/Game/-HeroGame/Player/Animations/Hero_AirAttackStart_Montage",
+      "sequence": "/Game/-HeroGame/Player/Animations/Hero_AirAttackStart",
+      "montage_length_seconds": 0.6666666865348816,
+      "sequence_length_seconds": 0.6666666865348816,
+      "sequence_rate_scale": 1,
+      "sequence_rate_scale_is_default_assumption": true,
+      "psa_clip": {
+        "name": "Hero_AirAttackStart",
+        "frames": 41,
+        "fps": 61.5,
+        "lastKeySeconds": 0.6504065040650406,
+        "nominalSeconds": 0.6666666666666666
+      },
+      "psa_file": "research\\exports\\combat-animations\\-HeroGame\\Player\\Animations\\Hero_AirAttackStart.psa",
+      "evidence": {
+        "source": "animation_manifest",
+        "pointer": "/combat/13"
+      },
+      "notifies": [
+        {
+          "name": "StartAirAttack",
+          "sequence_time_seconds": 0.5223671197891235,
+          "trigger_time_offset_seconds": 0.0,
+          "duration_seconds": 0.0,
+          "state_class": null,
+          "pointer": "/combatSequences/0/decodedExports/3/data/Notifies/3"
+        }
+      ]
+    }
+  ],
+  "timing_conversion": {
+    "status": "inference",
+    "formula": "sequence_time / (sequence RateScale * AnimSegment AnimPlayRate * PlayAnimMontage rate), plus any trigger offset; validate against animation playback",
+    "normal_psa_warning": "PSA nominal 1.6667 already reflects source 1.8333 / RateScale 1.1; when scheduling events against PSA-normalized time divide source notify time by1.1 once, do not speed clip by1.1 again",
+    "sequence_default_rate_assumption": 1
+  },
+  "approved_free_mode": {
+    "status": "new_design",
+    "input": {
+      "right_mouse": "original ranged dispatch",
+      "hold_E": "added heat vision",
+      "ascend": "must remap original E; final key not chosen here"
+    },
+    "changes": [
+      "Add explicit damage/knockback receivers to citizens and vehicles/props",
+      "Remove player damage, negative score, rank loss, involuntary control loss, ability resource limits and forced failure",
+      "Retain animation windup, hit timing and explicit combo gates as combat behavior, unless design deliberately revises them"
+    ],
+    "suggested_heat_interval_policy": "Use fixed0.1s ticks for all destructible receiver types as a deliberate new policy; original nonPawn branch is different"
+  },
+  "unknowns": [
+    "Supplement recovers projectile speed/lifespan/flags and static inherited melee radius; native Normal/SuperPunch capsule dimensions and observed runtime behavior remain unconfirmed.",
+    "No invented generic HP/damage/DPS/cooldown values. Boss damage is outside this minimum spec.",
+    "Citizen State4 enum display name not decoded here; SetCitizenState4 is not proof of death.",
+    "Vehicle DT_HeroPoint row -2000 exists but SendHeroPoint helper mapping is not independently decoded here.",
+    "No original runtime observation: actual notify queue/frame timing, interruption/blend behavior and physics response require later comparison."
+  ],
+  "implementation_acceptance": [
+    "Normal combo emits exactly one gameplay hit per selected notification execution and uses per-attack receiver deduplication.",
+    "Animation time scaling remains aligned to source events at multiple playback rates; PSA duration scaling is applied once.",
+    "Right mouse and added E heat vision coexist; releasing E stops beam and hit processing.",
+    "Heat ray stops at nearest blocking surface; visual beams follow two eye sockets but share gameplay hit.",
+    "Free mode allows intentional damage to citizens/vehicles/props without score loss or forced failure; mark this as new design.",
+    "Vehicle destruction triggers once and removes actor safely from city traffic/pool after its chosen effect lifetime."
+  ],
+  "supplement": "combat-projectile-supplement.json"
+}

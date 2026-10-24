@@ -1,0 +1,6094 @@
+[
+  {
+    "export_index": 0,
+    "name": "ExecuteUbergraph_HeroGameInstance",
+    "statements": [
+      {
+        "pointer": "/Exports/0/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_PushExecutionFlow",
+          "PushingAddress": 8079
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_ComputedJump",
+          "CodeOffsetExpression": "EntryPoint"
+        },
+        "offset": 5
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_SetArray",
+          "AssigningProperty": "CallFunc_GetAllWidgetsWithInterface_FoundWidgets",
+          "ArrayInnerProp": null,
+          "Elements": []
+        },
+        "offset": 15
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/3",
+        "ast": {
+          "on": {
+            "object": "Default__WidgetBlueprintLibrary"
+          },
+          "do": {
+            "call": "GetAllWidgetsWithInterface",
+            "args": [
+              "self",
+              "CallFunc_GetAllWidgetsWithInterface_FoundWidgets",
+              {
+                "object": "FinishLoadInterface_C"
+              },
+              false
+            ]
+          }
+        },
+        "offset": 26
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_10",
+          "Variable": "Temp_int_Variable_10",
+          "Expression": 0
+        },
+        "offset": 78
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Array_Length_ReturnValue_1",
+          "Variable": "CallFunc_Array_Length_ReturnValue_1",
+          "Expression": {
+            "on": {
+              "object": "Default__KismetArrayLibrary"
+            },
+            "do": {
+              "call": "Array_Length",
+              "args": [
+                "CallFunc_GetAllWidgetsWithInterface_FoundWidgets"
+              ]
+            }
+          }
+        },
+        "offset": 101
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/6",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_Less_IntInt_ReturnValue_5",
+          "AssignmentExpression": {
+            "call": "Less_IntInt",
+            "args": [
+              "Temp_int_Variable_10",
+              "CallFunc_Array_Length_ReturnValue_1"
+            ]
+          }
+        },
+        "offset": 160
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/7",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_Less_IntInt_ReturnValue_5"
+        },
+        "offset": 198
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/8",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Get",
+            "args": [
+              "CallFunc_GetAllWidgetsWithInterface_FoundWidgets",
+              "Temp_int_Variable_10",
+              "CallFunc_Array_Get_Item_5"
+            ]
+          }
+        },
+        "offset": 208
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/9",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_AsFinish_Load_Interface",
+          "Expression": {
+            "op": "EX_ObjToInterfaceCast",
+            "ClassPtr": -5,
+            "Target": "CallFunc_Array_Get_Item_5"
+          }
+        },
+        "offset": 267
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/10",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_bSuccess_5",
+          "Expression": {
+            "op": "EX_PrimitiveCast",
+            "ConversionType": "InterfaceToBool",
+            "Target": "K2Node_DynamicCast_AsFinish_Load_Interface"
+          }
+        },
+        "offset": 303
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/11",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 467,
+          "BooleanExpression": "K2Node_DynamicCast_bSuccess_5"
+        },
+        "offset": 332
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/12",
+        "ast": {
+          "on": {
+            "op": "EX_InterfaceContext",
+            "InterfaceValue": "K2Node_DynamicCast_AsFinish_Load_Interface"
+          },
+          "do": {
+            "call": "FinishLoad",
+            "args": [
+              false,
+              "CallFunc_FinishLoad_out"
+            ]
+          }
+        },
+        "offset": 346
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/13",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Add_IntInt_ReturnValue_5",
+          "Variable": "CallFunc_Add_IntInt_ReturnValue_5",
+          "Expression": {
+            "call": "Add_IntInt",
+            "args": [
+              "Temp_int_Variable_10",
+              1
+            ]
+          }
+        },
+        "offset": 393
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/14",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_10",
+          "Variable": "Temp_int_Variable_10",
+          "Expression": "CallFunc_Add_IntInt_ReturnValue_5"
+        },
+        "offset": 435
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/15",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 101
+        },
+        "offset": 462
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/16",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_FinishLoad_out",
+          "AssignmentExpression": false
+        },
+        "offset": 467
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/17",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 393
+        },
+        "offset": 478
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/18",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_GetGameInstanceSubsystem_ReturnValue",
+          "AssignmentExpression": {
+            "call": "GetGameInstanceSubsystem",
+            "args": [
+              "self",
+              {
+                "object": "GameActivitySubsystem"
+              }
+            ]
+          }
+        },
+        "offset": 483
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/19",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_IsValid_ReturnValue",
+          "AssignmentExpression": {
+            "call": "IsValid",
+            "args": [
+              "CallFunc_GetGameInstanceSubsystem_ReturnValue"
+            ]
+          }
+        },
+        "offset": 513
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/20",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 651,
+          "BooleanExpression": "CallFunc_IsValid_ReturnValue"
+        },
+        "offset": 542
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/21",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_GetGameInstanceSubsystem_ReturnValue",
+          "AssignmentExpression": {
+            "call": "GetGameInstanceSubsystem",
+            "args": [
+              "self",
+              {
+                "object": "GameActivitySubsystem"
+              }
+            ]
+          }
+        },
+        "offset": 556
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/22",
+        "ast": {
+          "op": "EX_BindDelegate",
+          "FunctionName": "OnActivetyRequested",
+          "Delegate": "K2Node_CreateDelegate_OutputDelegate",
+          "ObjectTerm": "self"
+        },
+        "offset": 586
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/23",
+        "ast": {
+          "op": "EX_AddMulticastDelegate",
+          "Delegate": {
+            "on": "CallFunc_GetGameInstanceSubsystem_ReturnValue",
+            "do": "OnActivityRequested"
+          },
+          "DelegateToAdd": "K2Node_CreateDelegate_OutputDelegate"
+        },
+        "offset": 609
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/24",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 650
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/25",
+        "ast": {
+          "call": "Delay",
+          "args": [
+            "self",
+            "+0",
+            {
+              "op": "EX_StructConst",
+              "Struct": -160,
+              "StructSize": 32,
+              "Value": [
+                {
+                  "op": "EX_SkipOffsetConst",
+                  "Value": 483
+                },
+                185775864,
+                "ExecuteUbergraph_HeroGameInstance",
+                "self"
+              ]
+            }
+          ]
+        },
+        "offset": 651
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/26",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 705
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/27",
+        "ast": {
+          "op": "EX_SetArray",
+          "AssigningProperty": "CallFunc_GetAllWidgetsWithInterface_FoundWidgets_1",
+          "ArrayInnerProp": null,
+          "Elements": []
+        },
+        "offset": 706
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/28",
+        "ast": {
+          "on": {
+            "object": "Default__WidgetBlueprintLibrary"
+          },
+          "do": {
+            "call": "GetAllWidgetsWithInterface",
+            "args": [
+              "self",
+              "CallFunc_GetAllWidgetsWithInterface_FoundWidgets_1",
+              {
+                "object": "BPI_Localize_C"
+              },
+              false
+            ]
+          }
+        },
+        "offset": 717
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/29",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_1",
+          "Variable": "Temp_int_Variable_1",
+          "Expression": 0
+        },
+        "offset": 769
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/30",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Array_Length_ReturnValue_4",
+          "Variable": "CallFunc_Array_Length_ReturnValue_4",
+          "Expression": {
+            "on": {
+              "object": "Default__KismetArrayLibrary"
+            },
+            "do": {
+              "call": "Array_Length",
+              "args": [
+                "CallFunc_GetAllWidgetsWithInterface_FoundWidgets_1"
+              ]
+            }
+          }
+        },
+        "offset": 792
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/31",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_Less_IntInt_ReturnValue_3",
+          "AssignmentExpression": {
+            "call": "Less_IntInt",
+            "args": [
+              "Temp_int_Variable_1",
+              "CallFunc_Array_Length_ReturnValue_4"
+            ]
+          }
+        },
+        "offset": 851
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/32",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_Less_IntInt_ReturnValue_3"
+        },
+        "offset": 889
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/33",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Get",
+            "args": [
+              "CallFunc_GetAllWidgetsWithInterface_FoundWidgets_1",
+              "Temp_int_Variable_1",
+              "CallFunc_Array_Get_Item_3"
+            ]
+          }
+        },
+        "offset": 899
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/34",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_AsBPI_Localize",
+          "Expression": {
+            "op": "EX_ObjToInterfaceCast",
+            "ClassPtr": -12,
+            "Target": "CallFunc_Array_Get_Item_3"
+          }
+        },
+        "offset": 958
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/35",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_bSuccess_2",
+          "Expression": {
+            "op": "EX_PrimitiveCast",
+            "ConversionType": "InterfaceToBool",
+            "Target": "K2Node_DynamicCast_AsBPI_Localize"
+          }
+        },
+        "offset": 994
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/36",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1166,
+          "BooleanExpression": "K2Node_DynamicCast_bSuccess_2"
+        },
+        "offset": 1023
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/37",
+        "ast": {
+          "on": {
+            "op": "EX_InterfaceContext",
+            "InterfaceValue": "K2Node_DynamicCast_AsBPI_Localize"
+          },
+          "do": {
+            "call": "Localize",
+            "args": [
+              "IsJP",
+              "CallFunc_Localize_out"
+            ]
+          }
+        },
+        "offset": 1037
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/38",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Add_IntInt_ReturnValue_1",
+          "Variable": "CallFunc_Add_IntInt_ReturnValue_1",
+          "Expression": {
+            "call": "Add_IntInt",
+            "args": [
+              "Temp_int_Variable_1",
+              1
+            ]
+          }
+        },
+        "offset": 1092
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/39",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_1",
+          "Variable": "Temp_int_Variable_1",
+          "Expression": "CallFunc_Add_IntInt_ReturnValue_1"
+        },
+        "offset": 1134
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/40",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 792
+        },
+        "offset": 1161
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/41",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_Localize_out",
+          "AssignmentExpression": false
+        },
+        "offset": 1166
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/42",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 1092
+        },
+        "offset": 1177
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/43",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_LoadGame_ReturnValue",
+          "AssignmentExpression": {
+            "call": "LoadGame",
+            "args": []
+          }
+        },
+        "offset": 1182
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/44",
+        "ast": {
+          "call": "SetMasterVolume",
+          "args": [
+            {
+              "on": "SaveData",
+              "do": "MasterVolume"
+            }
+          ]
+        },
+        "offset": 1206
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/45",
+        "ast": {
+          "call": "SetSEVolume",
+          "args": [
+            {
+              "on": "SaveData",
+              "do": "SEVolume"
+            }
+          ]
+        },
+        "offset": 1251
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/46",
+        "ast": {
+          "call": "SetBGMVolume",
+          "args": [
+            {
+              "on": "SaveData",
+              "do": "BGMVolume"
+            }
+          ]
+        },
+        "offset": 1296
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/47",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstStart"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 1341
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/48",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "IsJP",
+          "AssignmentExpression": {
+            "on": "SaveData",
+            "do": "IsJP"
+          }
+        },
+        "offset": 1374
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/49",
+        "ast": {
+          "op": "EX_SetArray",
+          "AssigningProperty": "CallFunc_GetAllWidgetsWithInterface_FoundWidgets_2",
+          "ArrayInnerProp": null,
+          "Elements": []
+        },
+        "offset": 1415
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/50",
+        "ast": {
+          "on": {
+            "object": "Default__WidgetBlueprintLibrary"
+          },
+          "do": {
+            "call": "GetAllWidgetsWithInterface",
+            "args": [
+              "self",
+              "CallFunc_GetAllWidgetsWithInterface_FoundWidgets_2",
+              {
+                "object": "BPI_Localize_C"
+              },
+              false
+            ]
+          }
+        },
+        "offset": 1426
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/51",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_2",
+          "Variable": "Temp_int_Variable_2",
+          "Expression": 0
+        },
+        "offset": 1478
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/52",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Array_Length_ReturnValue_5",
+          "Variable": "CallFunc_Array_Length_ReturnValue_5",
+          "Expression": {
+            "on": {
+              "object": "Default__KismetArrayLibrary"
+            },
+            "do": {
+              "call": "Array_Length",
+              "args": [
+                "CallFunc_GetAllWidgetsWithInterface_FoundWidgets_2"
+              ]
+            }
+          }
+        },
+        "offset": 1501
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/53",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_Less_IntInt_ReturnValue_4",
+          "AssignmentExpression": {
+            "call": "Less_IntInt",
+            "args": [
+              "Temp_int_Variable_2",
+              "CallFunc_Array_Length_ReturnValue_5"
+            ]
+          }
+        },
+        "offset": 1560
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/54",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1879,
+          "BooleanExpression": "CallFunc_Less_IntInt_ReturnValue_4"
+        },
+        "offset": 1598
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/55",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Get",
+            "args": [
+              "CallFunc_GetAllWidgetsWithInterface_FoundWidgets_2",
+              "Temp_int_Variable_2",
+              "CallFunc_Array_Get_Item_4"
+            ]
+          }
+        },
+        "offset": 1612
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/56",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_AsBPI_Localize_1",
+          "Expression": {
+            "op": "EX_ObjToInterfaceCast",
+            "ClassPtr": -12,
+            "Target": "CallFunc_Array_Get_Item_4"
+          }
+        },
+        "offset": 1671
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/57",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_bSuccess_3",
+          "Expression": {
+            "op": "EX_PrimitiveCast",
+            "ConversionType": "InterfaceToBool",
+            "Target": "K2Node_DynamicCast_AsBPI_Localize_1"
+          }
+        },
+        "offset": 1707
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/58",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1926,
+          "BooleanExpression": "K2Node_DynamicCast_bSuccess_3"
+        },
+        "offset": 1736
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/59",
+        "ast": {
+          "on": {
+            "op": "EX_InterfaceContext",
+            "InterfaceValue": "K2Node_DynamicCast_AsBPI_Localize_1"
+          },
+          "do": {
+            "call": "Localize",
+            "args": [
+              "IsJP",
+              "CallFunc_Localize_out_1"
+            ]
+          }
+        },
+        "offset": 1750
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/60",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Add_IntInt_ReturnValue_2",
+          "Variable": "CallFunc_Add_IntInt_ReturnValue_2",
+          "Expression": {
+            "call": "Add_IntInt",
+            "args": [
+              "Temp_int_Variable_2",
+              1
+            ]
+          }
+        },
+        "offset": 1805
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/61",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_2",
+          "Variable": "Temp_int_Variable_2",
+          "Expression": "CallFunc_Add_IntInt_ReturnValue_2"
+        },
+        "offset": 1847
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/62",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 1501
+        },
+        "offset": 1874
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/63",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": {
+            "on": "SaveData",
+            "do": "IsTutorialClear"
+          }
+        },
+        "offset": 1879
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/64",
+        "ast": {
+          "call": "ResetSaveData",
+          "args": []
+        },
+        "offset": 1911
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/65",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 1925
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/66",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_Localize_out_1",
+          "AssignmentExpression": false
+        },
+        "offset": 1926
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/67",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 1805
+        },
+        "offset": 1937
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/68",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Add_IntInt_ReturnValue",
+          "Variable": "CallFunc_Add_IntInt_ReturnValue",
+          "Expression": {
+            "call": "Add_IntInt",
+            "args": [
+              "Temp_int_Variable",
+              1
+            ]
+          }
+        },
+        "offset": 1942
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/69",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable",
+          "Variable": "Temp_int_Variable",
+          "Expression": "CallFunc_Add_IntInt_ReturnValue"
+        },
+        "offset": 1984
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/70",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Array_Length_ReturnValue_3",
+          "Variable": "CallFunc_Array_Length_ReturnValue_3",
+          "Expression": {
+            "on": {
+              "object": "Default__KismetArrayLibrary"
+            },
+            "do": {
+              "call": "Array_Length",
+              "args": [
+                "CallFunc_GetAllActorsOfClass_OutActors_1"
+              ]
+            }
+          }
+        },
+        "offset": 2011
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/71",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_Less_IntInt_ReturnValue_2",
+          "AssignmentExpression": {
+            "call": "Less_IntInt",
+            "args": [
+              "Temp_int_Variable",
+              "CallFunc_Array_Length_ReturnValue_3"
+            ]
+          }
+        },
+        "offset": 2070
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/72",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_Less_IntInt_ReturnValue_2"
+        },
+        "offset": 2108
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/73",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Get",
+            "args": [
+              "CallFunc_GetAllActorsOfClass_OutActors_1",
+              "Temp_int_Variable",
+              "CallFunc_Array_Get_Item_2"
+            ]
+          }
+        },
+        "offset": 2118
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/74",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_AsStory_Quest_Interface_1",
+          "Expression": {
+            "op": "EX_ObjToInterfaceCast",
+            "ClassPtr": -11,
+            "Target": "CallFunc_Array_Get_Item_2"
+          }
+        },
+        "offset": 2177
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/75",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_bSuccess_1",
+          "Expression": {
+            "op": "EX_PrimitiveCast",
+            "ConversionType": "InterfaceToBool",
+            "Target": "K2Node_DynamicCast_AsStory_Quest_Interface_1"
+          }
+        },
+        "offset": 2213
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/76",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 1942,
+          "BooleanExpression": "K2Node_DynamicCast_bSuccess_1"
+        },
+        "offset": 2242
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/77",
+        "ast": {
+          "on": {
+            "op": "EX_InterfaceContext",
+            "InterfaceValue": "K2Node_DynamicCast_AsStory_Quest_Interface_1"
+          },
+          "do": {
+            "call": "FinishStoryQuest",
+            "args": [
+              4
+            ]
+          }
+        },
+        "offset": 2256
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/78",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 1942
+        },
+        "offset": 2295
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/79",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable",
+          "Variable": "Temp_int_Variable",
+          "Expression": 0
+        },
+        "offset": 2300
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/80",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 2011
+        },
+        "offset": 2323
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/81",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_MakeLiteralByte_ReturnValue",
+          "Variable": "CallFunc_MakeLiteralByte_ReturnValue",
+          "Expression": {
+            "call": "MakeLiteralByte",
+            "args": [
+              4
+            ]
+          }
+        },
+        "offset": 2328
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/82",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_GetActivityID_ReturnValue",
+          "AssignmentExpression": {
+            "call": "GetActivityID",
+            "args": [
+              "CallFunc_MakeLiteralByte_ReturnValue",
+              "CallFunc_GetActivityID_ID"
+            ]
+          }
+        },
+        "offset": 2358
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/83",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_GetActivityID_ReturnValue"
+        },
+        "offset": 2396
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/84",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_EqualEqual_StrStr_ReturnValue",
+          "AssignmentExpression": {
+            "call": "EqualEqual_StrStr",
+            "args": [
+              "CallFunc_GetActivityID_ID",
+              "K2Node_CustomEvent_ActivityID"
+            ]
+          }
+        },
+        "offset": 2406
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/85",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_EqualEqual_StrStr_ReturnValue"
+        },
+        "offset": 2444
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/86",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 2483,
+          "BooleanExpression": "Initialized"
+        },
+        "offset": 2454
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/87",
+        "ast": {
+          "call": "OnMainActivityRequested",
+          "args": []
+        },
+        "offset": 2468
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/88",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 2482
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/89",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "ActivityRequestedBeforeInitialize",
+          "AssignmentExpression": true
+        },
+        "offset": 2483
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/90",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 2494
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/91",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_Create_ReturnValue",
+          "AssignmentExpression": {
+            "on": {
+              "object": "Default__WidgetBlueprintLibrary"
+            },
+            "do": {
+              "call": "Create",
+              "args": [
+                "self",
+                {
+                  "object": "WBP_SaveAndLoad_C"
+                },
+                {
+                  "op": "EX_NoObject"
+                }
+              ]
+            }
+          }
+        },
+        "offset": 2495
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/92",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "WBP_SaveOrLoad",
+          "AssignmentExpression": "CallFunc_Create_ReturnValue"
+        },
+        "offset": 2548
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/93",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_LoadGame_ReturnValue_1",
+          "AssignmentExpression": {
+            "call": "LoadGame",
+            "args": []
+          }
+        },
+        "offset": 2567
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/94",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_IsValid_ReturnValue_8",
+          "AssignmentExpression": {
+            "call": "IsValid",
+            "args": [
+              "CallFunc_LoadGame_ReturnValue_1"
+            ]
+          }
+        },
+        "offset": 2591
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/95",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 2689,
+          "BooleanExpression": "CallFunc_IsValid_ReturnValue_8"
+        },
+        "offset": 2620
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/96",
+        "ast": {
+          "call": "Delay",
+          "args": [
+            "self",
+            0.20000000298023224,
+            {
+              "op": "EX_StructConst",
+              "Struct": -160,
+              "StructSize": 32,
+              "Value": [
+                {
+                  "op": "EX_SkipOffsetConst",
+                  "Value": 1182
+                },
+                -2100906002,
+                "ExecuteUbergraph_HeroGameInstance",
+                "self"
+              ]
+            }
+          ]
+        },
+        "offset": 2634
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/97",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 2688
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/98",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_CreateSaveGameObject_ReturnValue",
+          "AssignmentExpression": {
+            "call": "CreateSaveGameObject",
+            "args": [
+              {
+                "object": "HeroGameSaveData_C"
+              }
+            ]
+          }
+        },
+        "offset": 2689
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/99",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "SaveData",
+          "AssignmentExpression": "CallFunc_CreateSaveGameObject_ReturnValue"
+        },
+        "offset": 2718
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/100",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstStart"
+          },
+          "AssignmentExpression": true
+        },
+        "offset": 2737
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/101",
+        "ast": {
+          "call": "SetDefaultLanguageFromPlatform",
+          "args": []
+        },
+        "offset": 2770
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/102",
+        "ast": {
+          "call": "SaveGame",
+          "args": [
+            "CallFunc_SaveGame_SaveSuccess"
+          ]
+        },
+        "offset": 2784
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/103",
+        "ast": {
+          "call": "Delay",
+          "args": [
+            "self",
+            0.20000000298023224,
+            {
+              "op": "EX_StructConst",
+              "Struct": -160,
+              "StructSize": 32,
+              "Value": [
+                {
+                  "op": "EX_SkipOffsetConst",
+                  "Value": 706
+                },
+                270715354,
+                "ExecuteUbergraph_HeroGameInstance",
+                "self"
+              ]
+            }
+          ]
+        },
+        "offset": 2807
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/104",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 2861
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/105",
+        "ast": {
+          "op": "EX_PushExecutionFlow",
+          "PushingAddress": 3199
+        },
+        "offset": 2862
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/106",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Get",
+            "args": [
+              "StoryActors",
+              "Temp_int_Array_Index_Variable",
+              "CallFunc_Array_Get_Item"
+            ]
+          }
+        },
+        "offset": 2867
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/107",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_IsValid_ReturnValue_5",
+          "AssignmentExpression": {
+            "call": "IsValid",
+            "args": [
+              "CallFunc_Array_Get_Item"
+            ]
+          }
+        },
+        "offset": 2926
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/108",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_IsValid_ReturnValue_5"
+        },
+        "offset": 2955
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/109",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Get",
+            "args": [
+              "StoryActors",
+              "Temp_int_Array_Index_Variable",
+              "CallFunc_Array_Get_Item"
+            ]
+          }
+        },
+        "offset": 2965
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/110",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_GetPlayerCharacter_ReturnValue",
+          "AssignmentExpression": {
+            "call": "GetPlayerCharacter",
+            "args": [
+              "self",
+              0
+            ]
+          }
+        },
+        "offset": 3024
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/111",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_EqualEqual_ObjectObject_ReturnValue",
+          "AssignmentExpression": {
+            "call": "EqualEqual_ObjectObject",
+            "args": [
+              "CallFunc_GetPlayerCharacter_ReturnValue",
+              "CallFunc_Array_Get_Item"
+            ]
+          }
+        },
+        "offset": 3050
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/112",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 3103,
+          "BooleanExpression": "CallFunc_EqualEqual_ObjectObject_ReturnValue"
+        },
+        "offset": 3088
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/113",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 3102
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/114",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Get",
+            "args": [
+              "StoryActors",
+              "Temp_int_Array_Index_Variable",
+              "CallFunc_Array_Get_Item"
+            ]
+          }
+        },
+        "offset": 3103
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/115",
+        "ast": {
+          "on": "CallFunc_Array_Get_Item",
+          "do": {
+            "call": "K2_DestroyActor",
+            "args": []
+          }
+        },
+        "offset": 3162
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/116",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 3198
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/117",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Add_IntInt_ReturnValue_3",
+          "Variable": "CallFunc_Add_IntInt_ReturnValue_3",
+          "Expression": {
+            "call": "Add_IntInt",
+            "args": [
+              "Temp_int_Loop_Counter_Variable",
+              1
+            ]
+          }
+        },
+        "offset": 3199
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/118",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Loop_Counter_Variable",
+          "Variable": "Temp_int_Loop_Counter_Variable",
+          "Expression": "CallFunc_Add_IntInt_ReturnValue_3"
+        },
+        "offset": 3241
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/119",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Array_Length_ReturnValue",
+          "Variable": "CallFunc_Array_Length_ReturnValue",
+          "Expression": {
+            "on": {
+              "object": "Default__KismetArrayLibrary"
+            },
+            "do": {
+              "call": "Array_Length",
+              "args": [
+                "StoryActors"
+              ]
+            }
+          }
+        },
+        "offset": 3268
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/120",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_Less_IntInt_ReturnValue",
+          "AssignmentExpression": {
+            "call": "Less_IntInt",
+            "args": [
+              "Temp_int_Loop_Counter_Variable",
+              "CallFunc_Array_Length_ReturnValue"
+            ]
+          }
+        },
+        "offset": 3327
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/121",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 3411,
+          "BooleanExpression": "CallFunc_Less_IntInt_ReturnValue"
+        },
+        "offset": 3365
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/122",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Array_Index_Variable",
+          "Variable": "Temp_int_Array_Index_Variable",
+          "Expression": "Temp_int_Loop_Counter_Variable"
+        },
+        "offset": 3379
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/123",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 2862
+        },
+        "offset": 3406
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/124",
+        "ast": {
+          "call": "UnloadStreamLevel",
+          "args": [
+            "self",
+            "TutorialLevel",
+            {
+              "op": "EX_StructConst",
+              "Struct": -160,
+              "StructSize": 32,
+              "Value": [
+                -1,
+                1215335643,
+                "ExecuteUbergraph_HeroGameInstance",
+                "self"
+              ]
+            },
+            false
+          ]
+        },
+        "offset": 3411
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/125",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 3474
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/126",
+        "ast": {
+          "call": "LoadStreamLevel",
+          "args": [
+            "self",
+            "TutorialLevel",
+            true,
+            false,
+            {
+              "op": "EX_StructConst",
+              "Struct": -160,
+              "StructSize": 32,
+              "Value": [
+                {
+                  "op": "EX_SkipOffsetConst",
+                  "Value": 15
+                },
+                1038566785,
+                "ExecuteUbergraph_HeroGameInstance",
+                "self"
+              ]
+            }
+          ]
+        },
+        "offset": 3475
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/127",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 3539
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/128",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 3475
+        },
+        "offset": 3540
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/129",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Loop_Counter_Variable",
+          "Variable": "Temp_int_Loop_Counter_Variable",
+          "Expression": 0
+        },
+        "offset": 3545
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/130",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Array_Index_Variable",
+          "Variable": "Temp_int_Array_Index_Variable",
+          "Expression": 0
+        },
+        "offset": 3568
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/131",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 3268
+        },
+        "offset": 3591
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/132",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "HeroGameMode",
+          "AssignmentExpression": "K2Node_CustomEvent_HeroGameMode"
+        },
+        "offset": 3596
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/133",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "HeroGameState",
+          "AssignmentExpression": "K2Node_CustomEvent_HeroGameState"
+        },
+        "offset": 3615
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/134",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "HeroGameController",
+          "AssignmentExpression": "K2Node_CustomEvent_HeroGameController"
+        },
+        "offset": 3634
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/135",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_GetPlayerCharacter_ReturnValue_1",
+          "AssignmentExpression": {
+            "call": "GetPlayerCharacter",
+            "args": [
+              "self",
+              0
+            ]
+          }
+        },
+        "offset": 3653
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/136",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_AsPlayer_BP",
+          "Expression": {
+            "op": "EX_DynamicCast",
+            "ClassPtr": -15,
+            "TargetExpression": "CallFunc_GetPlayerCharacter_ReturnValue_1"
+          }
+        },
+        "offset": 3679
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/137",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_bSuccess_4",
+          "Expression": {
+            "op": "EX_PrimitiveCast",
+            "ConversionType": "ObjectToBool",
+            "Target": "K2Node_DynamicCast_AsPlayer_BP"
+          }
+        },
+        "offset": 3715
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/138",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "K2Node_DynamicCast_bSuccess_4"
+        },
+        "offset": 3744
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/139",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "PlayerRef",
+          "AssignmentExpression": "K2Node_DynamicCast_AsPlayer_BP"
+        },
+        "offset": 3754
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/140",
+        "ast": {
+          "op": "EX_PushExecutionFlow",
+          "PushingAddress": 3783
+        },
+        "offset": 3773
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/141",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 2495
+        },
+        "offset": 3778
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/142",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "Initialized",
+          "AssignmentExpression": true
+        },
+        "offset": 3783
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/143",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "ActivityRequestedBeforeInitialize"
+        },
+        "offset": 3794
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/144",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "ActivityRequestedBeforeInitialize",
+          "AssignmentExpression": false
+        },
+        "offset": 3804
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/145",
+        "ast": {
+          "call": "OnMainActivityRequested",
+          "args": []
+        },
+        "offset": 3815
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/146",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 3829
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/147",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_IsValid_ReturnValue_1",
+          "AssignmentExpression": {
+            "call": "IsValid",
+            "args": [
+              "CurrentBGM"
+            ]
+          }
+        },
+        "offset": 3830
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/148",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 3921,
+          "BooleanExpression": "CallFunc_IsValid_ReturnValue_1"
+        },
+        "offset": 3859
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/149",
+        "ast": {
+          "on": "CurrentBGM",
+          "do": {
+            "call": "FadeOut",
+            "args": [
+              1.0,
+              "+0",
+              0
+            ]
+          }
+        },
+        "offset": 3873
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/150",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue",
+          "Variable": "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue",
+          "Expression": {
+            "call": "GetEnumeratorUserFriendlyName",
+            "args": [
+              {
+                "object": "E_BGM"
+              },
+              "K2Node_CustomEvent_BGMType"
+            ]
+          }
+        },
+        "offset": 3921
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/151",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Conv_StringToName_ReturnValue",
+          "Variable": "CallFunc_Conv_StringToName_ReturnValue",
+          "Expression": {
+            "call": "Conv_StringToName",
+            "args": [
+              "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue"
+            ]
+          }
+        },
+        "offset": 3967
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/152",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_GetDataTableRowFromName_ReturnValue",
+          "AssignmentExpression": {
+            "on": {
+              "object": "Default__DataTableFunctionLibrary"
+            },
+            "do": {
+              "call": "GetDataTableRowFromName",
+              "args": [
+                {
+                  "object": "DT_BGM"
+                },
+                "CallFunc_Conv_StringToName_ReturnValue",
+                "CallFunc_GetDataTableRowFromName_OutRow"
+              ]
+            }
+          }
+        },
+        "offset": 4004
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/153",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_GetDataTableRowFromName_ReturnValue"
+        },
+        "offset": 4073
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/154",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_IsValid_ReturnValue_7",
+          "AssignmentExpression": {
+            "call": "IsValid",
+            "args": [
+              "CurrentBGM"
+            ]
+          }
+        },
+        "offset": 4083
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/155",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 4312,
+          "BooleanExpression": "CallFunc_IsValid_ReturnValue_7"
+        },
+        "offset": 4112
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/156",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_CreateSound2D_ReturnValue_2",
+          "AssignmentExpression": {
+            "on": {
+              "object": "Default__GameplayStatics"
+            },
+            "do": {
+              "call": "CreateSound2D",
+              "args": [
+                "self",
+                {
+                  "op": "EX_StructMemberContext",
+                  "StructMemberExpression": "BGM_8_431BD623435A675B509C3B969FBD98E2",
+                  "StructExpression": "CallFunc_GetDataTableRowFromName_OutRow"
+                },
+                1.0,
+                {
+                  "on": "CurrentBGM",
+                  "do": "PitchMultiplier"
+                },
+                "+0",
+                {
+                  "op": "EX_NoObject"
+                },
+                false,
+                true
+              ]
+            }
+          }
+        },
+        "offset": 4126
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/157",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CurrentBGM",
+          "AssignmentExpression": "CallFunc_CreateSound2D_ReturnValue_2"
+        },
+        "offset": 4231
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/158",
+        "ast": {
+          "on": "CurrentBGM",
+          "do": {
+            "call": "FadeIn",
+            "args": [
+              "K2Node_CustomEvent_FadeInDuration",
+              1.0,
+              "K2Node_CustomEvent_StartTime",
+              0
+            ]
+          }
+        },
+        "offset": 4250
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/159",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 4311
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/160",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_CreateSound2D_ReturnValue",
+          "AssignmentExpression": {
+            "on": {
+              "object": "Default__GameplayStatics"
+            },
+            "do": {
+              "call": "CreateSound2D",
+              "args": [
+                "self",
+                {
+                  "op": "EX_StructMemberContext",
+                  "StructMemberExpression": "BGM_8_431BD623435A675B509C3B969FBD98E2",
+                  "StructExpression": "CallFunc_GetDataTableRowFromName_OutRow"
+                },
+                1.0,
+                1.0,
+                "+0",
+                {
+                  "op": "EX_NoObject"
+                },
+                false,
+                true
+              ]
+            }
+          }
+        },
+        "offset": 4312
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/161",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CurrentBGM",
+          "AssignmentExpression": "CallFunc_CreateSound2D_ReturnValue"
+        },
+        "offset": 4391
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/162",
+        "ast": {
+          "on": "CurrentBGM",
+          "do": {
+            "call": "FadeIn",
+            "args": [
+              "K2Node_CustomEvent_FadeInDuration",
+              1.0,
+              "K2Node_CustomEvent_StartTime",
+              0
+            ]
+          }
+        },
+        "offset": 4410
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/163",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 4471
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/164",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_IsValid_ReturnValue_2",
+          "AssignmentExpression": {
+            "call": "IsValid",
+            "args": [
+              "CurrentBGM"
+            ]
+          }
+        },
+        "offset": 4472
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/165",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_IsValid_ReturnValue_2"
+        },
+        "offset": 4501
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/166",
+        "ast": {
+          "on": "CurrentBGM",
+          "do": {
+            "call": "FadeOut",
+            "args": [
+              "K2Node_CustomEvent_FadeOutDuration_1",
+              "+0",
+              0
+            ]
+          }
+        },
+        "offset": 4511
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/167",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CurrentBGM",
+          "AssignmentExpression": {
+            "op": "EX_NoObject"
+          }
+        },
+        "offset": 4563
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/168",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 4574
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/169",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "MasterVolume",
+          "Variable": {
+            "on": "SaveData",
+            "do": "MasterVolume"
+          },
+          "Expression": "K2Node_CustomEvent_Volume_2"
+        },
+        "offset": 4575
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/170",
+        "ast": {
+          "call": "SetSoundMixClassOverride",
+          "args": [
+            "self",
+            {
+              "object": "SM_Master"
+            },
+            {
+              "object": "SC_Master"
+            },
+            {
+              "on": "SaveData",
+              "do": "MasterVolume"
+            },
+            1.0,
+            "+0",
+            true
+          ]
+        },
+        "offset": 4624
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/171",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 4695
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/172",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "SEVolume",
+          "Variable": {
+            "on": "SaveData",
+            "do": "SEVolume"
+          },
+          "Expression": "K2Node_CustomEvent_Volume_1"
+        },
+        "offset": 4696
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/173",
+        "ast": {
+          "call": "SetSoundMixClassOverride",
+          "args": [
+            "self",
+            {
+              "object": "SM_SE"
+            },
+            {
+              "object": "SC_SE"
+            },
+            {
+              "on": "SaveData",
+              "do": "SEVolume"
+            },
+            1.0,
+            "+0",
+            true
+          ]
+        },
+        "offset": 4745
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/174",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 4816
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/175",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "BGMVolume",
+          "Variable": {
+            "on": "SaveData",
+            "do": "BGMVolume"
+          },
+          "Expression": "K2Node_CustomEvent_Volume"
+        },
+        "offset": 4817
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/176",
+        "ast": {
+          "call": "SetSoundMixClassOverride",
+          "args": [
+            "self",
+            {
+              "object": "SM_BGM"
+            },
+            {
+              "object": "SC_BGM"
+            },
+            {
+              "on": "SaveData",
+              "do": "BGMVolume"
+            },
+            1.0,
+            "+0",
+            true
+          ]
+        },
+        "offset": 4866
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/177",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 4937
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/178",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_NotEqual_ByteByte_ReturnValue",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "K2Node_CustomEvent_EnvType",
+              "CurrentEnvSoundType"
+            ]
+          }
+        },
+        "offset": 4938
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/179",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_NotEqual_ByteByte_ReturnValue"
+        },
+        "offset": 4976
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/180",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_IsValid_ReturnValue_3",
+          "AssignmentExpression": {
+            "call": "IsValid",
+            "args": [
+              "CurrentEnvSound"
+            ]
+          }
+        },
+        "offset": 4986
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/181",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 5081,
+          "BooleanExpression": "CallFunc_IsValid_ReturnValue_3"
+        },
+        "offset": 5015
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/182",
+        "ast": {
+          "on": "CurrentEnvSound",
+          "do": {
+            "call": "FadeOut",
+            "args": [
+              "K2Node_CustomEvent_FadeInOutDuration",
+              "+0",
+              0
+            ]
+          }
+        },
+        "offset": 5029
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/183",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1",
+          "Variable": "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1",
+          "Expression": {
+            "call": "GetEnumeratorUserFriendlyName",
+            "args": [
+              {
+                "object": "E_Environment"
+              },
+              "K2Node_CustomEvent_EnvType"
+            ]
+          }
+        },
+        "offset": 5081
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/184",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Conv_StringToName_ReturnValue_1",
+          "Variable": "CallFunc_Conv_StringToName_ReturnValue_1",
+          "Expression": {
+            "call": "Conv_StringToName",
+            "args": [
+              "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1"
+            ]
+          }
+        },
+        "offset": 5127
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/185",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_GetDataTableRowFromName_ReturnValue_1",
+          "AssignmentExpression": {
+            "on": {
+              "object": "Default__DataTableFunctionLibrary"
+            },
+            "do": {
+              "call": "GetDataTableRowFromName",
+              "args": [
+                {
+                  "object": "DT_EnvSound"
+                },
+                "CallFunc_Conv_StringToName_ReturnValue_1",
+                "CallFunc_GetDataTableRowFromName_OutRow_1"
+              ]
+            }
+          }
+        },
+        "offset": 5164
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/186",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 5430,
+          "BooleanExpression": "CallFunc_GetDataTableRowFromName_ReturnValue_1"
+        },
+        "offset": 5233
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/187",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_CreateSound2D_ReturnValue_1",
+          "AssignmentExpression": {
+            "on": {
+              "object": "Default__GameplayStatics"
+            },
+            "do": {
+              "call": "CreateSound2D",
+              "args": [
+                "self",
+                {
+                  "op": "EX_StructMemberContext",
+                  "StructMemberExpression": "EnvSound_2_A38FDC4E49EC1116C4DC3599363A63BF",
+                  "StructExpression": "CallFunc_GetDataTableRowFromName_OutRow_1"
+                },
+                1.0,
+                1.0,
+                "+0",
+                {
+                  "op": "EX_NoObject"
+                },
+                false,
+                true
+              ]
+            }
+          }
+        },
+        "offset": 5247
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/188",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CurrentEnvSound",
+          "AssignmentExpression": "CallFunc_CreateSound2D_ReturnValue_1"
+        },
+        "offset": 5326
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/189",
+        "ast": {
+          "on": "CurrentEnvSound",
+          "do": {
+            "call": "FadeIn",
+            "args": [
+              "K2Node_CustomEvent_FadeInOutDuration",
+              1.0,
+              "+0",
+              0
+            ]
+          }
+        },
+        "offset": 5345
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/190",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CurrentEnvSoundType",
+          "Variable": "CurrentEnvSoundType",
+          "Expression": "K2Node_CustomEvent_EnvType"
+        },
+        "offset": 5402
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/191",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 5429
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/192",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_IsValid_ReturnValue_4",
+          "AssignmentExpression": {
+            "call": "IsValid",
+            "args": [
+              "CurrentEnvSound"
+            ]
+          }
+        },
+        "offset": 5430
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/193",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_IsValid_ReturnValue_4"
+        },
+        "offset": 5459
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/194",
+        "ast": {
+          "on": "CurrentEnvSound",
+          "do": {
+            "call": "FadeOut",
+            "args": [
+              "K2Node_CustomEvent_FadeOutDuration",
+              "+0",
+              0
+            ]
+          }
+        },
+        "offset": 5469
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/195",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CurrentEnvSound",
+          "AssignmentExpression": {
+            "op": "EX_NoObject"
+          }
+        },
+        "offset": 5521
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/196",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CurrentEnvSoundType",
+          "Variable": "CurrentEnvSoundType",
+          "Expression": 9
+        },
+        "offset": 5532
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/197",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 5552
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/198",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 5430
+        },
+        "offset": 5553
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/199",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_3",
+          "Variable": "Temp_int_Variable_3",
+          "Expression": 0
+        },
+        "offset": 5558
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/200",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Array_Length_ReturnValue_2",
+          "Variable": "CallFunc_Array_Length_ReturnValue_2",
+          "Expression": {
+            "on": {
+              "object": "Default__KismetArrayLibrary"
+            },
+            "do": {
+              "call": "Array_Length",
+              "args": [
+                "CallFunc_GetAllActorsOfClass_OutActors"
+              ]
+            }
+          }
+        },
+        "offset": 5581
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/201",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_Less_IntInt_ReturnValue_1",
+          "AssignmentExpression": {
+            "call": "Less_IntInt",
+            "args": [
+              "Temp_int_Variable_3",
+              "CallFunc_Array_Length_ReturnValue_2"
+            ]
+          }
+        },
+        "offset": 5640
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/202",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_Less_IntInt_ReturnValue_1"
+        },
+        "offset": 5678
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/203",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Get",
+            "args": [
+              "CallFunc_GetAllActorsOfClass_OutActors",
+              "Temp_int_Variable_3",
+              "CallFunc_Array_Get_Item_1"
+            ]
+          }
+        },
+        "offset": 5688
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/204",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_AsStory_Quest_Interface",
+          "Expression": {
+            "op": "EX_ObjToInterfaceCast",
+            "ClassPtr": -11,
+            "Target": "CallFunc_Array_Get_Item_1"
+          }
+        },
+        "offset": 5747
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/205",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_bSuccess",
+          "Expression": {
+            "op": "EX_PrimitiveCast",
+            "ConversionType": "InterfaceToBool",
+            "Target": "K2Node_DynamicCast_AsStory_Quest_Interface"
+          }
+        },
+        "offset": 5783
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/206",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 5865,
+          "BooleanExpression": "K2Node_DynamicCast_bSuccess"
+        },
+        "offset": 5812
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/207",
+        "ast": {
+          "on": {
+            "op": "EX_InterfaceContext",
+            "InterfaceValue": "K2Node_DynamicCast_AsStory_Quest_Interface"
+          },
+          "do": {
+            "call": "FinishStoryQuest",
+            "args": [
+              0
+            ]
+          }
+        },
+        "offset": 5826
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/208",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Add_IntInt_ReturnValue_4",
+          "Variable": "CallFunc_Add_IntInt_ReturnValue_4",
+          "Expression": {
+            "call": "Add_IntInt",
+            "args": [
+              "Temp_int_Variable_3",
+              1
+            ]
+          }
+        },
+        "offset": 5865
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/209",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_3",
+          "Variable": "Temp_int_Variable_3",
+          "Expression": "CallFunc_Add_IntInt_ReturnValue_4"
+        },
+        "offset": 5907
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/210",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 5581
+        },
+        "offset": 5934
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/211",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_IsValid_ReturnValue_6",
+          "AssignmentExpression": {
+            "call": "IsValid",
+            "args": [
+              "CurrentBGM"
+            ]
+          }
+        },
+        "offset": 5939
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/212",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_IsValid_ReturnValue_6"
+        },
+        "offset": 5968
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/213",
+        "ast": {
+          "on": "CurrentBGM",
+          "do": {
+            "call": "SetPitchMultiplier",
+            "args": [
+              "K2Node_CustomEvent_PitchMultiplier"
+            ]
+          }
+        },
+        "offset": 5978
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/214",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 6019
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/215",
+        "ast": {
+          "call": "SetSoundMixClassOverride",
+          "args": [
+            "self",
+            {
+              "object": "SM_SE"
+            },
+            {
+              "object": "SC_SE"
+            },
+            {
+              "on": "SaveData",
+              "do": "SEVolume"
+            },
+            "K2Node_CustomEvent_Pitch",
+            "+0",
+            true
+          ]
+        },
+        "offset": 6020
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/216",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 6095
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/217",
+        "ast": {
+          "call": "SetGlobalTimeDilation",
+          "args": [
+            "self",
+            "K2Node_CustomEvent_TimeDilation"
+          ]
+        },
+        "offset": 6096
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/218",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "K2Node_CustomEvent_IsSlomoSound"
+        },
+        "offset": 6116
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/219",
+        "ast": {
+          "call": "SetSoundPitch",
+          "args": [
+            "K2Node_CustomEvent_TimeDilation"
+          ]
+        },
+        "offset": 6126
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/220",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 6149
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/221",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_4",
+          "Variable": "Temp_int_Variable_4",
+          "Expression": 0
+        },
+        "offset": 6150
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/222",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_5",
+          "Variable": "Temp_int_Variable_5",
+          "Expression": 1
+        },
+        "offset": 6173
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/223",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_6",
+          "Variable": "Temp_int_Variable_6",
+          "Expression": 2
+        },
+        "offset": 6196
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/224",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_7",
+          "Variable": "Temp_int_Variable_7",
+          "Expression": 3
+        },
+        "offset": 6219
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/225",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_8",
+          "Variable": "Temp_int_Variable_8",
+          "Expression": -1
+        },
+        "offset": 6242
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/226",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable_9",
+          "Variable": "Temp_int_Variable_9",
+          "Expression": 0
+        },
+        "offset": 6265
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/227",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_byte_Variable",
+          "Variable": "Temp_byte_Variable",
+          "Expression": "K2Node_CustomEvent_StoryType_1"
+        },
+        "offset": 6288
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/228",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Story",
+          "Variable": {
+            "on": "SaveData",
+            "do": "Story"
+          },
+          "Expression": {
+            "op": "EX_SwitchValue",
+            "EndGotoOffset": 6470,
+            "IndexTerm": "Temp_byte_Variable",
+            "DefaultTerm": "K2Node_Select_Default",
+            "Cases": [
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 0,
+                "NextOffset": 6386,
+                "CaseTerm": "Temp_int_Variable_4"
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 1,
+                "NextOffset": 6401,
+                "CaseTerm": "Temp_int_Variable_5"
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 2,
+                "NextOffset": 6416,
+                "CaseTerm": "Temp_int_Variable_6"
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 3,
+                "NextOffset": 6431,
+                "CaseTerm": "Temp_int_Variable_7"
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 4,
+                "NextOffset": 6446,
+                "CaseTerm": "Temp_int_Variable_8"
+              },
+              {
+                "op": "FKismetSwitchCase",
+                "CaseIndexValueTerm": 5,
+                "NextOffset": 6461,
+                "CaseTerm": "Temp_int_Variable_9"
+              }
+            ]
+          }
+        },
+        "offset": 6315
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/229",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 6470
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/230",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "K2Node_CustomEvent_StoryType",
+              0
+            ]
+          }
+        },
+        "offset": 6471
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/231",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 6810,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess"
+        },
+        "offset": 6502
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/232",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "K2Node_CustomEvent_StoryType",
+              1
+            ]
+          }
+        },
+        "offset": 6516
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/233",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 6697,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess"
+        },
+        "offset": 6547
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/234",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "K2Node_CustomEvent_StoryType",
+              2
+            ]
+          }
+        },
+        "offset": 6561
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/235",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 6943,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess"
+        },
+        "offset": 6592
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/236",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "K2Node_CustomEvent_StoryType",
+              3
+            ]
+          }
+        },
+        "offset": 6606
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/237",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 7023,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess"
+        },
+        "offset": 6637
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/238",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "K2Node_CustomEvent_StoryType",
+              4
+            ]
+          }
+        },
+        "offset": 6651
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/239",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 7095,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess"
+        },
+        "offset": 6682
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/240",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 6696
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/241",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory1"
+          },
+          "AssignmentExpression": true
+        },
+        "offset": 6697
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/242",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory2"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 6730
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/243",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory3"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 6763
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/244",
+        "ast": {
+          "call": "FinishActivity",
+          "args": [
+            "self",
+            1
+          ]
+        },
+        "offset": 6796
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/245",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 6809
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/246",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstTutorial"
+          },
+          "AssignmentExpression": true
+        },
+        "offset": 6810
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/247",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory1"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 6843
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/248",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory2"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 6876
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/249",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory3"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 6909
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/250",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 6942
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/251",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory2"
+          },
+          "AssignmentExpression": true
+        },
+        "offset": 6943
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/252",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory3"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 6976
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/253",
+        "ast": {
+          "call": "FinishActivity",
+          "args": [
+            "self",
+            2
+          ]
+        },
+        "offset": 7009
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/254",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 7022
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/255",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory3"
+          },
+          "AssignmentExpression": true
+        },
+        "offset": 7023
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/256",
+        "ast": {
+          "call": "FinishActivity",
+          "args": [
+            "self",
+            3
+          ]
+        },
+        "offset": 7056
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/257",
+        "ast": {
+          "call": "FinishActivity",
+          "args": [
+            "self",
+            4
+          ]
+        },
+        "offset": 7069
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/258",
+        "ast": {
+          "call": "SetEnableActivity",
+          "args": [
+            "self",
+            false
+          ]
+        },
+        "offset": 7082
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/259",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 7094
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/260",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstTutorial"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7095
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/261",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsTutorialClear"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7128
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/262",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory3"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7161
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/263",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory2"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7194
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/264",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory1"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7227
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/265",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstBossBattle"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7260
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/266",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstBossStun"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7293
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/267",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstCityHealth"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7326
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/268",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstBossHeavyAttack"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7359
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/269",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 7392
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/270",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 7498,
+          "BooleanExpression": "K2Node_CustomEvent_ResetTutorial"
+        },
+        "offset": 7393
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/271",
+        "ast": {
+          "call": "SetStoryNumber",
+          "args": [
+            4
+          ]
+        },
+        "offset": 7407
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/272",
+        "ast": {
+          "call": "ClearStoryFlag",
+          "args": [
+            4
+          ]
+        },
+        "offset": 7423
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/273",
+        "ast": {
+          "call": "ResetBossBattleTutorial",
+          "args": []
+        },
+        "offset": 7439
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/274",
+        "ast": {
+          "op": "EX_SetArray",
+          "AssigningProperty": "CallFunc_GetAllActorsOfClass_OutActors_1",
+          "ArrayInnerProp": null,
+          "Elements": []
+        },
+        "offset": 7453
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/275",
+        "ast": {
+          "call": "GetAllActorsOfClass",
+          "args": [
+            "self",
+            {
+              "object": "BP_StoryStartPoint_C"
+            },
+            "CallFunc_GetAllActorsOfClass_OutActors_1"
+          ]
+        },
+        "offset": 7464
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/276",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 2300
+        },
+        "offset": 7493
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/277",
+        "ast": {
+          "call": "SetStoryNumber",
+          "args": [
+            0
+          ]
+        },
+        "offset": 7498
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/278",
+        "ast": {
+          "call": "ClearStoryFlag",
+          "args": [
+            0
+          ]
+        },
+        "offset": 7514
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/279",
+        "ast": {
+          "call": "ResetBossBattleTutorial",
+          "args": []
+        },
+        "offset": 7530
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/280",
+        "ast": {
+          "op": "EX_SetArray",
+          "AssigningProperty": "CallFunc_GetAllActorsOfClass_OutActors",
+          "ArrayInnerProp": null,
+          "Elements": []
+        },
+        "offset": 7544
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/281",
+        "ast": {
+          "call": "GetAllActorsOfClass",
+          "args": [
+            "self",
+            {
+              "object": "BP_StoryStartPoint_C"
+            },
+            "CallFunc_GetAllActorsOfClass_OutActors"
+          ]
+        },
+        "offset": 7555
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/282",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 5558
+        },
+        "offset": 7584
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/283",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstMeleeAttack"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7589
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/284",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 7622
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/285",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstRangeAttack"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7623
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/286",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 7589
+        },
+        "offset": 7656
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/287",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstBossLockon"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7661
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/288",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 7623
+        },
+        "offset": 7694
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/289",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstBossHeavyAttack"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7699
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/290",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 7661
+        },
+        "offset": 7732
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/291",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstBossStun"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7737
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/292",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstCityHealth"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7770
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/293",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 7699
+        },
+        "offset": 7803
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/294",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsFirstBossBattle"
+          },
+          "AssignmentExpression": false
+        },
+        "offset": 7808
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/295",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 7737
+        },
+        "offset": 7841
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/296",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 7808
+        },
+        "offset": 7846
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/297",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 483
+        },
+        "offset": 7851
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/298",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 2328
+        },
+        "offset": 7856
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/299",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 7910,
+          "BooleanExpression": {
+            "on": "SaveData",
+            "do": "IsFirstTutorial"
+          }
+        },
+        "offset": 7861
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/300",
+        "ast": {
+          "call": "FinishActivity",
+          "args": [
+            "self",
+            0
+          ]
+        },
+        "offset": 7897
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/301",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 7959,
+          "BooleanExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory1"
+          }
+        },
+        "offset": 7910
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/302",
+        "ast": {
+          "call": "FinishActivity",
+          "args": [
+            "self",
+            1
+          ]
+        },
+        "offset": 7946
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/303",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 8008,
+          "BooleanExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory2"
+          }
+        },
+        "offset": 7959
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/304",
+        "ast": {
+          "call": "FinishActivity",
+          "args": [
+            "self",
+            2
+          ]
+        },
+        "offset": 7995
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/305",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory3"
+          }
+        },
+        "offset": 8008
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/306",
+        "ast": {
+          "call": "FinishActivity",
+          "args": [
+            "self",
+            3
+          ]
+        },
+        "offset": 8040
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/307",
+        "ast": {
+          "call": "FinishActivity",
+          "args": [
+            "self",
+            4
+          ]
+        },
+        "offset": 8053
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/308",
+        "ast": {
+          "call": "SetEnableActivity",
+          "args": [
+            "self",
+            false
+          ]
+        },
+        "offset": 8066
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/309",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 8078
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/310",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 8079
+      },
+      {
+        "pointer": "/Exports/0/ScriptBytecode/311",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 8081
+      }
+    ]
+  },
+  {
+    "export_index": 1,
+    "name": "OnMainActivityRequested",
+    "statements": [
+      {
+        "pointer": "/Exports/1/ScriptBytecode/0",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            7861
+          ]
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/1/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 15
+      },
+      {
+        "pointer": "/Exports/1/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 17
+      }
+    ]
+  },
+  {
+    "export_index": 2,
+    "name": "OnActivetyRequested",
+    "statements": [
+      {
+        "pointer": "/Exports/2/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_ActivityID",
+          "AssignmentExpression": "ActivityID"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/2/ScriptBytecode/1",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            7856
+          ]
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/2/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 33
+      },
+      {
+        "pointer": "/Exports/2/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 35
+      }
+    ]
+  },
+  {
+    "export_index": 3,
+    "name": "ReceiveInit",
+    "statements": [
+      {
+        "pointer": "/Exports/3/ScriptBytecode/0",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            7851
+          ]
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/3/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 15
+      },
+      {
+        "pointer": "/Exports/3/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 17
+      }
+    ]
+  },
+  {
+    "export_index": 4,
+    "name": "ResetBossBattleTutorial",
+    "statements": [
+      {
+        "pointer": "/Exports/4/ScriptBytecode/0",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            7846
+          ]
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/4/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 15
+      },
+      {
+        "pointer": "/Exports/4/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 17
+      }
+    ]
+  },
+  {
+    "export_index": 5,
+    "name": "ResetStory",
+    "statements": [
+      {
+        "pointer": "/Exports/5/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_ResetTutorial",
+          "AssignmentExpression": "ResetTutorial"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/5/ScriptBytecode/1",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            7393
+          ]
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/5/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 33
+      },
+      {
+        "pointer": "/Exports/5/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 35
+      }
+    ]
+  },
+  {
+    "export_index": 6,
+    "name": "ClearStoryFlag",
+    "statements": [
+      {
+        "pointer": "/Exports/6/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_StoryType",
+          "AssignmentExpression": "StoryType"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/6/ScriptBytecode/1",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            6471
+          ]
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/6/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 33
+      },
+      {
+        "pointer": "/Exports/6/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 35
+      }
+    ]
+  },
+  {
+    "export_index": 7,
+    "name": "SetStoryNumber",
+    "statements": [
+      {
+        "pointer": "/Exports/7/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_StoryType_1",
+          "AssignmentExpression": "StoryType"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/7/ScriptBytecode/1",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            6150
+          ]
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/7/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 33
+      },
+      {
+        "pointer": "/Exports/7/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 35
+      }
+    ]
+  },
+  {
+    "export_index": 8,
+    "name": "SetSlomoEvent",
+    "statements": [
+      {
+        "pointer": "/Exports/8/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_TimeDilation",
+          "AssignmentExpression": "TimeDilation"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/8/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_IsSlomoSound",
+          "AssignmentExpression": "IsSlomoSound"
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/8/ScriptBytecode/2",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            6096
+          ]
+        },
+        "offset": 36
+      },
+      {
+        "pointer": "/Exports/8/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 51
+      },
+      {
+        "pointer": "/Exports/8/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 53
+      }
+    ]
+  },
+  {
+    "export_index": 9,
+    "name": "SetSoundPitch",
+    "statements": [
+      {
+        "pointer": "/Exports/9/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_Pitch",
+          "AssignmentExpression": "Pitch"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/9/ScriptBytecode/1",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            6020
+          ]
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/9/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 33
+      },
+      {
+        "pointer": "/Exports/9/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 35
+      }
+    ]
+  },
+  {
+    "export_index": 10,
+    "name": "SetCurrentBGMPitch",
+    "statements": [
+      {
+        "pointer": "/Exports/10/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_PitchMultiplier",
+          "AssignmentExpression": "PitchMultiplier"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/10/ScriptBytecode/1",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            5939
+          ]
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/10/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 33
+      },
+      {
+        "pointer": "/Exports/10/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 35
+      }
+    ]
+  },
+  {
+    "export_index": 11,
+    "name": "StopEnvSound",
+    "statements": [
+      {
+        "pointer": "/Exports/11/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_FadeOutDuration",
+          "AssignmentExpression": "FadeOutDuration"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/11/ScriptBytecode/1",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            5553
+          ]
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/11/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 33
+      },
+      {
+        "pointer": "/Exports/11/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 35
+      }
+    ]
+  },
+  {
+    "export_index": 12,
+    "name": "PlayEnvSound",
+    "statements": [
+      {
+        "pointer": "/Exports/12/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_FadeInOutDuration",
+          "AssignmentExpression": "FadeInOutDuration"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/12/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_EnvType",
+          "AssignmentExpression": "EnvType"
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/12/ScriptBytecode/2",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            4938
+          ]
+        },
+        "offset": 36
+      },
+      {
+        "pointer": "/Exports/12/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 51
+      },
+      {
+        "pointer": "/Exports/12/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 53
+      }
+    ]
+  },
+  {
+    "export_index": 13,
+    "name": "SetBGMVolume",
+    "statements": [
+      {
+        "pointer": "/Exports/13/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_Volume",
+          "AssignmentExpression": "Volume"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/13/ScriptBytecode/1",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            4817
+          ]
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/13/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 33
+      },
+      {
+        "pointer": "/Exports/13/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 35
+      }
+    ]
+  },
+  {
+    "export_index": 14,
+    "name": "SetSEVolume",
+    "statements": [
+      {
+        "pointer": "/Exports/14/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_Volume_1",
+          "AssignmentExpression": "Volume"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/14/ScriptBytecode/1",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            4696
+          ]
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/14/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 33
+      },
+      {
+        "pointer": "/Exports/14/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 35
+      }
+    ]
+  },
+  {
+    "export_index": 15,
+    "name": "SetMasterVolume",
+    "statements": [
+      {
+        "pointer": "/Exports/15/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_Volume_2",
+          "AssignmentExpression": "Volume"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/15/ScriptBytecode/1",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            4575
+          ]
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/15/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 33
+      },
+      {
+        "pointer": "/Exports/15/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 35
+      }
+    ]
+  },
+  {
+    "export_index": 16,
+    "name": "StopBGM",
+    "statements": [
+      {
+        "pointer": "/Exports/16/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_FadeOutDuration_1",
+          "AssignmentExpression": "FadeOutDuration"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/16/ScriptBytecode/1",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            4472
+          ]
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/16/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 33
+      },
+      {
+        "pointer": "/Exports/16/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 35
+      }
+    ]
+  },
+  {
+    "export_index": 17,
+    "name": "PlayAndChangeBGM",
+    "statements": [
+      {
+        "pointer": "/Exports/17/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_BGMType",
+          "AssignmentExpression": "BGMType"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/17/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_StartTime",
+          "AssignmentExpression": "StartTime"
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/17/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_FadeInDuration",
+          "AssignmentExpression": "FadeInDuration"
+        },
+        "offset": 36
+      },
+      {
+        "pointer": "/Exports/17/ScriptBytecode/3",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            3830
+          ]
+        },
+        "offset": 54
+      },
+      {
+        "pointer": "/Exports/17/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 69
+      },
+      {
+        "pointer": "/Exports/17/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 71
+      }
+    ]
+  },
+  {
+    "export_index": 18,
+    "name": "Initialize",
+    "statements": [
+      {
+        "pointer": "/Exports/18/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_HeroGameMode",
+          "AssignmentExpression": "HeroGameMode"
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/18/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_HeroGameState",
+          "AssignmentExpression": "HeroGameState"
+        },
+        "offset": 18
+      },
+      {
+        "pointer": "/Exports/18/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_LetValueOnPersistentFrame",
+          "DestinationProperty": "K2Node_CustomEvent_HeroGameController",
+          "AssignmentExpression": "HeroGameController"
+        },
+        "offset": 36
+      },
+      {
+        "pointer": "/Exports/18/ScriptBytecode/3",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            3596
+          ]
+        },
+        "offset": 54
+      },
+      {
+        "pointer": "/Exports/18/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 69
+      },
+      {
+        "pointer": "/Exports/18/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 71
+      }
+    ]
+  },
+  {
+    "export_index": 19,
+    "name": "UnloadTutorial",
+    "statements": [
+      {
+        "pointer": "/Exports/19/ScriptBytecode/0",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            3545
+          ]
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/19/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 15
+      },
+      {
+        "pointer": "/Exports/19/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 17
+      }
+    ]
+  },
+  {
+    "export_index": 20,
+    "name": "LoadTutorial",
+    "statements": [
+      {
+        "pointer": "/Exports/20/ScriptBytecode/0",
+        "ast": {
+          "call": "ExecuteUbergraph_HeroGameInstance",
+          "args": [
+            3540
+          ]
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/20/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 15
+      },
+      {
+        "pointer": "/Exports/20/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 17
+      }
+    ]
+  },
+  {
+    "export_index": 21,
+    "name": "SaveGame",
+    "statements": [
+      {
+        "pointer": "/Exports/21/ScriptBytecode/0",
+        "ast": {
+          "on": "WBP_SaveOrLoad",
+          "do": {
+            "call": "SaveOrLoad",
+            "args": [
+              true
+            ]
+          }
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/21/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "SaveData",
+            "do": "IsJP"
+          },
+          "AssignmentExpression": "IsJP"
+        },
+        "offset": 37
+      },
+      {
+        "pointer": "/Exports/21/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_SaveGameToSlot_ReturnValue",
+          "AssignmentExpression": {
+            "call": "SaveGameToSlot",
+            "args": [
+              "SaveData",
+              "HeroSaveData",
+              0
+            ]
+          }
+        },
+        "offset": 78
+      },
+      {
+        "pointer": "/Exports/21/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 149,
+          "BooleanExpression": "CallFunc_SaveGameToSlot_ReturnValue"
+        },
+        "offset": 121
+      },
+      {
+        "pointer": "/Exports/21/ScriptBytecode/4",
+        "ast": {
+          "call": "SetPlayerParam",
+          "args": []
+        },
+        "offset": 135
+      },
+      {
+        "pointer": "/Exports/21/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "SaveSuccess",
+          "AssignmentExpression": "CallFunc_SaveGameToSlot_ReturnValue"
+        },
+        "offset": 149
+      },
+      {
+        "pointer": "/Exports/21/ScriptBytecode/6",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 168
+      },
+      {
+        "pointer": "/Exports/21/ScriptBytecode/7",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 170
+      }
+    ]
+  },
+  {
+    "export_index": 22,
+    "name": "LoadGame",
+    "statements": [
+      {
+        "pointer": "/Exports/22/ScriptBytecode/0",
+        "ast": {
+          "on": "WBP_SaveOrLoad",
+          "do": {
+            "call": "SaveOrLoad",
+            "args": [
+              false
+            ]
+          }
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_LoadGameFromSlot_ReturnValue",
+          "AssignmentExpression": {
+            "call": "LoadGameFromSlot",
+            "args": [
+              "HeroSaveData",
+              0
+            ]
+          }
+        },
+        "offset": 37
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_AsHero_Game_Save_Data",
+          "Expression": {
+            "op": "EX_DynamicCast",
+            "ClassPtr": -10,
+            "TargetExpression": "CallFunc_LoadGameFromSlot_ReturnValue"
+          }
+        },
+        "offset": 71
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_bSuccess_1",
+          "Expression": {
+            "op": "EX_PrimitiveCast",
+            "ConversionType": "ObjectToBool",
+            "Target": "K2Node_DynamicCast_AsHero_Game_Save_Data"
+          }
+        },
+        "offset": 107
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 624,
+          "BooleanExpression": "K2Node_DynamicCast_bSuccess_1"
+        },
+        "offset": 136
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "SaveData",
+          "AssignmentExpression": "K2Node_DynamicCast_AsHero_Game_Save_Data"
+        },
+        "offset": 150
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/6",
+        "ast": {
+          "call": "SetPlayerParam",
+          "args": []
+        },
+        "offset": 169
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/7",
+        "ast": {
+          "op": "EX_SetArray",
+          "AssigningProperty": "CallFunc_GetAllActorsWithInterface_OutActors",
+          "ArrayInnerProp": null,
+          "Elements": []
+        },
+        "offset": 183
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/8",
+        "ast": {
+          "call": "GetAllActorsWithInterface",
+          "args": [
+            "self",
+            {
+              "object": "BPI_LoadData_C"
+            },
+            "CallFunc_GetAllActorsWithInterface_OutActors"
+          ]
+        },
+        "offset": 194
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/9",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable",
+          "Variable": "Temp_int_Variable",
+          "Expression": 0
+        },
+        "offset": 223
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/10",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Array_Length_ReturnValue",
+          "Variable": "CallFunc_Array_Length_ReturnValue",
+          "Expression": {
+            "on": {
+              "object": "Default__KismetArrayLibrary"
+            },
+            "do": {
+              "call": "Array_Length",
+              "args": [
+                "CallFunc_GetAllActorsWithInterface_OutActors"
+              ]
+            }
+          }
+        },
+        "offset": 246
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/11",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_Less_IntInt_ReturnValue",
+          "AssignmentExpression": {
+            "call": "Less_IntInt",
+            "args": [
+              "Temp_int_Variable",
+              "CallFunc_Array_Length_ReturnValue"
+            ]
+          }
+        },
+        "offset": 305
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/12",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 640,
+          "BooleanExpression": "CallFunc_Less_IntInt_ReturnValue"
+        },
+        "offset": 343
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/13",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Get",
+            "args": [
+              "CallFunc_GetAllActorsWithInterface_OutActors",
+              "Temp_int_Variable",
+              "CallFunc_Array_Get_Item"
+            ]
+          }
+        },
+        "offset": 357
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/14",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_AsBPI_Load_Data",
+          "Expression": {
+            "op": "EX_ObjToInterfaceCast",
+            "ClassPtr": -7,
+            "Target": "CallFunc_Array_Get_Item"
+          }
+        },
+        "offset": 416
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/15",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_bSuccess",
+          "Expression": {
+            "op": "EX_PrimitiveCast",
+            "ConversionType": "InterfaceToBool",
+            "Target": "K2Node_DynamicCast_AsBPI_Load_Data"
+          }
+        },
+        "offset": 452
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/16",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 664,
+          "BooleanExpression": "K2Node_DynamicCast_bSuccess"
+        },
+        "offset": 481
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/17",
+        "ast": {
+          "on": {
+            "op": "EX_InterfaceContext",
+            "InterfaceValue": "K2Node_DynamicCast_AsBPI_Load_Data"
+          },
+          "do": {
+            "call": "LoadGameData",
+            "args": [
+              "SaveData",
+              "CallFunc_LoadGameData_out"
+            ]
+          }
+        },
+        "offset": 495
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/18",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Add_IntInt_ReturnValue",
+          "Variable": "CallFunc_Add_IntInt_ReturnValue",
+          "Expression": {
+            "call": "Add_IntInt",
+            "args": [
+              "Temp_int_Variable",
+              1
+            ]
+          }
+        },
+        "offset": 550
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/19",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable",
+          "Variable": "Temp_int_Variable",
+          "Expression": "CallFunc_Add_IntInt_ReturnValue"
+        },
+        "offset": 592
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/20",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 246
+        },
+        "offset": 619
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/21",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "ReturnValue",
+          "AssignmentExpression": {
+            "op": "EX_NoObject"
+          }
+        },
+        "offset": 624
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/22",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 680
+        },
+        "offset": 635
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/23",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "ReturnValue",
+          "AssignmentExpression": "SaveData"
+        },
+        "offset": 640
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/24",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 680
+        },
+        "offset": 659
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/25",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_LoadGameData_out",
+          "AssignmentExpression": false
+        },
+        "offset": 664
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/26",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 550
+        },
+        "offset": 675
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/27",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": "ReturnValue"
+        },
+        "offset": 680
+      },
+      {
+        "pointer": "/Exports/22/ScriptBytecode/28",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 690
+      }
+    ]
+  },
+  {
+    "export_index": 23,
+    "name": "SetPlayerParam",
+    "statements": [
+      {
+        "pointer": "/Exports/23/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CameraRate",
+          "Variable": {
+            "on": "PlayerRef",
+            "do": "CameraRate"
+          },
+          "Expression": {
+            "on": "SaveData",
+            "do": "CameraS"
+          }
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/23/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "PlayerRef",
+            "do": "CameraV"
+          },
+          "AssignmentExpression": {
+            "on": "SaveData",
+            "do": "CameraV"
+          }
+        },
+        "offset": 71
+      },
+      {
+        "pointer": "/Exports/23/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": "PlayerRef",
+            "do": "CameraH"
+          },
+          "AssignmentExpression": {
+            "on": "SaveData",
+            "do": "CameraH"
+          }
+        },
+        "offset": 134
+      },
+      {
+        "pointer": "/Exports/23/ScriptBytecode/3",
+        "ast": {
+          "on": {
+            "on": "PlayerRef",
+            "do": "HeroComponent"
+          },
+          "do": {
+            "call": "ChangeAttackMoveTypeEvent",
+            "args": [
+              {
+                "on": "SaveData",
+                "do": "PlayerActionMoveType"
+              }
+            ]
+          }
+        },
+        "offset": 197
+      },
+      {
+        "pointer": "/Exports/23/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "HeroPoint",
+          "Variable": {
+            "on": {
+              "on": "PlayerRef",
+              "do": "HeroComponent"
+            },
+            "do": "HeroPoint"
+          },
+          "Expression": {
+            "on": "SaveData",
+            "do": "HeroPoint"
+          }
+        },
+        "offset": 286
+      },
+      {
+        "pointer": "/Exports/23/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": {
+            "on": {
+              "on": "PlayerRef",
+              "do": "HeroComponent"
+            },
+            "do": "FollowCamera"
+          },
+          "AssignmentExpression": {
+            "on": "SaveData",
+            "do": "FollowCamera"
+          }
+        },
+        "offset": 379
+      },
+      {
+        "pointer": "/Exports/23/ScriptBytecode/6",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 464
+      },
+      {
+        "pointer": "/Exports/23/ScriptBytecode/7",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 466
+      }
+    ]
+  },
+  {
+    "export_index": 24,
+    "name": "ResetSaveData",
+    "statements": [
+      {
+        "pointer": "/Exports/24/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_PushExecutionFlow",
+          "PushingAddress": 1113
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "HeroPoint",
+          "Variable": {
+            "on": "SaveData",
+            "do": "HeroPoint"
+          },
+          "Expression": 0
+        },
+        "offset": 5
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Loop_Counter_Variable",
+          "Variable": "Temp_int_Loop_Counter_Variable",
+          "Expression": 0
+        },
+        "offset": 50
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Array_Index_Variable",
+          "Variable": "Temp_int_Array_Index_Variable",
+          "Expression": 0
+        },
+        "offset": 73
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Array_Length_ReturnValue_1",
+          "Variable": "CallFunc_Array_Length_ReturnValue_1",
+          "Expression": {
+            "on": {
+              "object": "Default__KismetArrayLibrary"
+            },
+            "do": {
+              "call": "Array_Length",
+              "args": [
+                {
+                  "on": "SaveData",
+                  "do": "ChallengeSave"
+                }
+              ]
+            }
+          }
+        },
+        "offset": 96
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_Less_IntInt_ReturnValue_1",
+          "AssignmentExpression": {
+            "call": "Less_IntInt",
+            "args": [
+              "Temp_int_Loop_Counter_Variable",
+              "CallFunc_Array_Length_ReturnValue_1"
+            ]
+          }
+        },
+        "offset": 177
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/6",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 524,
+          "BooleanExpression": "CallFunc_Less_IntInt_ReturnValue_1"
+        },
+        "offset": 215
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/7",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Array_Index_Variable",
+          "Variable": "Temp_int_Array_Index_Variable",
+          "Expression": "Temp_int_Loop_Counter_Variable"
+        },
+        "offset": 229
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/8",
+        "ast": {
+          "op": "EX_PushExecutionFlow",
+          "PushingAddress": 1039
+        },
+        "offset": 256
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/9",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Get",
+            "args": [
+              {
+                "on": "SaveData",
+                "do": "ChallengeSave"
+              },
+              "Temp_int_Array_Index_Variable",
+              "CallFunc_Array_Get_Item_1"
+            ]
+          }
+        },
+        "offset": 261
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/10",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "QuestType_6_87995CA14811836FF4621BB4FC141D16",
+          "Variable": {
+            "op": "EX_StructMemberContext",
+            "StructMemberExpression": "QuestType_6_87995CA14811836FF4621BB4FC141D16",
+            "StructExpression": "K2Node_MakeStruct_S_ChallengeQuestSave"
+          },
+          "Expression": {
+            "op": "EX_StructMemberContext",
+            "StructMemberExpression": "QuestType_6_87995CA14811836FF4621BB4FC141D16",
+            "StructExpression": "CallFunc_Array_Get_Item_1"
+          }
+        },
+        "offset": 342
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/11",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Difficulty_5_A3E64D81402C08F308C9E481028D0A71",
+          "Variable": {
+            "op": "EX_StructMemberContext",
+            "StructMemberExpression": "Difficulty_5_A3E64D81402C08F308C9E481028D0A71",
+            "StructExpression": "K2Node_MakeStruct_S_ChallengeQuestSave"
+          },
+          "Expression": {
+            "op": "EX_StructMemberContext",
+            "StructMemberExpression": "Difficulty_5_A3E64D81402C08F308C9E481028D0A71",
+            "StructExpression": "CallFunc_Array_Get_Item_1"
+          }
+        },
+        "offset": 387
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/12",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "HighScore_10_40F6223E4AE78DECA1ACA5B211D103E3",
+          "Variable": {
+            "op": "EX_StructMemberContext",
+            "StructMemberExpression": "HighScore_10_40F6223E4AE78DECA1ACA5B211D103E3",
+            "StructExpression": "K2Node_MakeStruct_S_ChallengeQuestSave"
+          },
+          "Expression": 0
+        },
+        "offset": 432
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/13",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": {
+            "op": "EX_ArrayGetByRef",
+            "ArrayVariable": {
+              "on": "SaveData",
+              "do": "ChallengeSave"
+            },
+            "ArrayIndex": "Temp_int_Array_Index_Variable"
+          },
+          "Expression": "K2Node_MakeStruct_S_ChallengeQuestSave"
+        },
+        "offset": 464
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/14",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 523
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/15",
+        "ast": {
+          "call": "SetStoryNumber",
+          "args": [
+            4
+          ]
+        },
+        "offset": 524
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/16",
+        "ast": {
+          "call": "ClearStoryFlag",
+          "args": [
+            4
+          ]
+        },
+        "offset": 540
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/17",
+        "ast": {
+          "op": "EX_SetArray",
+          "AssigningProperty": "CallFunc_GetAllActorsOfClass_OutActors",
+          "ArrayInnerProp": null,
+          "Elements": []
+        },
+        "offset": 556
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/18",
+        "ast": {
+          "call": "GetAllActorsOfClass",
+          "args": [
+            "self",
+            {
+              "object": "BP_StoryStartPoint_C"
+            },
+            "CallFunc_GetAllActorsOfClass_OutActors"
+          ]
+        },
+        "offset": 567
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/19",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable",
+          "Variable": "Temp_int_Variable",
+          "Expression": 0
+        },
+        "offset": 596
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/20",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Array_Length_ReturnValue",
+          "Variable": "CallFunc_Array_Length_ReturnValue",
+          "Expression": {
+            "on": {
+              "object": "Default__KismetArrayLibrary"
+            },
+            "do": {
+              "call": "Array_Length",
+              "args": [
+                "CallFunc_GetAllActorsOfClass_OutActors"
+              ]
+            }
+          }
+        },
+        "offset": 619
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/21",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_Less_IntInt_ReturnValue",
+          "AssignmentExpression": {
+            "call": "Less_IntInt",
+            "args": [
+              "Temp_int_Variable",
+              "CallFunc_Array_Length_ReturnValue"
+            ]
+          }
+        },
+        "offset": 678
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/22",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 981,
+          "BooleanExpression": "CallFunc_Less_IntInt_ReturnValue"
+        },
+        "offset": 716
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/23",
+        "ast": {
+          "on": {
+            "object": "Default__KismetArrayLibrary"
+          },
+          "do": {
+            "call": "Array_Get",
+            "args": [
+              "CallFunc_GetAllActorsOfClass_OutActors",
+              "Temp_int_Variable",
+              "CallFunc_Array_Get_Item"
+            ]
+          }
+        },
+        "offset": 730
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/24",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_AsStory_Quest_Interface",
+          "Expression": {
+            "op": "EX_ObjToInterfaceCast",
+            "ClassPtr": -11,
+            "Target": "CallFunc_Array_Get_Item"
+          }
+        },
+        "offset": 789
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/25",
+        "ast": {
+          "op": "EX_Let",
+          "Value": {
+            "$type": "UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI",
+            "New": {
+              "$type": "UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI",
+              "Path": [],
+              "ResolvedOwner": 0
+            }
+          },
+          "Variable": "K2Node_DynamicCast_bSuccess",
+          "Expression": {
+            "op": "EX_PrimitiveCast",
+            "ConversionType": "InterfaceToBool",
+            "Target": "K2Node_DynamicCast_AsStory_Quest_Interface"
+          }
+        },
+        "offset": 825
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/26",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 907,
+          "BooleanExpression": "K2Node_DynamicCast_bSuccess"
+        },
+        "offset": 854
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/27",
+        "ast": {
+          "on": {
+            "op": "EX_InterfaceContext",
+            "InterfaceValue": "K2Node_DynamicCast_AsStory_Quest_Interface"
+          },
+          "do": {
+            "call": "FinishStoryQuest",
+            "args": [
+              4
+            ]
+          }
+        },
+        "offset": 868
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/28",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Add_IntInt_ReturnValue",
+          "Variable": "CallFunc_Add_IntInt_ReturnValue",
+          "Expression": {
+            "call": "Add_IntInt",
+            "args": [
+              "Temp_int_Variable",
+              1
+            ]
+          }
+        },
+        "offset": 907
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/29",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Variable",
+          "Variable": "Temp_int_Variable",
+          "Expression": "CallFunc_Add_IntInt_ReturnValue"
+        },
+        "offset": 949
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/30",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 619
+        },
+        "offset": 976
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/31",
+        "ast": {
+          "call": "SaveGame",
+          "args": [
+            "CallFunc_SaveGame_SaveSuccess"
+          ]
+        },
+        "offset": 981
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/32",
+        "ast": {
+          "op": "EX_PopExecutionFlowIfNot",
+          "BooleanExpression": "CallFunc_SaveGame_SaveSuccess"
+        },
+        "offset": 1004
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/33",
+        "ast": {
+          "op": "EX_LetObj",
+          "VariableExpression": "CallFunc_LoadGame_ReturnValue",
+          "AssignmentExpression": {
+            "call": "LoadGame",
+            "args": []
+          }
+        },
+        "offset": 1014
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/34",
+        "ast": {
+          "op": "EX_PopExecutionFlow"
+        },
+        "offset": 1038
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/35",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_Add_IntInt_ReturnValue_1",
+          "Variable": "CallFunc_Add_IntInt_ReturnValue_1",
+          "Expression": {
+            "call": "Add_IntInt",
+            "args": [
+              "Temp_int_Loop_Counter_Variable",
+              1
+            ]
+          }
+        },
+        "offset": 1039
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/36",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "Temp_int_Loop_Counter_Variable",
+          "Variable": "Temp_int_Loop_Counter_Variable",
+          "Expression": "CallFunc_Add_IntInt_ReturnValue_1"
+        },
+        "offset": 1081
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/37",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 96
+        },
+        "offset": 1108
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/38",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 1113
+      },
+      {
+        "pointer": "/Exports/24/ScriptBytecode/39",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 1115
+      }
+    ]
+  },
+  {
+    "export_index": 25,
+    "name": "GetStoryIsFirst",
+    "statements": [
+      {
+        "pointer": "/Exports/25/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              0
+            ]
+          }
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 185,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess"
+        },
+        "offset": 31
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              1
+            ]
+          }
+        },
+        "offset": 45
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 231,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess"
+        },
+        "offset": 76
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              2
+            ]
+          }
+        },
+        "offset": 90
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 277,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess"
+        },
+        "offset": 121
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/6",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "K2Node_SwitchEnum_CmpSuccess",
+          "AssignmentExpression": {
+            "call": "NotEqual_ByteByte",
+            "args": [
+              "StoryType",
+              3
+            ]
+          }
+        },
+        "offset": 135
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/7",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 323,
+          "BooleanExpression": "K2Node_SwitchEnum_CmpSuccess"
+        },
+        "offset": 166
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/8",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 364
+        },
+        "offset": 180
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/9",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "Return",
+          "AssignmentExpression": {
+            "on": "SaveData",
+            "do": "IsFirstTutorial"
+          }
+        },
+        "offset": 185
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/10",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 364
+        },
+        "offset": 226
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/11",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "Return",
+          "AssignmentExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory1"
+          }
+        },
+        "offset": 231
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/12",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 364
+        },
+        "offset": 272
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/13",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "Return",
+          "AssignmentExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory2"
+          }
+        },
+        "offset": 277
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/14",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 364
+        },
+        "offset": 318
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/15",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "Return",
+          "AssignmentExpression": {
+            "on": "SaveData",
+            "do": "IsFirstClearStory3"
+          }
+        },
+        "offset": 323
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/16",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 364
+      },
+      {
+        "pointer": "/Exports/25/ScriptBytecode/17",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 366
+      }
+    ]
+  },
+  {
+    "export_index": 26,
+    "name": "SetDefaultLanguageFromPlatform",
+    "statements": [
+      {
+        "pointer": "/Exports/26/ScriptBytecode/0",
+        "ast": {
+          "op": "EX_Let",
+          "Value": "CallFunc_GetDefaultLocale_ReturnValue",
+          "Variable": "CallFunc_GetDefaultLocale_ReturnValue",
+          "Expression": {
+            "call": "GetDefaultLocale",
+            "args": []
+          }
+        },
+        "offset": 0
+      },
+      {
+        "pointer": "/Exports/26/ScriptBytecode/1",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "CallFunc_Contains_ReturnValue",
+          "AssignmentExpression": {
+            "call": "Contains",
+            "args": [
+              "CallFunc_GetDefaultLocale_ReturnValue",
+              "ja",
+              false,
+              false
+            ]
+          }
+        },
+        "offset": 28
+      },
+      {
+        "pointer": "/Exports/26/ScriptBytecode/2",
+        "ast": {
+          "op": "EX_JumpIfNot",
+          "CodeOffset": 93,
+          "BooleanExpression": "CallFunc_Contains_ReturnValue"
+        },
+        "offset": 63
+      },
+      {
+        "pointer": "/Exports/26/ScriptBytecode/3",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "IsJP",
+          "AssignmentExpression": true
+        },
+        "offset": 77
+      },
+      {
+        "pointer": "/Exports/26/ScriptBytecode/4",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 109
+        },
+        "offset": 88
+      },
+      {
+        "pointer": "/Exports/26/ScriptBytecode/5",
+        "ast": {
+          "op": "EX_LetBool",
+          "VariableExpression": "IsJP",
+          "AssignmentExpression": false
+        },
+        "offset": 93
+      },
+      {
+        "pointer": "/Exports/26/ScriptBytecode/6",
+        "ast": {
+          "op": "EX_Jump",
+          "CodeOffset": 88
+        },
+        "offset": 104
+      },
+      {
+        "pointer": "/Exports/26/ScriptBytecode/7",
+        "ast": {
+          "op": "EX_Return",
+          "ReturnExpression": {
+            "op": "EX_Nothing"
+          }
+        },
+        "offset": 109
+      },
+      {
+        "pointer": "/Exports/26/ScriptBytecode/8",
+        "ast": {
+          "op": "EX_EndOfScript"
+        },
+        "offset": 111
+      }
+    ]
+  }
+]

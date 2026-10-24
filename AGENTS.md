@@ -1,0 +1,23 @@
+# Project scope
+
+This is a new independent project at E:/undefeated-web. Do not base implementation on the existing homelander-simulator source tree. The original game installation is read-only.
+
+User correction (2026-10-24, supersedes milestone shortcuts): the user requires comprehensive REA-led reverse engineering and faithful original-game reconstruction. They rejected the current small browser demo as insufficient. Suspend further sandbox/free-mode/model development until original-world coverage, materials, animation/state logic and runtime comparison are evidenced. Preserve the current demo, but label it a partial reconstruction, never a complete port. Do not use self-designed approximate systems as replacements for unexamined original behavior. Actual REA output, UAssetAPI/UModel output and authored Web code must have distinct provenance. A recovered asset sample is not whole-game coverage. Restore the original game before pursuing the requested modifications.
+
+User's accepted direction:
+1. Reconstruct UNDEFEATED for browser-local execution, preserving original appearance, skeleton, animation and behavior where conversion is feasible.
+2. Add hold-E heat vision as an additional input; keep original right-button ranged attack. Resolve E's original ascend conflict.
+3. Add free destruction for people, vehicles and designated props; remove player damage, negative score, degradation, involuntary control loss, ability resource limits and forced failure in this mode.
+4. Only then replace the protagonist's appearance with Homelander. Prefer retaining the original skeleton and animations; adapt/re-skin the replacement mesh when needed. Do not assume Homelander's existing rig must be retained.
+
+Current stack: Babylon.js + TypeScript + Vite, local-only. Physics for later gameplay is a separate implementation decision; there is no physics engine dependency in the asset laboratory yet.
+
+Keep original/derived game assets local and excluded from Git. Maintain source identity and conversion manifests. Treat recovered strings, bytecode, default values, runtime observations and new design choices as distinct kinds of evidence.
+
+Do not call an asset viewer or greybox a complete game port. Missing original assets must remain explicitly documented. Validate imports, animation, scale and visual output before making completion claims.
+
+Use npm scripts with Node >=24 (native TypeScript execution in movement tests); scripts/dev.ps1 can use the existing bundled Node runtime without changing global configuration. Check type safety, build and meaningful asset integrity checks. Keep development servers bound to loopback.
+
+Current default is the original-world recovery viewer (src/world.ts, src/world/). It consumes geometry/material/terrain manifests in public/assets/world; original scene inspection only, not restored gameplay. Old playable prototype is ?view=prototype; original character/animation lab is ?view=assets. Read docs/world-recovery.md for current evidence, scope and validation; docs/progress.md records historical prototype work. Keep template defaults distinct from executed construction scripts, static all-level views distinct from runtime streaming, and projected materials/preview lighting distinct from original shaders/rendering. Asset and source counts are not whole-game completion percentages.
+
+Pass 2 defaults to streaming-manifest's 17-package startup baseline; this is a static snapshot, not an executed streaming state machine. Preserve recovered shader contracts (run restore-evidenced-shaders.py after older material pipeline steps). All 46 known socket gaps now have reference-pose transforms; animation following remains unimplemented. Empty MID sharing is restricted to identical rendering definitions with no own overrides or unknown properties; runtime mutations must fork material instances. Original executable was observed at title/menu/start plaza only; no matched-camera or movement equivalence has been established. Consult research/runtime-observation/report.zh-CN.txt and browser-validation-pass2.json.

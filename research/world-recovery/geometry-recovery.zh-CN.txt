@@ -1,0 +1,79 @@
+原世界网格与默认模板恢复：本轮交付及边界
+
+本轮交付的是从安装包实际地图、网格和Blueprint组件模板恢复的场景几何与默认布局，不是整个游戏的代码、构造脚本、动画、物理和运行时逻辑已经移植完成。
+
+可直接加载的产物
+public/assets/world/geometry-manifest.json
+public/assets/world/meshes/<稳定assetId>/mesh.gltf
+
+原安装只读。未使用旧RECT住宅区裁剪，也未按文件名选择展示建筑。所有资产通过原组件引用或精确TemplateIndex链取得；额外六份地图保持supplemental范围，不默认当作同时活动的主世界。
+
+范围与数量
+MainLevel存储引用闭包35份地图：10,920个网格组件，其中5,463个直接保存mesh引用，另5,457个从精确组件模板继承链恢复默认mesh与变换。
+补充六图：439个网格组件，其中234个直接引用、205个模板引用。
+合计11,359个原网格组件均已进入可加载几何，含46个已按原骨骼参考姿态恢复的socket附件。Park的11个ISM组件进一步展开为253个真实实例，所以组件数与场景对象数不可直接相等。
+源网格去重476种，全部完成UModel导出。最终运行资产688份glTF；主范围原对象实例11,162，补充范围439。道路合批之后总渲染对象9,861。
+这些是场景几何覆盖数字，不能当作游戏完成百分比。runtime生成的对象、粒子、贴花、UI等不属于这个网格组件分母。
+
+原曲线道路与实例
+1,952个SplineMesh全部使用原StartPos/EndPos、切线、缩放、roll与offset参数烘焙，没有重新设计道路。保留所有原UV通道、材质section、三角形拓扑和原组件变换。
+其中1,945段按原关卡、128米空间格、源mesh与相同材质覆写配置合为205批，另7段独立。曲线资产从1,952降为212。每批sourceComponents逐项保存原组件指针、变换及vertex/index范围，没有丢失来源。
+Park 11个ISM的原生二进制按LODData、64字节FMatrix数组、custom data、render payload逐段解释，并验证到完整payload末尾；253个实例矩阵来自原数据，不是按载荷长度猜数。原矩阵保存在每实例sourceInstanceMatrixUE。
+
+模板与可见性
+沿地图组件TemplateIndex、精确Import路径、Blueprint导出对象路径递归查找默认StaticMesh/SkeletalMesh。没有按组件名称相近匹配。继承局部位置、旋转、缩放、父组件、绝对变换标记与可见性，并将模板父指针对应回同一Actor的实际组件实例。
+PlayerBP使用已有解码；最后仅针对确切引用补解BaseEnemy/BP_BaseBoss等缺失模板。解析快照涉及114份地图/Blueprint包，完整来源链保存在geometry-template-resolution.json与每个template-default对象的templateRecovery。
+bVisible、bHiddenInGame和Actor.bHidden等显式/继承状态保留；未知状态不伪造为false。最终120个几何对象含原隐藏状态，加载器应按记录过滤。
+模板默认状态不等于运行时可见结果：本轮没有执行构造脚本、BeginPlay、动态装配、流式加载分支或运行时材质赋值。不能把所有关卡/模板组件同时展示称作原游戏实际某一时刻。
+
+材质槽与原覆写
+静态mesh通过原UE4.27 native LOD0 Section.MaterialIndex恢复真实slot对应，并用每section三角形数量与UModel glTF逐项核对。UModel glTF material序号本来是section序号，并不必然等于UE slot。现有3,390个静态section使用这条原生证据映射。
+SkeletalMesh的原FSkeletalMaterial数组同样从native数据解码，保留所有重复slot，不压缩数组。原先5个模型的29处重复slot歧义现已通过native FReferenceSkeleton→LOD0 FSkelMeshRenderSection解码清除，42个section的原MaterialIndex、三角形数、顶点数与glTF逐项一致。其中女性模型原section索引为[1,4,3,2,0,6,6]，不是以section序号猜槽号。三个火Boss共42处component-section覆写歧义已归零。gltfMaterials同时保留原UModel名、sourceSlotCandidates、sourceMaterial完整引用和映射依据。
+3个源section确实使用NULL默认材质槽：SM_Plane、SM_Blocking、SM_FogPlane01；应使用原组件override，不能把NULL当作导出丢失。所有非NULL材质地址均已解析。
+41图原6,684个override槽已独立逐槽核对；4,546个非NULL引用全部保留，其中3,466个为内嵌材质引用。原35图4,352个非NULL引用并未丢失：其中大量来自先前尚未恢复的模板组件。内嵌身份统一为 mapPackage#export:UE一基索引，另保留ownerPackage/objectPath/exportIndex。NULL槽保持原位置，正索引没有被变为NULL继承。
+UModel自己的测试色不是原游戏配色，几何发布时已移除；原材质转换由独立material-manifest负责。几何导出成功不代表Shader图或画面已逐像素一致。
+
+骨骼挂接恢复
+46个附件均以精确AttachParent/TemplateIndex追到父mesh和Skeleton，从原Sockets数组/实际bone FName解析；30个head_accessories对应head，14个Weapon对应Bone004，另1个Weapon对应hand_r，Head_Dummy则是原骨骼名直接挂接。
+计算顺序为父组件世界矩阵×骨骼参考姿态矩阵×原Socket局部矩阵×子组件局部矩阵；每个父skin都以jointWorld×inverseBind核验。最大inverseBind差8.61e-6，世界TRS重构差6.58e-7；未引入猜测偏移。geometry-socket-resolution.json保留全部指针、矩阵和文件hash。
+当前geometryMode为socket-reference-pose，animationFollowingImplemented=false。这是原静态参考姿态挂接，不代表动画运行后已经跟随骨骼。
+
+植物顶点颜色核查
+按Foliage_Mat原基材/实例父链以及地图真实materialOverrides筛选26种源网格、688个地图组件和31个精确模板。逐段解析UE4.27 native LOD0的Position、Tangent、UV、FColorVertexBuffer，并验证bulk元素尺寸和数量：26种网格原颜色顶点数全部为0。
+688个实际组件共2,415份LODInfo的stripFlags均为[1,1]，明确没有OverrideVertexColors；31个模板也无覆写，解析失败0。因此这一批树叶/植被缺少COLOR_0是原资产没有颜色流，不是导出器丢数据。UModel官方ExportGLTF.cpp本身支持COLOR_0导出。不凭空加入顶点颜色，材质按缺省颜色语义处理。
+证据和可复现解析器为geometry-vertex-color-audit.json及geometry-audit-vertex-colors.py，逐mesh保存原native偏移、bulk尺寸、计数、hash。范围仅该基材对应的原静态资产/序列化组件，不宣称调查所有Shader或运行时涂色。
+
+明确的剩余缺口
+1. 动画运行后的socket动态跟随未实现；目前已恢复的是原参考姿态。
+2. supplementary TestLevel的唯一InstancedFoliageActor原生载荷已逐字节核查：45字节完整export中，37字节tagged属性后仅8字节native字段（UObject无GUID标记0、FoliageInfos数量0）。没有任何原植被类型或实例可添加；原先“载荷未恢复”的表述由geometry-foliage-recovery.json替代。是否运行时另行生成植被不属于本次静态证据。
+3. 地形由独立terrain-manifest交付。本产物不恢复原碰撞、导航、全部LOD、动画状态机、布料、粒子、贴花、烘焙光照、流式运行状态或构造脚本副作用。
+
+验证结果
+geometry-validation.json：688份运行glTF通过buffer/索引/有限坐标/边界检查；476份基础网格buffer与UModel原输出逐字节相同；原组件变换数值差为0。
+道路合批独立采样11,628个顶点，最大位置差0.000030517米；23,256个UV样本完全一致。合批前后三角形数量相同。
+geometry-override-validation.json：原全部6,684个材质覆写槽逐项保持，包括NULL占位和正索引内嵌对象身份。
+引用几何文件约314.5MB，不含材质贴图。运行时可按地区/空间格加载，主地图的远山等远景仍为原数据；相机框景不应把9.5公里远山当作城市场景中心。
+
+复现顺序（项目根E:/undefeated-web）
+python research/world-recovery/geometry-template-resolve.py
+python tools/asset-pipeline/export-world.py --workers 3
+python research/world-recovery/geometry-recover-sockets.py
+python tools/asset-pipeline/export-world.py --layout-only
+python research/world-recovery/geometry-finalize.py
+python research/world-recovery/geometry-validate.py
+python research/world-recovery/geometry-audit-vertex-colors.py
+python research/world-recovery/geometry-audit-empty-foliage.py
+python research/world-recovery/geometry-audit-road-coverage.py
+
+现有资产增量修复材质槽时可先运行geometry-publish-skeletal-sections.py，再重新运行socket恢复和layout-only。完整导出器已包含native skeletal section解析，不需要依赖人工修改JSON。
+
+输入是research/rea-audit的已解码地图与精确引用闭包、原pak及便携repak/UAssetGUI/UModel。原UModel输出统一research/exports/world-meshes；未修改原安装。
+
+原生格式依据
+UEViewer官方ExportGLTF.cpp（确认section序号与诊断色）：
+https://github.com/gildor2/UEViewer/blob/master/Exporters/ExportGLTF.cpp
+CUE4Parse原生StaticMesh/ISM/SkeletalMaterial序列化代码：
+https://github.com/FabianFG/CUE4Parse/tree/master/CUE4Parse/UE4/Assets/Exports/StaticMesh
+https://github.com/FabianFG/CUE4Parse/tree/master/CUE4Parse/UE4/Assets/Exports/Component/StaticMesh
+https://github.com/FabianFG/CUE4Parse/blob/master/CUE4Parse/UE4/Assets/Exports/SkeletalMesh/FSkeletalMaterial.cs
+本地geometry-UEViewer-*和geometry-CUE4Parse-*保留本次查阅源码；实际包/原变换/slot/数组证据保存在各产物，不把第三方解码输出称作REA原生反编译或运行时观察。

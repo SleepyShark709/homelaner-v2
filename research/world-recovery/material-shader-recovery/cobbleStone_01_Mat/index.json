@@ -1,0 +1,2105 @@
+{
+  "shaders": [
+    {
+      "dxbcLiteralOffsetInExtras": 8819,
+      "lz4CandidateStart": 8665,
+      "lz4ConsumedEnd": 11829,
+      "decodedPrefixHex": "070000000500000003000000000000000000000009310000ffffffff09000000030000000400000007000000002b000002010001030300010405000101270002ffffffff04000000000000000000000000000000ffffffff03000000f407991eff0d7000810ac50c13000000030000000c0000000f0000000002000001030000020400000305000004060000050700000608000007090000080b00000d0000010e0200010f0400010a2600020b2800020c2a0002ffffffff",
+      "bytes": 7968,
+      "sha256": "9c9d80d6b25289ef764b47ad1a1f87d193ec80125679a508ffef03069aff21ee",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-0-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 7,
+        "srvMap": [
+          3,
+          0,
+          0,
+          12553,
+          4294967295
+        ],
+        "samplerMap": [
+          3,
+          4,
+          7,
+          11008,
+          16777474,
+          16777987,
+          16778500,
+          33564417,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          7343615,
+          214239873
+        ],
+        "textureMap": [
+          3,
+          12,
+          15,
+          512,
+          769,
+          1026,
+          1283,
+          1540,
+          1797,
+          2054,
+          2311,
+          2824,
+          16777229,
+          16777742,
+          16778255,
+          33564170,
+          33564683,
+          33565196,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 3,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 4,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 5,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 6,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 8,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 9,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 13
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 14
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 15
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 12
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 12026,
+      "lz4CandidateStart": 11897,
+      "lz4ConsumedEnd": 14576,
+      "decodedPrefixHex": "0f00000007000000040000000000000000000000000000000031000001330000ffffffff0a000000000000000400000007000000080000000201000103030001040500010027000201090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991eff0d7000810ac50cf10e830d0d0000000000000004000000070000000a0000000700000108020001090400010226000203280002042a00020500000306030003ffffffff",
+      "bytes": 6456,
+      "sha256": "84f8eedb1b1f96cd815c76211f7073f6fcc1d71c2909bd095d703ed2e4d95450",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-1-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          4,
+          7,
+          8,
+          16777474,
+          16777987,
+          16778500,
+          33564416,
+          50333953,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          7343615,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          7,
+          10,
+          16777223,
+          16777736,
+          16778249,
+          33564162,
+          33564675,
+          33565188,
+          50331653,
+          50332422,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 3,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 14801,
+      "lz4CandidateStart": 14672,
+      "lz4ConsumedEnd": 17447,
+      "decodedPrefixHex": "0f0000000800000004000000000000000000000000000000003100000133000002340000ffffffff0a000000000000000400000007000000080000000201000103030001040500010027000201090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991eff0d7000810ac50cf10e830d0c0000000000000004000000070000000a0000000700000108020001090400010326000204280002052a000206000003ffffffff",
+      "bytes": 6840,
+      "sha256": "0f07583880951742e7af8a6f382e5566885ef42876098502f617e9b00791d919",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-2-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          4,
+          7,
+          8,
+          16777474,
+          16777987,
+          16778500,
+          33564416,
+          50333953,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          7343615,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          7,
+          10,
+          16777223,
+          16777736,
+          16778249,
+          33564163,
+          33564676,
+          33565189,
+          50331654,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 17603,
+      "lz4CandidateStart": 17543,
+      "lz4ConsumedEnd": 18814,
+      "decodedPrefixHex": "0300000007000000020000000400000000310000013300000200000103030001ffffffff030000000000000000000000ffffffff030000000000000000000000ffffffff02000000f407991ee7064606030000000000000000000000ffffffff",
+      "bytes": 2596,
+      "sha256": "a4f5b1d2a4ca4d85fa85f870c41d1aa50fc1433dba97db8b1b224aa668a98a8c",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-3-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 3,
+        "srvMap": [
+          2,
+          4,
+          12544,
+          13057,
+          16777218,
+          16777987,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          105252583
+        ],
+        "textureMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 18917,
+      "lz4CandidateStart": 18857,
+      "lz4ConsumedEnd": 20103,
+      "decodedPrefixHex": "0300000007000000020000000400000000310000013300000200000103030001ffffffff030000000000000000000000ffffffff030000000000000000000000ffffffff02000000f407991ee7064606030000000000000000000000ffffffff",
+      "bytes": 2524,
+      "sha256": "3a59c07407db1a3f362f0d67231e81429ec637ba07903985a112faafeed1beca",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-4-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 3,
+        "srvMap": [
+          2,
+          4,
+          12544,
+          13057,
+          16777218,
+          16777987,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          105252583
+        ],
+        "textureMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 20274,
+      "lz4CandidateStart": 20147,
+      "lz4ConsumedEnd": 22948,
+      "decodedPrefixHex": "0d000000060000000400000000000000000000000000000002310000ffffffff0a00000004000000000000000500000008000000002b000002010002030300020405000201270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991efa081d04ff0d7000810ac50c0d0000000400000000000000060000000900000000020000010b00000600000207020002080400020326000304280003052a0003ffffffff",
+      "bytes": 6792,
+      "sha256": "f70e808e2cdf5b5e86df5dab270cd65bfaa791d02db42702248c44ebee8fa3c2",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-5-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 13,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12546,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          0,
+          5,
+          8,
+          11008,
+          33554690,
+          33555203,
+          33555716,
+          50341633,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          69011706,
+          7343615,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          0,
+          6,
+          9,
+          512,
+          2817,
+          33554438,
+          33554951,
+          33555464,
+          50341379,
+          50341892,
+          50342405,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 23203,
+      "lz4CandidateStart": 23041,
+      "lz4ConsumedEnd": 26585,
+      "decodedPrefixHex": "07000000060000000300000000000000000000000a3100000b340000ffffffff09000000030000000400000007000000002b000002010001030300010405000101270002ffffffff04000000000000000000000000000000ffffffff03000000f407991eff0d7000810ac50c14000000030000000d000000100000000002000001030000020400000305000004060000050700000608000007090000080a0000090b00000f00000110020001110400010c2600020d2800020e2a0002ffffffff",
+      "bytes": 9348,
+      "sha256": "76941860ab13ca1238c65d8ecdfa64b62dd51b9ef4b1d508b4079743985c4847",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-6-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 7,
+        "srvMap": [
+          3,
+          0,
+          0,
+          12554,
+          13323,
+          4294967295
+        ],
+        "samplerMap": [
+          3,
+          4,
+          7,
+          11008,
+          16777474,
+          16777987,
+          16778500,
+          33564417,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          7343615,
+          214239873
+        ],
+        "textureMap": [
+          3,
+          13,
+          16,
+          512,
+          769,
+          1026,
+          1283,
+          1540,
+          1797,
+          2054,
+          2311,
+          2568,
+          2825,
+          16777231,
+          16777744,
+          16778257,
+          33564172,
+          33564685,
+          33565198,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 3,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 4,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 5,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 6,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 7,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 8,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 9,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 10,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 15
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 16
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 17
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 12
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 13
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 14
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 26710,
+      "lz4CandidateStart": 26653,
+      "lz4ConsumedEnd": 27711,
+      "decodedPrefixHex": "03000000060000000200000003000000003100000100000102030001ffffffff030000000000000000000000ffffffff030000000000000000000000ffffffff02000000f407991ee7064606030000000000000000000000ffffffff",
+      "bytes": 2076,
+      "sha256": "531603048d9fff3c0c95b828e0787f8eaa8c1e77a4563bc1b6f63b9e27cfcb23",
+      "stage": "vs_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-7-vs_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 3,
+        "srvMap": [
+          2,
+          3,
+          12544,
+          16777217,
+          16777986,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          105252583
+        ],
+        "textureMap": [
+          0,
+          0,
+          4294967295
+        ],
+        "textureBindings": [],
+        "samplerBindings": []
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 27880,
+      "lz4CandidateStart": 27753,
+      "lz4ConsumedEnd": 30304,
+      "decodedPrefixHex": "07000000060000000300000000000000000000000231000003340000ffffffff09000000030000000400000007000000002b000002010001030300010405000101270002ffffffff04000000000000000000000000000000ffffffff03000000f407991eff0d7000810ac50c0c00000003000000050000000800000000020000010b00000700000108020001090400010426000205280002062a0002ffffffff",
+      "bytes": 6196,
+      "sha256": "a1caad7d405e9b955b669075472cf81d1fc18df81b07f835c22b606e3ab94d6d",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-8-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 7,
+        "srvMap": [
+          3,
+          0,
+          0,
+          12546,
+          13315,
+          4294967295
+        ],
+        "samplerMap": [
+          3,
+          4,
+          7,
+          11008,
+          16777474,
+          16777987,
+          16778500,
+          33564417,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          7343615,
+          214239873
+        ],
+        "textureMap": [
+          3,
+          5,
+          8,
+          512,
+          2817,
+          16777223,
+          16777736,
+          16778249,
+          33564164,
+          33564677,
+          33565190,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 30496,
+      "lz4CandidateStart": 30372,
+      "lz4ConsumedEnd": 32612,
+      "decodedPrefixHex": "070000000500000003000000000000000000000002310000ffffffff09000000030000000400000007000000002b000002010001030300010405000101270002ffffffff04000000000000000000000000000000ffffffff03000000f407991eff0d7000810ac50c0c00000003000000050000000800000000020000010b00000600000107020001080400010326000204280002052a0002ffffffff",
+      "bytes": 5132,
+      "sha256": "3cc7362cd38cfc16bd5c84062b0259c2c0c87c3fd4428fdec47097ef08807042",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-9-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 7,
+        "srvMap": [
+          3,
+          0,
+          0,
+          12546,
+          4294967295
+        ],
+        "samplerMap": [
+          3,
+          4,
+          7,
+          11008,
+          16777474,
+          16777987,
+          16778500,
+          33564417,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          7343615,
+          214239873
+        ],
+        "textureMap": [
+          3,
+          5,
+          8,
+          512,
+          2817,
+          16777222,
+          16777735,
+          16778248,
+          33564163,
+          33564676,
+          33565189,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 32830,
+      "lz4CandidateStart": 32679,
+      "lz4ConsumedEnd": 35893,
+      "decodedPrefixHex": "0f00000007000000040000000000000000000000000000000231000003340000ffffffff0b00000004000000050000000600000009000000002b00000203000103010002040300020505000201270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991efa081d04ff0d7000810ac50c100000000400000006000000090000000c00000000020000010b00000700000108010001090200010a0000020b0200020c0400020426000305280003062a0003ffffffff",
+      "bytes": 7988,
+      "sha256": "92af0cfa4aff66f45e44417e013d1c9e87e2d0686636eef76e4b792cf97ae8fc",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-10-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12546,
+          13315,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          5,
+          6,
+          9,
+          11008,
+          16777986,
+          33554691,
+          33555204,
+          33555717,
+          50341633,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          69011706,
+          7343615,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          6,
+          9,
+          12,
+          512,
+          2817,
+          16777223,
+          16777480,
+          16777737,
+          33554442,
+          33554955,
+          33555468,
+          50341380,
+          50341893,
+          50342406,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 12
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 3,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 5,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 36130,
+      "lz4CandidateStart": 35987,
+      "lz4ConsumedEnd": 38827,
+      "decodedPrefixHex": "0f000000060000000400000000000000000000000000000002310000ffffffff0b00000004000000050000000600000009000000002b00000203000103010002040300020505000201270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991efa081d04ff0d7000810ac50c100000000400000006000000090000000c00000000020000010b0000060000010701000108020001090000020a0200020b0400020326000304280003052a0003ffffffff",
+      "bytes": 6780,
+      "sha256": "31da7dfaf17489d702633d1f5342072f4042ee1387de38508d9330ac1636765c",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-11-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12546,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          5,
+          6,
+          9,
+          11008,
+          16777986,
+          33554691,
+          33555204,
+          33555717,
+          50341633,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          69011706,
+          7343615,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          6,
+          9,
+          12,
+          512,
+          2817,
+          16777222,
+          16777479,
+          16777736,
+          33554441,
+          33554954,
+          33555467,
+          50341379,
+          50341892,
+          50342405,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 3,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 5,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 39046,
+      "lz4CandidateStart": 38919,
+      "lz4ConsumedEnd": 41512,
+      "decodedPrefixHex": "0f00000007000000040000000000000000000000000000000031000001330000ffffffff0a000000000000000400000007000000080000000201000103030001040500010027000201090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991eff0d7000810ac50cf10e830d0c0000000000000004000000070000000a0000000600000107020001080400010226000203280002042a000205000003ffffffff",
+      "bytes": 6132,
+      "sha256": "916a16d12723450b2c77a3413175155c563353edc769a031291047aa1ab1817b",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-12-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          4,
+          7,
+          8,
+          16777474,
+          16777987,
+          16778500,
+          33564416,
+          50333953,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          7343615,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          7,
+          10,
+          16777222,
+          16777735,
+          16778248,
+          33564162,
+          33564675,
+          33565188,
+          50331653,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 41740,
+      "lz4CandidateStart": 41608,
+      "lz4ConsumedEnd": 44809,
+      "decodedPrefixHex": "0d00000007000000040000000000000000000000000000000231000003340000ffffffff0a00000004000000000000000500000008000000002b000002010002030300020405000201270003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991efa081d04ff0d7000810ac50c0d0000000400000000000000060000000900000000020000010b00000700000208020002090400020426000305280003062a0003ffffffff",
+      "bytes": 8000,
+      "sha256": "be97f59a260353c8f7fab97a62d004ff3f76525c8c98272734f844469195ac82",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-13-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 13,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12546,
+          13315,
+          4294967295
+        ],
+        "samplerMap": [
+          4,
+          0,
+          5,
+          8,
+          11008,
+          33554690,
+          33555203,
+          33555716,
+          50341633,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          69011706,
+          7343615,
+          214239873
+        ],
+        "textureMap": [
+          4,
+          0,
+          6,
+          9,
+          512,
+          2817,
+          33554439,
+          33554952,
+          33555465,
+          50341380,
+          50341893,
+          50342406,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 2,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 11,
+            "bindIndex": 1
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 0,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 2,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 4,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 38,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 40,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 42,
+            "bindIndex": 6
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 0,
+            "resourceIndex": 43,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 39,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 45030,
+      "lz4CandidateStart": 44903,
+      "lz4ConsumedEnd": 47480,
+      "decodedPrefixHex": "0f00000007000000040000000000000000000000000000000031000001330000ffffffff0a000000000000000400000007000000080000000201000103030001040500010027000201090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991eff0d7000810ac50cf10e830d0c0000000000000004000000070000000a0000000600000107020001080400010226000203280002042a000205000003ffffffff",
+      "bytes": 6108,
+      "sha256": "879df56ad4e4ad4fb6659de833b87539de3ec5f50b1b27905085ae718e66e24d",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-14-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          4,
+          7,
+          8,
+          16777474,
+          16777987,
+          16778500,
+          33564416,
+          50333953,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          7343615,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          7,
+          10,
+          16777222,
+          16777735,
+          16778248,
+          33564162,
+          33564675,
+          33565188,
+          50331653,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 5
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 47709,
+      "lz4CandidateStart": 47576,
+      "lz4ConsumedEnd": 50571,
+      "decodedPrefixHex": "0f0000000800000004000000000000000000000000000000003100000133000002340000ffffffff0a000000000000000400000007000000080000000201000103030001040500010027000201090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991eff0d7000810ac50cf10e830d0d0000000000000004000000070000000a00000008000001090200010a0400010326000204280002052a00020600000307010003ffffffff",
+      "bytes": 7520,
+      "sha256": "7638701d6e54b038746f937028f5f01a01fc6f243df023bfa2b94210096f1be5",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-15-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          4,
+          7,
+          8,
+          16777474,
+          16777987,
+          16778500,
+          33564416,
+          50333953,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          7343615,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          7,
+          10,
+          16777224,
+          16777737,
+          16778250,
+          33564163,
+          33564676,
+          33565189,
+          50331654,
+          50331911,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 8
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 7
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 1
+          }
+        ]
+      }
+    },
+    {
+      "dxbcLiteralOffsetInExtras": 50806,
+      "lz4CandidateStart": 50667,
+      "lz4ConsumedEnd": 53748,
+      "decodedPrefixHex": "0f0000000800000004000000000000000000000000000000003100000133000002340000ffffffff0a000000000000000400000007000000080000000201000103030001040500010027000201090003ffffffff0500000000000000000000000000000000000000ffffffff04000000f407991eff0d7000810ac50cf10e830d0e0000000000000004000000070000000a000000090000010a0200010b0400010326000204280002052a0002060000030701000308030003ffffffff",
+      "bytes": 7844,
+      "sha256": "b5b48baf4540491c62486b2cff237468942a8a76dd1b71a78c11a349334f3ae6",
+      "stage": "ps_5_0",
+      "assemblyFile": "E:\\undefeated-web\\research\\world-recovery\\material-shader-recovery\\cobbleStone_01_Mat\\shader-16-ps_5_0.asm",
+      "resourceTable": {
+        "resourceTableBits": 15,
+        "srvMap": [
+          4,
+          0,
+          0,
+          0,
+          12544,
+          13057,
+          13314,
+          4294967295
+        ],
+        "samplerMap": [
+          0,
+          4,
+          7,
+          8,
+          16777474,
+          16777987,
+          16778500,
+          33564416,
+          50333953,
+          4294967295
+        ],
+        "uavMap": [
+          0,
+          0,
+          0,
+          0,
+          4294967295
+        ],
+        "layoutHashes": [
+          513345524,
+          7343615,
+          214239873,
+          226692849
+        ],
+        "textureMap": [
+          0,
+          4,
+          7,
+          10,
+          16777225,
+          16777738,
+          16778251,
+          33564163,
+          33564676,
+          33565189,
+          50331654,
+          50331911,
+          50332424,
+          4294967295
+        ],
+        "textureBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 0,
+            "bindIndex": 9
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 2,
+            "bindIndex": 10
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 4,
+            "bindIndex": 11
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 38,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 40,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 42,
+            "bindIndex": 5
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 0,
+            "bindIndex": 6
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 1,
+            "bindIndex": 7
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 3,
+            "bindIndex": 8
+          }
+        ],
+        "samplerBindings": [
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 1,
+            "bindIndex": 2
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 3,
+            "bindIndex": 3
+          },
+          {
+            "constantBuffer": 1,
+            "resourceIndex": 5,
+            "bindIndex": 4
+          },
+          {
+            "constantBuffer": 2,
+            "resourceIndex": 39,
+            "bindIndex": 0
+          },
+          {
+            "constantBuffer": 3,
+            "resourceIndex": 9,
+            "bindIndex": 1
+          }
+        ]
+      }
+    }
+  ],
+  "unresolvedDxbcLiterals": [],
+  "package": "/Game/UrbanCity/Materials/Tileable/cobbleStone_01_Mat",
+  "extrasSha256": "0b11baab70293027ab937a0f97162818ee74d79d6386f9ad6bd2ebe5cd5d9468",
+  "source": {
+    "decodedFile": "E:\\undefeated-web\\research\\rea-audit\\decoded-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Tileable\\cobbleStone_01_Mat.json",
+    "decodedSha256": "a175501aa21145b7701d10f94e82f2c398432b8656b654bfdb9ef2c7019baaf4",
+    "exportPointer": "/Exports/0",
+    "sourceFiles": [
+      {
+        "extension": ".uasset",
+        "presentInPak": true,
+        "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Tileable\\cobbleStone_01_Mat.uasset",
+        "existsLocally": true,
+        "bytes": 1772,
+        "sha256": "3a11b4132b0bf07ba6f917e13c4de5ac3fadcdad5521555dd3fdabbce4c22516"
+      },
+      {
+        "extension": ".uexp",
+        "presentInPak": true,
+        "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Tileable\\cobbleStone_01_Mat.uexp",
+        "existsLocally": true,
+        "bytes": 54347,
+        "sha256": "706dcf2f7305749636bba1d9796a63eda4a68b79377e357ff95b18574b83daa7"
+      },
+      {
+        "extension": ".ubulk",
+        "presentInPak": false,
+        "localPath": "E:\\undefeated-web\\research\\rea-audit\\extracted-world-assets\\UNDEFEATED\\Content\\UrbanCity\\Materials\\Tileable\\cobbleStone_01_Mat.ubulk",
+        "existsLocally": false,
+        "notReadReason": "Bulk payload intentionally not extracted"
+      }
+    ]
+  },
+  "method": "Bounded LZ4 candidate extraction; complete D3D11 resource-table prefix and Microsoft D3DDisassemble validation; not REA retained Evidence"
+}
