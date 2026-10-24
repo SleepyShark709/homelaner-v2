@@ -82,6 +82,14 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 
 浏览器探针：Shift+E 时 `heatActive=true`、`flying=false`，市民生命从 35 降到 23。
 
+![Shift+E 热视线光束](research/screenshots/play-heat-beam.jpg)
+
+复现：
+
+```text
+node scripts/capture-world.mjs --query='view=play&mode=free' --ready=play --probe=scripts/probe-heat.js --shot=research/screenshots/play-heat-beam.jpg
+```
+
 ## 自由破坏预览（可选）
 
 ```text
