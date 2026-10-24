@@ -13,7 +13,7 @@
       "textureFailures": 0,
       "unresolvedMaterialCacheKeys": 0,
       "ambiguousSlots": 0,
-      "fps": 42.384854478621925,
+      "fps": 88.86255924131392,
       "activeMeshes": 0,
       "warning": "",
       "scope": "",
@@ -21,9 +21,9 @@
       "streamingTrace": null,
       "player": {
         "position": [
-          49.999984103704946,
-          0.4496875,
-          1.3708073881832388
+          -50.000015896295054,
+          0.020000000000000018,
+          -548.6291926118167
         ],
         "velocity": [
           0,
@@ -40,9 +40,9 @@
         "start": {
           "stats": {
             "position": [
-              49.999984103704946,
-              0.4496875,
-              1.3708073881832388
+              -50.000015896295054,
+              0.020000000000000018,
+              -548.6291926118167
             ],
             "velocity": [
               0,
@@ -61,14 +61,14 @@
         "walking": {
           "stats": {
             "position": [
-              49.999984103704946,
-              0.4496875,
-              -5.670859278483425
+              -52.26292312414825,
+              0.020000000000000018,
+              -555.0732302101597
             ],
             "velocity": [
-              1.2246467991473533e-15,
+              -3.226492377619051,
               0,
-              -10
+              -9.465186048734921
             ],
             "flying": false,
             "grounded": true,
@@ -82,19 +82,19 @@
         "jump": {
           "stats": {
             "position": [
-              49.999984103704946,
-              6.834518750000003,
-              -5.962525945150092
+              -52.28544799710857,
+              6.128041666666668,
+              -555.3336993963359
             ],
             "velocity": [
               0,
-              16.56650000000002,
+              16.730000000000018,
               0
             ],
             "flying": false,
             "grounded": false,
             "state": "jump",
-            "speed": 16.56650000000002,
+            "speed": 16.730000000000018,
             "charge": 0
           },
           "clip": "Hero_IdleFlying",
@@ -103,9 +103,9 @@
         "flying": {
           "stats": {
             "position": [
-              49.999984103704946,
-              6.834518750000003,
-              -5.962525945150092
+              -52.28544799710857,
+              6.128041666666668,
+              -555.3336993963359
             ],
             "velocity": [
               0,
@@ -124,9 +124,9 @@
         "ascended": {
           "stats": {
             "position": [
-              49.999984103704946,
-              21.33451875000002,
-              -5.962525945150092
+              -52.28544799710857,
+              19.961375000000025,
+              -555.3336993963359
             ],
             "velocity": [
               0,
@@ -145,9 +145,9 @@
         "descended": {
           "stats": {
             "position": [
-              49.999984103704946,
-              13.001185416666715,
-              -5.962525945150092
+              -52.28544799710857,
+              12.628041666666718,
+              -555.3336993963359
             ],
             "velocity": [
               0,
@@ -166,9 +166,9 @@
         "exited": {
           "stats": {
             "position": [
-              49.999984103704946,
-              0.4496875,
-              -5.962525945150092
+              -52.28544799710857,
+              0.020000000000000018,
+              -555.3336993963359
             ],
             "velocity": [
               0,
@@ -185,10 +185,10 @@
           "active": true
         },
         "evidence": {
-          "walkDistance": 7.041666666666663,
-          "jumpHeight": 6.384831250000003,
-          "ascendDelta": 14.500000000000016,
-          "descendDelta": -8.333333333333304
+          "walkDistance": 6.444037598343016,
+          "jumpHeight": 6.108041666666669,
+          "ascendDelta": 13.833333333333357,
+          "descendDelta": -7.333333333333307
         }
       },
       "consoleErrors": [],
@@ -199,7 +199,7 @@
       },
       "browser": "Chrome/156.0.8078.48",
       "url": "http://127.0.0.1:5178/?view=play&debug=1",
-      "durationMs": 25753,
+      "durationMs": 27970,
       "screenshot": "research/screenshots/play-b1.jpg"
     }
   ],
@@ -215,13 +215,13 @@
   },
   "tests": {
     "typecheck": "passed",
-    "controller": "5/5 passed (scripts/test-play-controller.mjs)",
+    "controller": "6/6 passed (scripts/test-play-controller.mjs)",
     "worldAssetClosure": "passed before B1 (2,292 files)",
     "browserProbe": "passed (scripts/probe-play-b1.js); walk/jump/air-flight/E ascend/Q descend/exit flight and animation clips observed"
   },
   "checks": {
     "route": "?view=play loads MainLevel + ResidentialArea1 with original character and 3,782 source objects / 144 terrain blocks, 0 asset/texture failures",
-    "spawn": "ResidentialArea1 road-spline midpoint from the previous recovery (not PlayerStart); MainLevel respawn actor x/z is the fallback",
+    "spawn": "The old district-local spawn (50, 1.37) plus city manifest originUE [-10000,-55000,0] cm maps to restored-world (-50.0, -548.63); terrain height 0.0. Population preview placements/routes are shifted by the same origin.",
     "input": "Space jump / airborne Space flight / flight Space exit; E/Q vertical; Shift sprint; Alt walk; F reserved; R debug reset",
     "animation": "Hero_Idle -> A_ThirdPersonRun -> Hero_IdleFlying / Hero_FlyFastSprint groups switch with state",
     "collision": "terrain full-resolution heightfields + 1,432 AABB proxies from 2,171 static objects",

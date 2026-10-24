@@ -10,7 +10,7 @@ import type { AttackSpec, Damageable, PlayMode, TargetKind } from './combat-rule
 interface Model { id: string; kind: TargetKind; url: string; bounds: Bounds; forwardAxis: string; groundOffset: number }
 interface Route { id: string; kind: string; points: Vec3[]; closed: boolean }
 interface Spawn { id: string; modelId: string; position: Vec3; yaw: number; routeId?: string }
-interface Manifest { models: Model[]; spawns: Spawn[]; routes: Route[] }
+interface Manifest { models: Model[]; spawns: Spawn[]; routes: Route[]; originUE?: Vec3 }
 export interface Actor extends Damageable { position: Vec3; root: TransformNode; model: Model; spawn: Spawn; route?: Route; routeIndex: number; routeDirection: number; entries: InstantiatedEntries; clip: string; defeatedTime: number; velocity: Vec3; fleeTime: number; fleeDirection: Vec3 }
 export class Population {
   readonly actors: Actor[] = [];
@@ -18,10 +18,22 @@ export class Population {
   private manifest!: Manifest;
   private paused = true;
   constructor(readonly scene: Scene, readonly walls: Obstacle[]) {}
-  async load(): Promise<void> {
+  async load(options: { worldOffset?: [number, number] } = {}): Promise<void> {
     const response = await fetch('/assets/population-manifest.json');
     if (!response.ok) throw new Error('人车资源清单未生成');
     this.manifest = await response.json();
+    // The previous prototype used a district-local origin. The restored world
+    // uses absolute coordinates, so callers can shift placements/routes without
+    // changing the old ?view=prototype behavior.
+    const [offsetX, offsetZ] = options.worldOffset ?? [0, 0];
+    if (offsetX || offsetZ) {
+      for (const spawn of this.manifest.spawns) {
+        spawn.position = [spawn.position[0] + offsetX, spawn.position[1], spawn.position[2] + offsetZ];
+      }
+      for (const route of this.manifest.routes) {
+        route.points = route.points.map(point => [point[0] + offsetX, point[1], point[2] + offsetZ] as Vec3);
+      }
+    }
     for (const model of this.manifest.models) {
       const container = await LoadAssetContainerAsync(model.url, this.scene);
       container.meshes.forEach(mesh => { mesh.receiveShadows = true; });

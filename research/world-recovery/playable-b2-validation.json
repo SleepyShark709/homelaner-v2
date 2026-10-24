@@ -21,7 +21,7 @@
       "/assets/original/vehicle/vehicle.gltf",
       "/assets/population/meshes/NewspaperBox/NewspaperBox.gltf"
     ],
-    "placement": "previous prototype population-manifest; original meshes/animations, preview placements/routes, not recovered original AI or quests"
+    "placement": "previous prototype population-manifest, shifted by its originUE; original meshes/animations, preview placements/routes, not recovered original AI or quests"
   },
   "combat": {
     "mode": "baseline",
@@ -71,6 +71,7 @@
     "No quest, boss, menu, save, city event or full HeroAnimBP state machine."
   ],
   "checks": {
-    "playerDynamicCollision": "preview vehicle/prop solidBoxes are supplied to OriginalPlayer each frame; unit test blocks a walk into a vehicle AABB; preview citizens remain non-solid"
+    "playerDynamicCollision": "preview vehicle/prop solidBoxes are supplied to OriginalPlayer each frame; unit test blocks a walk into a vehicle AABB; preview citizens remain non-solid",
+    "spawn": "District-local old spawn (50, 1.37) + originUE [-10000,-55000,0] cm = restored-world (-50.0, -548.63); population preview placements/routes shifted by the same offset."
   }
 }

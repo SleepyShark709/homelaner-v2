@@ -207,7 +207,7 @@ if (record) {
   if (fs.existsSync(record)) {
     try { document = { ...document, ...JSON.parse(fs.readFileSync(record, 'utf8')) }; } catch {}
   }
-  document.cases = (document.cases ?? []).filter(item => item.region !== region);
+  document.cases = (document.cases ?? []).filter(item => item.region !== recordCase.region);
   document.cases.push(recordCase);
   document.cases.sort((a, b) => a.region.localeCompare(b.region));
   fs.mkdirSync(path.dirname(record), { recursive: true });

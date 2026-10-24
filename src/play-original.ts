@@ -87,12 +87,14 @@ try {
   const selected = viewer.manifest.levels.filter(level => level.id === 'MainLevel' || level.id === 'ResidentialArea1');
   const collision = buildCollision(selected, viewer.manifest.assets);
   const candidate = viewer.manifest.spawnCandidates?.find(item => item.levelId === 'MainLevel');
-  const legacy = await fetch('/assets/city/manifest.json', { cache: 'force-cache' }).then(response => response.json()).catch(() => null) as { spawn?: Vec3 } | null;
-  // Prefer the previously recovered ResidentialArea1 road-spline midpoint: it
-  // is a documented safe street point (not PlayerStart) inside the houses. The
-  // MainLevel respawn actor's x/z is a fallback; its stored y is a high ledge.
-  const baseX = legacy?.spawn?.[0] ?? candidate?.position[0] ?? 50;
-  const baseZ = legacy?.spawn?.[2] ?? candidate?.position[2] ?? 1.37;
+  const legacy = await fetch('/assets/city/manifest.json', { cache: 'force-cache' }).then(response => response.json()).catch(() => null) as { spawn?: Vec3; originUE?: Vec3 } | null;
+  // The old prototype city manifest is district-local: its originUE is
+  // [-10000, -55000, 0] cm. The restored world uses absolute metres, so the
+  // recorded spawn and preview population must be shifted by originUE/100.
+  const offsetX = (legacy?.originUE?.[0] ?? 0) / 100;
+  const offsetZ = (legacy?.originUE?.[1] ?? 0) / 100;
+  const baseX = (legacy?.spawn?.[0] ?? candidate?.position[0] ?? 50) + (legacy ? offsetX : 0);
+  const baseZ = (legacy?.spawn?.[2] ?? candidate?.position[2] ?? 1.37) + (legacy ? offsetZ : 0);
   const rotation = candidate?.rotation ?? [0, 0, 0, 1];
   input.yaw = legacy ? Math.PI : 2 * Math.atan2(rotation[1], rotation[3]);
   const candidateGround = terrain.heightAt(baseX, baseZ) ?? 0;
@@ -129,7 +131,7 @@ try {
   // but placements/routes come from the previous prototype manifest, not a
   // recovered original AI/quest system. Damage stays in baseline mode here.
   population = new Population(viewer.scene, collision.boxes);
-  await population.load();
+  await population.load({ worldOffset: [offsetX, offsetZ] });
   population.pause(true);
   combat = new Combat(viewer.scene, input, player as unknown as PlayerMotor, character, population, viewer.camera, collision.boxes, { heatVision: false });
   combat.mode = 'baseline';
