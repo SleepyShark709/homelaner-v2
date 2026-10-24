@@ -1,4 +1,7 @@
 import './play-original.css';
+// Babylon's Ray side-effect is required for scene.createPickingRay/pickWithRay
+// used by the ground/plaza diagnostics.
+import '@babylonjs/core/Culling/ray';
 import { Vector3 } from '@babylonjs/core/Maths/math.vector';
 import { DirectionalLight } from '@babylonjs/core/Lights/directionalLight';
 import { ShadowGenerator } from '@babylonjs/core/Lights/Shadows/shadowGenerator';

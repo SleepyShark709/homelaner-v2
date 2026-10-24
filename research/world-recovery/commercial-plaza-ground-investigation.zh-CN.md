@@ -33,6 +33,18 @@
 
 证据截图：`play-plaza-redfloor2.jpg`、`play-plaza-all-red.jpg`、`play-plaza-nodepth.jpg`、`play-plaza-instances-raised2.jpg`。
 
+## Raycast 结果（2026-10-25）
+
+开启 `@babylonjs/core/Culling/ray` 后，用 `scene.createPickingRay`/`pickWithRay` 对画面地面点取射线：
+
+- 屏幕 `(640,620)` 命中 `landscape-5189`，世界点 y ≈ **-41.9 m**；
+- 屏幕 `(800,600)` 命中 `landscape-5189`，y ≈ **-32.2 m**；
+- 屏幕 `(640,500)` 命中 `landscape-5187`，y ≈ **-26.4 m**。
+
+也就是说，画面里看到的“草地”是 **静态 CommercialArea 下方约 26–42 m 的 Landscape**；玩家/楼板在 y≈0.65，静态街区整体悬浮在地形上方。这比“楼板材质错了”更根本：**CommercialArea 静态层与 Landscape 的垂直/世界对齐尚未闭合**。
+
+`(91,181)` 仍是候选点；下一步应先确认子关卡/地形的高度对齐，再谈起点广场同机位。
+
 ## 结论
 
 楼板几何/实例存在，但**玩家附近可见地面不是这些 floor mesh**，或它们被地形/另一块草地面遮住。当前无法据此把候选点认定为原版起点广场；下一步需要：
