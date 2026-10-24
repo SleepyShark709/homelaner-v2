@@ -45,7 +45,7 @@ const viewer = new OriginalWorld(canvas);
 const input = new Input(canvas);
 // Original PlayerBP CameraBoom_GEN_VARIABLE: TargetArmLength=400 cm,
 // SocketOffset=(0,50,90) cm, boom RelativeLocation Z=70 cm.
-const CAMERA = { armLength: 4.0, boomHeight: 0.7, socketRight: 0.5, socketUp: 0.9 };
+const CAMERA = { armLength: 4.0, boomHeight: 0.7, socketRight: 0.5, socketUp: 0.9, lagSpeed: 15 };
 input.pitch = 0.02;
 const paused = el('paused');
 const requestedDistrict = new URLSearchParams(location.search).get('district') ?? 'ResidentialArea1';
@@ -196,7 +196,9 @@ try {
   const forward = new Vector3();
   const right = new Vector3();
   const look = new Vector3();
-  const updateCamera = () => {
+  const cameraTarget = new Vector3();
+  let cameraInitialized = false;
+  const updateCamera = (dt = 1 / 60) => {
     if (!player) return;
     const yaw = input.yaw, pitch = input.pitch;
     right.set(Math.cos(yaw), 0, -Math.sin(yaw));
@@ -208,10 +210,20 @@ try {
     const nearby = collision.spatial.nearby(base.x, base.z, CAMERA.armLength + 2);
     const hit = firstHit(base.asArray() as Vec3, offset.asArray() as Vec3, nearby, [0.2, 0.2, 0.2]);
     const safe = hit ? Math.max(0.08, hit.time - 0.02) : 1;
-    viewer.camera.position.copyFrom(base.add(offset.scale(safe)));
     look.copyFrom(base).addInPlace(forward.scale(20));
     look.y += 0.25;
-    viewer.camera.setTarget(look);
+    const desired = base.add(offset.scale(safe));
+    if (!cameraInitialized || hit) {
+      viewer.camera.position.copyFrom(desired);
+      cameraTarget.copyFrom(look);
+      cameraInitialized = true;
+    } else {
+      // PlayerBP CameraLagSpeed/CameraRotationLagSpeed = 15.
+      const alpha = 1 - Math.exp(-CAMERA.lagSpeed * dt);
+      viewer.camera.position.copyFrom(Vector3.Lerp(viewer.camera.position, desired, alpha));
+      cameraTarget.copyFrom(Vector3.Lerp(cameraTarget, look, alpha));
+    }
+    viewer.camera.setTarget(cameraTarget);
   };
   updateCamera();
 
@@ -226,7 +238,7 @@ try {
     while (accumulator >= 1 / 120) { player.update(1 / 120, input); accumulator -= 1 / 120; }
     character.update(player, dt);
     combat?.update(dt);
-    updateCamera();
+    updateCamera(dt);
     hudTime += dt;
     if (hudTime > 0.1) {
       hudTime = 0;
