@@ -14,6 +14,7 @@ import type { Bounds, Vec3 } from './game/collision';
 import { buildCollision } from './play/CollisionWorld';
 import { OriginalPlayer } from './play/OriginalPlayer';
 import { TerrainHeightfield } from './play/TerrainHeightfield';
+import { WalkableSurfaces } from './play/WalkableSurfaces';
 import { sourceObjectCount } from './world/types';
 
 document.title = 'UNDEFEATED · 原版可玩基线 B1';
@@ -108,6 +109,7 @@ try {
     }
   }
   const terrain = await TerrainHeightfield.load(viewer.terrainManifest);
+  const surfaces = await WalkableSurfaces.load('/assets/world/walkable-surfaces.json');
   const selected = startupMode
     ? viewer.manifest.levels.filter(level => viewer.streamingManifest.baseline.packages.includes(level.package))
     : viewer.manifest.levels.filter(level => level.id === 'MainLevel' || level.id === playDistrict);
@@ -125,11 +127,18 @@ try {
   const districtBounds = districtLevel?.bounds;
   const fallbackX = districtBounds ? (districtBounds.min[0] + districtBounds.max[0]) / 2 : (candidate?.position[0] ?? 50);
   const fallbackZ = districtBounds ? (districtBounds.min[2] + districtBounds.max[2]) / 2 : (candidate?.position[2] ?? 1.37);
-  const baseX = (legacy?.spawn?.[0] ?? fallbackX) + (legacy ? offsetX : 0);
-  const baseZ = (legacy?.spawn?.[2] ?? fallbackZ) + (legacy ? offsetZ : 0);
+  let baseX = (legacy?.spawn?.[0] ?? fallbackX) + (legacy ? offsetX : 0);
+  let baseZ = (legacy?.spawn?.[2] ?? fallbackZ) + (legacy ? offsetZ : 0);
+  const at = new URLSearchParams(location.search).get('at');
+  if (at) {
+    const [x, z] = at.split(',').map(Number);
+    if (Number.isFinite(x) && Number.isFinite(z)) { baseX = x; baseZ = z; }
+  }
   const rotation = candidate?.rotation ?? [0, 0, 0, 1];
   input.yaw = legacy ? Math.PI : 2 * Math.atan2(rotation[1], rotation[3]);
-  const candidateGround = terrain.heightAt(baseX, baseZ) ?? 0;
+  const terrainGround = terrain.heightAt(baseX, baseZ) ?? 0;
+  const floorGround = surfaces.topAt(baseX, baseZ, terrainGround + 1) ?? -Infinity;
+  const candidateGround = Math.max(terrainGround, floorGround);
   let spawn: Vec3 = [baseX, candidateGround + 0.02, baseZ];
   // The original spawn point is not always a viewer-safe point (district
   // centres can be inside collision proxies). Search outward in rings up to
@@ -144,12 +153,14 @@ try {
   }
   for (const [dx, dz] of spawnOffsets) {
     const x = baseX + dx, z = baseZ + dz;
-    const y = (terrain.heightAt(x, z) ?? 0) + 0.02;
+    const terrainY = terrain.heightAt(x, z) ?? 0;
+    const floorY = surfaces.topAt(x, z, terrainY + 1);
+    const y = Math.max(terrainY, floorY ?? -Infinity) + 0.02;
     if (!insideBox([x, y, z], collision.boxes)) { spawn = [x, y, z]; break; }
   }
   const terrainBounds = terrain.bounds();
   const bounds: Bounds = { min: [terrainBounds.min[0], -180, terrainBounds.min[2]], max: [terrainBounds.max[0], terrainBounds.max[1] + 600, terrainBounds.max[2]] };
-  player = new OriginalPlayer(spawn, terrain, collision.spatial, bounds);
+  player = new OriginalPlayer(spawn, terrain, collision.spatial, bounds, surfaces);
   player.heading = input.yaw;
   let nearestBuilding: { distance: number; yaw: number } | undefined;
   for (const mesh of viewer.scene.meshes) {

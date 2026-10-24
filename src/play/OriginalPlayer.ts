@@ -4,6 +4,7 @@ import type { Input } from '../game/Input.ts';
 import { TUNING, type MotionState } from '../game/PlayerMotor.ts';
 import type { SpatialBoxes } from './CollisionWorld.ts';
 import type { TerrainHeightfield } from './TerrainHeightfield.ts';
+import type { WalkableSurfaces } from './WalkableSurfaces.ts';
 
 export interface PlaySpawn {
   position: Vec3;
@@ -41,6 +42,7 @@ export class OriginalPlayer {
   private sprintBlocked = false;
   readonly spawn: Vec3;
   private readonly ground: TerrainHeightfield;
+  private readonly surfaces?: WalkableSurfaces;
   private readonly boxes: SpatialBoxes;
   private readonly bounds: Bounds;
   private dynamicBoxes: Obstacle[] = [];
@@ -50,12 +52,21 @@ export class OriginalPlayer {
     ground: TerrainHeightfield,
     boxes: SpatialBoxes,
     terrainBounds: Bounds,
+    surfaces?: WalkableSurfaces,
   ) {
     this.spawn = [...spawn];
     this.position = [...spawn];
     this.ground = ground;
     this.boxes = boxes;
     this.bounds = terrainBounds;
+    this.surfaces = surfaces;
+  }
+
+  /** Landscape plus recovered flat floor tops (plaza brick floors). */
+  private supportAt(x: number, z: number, feetY: number): number {
+    const terrain = this.ground.heightAt(x, z) ?? 0;
+    const floor = this.surfaces?.topAt(x, z, feetY, 1);
+    return floor !== undefined ? Math.max(terrain, floor) : terrain;
   }
 
   /** Vehicles/props from the preview population. These move, so they are not
@@ -73,7 +84,7 @@ export class OriginalPlayer {
 
   update(dt: number, input: Input): void {
     if (input.pressed('KeyR')) this.reset();
-    const ground = this.ground.heightAt(this.position[0], this.position[2]) ?? 0;
+    const ground = this.supportAt(this.position[0], this.position[2], this.position[1]);
     this.grounded = !this.flying && this.position[1] <= ground + 0.08;
     this.walk = input.held('AltLeft', 'AltRight');
     const forward = input.axis(['KeyW', 'ArrowUp'], ['KeyS', 'ArrowDown']);
@@ -154,8 +165,8 @@ export class OriginalPlayer {
       if (normal[1] > 0) this.grounded = true;
     }
 
-    // Terrain is the authoritative ground; nearby boxes only block walls.
-    const groundNow = this.ground.heightAt(this.position[0], this.position[2]) ?? 0;
+    // Terrain and recovered floor tops are the ground; nearby boxes only block walls.
+    const groundNow = this.supportAt(this.position[0], this.position[2], this.position[1]);
     if (this.position[1] <= groundNow + 0.03) {
       if (this.position[1] < groundNow + 0.02) this.position[1] = groundNow + 0.02;
       if (this.velocity[1] < 0) this.velocity[1] = 0;

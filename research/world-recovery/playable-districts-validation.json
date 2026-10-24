@@ -95,7 +95,8 @@
     "spawn": "District bounds centre searched outward in 3 m rings up to 30 m for a terrain point outside the static AABB proxies.",
     "population": "preview citizens/vehicles/props and combat targets are ResidentialArea1-only; other districts have no population AI",
     "camera": "third-person follow; AABB camera pull-in enabled",
-    "startupPlayable": "?view=play&startup=1 executes OriginalStreaming 17-package/12-step startup, then builds the all-level AABB collision set, spawns the original character at ResidentialArea1 and runs the B1 movement probe (walk/jump/fly/E-Q) successfully; 8,824 source objects, 144 terrain, 0 failures."
+    "startupPlayable": "?view=play&startup=1 executes OriginalStreaming 17-package/12-step startup, then builds the all-level AABB collision set, spawns the original character at ResidentialArea1 and runs the B1 movement probe (walk/jump/fly/E-Q) successfully; 8,824 source objects, 144 terrain, 0 failures.",
+    "walkableSurfaces": "29 recovered /Mesh/Floor/ AABB tops are sampled in addition to the Landscape heightfield; ?at=<x,z> can place the player on a recovered brick/plaza floor (CommercialArea 100,234 captured, 0 failures). Side collision/PhysX remains absent."
   },
   "limitations": [
     "Spawn is a viewer-safe centre point, not the original PlayerStart or story spawn.",

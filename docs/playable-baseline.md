@@ -9,6 +9,7 @@
 - 世界：`MainLevel + ResidentialArea1` 静态装配，3,782 个源对象组件、144 块地形；资源/纹理失败 0。
 - 角色：`/assets/character/hero.gltf`，原身体/头发/墨镜三套网格与骨架，18 段原动画；保留原骨架与比例。
 - 地面：144 块原 Landscape 高度场逐点采样（`TerrainHeightfield`），不是旧的单平面地面。
+- 可走楼板：`tools/asset-pipeline/export-walkable-surfaces.mjs` 从 `/Mesh/Floor/` 资产导出 29 个世界 AABB 顶面；玩家支撑高度取地形与楼板顶面的较高者，因此可以站上恢复出的砖/石广场地面。`?at=<x,z>` 可把出生点放到指定地面点检查，例如 `?view=play&district=CommercialArea&at=100,234`（`play-plaza-floor2.jpg`）。
 - 碰撞：从恢复后的静态对象 TRS 与 asset bounds 生成 1,432 个 AABB 代理（2,171 个对象中跳过 731 个过小、8 个过大）；这是可玩性代理，不是原 cooked PhysX。相机偏移会对附近 AABB 做收缩，避免穿墙。所有存活预览 actor（含市民、车辆、报刊箱）的 `solidBoxes` 每帧加入玩家动态碰撞。
 - 相机：第三人称按原 `PlayerBP` `CameraBoom` 的 `TargetArmLength=400 cm`、`SocketOffset=(0,50,90) cm`、`RelativeLocation Z=70 cm` 校准，并按 HeroRank 0 的 `Camera.FieldOfView=92°` 水平视场换算（rank 表 92/94/96/98/100/100/100）；使用原 `CameraLagSpeed/RotationLagSpeed=15` 做相机位置/朝向平滑。攻击时目标臂长按 HeroComponent AST 的 650 cm 插值（`CameraInterpSpeed=2`）。HeroComponent 的 Far/Zoom 状态切换、弹簧回弹和碰撞后处理仍是近似。
 - 输入：Space 地面跳跃 / 空中开飞 / 飞行退飞；E/Q 升降；地面按住 E 约 1 秒自动开飞；Shift 冲刺；Alt 慢行；F 预留互动；R 为调试回出生点。按 P07，Shift 只有与移动输入同时存在才进入冲刺；松开 Shift/停止移动即解除，Alt 慢行取消冲刺。按 P08，冲刺速度跌到 850 cm/s（步行）/2000 cm/s（飞行）以下会重置，且保持 Shift 不会立即重新触发。
@@ -37,14 +38,14 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 - 按住 E：`heatActive=false`，地面蓄升 charge 正常累加；
 - 相机位置不在任何 AABB 内（cameraInside=false）。
 
-单测 [test-play-controller.mjs](../scripts/test-play-controller.mjs) 8/8：地面/行走方向、跳跃/开飞/退飞、地面蓄升 1 秒边界、冲刺/慢行/升降、Shift 必须配合移动输入、P08 冲刺速度重置、动态车辆 AABB 阻挡、R 重置；原 14 段战斗时间轴由 `npm test` 覆盖。
+单测 [test-play-controller.mjs](../scripts/test-play-controller.mjs) 9/9：地面/行走方向、跳跃/开飞/退飞、地面蓄升 1 秒边界、冲刺/慢行/升降、Shift 必须配合移动输入、P08 冲刺速度重置、楼板支撑行走、动态车辆 AABB 阻挡、R 重置；原 14 段战斗时间轴由 `npm test` 覆盖。
 
 截图：[play-b1.jpg](../research/screenshots/play-b1.jpg)、[play-b2.jpg](../research/screenshots/play-b2.jpg)、[play-b3.jpg](../research/screenshots/play-b3.jpg)。记录：[playable-b1-validation.json](../research/world-recovery/playable-b1-validation.json)、[playable-b2-validation.json](../research/world-recovery/playable-b2-validation.json)。
 
 ## B3/B4 进展
 
 - 修正旧原型街区局部坐标：`originUE [-10000,-55000,0]` cm 使原先的 `(50,1.37)` 实际对应恢复世界 `(-50.0,-548.63)`；spawn 和 14 个预览 actor 一起平移，截图从空旷主路变为 ResidentialArea1 的实际公寓/街道（`play-b3.jpg`）。
-- 预览所有存活 actor（含市民、车辆、报刊箱）的 `solidBoxes` 每帧加入玩家动态 AABB；单测新增“Shift 需移动输入”“P08 冲刺重置”“车辆 AABB 阻挡行走”，目前 8/8。
+- 预览所有存活 actor（含市民、车辆、报刊箱）的 `solidBoxes` 每帧加入玩家动态 AABB；单测新增“Shift 需移动输入”“P08 冲刺重置”“楼板支撑行走”“车辆 AABB 阻挡行走”，目前 9/9。
 - 新增 `?district=` 参数：对 MainLevel + 指定主世界关卡做装配与碰撞代理，出生点取该关卡 bounds 中心附近的地面空闲点；预览人口仍只在 ResidentialArea1 加载。`play-titlemenu.jpg` 是 TitleMenuLevel 的实际浏览器检查，不是原版开始画面。
 - 新增可选 `?population=original` 检查：`tools/asset-pipeline/export-citizen-spawns.mjs` 从原版 `CitizenWayPoint` 取玩家附近 **6** 个 `BP_CharaSpawnPoint`（距玩家 ≥10 m、彼此 ≥18 m），转成恢复世界坐标，生成 `population-original-citizens.json`；路线使用最近的原版 `BP_CharaChildWaypoint`（同父优先）。原版 spawner 不会同时生成全部市民，路线顺序/遍历/AI 仍是预览，所以**默认仍用预览人口**，该模式只用于位置/路径检查（`play-child-waypoints-6b.jpg`）。
 
@@ -80,6 +81,7 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 - 预览人口只加载于 ResidentialArea1；DownTown/Park/TitleMenuLevel 没有市民、车辆、AI、任务或可攻击目标。
 - 玩家动态碰撞已覆盖预览市民/车辆/报刊箱；原版 actor 胶囊形状与非统一骨骼碰撞未恢复。
 - 跳跃冲量、重力曲线来自旧原型预览值；建筑/道具碰撞是 AABB 代理，不是原 PhysX；相机 boom 已按原参数校准，但 lag/弹簧/碰撞后处理仍是近似。
+- 楼板支撑只取 `/Mesh/Floor/` AABB 顶面，没有侧面/台阶/PhysX；低于楼板的室内区域可能被顶面错误抬升，目前只用于广场/平台可走性检查。
 - 地图中烘焙的参考姿态市民被隐藏，预览市民不是原地图 AI；角色阴影、IK、蒙太奇/通知、完整 HeroAnimBP 状态机未实现。
 - 尚未与原程序做同机位/同输入对照。
 

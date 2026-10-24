@@ -106,6 +106,17 @@ test('Shift only arms sprint when movement input is present', () => {
   assert.equal(player.sprint, false);
 });
 
+test('recovered flat floor surfaces support walking above the terrain', () => {
+  const { input, player } = make();
+  const floors = { topAt: () => 0.65 };
+  const onFloor = new OriginalPlayer([0, 0.67, 0], ground, spatial, bounds, floors);
+  input.down.add('KeyW');
+  step(onFloor, input, 0.6);
+  assert.equal(onFloor.grounded, true);
+  assert.ok(onFloor.position[1] > 0.6, `expected floor support, got ${onFloor.position[1]}`);
+  assert.ok(onFloor.position[2] < -3);
+});
+
 test('P08 sprint disarms after speed drops and waits for a fresh Shift edge', () => {
   const { input, player } = make();
   step(player, input, 0.3);
