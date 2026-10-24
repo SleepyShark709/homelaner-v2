@@ -96,7 +96,7 @@ test('sprint exceeds walk, Alt walk is slower, E/Q move vertically in flight', (
   input.down.add('KeyE'); step(player, input, 0.5); input.down.delete('KeyE');
   assert.ok(player.position[1] > startY + 1, `E should ascend, got ${player.position[1] - startY}`);
   const highY = player.position[1];
-  input.down.add('KeyQ'); step(player, input, 0.8); input.down.delete('KeyQ');
+  input.down.add('KeyQ'); step(player, input, 2); input.down.delete('KeyQ');
   assert.ok(player.position[1] < highY, 'Q should descend');
 });
 

@@ -150,7 +150,7 @@ try {
   const yawParam = new URLSearchParams(location.search).get('yaw');
   if (yawParam !== null && Number.isFinite(Number(yawParam))) input.yaw = Number(yawParam);
   const terrainGround = terrain.heightAt(baseX, baseZ) ?? 0;
-  const floorGround = surfaces.topAt(baseX, baseZ, terrainGround + 1) ?? -Infinity;
+  const floorGround = surfaces.topAt(baseX, baseZ, terrainGround + 0.75) ?? -Infinity;
   const candidateGround = Math.max(terrainGround, floorGround);
   let spawn: Vec3 = [baseX, candidateGround + 0.02, baseZ];
   // The original spawn point is not always a viewer-safe point (district
@@ -167,7 +167,7 @@ try {
   for (const [dx, dz] of spawnOffsets) {
     const x = baseX + dx, z = baseZ + dz;
     const terrainY = terrain.heightAt(x, z) ?? 0;
-    const floorY = surfaces.topAt(x, z, terrainY + 1);
+    const floorY = surfaces.topAt(x, z, terrainY + 0.75);
     const y = Math.max(terrainY, floorY ?? -Infinity) + 0.02;
     if (!insideBox([x, y, z], collision.boxes)) { spawn = [x, y, z]; break; }
   }

@@ -12,7 +12,7 @@
 - 可走楼板：`tools/asset-pipeline/export-walkable-surfaces.mjs` 从 `/Mesh/Floor/` 资产导出 29 个世界 AABB 顶面；玩家支撑高度取地形与楼板顶面的较高者，因此可以站上恢复出的砖/石广场地面。`?at=<x,z>&yaw=<rad>` 可把出生点/朝向放到指定地面点检查，例如 `?view=play&district=CommercialArea&at=100,234`（`play-plaza-floor2.jpg`）。
 - 碰撞：从恢复后的静态对象 TRS 与 asset bounds 生成 1,432 个 AABB 代理（2,171 个对象中跳过 731 个过小、8 个过大）；这是可玩性代理，不是原 cooked PhysX。相机偏移会对附近 AABB 做收缩，避免穿墙。所有存活预览 actor（含市民、车辆、报刊箱）的 `solidBoxes` 每帧加入玩家动态碰撞。
 - 相机：第三人称按原 `PlayerBP` `CameraBoom` 的 `TargetArmLength=400 cm`、`SocketOffset=(0,50,90) cm`、`RelativeLocation Z=70 cm` 校准，并按 HeroRank 0 的 `Camera.FieldOfView=92°` 水平视场换算（rank 表 92/94/96/98/100/100/100）；使用原 `CameraLagSpeed/RotationLagSpeed=15` 做相机位置/朝向平滑。攻击时目标臂长按 HeroComponent AST 的 650 cm 插值（`CameraInterpSpeed=2`）；`CharacterSpeed > 6000 cm/s` 时切到 FarArmLength=800 cm、FarCameraInterpSpeed=1。HeroComponent 的其它 HPS Far/Zoom 状态、弹簧回弹和碰撞后处理仍是近似。
-- 输入：Space 地面跳跃 / 空中开飞 / 飞行退飞；E/Q 升降；地面按住 E 约 1 秒自动开飞；Shift 冲刺；Alt 慢行；F 预留互动；R 为调试回出生点。按 P07，Shift 只有与移动输入同时存在才进入冲刺；松开 Shift/停止移动即解除，Alt 慢行取消冲刺。按 P08，冲刺速度跌到 850 cm/s（步行）/2000 cm/s（飞行）以下会重置，且保持 Shift 不会立即重新触发。
+- 输入：Space 地面跳跃 / 空中开飞 / 飞行退飞；E/Q 升降；地面按住 E 约 1 秒自动开飞；Shift 冲刺；Alt 慢行；F 预留互动；R 为调试回出生点。按 P07，Shift 只有与移动输入同时存在才进入冲刺；松开 Shift/停止移动即解除，Alt 慢行取消冲刺。按 P08，冲刺速度跌到 850 cm/s（步行）/2000 cm/s（飞行）以下会重置，且保持 Shift 不会立即重新触发。加速度使用原值：步行 2048 cm/s²、飞行 4096 cm/s²、冲刺 15000 cm/s²；楼板/台阶支撑使用 MaxStepHeight=75 cm。
 - 动画：`Hero_Idle`、`A_ThirdPersonRun`、`Hero_IdleFlying`、`Hero_FlyFastSprint` 随状态切换；B1 实测前三条。
 - 出生点：旧原型街区局部坐标 `(50, 1.37)` 加上 city manifest `originUE [-10000,-55000,0]` cm，得到恢复世界 `(-50.0, -548.63)`，位于 ResidentialArea1 的实际公寓街区；仍不是原 `PlayerStart`。MainLevel `BP_RespawnAndSpawnPoint` 的 x/z 作为备用。其他 `district=` 关卡从 bounds 中心向外按 3 m 环搜索最多 30 m，取第一个不在静态 AABB 内的地形点。
 - B2 预览人口：14 个 actor（8 市民、3 Sedan、3 报刊箱），使用原 citizen/vehicle/NewspaperBox 网格与动画；位置来自旧原型 `population-manifest.json`，按同一 `originUE` 平移到恢复世界。市民短路线优先用最近的原版 `BP_CharaChildWaypoint`（同父优先），但路线顺序/遍历、AI/导航/交通仍非原版。
@@ -81,7 +81,7 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 `?view=play&startup=1` 先由 `OriginalStreaming` 执行恢复出的 17 包/12 步启动加载，再构建**全部启动关卡**的静态 AABB、生成原角色和预览人口。实测：
 
 - 8,824 个源对象、144 块地形、0 资源/纹理失败；
-- B1 浏览器探针通过：移动 6.58 m、跳跃约 3.88 m、E 上升 13.50 m、Q 下降 7.33 m；
+- B1 浏览器探针通过：移动 4.62 m、跳跃约 3.85 m、E 上升 4.54 m、Q 下降 8.39 m；
 - 截图 `play-startup.jpg`。
 
 这是“原启动链 + 可玩角色”的整合检查，不代表原版运行时流送状态机、可见性或性能已等价。

@@ -31,7 +31,7 @@ export class WalkableSurfaces {
     }
   }
   /** Highest floor top that is at most maxStep above the current feet height. */
-  topAt(x: number, z: number, feetY: number, maxStep = 1): number | undefined {
+  topAt(x: number, z: number, feetY: number, maxStep = 0.75): number | undefined {
     let best: number | undefined;
     for (const s of this.surfaces) {
       if (x < s.minX || x > s.maxX || z < s.minZ || z > s.maxZ) continue;

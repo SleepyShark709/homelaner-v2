@@ -8,6 +8,10 @@ import type { WalkableSurfaces } from './WalkableSurfaces.ts';
 
 /** UE GravityScale 5 * 980 cm/s^2 = 49 m/s^2, recovered from HeroComponent. */
 const ORIGINAL_GRAVITY = 49;
+/** MaxAcceleration: 2048 cm/s^2 walking, 4096 flying, 15000 sprinting. */
+const ACCELERATION_WALK = 20.48;
+const ACCELERATION_FLY = 40.96;
+const ACCELERATION_SPRINT = 150;
 
 export interface PlaySpawn {
   position: Vec3;
@@ -68,7 +72,7 @@ export class OriginalPlayer {
   /** Landscape plus recovered flat floor tops (plaza brick floors). */
   private supportAt(x: number, z: number, feetY: number): number {
     const terrain = this.ground.heightAt(x, z) ?? 0;
-    const floor = this.surfaces?.topAt(x, z, feetY, 1);
+    const floor = this.surfaces?.topAt(x, z, feetY, 0.75);
     return floor !== undefined ? Math.max(terrain, floor) : terrain;
   }
 
@@ -148,7 +152,7 @@ export class OriginalPlayer {
     const length = Math.hypot(desiredX, desiredZ);
     if (length > 0) { desiredX = desiredX / length * speed; desiredZ = desiredZ / length * speed; }
     const desiredY = this.flying ? verticalInput * speed : this.grounded ? -0.4 : this.velocity[1];
-    const acceleration = TUNING.acceleration * dt;
+    const acceleration = (this.flying ? ACCELERATION_FLY : this.sprint ? ACCELERATION_SPRINT : ACCELERATION_WALK) * dt;
     this.velocity[0] += Math.max(-acceleration, Math.min(acceleration, desiredX - this.velocity[0]));
     this.velocity[2] += Math.max(-acceleration, Math.min(acceleration, desiredZ - this.velocity[2]));
     if (this.flying) this.velocity[1] += Math.max(-acceleration, Math.min(acceleration, desiredY - this.velocity[1]));
