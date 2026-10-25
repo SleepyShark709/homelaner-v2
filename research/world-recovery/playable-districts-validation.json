@@ -105,7 +105,8 @@
     "questAreas": "?quests=1 renders 21 recovered triggers, marks a nearby trigger as discovered (HUD 1/21 verified at MatQuest_BP2_368) and shows an F detail hint; quest logic/state/rewards are not recovered.",
     "trafficMarkers": "?traffic=1 renders 227 recovered CrossWalk rings and a nearest-crosswalk HUD distance (4.3 m verified at -36.9,-201.1 yaw 0.785); 339 TrafficLight mesh positions are exported; signal timing/BP_TrafficSystem remains unrecovered.",
     "startupOverlay": "startup=1/plaza=1 automatically draw the authored GroundBrick_B_A overlay over recovered brick-floor AABBs; floors=native disables it. Verified startup=1 at (20,0). Still a preview fallback, not repaired original floor mesh.",
-    "nativeFloors": "SM_Floor12000x15000, Bench and nearby Tree/Palm thin instances are materialized as regular mesh clones at load; native MI_FloorBrick1 paving and local trees render (CommercialArea play-floor-fixed.jpg, MainLevel play-plaza-trees2.jpg). exact=1 bypasses the safe-spawn search for framing inspection."
+    "nativeFloors": "SM_Floor12000x15000, Bench and nearby Tree/Palm thin instances are materialized as regular mesh clones at load; native MI_FloorBrick1 paving and local trees render (CommercialArea play-floor-fixed.jpg, MainLevel play-plaza-trees2.jpg). exact=1 bypasses the safe-spawn search for framing inspection.",
+    "cameraProbe": "exact=1, arm=<m> and fov=<deg> are inspection-only overrides for same-camera probes; arm=6/fov=80 (play-plaza-arm6b.jpg, comparison-start-plaza-arm6.jpg) is closer in character scale but not a matched camera; default stays 4 m/92°."
   },
   "limitations": [
     "Spawn is a viewer-safe centre point, not the original PlayerStart or story spawn.",

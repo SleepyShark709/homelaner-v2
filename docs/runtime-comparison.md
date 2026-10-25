@@ -36,6 +36,8 @@
 
 原生 floor/树木材质化后，`plaza=1&at=-30,-4&yaw=0&exact=1` 成为当前最新的候选取景：大块石铺装、左侧栏杆/花箱、左中景树木、中央/右侧古典建筑。对照图 `comparison-start-plaza-native.jpg`；仍不是同机位，原程序更开阔、长椅沿左栏杆排布、右侧广告牌不同。
 
+`arm=6&fov=80` 的检查用相机覆盖（`play-plaza-arm6b.jpg` / `comparison-start-plaza-arm6.jpg`）让角色比例更接近原图，但场景左右关系仍不同；默认相机仍使用恢复的 4 m / 92°。
+
 ![相机净空后的广场候选](../research/runtime-observation/comparison-start-plaza-camera-clear.jpg)
 
 仍不是匹配：长椅/相机/建筑朝向未对齐，overlay 也不是原程序渲染。这是候选地点，不是同机位验收。

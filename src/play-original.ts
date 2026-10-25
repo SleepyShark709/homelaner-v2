@@ -61,6 +61,10 @@ const CAMERA = { armLength: 4.0, attackArmLength: 6.5, farArmLength: 8.0, farSpe
 input.pitch = 0.02;
 const paused = el('paused');
 const params = new URLSearchParams(location.search);
+const cameraArmOverride = Number(params.get('arm'));
+if (Number.isFinite(cameraArmOverride) && cameraArmOverride > 0) CAMERA.armLength = cameraArmOverride;
+const cameraFovOverride = Number(params.get('fov'));
+if (Number.isFinite(cameraFovOverride) && cameraFovOverride > 0) CAMERA.fov = cameraFovOverride;
 const requestedDistrict = params.get('district') ?? 'ResidentialArea1';
 const plazaMode = params.get('plaza') === '1';
 const freeMode = params.get('mode') === 'free';

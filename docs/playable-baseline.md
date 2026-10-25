@@ -154,7 +154,7 @@ node scripts/capture-world.mjs --query='view=play&mode=free' --ready=play --prob
 /?view=play&plaza=1&at=-30,-4&yaw=0&exact=1
 ```
 
-`exact=1` 跳过安全环搜索，仅用于取景检查。现在同一画面包含：
+`exact=1` 跳过安全环搜索，仅用于取景检查；`arm=<m>`/`fov=<deg>` 可临时覆盖相机臂长/水平 FOV，同样只用于同机位探针，不改变默认原版参数（4 m / 92°）。现在同一画面包含：
 
 - 原生 `MI_FloorBrick1` 大块石铺装；
 - 左/中景树木（Tree/Palm thin instances 已材质化）；
@@ -162,6 +162,8 @@ node scripts/capture-world.mjs --query='view=play&mode=free' --ready=play --prob
 - 中央/右侧古典立面。
 
 ![原始 vs Web：起点广场候选](../research/runtime-observation/comparison-start-plaza-native.jpg)
+
+`arm=6&fov=80` 的探针（`play-plaza-arm6b.jpg` / `comparison-start-plaza-arm6.jpg`）让角色比例更接近原图，但场景左右关系/广告牌/建筑朝向仍不同；默认相机仍使用恢复的 4 m / 92°。
 
 仍不是同机位：原程序画面更开阔、长椅沿左栏杆排布、右侧有大幅广告牌，Web 相机/建筑朝向/植被密度与长椅位置不同。
 
