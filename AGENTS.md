@@ -1,8 +1,10 @@
 # Project scope
 
-## Current phase (2026-10-25): original-game restoration only
+## Current phase (2026-10-25): Plan A single-district sandbox
 
-Restoring UNDEFEATED is the only active primary milestone. The Homelander skin, free-destruction mode, heat vision and other Web-side extensions are frozen optional experiments; they must not be treated as completion evidence or expanded until the restoration gates pass:
+The active deliverable is [docs/plan-a-sandbox.md](docs/plan-a-sandbox.md): one complete street district with stable traversal/flight, citizens/vehicles/props, baseline attacks on citizens with death/revive, basic combat/destruction and the sandbox minimap/HUD. Quests, story, bosses, full-city coverage and save/load are explicitly out of scope until Plan A acceptance passes. Homelander skin, free-mode and heat-vision extensions remain frozen experiments; they must not be treated as completion evidence.
+
+The original-game restoration gates still apply to every asset/system used by Plan A:
 
 1. Capture the real gameplay player/camera transform from the original executable (not the menu Pawn).
 2. Re-render the same location/camera and record an honest same-camera comparison.

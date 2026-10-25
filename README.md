@@ -13,6 +13,7 @@
 > 55.73 / 31.34.
 >
 > Start here: [docs/restoration-status.md](docs/restoration-status.md).
+> Active scope: Plan A single-district sandbox — [docs/plan-a-sandbox.md](docs/plan-a-sandbox.md).
 > Remaining work: [docs/todo-restoration.md](docs/todo-restoration.md).
 > Latest evidence: [comparison-latest.jpg](research/runtime-observation/comparison-latest.jpg).
 >
