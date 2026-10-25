@@ -124,12 +124,12 @@ if (Number.isFinite(exposureOverride) && exposureOverride > 0) {
   // frame is ~86. This is not a recovered UE auto-exposure/tone curve.
   viewer.scene.imageProcessingConfiguration.exposure = exposureOverride;
 }
-if (params.get('ssao') === '1') {
+if (params.get('ssao') !== '0') {
   // Preview contact shading for the same-camera comparison. This is a
   // screen-space approximation, not a reconstruction of the original AO/lightmaps.
   const ssao = new SSAO2RenderingPipeline('preview-ssao', viewer.scene, { ssaoRatio: 0.75, blurRatio: 1 }, [viewer.camera]);
-  ssao.totalStrength = 1.35;
-  ssao.radius = 0.55;
+  ssao.totalStrength = 0.9;
+  ssao.radius = 0.5;
   ssao.samples = 16;
   ssao.expensiveBlur = false;
 }

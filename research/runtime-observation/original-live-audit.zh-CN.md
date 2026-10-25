@@ -125,9 +125,10 @@ DirectionalLight_1 rotation = (-48.61, -55.40, 0)
 原版 luminance mean=55.8  std=31.3
 Web   luminance mean=86.1  std=41.7   # 未校准
 Web   luminance mean=58.4  std=31.0   # exposure=0.55
+Web   luminance mean=55.6  std=30.1   # exposure=0.55 + default preview AO
 ```
 
-因此默认加入 exposure=0.55 的**预览亮度校准**（`?exposure=1` 关闭）。它只对齐同一机位的整体亮度/对比，不是原版 UE 自动曝光/tone curve；原版 auto-exposure/Bloom 仍未重建。
+默认加入 exposure=0.55 + SSAO 预览（`?ssao=0` 关闭，`?exposure=1` 关闭曝光校准）。它只对齐同一机位的整体亮度/对比，不是原版 UE 自动曝光/tone curve/lightmap；原版 auto-exposure/Bloom 仍未重建。
 
 ![原版 minimap 静态底图](minimap-static.png)
 
