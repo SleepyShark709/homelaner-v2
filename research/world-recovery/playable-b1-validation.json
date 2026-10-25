@@ -13,7 +13,7 @@
       "textureFailures": 0,
       "unresolvedMaterialCacheKeys": 0,
       "ambiguousSlots": 0,
-      "fps": 115.91962905852537,
+      "fps": 110.78286558467562,
       "activeMeshes": 0,
       "warning": "",
       "scope": "",
@@ -125,18 +125,18 @@
           "stats": {
             "position": [
               -55.76230104089271,
-              14.678319444444472,
+              14.922941666666695,
               -567.5900852631735
             ],
             "velocity": [
               0,
-              29.01333333333338,
+              29.354666666666716,
               0
             ],
             "flying": true,
             "grounded": false,
             "state": "hover",
-            "speed": 29.01333333333338,
+            "speed": 29.354666666666716,
             "charge": 0
           },
           "clip": "Hero_FlyUp",
@@ -146,21 +146,21 @@
           "stats": {
             "position": [
               -55.76230104089271,
-              0.47000000000000003,
+              1.350852777777817,
               -567.5900852631735
             ],
             "velocity": [
               0,
-              0,
+              -40,
               0
             ],
             "flying": true,
-            "grounded": true,
+            "grounded": false,
             "state": "hover",
-            "speed": 0,
+            "speed": 40,
             "charge": 0
           },
-          "clip": "Hero_IdleFlying",
+          "clip": "Hero_FlyFastDown",
           "active": true
         },
         "exited": {
@@ -187,8 +187,8 @@
         "evidence": {
           "walkDistance": 16.921193554897286,
           "jumpHeight": 3.8118749999999957,
-          "ascendDelta": 10.396444444444477,
-          "descendDelta": -14.208319444444472
+          "ascendDelta": 10.641066666666699,
+          "descendDelta": -13.572088888888878
         }
       },
       "consoleErrors": [],
@@ -199,7 +199,7 @@
       },
       "browser": "Chrome/156.0.8078.48",
       "url": "http://127.0.0.1:4178/?view=play&debug=1",
-      "durationMs": 31582,
+      "durationMs": 31031,
       "screenshot": "research/screenshots/play-b1.jpg"
     }
   ],

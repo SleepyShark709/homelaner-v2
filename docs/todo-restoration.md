@@ -118,7 +118,7 @@ HeroABS_JumpFallLoop
 - [x] 写 `scripts/append-locomotion-animations.py`，把十六段追加到原 93 骨骼 hero.gltf；原 18 段保留，共 34 段；报告：`research/world-recovery/locomotion-import.json`。
 - [x] 更新 `src/game/Character.ts`：低速使用 `Hero_Walk`，run 使用 `Hero_SprintRun`，JumpStart 后使用 `Hero_JumpFallFast`（对应 `HeroABS_JumpFallLoop` 的 Speed≈1250/SpeedZ≈-5000 低空样本）；`Hero_SprintSuper` 已导入但实测姿态不是正常跑步，暂不用于默认 run；已用真实 W/Space/Alt+W 输入截图验证无畸形。
 - [ ] 仍未导入：`ALS_N_Jump`、`HeroABS_MoveGround` 的完整方向 blendspace 样本、`Hero_FlyLeft`/`Hero_FlyRight`/`Hero_FlyBack`/`Hero_FlyTame`；fly 已按 velY/平面速度直接切 `FlyUp/FlyDown/FlyFastDown/FlyForward/FlyForwardLow`，仍不是 BlendSpace 采样。
-- [x] jump 的起跳/下落/落地顺序已接入：`Hero_JumpSpeed → Hero_JumpFallFast → Hero_JumpLand`。
+- [x] jump 的起跳/下落/落地顺序已接入：`Hero_JumpSpeed`（上升期保持末帧）→ `Hero_JumpFallFast` → `Hero_JumpLand`。
 - [ ] jump 状态仍未按 `HeroABS_JumpFallLoop` 的 Speed/SpeedZ 轴选择与混合；当前是固定片段，不是 BlendSpace 采样。
 - [x] 已接入基础直接状态链：`StartSprint→SprintRun`、`SprintRun→Stopping_Sprint→Idle/Walk`、`Walk→Stopping_WalkRun→Idle`、`JumpSpeed→JumpFallFast→JumpLand`（用 `AnimationGroup.getLength()` 计时）。
 - [ ] 用 AnimBP 的真实 transition/blend 时间替换直接计时，并验证起跳/落地和冲刺起停边界。

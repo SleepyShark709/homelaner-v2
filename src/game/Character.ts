@@ -29,7 +29,7 @@ export class Character {
   private clip = '';
   private yaw = Math.PI;
   private action = '';
-  private transition: { name: string; remaining: number; next: string } | null = null;
+  private transition: { name: string; remaining: number; next: string; holdUntilFall?: boolean } | null = null;
   private wasGrounded = true;
   constructor(readonly scene: Scene) { this.root = new TransformNode('player-visual', scene); this.root.scaling.setAll(1.05); }
 
@@ -173,6 +173,23 @@ export class Character {
     if (this.transition) {
       this.transition.remaining -= dt;
       if (this.transition.remaining > 0) return;
+      if (this.transition.holdUntilFall && !grounded) {
+        if (motor.state === 'hover' || motor.state === 'fly') {
+          this.transition = null;
+          return;
+        }
+        if (motor.velocity[1] > 0.2) {
+          // Hold the last JumpSpeed frame through the ascent; the fall loop
+          // must not start while the player is still moving upward.
+          const group = this.groupFor(this.transition.name);
+          if (group) {
+            group.goToFrame(group.to);
+            group.pause();
+          }
+          this.transition.remaining = 0.1;
+          return;
+        }
+      }
       const next = this.transition.next;
       this.transition = null;
       this.setLoop(next);
@@ -180,6 +197,8 @@ export class Character {
     }
     if (tookOff && motor.state === 'jump') {
       this.setOneShot('Hero_JumpSpeed', 'Hero_JumpFallFast');
+      const created = this.transition as { holdUntilFall?: boolean } | null;
+      if (created) created.holdUntilFall = true;
       return;
     }
     if (!grounded) {

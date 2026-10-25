@@ -82,7 +82,7 @@ fly   -> Hero_FlyForward
 ground idle -> Hero_Walk / Hero_StartSprint -> Hero_SprintRun (loop)
 SprintRun -> Hero_Stopping_Sprint (once) -> Hero_Idle/Hero_Walk (loop)
 Hero_Walk -> Hero_Stopping_WalkRun (once) -> Hero_Idle (loop)
-ground jump -> Hero_JumpSpeed (once) -> Hero_JumpFallFast (loop)
+ground jump -> Hero_JumpSpeed (once; hold last frame while velY>0.2) -> Hero_JumpFallFast (loop)
 landing -> Hero_JumpLand (once) -> Hero_Idle / Hero_Walk / Hero_SprintRun (loop)
 ```
 
