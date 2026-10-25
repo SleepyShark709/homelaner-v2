@@ -1,0 +1,38 @@
+{
+  "source": "cooked UNDEFEATED SoundWave .uexp files, embedded Ogg payload",
+  "clipCount": 4,
+  "clips": [
+    {
+      "name": "Punch_Swish01",
+      "file": "public\\assets\\audio\\punch_swish01.ogg",
+      "bytes": 10369,
+      "sha256": "7672cad12d2dfb0bbf2360217fbeb8967af93f158ed426834931c82b7c50c5c3",
+      "source": "UNDEFEATED/Content/-HeroGame/Sound/Import/Punch_Swish01.uexp",
+      "oggOffsetInUexp": 135
+    },
+    {
+      "name": "Punch_Swish02",
+      "file": "public\\assets\\audio\\punch_swish02.ogg",
+      "bytes": 10572,
+      "sha256": "68ad52ecbf2982368664b489f644992829bc054bdc3e56b15595380435b907b4",
+      "source": "UNDEFEATED/Content/-HeroGame/Sound/Import/Punch_Swish02.uexp",
+      "oggOffsetInUexp": 135
+    },
+    {
+      "name": "Punch_Swish03",
+      "file": "public\\assets\\audio\\punch_swish03.ogg",
+      "bytes": 10163,
+      "sha256": "a101a6b29e12757df120c98665dd18e8fa73688985a4b8ca6366d71fb5bdc142",
+      "source": "UNDEFEATED/Content/-HeroGame/Sound/Import/Punch_Swish03.uexp",
+      "oggOffsetInUexp": 135
+    },
+    {
+      "name": "Punch_Swish04",
+      "file": "public\\assets\\audio\\punch_swish04.ogg",
+      "bytes": 10539,
+      "sha256": "0ac5e4a36f3cf44e037266a6561c8cbfeac2e08eac84d4cea1588df2b9602d56",
+      "source": "UNDEFEATED/Content/-HeroGame/Sound/Import/Punch_Swish04.uexp",
+      "oggOffsetInUexp": 135
+    }
+  ]
+}

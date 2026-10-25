@@ -138,6 +138,7 @@ HeroABS_JumpFallLoop
 - [ ] 恢复 `HeroABS_MoveGround` 的实际 BlendSpace 轴、过渡条件、混合时间和飞行混合空间，替换当前直接片段计时。
 - [ ] 实现 montage 攻击的 section/通知/连招/取消窗口；现有攻击时间轴仅是部分恢复。
 - [ ] 恢复 AnimNotify 行为：已解码全部 46 段 AnimSequence（24 段/116 事件/39 名称，`research/world-recovery/notify-times.json`）；脚步 notify 已驱动 8 个原版 Footstep Ogg（`?audio=0` 可关），但尘土、移动、镜头/音效和其余 notify 仍未接线。
+- [x] 原版攻击挥击音 `Punch_Swish01..04` 已在 `Combat.begin()` 触发（`research/world-recovery/combat-sound-manifest.json`）；命中/爆炸/超能力音效未恢复。
 - [x] 46 段转换 clip 的 root joint translation 全部为 0（`scripts/audit-root-motion.mjs`，`research/world-recovery/root-motion-audit.json`），素材是 in-place；位移由 PlayerMotor 驱动。
 - [ ] AnimBP 的 root-motion/notify 逻辑仍未恢复；当前素材没有可提取的 root motion。
 - [ ] 惯性 / 转向 / 空中控制与原始一致。

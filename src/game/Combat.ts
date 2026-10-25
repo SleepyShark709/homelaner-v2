@@ -19,6 +19,7 @@ export class Combat {
   hits = 0;
   heatActive = false;
   heatTarget = '';
+  onSound: ((kind: 'swing' | 'impact') => void) | undefined;
   private readonly effects: Effects;
   private clips: ClipTiming[] = [];
   private timeline: AttackTimeline | null = null;
@@ -77,6 +78,7 @@ export class Combat {
     const timing = this.clips.find(clip => clip.name === name);
     if (!timing) throw new Error(`动作时间轴缺失: ${name}`);
     this.attackKind = kind; this.timeline = new AttackTimeline(timing); this.idleTime = 0;
+    this.onSound?.('swing');
     this.motor.heading = this.input.yaw;
     this.character.playAction(name, timing.playbackRate);
   }

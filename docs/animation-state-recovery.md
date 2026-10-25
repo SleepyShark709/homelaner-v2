@@ -254,6 +254,8 @@ Hero_Walk, Hero_SprintRun, Hero_SprintRun
 
 `?audio=0` 可关闭。音频文件保持本地、Git 忽略；未恢复表面材质对应的 footstep 变体选择。Chrome 实测 `footstep01.ogg` 解码为 `0.3669 s / 48000 Hz / mono`，与 SoundWave 的 0.3695 s 元数据一致。
 
+攻击挥击音也已提取：`Punch_Swish01..04`（[combat-sound-manifest.json](../research/world-recovery/combat-sound-manifest.json)）。`Combat.begin()` 通过 `onSound('swing')` 播放原版 swish；真实 J 输入触发 1 次。`punch_swish01.ogg` Chrome 解码为 `0.505 s / 48000 Hz / stereo`。命中/爆炸等其余音效尚未接线。
+
 空中首次攻击（近战 J 或远程 K）现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→J/K 均返回 `clip=Hero_AirAttackStart`；连续两次 K 的结果记录在 `research/world-recovery/air-attack-chain.json`。
 
 
