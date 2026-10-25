@@ -1,6 +1,6 @@
 # 可玩原版基线 B1/B2/B3：原街区、原角色、原输入、战斗与动态碰撞
 
-日期：2026-10-25。入口：`http://127.0.0.1:5178/?view=play`；可用 `&district=TitleMenuLevel` 等主世界关卡切换检查目标（预览人口只在 ResidentialArea1 加载）；`&startup=1` 先执行原 17 包启动链再进入可玩模式（自动启用砖石地面 overlay，`floors=native` 可关闭）；`&plaza=1` 是 MainLevel 起点广场预览预设（启动链 + `(-20,0)` + 砖石 overlay）；`&mode=free` 开启自由破坏预览（非默认原版基线）。
+日期：2026-10-25。入口：`http://127.0.0.1:5178/?view=play`；可用 `&district=TitleMenuLevel` 等主世界关卡切换检查目标（预览人口只在 ResidentialArea1 加载）；`&startup=1` 先执行原 17 包启动链再进入可玩模式；`&plaza=1` 是 MainLevel 起点广场预览预设（启动链 + `(-20,0)` + 原生楼板）；`&mode=free` 开启自由破坏预览（非默认原版基线）。
 
 这是**可玩切片**，不是完整 UNDEFEATED 移植。B1 把原角色放回恢复后的原版街区，用原高度场和原输入语义驱动；B2 增加预览人口、原战斗动画/弹道和相机遮挡收缩。攻击命中、AI、任务、Boss、菜单/存档、完整动画状态机和同机位对照仍需继续。
 
@@ -9,7 +9,7 @@
 - 世界：`MainLevel + ResidentialArea1` 静态装配，3,782 个源对象组件、144 块地形；资源/纹理失败 0。
 - 角色：`/assets/character/hero.gltf`，原身体/头发/墨镜三套网格与骨架，18 段原动画；保留原骨架与比例。
 - 地面：144 块原 Landscape 高度场逐点采样（`TerrainHeightfield`），不是旧的单平面地面。
-- 可走楼板：`tools/asset-pipeline/export-walkable-surfaces.mjs` 从 `/Mesh/Floor/` 资产导出 29 个世界 AABB 顶面；玩家支撑高度取地形与楼板顶面的较高者，因此可以站上恢复出的砖/石广场地面。`?at=<x,z>&yaw=<rad>` 可把出生点/朝向放到指定地面点检查，例如 `?view=play&district=CommercialArea&at=100,234`（`play-plaza-floor2.jpg`）。
+- 可走楼板：`tools/asset-pipeline/export-walkable-surfaces.mjs` 从 `/Mesh/Floor/` 资产导出 29 个世界 AABB 顶面；玩家支撑高度取地形与楼板顶面的较高者，因此可以站上恢复出的砖/石广场地面。`SM_Floor12000x15000` 原本是 thin-instanced mesh，在 Babylon 路径中 thin 实例不绘制；运行时把每个实例矩阵的平移/缩放复制成普通 mesh clone，原生 `MI_FloorBrick1` 地面现在可见（`play-floor-fixed.jpg`、`play-plaza-nativefloor.jpg`）。`?at=<x,z>&yaw=<rad>` 可把出生点/朝向放到指定地面点检查，例如 `?view=play&district=CommercialArea&at=100,234`（`play-plaza-floor2.jpg`）。
 - 碰撞：从恢复后的静态对象 TRS 与 asset bounds 生成 1,432 个 AABB 代理（2,171 个对象中跳过 731 个过小、8 个过大）；这是可玩性代理，不是原 cooked PhysX。相机偏移会对附近 AABB 做收缩，避免穿墙。所有存活预览 actor（含市民、车辆、报刊箱）的 `solidBoxes` 每帧加入玩家动态碰撞。
 - 相机：第三人称按原 `PlayerBP` `CameraBoom` 的 `TargetArmLength=400 cm`、`SocketOffset=(0,50,90) cm`、`RelativeLocation Z=70 cm` 校准，并按 HeroRank 0 的 `Camera.FieldOfView=92°` 水平视场换算（rank 表 92/94/96/98/100/100/100）；使用原 `CameraLagSpeed/RotationLagSpeed=15` 做相机位置/朝向平滑。攻击时目标臂长按 HeroComponent AST 的 650 cm 插值（`CameraInterpSpeed=2`）；`CharacterSpeed > 6000 cm/s` 时切到 FarArmLength=800 cm、FarCameraInterpSpeed=1；相机还钳制在地形上方 0.3 m。HeroComponent 的其它 HPS Far/Zoom 状态、弹簧回弹和碰撞后处理仍是近似。
 - 输入：Space 地面跳跃 / 空中开飞 / 飞行退飞；E/Q 升降；地面按住 E 约 1 秒自动开飞；Shift 冲刺；Alt 慢行；F 预留互动；R 为调试回出生点。按 P07，Shift 只有与移动输入同时存在才进入冲刺；松开 Shift/停止移动即解除，Alt 慢行取消冲刺。按 P08，冲刺速度跌到 850 cm/s（步行）/2000 cm/s（飞行）以下会重置，且保持 Shift 不会立即重新触发。加速度使用原值：步行 2048 cm/s²、飞行 4096 cm/s²、冲刺 15000 cm/s²；楼板/台阶支撑使用 MaxStepHeight=75 cm。
@@ -130,21 +130,21 @@ node scripts/capture-world.mjs --query='view=play&mode=free' --ready=play --prob
 
 ## MainLevel 起点广场候选（startup 全城）
 
-单区 `?view=play` 在 MainLevel 原点附近只显示空广场；加上 `&startup=1` 加载 17 包后，同一位置出现古典立面、石栏杆、广告牌和城市街区。startup 模式现在自动启用砖石地面 overlay（`floors=native` 可关闭，仅用于 floor 诊断）。
+单区 `?view=play` 在 MainLevel 原点附近只显示空广场；加上 `&startup=1` 加载 17 包后，同一位置出现古典立面、石栏杆、广告牌、城市街区和原生砖石楼板。
 
 ```text
 /?view=play&startup=1&at=20,0&yaw=0
 /?view=play&plaza=1
 ```
 
-截图 `play-mainplaza-startup3.jpg`、`play-startup-overlay.jpg`，对照图 `comparison-start-plaza-mainlevel.jpg`。`plaza=1` 预设使用更接近原图的 `(-20,0)` 姿态：启动链 + 砖石 overlay + 相机净空（`play-plaza-mode.jpg` / `comparison-start-plaza-camera-clear.jpg`）；不改变默认出生点。
+截图 `play-mainplaza-startup3.jpg`、`play-plaza-nativefloor.jpg`，对照图 `comparison-start-plaza-mainlevel.jpg`。`plaza=1` 预设使用更接近原图的 `(-20,0)` 姿态：启动链 + 原生砖石楼板 + 相机净空（`play-plaza-nativefloor.jpg` / `comparison-start-plaza-camera-clear.jpg`）；不改变默认出生点。
 
 另外两个候选姿态：
 
 - `plaza=1&at=-20,0&yaw=0`：石栏杆在左、古典建筑在中央，构图更接近原图；出生点搜索现在要求角色后方 4 m 相机位不被静态 AABB 占用，因此相机不再挤进角色（`play-plaza-left-clear.jpg`，对照 `comparison-start-plaza-camera-clear.jpg`）；
-- `plaza=1&at=-10,-20&yaw=0`：干净的铺装广场，但建筑布局不同（`play-plaza-left2.jpg`）。startup/plaza 模式现在默认在恢复的砖石楼板 AABB 上铺 `GroundBrick_B_A` 原始纹理；`floors=native` 可关闭。得到 `play-mainplaza-overlay.jpg` / `comparison-start-plaza-overlay.jpg`；这是**预览地面回退**，不是原 floor mesh 已正确渲染。它比之前的 CommercialArea 候选更接近原程序起点广场的城市构图，但：
+- `plaza=1&at=-10,-20&yaw=0`：干净的铺装广场，但建筑布局不同（`play-plaza-left2.jpg`）。原生楼板修复后不再默认铺 overlay；`?floors=overlay` 仍保留为可选的 `GroundBrick_B_A` 回退，用于对比测试。它比之前的 CommercialArea 候选更接近原程序起点广场的城市构图，但：
 
-- 地面 overlay 只是用原纹理覆盖 AABB，原程序 floor mesh 的可见性仍未修好；
+- 原生楼板已修复；overlay 只在显式 `floors=overlay` 时作为回退；
 - 长椅、相机位置和建筑朝向没有逐项匹配；
 - 仍是**候选**，不是同机位结论。
 
@@ -156,8 +156,7 @@ node scripts/capture-world.mjs --query='view=play&mode=free' --ready=play --prob
 
 但这只是**候选地点**，不是已证明的同机位：
 
-- 原程序地面是砖石铺装，当前该点地形显示草地；
-- `SM_Floor12000x15000`/`MI_GroundBrick` 楼板在附近存在，但地形/楼板可见性尚未对齐；
+- 原生 `MI_FloorBrick1` 楼板现在通过 thin-instance→普通 mesh materialize 可见（`play-floor-fixed.jpg`）；
 - 原程序建筑位置、长椅排列、相机和光照还没有逐项匹配。
 
 这组坐标作为下一步同机位对照的候选，而不是完成结论。楼板/草地遮挡调查见 [commercial-plaza-ground-investigation.zh-CN.md](../research/world-recovery/commercial-plaza-ground-investigation.zh-CN.md)。

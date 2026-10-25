@@ -1,4 +1,4 @@
-# CommercialArea 候选广场地面调查（未闭合）
+# CommercialArea 候选广场地面调查（已闭合）
 
 日期：2026-10-25。范围：起点广场候选点 `CommercialArea (91,181)` 的草地/砖石地面差异。不是运行时观察，也不是同机位结论。
 
@@ -90,12 +90,16 @@
 
 这排除了“只是实例矩阵没有上传”的简单解释；floor mesh 的可见性问题仍在几何/材质/遮挡层。
 
-## 结论
+## 修复（2026-10-25）
 
-楼板几何/实例存在，但**玩家附近可见地面不是这些 floor mesh**，或它们被地形/另一块草地面遮住。当前无法据此把候选点认定为原版起点广场；下一步需要：
+根因：`SM_Floor12000x15000` 是 **thin-instanced mesh**。Babylon 路径中该 thin-instance buffer 不绘制；所以 mesh 虽然 enabled/visible/active、material ready，前景仍只有地形草地。bake 进几何没有生效，但把 **每个 thin instance 的矩阵平移/缩放复制到普通 mesh clone** 后，原生 `MI_FloorBrick1` 楼板立即出现。
 
-1. 找出 (91,181) 实际可见草地对应的 mesh/材质（地形 chunk、草地面或别的楼层）；
-2. 对齐地形高度与楼板可见性；
-3. 再比较原程序砖石铺装和起点广场相机。
+当前实现：`src/play-original.ts` 在世界加载后遍历 `SM_Floor12000x15000`，为每个 thin 实例创建普通 clone，设置 position/scaling，禁用原 thin mesh；overlay 不再默认，只在显式 `floors=overlay` 时作为回退。
 
-证据：`public/assets/world/walkable-surfaces.json`、`public/assets/world/geometry-manifest.json`、`research/screenshots/play-plaza-redfloor.jpg`、`play-plaza-yaw0b.jpg`、`play-plaza-instances-raised2.jpg`。
+验证截图：`play-floor-fixed.jpg`（CommercialArea 原生楼板）、`play-plaza-nativefloor.jpg`（MainLevel 起点原生楼板）。
+
+## 结论（更新）
+
+原 floor mesh 的可见性已闭合：不是材质/alpha/剔除/矩阵未上传，而是 thin-instance 渲染路径。候选点的地面现在是原生砖石楼板，不再是草地或 overlay。长椅/相机/建筑朝向仍未逐项匹配，候选点仍需同机位对照。
+
+证据：`public/assets/world/walkable-surfaces.json`、`public/assets/world/geometry-manifest.json`、`play-floor-fixed.jpg`、`play-plaza-nativefloor.jpg`。

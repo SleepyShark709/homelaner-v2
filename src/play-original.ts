@@ -112,6 +112,33 @@ try {
   await viewer.load();
   if (!viewer.terrainManifest) throw new Error('地形清单未载入');
   await viewer.select(startupMode ? '__startup__' : requestedDistrict);
+  // The floor slabs arrive as one thin-instanced mesh per level. In this
+  // Babylon path the thin-instance buffer does not draw, so materialize each
+  // floor instance as a regular mesh with the same matrix translation/scale.
+  for (const candidate of [...viewer.scene.meshes]) {
+    if (!/SM_Floor12000x15000/i.test(candidate.name)) continue;
+    const floor = candidate as Mesh;
+    const thin = floor as unknown as { thinInstanceCount?: number; _thinInstanceDataStorage?: { matrixData?: Float32Array } };
+    const count = thin.thinInstanceCount ?? 0;
+    const data = thin._thinInstanceDataStorage?.matrixData;
+    if (!data || count < 1) continue;
+    for (let index = 0; index < count; index++) {
+      const matrix = Array.from(data.slice(index * 16, index * 16 + 16));
+      if (matrix.length < 16) continue;
+      const clone = floor.clone(`${floor.name}-solid-${index}`, null, true);
+      if (!clone) continue;
+      clone.thinInstanceCount = 0;
+      clone.position.set(matrix[12], matrix[13], matrix[14]);
+      clone.scaling.set(Math.hypot(matrix[0], matrix[1], matrix[2]), Math.hypot(matrix[4], matrix[5], matrix[6]), Math.hypot(matrix[8], matrix[9], matrix[10]));
+      clone.rotation.set(0, 0, 0);
+      clone.rotationQuaternion = null;
+      clone.setEnabled(true);
+      clone.isVisible = true;
+      clone.alwaysSelectAsActiveMesh = true;
+    }
+    floor.setEnabled(false);
+  }
+
   // The static world includes reference-pose skeletal citizens baked into the
   // MainLevel batches. B1 has no population/AI yet, so hide those mannequins
   // rather than presenting them as live characters next to the player.
@@ -178,7 +205,7 @@ try {
       marker.isPickable = false;
     }
   }
-  if (new URLSearchParams(location.search).get('floors') === 'overlay' || (startupMode && new URLSearchParams(location.search).get('floors') !== 'native')) {
+  if (new URLSearchParams(location.search).get('floors') === 'overlay') {
     // Preview-only fallback for recovered ground-brick floors that do not render
     // in the current material path. Uses the authored GroundBrick_B_A texture.
     for (const surface of surfaces.surfaces) {
@@ -439,7 +466,7 @@ try {
   el('loading').hidden = true;
   if (new URLSearchParams(location.search).get('debug') === '1') {
     (window as typeof window & { __undefeatedPlay?: unknown }).__undefeatedPlay = {
-      viewer, player, character, input, collision, combat, population, shadows,
+      viewer, player, character, input, collision, combat, population, shadows, terrain, surfaces,
       pick: (x: number, y: number) => {
         for (const mesh of viewer.scene.meshes) {
           mesh.isPickable = true;
