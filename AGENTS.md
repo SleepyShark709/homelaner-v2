@@ -1,10 +1,10 @@
 # Project scope
 
-## Current phase (2026-10-25): Plan A single-district sandbox
+## Current phase (2026-10-25): player character fidelity
 
-The active deliverable is [docs/plan-a-sandbox.md](docs/plan-a-sandbox.md): one complete street district with stable traversal/flight, citizens/vehicles/props, baseline attacks on citizens with death/revive, basic combat/destruction and the sandbox minimap/HUD. Quests, story, bosses, full-city coverage and save/load are explicitly out of scope until Plan A acceptance passes. Homelander skin, free-mode and heat-vision extensions remain frozen experiments; they must not be treated as completion evidence.
+Plan A's world/building/AI expansion is paused. The active single workstream is [docs/player-fidelity.md](docs/player-fidelity.md): fix one player-character defect at a time, verify it, then move on. Current item: player flicker/disappearance. Do not mix in world/building, population, quest or key-remap work until the current item passes.
 
-The original-game restoration gates still apply to every asset/system used by Plan A:
+The original-game restoration gates still apply to every asset/system used by the player slice:
 
 1. Capture the real gameplay player/camera transform from the original executable (not the menu Pawn).
 2. Re-render the same location/camera and record an honest same-camera comparison.
