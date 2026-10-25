@@ -487,6 +487,8 @@ try {
   await combat.load();
   combat.onSound = kind => {
     if (kind === 'swing') footsteps.playSwing();
+    else if (kind === 'whoosh') footsteps.playWhoosh();
+    else if (kind === 'heavy') footsteps.playHeavy();
     else if (kind === 'destruction') footsteps.playDestruction();
     else footsteps.playImpact();
   };

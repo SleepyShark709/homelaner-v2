@@ -258,6 +258,22 @@ Hero_Walk, Hero_SprintRun, Hero_SprintRun
 
 命中/破坏音使用原版 `chain_D_impacts_0201/0601`（[impact-sound-manifest.json](../research/world-recovery/impact-sound-manifest.json)）：命中时截取前 0.22 s，破坏时播放完整约 1.44 s 片段。`strike()` 在非 heat 攻击且结果非 ignored 时触发 `impact`/`destruction`。
 
+超能力/冲刺音从 `Cue_AirSuperKick` / `Cue_DashAttackStart` 的 SoundWave imports 还原（[ability-sound-manifest.json](../research/world-recovery/ability-sound-manifest.json)）：
+
+```text
+CannonExplode01..05_Stereo   strong punch/kick -> heavy
+Sweetener_WhooshF01..04     AirAttackStart -> whoosh
+```
+
+真实输入：
+
+```text
+Shift+K -> Hero_SuperPunch, sounds=[heavy], action=强力拳波
+Space→Space→J -> Hero_AirAttackStart, sounds=[whoosh]
+```
+
+Chrome 解码：`cannonexplode01_stereo.ogg` 2.4271 s / 48 kHz / stereo；`sweetener_whooshf01.ogg` 0.8623 s / 48 kHz / stereo。
+
 空中首次攻击（近战 J 或远程 K）现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→J/K 均返回 `clip=Hero_AirAttackStart`；连续两次 K 的结果记录在 `research/world-recovery/air-attack-chain.json`。
 
 

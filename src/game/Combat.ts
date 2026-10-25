@@ -19,7 +19,7 @@ export class Combat {
   hits = 0;
   heatActive = false;
   heatTarget = '';
-  onSound: ((kind: 'swing' | 'impact' | 'destruction') => void) | undefined;
+  onSound: ((kind: 'swing' | 'impact' | 'destruction' | 'heavy' | 'whoosh') => void) | undefined;
   private readonly effects: Effects;
   private clips: ClipTiming[] = [];
   private timeline: AttackTimeline | null = null;
@@ -77,8 +77,9 @@ export class Combat {
     else name = ['Hero_LongFistForce_L', 'Hero_LongFistForce_R'][this.rangedCombo++ % 2];
     const timing = this.clips.find(clip => clip.name === name);
     if (!timing) throw new Error(`动作时间轴缺失: ${name}`);
+    const heavy = this.strong || name === 'Hero_AirSuperKick' || name === 'Hero_SuperPunch';
+    this.onSound?.(heavy ? 'heavy' : name === 'Hero_AirAttackStart' ? 'whoosh' : 'swing');
     this.attackKind = kind; this.timeline = new AttackTimeline(timing); this.idleTime = 0;
-    this.onSound?.('swing');
     this.motor.heading = this.input.yaw;
     this.character.playAction(name, timing.playbackRate);
   }

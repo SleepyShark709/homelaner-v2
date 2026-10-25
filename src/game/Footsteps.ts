@@ -4,6 +4,8 @@ const FOOTSTEP_URLS = Array.from({ length: 8 }, (_, index) => {
 });
 const SWING_URLS = Array.from({ length: 4 }, (_, index) => `/assets/audio/punch_swish${String(index + 1).padStart(2, '0')}.ogg`);
 const IMPACT_URLS = ['/assets/audio/chain_d_impacts_0201.ogg', '/assets/audio/chain_d_impacts_0601.ogg'];
+const HEAVY_URLS = Array.from({ length: 5 }, (_, index) => `/assets/audio/cannonexplode0${index + 1}_stereo.ogg`);
+const WHOOSH_URLS = Array.from({ length: 4 }, (_, index) => `/assets/audio/sweetener_whooshf0${index + 1}.ogg`);
 
 /**
  * Plays the recovered Footstep01..09 samples at the original animation notify
@@ -16,6 +18,8 @@ export class Footsteps {
   private buffers: AudioBuffer[] = [];
   private swings: AudioBuffer[] = [];
   private impacts: AudioBuffer[] = [];
+  private heavies: AudioBuffer[] = [];
+  private whooshes: AudioBuffer[] = [];
   private unlocked = false;
 
   constructor(private readonly enabled = true) {}
@@ -46,6 +50,10 @@ export class Footsteps {
       this.loadBuffers(SWING_URLS),
       this.loadBuffers(IMPACT_URLS),
     ]);
+    [this.heavies, this.whooshes] = await Promise.all([
+      this.loadBuffers(HEAVY_URLS),
+      this.loadBuffers(WHOOSH_URLS),
+    ]);
   }
 
   private playBuffer(buffers: AudioBuffer[], volume = 1, duration?: number): void {
@@ -74,6 +82,10 @@ export class Footsteps {
 
   playDestruction(): void { this.playBuffer(this.impacts, 1); }
 
+  playHeavy(): void { this.playBuffer(this.heavies, 0.85); }
+
+  playWhoosh(): void { this.playBuffer(this.whooshes, 0.75); }
+
   dispose(): void {
     void this.context?.close().catch(() => undefined);
     this.context = null;
@@ -81,5 +93,7 @@ export class Footsteps {
     this.buffers = [];
     this.swings = [];
     this.impacts = [];
+    this.heavies = [];
+    this.whooshes = [];
   }
 }

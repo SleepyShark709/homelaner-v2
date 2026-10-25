@@ -1,0 +1,79 @@
+{
+  "source": "cooked UNDEFEATED SoundWave .uexp files referenced by Cue_AirSuperKick / Cue_DashAttackStart imports",
+  "clipCount": 9,
+  "usage": "heavy = strong punch/kick; whoosh = AirAttackStart entry",
+  "clips": [
+    {
+      "kind": "heavy",
+      "name": "CannonExplode01_Stereo",
+      "file": "public\\assets\\audio\\cannonexplode01_stereo.ogg",
+      "bytes": 45085,
+      "sha256": "9fa749b3e485c21d70d5e247160dfeab8f93fab1f59a0d6d78d952b5d129f3e7",
+      "source": "UNDEFEATED/Content/Sounds/Weapons/Cannon/CannonExplode01_Stereo.uexp"
+    },
+    {
+      "kind": "heavy",
+      "name": "CannonExplode02_Stereo",
+      "file": "public\\assets\\audio\\cannonexplode02_stereo.ogg",
+      "bytes": 38090,
+      "sha256": "145146535973d999d416cc6c7fafa2a27a1115afd42c027fd39d0ce55e09e445",
+      "source": "UNDEFEATED/Content/Sounds/Weapons/Cannon/CannonExplode02_Stereo.uexp"
+    },
+    {
+      "kind": "heavy",
+      "name": "CannonExplode03_Stereo",
+      "file": "public\\assets\\audio\\cannonexplode03_stereo.ogg",
+      "bytes": 37437,
+      "sha256": "5ce56f9cab8c676e4f9c093f48e06c53a3745b7f2743e7c9962105272969caab",
+      "source": "UNDEFEATED/Content/Sounds/Weapons/Cannon/CannonExplode03_Stereo.uexp"
+    },
+    {
+      "kind": "heavy",
+      "name": "CannonExplode04_Stereo",
+      "file": "public\\assets\\audio\\cannonexplode04_stereo.ogg",
+      "bytes": 49201,
+      "sha256": "95d02709f0b77543e0169f49dad1aaa34c1c93e642bc9ae6500231465aa8ff31",
+      "source": "UNDEFEATED/Content/Sounds/Weapons/Cannon/CannonExplode04_Stereo.uexp"
+    },
+    {
+      "kind": "heavy",
+      "name": "CannonExplode05_Stereo",
+      "file": "public\\assets\\audio\\cannonexplode05_stereo.ogg",
+      "bytes": 51346,
+      "sha256": "c3845471947a4fbea9394f377b60b7f478f38482c3cde5e97d46caca778a408d",
+      "source": "UNDEFEATED/Content/Sounds/Weapons/Cannon/CannonExplode05_Stereo.uexp"
+    },
+    {
+      "kind": "whoosh",
+      "name": "Sweetener_WhooshF01",
+      "file": "public\\assets\\audio\\sweetener_whooshf01.ogg",
+      "bytes": 20390,
+      "sha256": "b77831191e4ff7d52380c0a12b5408b5c913234a2e06dff9a7ba85df91813e57",
+      "source": "UNDEFEATED/Content/Assets/Audio/Whooshes/Sweetener_WhooshF01.uexp"
+    },
+    {
+      "kind": "whoosh",
+      "name": "Sweetener_WhooshF02",
+      "file": "public\\assets\\audio\\sweetener_whooshf02.ogg",
+      "bytes": 18499,
+      "sha256": "38e6a3a60c7f593e0fc6cc80834e4cfb1aa4a37b8be38a0ce58da996538685fc",
+      "source": "UNDEFEATED/Content/Assets/Audio/Whooshes/Sweetener_WhooshF02.uexp"
+    },
+    {
+      "kind": "whoosh",
+      "name": "Sweetener_WhooshF03",
+      "file": "public\\assets\\audio\\sweetener_whooshf03.ogg",
+      "bytes": 20122,
+      "sha256": "6a2b73daeb697f47414ebe630a437b3b94be27bacb069696b94a3011f16d2eed",
+      "source": "UNDEFEATED/Content/Assets/Audio/Whooshes/Sweetener_WhooshF03.uexp"
+    },
+    {
+      "kind": "whoosh",
+      "name": "Sweetener_WhooshF04",
+      "file": "public\\assets\\audio\\sweetener_whooshf04.ogg",
+      "bytes": 18606,
+      "sha256": "e1e56ee6370f25dbee548d931a5442263e182f96423bbb5fac189304420d6166",
+      "source": "UNDEFEATED/Content/Assets/Audio/Whooshes/Sweetener_WhooshF04.uexp"
+    }
+  ]
+}
