@@ -97,7 +97,7 @@ const drawMinimap = (position: number[], yaw: number) => {
   context.translate(markerX, markerY);
   context.rotate(yaw);
   if (minimapPlayerReady) {
-    context.drawImage(minimapPlayerImage, -50, -50, 100, 100);
+    context.drawImage(minimapPlayerImage, -30, -30, 60, 60);
   } else {
     context.beginPath();
     context.moveTo(0, -15);
