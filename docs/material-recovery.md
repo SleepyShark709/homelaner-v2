@@ -86,6 +86,7 @@ Web 用 `scripts/derive-metal-tint.py` 生成 `metal_01_d_tintC.png`，按 Tint 
 - 2026-10-25 的 `play.pick()` CSS→render 坐标修正后，同机位对窗格/石柱的射线仍穿过前景建筑，命中 `SM_SkyDome` / `SM_Env_Plains_Mountain_01` / landscape。进一步在 `thinInstanceSetBuffer` 之前设置 `isPickable`/`thinInstanceEnablePicking` 并 refresh 仍然无效；再用 thin-instance 世界矩阵做局部 AABB 回退也没有返回前景命中。说明不是“晚设置 picking”或简单 AABB 回退能解决的问题；逐材质屏幕采样工具暂不可用，这不是材质颜色结论。
 - 起点店面对象是 `CommercialArea:703/SM_MERGED_Building_2_01_9`，5 个子网格材质已按 bounds 识别：base=`brick_02_TintA_Inst`、facade=`building_02_Inst`、trim=`brick_02_TintB_Inst2`、windows=`-Window_mat`、frames=`Tilable_metal_TintC_Inst`；bounds 和 vertices 在 [storefront-meshes.json](../research/world-recovery/storefront-meshes.json)。
 - 2026-10-25 进一步试验：把 `brick_02_d_tintB` 的 tint scale 从 .28 降到 .08，或把 `building_02_Inst` 的 albedoColor 提到 1.15，同机位 mean luma 都保持 56.02–56.03，石柱视觉几乎不变。说明可见石柱不是由这两个字段单独控制（或 PBR/纹理/光照占主导）；这些实验已回退，不要重复。
+- 背景山体 `M_Env_Plains_Mountain01` 的 diffuse `T_Env_Plains_Mountain01_D` 已导出并接入 albedo（normal 纹理尚未接线），manifest：[mountain-material.json](../research/world-recovery/mountain-material.json)。此前白色山体是 fallback；接入后默认街区远景变为绿色林地/岩石。
 
 同机位对照图：[comparison-gate3-materials.jpg](../research/runtime-observation/comparison-gate3-materials.jpg)；单边试验截图：`research/screenshots/building-metal-tint.jpg`、`building-emissive-tuned.jpg`、`building-trim-roughness.jpg`。页面纹理失败 0，B1 通过。
 

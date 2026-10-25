@@ -1,0 +1,21 @@
+{
+  "material": "/Game/InfinityBladeGrassLands/Environments/Plains/Env_Plains_Background/Materials/M_Env_Plains_Mountain01",
+  "textures": [
+    {
+      "name": "T_Env_Plains_Mountain01_D",
+      "file": "public\\assets\\world\\textures\\Game\\InfinityBladeGrassLands\\Environments\\Plains\\Env_Plains_Background\\Textures\\T_Env_Plains_Mountain01_D.png",
+      "bytes": 1728289,
+      "sha256": "135dc93f67712d99a156f4a5b52a9364dd34d95d3e7087513cac5073e9de6f9e",
+      "source": "UNDEFEATED/Content/InfinityBladeGrassLands/Environments/Plains/Env_Plains_Background/Textures/T_Env_Plains_Mountain01_D.uexp"
+    },
+    {
+      "name": "T_Env_Plains_Mountain01_N",
+      "file": "public\\assets\\world\\textures\\Game\\InfinityBladeGrassLands\\Environments\\Plains\\Env_Plains_Background\\Textures\\T_Env_Plains_Mountain01_N.png",
+      "bytes": 154034,
+      "sha256": "b97c3733a94a47fdbed45ac680ee7f398a90a073e27f9037222beb82cf54637b",
+      "source": "UNDEFEATED/Content/InfinityBladeGrassLands/Environments/Plains/Env_Plains_Background/Textures/T_Env_Plains_Mountain01_N.uexp"
+    }
+  ],
+  "usage": "diffuse map applied to PBR albedo, metallic0 roughness1; normal map not wired",
+  "sourcePackage": "/Game/InfinityBladeGrassLands/Environments/Plains/Env_Plains_Background/Materials/M_Env_Plains_Mountain01"
+}

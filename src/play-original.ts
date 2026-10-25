@@ -480,7 +480,7 @@ try {
         populationOffset = [0, 0];
       }
     }
-    await population.load({ manifestUrl, worldOffset: populationOffset });
+    await population.load({ manifestUrl, worldOffset: populationOffset, sandbox: true });
   }
   population.pause(true);
   combat = new Combat(viewer.scene, input, player as unknown as PlayerMotor, character, population, viewer.camera, collision.boxes, { heatVision: true });

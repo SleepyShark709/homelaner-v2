@@ -85,6 +85,16 @@ export class OriginalMaterials {
       material.emissiveTexture = clouds;
       material.emissiveColor = new Color3(0.14, 0.19, 0.26);
     }
+    if (source === '/Game/InfinityBladeGrassLands/Environments/Plains/Env_Plains_Background/Materials/M_Env_Plains_Mountain01') {
+      material.albedoTexture = this.texture({
+        url: '/assets/world/textures/Game/InfinityBladeGrassLands/Environments/Plains/Env_Plains_Background/Textures/T_Env_Plains_Mountain01_D.png',
+        colorSpace: 'srgb',
+        texCoord: 0,
+      });
+      material.albedoColor = Color3.White();
+      material.metallic = 0;
+      material.roughness = 1;
+    }
     if (source === '/Game/UrbanCity/Materials/Buildings/building_02_Inst') {
       // building_mat imports building_02_* plus /Game/UrbanCity/Textures/Tileable/clouds;
       // its EmissiveColor is a LinearInterpolate with Contrast .43796 / EmissiveAmount 1.74378.

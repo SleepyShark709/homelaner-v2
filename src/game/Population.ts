@@ -19,7 +19,7 @@ export class Population {
   private manifest!: Manifest;
   private paused = true;
   constructor(readonly scene: Scene, readonly walls: Obstacle[]) {}
-  async load(options: { worldOffset?: [number, number]; manifestUrl?: string } = {}): Promise<void> {
+  async load(options: { worldOffset?: [number, number]; manifestUrl?: string; sandbox?: boolean } = {}): Promise<void> {
     const response = await fetch(options.manifestUrl ?? '/assets/population-manifest.json');
     if (!response.ok) throw new Error('人车资源清单未生成');
     this.manifest = await response.json();
@@ -35,6 +35,7 @@ export class Population {
         route.points = route.points.map(point => [point[0] + offsetX, point[1], point[2] + offsetZ] as Vec3);
       }
     }
+    if (options.sandbox) this.densifySandbox();
     for (const model of this.manifest.models) {
       const container = await LoadAssetContainerAsync(model.url, this.scene);
       container.meshes.forEach(mesh => { mesh.receiveShadows = true; });
@@ -51,6 +52,28 @@ export class Population {
       }
     }
     this.pause(true);
+  }
+  private densifySandbox(): void {
+    // Plan A preview density: duplicate each routed citizen/vehicle at a later
+    // point on the same route. Counts/rhythm are authored, not recovered.
+    const extra: Spawn[] = [];
+    for (const spawn of [...this.manifest.spawns]) {
+      const model = this.manifest.models.find(item => item.id === spawn.modelId);
+      const route = this.manifest.routes.find(item => item.id === spawn.routeId);
+      if (!model || !route || route.points.length < 3 || (model.kind !== 'citizen' && model.kind !== 'vehicle')) continue;
+      const index = Math.min(route.points.length - 2, model.kind === 'citizen' ? 2 : 3);
+      const point = route.points[index];
+      const next = route.points[index + 1];
+      const side = extra.length % 2 === 0 ? 1.2 : -1.2;
+      extra.push({
+        id: `${spawn.id}-sandbox`,
+        modelId: spawn.modelId,
+        position: [point[0] + side, point[1], point[2] + side],
+        yaw: Math.atan2(next[0] - point[0], next[2] - point[2]),
+        routeId: route.id,
+      });
+    }
+    this.manifest.spawns.push(...extra);
   }
   private health(kind: TargetKind): number { return kind === 'citizen' ? FREE_RULES.citizenHealth : kind === 'vehicle' ? FREE_RULES.vehicleHealth : FREE_RULES.propHealth; }
   private place(actor: Actor, yaw: number): void {
