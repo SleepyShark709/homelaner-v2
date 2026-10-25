@@ -1,0 +1,48 @@
+{
+  "method": "Compare building TEXCOORD_2/TEXCOORD_3 UV masks against each exported CommercialArea lightmap; rank by gradient-detail ratio inside/outside the mask and vertical-flip convention.",
+  "source": "public/assets/world/meshes/SM_MERGED_Building_2_01_9-b8e812d00b7f/mesh.gltf",
+  "candidates": [
+    {
+      "texture": "LQ_Lightmap_0_584",
+      "uv": "TEXCOORD_2",
+      "flipV": false,
+      "gradientRatio": 1.9207
+    },
+    {
+      "texture": "HQ_Lightmap0_138",
+      "uv": "TEXCOORD_2",
+      "flipV": true,
+      "gradientRatio": 1.7204
+    },
+    {
+      "texture": "HQ_Lightmap0_95",
+      "uv": "TEXCOORD_2",
+      "flipV": true,
+      "gradientRatio": 1.6896
+    },
+    {
+      "texture": "HQ_Lightmap0_134",
+      "uv": "TEXCOORD_2",
+      "flipV": true,
+      "gradientRatio": 1.6878
+    },
+    {
+      "texture": "HQ_Lightmap0_137",
+      "uv": "TEXCOORD_2",
+      "flipV": true,
+      "gradientRatio": 1.6663
+    },
+    {
+      "texture": "HQ_Lightmap1_140",
+      "uv": "TEXCOORD_2",
+      "flipV": true,
+      "gradientRatio": 1.6631
+    }
+  ],
+  "status": "candidate ranking only",
+  "notes": [
+    "HQ_Lightmap0_138 was the highest HQ candidate under the likely UE lightmap V-flip convention.",
+    "A PBRMaterial.lightmapTexture trial with TEXCOORD_2/vScale=-1/vOffset=1 did not produce a verifiable visual change in the same-camera capture, so it was reverted and is not applied.",
+    "True binding still requires the component LightMapIndex or FLightMap2D texture reference."
+  ]
+}

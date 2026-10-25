@@ -26,6 +26,17 @@ ShadowMapTexture2D  25 个
 
 试过用建筑 TEXCOORD_2/TEXCOORD_3 的 UV 掩码与 lightmap 非黑内容做 precision/coverage 打分，但所有候选结果几乎相同：这些 atlas 是全图内容，不是简单的“空白背景+UV 岛”布局，无法靠覆盖率唯一识别。还需要正确的 HDR/Lightmass 解码和组件 LightMapIndex 映射。
 
+进一步改用 UV 岛内/外的梯度细节比排序，最高 HQ 候选是：
+
+```text
+HQ_Lightmap0_138
+UV = TEXCOORD_2
+flipV = true
+gradient ratio ≈ 1.72
+```
+
+排名与限制记录在 `research/world-recovery/lightmap-candidate-analysis.json`。给建筑 PBR 材质挂 `HQ_Lightmap0_138` + TEXCOORD_2 的试验没有产生可验证的视觉变化，已回退；因此这只是候选排序，不是已应用的 lightmap。
+
 单个 `HQ_Lightmap0_16` 已用 UModel 成功导出为 4096×4096 PNG，证明这些不是残留引用，而是真实烘焙数据。
 
 导出命令（从 `-HeroGame/Maps` 目录执行）：
