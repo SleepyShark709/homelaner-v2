@@ -304,10 +304,8 @@ export class Character {
       : speed < 8.5
         ? { idle: 0, walk: 1 - (speed - 3) / 5.5, run: (speed - 3) / 5.5, super: 0 }
         : speed < 16.75
-          ? { idle: 0, walk: 0, run: 1, super: 0 }
-          : speed < 25
-            ? { idle: 0, walk: 0, run: 1 - (speed - 16.75) / 8.25, super: (speed - 16.75) / 8.25 }
-            : { idle: 0, walk: 0, run: 0, super: 1 };
+          ? { idle: 0, walk: 0, run: 1 - (speed - 8.5) / 8.25, super: (speed - 8.5) / 8.25 }
+          : { idle: 0, walk: 0, run: 0, super: 1 };
     let dir = { F: 1, FL: 0, FR: 0, B: 0 };
     if (speed > 0.15) {
       const sin = Math.sin(this.yaw), cos = Math.cos(this.yaw);

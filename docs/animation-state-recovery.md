@@ -124,9 +124,8 @@ Flying State:
 ```text
 0 .. 3 m/s       Idle -> Walk
 3 .. 8.5         Walk -> SprintRun
-8.5 .. 16.75     SprintRun 1.0
-16.75 .. 25      SprintRun -> SprintSuper
->= 25            SprintSuper 1.0
+8.5 .. 16.75     SprintRun -> SprintSuper
+>= 16.75         SprintSuper 1.0
 ```
 
 MoveGround 的采样 Y 值：Walk 300、SprintRun 850、SprintSuper 1675/2225/2500 cm/s。

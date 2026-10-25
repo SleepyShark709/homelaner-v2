@@ -13,7 +13,7 @@
       "textureFailures": 0,
       "unresolvedMaterialCacheKeys": 0,
       "ambiguousSlots": 0,
-      "fps": 69.36416184970999,
+      "fps": 99.90009990109202,
       "activeMeshes": 0,
       "warning": "",
       "scope": "",
@@ -61,9 +61,9 @@
         "walking": {
           "stats": {
             "position": [
-              -55.49463974776969,
+              -55.46775231128953,
               0.47000000000000003,
-              -565.5493863292328
+              -565.4705097788267
             ],
             "velocity": [
               -3.226492377619051,
@@ -82,9 +82,9 @@
         "jump": {
           "stats": {
             "position": [
-              -55.73541360441255,
+              -55.70852616793239,
               4.346388888888885,
-              -567.5382261232554
+              -567.4593495728493
             ],
             "velocity": [
               0,
@@ -103,9 +103,9 @@
         "flying": {
           "stats": {
             "position": [
-              -55.73541360441255,
+              -55.70852616793239,
               4.346388888888885,
-              -567.6124953094317
+              -567.5336187590256
             ],
             "velocity": [
               0,
@@ -124,19 +124,19 @@
         "ascended": {
           "stats": {
             "position": [
-              -55.73541360441255,
-              14.262122222222246,
-              -567.6124953094317
+              -55.70852616793239,
+              14.987455555555584,
+              -567.5336187590256
             ],
             "velocity": [
               0,
-              28.330666666666712,
+              29.354666666666716,
               0
             ],
             "flying": true,
             "grounded": false,
             "state": "hover",
-            "speed": 28.330666666666712,
+            "speed": 29.354666666666716,
             "charge": 0
           },
           "clip": "Hero_FlyUp",
@@ -145,30 +145,30 @@
         "descended": {
           "stats": {
             "position": [
-              -55.73541360441255,
-              0.47000000000000003,
-              -567.6124953094317
+              -55.70852616793239,
+              0.7487000000000392,
+              -567.5336187590256
             ],
             "velocity": [
               0,
-              0,
+              -40,
               0
             ],
             "flying": true,
-            "grounded": true,
+            "grounded": false,
             "state": "hover",
-            "speed": 0,
+            "speed": 40,
             "charge": 0
           },
-          "clip": "Hero_IdleFlying",
+          "clip": "Hero_FlyFastDown",
           "active": true
         },
         "exited": {
           "stats": {
             "position": [
-              -55.73541360441255,
+              -55.70852616793239,
               0.47000000000000003,
-              -567.6124953094317
+              -567.5336187590256
             ],
             "velocity": [
               0,
@@ -187,30 +187,30 @@
         "sprinting": {
           "stats": {
             "position": [
-              -53.83008334490506,
+              -51.91327653929513,
               0.47000000000000003,
-              -553.0332974100654
+              -557.6346807580785
             ],
             "velocity": [
-              -9.679477132857153,
+              -8.75,
               0,
-              0
+              -28.395558146204763
             ],
             "flying": false,
             "grounded": true,
             "state": "run",
-            "speed": 9.679477132857153,
+            "speed": 29.713132154562498,
             "charge": 0
           },
           "clip": "Hero_StartSprint",
           "active": true
         },
         "evidence": {
-          "walkDistance": 16.920193717416055,
+          "walkDistance": 16.841317167009947,
           "jumpHeight": 3.876388888888885,
-          "ascendDelta": 9.91573333333336,
-          "descendDelta": -13.792122222222245,
-          "sprintSpeed": 9.679477132857153
+          "ascendDelta": 10.641066666666699,
+          "descendDelta": -14.238755555555546,
+          "sprintSpeed": 29.713132154562498
         }
       },
       "consoleErrors": [],
@@ -221,7 +221,7 @@
       },
       "browser": "Chrome/156.0.8078.48",
       "url": "http://127.0.0.1:4178/?view=play&debug=1",
-      "durationMs": 39198,
+      "durationMs": 37019,
       "screenshot": "research/screenshots/play-b1.jpg"
     }
   ],
