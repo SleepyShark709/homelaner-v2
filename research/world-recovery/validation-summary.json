@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "57efc50",
+  "validatedCommit": "b521163",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -207,6 +207,23 @@
       "frames": 96,
       "missing": 0,
       "hidden": 0
+    },
+    {
+      "command": "capture-world probe-motion-flicker",
+      "exitCode": 0,
+      "diagonalClips": [
+        "Hero_Idle",
+        "Hero_Walk",
+        "Hero_SprintRun"
+      ],
+      "minWeightSum": 0.986
+    },
+    {
+      "command": "capture-world probe-fps-motion",
+      "exitCode": 0,
+      "idle": 25.2,
+      "diagonal": 25.2,
+      "afterAttack": 23.6
     }
   ],
   "evidence": {
@@ -218,5 +235,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Player-fidelity workstream active: skinned hero meshes stay active; frame probe reports 0 missing/hidden at 57efc50."
+  "note": "Player flicker/stutter: zero-weight locomotion groups stopped, phase-synced starts, hero self-shadow receiving disabled at b521163."
 }
