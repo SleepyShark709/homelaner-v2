@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "b521163",
+  "validatedCommit": "2bedfb0",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -224,6 +224,13 @@
       "idle": 25.2,
       "diagonal": 25.2,
       "afterAttack": 23.6
+    },
+    {
+      "command": "capture-world probe-fps-motion ssao=0 shadows=0",
+      "exitCode": 0,
+      "idle": 27.3,
+      "diagonal": 27.1,
+      "afterAttack": 23.9
     }
   ],
   "evidence": {
@@ -235,5 +242,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Player flicker/stutter: zero-weight locomotion groups stopped, phase-synced starts, hero self-shadow receiving disabled at b521163."
+  "note": "Player flicker/stutter: shadow/zoffset/phase fixes landed; shadows=0 diagnostic added at 2bedfb0."
 }
