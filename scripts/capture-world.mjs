@@ -136,6 +136,7 @@ const probeExpr = `(() => {
     player: data.player || '', mode: data.mode || '',
     warning: warning && !warning.hidden ? warning.textContent : '',
     loadingHidden: loading ? loading.hidden : null,
+    loadingText: loading && !loading.hidden ? loading.textContent : '',
     scope: document.getElementById('scope')?.textContent || '',
     size: [innerWidth, innerHeight], devicePixelRatio,
   });
@@ -148,10 +149,11 @@ for (;;) {
   const result = await cdp.send('Runtime.evaluate', { expression: probeExpr, returnByValue: true });
   if (result.exceptionDetails) throw new Error(`Page probe failed: ${result.exceptionDetails.text}: ${result.exceptionDetails.exception?.description ?? ''}`);
   data = JSON.parse(result.result.value);
-  if (data.ready === expectedReady || data.ready === 'error') break;
+  const readyOk = data.ready === 'error' || (data.ready === expectedReady && data.loadingHidden !== false);
+  if (readyOk) break;
   if (Date.now() - started > timeout) {
     const recent = cdp.events.filter(event => event.method === 'Runtime.consoleAPICalled' || event.method === 'Runtime.exceptionThrown').slice(-12);
-    throw new Error(`Timed out waiting for viewer (${data.ready}; ${data.warning}) ${JSON.stringify(recent).slice(0, 4000)}`);
+    throw new Error(`Timed out waiting for viewer (${data.ready}; loading=${data.loadingHidden}; ${data.loadingText}; ${data.warning}) ${JSON.stringify(recent).slice(0, 4000)}`);
   }
   await delay(500);
 }
