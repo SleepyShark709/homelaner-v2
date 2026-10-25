@@ -94,6 +94,30 @@ landing -> Hero_JumpLand (once) -> Hero_Idle / Hero_Walk / Hero_SprintRun (loop)
 - `ALS_N_Jump`、`HeroABS_Flying*` 和完整方向混合仍未导入；
 - 直接状态链的时长取 `AnimationGroup.getLength()`，不是 AnimBP 的精确 transition/blend 时间。
 
+## AnimBP baked state machines
+
+从 `HeroAnimBP_C.BakedStateMachines` 直接读出的状态名（清单：[hero-animbp-states.json](research/world-recovery/hero-animbp-states.json)）：
+
+```text
+DefaultStateMachine:
+  Ground / MovementModeConduit / Falling / Flying / Landing
+  BossAttackingMoveLoop / BossBlowingMoveSecondLoop /
+  BossBlowingMoveLoop / BossHeavyAttackSmashingLoop
+
+Ground State:
+  Idle / Moving / StopSprint / StopConduit / StopWalkRun
+
+Jump/Falling State:
+  JumpStart / FallingLoop / AirAttack
+
+Flying State:
+  Flying
+```
+
+这确认了当前基础链的拆分方向：
+`StopSprint` 和 `StopWalkRun` 是两个独立状态，`JumpStart`/`FallingLoop` 也是两个状态。
+目前只拿到了状态名和 transition index，**target state 与 crossfade 时间仍未解析**。
+
 ## 动画数据校验
 
 `npm run verify:locomotion` 会检查整个 `hero.gltf` 的 34 段动画：

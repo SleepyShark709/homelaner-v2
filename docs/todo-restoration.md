@@ -126,7 +126,9 @@ HeroABS_JumpFallLoop
 
 ### 2.2 恢复 HeroAnimBP 状态机
 
-- [x] 解码 `HeroAnimBP` 的资产/引用；基础 idle/run/jump/fall/land 直接状态链已实现。
+- [x] 解码 `HeroAnimBP` 的 baked states：Ground(Idle/Moving/StopSprint/StopConduit/StopWalkRun)、Jump/Falling(JumpStart/FallingLoop/AirAttack)、Flying，清单 `research/world-recovery/hero-animbp-states.json`。
+- [ ] 解析 transition target state 与 crossfade 时间；当前只有 transition index。
+- [x] 基础 idle/run/jump/fall/land 直接状态链已实现。
 - [ ] 恢复 `HeroABS_MoveGround` 的实际 BlendSpace 轴、过渡条件、混合时间和飞行混合空间，替换当前直接片段计时。
 - [ ] 实现 montage 攻击的 section/通知/连招/取消窗口；现有攻击时间轴仅是部分恢复。
 - [ ] 恢复 AnimNotify：命中、移动、脚步声、飞行尘土、攻击碰撞、结束；当前只覆盖部分。

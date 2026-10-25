@@ -1,0 +1,287 @@
+{
+  "source": "HeroAnimBP.json / HeroAnimBP_C.BakedStateMachines",
+  "note": "State names and transition indices from the baked state machine. Target-state resolution and transition crossfade times are not decoded yet.",
+  "machines": [
+    {
+      "name": "DefaultStateMachine",
+      "initialState": 0,
+      "states": [
+        {
+          "name": "Ground",
+          "isConduit": false,
+          "transitionCount": 1,
+          "transitions": [
+            {
+              "transitionIndex": 0,
+              "automatic": false
+            }
+          ]
+        },
+        {
+          "name": "MovementModeConduit",
+          "isConduit": true,
+          "transitionCount": 4,
+          "transitions": [
+            {
+              "transitionIndex": 3,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 4,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 7,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 1,
+              "automatic": false
+            }
+          ]
+        },
+        {
+          "name": "Falling",
+          "isConduit": false,
+          "transitionCount": 1,
+          "transitions": [
+            {
+              "transitionIndex": 2,
+              "automatic": false
+            }
+          ]
+        },
+        {
+          "name": "Flying",
+          "isConduit": false,
+          "transitionCount": 5,
+          "transitions": [
+            {
+              "transitionIndex": 9,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 11,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 13,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 15,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 8,
+              "automatic": false
+            }
+          ]
+        },
+        {
+          "name": "Landing",
+          "isConduit": false,
+          "transitionCount": 2,
+          "transitions": [
+            {
+              "transitionIndex": 6,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 5,
+              "automatic": false
+            }
+          ]
+        },
+        {
+          "name": "BossAttackingMoveLoop",
+          "isConduit": false,
+          "transitionCount": 2,
+          "transitions": [
+            {
+              "transitionIndex": 19,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 10,
+              "automatic": false
+            }
+          ]
+        },
+        {
+          "name": "BossBlowingMoveSecondLoop",
+          "isConduit": false,
+          "transitionCount": 2,
+          "transitions": [
+            {
+              "transitionIndex": 18,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 12,
+              "automatic": false
+            }
+          ]
+        },
+        {
+          "name": "BossBlowingMoveLoop",
+          "isConduit": false,
+          "transitionCount": 2,
+          "transitions": [
+            {
+              "transitionIndex": 20,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 14,
+              "automatic": false
+            }
+          ]
+        },
+        {
+          "name": "BossHeavyAttackSmashingLoop",
+          "isConduit": false,
+          "transitionCount": 2,
+          "transitions": [
+            {
+              "transitionIndex": 17,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 16,
+              "automatic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ground State",
+      "initialState": 0,
+      "states": [
+        {
+          "name": "Idle",
+          "isConduit": false,
+          "transitionCount": 1,
+          "transitions": [
+            {
+              "transitionIndex": 0,
+              "automatic": false
+            }
+          ]
+        },
+        {
+          "name": "Moving",
+          "isConduit": false,
+          "transitionCount": 1,
+          "transitions": [
+            {
+              "transitionIndex": 2,
+              "automatic": false
+            }
+          ]
+        },
+        {
+          "name": "StopSprint",
+          "isConduit": false,
+          "transitionCount": 2,
+          "transitions": [
+            {
+              "transitionIndex": 7,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 1,
+              "automatic": false
+            }
+          ]
+        },
+        {
+          "name": "StopConduit",
+          "isConduit": true,
+          "transitionCount": 2,
+          "transitions": [
+            {
+              "transitionIndex": 4,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 3,
+              "automatic": false
+            }
+          ]
+        },
+        {
+          "name": "StopWalkRun",
+          "isConduit": false,
+          "transitionCount": 2,
+          "transitions": [
+            {
+              "transitionIndex": 6,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 5,
+              "automatic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Jump/Falling State",
+      "initialState": 0,
+      "states": [
+        {
+          "name": "JumpStart",
+          "isConduit": false,
+          "transitionCount": 2,
+          "transitions": [
+            {
+              "transitionIndex": 1,
+              "automatic": false
+            },
+            {
+              "transitionIndex": 0,
+              "automatic": false
+            }
+          ]
+        },
+        {
+          "name": "FallingLoop",
+          "isConduit": false,
+          "transitionCount": 1,
+          "transitions": [
+            {
+              "transitionIndex": 2,
+              "automatic": false
+            }
+          ]
+        },
+        {
+          "name": "AirAttack",
+          "isConduit": false,
+          "transitionCount": 1,
+          "transitions": [
+            {
+              "transitionIndex": 3,
+              "automatic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flying State",
+      "initialState": 0,
+      "states": [
+        {
+          "name": "Flying",
+          "isConduit": false,
+          "transitionCount": 0,
+          "transitions": []
+        }
+      ]
+    }
+  ]
+}
