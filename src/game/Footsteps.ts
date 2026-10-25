@@ -89,9 +89,15 @@ export class Footsteps {
 
   playDestruction(): void { this.playBuffer(this.impacts, 1); }
 
-  playHeavy(): void { this.playBuffer(this.heavies, 0.85); }
+  playHeavy(): void {
+    this.playBuffer(this.swings, 0.55);
+    this.playBuffer(this.heavies, 0.85);
+  }
 
-  playWhoosh(): void { this.playBuffer(this.whooshes, 0.75); }
+  playWhoosh(): void {
+    this.playBuffer(this.whooshes, 0.75);
+    this.playBuffer(this.swings, 0.5);
+  }
 
   setFlightWind(active: boolean, intensity: number): void {
     if (!this.enabled || !this.context || !this.gain || !this.wind) return;

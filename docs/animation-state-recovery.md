@@ -272,7 +272,7 @@ Shift+K -> Hero_SuperPunch, sounds=[heavy], action=强力拳波
 Space→Space→J -> Hero_AirAttackStart, sounds=[whoosh]
 ```
 
-Chrome 解码：`cannonexplode01_stereo.ogg` 2.4271 s / 48 kHz / stereo；`sweetener_whooshf01.ogg` 0.8623 s / 48 kHz / stereo。
+Chrome 解码：`cannonexplode01_stereo.ogg` 2.4271 s / 48 kHz / stereo；`sweetener_whooshf01.ogg` 0.8623 s / 48 kHz / stereo。Cue 图本身包含 `SoundNodeDelay`、`Mixer`（输入音量 1/1/.65）、`Random` 和 `Modulator`；当前实现只是按 Cue 的素材清单做分层近似（heavy = swish + cannon，whoosh = swish + whoosh），未逐节点复现随机/延迟/包络。
 
 飞行风噪来自 `Cue_FlyingWindNoise` 的 `SoundNodeWavePlayer` → `/Game/Assets/Audio/Whooshes/Flourish03`（[flight-wind-manifest.json](../research/world-recovery/flight-wind-manifest.json)）。实际播放为 1.2× pitch、cue volume .35、循环，并按水平/垂直速度调节增益；真实双跳进入飞行后 `flightWindActive=false -> true`。Chrome 解码 3.4507 s / 48 kHz / stereo。
 
