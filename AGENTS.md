@@ -11,6 +11,72 @@ Restoring UNDEFEATED is the only active primary milestone. The Homelander skin, 
 
 Status (2026-10-25): gate 1 complete via `WBP_TitleSinboard_C:GameStartEvent()` + one `InputDone()`; the settled gameplay transform is `pawn (-311.999, 7473.891, 167.150)` / `cam (-361.999, 7073.891, 327.150)`, rot `(-10, 90, 0)`. Gate 2 has a first same-camera comparison at `(-3.12, 74.73891)` with camera `(-3.62, 3.2715, 70.73891)`, measured FOV 90 (`PlayerCameraManager:GetFOVAngle()`); the default play camera now uses 90 too. Gate 3 is in progress: the storefront `-Window_mat` and `Tilable_metal_TintC_Inst` now use their recovered colour/tint parameters instead of the neutral fallback; the original 1024×1024 `T_StaticMinimap_Tex`, `map250` ink frame and `T_PlayerIcon` are wired as the default HUD with the recovered `WorldOrigin/BoxExtent` mapping (`?hud=help` restores the authored panel), but the state-driven green/red tint is only an authored outer-rim preview (generated from the map250 alpha), and the nearest-8 quest icon layout is a preview, not the original active-quest icon state machine or scaling material. Lighting, contact shadows, remaining HUD elements and materials are still open. `?ssao=0` disables the default preview SSAO, which combined with exposure .55 matches the same-camera original's measured mean luma 55.8 / std 31.3 (Web 55.6 / 30.1); this is a screen-space preview, not an original AO/lightmap reconstruction. A `LightingTest` postprocess probe recorded AutoExposure 1..8 and Bloom 2.5, but those values are not MainLevel baked lighting and a Bloom preview was rejected for adding non-original edge glow. The default play view uses a preview exposure calibration of 0.55 (`?exposure=1` disables it); together with the preview SSAO the measured same-camera luma is Web 55.6 / std 30.1, not a recovered UE auto-exposure/tone curve or AO/lightmap. Gate 4 remains open. The original `HeroAnimBP` and `HeroABS_MoveGround/Flying/JumpFallLoop/AirAttack` assets are now decoded and their real state/clip references are documented in `docs/animation-state-recovery.md`; Web still uses `A_ThirdPersonRun` for run and `Hero_IdleFlying` for jump because `Hero_Walk`, `Hero_SprintRun`, `Hero_StartSprint`, `Hero_Stopping_*`, `Hero_JumpSpeed` and `Hero_JumpLand` have not yet been imported onto the original skeleton.
 
+## Durable handoff (2026-10-25, before power-off)
+
+The complete remaining-work checklist is [docs/todo-restoration.md](docs/todo-restoration.md). Read that first; this section preserves the facts that are expensive to rediscover.
+
+### Verified original-game runtime
+
+- Original install (read-only): `E:\SteamLibrary\steamapps\common\UNDEFEATED`.
+- UE4SS staging procedure: `tools/runtime/ue4ss/README.md`. The temporary staging copy is under `C:\Users\Shark\AppData\Local\Temp\undefeated-ue4ss`; rebuild it if removed.
+- Do **not** use `ClientTravel("MainLevel")` or `ConsoleCommand("open MainLevel")`; both were rejected by the game.
+- Enter real gameplay by calling the title Blueprint event:
+
+  ```lua
+  local title = FindFirstOf("WBP_TitleSinboard_C")
+  title:GameStartEvent()
+  -- wait for the intro to begin, then exactly once:
+  title:InputDone()
+  ```
+
+  Calling `InputDone()` repeatedly keeps advancing/looping the intro. After one call, wait; do not automate more input.
+- Settled gameplay transform (measured):
+
+  ```text
+  pawn = (-311.999, 7473.891, 167.150) cm
+  cam  = (-361.999, 7073.891, 327.150) cm
+  rot  = (-10, 90, 0)
+  fov  = 90.000   (PlayerCameraManager:GetFOVAngle)
+  ```
+
+- Web same-camera conversion (x/100, z/100, y/100; yaw = 90 - UE yaw):
+
+  ```text
+  player = (-3.12, 1.6715, 74.73891) m
+  camera = (-3.62, 3.2715, 70.73891) m
+  ```
+
+  Exact inspection URL: `?view=play&startup=1&at=-3.12,74.739&yaw=0&exact=1&cam=-3.62,3.2715,70.739&camyaw=0&campitch=-0.1745&fov=90`.
+
+### Current Web play defaults
+
+- Default `?view=play` is the original character/slice; default camera FOV 90.
+- Default HUD is the recovered original minimap stack (`T_StaticMinimap_Tex`, `map250`, `T_PlayerIcon`); `?hud=help` restores the authored inspection panel.
+- Minimap world mapping from `BP_WorldCaptureCamera`: `WorldOrigin=(-130000,-130000) cm`, `BoxExtent=(130000,130000) cm`, `OrthoWidth=260000 cm`; texture covers `[-1300,1300] m`.
+- Default preview exposure `.55` and default preview SSAO (`.9`) are **calibration**, not original UE auto-exposure/AO/lightmap. Disable with `?exposure=1` / `?ssao=0`.
+- Minimap outer-rim green/red tint and nearest-8 quest icons are authored previews, not the original `M_MiinMapChangeVisualizer` active-quest state machine.
+- Recovered storefront materials: `-Window_mat` (dark blue-black, roughness .0622, emissive .15) and `Tilable_metal_TintC_Inst` (recovered tint); do not revert to neutral fallback.
+
+### Known current state / next task
+
+- Gate 1 (real gameplay transform) and Gate 2 (same-camera position/rotation/FOV) are complete.
+- Gate 3 (lighting/material/sky/scene/HUD equivalence) is incomplete: MainLevel lightmaps/auto-exposure/Bloom, awning/stone shading, full HUD/state tint/icons remain.
+- Gate 4 is incomplete. `HeroAnimBP` and `HeroABS_*` are decoded; Web still substitutes `A_ThirdPersonRun` for ground movement and `Hero_IdleFlying` for jump. Missing original clips include `Hero_Walk`, `Hero_SprintRun`, `Hero_StartSprint`, `Hero_Stopping_Sprint/WalkRun`, `Hero_JumpSpeed`, `Hero_JumpLand`, `ALS_N_Jump`. See `docs/animation-state-recovery.md`.
+- The immediate next implementation step is 2.1 in the TODO: extract the missing locomotion PSA/config from pak, append them to the original 93-bone `public/assets/character/hero.gltf` without losing the existing 18 clips, then wire the real AnimBP states.
+
+### Commands / constraints
+
+- Use bundled Node 24; system Node 18 fails:
+  ```powershell
+  $env:PATH = 'C:\Users\Shark\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\node\bin;' + $env:PATH
+  npm run typecheck
+  npm run build
+  npm run capture:play
+  ```
+- Original/derived assets stay local and Git-ignored (`public/assets/world`, `character`, `animated`, `research/exports`, decoded dirs). A clean checkout needs the local asset pipeline before rendering.
+- Same-camera evidence: `research/runtime-observation/comparison-live-gameplay-start-final.jpg`; original capture: `research/runtime-observation/original-gameplay-start-final.png`.
+- Do not call this a complete port or visual equivalence; Gate 3/4 and full gameplay remain open.
+
 Until those gates pass, do not call this a faithful port or a successful migration. The current default `?view=play` is the original character/slice; `?skin=homelander`, `?mode=free` and `?retarget=1` are experimental and may be incomplete.
 
 This is a new independent project at E:/undefeated-web. Do not base implementation on the existing homelander-simulator source tree. The original game installation is read-only.
