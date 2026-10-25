@@ -76,14 +76,37 @@ let minimapReady = false;
 let minimapPlayerReady = false;
 let minimapFireReady = false;
 let minimapAccidentReady = false;
+let minimapFireTinted: HTMLCanvasElement | undefined;
+let minimapAccidentTinted: HTMLCanvasElement | undefined;
+// The recovered icon PNGs are authored red/white masks; the original HUD tints
+// the same shapes by state. Until the visualizer state machine is recovered,
+// use the two recovered quest families' preview colours.
+const tintMinimapIcon = (image: HTMLImageElement, color: string) => {
+  const canvas = document.createElement('canvas');
+  canvas.width = image.naturalWidth;
+  canvas.height = image.naturalHeight;
+  const context = canvas.getContext('2d');
+  if (!context) return undefined;
+  context.drawImage(image, 0, 0);
+  context.globalCompositeOperation = 'source-in';
+  context.fillStyle = color;
+  context.fillRect(0, 0, canvas.width, canvas.height);
+  return canvas;
+};
 minimapImage.onload = () => { minimapReady = true; };
 minimapImage.onerror = () => { minimapReady = false; };
 minimapImage.src = '/assets/world/minimap/static.png';
 minimapPlayerImage.onload = () => { minimapPlayerReady = true; };
 minimapPlayerImage.src = '/assets/world/minimap/player.png';
-minimapFireIcon.onload = () => { minimapFireReady = true; };
+minimapFireIcon.onload = () => {
+  minimapFireReady = true;
+  minimapFireTinted = tintMinimapIcon(minimapFireIcon, '#ff7a1a');
+};
 minimapFireIcon.src = '/assets/world/minimap/icon-fire.png';
-minimapAccidentIcon.onload = () => { minimapAccidentReady = true; };
+minimapAccidentIcon.onload = () => {
+  minimapAccidentReady = true;
+  minimapAccidentTinted = tintMinimapIcon(minimapAccidentIcon, '#54c8ff');
+};
 minimapAccidentIcon.src = '/assets/world/minimap/icon-accident.png';
 // Recovered T_StaticMinimap_Tex covers exactly [-1300, 1300] m on both axes.
 // The HUD crops to the city island (source pixels 210..760) so the ocean margin
@@ -111,7 +134,9 @@ const drawMinimap = (position: number[], yaw: number) => {
     const qx = ((area.position[0] - MINIMAP_WORLD_MIN) / MINIMAP_WORLD_SPAN) * MINIMAP_PIXELS;
     const qy = ((MINIMAP_WORLD_MIN + MINIMAP_WORLD_SPAN - area.position[2]) / MINIMAP_WORLD_SPAN) * MINIMAP_PIXELS;
     if (qx < -16 || qy < -16 || qx > MINIMAP_PIXELS + 16 || qy > MINIMAP_PIXELS + 16) continue;
-    const icon = area.kind === 'fire' ? minimapFireIcon : minimapAccidentIcon;
+    const icon = area.kind === 'fire'
+      ? (minimapFireTinted ?? minimapFireIcon)
+      : (minimapAccidentTinted ?? minimapAccidentIcon);
     const ready = area.kind === 'fire' ? minimapFireReady : minimapAccidentReady;
     if (ready) context.drawImage(icon, qx - 12, qy - 12, 24, 24);
   }

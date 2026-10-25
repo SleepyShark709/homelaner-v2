@@ -27,10 +27,13 @@ T_StoryPointIcon
 
 ## Web 当前使用
 
-- `quest_fire` → `kind === 'fire'` 的任务触发点；
-- `quest_accident` → 其他（当前 `kind === 'material'`）任务触发点；
+- `quest_fire` → `kind === 'fire'` 的任务触发点，预览色 `#ff7a1a`（橙）；
+- `quest_accident` → 其他（当前 `kind === 'material'`）任务触发点，预览色 `#54c8ff`（青）；
+- 原版 PNG 本身是红/白 mask，HUD 用 canvas `source-in` 着色，避免全部显示成同一种红色；
 - `T_StaticMinimap_Tex` + `map250` + `T_PlayerIcon` 已作为默认 HUD；
 - 默认显示最近 8 个任务触发点；`?minimap=all` 显示全部 21 个 recovered trigger，仅用于检查。
+
+截图：`research/screenshots/minimap-tinted.jpg`。
 
 ## 未恢复
 

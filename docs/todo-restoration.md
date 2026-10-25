@@ -26,7 +26,7 @@
   对应 `?view=play&startup=1&at=-3.12,74.739&yaw=0&exact=1&cam=-3.62,3.2715,70.739&camyaw=0&campitch=-0.1745&fov=90`。
 - 同机位对照：`research/runtime-observation/comparison-live-gameplay-start-final.jpg`。
 - 门/窗材质：`-Window_mat`、`Tilable_metal_TintC_Inst` 已按恢复参数投影，不再是中性灰；玻璃已使用原版 `clouds.png` 云层 emissive（u/v=.2），但 `mask_grunge_tileable`、Contrast/Greunge 数学仍未实现。
-- 原版 minimap：`T_StaticMinimap_Tex`、`map250` 边框、`T_PlayerIcon`、最近 8 个任务图标已接入，默认 HUD 即 minimap；`?hud=help` 显示自制检查面板；`?minimap=all` 可检查全部 21 个触发点。已从 `DT_MinimapIcon` 恢复 14 个原版图标纹理（`research/world-recovery/minimap-icon-manifest.json`，详见 [minimap-recovery.md](minimap-recovery.md)），但 active/completed 图标状态机和敌人/Boss/飞行环放置仍未恢复。
+- 原版 minimap：`T_StaticMinimap_Tex`、`map250` 边框、`T_PlayerIcon`、最近 8 个任务图标已接入，默认 HUD 即 minimap；`?hud=help` 显示自制检查面板；`?minimap=all` 可检查全部 21 个触发点。已从 `DT_MinimapIcon` 恢复 14 个原版图标纹理（`research/world-recovery/minimap-icon-manifest.json`，详见 [minimap-recovery.md](minimap-recovery.md)），当前 fire/material 类用橙色/青色 canvas tint 预览；active/completed 图标状态机、敌人/Boss/飞行环放置仍未恢复。
 - 亮度对照（同一建筑区域）：
   ```text
   原版 mean=55.8 std=31.3
