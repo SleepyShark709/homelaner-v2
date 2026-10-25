@@ -83,6 +83,15 @@ export class OriginalMaterials {
       material.metallic = 0.1;
       material.roughness = 0.062217001;
       material.emissiveColor = new Color3(0.26752028 * 0.15, 0.315 * 0.15, 0.26144999 * 0.15);
+      // The decoded material imports /Game/UrbanCity/Textures/Tileable/clouds and
+      // mask_grunge_tileable. Use the recovered cloud texture as the emissive layer;
+      // the grunge/contrast modulation is still not reconstructed.
+      const clouds = new Texture('/assets/world/textures/Game/UrbanCity/Textures/Tileable/clouds.png', this.scene);
+      clouds.uScale = 0.2;
+      clouds.vScale = 0.2;
+      clouds.gammaSpace = false;
+      material.emissiveTexture = clouds;
+      material.emissiveColor = new Color3(0.08, 0.11, 0.17);
     }
     const channels = record.channels ?? {};
     if (channels.baseColor && !allSurfaceShader && !concreteShader) {

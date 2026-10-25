@@ -7,7 +7,7 @@
   const start = state();
   if (!start.stats.grounded) throw new Error('player did not settle on terrain');
   if (start.clip !== 'Hero_Idle') throw new Error(`unexpected idle clip ${start.clip}`);
-  key('keydown', 'KeyW'); await wait(1600);
+  key('keydown', 'KeyW'); await wait(2000);
   const walking = state();
   key('keyup', 'KeyW');
   if (Math.abs(walking.stats.position[2] - start.stats.position[2]) < 3) throw new Error('W did not move the player');
@@ -38,6 +38,8 @@
     },
   };
 })()
+
+
 
 
 

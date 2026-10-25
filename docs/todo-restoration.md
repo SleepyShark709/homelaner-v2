@@ -25,13 +25,14 @@
   ```
   对应 `?view=play&startup=1&at=-3.12,74.739&yaw=0&exact=1&cam=-3.62,3.2715,70.739&camyaw=0&campitch=-0.1745&fov=90`。
 - 同机位对照：`research/runtime-observation/comparison-live-gameplay-start-final.jpg`。
-- 门/窗材质：`-Window_mat`、`Tilable_metal_TintC_Inst` 已按恢复参数投影，不再是中性灰。
+- 门/窗材质：`-Window_mat`、`Tilable_metal_TintC_Inst` 已按恢复参数投影，不再是中性灰；玻璃已使用原版 `clouds.png` 云层 emissive（u/v=.2），但 `mask_grunge_tileable`、Contrast/Greunge 数学仍未实现。
 - 原版 minimap：`T_StaticMinimap_Tex`、`map250` 边框、`T_PlayerIcon`、最近 8 个任务图标已接入，默认 HUD 即 minimap；`?hud=help` 显示自制检查面板。
 - 亮度对照（同一建筑区域）：
   ```text
   原版 mean=55.8 std=31.3
   Web 未校准 86.1/41.7
   Web exposure .55 + default SSAO mean=55.6 std=30.1
+  加入原版 clouds 云层后 mean=57.8 std=31.0（原版 55.8/31.3）
   ```
   exposure .55 与 SSAO 是预览校准，不是 UE 自动曝光/AO/lightmap 重建。
 - UE4SS 工具与流程：`tools/runtime/ue4ss/README.md`、`LightDump/`、`CoordDump/`。

@@ -97,6 +97,23 @@ TEXCOORD_3  packed，全部在 [0,1] 内   -> lightmap UV 候选
 
 所以 mesh 端至少已经有可用的 lightmap UV 候选；仍未确认原版 `LightMapCoordinateIndex` 指向 2 还是 3。
 
+## Window 玻璃云层
+
+`-Window_mat` 的解码 imports 明确包含：
+
+```text
+/Game/UrbanCity/Textures/Tileable/clouds
+/Game/UrbanCity/Textures/Tileable/mask_grunge_tileable
+Clouds Mask Tiling 0.2
+Contrast 0.0159
+Greunge Amount 4.94
+EmissiveAmount 0.15
+```
+
+Web 现在使用原版 `clouds.png` 作为玻璃 emissive 层，`uScale=vScale=0.2`，emissive 颜色 `(0.08, 0.11, 0.17)`。
+
+同机位 luma：原版 55.8/31.3，加入云层后 Web 57.8/31.0。玻璃已不再是纯黑，但 `mask_grunge_tileable`、Contrast/Greunge 数学仍未复刻，不能称为完整 shader 还原。
+
 ## 下一步
 
 1. 用 UE4SS C++ mod/SDK 读取 `FLODData::LightMap` 的内部 LightMapIndex/LightMapCoordinateIndex/UVBias。
