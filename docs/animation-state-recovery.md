@@ -32,7 +32,7 @@ Hero_Walk / Hero_SprintRun / Hero_SprintSuper
 
 ## 已导入的原版 locomotion 片段
 
-2026-10-25 已从 pak 导出以下 PSA/config，并通过 `scripts/append-locomotion-animations.py` 追加到原 93 骨骼 `public/assets/character/hero.gltf`（原有 18 段保留，后续再加入 ALS 方向/飞行/跳跃共 46 段）：
+2026-10-25 已从 pak 导出以下 PSA/config，并通过 `scripts/append-locomotion-animations.py` 追加到原 93 骨骼 `public/assets/character/hero.gltf`（原有 18 段保留，后续再加入 ALS 方向/飞行/跳跃/垂直飞行共 49 段）：
 
 ```text
 Hero_Walk             31f @31.0
@@ -57,7 +57,7 @@ Hero_FlyUp
 
 ## 当前 Web 的映射
 
-`src/game/Character.ts` 现在使用原 `hero.gltf` 的 46 段：
+`src/game/Character.ts` 现在使用原 `hero.gltf` 的 49 段：
 
 ```text
 idle  -> Hero_Idle
@@ -67,7 +67,7 @@ jump  -> Hero_JumpFallFast   # 下落循环；对应 HeroABS_JumpFallLoop 的 Sp
 hover -> Hero_IdleFlying
 fly   -> Hero_FlyForward
 
-垂直采样：FlyUp +2666、FlyDown -1333/-3333、Tame -4000、FastDown -4666、BulletDive -6000 cm/s；当前用 >13 m/s FlyUp、<-35 FastDown、<-13 FlyDown 的近似阈值。
+垂直采样：FlyUp +2666、FastUp +6000、FlyDown -1333/-3333、Tame -4000、FastDown -4666、BulletDive -6000 cm/s；当前用 >35 m/s FastUp、>13 FlyUp、<-45 BulletDive、<-35 FastDown、<-13 FlyDown 的近似阈值。实测 36.9 m/s 上升返回 `Hero_FlyFastUp`。
 水平：IdleFlying 0 → FlyForwardLow 1200 → FlyForward 3000/4200 → FlyFastForward1 6000 cm/s 加权；侧向样本在 ±108°。
 ```
 
@@ -143,7 +143,7 @@ ALS_N_Run_B / FL / FR
 
 ### 飞行方向样本（2026-10-25）
 
-已从 pak 导出并追加 `Hero_FlyBack/Left/Right/Tame/TameFront`，总动画数 **46**。`Character.setFlyBlend()`：
+已从 pak 导出并追加 `Hero_FlyBack/Left/Right/Tame/TameFront`，总动画数 **49**。`Character.setFlyBlend()`：
 
 ```text
 FlyUp / FlyDown / FlyFastDown 保留垂直优先级（阈值来自 FlyingUpDonw 采样尺度）
@@ -174,7 +174,7 @@ S（后退） -> Hero_FlyBack, speed 40
 
 ### ALS_N_Jump（2026-10-25）
 
-已导入 `ALS_N_Jump`（总动画数 **46**）。起跳选择：
+已导入 `ALS_N_Jump`（总动画数 **49**）。起跳选择：
 
 ```text
 standing / walk jump  -> ALS_N_Jump
@@ -194,10 +194,10 @@ vertical <  -35 m/s -> Hero_JumpFallFast
 
 ### Root motion 审计
 
-`scripts/audit-root-motion.mjs` 检查全部 46 段动画的 root joint translation：
+`scripts/audit-root-motion.mjs` 检查全部 49 段动画的 root joint translation：
 
 ```text
-animationCount   46
+animationCount   49
 movingRootClips  []
 ```
 
@@ -214,7 +214,7 @@ PlayFootStepR
 RunStop
 ```
 
-`scripts/extract-animation-notifies.py` 从 28 份 UModel `.props.txt` 提取到名称清单；进一步用 UAssetGUI 解码全部 46 段 AnimSequence 后，`AnimNotifyEvent.LinkValue` 给出绝对时间：
+`scripts/extract-animation-notifies.py` 从 28 份 UModel `.props.txt` 提取到名称清单；进一步用 UAssetGUI 解码此前 46 段 AnimSequence 后，`AnimNotifyEvent.LinkValue` 给出绝对时间：
 
 ```text
 24 段有 notify
@@ -301,7 +301,7 @@ Chrome 解码：`cannonexplode01_stereo.ogg` 2.4271 s / 48 kHz / stereo；`sweet
 `Hero_SprintSuper` 在 30 m/s 的 Shift 冲刺下已实际渲染检查（`research/screenshots/play-sprint-super-high.jpg`）：单段姿态仍偏直立、没有明显前倾摆腿。但 `HeroABS_MoveGround` 的实际 SampleData 在 1675/2225/2500 cm/s 明确使用 `Hero_SprintSuper`，因此高速度段（>16.75 m/s）现在按样本权重使用它；30 m/s 时 clip 回到 `Hero_SprintSuper`。若后续逐帧对照证明导入片段姿态有误，应修正转换/骨骼轨道，而不是继续忽略该原版样本。
 
 
-`npm run verify:locomotion` 会检查整个 `hero.gltf` 的 46 段动画：
+`npm run verify:locomotion` 会检查整个 `hero.gltf` 的 49 段动画：
 
 - 每段旋转通道关节数：基础/多数原版片段 93；部分 PSA config 主动删除了头发/配饰骨骼的旋转轨道，因此为 68；
 - 四元数范数误差 < 5e-8；

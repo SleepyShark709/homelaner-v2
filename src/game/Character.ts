@@ -169,7 +169,9 @@ export class Character {
     if (this.fade) return;
     // HeroABS_FlyingUpDonwAnim samples: FlyUp +2666, FastUp +6000,
     // FlyDown -1333/-3333, Tame -4000, FastDown -4666, BulletDive -6000 cm/s.
+    if (vertical > 35) { this.setLoop('Hero_FlyFastUp'); return; }
     if (vertical > 13) { this.setLoop('Hero_FlyUp'); return; }
+    if (vertical < -45) { this.setLoop('Hero_FlyBulletDive'); return; }
     if (vertical < -35) { this.setLoop('Hero_FlyFastDown'); return; }
     if (vertical < -13) { this.setLoop('Hero_FlyDown'); return; }
     if (planar <= 1) { this.setLoop('Hero_IdleFlying'); return; }

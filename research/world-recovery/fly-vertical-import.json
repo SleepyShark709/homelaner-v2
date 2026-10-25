@@ -1,0 +1,38 @@
+{
+  "source": "UModel PSA + config; appendix script",
+  "clips": [
+    {
+      "name": "Hero_FlyFastUp",
+      "frames": 22,
+      "rate": 15.714285850524902,
+      "durationSeconds": 1.3363636247776758,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/fly-vertical/-HeroGame/Player/Animations/Hero_FlyFastUp.psa",
+      "sourceSha256": "587815bc8d13d96a74354b96a27e2b1256905b36083af14ed4c784cd28f8239e"
+    },
+    {
+      "name": "Hero_FlyBulletDive",
+      "frames": 22,
+      "rate": 15.714285850524902,
+      "durationSeconds": 1.3363636247776758,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/fly-vertical/Animations/Hero_FlyBulletDive.psa",
+      "sourceSha256": "95ef6b2e4cd72af6d502037c099c2971f8463df0d0a52c03999570be578c49d6"
+    },
+    {
+      "name": "Hero_FlyBulletDiveFast",
+      "frames": 22,
+      "rate": 15.714285850524902,
+      "durationSeconds": 1.3363636247776758,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/fly-vertical/Animations/Hero_FlyBulletDiveFast.psa",
+      "sourceSha256": "b9051335382f3c875e845a82de71fe6aecd280070b9e0fc4d0d9cbf38ca38ad2"
+    }
+  ],
+  "outputGltfSha256": "6a5740da8224371baa7ea512a273f3262c96e1f74246398e912698367ca45059",
+  "outputBufferSha256": "3e1de18ab519af0a0b9ea85dec73d5c9002ffc56e5050369a205d4b316e3f717",
+  "animationCount": 49
+}

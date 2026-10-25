@@ -1,7 +1,7 @@
 {
   "source": "public/assets/character/hero.gltf",
   "rootJoint": "root",
-  "animationCount": 46,
+  "animationCount": 49,
   "movingRootClips": [],
   "conclusion": "All converted clips have zero root-joint translation. Movement is driven by the external player motor; there is no clip root motion to extract for these animations.",
   "clips": [
@@ -684,6 +684,51 @@
       "name": "ALS_N_Jump",
       "rootTranslationChannel": true,
       "frames": 21,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyFastUp",
+      "rootTranslationChannel": true,
+      "frames": 22,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyBulletDive",
+      "rootTranslationChannel": true,
+      "frames": 22,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyBulletDiveFast",
+      "rootTranslationChannel": true,
+      "frames": 22,
       "range": [
         0,
         0,

@@ -116,7 +116,7 @@ HeroABS_JumpFallLoop
 
 - [x] 从 pak 提取并导入 `Hero_Walk`、`Hero_SprintRun`、`Hero_SprintSuper`、`Hero_JumpSpeed`、`Hero_JumpLand`、`Hero_JumpFall`、`Hero_JumpFallFast`、`Hero_StartSprint`、`Hero_Stopping_Sprint`、`Hero_Stopping_WalkRun`、`Hero_FlyForward`、`Hero_FlyForwardLow`、`Hero_FlyFastForward1`、`Hero_FlyDown`、`Hero_FlyFastDown`、`Hero_FlyUp` 十五段 PSA + config。
 - [x] 用 UModel `-export -game=ue4.27 -path=... -out=...` 导出 PSA + config（**没有 `-psa` 参数**；动画对象默认导出 PSA）。以 `-HeroGame/...` 开头的包名需复制到不以 `-` 开头的目录并在该目录内用本地 package 名导出。
-- [x] 写 `scripts/append-locomotion-animations.py`，把十六段追加到原 93 骨骼 hero.gltf；原 18 段保留，基础合计 34 段；后续 ALS 方向/飞行/跳跃追加到 46 段；报告：`research/world-recovery/locomotion-import.json`。
+- [x] 写 `scripts/append-locomotion-animations.py`，把十六段追加到原 93 骨骼 hero.gltf；原 18 段保留，基础合计 34 段；后续 ALS 方向/飞行/跳跃/垂直飞行追加到 49 段；报告：`research/world-recovery/locomotion-import.json`。
 - [x] 更新 `src/game/Character.ts`：低速使用 `Hero_Walk`，run 使用 `Hero_SprintRun`，JumpStart 后使用 `Hero_JumpFallFast`（对应 `HeroABS_JumpFallLoop` 的 Speed≈1250/SpeedZ≈-5000 低空样本）；`Hero_SprintSuper` 已在 30 m/s Shift 冲刺下实际渲染检查，姿态呈直立/步行而非冲刺，因此不用于默认 run（截图 `research/screenshots/play-sprint-super.jpg`）；已用真实 W/Space/Alt+W 输入截图验证无畸形。
 - [x] 已导入 `ALS_N_Walk_B/FL/FR` 与 `ALS_N_Run_B/FL/FR` 六段方向样本（UModel 需同时提供 `SKEL_Male`；总动画数 40，校验通过）；`setGroundBlend` 已建立 speed×direction 2D 权重结构，但当前 controller orient-to-velocity，方向轴暂不可见，需后续相机相对 strafe/aim 才能验证。
 - [x] 已导入 `Hero_FlyBack/Left/Right/Tame/TameFront`（总动画数 46）；`setFlyBlend` 按水平速度方向在 FlyForward/FlyForwardLow/FlyLeft/FlyRight/FlyBack 之间加权，D→FlyRight、S→FlyBack 已实测。
@@ -137,12 +137,12 @@ HeroABS_JumpFallLoop
 - [x] 已加入 1D ground blend：`Hero_Idle/Hero_Walk/Hero_SprintRun` 同时播放并按 planar speed 加权（0..3 Idle→Walk，5..8.5 Walk→Run），10 m/s 实拍无畸形；这是 `HeroABS_MoveGround` 的速度子集。
 - [ ] 恢复 `HeroABS_MoveGround` 的实际 BlendSpace 轴、过渡条件、混合时间和飞行混合空间，替换当前直接片段计时。
 - [ ] 实现 montage 攻击的 section/通知/连招/取消窗口；现有攻击时间轴仅是部分恢复。
-- [ ] 恢复 AnimNotify 行为：已解码全部 46 段 AnimSequence（24 段/116 事件/39 名称，`research/world-recovery/notify-times.json`）；脚步 notify 已驱动 8 个原版 Footstep Ogg（`?audio=0` 可关），但尘土、移动、镜头/音效和其余 notify 仍未接线。
+- [ ] 恢复 AnimNotify 行为：已解码原 46 段 AnimSequence（24 段/116 事件/39 名称，`research/world-recovery/notify-times.json`；新增 3 段垂直飞行尚未解码）；脚步 notify 已驱动 8 个原版 Footstep Ogg（`?audio=0` 可关），但尘土、移动、镜头/音效和其余 notify 仍未接线。
 - [x] 原版攻击挥击音 `Punch_Swish01..04`、命中/破坏 `chain_D_impacts_0201/0601`、强力攻击 `CannonExplode01..05`、空中冲刺 `Sweetener_WhooshF01..04` 已接入（清单在 `research/world-recovery/*-sound-manifest.json`）；飞行风噪 `Flourish03` 已按 `Cue_FlyingWindNoise` 的 1.2× pitch/.35 volume 循环并随速度调节；环境爆炸/其他变体仍未恢复。
-- [x] 46 段转换 clip 的 root joint translation 全部为 0（`scripts/audit-root-motion.mjs`，`research/world-recovery/root-motion-audit.json`），素材是 in-place；位移由 PlayerMotor 驱动。
+- [x] 49 段转换 clip 的 root joint translation 全部为 0（`scripts/audit-root-motion.mjs`，`research/world-recovery/root-motion-audit.json`），素材是 in-place；位移由 PlayerMotor 驱动。
 - [ ] AnimBP 的 root-motion/notify 逻辑仍未恢复；当前素材没有可提取的 root motion。
 - [ ] 惯性 / 转向 / 空中控制与原始一致。
-- [x] 数据级校验：`npm run verify:locomotion` 检查 46 段动画的四元数范数、NaN、关节覆盖；报告 `research/world-recovery/locomotion-frame-validation.json`（<5e-8，无 NaN；部分 PSA config 删除配饰轨道故为 68 关节）。
+- [x] 数据级校验：`npm run verify:locomotion` 检查 49 段动画的四元数范数、NaN、关节覆盖；报告 `research/world-recovery/locomotion-frame-validation.json`（<5e-8，无 NaN；部分 PSA config 删除配饰轨道故为 68 关节）。
 - [ ] 验证方法：在真实 gameplay 同一帧读原程序骨骼/动画状态，与 Web 同帧骨骼比较；不能只看截图。
 - [ ] 验收标准：逐帧（至少逐关键帧）骨骼旋转/位移在容差内，无穿插/畸形，状态转移与原始一致。
 
