@@ -70,13 +70,21 @@ if (originalHudMode) {
 }
 const minimapImage = new Image();
 const minimapPlayerImage = new Image();
+const minimapFireIcon = new Image();
+const minimapAccidentIcon = new Image();
 let minimapReady = false;
 let minimapPlayerReady = false;
+let minimapFireReady = false;
+let minimapAccidentReady = false;
 minimapImage.onload = () => { minimapReady = true; };
 minimapImage.onerror = () => { minimapReady = false; };
 minimapImage.src = '/assets/world/minimap/static.png';
 minimapPlayerImage.onload = () => { minimapPlayerReady = true; };
 minimapPlayerImage.src = '/assets/world/minimap/player.png';
+minimapFireIcon.onload = () => { minimapFireReady = true; };
+minimapFireIcon.src = '/assets/world/minimap/icon-fire.png';
+minimapAccidentIcon.onload = () => { minimapAccidentReady = true; };
+minimapAccidentIcon.src = '/assets/world/minimap/icon-accident.png';
 // Recovered T_StaticMinimap_Tex covers exactly [-1300, 1300] m on both axes.
 // The HUD crops to the city island (source pixels 210..760) so the ocean margin
 // is not shown; icon layout is still unresolved.
@@ -91,6 +99,17 @@ const drawMinimap = (position: number[], yaw: number) => {
   if (!context) return;
   context.clearRect(0, 0, MINIMAP_PIXELS, MINIMAP_PIXELS);
   context.drawImage(minimapImage, MINIMAP_SOURCE_ORIGIN, MINIMAP_SOURCE_ORIGIN, MINIMAP_SOURCE_SIZE, MINIMAP_SOURCE_SIZE, 0, 0, MINIMAP_PIXELS, MINIMAP_PIXELS);
+  const nearbyQuests = [...questAreas]
+    .sort((a, b) => Math.hypot(a.position[0] - position[0], a.position[2] - position[2]) - Math.hypot(b.position[0] - position[0], b.position[2] - position[2]))
+    .slice(0, 8);
+  for (const area of nearbyQuests) {
+    const qx = ((area.position[0] - MINIMAP_WORLD_MIN) / MINIMAP_WORLD_SPAN) * MINIMAP_PIXELS;
+    const qy = ((MINIMAP_WORLD_MIN + MINIMAP_WORLD_SPAN - area.position[2]) / MINIMAP_WORLD_SPAN) * MINIMAP_PIXELS;
+    if (qx < -16 || qy < -16 || qx > MINIMAP_PIXELS + 16 || qy > MINIMAP_PIXELS + 16) continue;
+    const icon = area.kind === 'fire' ? minimapFireIcon : minimapAccidentIcon;
+    const ready = area.kind === 'fire' ? minimapFireReady : minimapAccidentReady;
+    if (ready) context.drawImage(icon, qx - 12, qy - 12, 24, 24);
+  }
   const markerX = ((position[0] - MINIMAP_WORLD_MIN) / MINIMAP_WORLD_SPAN) * MINIMAP_PIXELS;
   const markerY = ((MINIMAP_WORLD_MIN + MINIMAP_WORLD_SPAN - position[2]) / MINIMAP_WORLD_SPAN) * MINIMAP_PIXELS;
   context.save();
@@ -272,9 +291,9 @@ try {
     }
     if (crosswalkMarkers.length) el('hud-crosswalk-row').hidden = false;
   }
+  const quests = await fetch('/assets/world/quest-areas.json').then(response => response.ok ? response.json() : null).catch(() => null) as { areas?: QuestArea[] } | null;
+  questAreas = quests?.areas ?? [];
   if (params.get('quests') === '1') {
-    const quests = await fetch('/assets/world/quest-areas.json').then(response => response.ok ? response.json() : null).catch(() => null) as { areas?: QuestArea[] } | null;
-    questAreas = quests?.areas ?? [];
     if (questAreas.length) el('hud-quest-row').hidden = false;
     for (const area of questAreas) {
       const marker = CreateTorus(`quest/${area.id}`, { diameter: 1.6, thickness: 0.14, tessellation: 24 }, viewer.scene);

@@ -115,7 +115,7 @@ DirectionalLight_1 rotation = (-48.61, -55.40, 0)
 - 原版 `BP_WorldCaptureCamera` 用正交 `SCS_BaseColor` capture 生成该图；
 - 原版 HUD 通过 `M_NewMiniMapSystem` / `NewMiniMap_Widget` 使用它。
 
-底图文件：`minimap-static.png`。Web 默认 HUD 接入该底图、原版 `map250` 墨迹边框和 `T_PlayerIcon` 玩家箭头，并按 `WorldOrigin/BoxExtent` 的 `[-1300,1300] m` 映射绘制玩家位置；`?hud=help` 才显示探索面板。原版边框随状态的绿/红着色、任务图标和缩放材质仍未完全恢复。
+底图文件：`minimap-static.png`。Web 默认 HUD 接入该底图、原版 `map250` 墨迹边框和 `T_PlayerIcon` 玩家箭头，并按 `WorldOrigin/BoxExtent` 的 `[-1300,1300] m` 映射绘制玩家位置；`?hud=help` 才显示探索面板。另用恢复的 `quest_fire` / `quest_accident` 图标，按最近 8 个任务触发点绘制；这不是原版 active-quest 图标状态机，边框随状态的绿/红着色和缩放材质仍未完全恢复。
 
 ![原版 gameplay 起点 vs Web（原版 HUD + 亮度校准 + 边框着色）](comparison-live-gameplay-start-final.jpg)
 

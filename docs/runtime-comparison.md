@@ -26,7 +26,7 @@ rot          = (-10, 90, 0)
 
 同一建筑区域实测亮度：原版 mean 55.8 / std 31.3；Web 未校准 mean 86.1 / std 41.7；Web `exposure=0.55` 后 mean 58.4 / std 31.0；再加默认预览 SSAO 后 mean 55.6 / std 30.1。默认采用 exposure=0.55 + 预览 SSAO（`?exposure=1` / `?ssao=0` 关闭），它只对齐同机位整体亮度/对比和接触暗部，不是原版 UE 自动曝光/tone curve/AO/lightmap 重建。
 
-边框随状态的绿/红着色、任务图标和原版缩放材质尚未恢复，所以 HUD 仍未等价。
+边框随状态的绿/红着色、任务图标和原版缩放材质尚未完全恢复，所以 HUD 仍未等价。当前 Web 用恢复的 `quest_fire` / `quest_accident` 图标按最近 8 个任务触发点绘制；这是预览布局，不是原版 active-quest 状态机。
 
 ![原程序与 Web 对照](../research/runtime-observation/comparison-character-camera.jpg)
 
