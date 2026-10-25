@@ -1,5 +1,26 @@
 # UNDEFEATED Web
 
+> **Current status (2026-10-25): partial reconstruction, not a complete port.**
+>
+> Gate 1 (real gameplay transform) and Gate 2 (same camera/FOV) are complete.
+> Gate 3 (baked lighting/materials/sky/HUD) and Gate 4 (exact BlendSpace and
+> full transition/notify state logic) remain open.
+>
+> Current playable slice: `?view=play` — original 93-bone hero, 49 original
+> animation clips, recovered movement/flight samples, group crossfades, combat
+> timing, original footstep/attack/impact/ability/wind audio, and the recovered
+> minimap stack. Same-camera content luma: Web 56.03 / std 30.42 vs original
+> 55.73 / 31.34.
+>
+> Start here: [docs/restoration-status.md](docs/restoration-status.md).
+> Remaining work: [docs/todo-restoration.md](docs/todo-restoration.md).
+> Latest evidence: [comparison-latest.jpg](research/runtime-observation/comparison-latest.jpg).
+>
+> Original/derived game assets are local and Git-ignored. A clean checkout needs
+> the local asset pipeline before rendering. Do not treat asset counts as
+> whole-game completion, and do not call this a faithful port until the gates pass.
+
+
 > 2026-10-24纠偏：用户要求全面REA逆向及原版还原。当前Web仅为部分原资产的重建演示，不符合完整移植验收；已暂停新玩法扩展，正在补原程序、完整关卡、材质和逻辑证据。见[纠偏与逆向覆盖报告](research/rea-audit/README.md)。
 
 独立项目位置：`E:/undefeated-web`。
