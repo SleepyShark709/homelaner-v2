@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "2cc38c3",
+  "validatedCommit": "05df0fe",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -158,5 +158,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "All automated checks pass after recovering 33 AnimBP transition crossfade timings at 2cc38c3. The Web transition code does not apply them yet."
+  "note": "All automated checks pass after wiring group-weight crossfades at 05df0fe (0.2 s default, 0.55 s JumpStart exit; 0.25/0.10 s edge cases pending)."
 }
