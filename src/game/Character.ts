@@ -167,50 +167,65 @@ export class Character {
 
   private setFlyBlend(vertical: number, planar: number, velocityX: number, velocityZ: number): void {
     if (this.fade) return;
-    // HeroABS_FlyingUpDonwAnim samples: FlyUp +6000, FlyDown -6000,
-    // FlyFastDown -3333/-1333, FlyForward at Speed 6000.
-    if (vertical > 1.5) { this.setLoop('Hero_FlyUp'); return; }
-    if (vertical < -6) { this.setLoop('Hero_FlyFastDown'); return; }
-    if (vertical < -1.5) { this.setLoop('Hero_FlyDown'); return; }
+    // HeroABS_FlyingUpDonwAnim samples: FlyUp +2666, FastUp +6000,
+    // FlyDown -1333/-3333, Tame -4000, FastDown -4666, BulletDive -6000 cm/s.
+    if (vertical > 13) { this.setLoop('Hero_FlyUp'); return; }
+    if (vertical < -35) { this.setLoop('Hero_FlyFastDown'); return; }
+    if (vertical < -13) { this.setLoop('Hero_FlyDown'); return; }
     if (planar <= 1) { this.setLoop('Hero_IdleFlying'); return; }
-    const forwardName = planar > 55 ? 'Hero_FlyFastSprint' : planar > 30 ? 'Hero_FlyForward' : planar > 12 ? 'Hero_FlyForwardLow' : 'Hero_FlyTame';
-    const forwardRatio = forwardName === 'Hero_FlyTame'
-      ? Math.max(0.6, Math.min(1.2, planar / 12))
-      : forwardName === 'Hero_FlyForwardLow'
-        ? Math.max(0.7, Math.min(1.4, planar / 30))
-        : forwardName === 'Hero_FlyForward'
-          ? Math.max(0.7, Math.min(1.4, planar / 55))
-          : Math.max(0.7, Math.min(1.4, planar / 70));
-    const forward = this.groupFor(forwardName);
+    const idleFlying = this.groupFor('Hero_IdleFlying');
+    const low = this.groupFor('Hero_FlyForwardLow');
+    const mid = this.groupFor('Hero_FlyForward');
+    const fast = this.groupFor('Hero_FlyFastForward1');
     const left = this.groupFor('Hero_FlyLeft');
     const right = this.groupFor('Hero_FlyRight');
     const back = this.groupFor('Hero_FlyBack');
-    if (!forward || !left || !right || !back) { this.setLoop(forwardName); return; }
+    if (!idleFlying || !low || !mid || !fast || !left || !right || !back) { this.setLoop('Hero_FlyForward'); return; }
+    // HeroABS_FlyingMoveAnim samples: Y speed 0/1200/3000/4200/6000 cm/s.
+    const speed = planar * 100;
+    const forwardWeights = speed <= 0
+      ? { idle: 1, low: 0, mid: 0, fast: 0 }
+      : speed < 1200
+        ? { idle: 1 - speed / 1200, low: speed / 1200, mid: 0, fast: 0 }
+        : speed < 3000
+          ? { idle: 0, low: 1 - (speed - 1200) / 1800, mid: (speed - 1200) / 1800, fast: 0 }
+          : speed < 4200
+            ? { idle: 0, low: 0, mid: 1, fast: 0 }
+            : speed < 6000
+              ? { idle: 0, low: 0, mid: 1 - (speed - 4200) / 1800, fast: (speed - 4200) / 1800 }
+              : { idle: 0, low: 0, mid: 0, fast: 1 };
     const sin = Math.sin(this.yaw), cos = Math.cos(this.yaw);
     const localForward = velocityX * sin + velocityZ * cos;
     const localRight = velocityX * cos - velocityZ * sin;
     const angle = Math.atan2(-localRight, localForward) * 180 / Math.PI;
     const a = Math.abs(angle);
-    const direction = a <= 90
+    // Side samples sit at +/-108 degrees, not +/-90.
+    const direction = a <= 108
       ? angle >= 0
-        ? { F: (90 - a) / 90, L: 0, R: a / 90, B: 0 }
-        : { F: (90 - a) / 90, L: a / 90, R: 0, B: 0 }
+        ? { F: (108 - a) / 108, L: 0, R: a / 108, B: 0 }
+        : { F: (108 - a) / 108, L: a / 108, R: 0, B: 0 }
       : angle >= 0
-        ? { F: 0, L: 0, R: (180 - a) / 90, B: (a - 90) / 90 }
-        : { F: 0, L: (180 - a) / 90, R: 0, B: (a - 90) / 90 };
-    const combined: Array<[AnimationGroup, number]> = [
-      [forward, direction.F], [left, direction.L], [right, direction.R], [back, direction.B],
+        ? { F: 0, L: 0, R: (180 - a) / 72, B: (a - 108) / 72 }
+        : { F: 0, L: (180 - a) / 72, R: 0, B: (a - 108) / 72 };
+    const combined: Array<[AnimationGroup, number, number]> = [
+      [idleFlying, forwardWeights.idle * direction.F, 1],
+      [low, forwardWeights.low * direction.F, Math.max(0.7, Math.min(1.4, speed / 1200))],
+      [mid, forwardWeights.mid * direction.F, Math.max(0.7, Math.min(1.4, speed / 3000))],
+      [fast, forwardWeights.fast * direction.F, Math.max(0.8, Math.min(1.5, speed / 6000))],
+      [left, direction.L, Math.max(0.7, Math.min(1.4, speed / 3000))],
+      [right, direction.R, Math.max(0.7, Math.min(1.4, speed / 3000))],
+      [back, direction.B, Math.max(0.7, Math.min(1.4, speed / 3000))],
     ];
     const total = combined.reduce((sum, [, weight]) => sum + weight, 0);
     const active = new Set(combined.map(([group]) => group));
     this.animations.forEach(group => { if (!active.has(group)) group.stop(); });
-    let dominant = forwardName, dominantWeight = -1;
-    for (const [group, weight] of combined) {
+    let dominant = 'Hero_FlyForward', dominantWeight = -1;
+    for (const [group, weight, ratio] of combined) {
       const normalized = total > 0 ? weight / total : 0;
       if (!group.isPlaying) group.start(true);
       group.weight = normalized;
       group.setWeightForAllAnimatables(normalized);
-      group.speedRatio = group === forward ? forwardRatio : 1;
+      group.speedRatio = ratio;
       if (normalized > dominantWeight) { dominantWeight = normalized; dominant = group.name; }
     }
     this.transition = null;

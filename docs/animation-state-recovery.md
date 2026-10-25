@@ -67,13 +67,8 @@ jump  -> Hero_JumpFallFast   # 下落循环；对应 HeroABS_JumpFallLoop 的 Sp
 hover -> Hero_IdleFlying
 fly   -> Hero_FlyForward
 
-垂直优先：
-  velY > 1.5   -> Hero_FlyUp
-  velY < -6    -> Hero_FlyFastDown
-  velY < -1.5  -> Hero_FlyDown
-  否则前飞 >7  -> Hero_FlyForward
-  前飞 1..7    -> Hero_FlyForwardLow
-  悬停         -> Hero_IdleFlying
+垂直采样：FlyUp +2666、FlyDown -1333/-3333、Tame -4000、FastDown -4666、BulletDive -6000 cm/s；当前用 >13 m/s FlyUp、<-35 FastDown、<-13 FlyDown 的近似阈值。
+水平：IdleFlying 0 → FlyForwardLow 1200 → FlyForward 3000/4200 → FlyFastForward1 6000 cm/s 加权；侧向样本在 ±108°。
 ```
 
 已加的最小直接状态链（不是 AnimBP 的混合/条件曲线）：
@@ -152,8 +147,9 @@ ALS_N_Run_B / FL / FR
 已从 pak 导出并追加 `Hero_FlyBack/Left/Right/Tame/TameFront`，总动画数 **46**。`Character.setFlyBlend()`：
 
 ```text
-FlyUp / FlyDown / FlyFastDown 保留垂直优先级
-水平方向按 local velocity 在 FlyForward(低)/FlyForwardLow/FlyLeft/FlyRight/FlyBack 之间加权
+FlyUp / FlyDown / FlyFastDown 保留垂直优先级（阈值来自 FlyingUpDonw 采样尺度）
+水平方向按 FlyingMoveAnim 的 0/1200/3000/4200/6000 cm/s 样本加权
+侧向/后退样本在 ±108°/180°
 hover -> Hero_IdleFlying
 ```
 
@@ -164,16 +160,16 @@ D（右移） -> Hero_FlyRight
 S（后退） -> Hero_FlyBack, speed 40
 ```
 
-前向样本按 `HeroABS_FlyingMoveAnim` 的速度轴近似选择：
+前向样本按 `HeroABS_FlyingMoveAnim` 的实际采样加权，而不是单段阈值：
 
 ```text
-<=12 m/s   FlyTame
-12..30     FlyForwardLow
-30..55     FlyForward
->55        FlyFastSprint
+速度 0        Hero_IdleFlying
+1200 cm/s     Hero_FlyForwardLow
+3000/4200     Hero_FlyForward
+6000          Hero_FlyFastForward1
 ```
 
-24.5 m/s 实测返回 `Hero_FlyForwardLow`；42.3 m/s 返回 `Hero_FlyForward`；66.6 m/s 加速档返回 `Hero_FlyFastSprint`。
+18.4 m/s 实测主导 `Hero_FlyForwardLow`；24+ m/s 开始由 `Hero_FlyForward` 主导；D→`Hero_FlyRight`、S→`Hero_FlyBack` 不变。侧向混合角为 ±108°，不是 ±90°。
 
 报告：[fly-directional-import.json](../research/world-recovery/fly-directional-import.json)
 

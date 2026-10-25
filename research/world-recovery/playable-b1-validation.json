@@ -13,7 +13,7 @@
       "textureFailures": 0,
       "unresolvedMaterialCacheKeys": 0,
       "ambiguousSlots": 0,
-      "fps": 89.73975471213787,
+      "fps": 80.66684592503105,
       "activeMeshes": 0,
       "warning": "",
       "scope": "",
@@ -125,18 +125,18 @@
           "stats": {
             "position": [
               -55.76230104089271,
-              15.73838888888892,
+              14.987455555555584,
               -567.6134951469129
             ],
             "velocity": [
               0,
-              30.37866666666672,
+              29.354666666666716,
               0
             ],
             "flying": true,
             "grounded": false,
             "state": "hover",
-            "speed": 30.37866666666672,
+            "speed": 29.354666666666716,
             "charge": 0
           },
           "clip": "Hero_FlyUp",
@@ -146,7 +146,7 @@
           "stats": {
             "position": [
               -55.76230104089271,
-              3.575366666666712,
+              0.7487000000000392,
               -567.6134951469129
             ],
             "velocity": [
@@ -187,9 +187,9 @@
         "sprinting": {
           "stats": {
             "position": [
-              -53.815707419127904,
+              -53.73504510968742,
               0.47000000000000003,
-              -552.0913670263981
+              -551.9493670263682
             ],
             "velocity": [
               -9.679477132857153,
@@ -208,8 +208,8 @@
         "evidence": {
           "walkDistance": 16.921193554897286,
           "jumpHeight": 3.876388888888885,
-          "ascendDelta": 11.392000000000035,
-          "descendDelta": -12.163022222222208,
+          "ascendDelta": 10.641066666666699,
+          "descendDelta": -14.238755555555546,
           "sprintSpeed": 9.679477132857153
         }
       },
@@ -221,7 +221,7 @@
       },
       "browser": "Chrome/156.0.8078.48",
       "url": "http://127.0.0.1:4178/?view=play&debug=1",
-      "durationMs": 46045,
+      "durationMs": 43836,
       "screenshot": "research/screenshots/play-b1.jpg"
     }
   ],
