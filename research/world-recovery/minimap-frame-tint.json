@@ -1,0 +1,13 @@
+{
+  "source": "public\\assets\\world\\minimap\\frame-tint.png",
+  "sourceSha256": "b449cebef6073924bf87b2b5349ab5a24609d8a1e6d7d433f72e5a3f6c65718a",
+  "output": "public\\assets\\world\\minimap\\frame-tint-red.png",
+  "outputSha256": "886702e8a94c883862afefff580c8c48d7e28351e3a076b5d8a5700e469cb0bc",
+  "rgb": [
+    178,
+    28,
+    20
+  ],
+  "method": "preserve recovered frame alpha, replace RGB with start-state red",
+  "evidence": "The original gameplay-start capture (research/runtime-observation/original-gameplay-start-final.png) shows the red anger/alert minimap frame; the green/brown frame-tint.png does not match that state."
+}

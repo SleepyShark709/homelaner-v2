@@ -47,7 +47,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <kbd>R</kbd><span>回到出生点</span>
     </div>
   </aside>
-  <div class="play-minimap" id="minimap-wrap" hidden><canvas id="minimap" width="420" height="420" aria-label="原版 minimap 底图与玩家位置"></canvas><img class="play-minimap-frame" src="/assets/world/minimap/frame.png" alt=""><img class="play-minimap-tint" src="/assets/world/minimap/frame-tint.png" alt=""></div>
+  <div class="play-minimap" id="minimap-wrap" hidden><canvas id="minimap" width="420" height="420" aria-label="原版 minimap 底图与玩家位置"></canvas><img class="play-minimap-frame" src="/assets/world/minimap/frame.png" alt=""><img class="play-minimap-tint" src="/assets/world/minimap/frame-tint-red.png" alt=""></div>
   <div class="play-hud"><div>位置 <b id="hud-position">—</b></div><div>状态 <b id="hud-mode">—</b></div><div>速度 <b id="hud-speed">—</b></div><div id="hud-free-row" hidden>破坏 <b id="hud-destroyed">0</b> · 命中 <b id="hud-hits">0</b></div><div id="hud-quest-row" hidden>任务区域 <b id="hud-quests">—</b></div><div id="hud-crosswalk-row" hidden>人行横道 <b id="hud-crosswalk">—</b></div><div>FPS <b id="hud-fps">—</b></div></div>
   <div class="play-loading" id="loading"><div><strong id="load-title">装配原版可玩街区</strong><p id="load-message">读取原关卡、材质与地形…</p><progress id="progress" max="1" value="0"></progress></div></div>
   <div class="play-paused" id="paused" hidden>已暂停 · 点击继续</div>

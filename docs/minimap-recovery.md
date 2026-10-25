@@ -35,6 +35,14 @@ T_StoryPointIcon
 
 截图：`research/screenshots/minimap-tinted.jpg`。
 
+## 外框状态
+
+原版 gameplay-start 截图（`research/runtime-observation/original-gameplay-start-final.png`）中 minimap 外框是**红色 anger/alert 状态**，而当前 `frame-tint.png` 是绿/棕预览。
+
+现在用 `scripts/derive-minimap-frame-tint.py` 保留 recovered frame alpha，把 RGB 替换为起始红色 `(178,28,20)`，生成 `frame-tint-red.png` 并作为默认外框；参数/哈希在 `research/world-recovery/minimap-frame-tint.json`。
+
+这仍只是**起始状态颜色**，不是完整的 `M_MiinMapChangeVisualizer` 状态机。
+
 ## 未恢复
 
 - 原版 active/completed quest 的图标颜色/大小状态机；
