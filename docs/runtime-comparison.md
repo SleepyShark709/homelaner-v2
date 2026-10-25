@@ -18,6 +18,14 @@ rot          = (-10, 90, 0)
 
 相机位置、朝向、人物位置/比例、建筑柱/门洞和地面透视已经对上。剩余差异集中在门/窗玻璃与金属框、光照/接触阴影、材质、HUD/minimap 和角色动作。**同机位门已过，视觉等价未过。**
 
+### 原版 HUD/minimap 底图接入
+
+已恢复 `T_StaticMinimap_Tex`（1024×1024），并读取 `BP_WorldCaptureCamera` 的 `WorldOrigin=(-130000,-130000)`、`BoxExtent=(130000,130000)`、`OrthoWidth=260000`。`?hud=original` 现在隐藏自制面板，按该映射绘制原版底图和玩家箭头：
+
+![原版 gameplay 起点 vs Web 原版 HUD](../research/runtime-observation/comparison-live-gameplay-start-hud.jpg)
+
+手绘绿/红边框、任务图标和原版缩放材质尚未恢复，所以 HUD 仍未等价。
+
 ![原程序与 Web 对照](../research/runtime-observation/comparison-character-camera.jpg)
 
 ## 来源
