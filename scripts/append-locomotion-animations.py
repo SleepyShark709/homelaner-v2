@@ -25,6 +25,7 @@ REPORT = ROOT / "research/exports/locomotion/validation.json"
 CLIPS = [
     ROOT / "research/exports/locomotion/Animations/Hero_Walk.psa",
     ROOT / "research/exports/locomotion/Animations/Hero_SprintRun.psa",
+    ROOT / "research/exports/locomotion/Animations/Hero_SprintSuper.psa",
     ROOT / "research/exports/locomotion/Animations/Hero_JumpSpeed.psa",
     ROOT / "research/exports/locomotion/Animations/Hero_JumpLand.psa",
     ROOT / "research/exports/locomotion/Hero_JumpFall.psa",

@@ -1,4 +1,4 @@
-import { Scene } from '@babylonjs/core/scene';
+﻿import { Scene } from '@babylonjs/core/scene';
 import { TransformNode } from '@babylonjs/core/Meshes/transformNode';
 import { Animation } from '@babylonjs/core/Animations/animation';
 import { AnimationGroup } from '@babylonjs/core/Animations/animationGroup';
@@ -215,7 +215,7 @@ export class Character {
 
   playAction(name: string, speed: number): void {
     const group = this.groupFor(name);
-    if (!group) throw new Error(`原版动作缺失: ${name}`);
+    if (!group) throw new Error(`鍘熺増鍔ㄤ綔缂哄け: ${name}`);
     this.animations.forEach(item => item.stop());
     this.container.skeletons.forEach(skeleton => skeleton.returnToRest());
     this.action = name; this.clip = name; group.start(false, speed);
@@ -233,3 +233,5 @@ export class Character {
 
   dispose(): void { this.animations.forEach(group => group.dispose()); this.animations = []; this.container?.dispose(); this.root.dispose(); }
 }
+
+

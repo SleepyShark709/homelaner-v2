@@ -22,6 +22,16 @@
       "sourceSha256": "c86bf26a74502bad548820d71350ada92d7e6a9236f03c082d246d6fc20e20a8"
     },
     {
+      "name": "Hero_SprintSuper",
+      "frames": 37,
+      "rate": 86.33332824707031,
+      "durationSeconds": 0.41698844155497555,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Animations/Hero_SprintSuper.psa",
+      "sourceSha256": "18c9fb68c2a2132714a0e933acb06ccc0a59671905fdfd73117bd49104329898"
+    },
+    {
       "name": "Hero_JumpSpeed",
       "frames": 21,
       "rate": 63.0,
@@ -92,7 +102,7 @@
       "sourceSha256": "c484e54304d91c5c2501df92dd05190d5fdbd4ce38e1fdabff5d128182e23398"
     }
   ],
-  "outputGltfSha256": "2b8a419aa6b93e46df86cd61207c9c7766a308d353f3e1e9b98de3779b704b17",
-  "outputBufferSha256": "ff5d6b40c032e2dd265406c66359695b5fa3ffd63e662973561f4d774761acd6",
-  "animationCount": 27
+  "outputGltfSha256": "98fd8c83e79d0a7681ccc533c0041ad58eaa0df532bdf4f0b4f40b62a5809d5d",
+  "outputBufferSha256": "d39c7825edcf5648078879b95d909ba0c832df2c36241d6cdbd105f0b56ffe18",
+  "animationCount": 28
 }

@@ -32,11 +32,12 @@ Hero_Walk / Hero_SprintRun / Hero_SprintSuper
 
 ## 已导入的原版 locomotion 片段
 
-2026-10-25 已从 pak 导出以下 PSA/config，并通过 `scripts/append-locomotion-animations.py` 追加到原 93 骨骼 `public/assets/character/hero.gltf`（原有 18 段保留，共 27 段）：
+2026-10-25 已从 pak 导出以下 PSA/config，并通过 `scripts/append-locomotion-animations.py` 追加到原 93 骨骼 `public/assets/character/hero.gltf`（原有 18 段保留，共 28 段）：
 
 ```text
 Hero_Walk             31f @31.0
 Hero_SprintRun        36f @61.714
+Hero_SprintSuper      28f
 Hero_JumpSpeed        21f @63.0
 Hero_JumpLand         13f @65.0
 Hero_JumpFall         61f
@@ -50,12 +51,12 @@ Hero_Stopping_WalkRun 31f @31.0
 
 ## 当前 Web 的映射
 
-`src/game/Character.ts` 现在使用原 `hero.gltf` 的 27 段：
+`src/game/Character.ts` 现在使用原 `hero.gltf` 的 28 段：
 
 ```text
 idle  -> Hero_Idle
 walk  -> Hero_Walk           # planar speed < 4 m/s
-run   -> Hero_SprintRun      # planar speed >= 4 m/s; 还不是 HeroABS_MoveGround 混合
+run   -> Hero_SprintRun      # 前向跑步；Hero_SprintSuper 已导入但实测姿态不是正常跑步，暂不用于默认 run
 jump  -> Hero_JumpFall       # 下落循环
 hover -> Hero_IdleFlying
 fly   -> Hero_FlyFastSprint
@@ -75,7 +76,7 @@ landing -> Hero_JumpLand (once) -> Hero_Idle / Hero_Walk / Hero_SprintRun (loop)
 - 待机/飞行/攻击/跑步/跳跃下落素材已是原版；
 - 跳跃/落地/冲刺起停已有直接片段顺序；
 - **仍不是 `HeroABS_MoveGround` 的 BlendSpace**，没有原始速度/方向轴、过渡曲线、IK/通知/根运动；
-- `Hero_SprintSuper`、`ALS_N_Jump`、飞行混合空间仍未导入；
+- `ALS_N_Jump`、`HeroABS_Flying*` 和完整方向混合仍未导入；
 - 直接状态链的时长取 `AnimationGroup.getLength()`，不是 AnimBP 的精确 transition/blend 时间。
 
 ## 结论
