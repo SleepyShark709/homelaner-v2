@@ -205,18 +205,20 @@ export class Character {
     const names = {
       idle: 'Hero_Idle',
       walkF: 'Hero_Walk', walkFL: 'ALS_N_Walk_FL', walkFR: 'ALS_N_Walk_FR', walkB: 'ALS_N_Walk_B',
-      runF: 'Hero_SprintRun', runFL: 'ALS_N_Run_FL', runFR: 'ALS_N_Run_FR', runB: 'ALS_N_Run_B',
+      runF: 'Hero_SprintRun', superF: 'Hero_SprintSuper', runFL: 'ALS_N_Run_FL', runFR: 'ALS_N_Run_FR', runB: 'ALS_N_Run_B',
     } as const;
     const groups = Object.fromEntries(Object.entries(names).map(([key, name]) => [key, this.groupFor(name)])) as Record<keyof typeof names, AnimationGroup | undefined>;
     const idle = groups.idle, walkF = groups.walkF, runF = groups.runF;
     if (!idle || !walkF || !runF) return;
     const speedWeights = speed <= 3
-      ? { idle: Math.max(0, 1 - (speed - 0.15) / 2.85), walk: Math.min(1, Math.max(0, (speed - 0.15) / 2.85)), run: 0 }
-      : speed < 5
-        ? { idle: 0, walk: 1, run: 0 }
-        : speed < 8.5
-          ? { idle: 0, walk: 1 - (speed - 5) / 3.5, run: (speed - 5) / 3.5 }
-          : { idle: 0, walk: 0, run: 1 };
+      ? { idle: Math.max(0, 1 - (speed - 0.15) / 2.85), walk: Math.min(1, Math.max(0, (speed - 0.15) / 2.85)), run: 0, super: 0 }
+      : speed < 8.5
+        ? { idle: 0, walk: 1 - (speed - 3) / 5.5, run: (speed - 3) / 5.5, super: 0 }
+        : speed < 16.75
+          ? { idle: 0, walk: 0, run: 1, super: 0 }
+          : speed < 25
+            ? { idle: 0, walk: 0, run: 1 - (speed - 16.75) / 8.25, super: (speed - 16.75) / 8.25 }
+            : { idle: 0, walk: 0, run: 0, super: 1 };
     let dir = { F: 1, FL: 0, FR: 0, B: 0 };
     if (speed > 0.15) {
       const sin = Math.sin(this.yaw), cos = Math.cos(this.yaw);
@@ -241,9 +243,10 @@ export class Character {
       [groups.walkFR, speedWeights.walk * dir.FR, Math.max(0.6, Math.min(1.5, speed / 3))],
       [groups.walkB, speedWeights.walk * dir.B, Math.max(0.6, Math.min(1.5, speed / 3))],
       [groups.runF, speedWeights.run * dir.F, Math.max(0.7, Math.min(2.2, speed / 8.5))],
-      [groups.runFL, speedWeights.run * dir.FL, Math.max(0.7, Math.min(2.2, speed / 8.5))],
-      [groups.runFR, speedWeights.run * dir.FR, Math.max(0.7, Math.min(2.2, speed / 8.5))],
-      [groups.runB, speedWeights.run * dir.B, Math.max(0.7, Math.min(2.2, speed / 8.5))],
+      [groups.superF, speedWeights.super * dir.F, Math.max(0.8, Math.min(1.5, speed / 22.25))],
+      [groups.runFL, (speedWeights.run + speedWeights.super) * dir.FL, Math.max(0.7, Math.min(2.2, speed / 8.5))],
+      [groups.runFR, (speedWeights.run + speedWeights.super) * dir.FR, Math.max(0.7, Math.min(2.2, speed / 8.5))],
+      [groups.runB, (speedWeights.run + speedWeights.super) * dir.B, Math.max(0.7, Math.min(2.2, speed / 8.5))],
     ];
     const total = combined.reduce((sum, [, weight]) => sum + weight, 0);
     let dominant = 'Hero_Idle', dominantWeight = -1;

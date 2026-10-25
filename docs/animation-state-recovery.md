@@ -32,7 +32,7 @@ Hero_Walk / Hero_SprintRun / Hero_SprintSuper
 
 ## 已导入的原版 locomotion 片段
 
-2026-10-25 已从 pak 导出以下 PSA/config，并通过 `scripts/append-locomotion-animations.py` 追加到原 93 骨骼 `public/assets/character/hero.gltf`（原有 18 段保留，共 34 段）：
+2026-10-25 已从 pak 导出以下 PSA/config，并通过 `scripts/append-locomotion-animations.py` 追加到原 93 骨骼 `public/assets/character/hero.gltf`（原有 18 段保留，后续再加入 ALS 方向/飞行/跳跃共 46 段）：
 
 ```text
 Hero_Walk             31f @31.0
@@ -57,12 +57,12 @@ Hero_FlyUp
 
 ## 当前 Web 的映射
 
-`src/game/Character.ts` 现在使用原 `hero.gltf` 的 34 段：
+`src/game/Character.ts` 现在使用原 `hero.gltf` 的 46 段：
 
 ```text
 idle  -> Hero_Idle
 walk  -> Hero_Walk           # planar speed < 4 m/s
-run   -> Hero_SprintRun      # 前向跑步；Hero_SprintSuper 已导入但实测姿态不是正常跑步，暂不用于默认 run
+run   -> Hero_SprintRun      # 前向跑步；Hero_SprintSuper 在 >16.75 m/s 的高速度段按 MoveGround 样本参与混合
 jump  -> Hero_JumpFallFast   # 下落循环；对应 HeroABS_JumpFallLoop 的 Speed~1250/SpeedZ~-5000 样本
 hover -> Hero_IdleFlying
 fly   -> Hero_FlyForward
@@ -124,16 +124,19 @@ Flying State:
 
 ### 1D ground blend（2026-10-25）
 
-`Character.setGroundBlend()` 同时播放 `Hero_Idle` / `Hero_Walk` / `Hero_SprintRun`，按 planar speed 设置 normalized group weights：
+`Character.setGroundBlend()` 按 `HeroABS_MoveGround` 的实际 SampleData 速度值混合 `Hero_Idle` / `Hero_Walk` / `Hero_SprintRun` / `Hero_SprintSuper`：
 
 ```text
-0 .. 3 m/s   Idle -> Walk
-3 .. 5       Walk 1.0
-5 .. 8.5     Walk -> SprintRun
->= 8.5       SprintRun 1.0
+0 .. 3 m/s       Idle -> Walk
+3 .. 8.5         Walk -> SprintRun
+8.5 .. 16.75     SprintRun 1.0
+16.75 .. 25      SprintRun -> SprintSuper
+>= 25            SprintSuper 1.0
 ```
 
-2026-10-25 又导入了六段原版方向样本，总动画数 40：
+MoveGround 的采样 Y 值：Walk 300、SprintRun 850、SprintSuper 1675/2225/2500 cm/s。
+
+2026-10-25 又导入了六段原版方向样本，总动画数 46：
 
 ```text
 ALS_N_Walk_B / FL / FR
@@ -146,7 +149,7 @@ ALS_N_Run_B / FL / FR
 
 ### 飞行方向样本（2026-10-25）
 
-已从 pak 导出并追加 `Hero_FlyBack/Left/Right/Tame/TameFront`，总动画数 **45**。`Character.setFlyBlend()`：
+已从 pak 导出并追加 `Hero_FlyBack/Left/Right/Tame/TameFront`，总动画数 **46**。`Character.setFlyBlend()`：
 
 ```text
 FlyUp / FlyDown / FlyFastDown 保留垂直优先级
@@ -210,10 +213,10 @@ movingRootClips  []
 
 `HeroABS_MoveGround` 的样本速度轴以 850 cm/s（8.5 m/s）为 run 基准；Web 的 `Hero_SprintRun` 播放速率改为 `planarSpeed / 8.5`（0.7..2.2），`Hero_Walk` 改为 `planarSpeed / 3`（0.6..1.5），不再使用固定的 6/1.5 基准。10 m/s 普通跑步截图 `research/screenshots/play-run-ratio.jpg` 无畸形。
 
-`Hero_SprintSuper` 在 30 m/s 的 Shift 冲刺下已实际渲染检查（`research/screenshots/play-sprint-super.jpg`）：角色呈直立/步行姿态，没有原版冲刺应有的前倾和摆腿。因此当前 Shift 冲刺继续使用 `Hero_SprintRun`，不把 `Hero_SprintSuper` 当作普通冲刺片段；仍保留该导入片段供后续 BlendSpace 验证。
+`Hero_SprintSuper` 在 30 m/s 的 Shift 冲刺下已实际渲染检查（`research/screenshots/play-sprint-super.jpg`）：单段姿态看起来偏直立。但 `HeroABS_MoveGround` 的实际 SampleData 在 1675/2225/2500 cm/s 明确使用 `Hero_SprintSuper`，因此高速度段（>16.75 m/s）现在按样本权重使用它；30 m/s 时 clip 回到 `Hero_SprintSuper`。若后续逐帧对照证明导入片段姿态有误，应修正转换/骨骼轨道，而不是继续忽略该原版样本。
 
 
-`npm run verify:locomotion` 会检查整个 `hero.gltf` 的 34 段动画：
+`npm run verify:locomotion` 会检查整个 `hero.gltf` 的 46 段动画：
 
 - 每段旋转通道关节数：基础/多数原版片段 93；部分 PSA config 主动删除了头发/配饰骨骼的旋转轨道，因此为 68；
 - 四元数范数误差 < 5e-8；
