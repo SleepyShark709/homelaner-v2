@@ -85,6 +85,14 @@ export class Character {
       // self-shadow acne flickers across the body while running/attacking.
       // The hero still casts a stable shadow onto the world.
       shadows?.addShadowCaster(mesh);
+      // M_ShadowTrim and the glasses are decorative coplanar overlays. Without
+      // a polygon offset they z-fight against the body/lens at grazing angles,
+      // which shows up as local flicker while running or after an attack.
+      const material = mesh.material;
+      if (material && /ShadowTrim|Sunglasses|GlassLens/i.test(material.name)) {
+        material.zOffset = -1;
+        material.zOffsetUnits = -1;
+      }
     });
     if (skin === 'homelander') {
       await this.loadRetargetedAnimations();

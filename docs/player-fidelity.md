@@ -71,6 +71,19 @@ WA run    25.2 fps
 
 所以不是“移动时 CPU 掉帧”，更多是动画相位/自阴影造成的视觉顿挫。仍需实机确认。
 
+### 追加：共面装饰层 z-fighting
+
+`M_ShadowTrim`（身体/头发装饰阴影层）和墨镜镜片是共面 overlay，默认 `zOffset=0`，在斜跑/攻击后视角变化时会出现局部闪烁。
+
+已设置：
+
+```text
+M_ShadowTrim -> zOffset=-1, zOffsetUnits=-1
+MI_Sunglasses_003 / M_GlassLens_master_Black -> zOffset=-1, zOffsetUnits=-1
+```
+
+探针确认 2 个 `M_ShadowTrim` 和 4 个墨镜 primitive 都已生效。若闪烁是局部黑/白斑，这一项应优先观察。
+
 ## 验收方式
 
 - `?view=play` 硬刷新后观察 idle/走/跑/跳/飞；
