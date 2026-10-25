@@ -1,9 +1,12 @@
-﻿(async () => {
+(async () => {
   const play = window.__undefeatedPlay;
   if (!play) throw new Error('play debug hook missing; open ?view=play&debug=1');
   const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const key = (type, code) => window.dispatchEvent(new KeyboardEvent(type, { code, bubbles: true }));
   const state = () => ({ stats: play.player.stats(), clip: play.character.clip, active: play.input.active });
+  // The first frames after ?ready=play can still be resolving the terrain pose.
+  for (let i = 0; i < 50 && !play.player.stats().grounded; i++) await wait(100);
+  await wait(300);
   const start = state();
   if (!start.stats.grounded) throw new Error('player did not settle on terrain');
   if (start.clip !== 'Hero_Idle') throw new Error(`unexpected idle clip ${start.clip}`);
