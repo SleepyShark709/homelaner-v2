@@ -1,4 +1,4 @@
-import assert from 'node:assert/strict';
+﻿import assert from 'node:assert/strict';
 import { PlayerMotor } from '../src/game/PlayerMotor.ts';
 class Keys {
   yaw = Math.PI; down = new Set(); edges = new Set();
@@ -13,7 +13,7 @@ const bounds = { min: [-400, 0, -400], max: [400, 100, 400] };
 const motor = new PlayerMotor([0, .001, 0], [floor], bounds), input = new Keys();
 const tick = (seconds, target = motor, keys = input) => { for (let i = 0; i < seconds * 120; i++) target.update(1 / 120, keys); };
 tick(.1); assert.ok(motor.grounded); assert.ok(motor.position[1] >= 0);
-input.press('KeyW'); tick(1); assert.ok(motor.position[2] < -9); assert.equal(motor.state, 'run');
+input.press('KeyW'); tick(1); assert.ok(motor.position[2] < -7); assert.equal(motor.state, 'run');
 input.clear(); tick(.3); assert.equal(motor.state, 'idle'); assert.equal(motor.velocity[2], 0);
 input.press('Space'); tick(.15); assert.ok(motor.position[1] > 2); assert.equal(motor.flying, false);
 input.clear(); input.press('Space'); tick(.1); assert.equal(motor.flying, true);
@@ -28,6 +28,8 @@ boostKeys.press('KeyF'); boostKeys.press('KeyW'); boostKeys.press('ShiftLeft'); 
 assert.ok(boost.position[2] > -10.641 && boost.position[2] < -10.63); assert.equal(boost.velocity[2], 0);
 const step = { id: 'curb', min: [-5, 0, -10], max: [5, .15, -2] };
 const walker = new PlayerMotor([0, .001, 0], [floor, step], bounds); const walkKeys = new Keys();
-walkKeys.press('KeyW'); tick(.7, walker, walkKeys);
+walkKeys.press('KeyW'); tick(1, walker, walkKeys);
 assert.ok(walker.position[2] < -5 && walker.position[1] > .149 && walker.position[1] < .16);
 console.log('Movement integration passed: ground, run/brake, jump, second-jump flight, 70m/s boost, hover, landing, reset, high-speed wall.');
+
+

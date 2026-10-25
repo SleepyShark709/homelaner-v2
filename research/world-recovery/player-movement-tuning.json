@@ -21,7 +21,11 @@
     "MaxWalkSpeed": "10 m/s (TUNING.walk)",
     "JumpZVelocity": "20 m/s (TUNING.jump)",
     "MaxFlySpeed": "40 m/s (TUNING.fly)",
-    "gravity": "9.81*5 m/s^2 (TUNING.gravity)"
+    "gravity": "9.81*5 m/s^2 (TUNING.gravity)",
+    "acceleration": "20.48 m/s^2 (original walk 2048 cm/s^2)",
+    "sprintAcceleration": "150 m/s^2 (original sprint 15000 cm/s^2)",
+    "braking": "60 m/s^2 authored approximation for the high BrakingFrictionFactor/UE stopping behavior",
+    "flyAcceleration": "70 m/s^2 authored; original doc lists 4096 cm/s^2 for flying, not yet matched"
   },
-  "note": "Recovered CharacterMovement defaults; Web jump/gravity/fly/walk speeds now match JumpZVelocity=2000cm/s with GravityScale=5 (4m jump), MaxFlySpeed=4000cm/s and MaxWalkSpeed=1000cm/s. Braking/acceleration remain approximate."
+  "note": "Recovered CharacterMovement defaults; Web uses the original walk/sprint acceleration values, JumpZVelocity=2000 with GravityScale=5, MaxFlySpeed=4000 and AirControl=1. Braking and fly acceleration remain approximate."
 }

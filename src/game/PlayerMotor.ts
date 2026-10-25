@@ -2,7 +2,7 @@ import { firstHit, moveAndSlide } from './collision.ts';
 import type { Bounds, Obstacle, Vec3 } from './collision';
 import type { Input } from './Input';
 
-export const TUNING = { walk: 10, sprint: 30, fly: 40, boost: 70, acceleration: 150, jump: 20, gravity: 9.81 * 5, height: 1.92, radius: 0.36 };
+export const TUNING = { walk: 10, sprint: 30, fly: 40, boost: 70, acceleration: 20.48, braking: 60, sprintAcceleration: 150, flyAcceleration: 70, jump: 20, gravity: 9.81 * 5, height: 1.92, radius: 0.36 };
 export type MotionState = 'idle' | 'run' | 'jump' | 'hover' | 'fly';
 export class PlayerMotor {
   position: Vec3;
@@ -37,9 +37,15 @@ export class PlayerMotor {
     const speed = this.flying ? (sprint ? TUNING.boost : TUNING.fly) : (sprint ? TUNING.sprint : TUNING.walk);
     if (length > 0) desired = desired.map(v => v / length * speed) as Vec3;
     const acceleration = TUNING.acceleration * dt;
+    const braking = TUNING.braking * dt;
     for (let i = 0; i < 3; i++) {
       if (i === 1 && !this.flying) { this.velocity[1] -= TUNING.gravity * dt; continue; }
-      this.velocity[i] += Math.max(-acceleration, Math.min(acceleration, desired[i] - this.velocity[i]));
+      const rate = this.flying
+        ? TUNING.flyAcceleration * dt
+        : Math.abs(desired[i]) < Math.abs(this.velocity[i])
+          ? braking
+          : (sprint ? TUNING.sprintAcceleration * dt : acceleration);
+      this.velocity[i] += Math.max(-rate, Math.min(rate, desired[i] - this.velocity[i]));
     }
     if (this.grounded && !this.flying && !jump && this.velocity[1] < 0) this.velocity[1] = -0.4;
     const delta = this.velocity.map(v => v * dt) as Vec3;
