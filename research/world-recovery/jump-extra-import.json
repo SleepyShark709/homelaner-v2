@@ -1,0 +1,18 @@
+{
+  "source": "UModel PSA + config; appendix script",
+  "clips": [
+    {
+      "name": "ALS_N_Jump",
+      "frames": 21,
+      "rate": 31.5,
+      "durationSeconds": 0.6349206349206349,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/jump-extra/AdvancedLocomotionV2/Characters/Mannequin/ActionMaleAnimation/ALS_N_Jump.psa",
+      "sourceSha256": "3daaff4acaa2cbcf0306e38393861dd35115267757cf3bd06f5ca61d589b4db2"
+    }
+  ],
+  "outputGltfSha256": "156ead08e4c9866f3b75f37d3a81f7333e86e554ffd8205b8dd0d799ca904d64",
+  "outputBufferSha256": "78e4e626b477bc45970faf43fbe05ad8d8bc682af3001822734312d21439d778",
+  "animationCount": 46
+}

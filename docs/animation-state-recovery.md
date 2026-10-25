@@ -163,6 +163,17 @@ S（后退） -> Hero_FlyBack, speed 40
 
 报告：[fly-directional-import.json](../research/world-recovery/fly-directional-import.json)
 
+### ALS_N_Jump（2026-10-25）
+
+已导入 `ALS_N_Jump`（总动画数 **46**）。起跳选择：
+
+```text
+standing / walk jump  -> ALS_N_Jump
+running jump          -> Hero_JumpSpeed
+```
+
+真实 Space 输入返回 `clip=ALS_N_Jump`，随后仍按 `JumpFallFast -> JumpLand` 前进。报告：[jump-extra-import.json](../research/world-recovery/jump-extra-import.json)
+
 空中首次远程攻击现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→K 验证返回 `clip=Hero_AirAttackStart`；连续两次 K 的结果记录在 `research/world-recovery/air-attack-chain.json`。
 
 

@@ -1,4 +1,4 @@
-﻿import { Scene } from '@babylonjs/core/scene';
+import { Scene } from '@babylonjs/core/scene';
 import { TransformNode } from '@babylonjs/core/Meshes/transformNode';
 import { Animation } from '@babylonjs/core/Animations/animation';
 import { AnimationGroup } from '@babylonjs/core/Animations/animationGroup';
@@ -311,7 +311,9 @@ export class Character {
       return;
     }
     if (tookOff && motor.state === 'jump') {
-      this.setOneShot('Hero_JumpSpeed', 'Hero_JumpFallFast');
+      // Walk/standing takeoff uses the ALS jump sample; running takeoff keeps
+      // the game-specific Hero_JumpSpeed sample.
+      this.setOneShot(planarSpeed < 4 ? 'ALS_N_Jump' : 'Hero_JumpSpeed', 'Hero_JumpFallFast');
       const created = this.transition as { holdUntilFall?: boolean } | null;
       if (created) created.holdUntilFall = true;
       return;
