@@ -62,6 +62,19 @@ fov  = 90.000
 
 这是当前用于同机位对照的真实 gameplay 起点。`PlayerCameraManager:GetFOVAngle()` 实测为 90.000；Web 同机位也必须用 FOV 90。
 
+## 光照/后处理探针
+
+`LightDump` 会枚举 `DirectionalLight` / `SkyLight` / `PostProcessVolume`，用于记录原版光照与 postprocess 参数。当前从 `LightingTest` 子关卡读到：
+
+```text
+PostProcessVolume AutoExposureMinBrightness=1.0
+                   AutoExposureMaxBrightness=8.0
+                   AutoExposureBias=0.0
+                   BloomIntensity=2.5
+```
+
+注意：这些是 `LightingTest` 子关卡参数，不代表 MainLevel 的烘焙光照；光照仍是 Gate 3 未完成项，不能把 Bloom 2.5 直接硬塞进 Web 当作等价。
+
 ## 已知限制
 
 - 菜单/标题场景也会被打印；必须确认已经进入 gameplay；

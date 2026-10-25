@@ -87,6 +87,22 @@ camera  = (-3.62, 3.2715, 70.73891) m
 
 结论：**同机位已建立，视觉等价和动作逐帧保留仍未完成。**
 
+## 光照/后处理参数探针
+
+UE4SS 读取 `LightingTest` 子关卡的 `PostProcessVolume`：
+
+```text
+AutoExposureMinBrightness = 1.0
+AutoExposureMaxBrightness = 8.0
+AutoExposureBias          = 0.0
+BloomIntensity            = 2.5
+DirectionalLight_1 rotation = (-48.61, -55.40, 0)
+```
+
+`samples` 里的 DirectionalLight/SkyLight 数值以 UObject 包装返回，暂未取到可靠标量；这些参数属于 `LightingTest` 子关卡，不等于 MainLevel 的烘焙光照，不能直接当作开始广场光照。
+
+尝试过用该 Bloom 值做 Web 预览后处理，但会在门框/玻璃边缘产生原版没有的白边光晕，因此已回退，未作为默认效果。光照/接触阴影仍是 Gate 3 未完成项。
+
 ## minimap 静态图恢复
 
 已从 pak 恢复原版 minimap 底图：
