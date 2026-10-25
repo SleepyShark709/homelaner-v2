@@ -122,7 +122,7 @@ Flying State:
 
 ## 动画数据校验
 
-空中首次远程攻击现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→K 验证返回 `clip=Hero_AirAttackStart`。
+空中首次远程攻击现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→K 验证返回 `clip=Hero_AirAttackStart`；连续两次 K 的结果记录在 `research/world-recovery/air-attack-chain.json`。
 
 
 `HeroABS_MoveGround` 的样本速度轴以 850 cm/s（8.5 m/s）为 run 基准；Web 的 `Hero_SprintRun` 播放速率改为 `planarSpeed / 8.5`（0.7..2.2），`Hero_Walk` 改为 `planarSpeed / 3`（0.6..1.5），不再使用固定的 6/1.5 基准。10 m/s 普通跑步截图 `research/screenshots/play-run-ratio.jpg` 无畸形。

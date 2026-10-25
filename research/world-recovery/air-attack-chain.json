@@ -1,0 +1,15 @@
+{
+  "source": "scripts/probe-air-attack.js",
+  "input": ["Space", "Space", "KeyK", "wait 750ms", "KeyK"],
+  "results": {
+    "first": "Hero_AirAttackStart",
+    "second": "Hero_AirKick_L"
+  },
+  "playerState": {
+    "flying": true,
+    "grounded": false,
+    "state": "hover",
+    "position": [-9.120000000000001, 4.416874999999995, 68.739]
+  },
+  "conclusion": "The first airborne ranged attack enters the recovered AirAttack state via Hero_AirAttackStart; the second uses Hero_AirKick_L. This matches the decoded HeroAnimBP Jump/Falling AirAttack state."
+}
