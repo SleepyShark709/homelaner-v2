@@ -1,0 +1,37 @@
+{
+  "source": "decoded UAssetGUI AnimSequence JSON",
+  "note": "AnimNotifyEvent.LinkValue is the absolute sequence time; EndLink.LinkValue is the end time.",
+  "clips": {
+    "Hero_StartSprint": [],
+    "Hero_Stopping_Sprint": [
+      {
+        "notify": "BodyMvmt_Cue",
+        "time": 0.09860118478536606,
+        "end": 0.09860118478536606,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "RunStop",
+        "time": 0.19457300007343292,
+        "end": 0.19457300007343292,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepR",
+        "time": 0.947886049747467,
+        "end": 0.947886049747467,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepL",
+        "time": 1.2068785429000854,
+        "end": 1.2068785429000854,
+        "duration": "+0",
+        "track": 0
+      }
+    ]
+  }
+}

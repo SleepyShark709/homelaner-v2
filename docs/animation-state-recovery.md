@@ -219,7 +219,16 @@ PlayFootStepR
 RunStop
 ```
 
-清单：[animation-notify-manifest.json](../research/world-recovery/animation-notify-manifest.json)。限制：UModel props 里 `TriggerTimeOffset` 全是 0，没有绝对 TriggerTime；要恢复实际触发时刻仍需 AnimSequence notify 数组/运行时。
+清单：[animation-notify-manifest.json](../research/world-recovery/animation-notify-manifest.json)。UModel props 里 `TriggerTimeOffset` 全是 0，没有绝对 TriggerTime；但 UAssetGUI 解码的 `AnimSequence` 里 `AnimNotifyEvent.LinkValue` 就是绝对时间。已对 `Hero_Stopping_Sprint` 取得：
+
+```text
+BodyMvmt_Cue  0.0986s
+RunStop       0.1946s
+PlayFootStepR 0.9479s
+PlayFootStepL 1.2069s
+```
+
+`Hero_StartSprint` 的 Notifies 为空。报告：[notify-times.json](../research/world-recovery/notify-times.json)。其余 clip 仍需逐包解码。
 
 空中首次攻击（近战 J 或远程 K）现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→J/K 均返回 `clip=Hero_AirAttackStart`；连续两次 K 的结果记录在 `research/world-recovery/air-attack-chain.json`。
 
