@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "cde7f38",
+  "validatedCommit": "964ef54",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -181,6 +181,12 @@
       "hits": 1,
       "alive": false,
       "clip": "Hero_Attack1"
+    },
+    {
+      "command": "capture-world probe-citizen-ranged-heat",
+      "exitCode": 0,
+      "ranged": "destroyed",
+      "heat": "destroyed"
     }
   ],
   "evidence": {
@@ -192,5 +198,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Plan A: default HUD hides quest icons; a real routed citizen is killed by J at cde7f38. Tests and B1 pass."
+  "note": "Plan A: K and E kill citizens; densified street 16 citizens/6 vehicles; background mountain diffuse restored at 964ef54."
 }
