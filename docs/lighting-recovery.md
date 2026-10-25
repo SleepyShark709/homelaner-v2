@@ -65,11 +65,24 @@ LODData[0].LightMap / ShadowMap / LightMapUVBias / LightMapCoordinateIndex
 
 原因是 `FLODData` / `FLightMapRef` 内部的 lightmap 引用不是反射 UPROPERTY，Lua 反射层拿不到内部字段。下一步必须用原生 C++/UE4SS SDK 或内存偏移读取，而不是继续用 Lua 猜。
 
+## UV 通道
+
+起始建筑 glTF 有 4 个 UV 通道：
+
+```text
+TEXCOORD_0  tiled，不是 lightmap UV
+TEXCOORD_1  常量 (0,1)，不可用
+TEXCOORD_2  packed，全部在 [0,1] 内   -> lightmap UV 候选
+TEXCOORD_3  packed，全部在 [0,1] 内   -> lightmap UV 候选
+```
+
+所以 mesh 端至少已经有可用的 lightmap UV 候选；仍未确认原版 `LightMapCoordinateIndex` 指向 2 还是 3。
+
 ## 下一步
 
 1. 用 UE4SS C++ mod/SDK 读取 `FLODData::LightMap` 的内部 LightMapIndex/LightMapCoordinateIndex/UVBias。
 2. 匹配到 `HQ_Lightmap0_*` 具体对象。
-3. 导出 mesh lightmap UV1 并确认 UV scale/bias。
+3. 确认 lightmap UV 是 TEXCOORD_2 还是 TEXCOORD_3，并确认 UV scale/bias。
 4. 在 Web 材质中采样原版 lightmap。
 
 ## 相关证据

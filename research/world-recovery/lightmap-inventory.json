@@ -27,5 +27,12 @@
     "LQ_Lightmap_1_65",
     "LQ_Lightmap_1_71"
   ],
-  "note": "Original HQ lightmaps exist; UV/actor mapping not reconstructed."
+  "note": "Original HQ lightmaps exist; UV/actor mapping not reconstructed.",
+  "buildingUvChannels": {
+    "mesh": "SM_MERGED_Building_2_01_9",
+    "texcoord0": "tiled, not lightmap",
+    "texcoord1": "constant (0,1), unusable",
+    "texcoord2": "packed within [0,1], lightmap candidate",
+    "texcoord3": "packed within [0,1], lightmap candidate"
+  }
 }
