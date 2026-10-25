@@ -296,7 +296,7 @@ try {
   // existing source-sun direction; only the player casts, while static scenery
   // receives. This is preview lighting, not the original shadow cascade.
   const sourceSun = viewer.scene.lights.find(light => light.name === 'source-sun-direction') as DirectionalLight | undefined;
-  if (sourceSun) {
+  if (sourceSun && params.get('shadows') !== '0') {
     shadows = new ShadowGenerator(1024, sourceSun);
     shadows.useBlurExponentialShadowMap = true;
     shadows.blurKernel = 16;
