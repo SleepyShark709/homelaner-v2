@@ -1,0 +1,15 @@
+{
+  "source": "public\\assets\\world\\textures\\Game\\UrbanCity\\Textures\\Tileable\\metal_01_d.png",
+  "sourceSha256": "ee2ddb78fedf5b1f2c7a39e719a09b391a7803f764c0f250f2ae09c5d47f8337",
+  "output": "public\\assets\\world\\textures\\Game\\UrbanCity\\Textures\\Tileable\\metal_01_d_tintC.png",
+  "outputSha256": "84d951c79ba7d2e5f470a91d8a4147ac52e17f3dc86892bfb62fe27d14103a07",
+  "tintColourLinear": [
+    0.014290999621152878,
+    0.01677599921822548,
+    0.04500000178813934
+  ],
+  "tintOpacity": 0.898036003112793,
+  "mask": "source alpha as per-texel weight",
+  "formula": "linear(sRGB) blended toward tint by tintOpacity*(alpha/255), then back to sRGB; alpha preserved",
+  "note": "Derived texture for Tilable_metal_TintC_Inst; parent -Tilable_mat detail-normal/roughness graph is not reconstructed."
+}

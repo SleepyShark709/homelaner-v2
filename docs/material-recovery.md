@@ -43,9 +43,7 @@ Tint Colour     (0.06, 0.021616, 0.001713)
 Tint Opacity    0.633027
 ```
 
-### brick_02_TintA_Inst（檐口/trim 变体）
-
-```text
+### brick_02_TintA_Inst（檐口/trim 变体）```text
 parent          /Game/UrbanCity/Materials/-Tilable_mat
 Diffuse         brick_02_d
 Normal          brick_02_n
@@ -57,6 +55,21 @@ Height          0.145475
 ```
 
 TintA 的 `Tint Opacity=0`，所以 Web 不应用它的 Tint Colour，只应用恢复的 roughness .666245；Grunge/Height（parallax）层仍未恢复。
+
+### Tilable_metal_TintC_Inst（窗框/金属）
+
+```text
+Diffuse        metal_01_d
+Normal         metal_01_n
+Detail Normal  metal detail normal
+Tint Colour    (0.014291, 0.016776, 0.045000) linear
+Tint Opacity   0.898036
+Roughness      1.849306
+Detail Normal Scale 0.599268
+Detail Normal Strength 2.380776
+```
+
+Web 用 `scripts/derive-metal-tint.py` 生成 `metal_01_d_tintC.png`，按 Tint Colour × Tint Opacity 做线性混合；roughness clamp 到 1。窗框因此变为接近原版的深蓝黑，但 detail-normal/父 `-Tilable_mat` 图仍未恢复。
 
 ## 当前 Web 状态
 
@@ -70,7 +83,7 @@ TintA 的 `Tint Opacity=0`，所以 Web 不应用它的 Tint Colour，只应用�
 - 同机位 mean luma 57.1 / std 30.7，接近原版 55.8 / 31.3，石墙从灰色回到暖棕灰；
 - **没有把 Emissive Colour 直接加到整面墙**，避免未遮罩区域错误发绿光。
 
-同机位对照图：[comparison-gate3-materials.jpg](../research/runtime-observation/comparison-gate3-materials.jpg)；单边试验截图：`research/screenshots/building-emissive-tuned.jpg`、`building-trim-roughness.jpg`。页面纹理失败 0，B1 通过。
+同机位对照图：[comparison-gate3-materials.jpg](../research/runtime-observation/comparison-gate3-materials.jpg)；单边试验截图：`research/screenshots/building-metal-tint.jpg`、`building-emissive-tuned.jpg`、`building-trim-roughness.jpg`。页面纹理失败 0，B1 通过。
 
 清单：[building-material-parameters.json](building-material-parameters.json)
 

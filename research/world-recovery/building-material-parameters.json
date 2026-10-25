@@ -42,8 +42,22 @@
       "Tint Colour": [0.05999999865889549, 0.021616000682115555, 0.0017130000051110983]
     }
   },
-  "brick_02_TintA_Inst": {
+  "Tilable_metal_TintC_Inst": {
     "parent": "/Game/UrbanCity/Materials/-Tilable_mat",
+    "diffuse": "/Game/UrbanCity/Textures/Tileable/metal_01_d",
+    "normal": "/Game/UrbanCity/Textures/Tileable/metal_01_n",
+    "scalarParameters": {
+      "Detail Normal Scale": 0.5992680191993713,
+      "Detail Normal Strength": 2.3807759284973145,
+      "Roughness": 1.8493059873580933,
+      "Tint Opacity": 0.898036003112793
+    },
+    "vectorParameters": {
+      "Tint Colour": [0.014290999621152878, 0.01677599921822548, 0.04500000178813934]
+    },
+    "webDerived": "public/assets/world/textures/Game/UrbanCity/Textures/Tileable/metal_01_d_tintC.png"
+  },
+  "brick_02_TintA_Inst": {    "parent": "/Game/UrbanCity/Materials/-Tilable_mat",
     "diffuse": "/Game/UrbanCity/Textures/Tileable/brick_02_d",
     "normal": "/Game/UrbanCity/Textures/Tileable/brick_02_n",
     "scalarParameters": {

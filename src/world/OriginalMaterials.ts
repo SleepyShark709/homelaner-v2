@@ -67,14 +67,6 @@ export class OriginalMaterials {
     if (factors.metallic != null) material.metallic = factors.metallic;
     if (factors.emissive?.length) material.emissiveColor = Color3.FromArray(factors.emissive);
     if (factors.opacity != null) material.alpha = factors.opacity;
-    if (source === '/Game/UrbanCity/Materials/Tileable/Tilable_metal_TintC_Inst') {
-      // Recovered Tint Colour / Tint Opacity from the material instance. The diffuse
-      // texture is retained; this tint replaces the unverified white fallback on the
-      // storefront mullions. Full -Tilable_mat layering is still not reconstructed.
-      material.albedoColor = new Color3(0.14, 0.145, 0.17);
-      material.metallic = 0.5;
-      material.roughness = 0.45;
-    }
     if (source === '/Game/UrbanCity/Materials/-Window_mat') {
       // Recovered master-cached parameters: the shader's Param colour is almost black-blue,
       // roughness is very low, and the emissive colour is scaled by EmissiveAmount.
@@ -130,6 +122,19 @@ export class OriginalMaterials {
       // TintA is the cream cornice/trim variant: Tint Opacity is 0, so only its
       // recovered roughness (.666245) applies; the grunge layer is still missing.
       material.roughness = 0.6662449836730957;
+    }
+    if (source === '/Game/UrbanCity/Materials/Tileable/Tilable_metal_TintC_Inst') {
+      // Recovered Tint Colour (.01429,.016776,.045 linear), Tint Opacity .898036
+      // and Roughness 1.849 (clamped). The derived texture keeps the metal_01_d
+      // detail and applies the tint in linear space.
+      material.albedoTexture = this.texture({
+        url: '/assets/world/textures/Game/UrbanCity/Textures/Tileable/metal_01_d_tintC.png',
+        colorSpace: 'srgb',
+        texCoord: 0,
+      });
+      material.albedoColor = Color3.White();
+      material.metallic = 0.5;
+      material.roughness = 1;
     }
     if (channels.normal && !allSurfaceShader) {
       const convention = channels.normal.normalConvention?.toLowerCase();
