@@ -1,23 +1,45 @@
 {
   "sourceImages": {
-    "original": "research/runtime-observation/original-gameplay-start-final.png (cropped 0,56..1312,798, resized 1280x724)",
-    "web": "research/screenshots/building-clouds-tiling.jpg (1280x720, resized 1280x724)"
+    "original": "research\\runtime-observation\\original-gameplay-start-final.png",
+    "web": "research\\screenshots\\building-clouds-tiling.jpg"
   },
   "region": {
-    "x": 300,
-    "y": 130,
-    "width": 150,
-    "height": 370,
+    "box": [
+      300,
+      130,
+      450,
+      500
+    ],
     "description": "left facade pillar stone, excluding window glass and dark trim"
   },
   "means": {
-    "original": [63.3, 61.4, 61.5],
-    "web": [70.0, 66.8, 63.0]
+    "original": [
+      63.3,
+      61.4,
+      61.5
+    ],
+    "web": [
+      70.0,
+      66.8,
+      63.0
+    ]
   },
   "stddev": {
-    "original": [29.7, 28.5, 27.3],
-    "web": [36.1, 34.0, 31.2]
+    "original": [
+      29.7,
+      28.5,
+      27.3
+    ],
+    "web": [
+      36.1,
+      34.0,
+      31.2
+    ]
   },
-  "deltaWebMinusOriginal": [6.7, 5.4, 1.5],
-  "conclusion": "The Web stone is about 7 levels brighter and more red-biased (R-B=7.0) than the original neutral stone (R-B=1.8). Reducing the recovered TintB opacity would remove the warmth but make the already-too-bright stone brighter, so the remaining difference is baked shadow/lightmap and missing grunge, not the base tint alone."
+  "deltaWebMinusOriginal": [
+    6.7,
+    5.4,
+    1.5
+  ],
+  "conclusion": "The Web stone is about 7 levels brighter and more red-biased (R-B=7.0) than the original neutral stone (R-B=1.8). Reducing the recovered TintB opacity would remove warmth but brighten it further, so the remaining gap is baked shadow/lightmap/grunge, not the base tint alone."
 }

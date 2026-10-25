@@ -95,7 +95,7 @@ Web  RGB mean (70.0, 66.8, 63.0)
 Web - 原版    (+6.7, +5.4, +1.5)
 ```
 
-Web 石材仍比原版亮约 7 级，并且偏红（Web R-B=7.0，原版 R-B=1.8）。继续降低 TintB opacity 会减轻偏红，但会让已经偏亮的石材更亮；主要剩余差异是**烘焙阴影/lightmap + 缺失 grunge**，不是基础 tint 本身。采样清单：`research/world-recovery/material-color-samples.json`。
+Web 石材仍比原版亮约 7 级，并且偏红（Web R-B=7.0，原版 R-B=1.8）。继续降低 TintB opacity 会减轻偏红，但会让已经偏亮的石材更亮；主要剩余差异是**烘焙阴影/lightmap + 缺失 grunge**，不是基础 tint 本身。采样清单：`research/world-recovery/material-color-samples.json`；可用 `python scripts/measure-material-color.py` 复现。
 
 清单：[building-material-parameters.json](building-material-parameters.json)
 
