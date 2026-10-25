@@ -126,7 +126,7 @@ const drawMinimap = (position: number[], yaw: number) => {
   // Default keeps the nearest-8 preview used for the same-camera HUD. ?minimap=all
   // shows all 21 recovered quest triggers for inspection; neither reproduces the
   // original active-quest icon state machine/colour filtering yet.
-  const nearbyQuests = params.get('minimap') === 'all'
+  const nearbyQuests = !questPreview ? [] : params.get('minimap') === 'all'
     ? questAreas
     : [...questAreas]
       .sort((a, b) => Math.hypot(a.position[0] - position[0], a.position[2] - position[2]) - Math.hypot(b.position[0] - position[0], b.position[2] - position[2]))
@@ -208,6 +208,7 @@ let population: Population | undefined;
 let shadows: ShadowGenerator | undefined;
 type QuestArea = { id: string; kind: string; position: Vec3; radius?: number };
 let questAreas: QuestArea[] = [];
+const questPreview = params.get('quests') === '1';
 let questMessageUntil = 0;
 const visitedQuests = new Set<string>();
 const crosswalkMarkers: Vec3[] = [];
@@ -597,7 +598,7 @@ try {
         for (const marker of crosswalkMarkers) nearest = Math.min(nearest, Math.hypot(marker[0] - stats.position[0], marker[2] - stats.position[2]));
         el('hud-crosswalk').textContent = `${nearest.toFixed(1)} m`;
       }
-      if (questAreas.length) {
+      if (questPreview && questAreas.length) {
         let nearest: { area: QuestArea; distance: number } | undefined;
         for (const area of questAreas) {
           const distance = Math.hypot(area.position[0] - stats.position[0], area.position[1] - stats.position[1], area.position[2] - stats.position[2]);
