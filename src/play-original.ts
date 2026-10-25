@@ -326,7 +326,8 @@ try {
   if (params.get('quests') === '1') {
     if (questAreas.length) el('hud-quest-row').hidden = false;
     for (const area of questAreas) {
-      const marker = CreateTorus(`quest/${area.id}`, { diameter: 1.6, thickness: 0.14, tessellation: 24 }, viewer.scene);
+      const diameter = Math.max(1.6, Math.min(100, (area.radius ?? 6) * 2));
+      const marker = CreateTorus(`quest/${area.id}`, { diameter, thickness: 0.14, tessellation: 32 }, viewer.scene);
       marker.position.set(area.position[0], area.position[1] + 0.3, area.position[2]);
       const material = new StandardMaterial(`quest-mat/${area.id}`, viewer.scene);
       const color = area.kind === 'fire' ? new Color3(1, 0.24, 0.03) : new Color3(0.12, 0.62, 1);
