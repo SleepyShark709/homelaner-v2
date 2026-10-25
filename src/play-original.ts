@@ -46,7 +46,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <kbd>R</kbd><span>回到出生点</span>
     </div>
   </aside>
-  <div class="play-minimap" id="minimap-wrap" hidden><canvas id="minimap" width="420" height="420" aria-label="原版 minimap 底图与玩家位置"></canvas></div>
+  <div class="play-minimap" id="minimap-wrap" hidden><canvas id="minimap" width="420" height="420" aria-label="原版 minimap 底图与玩家位置"></canvas><img class="play-minimap-frame" src="/assets/world/minimap/frame.png" alt=""></div>
   <div class="play-hud"><div>位置 <b id="hud-position">—</b></div><div>状态 <b id="hud-mode">—</b></div><div>速度 <b id="hud-speed">—</b></div><div id="hud-free-row" hidden>破坏 <b id="hud-destroyed">0</b> · 命中 <b id="hud-hits">0</b></div><div id="hud-quest-row" hidden>任务区域 <b id="hud-quests">—</b></div><div id="hud-crosswalk-row" hidden>人行横道 <b id="hud-crosswalk">—</b></div><div>FPS <b id="hud-fps">—</b></div></div>
   <div class="play-loading" id="loading"><div><strong id="load-title">装配原版可玩街区</strong><p id="load-message">读取原关卡、材质与地形…</p><progress id="progress" max="1" value="0"></progress></div></div>
   <div class="play-paused" id="paused" hidden>已暂停 · 点击继续</div>
@@ -68,14 +68,18 @@ if (originalHudMode) {
   el('minimap-wrap').hidden = false;
 }
 const minimapImage = new Image();
+const minimapPlayerImage = new Image();
 let minimapReady = false;
+let minimapPlayerReady = false;
 minimapImage.onload = () => { minimapReady = true; };
 minimapImage.onerror = () => { minimapReady = false; };
 minimapImage.src = '/assets/world/minimap/static.png';
+minimapPlayerImage.onload = () => { minimapPlayerReady = true; };
+minimapPlayerImage.src = '/assets/world/minimap/player.png';
 // Recovered T_StaticMinimap_Tex covers exactly [-1300, 1300] m on both axes.
 // The HUD crops to the city island (source pixels 210..760) so the ocean margin
 // is not shown; icon layout is still unresolved.
-const MINIMAP_SOURCE_ORIGIN = 210, MINIMAP_SOURCE_SIZE = 550;
+const MINIMAP_SOURCE_ORIGIN = 240, MINIMAP_SOURCE_SIZE = 490;
 const MINIMAP_WORLD_MIN = (MINIMAP_SOURCE_ORIGIN / 1024) * 2600 - 1300;
 const MINIMAP_WORLD_SPAN = (MINIMAP_SOURCE_SIZE / 1024) * 2600;
 const MINIMAP_PIXELS = 420;
@@ -91,28 +95,22 @@ const drawMinimap = (position: number[], yaw: number) => {
   context.save();
   context.translate(markerX, markerY);
   context.rotate(yaw);
-  context.beginPath();
-  context.moveTo(0, -15);
-  context.lineTo(10, 12);
-  context.lineTo(0, 7);
-  context.lineTo(-10, 12);
-  context.closePath();
-  context.fillStyle = '#f4f1dc';
-  context.strokeStyle = '#17130d';
-  context.lineWidth = 2;
-  context.fill();
-  context.stroke();
-  context.restore();
-  context.font = 'bold 22px Georgia,serif';
-  context.textAlign = 'center';
-  context.textBaseline = 'middle';
-  context.fillStyle = '#f4f1dc';
-  context.strokeStyle = '#17130d';
-  context.lineWidth = 4;
-  for (const [label, x, y] of [['N', 210, 18], ['S', 210, 402], ['W', 18, 210], ['E', 402, 210]] as const) {
-    context.strokeText(label, x, y);
-    context.fillText(label, x, y);
+  if (minimapPlayerReady) {
+    context.drawImage(minimapPlayerImage, -50, -50, 100, 100);
+  } else {
+    context.beginPath();
+    context.moveTo(0, -15);
+    context.lineTo(10, 12);
+    context.lineTo(0, 7);
+    context.lineTo(-10, 12);
+    context.closePath();
+    context.fillStyle = '#f4f1dc';
+    context.strokeStyle = '#17130d';
+    context.lineWidth = 2;
+    context.fill();
+    context.stroke();
   }
+  context.restore();
 };
 const cameraArmOverride = Number(params.get('arm'));
 if (Number.isFinite(cameraArmOverride) && cameraArmOverride > 0) CAMERA.armLength = cameraArmOverride;

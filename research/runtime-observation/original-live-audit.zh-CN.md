@@ -99,9 +99,9 @@ camera  = (-3.62, 3.2715, 70.73891) m
 - 原版 `BP_WorldCaptureCamera` 用正交 `SCS_BaseColor` capture 生成该图；
 - 原版 HUD 通过 `M_NewMiniMapSystem` / `NewMiniMap_Widget` 使用它。
 
-底图文件：`minimap-static.png`。Web 通过 `?hud=original` 接入该底图，并按 `WorldOrigin/BoxExtent` 的 `[-1300,1300] m` 映射绘制玩家位置；原版的手绘绿/红边框、任务图标和缩放材质仍未完全恢复。
+底图文件：`minimap-static.png`。Web 通过 `?hud=original` 接入该底图、原版 `map250` 墨迹边框和 `T_PlayerIcon` 玩家箭头，并按 `WorldOrigin/BoxExtent` 的 `[-1300,1300] m` 映射绘制玩家位置。原版边框随状态的绿/红着色、任务图标和缩放材质仍未完全恢复。
 
-![原版 gameplay 起点 vs Web（原版 HUD + minimap 底图）](comparison-live-gameplay-start-hud.jpg)
+![原版 gameplay 起点 vs Web（原版 HUD + minimap 底图）](comparison-live-gameplay-start-hud2.jpg)
 
 ![原版 minimap 静态底图](minimap-static.png)
 
