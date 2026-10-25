@@ -150,7 +150,8 @@ HeroABS_JumpFallLoop
 - [ ] AI：行人、车辆、敌人、Boss、警察/军队、生成/巡逻/战斗状态机。
 - [ ] 车辆：`BP_TrafficSystem` 信号、路径、让行、碰撞、载具伤害。
 - [x] 任务触发范围：`FireQuest_BP` 的类默认 `SphereRadius=5000 cm` 与 `MatQuest_BP` 的 `BoxExtent=(450,450,32) cm` 已用于 `?quests=1` 的发现半径（fire 50 m / material 4.5 m）；检查圆环直径也按该半径绘制。
-- [ ] 任务：FireQuest/MatQuest/Boss/Challenge 状态机、完成/奖励/失败条件；当前只有触发范围/发现，F 仍不推进任务。
+- [x] 任务 Blueprint 关键调用已解码：Fire/MatQuest 通过 `Array_Length/Add_IntInt/Less_IntInt/RescueEvent/PublishQuest/ForceFinishQuest/SendHeroPoint` 计数完成，不是 F 直接完成；详见 [quest-recovery.md](quest-recovery.md) 与 `research/world-recovery/quest-behavior.json`。
+- [ ] 任务：FireQuest/MatQuest/Boss/Challenge 完整状态机、计数对象、完成/奖励/失败条件；当前只有触发范围/发现，F 仍不推进任务。
 - [ ] 战斗：伤害公式、命中判定、连招、远程拳波、投掷、热视线、Boss 阶段。
 - [ ] 城市事件/破坏/警戒/平民反应/新闻/评级。
 - [ ] 音频：BGM、SFX、语音、环境声、动态混音。

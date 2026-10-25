@@ -1,0 +1,66 @@
+{
+  "source": "research/rea-audit/decoded/-WorkSpace/Hyodo/QuestBPs/*",
+  "decoded": [
+    "BaseQuest_BP.json",
+    "Fire/FireQuest_BP.json",
+    "Mat/MatQuest_BP.json"
+  ],
+  "fireQuest": {
+    "actorClass": "FireQuest_BP_C",
+    "active": true,
+    "tags": ["CFire"],
+    "sphereRadiusCm": 5000,
+    "uberGraphCalls": [
+      "GetPlayerCharacter",
+      "GetAllActorsOfClass",
+      "Array_Length",
+      "Array_Get",
+      "Add_IntInt",
+      "Less_IntInt",
+      "SendHeroPoint",
+      "RescueEvent",
+      "TutorialQuestClear",
+      "PublishQuest",
+      "ForceFinishQuest",
+      "SpawnQuest",
+      "SetQuestRefToHeroComponent",
+      "K2_DestroyActor"
+    ],
+    "inferredCompletion": "counts completed fire/rescue events with Add_IntInt/Array_Length/Less_IntInt and then publishes/finishes the quest; it is event-driven, not an F key press"
+  },
+  "matQuest": {
+    "actorClass": "MatQuest_BP_C",
+    "tags": ["Mat"],
+    "boxExtentCm": [450, 450, 32],
+    "uberGraphCalls": [
+      "GetPlayerCharacter",
+      "GetAllActorsOfClass",
+      "Array_Length",
+      "Array_Get",
+      "Add_IntInt",
+      "Less_IntInt",
+      "SendHeroPoint",
+      "rescueEvent",
+      "TutorialQuestClear",
+      "PublishQuest",
+      "ForceFinishQuest",
+      "SpawnQuest",
+      "SetQuestRefToHeroComponent",
+      "K2_DestroyActor"
+    ],
+    "inferredCompletion": "same counted-event pattern as FireQuest"
+  },
+  "baseQuest": {
+    "uberGraphCalls": [
+      "GetGameState",
+      "GetPlayerCharacter",
+      "GetDistanceTo",
+      "Add_FloatFloat",
+      "QuestClearFunc",
+      "CheckQuestFuncLib",
+      "SpawnQuestFunc"
+    ],
+    "inferredCompletion": "distance/float update via QuestFuncLib; no F-key completion path"
+  },
+  "note": "Function call names are decoded from the cooked uber graph; argument order/condition wiring and serialized quest save state are not fully reconstructed. Web F is inspection-only."
+}
