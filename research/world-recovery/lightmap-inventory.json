@@ -1,0 +1,31 @@
+{
+  "package": "/Game/-HeroGame/Maps/MainLevel_BuiltData",
+  "sourceList": "cooked exports list",
+  "lightMapTexture2DCount": 464,
+  "shadowMapTexture2DCount": 198,
+  "firstLightmaps": [
+    "HQ_Lightmap0_16",
+    "HQ_Lightmap0_222",
+    "HQ_Lightmap0_302",
+    "HQ_Lightmap0_303",
+    "HQ_Lightmap0_304",
+    "HQ_Lightmap0_305",
+    "HQ_Lightmap0_306",
+    "HQ_Lightmap0_307",
+    "HQ_Lightmap0_308",
+    "HQ_Lightmap0_309",
+    "HQ_Lightmap0_310",
+    "HQ_Lightmap0_313"
+  ],
+  "lastLightmaps": [
+    "LQ_Lightmap_1_534",
+    "LQ_Lightmap_1_545",
+    "LQ_Lightmap_1_546",
+    "LQ_Lightmap_1_548",
+    "LQ_Lightmap_1_596",
+    "LQ_Lightmap_1_60",
+    "LQ_Lightmap_1_65",
+    "LQ_Lightmap_1_71"
+  ],
+  "note": "Original HQ lightmaps exist; UV/actor mapping not reconstructed."
+}
