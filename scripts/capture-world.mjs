@@ -28,6 +28,8 @@ const expectedReady = args.get('ready') ?? 'world';
 const timeout = Number(args.get('timeout') ?? 420000);
 const settle = Number(args.get('settle') ?? 2500);
 const shot = args.get('shot') ? path.resolve(args.get('shot')) : null;
+const frames = Number(args.get('frames') ?? 0);
+const frameInterval = Number(args.get('interval') ?? 100);
 const record = args.get('record') ? path.resolve(args.get('record')) : null;
 const probe = args.get('probe') ? path.resolve(args.get('probe')) : null;
 const width = Number(args.get('width') ?? 1280);
@@ -200,10 +202,21 @@ const recordCase = {
   durationMs: Date.now() - started,
 };
 if (shot) {
-  const image = await cdp.send('Page.captureScreenshot', { format: 'jpeg', quality: 92, captureBeyondViewport: false });
   fs.mkdirSync(path.dirname(shot), { recursive: true });
-  fs.writeFileSync(shot, Buffer.from(image.data, 'base64'));
-  recordCase.screenshot = path.relative(process.cwd(), shot).replace(/\\/g, '/');
+  if (frames > 0) {
+    const extension = path.extname(shot) || '.jpg';
+    const stem = shot.slice(0, -path.extname(shot).length);
+    for (let index = 0; index < frames; index++) {
+      const image = await cdp.send('Page.captureScreenshot', { format: 'jpeg', quality: 92, captureBeyondViewport: false });
+      fs.writeFileSync(`${stem}-${String(index).padStart(3, '0')}${extension}`, Buffer.from(image.data, 'base64'));
+      await delay(frameInterval);
+    }
+    recordCase.screenshots = `${path.relative(process.cwd(), stem).replace(/\\/g, '/')}-000..${String(frames - 1).padStart(3, '0')}${extension}`;
+  } else {
+    const image = await cdp.send('Page.captureScreenshot', { format: 'jpeg', quality: 92, captureBeyondViewport: false });
+    fs.writeFileSync(shot, Buffer.from(image.data, 'base64'));
+    recordCase.screenshot = path.relative(process.cwd(), shot).replace(/\\/g, '/');
+  }
 }
 if (record) {
   const now = new Date();
