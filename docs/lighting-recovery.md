@@ -55,11 +55,19 @@ LightMapResourceCluster UObject pointer
 LightmapType            0
 ```
 
-说明运行时确实有 lightmap 绑定；但当前 UE4SS Lua 对这些属性返回的是包装指针，`:Get()`/`:GetFullName()` 不能直接解出索引，下一步需要用 property dump/C++ 反射读取 `FLightMapRef` 的内部字段，而不是继续猜。
+说明运行时确实有 lightmap 绑定；但当前 UE4SS Lua 对这些属性返回的是包装指针，`:Get()`/`:GetFullName()` 不能直接解出索引。继续检查发现：
+
+```text
+LODData: TArray，长度 1
+LODData[0].LightMap / ShadowMap / LightMapUVBias / LightMapCoordinateIndex
+  -> Lua 看到的是 UScriptStruct 类型对象，不是可读数值
+```
+
+原因是 `FLODData` / `FLightMapRef` 内部的 lightmap 引用不是反射 UPROPERTY，Lua 反射层拿不到内部字段。下一步必须用原生 C++/UE4SS SDK 或内存偏移读取，而不是继续用 Lua 猜。
 
 ## 下一步
 
-1. 用 UE4SS property dump/C++ 反射读取该组件 `LightMap` 的内部 LightMapIndex/LightMapCoordinateIndex/UVBias。
+1. 用 UE4SS C++ mod/SDK 读取 `FLODData::LightMap` 的内部 LightMapIndex/LightMapCoordinateIndex/UVBias。
 2. 匹配到 `HQ_Lightmap0_*` 具体对象。
 3. 导出 mesh lightmap UV1 并确认 UV scale/bias。
 4. 在 Web 材质中采样原版 lightmap。
