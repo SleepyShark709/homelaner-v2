@@ -184,6 +184,15 @@ running jump          -> Hero_JumpSpeed
 
 真实 Space 输入返回 `clip=ALS_N_Jump`，随后仍按 `JumpFallFast -> JumpLand` 前进。报告：[jump-extra-import.json](../research/world-recovery/jump-extra-import.json)
 
+下落样本现在按垂直速度选择：
+
+```text
+vertical >= -3 m/s -> Hero_JumpFall
+vertical <  -3 m/s -> Hero_JumpFallFast
+```
+
+普通起跳的 ALS 起跳片段会覆盖到下落初期，因此通常直接进入 Fast；从边缘走落等低速下落会先用 `Hero_JumpFall`。
+
 空中首次远程攻击现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→K 验证返回 `clip=Hero_AirAttackStart`；连续两次 K 的结果记录在 `research/world-recovery/air-attack-chain.json`。
 
 

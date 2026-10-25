@@ -327,7 +327,9 @@ export class Character {
       const vertical = motor.velocity[1];
       let desired: string;
       if (motor.state === 'jump') {
-        desired = 'Hero_JumpFallFast';
+        // HeroABS_JumpFallLoop has a low-air fast sample and a slower fall
+        // sample; switch to Fast only once the descent is established.
+        desired = vertical < -3 ? 'Hero_JumpFallFast' : 'Hero_JumpFall';
       } else if (motor.state === 'hover' || motor.state === 'fly') {
         this.setFlyBlend(vertical, planarSpeed, motor.velocity[0], motor.velocity[2]);
         return;
