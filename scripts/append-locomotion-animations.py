@@ -33,6 +33,11 @@ CLIPS = [
     ROOT / "research/exports/locomotion/Hero_StartSprint.psa",
     ROOT / "research/exports/locomotion/Hero_Stopping_Sprint.psa",
     ROOT / "research/exports/locomotion/Hero_Stopping_WalkRun.psa",
+    ROOT / "research/exports/locomotion/Animations/Hero_FlyForward.psa",
+    ROOT / "research/exports/locomotion/Animations/Hero_FlyFastForward1.psa",
+    ROOT / "research/exports/locomotion/Animations/Hero_FlyDown.psa",
+    ROOT / "research/exports/locomotion/Animations/Hero_FlyFastDown.psa",
+    ROOT / "research/exports/locomotion/HeroGame/Player/Animations/Hero_FlyUp.psa",
 ]
 EXPECTED_EXISTING = 18
 

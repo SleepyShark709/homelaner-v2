@@ -9,7 +9,7 @@ import type { ShadowGenerator } from '@babylonjs/core/Lights/Shadows/shadowGener
 import type { MotionState } from './PlayerMotor';
 import type { Vec3 } from './collision';
 
-const CLIPS: Record<MotionState, string> = { idle: 'Hero_Idle', run: 'Hero_SprintRun', jump: 'Hero_JumpFallFast', hover: 'Hero_IdleFlying', fly: 'Hero_FlyFastSprint' };
+const CLIPS: Record<MotionState, string> = { idle: 'Hero_Idle', run: 'Hero_SprintRun', jump: 'Hero_JumpFallFast', hover: 'Hero_IdleFlying', fly: 'Hero_FlyForward' };
 interface RetargetClip {
   duration: number;
   times: number[];
@@ -183,7 +183,21 @@ export class Character {
       return;
     }
     if (!grounded) {
-      const desired = motor.state === 'jump' ? 'Hero_JumpFallFast' : CLIPS[motor.state];
+      const vertical = motor.velocity[1];
+      let desired: string;
+      if (motor.state === 'jump') {
+        desired = 'Hero_JumpFallFast';
+      } else if (motor.state === 'hover' || motor.state === 'fly') {
+        // HeroABS_FlyingUpDonwAnim samples: FlyUp at +6000, FlyDown at
+        // -6000, FlyFastDown at -3333/-1333, FlyForward at Speed 6000.
+        if (vertical > 1.5) desired = 'Hero_FlyUp';
+        else if (vertical < -6) desired = 'Hero_FlyFastDown';
+        else if (vertical < -1.5) desired = 'Hero_FlyDown';
+        else if (motor.state === 'fly' || planarSpeed > 2) desired = 'Hero_FlyForward';
+        else desired = 'Hero_IdleFlying';
+      } else {
+        desired = CLIPS[motor.state];
+      }
       if (this.clip !== desired) this.setLoop(desired);
       const group = this.groupFor(desired);
       if (group) group.speedRatio = 1;

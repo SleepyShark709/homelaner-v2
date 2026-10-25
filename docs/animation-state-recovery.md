@@ -32,7 +32,7 @@ Hero_Walk / Hero_SprintRun / Hero_SprintSuper
 
 ## 已导入的原版 locomotion 片段
 
-2026-10-25 已从 pak 导出以下 PSA/config，并通过 `scripts/append-locomotion-animations.py` 追加到原 93 骨骼 `public/assets/character/hero.gltf`（原有 18 段保留，共 28 段）：
+2026-10-25 已从 pak 导出以下 PSA/config，并通过 `scripts/append-locomotion-animations.py` 追加到原 93 骨骼 `public/assets/character/hero.gltf`（原有 18 段保留，共 33 段）：
 
 ```text
 Hero_Walk             31f @31.0
@@ -45,13 +45,18 @@ Hero_JumpFallFast     91f
 Hero_StartSprint      61f @42.7
 Hero_Stopping_Sprint  76f @60.8
 Hero_Stopping_WalkRun 31f @31.0
+Hero_FlyForward
+Hero_FlyFastForward1
+Hero_FlyDown
+Hero_FlyFastDown
+Hero_FlyUp
 ```
 
-每段 93 个模型关节全部映射，report 在 `research/world-recovery/locomotion-import.json`。
+每段 93 个模型关节全部映射；部分 PSA config 主动删除了头发/配饰的旋转轨道（68 个旋转通道），report 在 `research/world-recovery/locomotion-import.json`。
 
 ## 当前 Web 的映射
 
-`src/game/Character.ts` 现在使用原 `hero.gltf` 的 28 段：
+`src/game/Character.ts` 现在使用原 `hero.gltf` 的 33 段：
 
 ```text
 idle  -> Hero_Idle
@@ -59,7 +64,13 @@ walk  -> Hero_Walk           # planar speed < 4 m/s
 run   -> Hero_SprintRun      # 前向跑步；Hero_SprintSuper 已导入但实测姿态不是正常跑步，暂不用于默认 run
 jump  -> Hero_JumpFallFast   # 下落循环；对应 HeroABS_JumpFallLoop 的 Speed~1250/SpeedZ~-5000 样本
 hover -> Hero_IdleFlying
-fly   -> Hero_FlyFastSprint
+fly   -> Hero_FlyForward
+
+垂直优先：
+  velY > 1.5   -> Hero_FlyUp
+  velY < -6    -> Hero_FlyFastDown
+  velY < -1.5  -> Hero_FlyDown
+  否则前飞     -> Hero_FlyForward
 ```
 
 已加的最小直接状态链（不是 AnimBP 的混合/条件曲线）：
@@ -81,7 +92,7 @@ landing -> Hero_JumpLand (once) -> Hero_Idle / Hero_Walk / Hero_SprintRun (loop)
 
 ## 动画数据校验
 
-`npm run verify:locomotion` 会检查整个 `hero.gltf` 的 28 段动画：
+`npm run verify:locomotion` 会检查整个 `hero.gltf` 的 33 段动画：
 
 - 每段旋转通道关节数：基础/多数原版片段 93；部分 PSA config 主动删除了头发/配饰骨骼的旋转轨道，因此为 68；
 - 四元数范数误差 < 5e-8；

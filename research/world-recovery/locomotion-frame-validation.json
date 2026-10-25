@@ -1,6 +1,6 @@
 {
   "source": "public/assets/character/hero.gltf",
-  "animationCount": 28,
+  "animationCount": 33,
   "clips": [
     {
       "name": "Hero_Idle",
@@ -281,6 +281,56 @@
       "nonFinite": 0,
       "loop": true,
       "firstLastRotationDeltaDegrees": 39.87204184689145
+    },
+    {
+      "name": "Hero_FlyForward",
+      "durationSeconds": 1.336363673210144,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 4.0808284085258606e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 1.3343554348206867
+    },
+    {
+      "name": "Hero_FlyFastForward1",
+      "durationSeconds": 1.336363673210144,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 4.020304822383025e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 1.3253325064895907
+    },
+    {
+      "name": "Hero_FlyDown",
+      "durationSeconds": 1.336363673210144,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.636215906155371e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 1.332691573112179
+    },
+    {
+      "name": "Hero_FlyFastDown",
+      "durationSeconds": 1.336363673210144,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.636215906155371e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 1.3307978195101704
+    },
+    {
+      "name": "Hero_FlyUp",
+      "durationSeconds": 1.336363673210144,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 4.152501809073783e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 1.3282000880564975
     }
   ],
   "failures": []

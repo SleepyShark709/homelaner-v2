@@ -100,9 +100,59 @@
       "mappedJoints": 93,
       "source": "research/exports/locomotion/Hero_Stopping_WalkRun.psa",
       "sourceSha256": "c484e54304d91c5c2501df92dd05190d5fdbd4ce38e1fdabff5d128182e23398"
+    },
+    {
+      "name": "Hero_FlyForward",
+      "frames": 22,
+      "rate": 15.714285850524902,
+      "durationSeconds": 1.3363636247776758,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Animations/Hero_FlyForward.psa",
+      "sourceSha256": "27cd61ae568f1f1a2d9b3ee3e9380223d1ec23d1c69c0b7324cf9d6116803746"
+    },
+    {
+      "name": "Hero_FlyFastForward1",
+      "frames": 22,
+      "rate": 15.714285850524902,
+      "durationSeconds": 1.3363636247776758,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Animations/Hero_FlyFastForward1.psa",
+      "sourceSha256": "6e23bdae2c2aa7692ebfc99ac55b26488c3cc759036ec816f19d125ea12eadcb"
+    },
+    {
+      "name": "Hero_FlyDown",
+      "frames": 22,
+      "rate": 15.714285850524902,
+      "durationSeconds": 1.3363636247776758,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Animations/Hero_FlyDown.psa",
+      "sourceSha256": "199dd92362cc3d1a2319c591b5efaca64465791f367168733c730d8891381034"
+    },
+    {
+      "name": "Hero_FlyFastDown",
+      "frames": 22,
+      "rate": 15.714285850524902,
+      "durationSeconds": 1.3363636247776758,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Animations/Hero_FlyFastDown.psa",
+      "sourceSha256": "86e6637683534dc22b290510a58b78ab5be370ce5d47e6c51c03300a3293f449"
+    },
+    {
+      "name": "Hero_FlyUp",
+      "frames": 22,
+      "rate": 15.714285850524902,
+      "durationSeconds": 1.3363636247776758,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/HeroGame/Player/Animations/Hero_FlyUp.psa",
+      "sourceSha256": "88034e13ca6404317d4874c1f4e96ed8314033fc41a096172ac91e0f0c6e2030"
     }
   ],
-  "outputGltfSha256": "98fd8c83e79d0a7681ccc533c0041ad58eaa0df532bdf4f0b4f40b62a5809d5d",
-  "outputBufferSha256": "d39c7825edcf5648078879b95d909ba0c832df2c36241d6cdbd105f0b56ffe18",
-  "animationCount": 28
+  "outputGltfSha256": "d71d00cb787c327f44fa2affc8d1c5e0696301b809c00186e99608df158fd5ed",
+  "outputBufferSha256": "186d7cf333a0ed557e88b473cebcb3cd055b1833b244e78b787958bfca1dbf2b",
+  "animationCount": 33
 }
