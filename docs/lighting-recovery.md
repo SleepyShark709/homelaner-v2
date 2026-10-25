@@ -84,6 +84,8 @@ GetStructAddress() 返回数值地址
 
 另外比较了 `comp.LightMap` 的 UObject 地址与当前加载的 510/900 个 `LightMapTexture2D` 对象地址，**没有匹配**。说明 `comp.LightMap` 指向的是 `FLightMap`/`FLightMapRef` 包装对象，不是可直接命名/采样的 `LightMapTexture2D`；真正的纹理在 `FLightMap2D::Textures[]` 内部，仍需原生读取。
 
+进一步用外部 `ReadProcessMemory` 读取 `LODData:GetArrayDataAddress()` 的前 4096 字节，与 3436 个已加载 `LightMapTexture2D` 地址扫描比较：**0 命中**。该内存内容主要是浮点/网格数据，不是平铺的 lightmap 指针数组。因此不能把 `LODData` 当 lightmap 容器直接解；需要 SDK/`FLightMap2D` 内部布局或另一个组件字段。
+
 ## UV 通道
 
 起始建筑 glTF 有 4 个 UV 通道：

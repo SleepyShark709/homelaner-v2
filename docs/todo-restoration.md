@@ -54,7 +54,7 @@
 ### 1.2 原版 MainLevel 光照 / 自动曝光 / Lightmap
 
 - [x] 已确认 `MainLevel_BuiltData` 内含 464 个 LightMapTexture2D 和 198 个 ShadowMapTexture2D，并成功导出 `HQ_Lightmap0_16` 样本；起始建筑所在的 `CommercialArea_BuiltData` 另有 76 个 LightMapTexture2D / 25 个 ShadowMapTexture2D。清单见 `research/world-recovery/lightmap-inventory.json`，详见 [lighting-recovery.md](lighting-recovery.md)。
-- [ ] 从 MainLevel/CommercialArea 的 StaticMeshComponent 提取 LightMapIndex、LightMapCoordinateIndex、UV scale/bias，定位起始建筑对应的 lightmap。gameplay 中 `tools/runtime/ue4ss/LightmapProbe` 已确认 `LODData` 长度 1，但 `LODData[0]` 的 fields 全为 nil（只有 `GetStructAddress()` 数值地址），Lua 反射不到 `FLODData/FLightMapRef` 内部引用；且 `comp.LightMap` 地址与当前 510/900 个 `LightMapTexture2D` 对象都不匹配，说明它是 FLightMap 包装对象而非纹理。下一步需原生 C++/UE4SS SDK 或内存偏移读取 `FLightMap2D::Textures[]`。建筑 glTF 已有 TEXCOORD_2/TEXCOORD_3 两个 packed UV 候选，TEXCOORD_1 是常量不可用。
+- [ ] 从 MainLevel/CommercialArea 的 StaticMeshComponent 提取 LightMapIndex、LightMapCoordinateIndex、UV scale/bias，定位起始建筑对应的 lightmap。gameplay 中 `tools/runtime/ue4ss/LightmapProbe` 已确认 `LODData` 长度 1，但 `LODData[0]` 的 fields 全为 nil（只有 `GetStructAddress()` 数值地址），Lua 反射不到 `FLODData/FLightMapRef` 内部引用；且 `comp.LightMap` 地址与当前 510/900 个 `LightMapTexture2D` 对象都不匹配，说明它是 FLightMap 包装对象而非纹理。下一步需原生 C++/UE4SS SDK 或内存偏移读取 `FLightMap2D::Textures[]`。已用外部 ReadProcessMemory 扫描 `LODData:GetArrayDataAddress()` 前 4096 字节，对 3436 个已加载 `LightMapTexture2D` 地址 0 命中，说明 LODData 不是平铺 lightmap 指针数组。
 - [ ] 导出/绑定 mesh lightmap UV1，实现原版 lightmap 采样，而不是继续用 `LightingTest` 子关卡参数或全局 SSAO 冒充。
 - [ ] 研究 UE4 自动曝光（AutoExposure 1..8）与 Bloom 2.5 的真实来源：`LightingTest` 参数已记录但**不是** MainLevel 结论。
 - [ ] 评估 Web 端可实现的 lightmap/AO 投影；优先使用原版数据，不用全局 SSAO 冒充。
