@@ -91,8 +91,8 @@ export class OriginalMaterials {
       // building_02_d's alpha is the window mask, and the submesh is already limited to
       // those window panes, so apply the recovered cloud layer on the pane material only.
       const clouds = new Texture('/assets/world/textures/Game/UrbanCity/Textures/Tileable/clouds.png', this.scene);
-      clouds.uScale = 0.2;
-      clouds.vScale = 0.2;
+      clouds.uScale = 0.05;
+      clouds.vScale = 0.05;
       clouds.gammaSpace = false;
       material.emissiveTexture = clouds;
       material.emissiveColor = new Color3(

@@ -8,10 +8,10 @@
 
 - 石材：`brick_02_TintB_Inst2` 使用恢复的 Tint Colour/Tint Opacity 派生纹理，Web 从冷灰回到暖棕灰；
 - 檐口：`brick_02_TintA_Inst` 应用 recovered roughness .666245；
-- 窗格：`building_02_Inst` 使用 recovered Emissive Colour ×0.35 的 `clouds` emissive，避免过强蓝色横带；
+- 窗格：`building_02_Inst` 使用 recovered Emissive Colour ×0.35 的 `clouds` emissive（tiling 0.05），避免 0.2 tiling 的重复蓝色横带；
 - 金属框：`Tilable_metal_TintC_Inst` 使用 recovered Tint Colour/Tint Opacity 派生纹理，深蓝黑；
 - minimap：外框改成原版 gameplay-start 的红色状态（`frame-tint-red.png`）；
-- 同机位整画面 mean luma 54.1 / std 32.0；原版 55.8 / 31.3；
+- 同机位整画面 mean luma 54.2 / std 32.0；原版 55.8 / 31.3；
 - 仍未完成：lightmap、Grunge/height、完整 HUD/minimap 状态机、窗格反射。
 
 这不是像素等价验收；材质层级和光照仍未恢复完整。
