@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "1f06cbf",
+  "validatedCommit": "2cc38c3",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -140,6 +140,13 @@
       "before": false,
       "during": true,
       "flying": true
+    },
+    {
+      "command": "python scripts/extract-animbp-transitions.py",
+      "exitCode": 0,
+      "transitions": 33,
+      "machines": 3,
+      "blendMode": "HermiteCubic"
     }
   ],
   "evidence": {
@@ -151,5 +158,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "All automated checks pass after layering swish into the heavy/air-whoosh cues at 1f06cbf. Cue graph delay/random/envelope behaviour remains an approximation."
+  "note": "All automated checks pass after recovering 33 AnimBP transition crossfade timings at 2cc38c3. The Web transition code does not apply them yet."
 }
