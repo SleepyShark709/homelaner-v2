@@ -140,12 +140,14 @@ export class Character {
     if (vertical < -6) { this.setLoop('Hero_FlyFastDown'); return; }
     if (vertical < -1.5) { this.setLoop('Hero_FlyDown'); return; }
     if (planar <= 1) { this.setLoop('Hero_IdleFlying'); return; }
-    const forwardName = planar > 55 ? 'Hero_FlyForward' : planar > 12 ? 'Hero_FlyForwardLow' : 'Hero_FlyTame';
+    const forwardName = planar > 55 ? 'Hero_FlyFastSprint' : planar > 30 ? 'Hero_FlyForward' : planar > 12 ? 'Hero_FlyForwardLow' : 'Hero_FlyTame';
     const forwardRatio = forwardName === 'Hero_FlyTame'
       ? Math.max(0.6, Math.min(1.2, planar / 12))
       : forwardName === 'Hero_FlyForwardLow'
         ? Math.max(0.7, Math.min(1.4, planar / 30))
-        : Math.max(0.7, Math.min(1.4, planar / 60));
+        : forwardName === 'Hero_FlyForward'
+          ? Math.max(0.7, Math.min(1.4, planar / 55))
+          : Math.max(0.7, Math.min(1.4, planar / 70));
     const forward = this.groupFor(forwardName);
     const left = this.groupFor('Hero_FlyLeft');
     const right = this.groupFor('Hero_FlyRight');

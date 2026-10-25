@@ -165,11 +165,12 @@ S（后退） -> Hero_FlyBack, speed 40
 
 ```text
 <=12 m/s   FlyTame
-12..55     FlyForwardLow
->55        FlyForward
+12..30     FlyForwardLow
+30..55     FlyForward
+>55        FlyFastSprint
 ```
 
-24.5 m/s 实测返回 `Hero_FlyForwardLow`；`FlyForward` 保留给 >55 m/s 的加速段。
+24.5 m/s 实测返回 `Hero_FlyForwardLow`；42.3 m/s 返回 `Hero_FlyForward`；66.6 m/s 加速档返回 `Hero_FlyFastSprint`。
 
 报告：[fly-directional-import.json](../research/world-recovery/fly-directional-import.json)
 
