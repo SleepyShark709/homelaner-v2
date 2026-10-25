@@ -144,6 +144,25 @@ ALS_N_Run_B / FL / FR
 
 这是 `HeroABS_MoveGround` 的**速度/方向子集**；真正的双向 BlendSpace、精确轴值、过渡曲线和 AnimBP transition 时间仍未恢复。10 m/s 实测截图 `research/screenshots/play-directional-blend-run.jpg` 无畸形。
 
+### 飞行方向样本（2026-10-25）
+
+已从 pak 导出并追加 `Hero_FlyBack/Left/Right/Tame/TameFront`，总动画数 **45**。`Character.setFlyBlend()`：
+
+```text
+FlyUp / FlyDown / FlyFastDown 保留垂直优先级
+水平方向按 local velocity 在 FlyForward(低)/FlyForwardLow/FlyLeft/FlyRight/FlyBack 之间加权
+hover -> Hero_IdleFlying
+```
+
+真实输入验证：
+
+```text
+D（右移） -> Hero_FlyRight
+S（后退） -> Hero_FlyBack, speed 40
+```
+
+报告：[fly-directional-import.json](../research/world-recovery/fly-directional-import.json)
+
 空中首次远程攻击现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→K 验证返回 `clip=Hero_AirAttackStart`；连续两次 K 的结果记录在 `research/world-recovery/air-attack-chain.json`。
 
 

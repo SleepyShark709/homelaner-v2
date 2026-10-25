@@ -1,4 +1,4 @@
-import { Scene } from '@babylonjs/core/scene';
+﻿import { Scene } from '@babylonjs/core/scene';
 import { TransformNode } from '@babylonjs/core/Meshes/transformNode';
 import { Animation } from '@babylonjs/core/Animations/animation';
 import { AnimationGroup } from '@babylonjs/core/Animations/animationGroup';
@@ -133,6 +133,51 @@ export class Character {
     return this.animations.find(group => group.name === (this.aliases.get(name) ?? name));
   }
 
+  private setFlyBlend(vertical: number, planar: number, velocityX: number, velocityZ: number): void {
+    // HeroABS_FlyingUpDonwAnim samples: FlyUp +6000, FlyDown -6000,
+    // FlyFastDown -3333/-1333, FlyForward at Speed 6000.
+    if (vertical > 1.5) { this.setLoop('Hero_FlyUp'); return; }
+    if (vertical < -6) { this.setLoop('Hero_FlyFastDown'); return; }
+    if (vertical < -1.5) { this.setLoop('Hero_FlyDown'); return; }
+    if (planar <= 1) { this.setLoop('Hero_IdleFlying'); return; }
+    const forwardName = planar > 7 ? 'Hero_FlyForward' : 'Hero_FlyForwardLow';
+    const forward = this.groupFor(forwardName);
+    const left = this.groupFor('Hero_FlyLeft');
+    const right = this.groupFor('Hero_FlyRight');
+    const back = this.groupFor('Hero_FlyBack');
+    if (!forward || !left || !right || !back) { this.setLoop(forwardName); return; }
+    const sin = Math.sin(this.yaw), cos = Math.cos(this.yaw);
+    const localForward = velocityX * sin + velocityZ * cos;
+    const localRight = velocityX * cos - velocityZ * sin;
+    const angle = Math.atan2(-localRight, localForward) * 180 / Math.PI;
+    const a = Math.abs(angle);
+    const direction = a <= 90
+      ? angle >= 0
+        ? { F: (90 - a) / 90, L: 0, R: a / 90, B: 0 }
+        : { F: (90 - a) / 90, L: a / 90, R: 0, B: 0 }
+      : angle >= 0
+        ? { F: 0, L: 0, R: (180 - a) / 90, B: (a - 90) / 90 }
+        : { F: 0, L: (180 - a) / 90, R: 0, B: (a - 90) / 90 };
+    const combined: Array<[AnimationGroup, number]> = [
+      [forward, direction.F], [left, direction.L], [right, direction.R], [back, direction.B],
+    ];
+    const total = combined.reduce((sum, [, weight]) => sum + weight, 0);
+    const active = new Set(combined.map(([group]) => group));
+    this.animations.forEach(group => { if (!active.has(group)) group.stop(); });
+    let dominant = forwardName, dominantWeight = -1;
+    for (const [group, weight] of combined) {
+      const normalized = total > 0 ? weight / total : 0;
+      if (!group.isPlaying) group.start(true);
+      group.weight = normalized;
+      group.setWeightForAllAnimatables(normalized);
+      group.speedRatio = 1;
+      if (normalized > dominantWeight) { dominantWeight = normalized; dominant = group.name; }
+    }
+    this.transition = null;
+    this.action = '';
+    this.clip = dominant;
+  }
+
   private setLoop(name: string): void {
     const group = this.groupFor(name);
     if (!group) return;
@@ -170,7 +215,7 @@ export class Character {
       const sin = Math.sin(this.yaw), cos = Math.cos(this.yaw);
       const localForward = velocityX * sin + velocityZ * cos;
       const localRight = velocityX * cos - velocityZ * sin;
-      const angle = Math.atan2(localRight, localForward) * 180 / Math.PI;
+      const angle = Math.atan2(-localRight, localForward) * 180 / Math.PI;
       const a = Math.abs(angle);
       if (a <= 90) {
         dir = angle >= 0
@@ -277,14 +322,8 @@ export class Character {
       if (motor.state === 'jump') {
         desired = 'Hero_JumpFallFast';
       } else if (motor.state === 'hover' || motor.state === 'fly') {
-        // HeroABS_FlyingUpDonwAnim samples: FlyUp at +6000, FlyDown at
-        // -6000, FlyFastDown at -3333/-1333, FlyForward at Speed 6000.
-        if (vertical > 1.5) desired = 'Hero_FlyUp';
-        else if (vertical < -6) desired = 'Hero_FlyFastDown';
-        else if (vertical < -1.5) desired = 'Hero_FlyDown';
-        else if (planarSpeed > 7) desired = 'Hero_FlyForward';
-        else if (planarSpeed > 1) desired = 'Hero_FlyForwardLow';
-        else desired = 'Hero_IdleFlying';
+        this.setFlyBlend(vertical, planarSpeed, motor.velocity[0], motor.velocity[2]);
+        return;
       } else {
         desired = CLIPS[motor.state];
       }
@@ -325,7 +364,7 @@ export class Character {
 
   playAction(name: string, speed: number): void {
     const group = this.groupFor(name);
-    if (!group) throw new Error(`鍘熺増鍔ㄤ綔缂哄け: ${name}`);
+    if (!group) throw new Error(`閸樼喓澧楅崝銊ょ稊缂傚搫銇? ${name}`);
     this.animations.forEach(item => item.stop());
     this.container.skeletons.forEach(skeleton => skeleton.returnToRest());
     this.action = name; this.clip = name; group.start(false, speed);
@@ -343,5 +382,6 @@ export class Character {
 
   dispose(): void { this.animations.forEach(group => group.dispose()); this.animations = []; this.container?.dispose(); this.root.dispose(); }
 }
+
 
 

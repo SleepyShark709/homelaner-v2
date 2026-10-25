@@ -1,6 +1,6 @@
 {
   "source": "public/assets/character/hero.gltf",
-  "animationCount": 40,
+  "animationCount": 45,
   "clips": [
     {
       "name": "Hero_Idle",
@@ -401,6 +401,56 @@
       "nonFinite": 0,
       "loop": true,
       "firstLastRotationDeltaDegrees": 0.12923827554772058
+    },
+    {
+      "name": "Hero_FlyBack",
+      "durationSeconds": 1.336363673210144,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.636215906155371e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 1.3292935328200226
+    },
+    {
+      "name": "Hero_FlyLeft",
+      "durationSeconds": 1.336363673210144,
+      "rotationJoints": 93,
+      "channels": 127,
+      "maxQuaternionNormError": 3.580099261490943e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 1.3323645527737056
+    },
+    {
+      "name": "Hero_FlyRight",
+      "durationSeconds": 1.336363673210144,
+      "rotationJoints": 93,
+      "channels": 127,
+      "maxQuaternionNormError": 3.55267757434774e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 1.3289902052575941
+    },
+    {
+      "name": "Hero_FlyTame",
+      "durationSeconds": 1.336363673210144,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.8963630766275514e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 1.3386914177977605
+    },
+    {
+      "name": "Hero_FlyTameFront",
+      "durationSeconds": 1.670454502105713,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.8426069881580815e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 1.3386914177977605
     }
   ],
   "failures": []

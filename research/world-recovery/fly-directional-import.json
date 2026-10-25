@@ -1,0 +1,58 @@
+{
+  "source": "UModel PSA + config; appendix script",
+  "clips": [
+    {
+      "name": "Hero_FlyBack",
+      "frames": 22,
+      "rate": 15.714285850524902,
+      "durationSeconds": 1.3363636247776758,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/fly-directional/Animations/Hero_FlyBack.psa",
+      "sourceSha256": "0343bd76d7f54b81f93fe61cf941e9e6407ce45502b19f2972e15d84fd3014bb"
+    },
+    {
+      "name": "Hero_FlyLeft",
+      "frames": 22,
+      "rate": 15.714285850524902,
+      "durationSeconds": 1.3363636247776758,
+      "channelCount": 127,
+      "mappedJoints": 93,
+      "source": "research/exports/fly-directional/Animations/Hero_FlyLeft.psa",
+      "sourceSha256": "1c24659d2c2974bbfbcf0ceb4e03ef37f01f1962945009e33c0a90536aef8feb"
+    },
+    {
+      "name": "Hero_FlyRight",
+      "frames": 22,
+      "rate": 15.714285850524902,
+      "durationSeconds": 1.3363636247776758,
+      "channelCount": 127,
+      "mappedJoints": 93,
+      "source": "research/exports/fly-directional/Animations/Hero_FlyRight.psa",
+      "sourceSha256": "d671cdbf808dc5e20cf4a0b87367a08e834314ac346686b2e8e86c8d419a695a"
+    },
+    {
+      "name": "Hero_FlyTame",
+      "frames": 22,
+      "rate": 15.714285850524902,
+      "durationSeconds": 1.3363636247776758,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/fly-directional/Animations/Hero_FlyTame.psa",
+      "sourceSha256": "613cdd3f073a331c0afb24a32c0b5f43550a4f1ecec31ca240d4813943a571a0"
+    },
+    {
+      "name": "Hero_FlyTameFront",
+      "frames": 22,
+      "rate": 12.571429252624512,
+      "durationSeconds": 1.6704544549392324,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/fly-directional/Animations/Hero_FlyTameFront.psa",
+      "sourceSha256": "5f57db6c8e78cc87964ae4d50a605881161f6ad6a975635ddb7d22dfbf467ac8"
+    }
+  ],
+  "outputGltfSha256": "92da18c498e8d7ec184ad55a1438d4639f4da4535d039a4b6e14dd255443932a",
+  "outputBufferSha256": "75968633f6f1ee382ca8ea4f71813a0c9dac363817c51605d6a34902495e9e96",
+  "animationCount": 45
+}
