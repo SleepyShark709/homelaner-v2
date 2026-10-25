@@ -117,7 +117,17 @@ DirectionalLight_1 rotation = (-48.61, -55.40, 0)
 
 底图文件：`minimap-static.png`。Web 默认 HUD 接入该底图、原版 `map250` 墨迹边框和 `T_PlayerIcon` 玩家箭头，并按 `WorldOrigin/BoxExtent` 的 `[-1300,1300] m` 映射绘制玩家位置；`?hud=help` 才显示探索面板。原版边框随状态的绿/红着色、任务图标和缩放材质仍未完全恢复。
 
-![原版 gameplay 起点 vs Web（原版 HUD + minimap 底图）](comparison-live-gameplay-start-hud2.jpg)
+![原版 gameplay 起点 vs Web（原版 HUD + 亮度校准）](comparison-live-gameplay-start-calibrated.jpg)
+
+同一建筑区域（去掉 HUD/窗口边框）实测：
+
+```text
+原版 luminance mean=55.8  std=31.3
+Web   luminance mean=86.1  std=41.7   # 未校准
+Web   luminance mean=58.4  std=31.0   # exposure=0.55
+```
+
+因此默认加入 exposure=0.55 的**预览亮度校准**（`?exposure=1` 关闭）。它只对齐同一机位的整体亮度/对比，不是原版 UE 自动曝光/tone curve；原版 auto-exposure/Bloom 仍未重建。
 
 ![原版 minimap 静态底图](minimap-static.png)
 

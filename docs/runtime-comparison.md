@@ -22,7 +22,9 @@ rot          = (-10, 90, 0)
 
 已恢复 `T_StaticMinimap_Tex`（1024×1024）、`map250` 墨迹边框和 `T_PlayerIcon` 玩家箭头，并读取 `BP_WorldCaptureCamera` 的 `WorldOrigin=(-130000,-130000)`、`BoxExtent=(130000,130000)`、`OrthoWidth=260000`。默认 HUD 现在隐藏自制面板，按该映射绘制原版底图、边框和玩家箭头；`?hud=help` 才显示原探索面板。
 
-![原版 gameplay 起点 vs Web 原版 HUD](../research/runtime-observation/comparison-live-gameplay-start-hud2.jpg)
+![原版 gameplay 起点 vs Web 原版 HUD](../research/runtime-observation/comparison-live-gameplay-start-calibrated.jpg)
+
+同一建筑区域实测亮度：原版 mean 55.8 / std 31.3；Web 未校准 mean 86.1 / std 41.7；Web `exposure=0.55` 后 mean 58.4 / std 31.0。默认采用 exposure=0.55 的**预览亮度校准**（`?exposure=1` 关闭），它只对齐同机位整体亮度/对比，不是原版 UE 自动曝光/tone curve。
 
 边框随状态的绿/红着色、任务图标和原版缩放材质尚未恢复，所以 HUD 仍未等价。
 

@@ -117,6 +117,13 @@ const cameraArmOverride = Number(params.get('arm'));
 if (Number.isFinite(cameraArmOverride) && cameraArmOverride > 0) CAMERA.armLength = cameraArmOverride;
 const cameraFovOverride = Number(params.get('fov'));
 if (Number.isFinite(cameraFovOverride) && cameraFovOverride > 0) CAMERA.fov = cameraFovOverride;
+const exposureOverride = params.has('exposure') ? Number(params.get('exposure')) : 0.55;
+if (Number.isFinite(exposureOverride) && exposureOverride > 0) {
+  // Preview exposure calibration against the same-camera original: the original
+  // start frame is in shade and has mean luma ~56, while the uncalibrated Web
+  // frame is ~86. This is not a recovered UE auto-exposure/tone curve.
+  viewer.scene.imageProcessingConfiguration.exposure = exposureOverride;
+}
 if (params.get('ssao') === '1') {
   // Preview contact shading for the same-camera comparison. This is a
   // screen-space approximation, not a reconstruction of the original AO/lightmaps.
