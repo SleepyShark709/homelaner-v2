@@ -32,7 +32,7 @@ rot          = (-10, 90, 0)
 |---|---|---|
 | 角色外观 | 黑色短袖/长裤，体型、发型轮廓与当前 Web 角色一致 | 同一原 `hero.gltf`，黑色服装与比例基本一致 |
 | 角色阴影 | 角色在铺装上有清晰动态阴影 | 已加入预览角色阴影（跟随预览太阳方向）；级联/软硬/接缝与原版不同 |
-| 相机 | 第三人称，角色约占画面高度 1/3，距离更近、略高 | 已按原 `CameraBoom` 400 cm/SocketOffset(0,50,90)/boom Z70 cm 校准，FOV 按 HeroRank 0 的 92° 水平视场，CameraLagSpeed/RotationLagSpeed=15；攻击时插值到 650 cm，CharacterSpeed>60 m/s 时 FarArmLength=800 cm。其它 Far/Zoom 状态、弹簧回弹和碰撞控制仍不同 |
+| 相机 | 第三人称，角色约占画面高度 1/3，距离更近、略高 | 已按原 `CameraBoom` 400 cm/SocketOffset(0,50,90)/boom Z70 cm 校准，FOV 改为原开始相机实测 90°，CameraLagSpeed/RotationLagSpeed=15；攻击时插值到 650 cm，CharacterSpeed>60 m/s 时 FarArmLength=800 cm。其它 Far/Zoom 状态、弹簧回弹和碰撞控制仍不同 |
 | 光照/雾 | 原版光照、树影、环境雾与高光 | Babylon 预览半球/方向光；无原雾/后处理 |
 | 世界 | 起点广场：长椅、树、铺装、成排建筑立面 | ResidentialArea1 街道：砖砌公寓、车道、预览行人和车辆 |
 | 远景 | 城市立面/天空，无明显白色山体 | 白色未恢复材质的背景山体非常显眼 |
@@ -58,7 +58,7 @@ rot          = (-10, 90, 0)
 
 原生 floor/树木材质化后，`plaza=1&at=-30,-4&yaw=0&exact=1` 成为当前最新的候选取景：大块石铺装、左侧栏杆/花箱、左中景树木、中央/右侧古典建筑。对照图 `comparison-start-plaza-native.jpg`；仍不是同机位，原程序更开阔、长椅沿左栏杆排布、右侧广告牌不同。
 
-`arm=6&fov=80` 的检查用相机覆盖（`play-plaza-arm6b.jpg` / `comparison-start-plaza-arm6.jpg`）让角色比例更接近原图，但场景左右关系仍不同；默认相机仍使用恢复的 4 m / 92°。
+`arm=6&fov=80` 的检查用相机覆盖（`play-plaza-arm6b.jpg` / `comparison-start-plaza-arm6.jpg`）让角色比例更接近原图，但场景左右关系仍不同；默认相机现使用恢复的 4 m / 实测 90°。
 
 ![相机净空后的广场候选](../research/runtime-observation/comparison-start-plaza-camera-clear.jpg)
 

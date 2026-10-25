@@ -57,7 +57,7 @@ const viewer = new OriginalWorld(canvas);
 const input = new Input(canvas);
 // Original PlayerBP CameraBoom_GEN_VARIABLE: TargetArmLength=400 cm,
 // SocketOffset=(0,50,90) cm, boom RelativeLocation Z=70 cm.
-const CAMERA = { armLength: 4.0, attackArmLength: 6.5, farArmLength: 8.0, farSpeed: 60, armSpeed: 2, farArmSpeed: 1, boomHeight: 0.7, socketRight: 0.5, socketUp: 0.9, lagSpeed: 15, fov: 92 };
+const CAMERA = { armLength: 4.0, attackArmLength: 6.5, farArmLength: 8.0, farSpeed: 60, armSpeed: 2, farArmSpeed: 1, boomHeight: 0.7, socketRight: 0.5, socketUp: 0.9, lagSpeed: 15, fov: 90 };
 input.pitch = 0.02;
 const paused = el('paused');
 const params = new URLSearchParams(location.search);
