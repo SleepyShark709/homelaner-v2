@@ -75,7 +75,8 @@ Web 用 `scripts/derive-metal-tint.py` 生成 `metal_01_d_tintC.png`，按 Tint 
 
 - 纹理已经加载；
 - `building_02_d` 的 alpha 是**窗格遮罩**（alpha 0/255 二进制；白色区域对应深色玻璃窗），而该 material 的子网格本身只覆盖窗格；
-- 因此对 `building_02_Inst` 单独加了 `clouds.png` emissive 层，颜色使用恢复的 Emissive Colour `(0.07746, 0.095, 0.061736)`，tiling 0.05（0.2 时会在窗格上形成明显的重复蓝色横带）；完整颜色实际缩放到 **0.35**，同机位 mean luma 54.2 / std 32.0（原版 55.8 / 31.3）；
+- 因此对 `building_02_Inst` 单独加了 `clouds.png` emissive 层，颜色使用恢复的 Emissive Colour `(0.07746, 0.095, 0.061736)`，tiling 0.05（0.2 时会在窗格上形成明显的重复蓝色横带）；完整颜色实际缩放到 **0.35**；
+- `-Window_mat` 的 clouds emissive 从 `.08/.11/.17` 校准到 `.14/.19/.26`，同机位整体 mean luma 从 54.23 提到 **56.03 / std 30.42**（原版 55.73 / 31.34）；这是预览 emissive 校准，不是原版玻璃 shader；
 - `building_02_Inst` 的 Contrast/EmissiveAmount 仍没有完整 shader math；
 - `brick_02_TintB_Inst2` 现在使用派生纹理 `brick_02_d_tintB.png`：按恢复的 Tint Colour `(.06,.021616,.001713)`、Tint Opacity `.633` 做线性混合；
 - 但完整 opacity 会让同机位 mean luma 降到 49.4（原版 55.8），说明父 `-Tilable_mat` 的 tint mask/layering 仍未恢复，所以实际使用 **.177 effective opacity（.633 × .28）**，并用纹理 alpha 作为每 texel 权重；

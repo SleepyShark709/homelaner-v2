@@ -122,8 +122,10 @@ Measured Rec.709 luma after cropping the original title bar:
 
 ```text
 ORIGINAL, crop (0,30,1312,780): mean 55.73 / std 31.34
-WEB current 1280x720:          mean 54.23 / std 32.01
-delta: -1.50 mean
+WEB current 1280x720:          mean 56.03 / std 30.42
+delta: +0.30 mean
 ```
+
+The window material now uses the recovered cloud emissive layer at .14/.19/.26 (instead of the previous .08/.11/.17), which raises the measured overall luma to the original within +0.3. This is a preview emissive calibration, not a reconstructed glass shader.
 
 Evidence: [comparison-latest.jpg](../research/runtime-observation/comparison-latest.jpg), report [same-camera-latest.json](../research/world-recovery/same-camera-latest.json). The pose/FOV still matches; local material/lighting differences remain, so this is **not pixel equivalence and not a completed Gate 3**.

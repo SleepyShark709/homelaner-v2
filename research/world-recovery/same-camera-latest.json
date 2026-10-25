@@ -13,12 +13,12 @@
     "stdLuma": 31.34
   },
   "web": {
-    "file": "research/screenshots/play-same-camera-latest.jpg",
-    "meanLuma": 54.23,
-    "stdLuma": 32.01,
+    "file": "research/screenshots/play-window-emissive.jpg",
+    "meanLuma": 56.03,
+    "stdLuma": 30.42,
     "animationClips": 49
   },
-  "deltaMean": -1.5,
+  "deltaMean": 0.3,
   "comparison": "research/runtime-observation/comparison-latest.jpg",
-  "verdict": "Same position/rotation/FOV; materials/lighting still differ locally. Not pixel equivalence and not a completed Gate 3."
+  "verdict": "Same position/rotation/FOV; overall luma now matches within +0.3, but local stone/window/awning shading and missing lightmaps still prevent pixel equivalence or a completed Gate 3."
 }
