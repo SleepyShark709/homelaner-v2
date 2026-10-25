@@ -263,6 +263,7 @@ try {
     baseX = 20; baseZ = 0;
   }
   materializeThin(name => /Tree|Palm/i.test(name), [baseX, baseZ], 120);
+  materializeThin(name => /Billboard/i.test(name), [baseX, baseZ], 120);
   const rotation = candidate?.rotation ?? [0, 0, 0, 1];
   input.yaw = legacy ? Math.PI : 2 * Math.atan2(rotation[1], rotation[3]);
   const yawParam = params.get('yaw');
@@ -323,7 +324,7 @@ try {
   await character.load(shadows, params.get('skin') === 'homelander' ? 'homelander' : 'original');
   if (params.get('skin') === 'homelander' && !freeMode) {
     const badge = document.querySelector<HTMLElement>('.play-badge');
-    if (badge) badge.textContent = 'Homelander 风格占位 · 原骨架';
+    if (badge) badge.textContent = 'Homelander · 动作映射';
   }
   character.update(player, 1);
   // Preview population: original citizen/vehicle/prop meshes and animations,

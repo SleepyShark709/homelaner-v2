@@ -70,20 +70,36 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 
 脚本：`tools/asset-pipeline/export-quest-areas.mjs`；证据：`research/world-recovery/quest-areas.json`。截图 `play-quest-marker.jpg`、`play-quest-visit.jpg`。
 
-## Homelander 风格占位（非正式换模）
+## Homelander 换模（真实模型）
 
 ```text
 /?view=play&skin=homelander
 ```
 
-- 复用原 `hero.gltf` 骨架、绑定和全部原动画；
-- 把黑色服装改为蓝色、头发改金色、肤色提亮；
-- 隐藏原墨镜，追加红色斗篷和金色胸前徽章；
-- 保留 Shift+E 热视线、右键远程和 `mode=free`。
+- 加载用户提供的 `homelander.glb`（约 29 MB，原模型自带贴图、披风、红靴和骨架）；
+- 不再复用原角色的身体/服装/墨镜；
+- 原版 `?view=play` 仍使用原角色和原 18 段动画，默认不受影响；
+- Shift+E 热视线、右键远程、`mode=free` 均保留。
 
-**这不是 Homelander 正式模型**：工作区没有 Homelander 网格/贴图，角色体型、脸部、发型和斗篷形状仍是原角色占位；只用于验证换色/挂件/换模管线。正式替换需要提供有授权的 Homelander 模型（或明确允许下载/使用的外链）。
+![Homelander 真实模型](research/screenshots/play-homelander-final.jpg)
 
-截图 `play-homelander4.jpg`。
+### 动作处理
+
+Homelander GLB 自带 idle/jog/sprint/fly/hover/punch/combo 等动画。若把原版动画直接重定向到它的 T-pose 骨架，实测手臂/肩部会出现畸形；因此当前默认：
+
+- 保留原版**动作名、状态机、攻击时间轴、连招、相机和输入**；
+- 把原版动作名映射到 Homelander 自带的对应动作（idle→idle，run→jog，fly→fly，Attack→punch/combo 等）；
+- 原角色仍使用原版动画，未修改。
+
+这保证默认 H 模型无畸形，但不是“原版动作逐帧重定向”。实验性重定向保留在 `?retarget=1`，当前不推荐。
+
+### 边界
+
+- 动作风格来自 Homelander 模型，不是原版逐帧动作；
+- 若必须逐帧保留原版动作，需要继续修正骨架 rest-pose/手臂轴重定向；
+- `homelander-style.glb` 未使用。
+
+截图 `play-homelander-final.jpg`、`play-homelander-ownrun2.jpg`、`play-homelander-ownattack.jpg`、`play-homelander-heat2.jpg`。
 
 ## 热视线预览（Shift+E）
 
@@ -91,7 +107,7 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 - Shift 同时抑制 E 的升降/地面蓄升；松开 Shift 后 E 恢复原版行为；
 - 原版右键远程攻击不受影响；
 - free 模式下可造成伤害/摧毁；baseline 模式仍按 baseline 伤害策略；
-- Homelander 换模未开始。
+- Homelander 真实模型已接入，热视线从其头部/眼部方向发出。
 
 浏览器探针：Shift+E 时 `heatActive=true`、`flying=false`，市民生命从 35 降到 23。
 
@@ -114,7 +130,7 @@ node scripts/capture-world.mjs --query='view=play&mode=free' --ready=play --prob
 - HUD 显示当前 `破坏/命中` 计数（实测 2/2）；
 - 市民被摧毁后 8 秒在原 spawn 点复活；
 - 没有玩家受伤、负分、强制失败等惩罚系统；
-- 热视线 **Shift+E** 已接入预览；Homelander 换模未开始；
+- 热视线 **Shift+E** 已接入预览；Homelander 真实模型已接入（动作映射见上文）；
 - 默认 `?view=play` 仍是原版基线 `baseline` 模式，不伤害市民。
 
 浏览器探针已验证：free 模式下 KeyK 攻击可把市民生命降到 0，`destroyed` 计数增加。

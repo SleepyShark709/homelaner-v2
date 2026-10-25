@@ -50,7 +50,7 @@ REA/Ghidra 对原 Shipping EXE 的函数、交叉引用和反编译结果位于 
 | 起点广场候选对照 | `research/runtime-observation/comparison-start-plaza-candidate.jpg`, `comparison-start-plaza-mainlevel.jpg`, `comparison-start-plaza-overlay.jpg`, `comparison-start-plaza-camera-clear.jpg` |
 | CommercialArea 地面调查 | `research/world-recovery/commercial-plaza-ground-investigation.zh-CN.md` |
 | StoryStartPoint 审计 | `research/world-recovery/story-start-point-audit.zh-CN.md` |
-| Homelander 风格占位 | `research/world-recovery/homelander-placeholder.zh-CN.md` |
+| Homelander 真实模型/动作映射 | `research/world-recovery/homelander-model.zh-CN.md` |
 | 任务触发区域 | `tools/asset-pipeline/export-quest-areas.mjs`, `research/world-recovery/quest-areas.json` |
 | 交通/人行横道位置 | `tools/asset-pipeline/export-traffic-markers.mjs`, `research/world-recovery/traffic-markers.json` |
 | HeroComponent 相机契约 | `research/world-recovery/hero-camera-contract.zh-CN.md` |
