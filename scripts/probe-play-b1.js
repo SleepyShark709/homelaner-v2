@@ -11,7 +11,7 @@
   const walking = state();
   key('keyup', 'KeyW');
   if (Math.abs(walking.stats.position[2] - start.stats.position[2]) < 3) throw new Error('W did not move the player');
-  if (walking.stats.state !== 'run' || walking.clip !== 'A_ThirdPersonRun') throw new Error(`walk state/animation mismatch: ${walking.stats.state}/${walking.clip}`);
+  if (walking.stats.state !== 'run' || walking.clip !== 'Hero_SprintRun') throw new Error(`walk state/animation mismatch: ${walking.stats.state}/${walking.clip}`);
   key('keydown', 'Space'); await wait(80); key('keyup', 'Space'); await wait(220);
   const jump = state();
   if (jump.stats.grounded || jump.stats.position[1] < start.stats.position[1] + 1) throw new Error('Space did not jump');

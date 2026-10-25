@@ -149,7 +149,10 @@ for (;;) {
   if (result.exceptionDetails) throw new Error(`Page probe failed: ${result.exceptionDetails.text}: ${result.exceptionDetails.exception?.description ?? ''}`);
   data = JSON.parse(result.result.value);
   if (data.ready === expectedReady || data.ready === 'error') break;
-  if (Date.now() - started > timeout) throw new Error(`Timed out waiting for viewer (${data.ready}; ${data.warning})`);
+  if (Date.now() - started > timeout) {
+    const recent = cdp.events.filter(event => event.method === 'Runtime.consoleAPICalled' || event.method === 'Runtime.exceptionThrown').slice(-12);
+    throw new Error(`Timed out waiting for viewer (${data.ready}; ${data.warning}) ${JSON.stringify(recent).slice(0, 4000)}`);
+  }
   await delay(500);
 }
 await delay(settle);

@@ -110,16 +110,14 @@ HeroABS_FlyingUpDonwAnim
 HeroABS_JumpFallLoop
 ```
 
-- [ ] 从 pak 提取上述 AnimSequence/BlendSpace 依赖到 `research/exports/locomotion-*`。
-- [ ] 用 UModel `-export -psa -game=ue4.27 -path=... -out=...` 导出 PSA + config；源路径示例：
-  - `Animations/Hero_Walk`
-  - `Animations/Hero_SprintRun`
-  - `Animations/Hero_JumpSpeed`
-  - `Animations/Hero_JumpLand`
-  - `-HeroGame/Player/Animations/Hero_StartSprint`、`Hero_Stopping_*`
-- [ ] 扩展现有 `scripts/convert-original-animations.py` 或写 append 脚本，把所有缺失 PSA 合并到原 93 骨骼 hero.gltf；**不得破坏现有 18 段**。
-- [ ] 重新生成 `public/assets/character/hero.gltf`，保留原骨架/蒙皮/材质/18 段攻击动作。
-- [ ] 更新 `src/game/Character.ts` CLIPS：run 使用 `HeroABS_MoveGround` 的真实采样/混合，jump/fall/land 使用 `Hero_JumpSpeed`/`Hero_JumpLand`/`ALS_N_Jump`，不要再用 `A_ThirdPersonRun`/`Hero_IdleFlying` 冒充。
+- [x] 从 pak 提取并导入 `Hero_Walk`、`Hero_SprintRun`、`Hero_JumpSpeed`、`Hero_JumpLand`、`Hero_JumpFall`、`Hero_JumpFallFast`、`Hero_StartSprint`、`Hero_Stopping_Sprint`、`Hero_Stopping_WalkRun` 九段 PSA + config。
+- [x] 用 UModel `-export -game=ue4.27 -path=... -out=...` 导出 PSA + config（**没有 `-psa` 参数**；动画对象默认导出 PSA）。以 `-HeroGame/...` 开头的包名需复制到不以 `-` 开头的目录并在该目录内用本地 package 名导出。
+- [x] 写 `scripts/append-locomotion-animations.py`，把九段追加到原 93 骨骼 hero.gltf；原 18 段保留，共 27 段；报告：`research/world-recovery/locomotion-import.json`。
+- [x] 更新 `src/game/Character.ts`：run 使用 `Hero_SprintRun`，jump 使用 `Hero_JumpFall`；已用真实 W/Space 输入截图验证无畸形。
+- [ ] 仍未导入：`Hero_SprintSuper`、`ALS_N_Jump`、`HeroABS_MoveGround` 的完整 blendspace 样本、`HeroABS_Flying*`；当前 run/jump 仍是直接片段切换，不是 BlendSpace 采样。
+- [ ] jump 的起跳/下落/落地转移仍缺：`Hero_JumpSpeed → Hero_JumpFall → Hero_JumpLand` 还没作为状态机播放。
+- [ ] 冲刺起停仍缺：`Hero_StartSprint` / `Hero_Stopping_Sprint` / `Hero_Stopping_WalkRun` 已导入但未接入状态转移。
+
 
 ### 2.2 恢复 HeroAnimBP 状态机
 

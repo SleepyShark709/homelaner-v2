@@ -1,0 +1,98 @@
+{
+  "source": "UModel PSA + config; appendix script",
+  "clips": [
+    {
+      "name": "Hero_Walk",
+      "frames": 31,
+      "rate": 31.0,
+      "durationSeconds": 0.967741935483871,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Animations/Hero_Walk.psa",
+      "sourceSha256": "478eaeaf1d13b8758837b472540471d6abb8041d00c0d463a2f552e505bdfca7"
+    },
+    {
+      "name": "Hero_SprintRun",
+      "frames": 36,
+      "rate": 61.71428298950195,
+      "durationSeconds": 0.5671296546693049,
+      "channelCount": 127,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Animations/Hero_SprintRun.psa",
+      "sourceSha256": "c86bf26a74502bad548820d71350ada92d7e6a9236f03c082d246d6fc20e20a8"
+    },
+    {
+      "name": "Hero_JumpSpeed",
+      "frames": 21,
+      "rate": 63.0,
+      "durationSeconds": 0.31746031746031744,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Animations/Hero_JumpSpeed.psa",
+      "sourceSha256": "895134ab74da91d08fb58076872f6163310505d43da7cd2129e774cb507e05f7"
+    },
+    {
+      "name": "Hero_JumpLand",
+      "frames": 13,
+      "rate": 65.0,
+      "durationSeconds": 0.18461538461538463,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Animations/Hero_JumpLand.psa",
+      "sourceSha256": "15bee91f2f8367821e646f2d42b22bb754720e7bcc8b47dc20db955f99be35c2"
+    },
+    {
+      "name": "Hero_JumpFall",
+      "frames": 91,
+      "rate": 109.19999694824219,
+      "durationSeconds": 0.8241758472086546,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Hero_JumpFall.psa",
+      "sourceSha256": "c49ef47e1cf0d718c71f4826830a199fa3ab34191f958d247c3f8e47fc6bf28f"
+    },
+    {
+      "name": "Hero_JumpFallFast",
+      "frames": 91,
+      "rate": 109.19999694824219,
+      "durationSeconds": 0.8241758472086546,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Hero_JumpFallFast.psa",
+      "sourceSha256": "7732c7f9b9a60996a9bc90a51afb0052a2d2adefab52081f887911969b187610"
+    },
+    {
+      "name": "Hero_StartSprint",
+      "frames": 61,
+      "rate": 42.70000076293945,
+      "durationSeconds": 1.405152199717891,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Hero_StartSprint.psa",
+      "sourceSha256": "37a7c888fa5262c5b28ee3d8385d7c8812eb7bcf68f8c047c4d8f751c9f85a96"
+    },
+    {
+      "name": "Hero_Stopping_Sprint",
+      "frames": 76,
+      "rate": 60.79999542236328,
+      "durationSeconds": 1.2335527244532278,
+      "channelCount": 127,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Hero_Stopping_Sprint.psa",
+      "sourceSha256": "ea0be81966ac419dde8162ace54e17be058fad0ab0eb981ca84e5d44be3bbc3c"
+    },
+    {
+      "name": "Hero_Stopping_WalkRun",
+      "frames": 31,
+      "rate": 30.999996185302734,
+      "durationSeconds": 0.9677420545691281,
+      "channelCount": 127,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Hero_Stopping_WalkRun.psa",
+      "sourceSha256": "c484e54304d91c5c2501df92dd05190d5fdbd4ce38e1fdabff5d128182e23398"
+    }
+  ],
+  "outputGltfSha256": "2b8a419aa6b93e46df86cd61207c9c7766a308d353f3e1e9b98de3779b704b17",
+  "outputBufferSha256": "ff5d6b40c032e2dd265406c66359695b5fa3ffd63e662973561f4d774761acd6",
+  "animationCount": 27
+}

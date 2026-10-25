@@ -9,7 +9,7 @@ import type { ShadowGenerator } from '@babylonjs/core/Lights/Shadows/shadowGener
 import type { MotionState } from './PlayerMotor';
 import type { Vec3 } from './collision';
 
-const CLIPS: Record<MotionState, string> = { idle: 'Hero_Idle', run: 'A_ThirdPersonRun', jump: 'Hero_IdleFlying', hover: 'Hero_IdleFlying', fly: 'Hero_FlyFastSprint' };
+const CLIPS: Record<MotionState, string> = { idle: 'Hero_Idle', run: 'Hero_SprintRun', jump: 'Hero_JumpFall', hover: 'Hero_IdleFlying', fly: 'Hero_FlyFastSprint' };
 interface RetargetClip {
   duration: number;
   times: number[];

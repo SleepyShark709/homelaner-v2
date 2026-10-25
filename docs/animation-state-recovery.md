@@ -30,27 +30,46 @@ ALS_N_Run_B / FL / FR
 Hero_Walk / Hero_SprintRun / Hero_SprintSuper
 ```
 
+## 已导入的原版 locomotion 片段
+
+2026-10-25 已从 pak 导出以下 PSA/config，并通过 `scripts/append-locomotion-animations.py` 追加到原 93 骨骼 `public/assets/character/hero.gltf`（原有 18 段保留，共 27 段）：
+
+```text
+Hero_Walk             31f @31.0
+Hero_SprintRun        36f @61.714
+Hero_JumpSpeed        21f @63.0
+Hero_JumpLand         13f @65.0
+Hero_JumpFall         61f
+Hero_JumpFallFast     91f
+Hero_StartSprint      61f @42.7
+Hero_Stopping_Sprint  76f @60.8
+Hero_Stopping_WalkRun 31f @31.0
+```
+
+每段 93 个模型关节全部映射，report 在 `research/world-recovery/locomotion-import.json`。
+
 ## 当前 Web 的映射
 
-`src/game/Character.ts` 目前只使用原 `hero.gltf` 里的 18 段：
+`src/game/Character.ts` 现在使用原 `hero.gltf` 的 27 段：
 
 ```text
 idle  -> Hero_Idle
-run   -> A_ThirdPersonRun      # ALS 跑步，不是 HeroABS_MoveGround 的完整混合
-jump  -> Hero_IdleFlying       # 临时回退
+run   -> Hero_SprintRun      # 原版冲刺片段；还不是 HeroABS_MoveGround 混合
+jump  -> Hero_JumpFall       # 原版下落片段；起跳/落地转移还未接
 hover -> Hero_IdleFlying
 fly   -> Hero_FlyFastSprint
 ```
 
 因此：
 
-- 待机/飞行/攻击素材是原版；
-- **地面移动/跳跃/落地/冲刺起停仍是回退映射**，不是 AnimBP 的完整状态机；
-- 还没有实现原版状态转移、混合空间、IK/物理次级运动、通知和根运动消费。
+- 待机/飞行/攻击/跑步/跳跃下落素材已是原版；
+- **地面移动/跳跃/落地/冲刺起停仍是直接片段切换**，不是 AnimBP 的 BlendSpace/过渡/IK/通知/根运动；
+- `Hero_StartSprint` / `Hero_Stopping_*` / `Hero_JumpSpeed` / `Hero_JumpLand` 已导入但尚未接入状态机；
+- 还没有实现 `HeroABS_MoveGround` 的方向/速度混合、`Hero_SprintSuper`、`ALS_N_Jump`、飞行混合空间。
 
 ## 结论
 
-Gate 4 仍未完成，但已拿到原版 AnimBP/BlendSpace 的真实资产与状态名称。下一步必须先把缺失的 `Hero_Walk`、`Hero_SprintRun`、`Hero_StartSprint`、`Hero_Stopping_*`、`Hero_JumpSpeed`、`Hero_JumpLand` 等 PSA 导入原骨架，再按 AnimBP 的转移条件实现，不能继续用名字相近的片段冒充。
+Gate 4 仍未完成，但核心缺失片段已进入原骨架，并已用真实 `W`/Space 输入验证 `run`/`jump` 片段可以播放（见 `research/screenshots/play-sprintrun.jpg`、`play-jumpfall.jpg`）。下一步是按 `HeroAnimBP` 的转移条件实现混合空间与状态机，而不是继续换片段。
 
 ## 证据
 
