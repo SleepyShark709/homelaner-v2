@@ -54,7 +54,7 @@
       },
       "note": "Baseline mode: only strong attacks may damage vehicles; citizens/props remain ignored by the recovered uncertainty in this mode."
     },
-    "freeMode": "?view=play&mode=free: KeyK destroyed a citizen (health 0, combat.destroyed incremented); citizens respawn after 8 s; heat vision remains disabled"
+    "freeMode": "?view=play&mode=free: KeyK destroyed a citizen (health 0); HUD shows 破坏 2 · 命中 2 in the verified run; citizens respawn after 8 s; heat vision remains Shift+E"
   },
   "camera": {
     "default": "PlayerBP CameraBoom 400 cm, SocketOffset(0,50,90), boom Z70, FOV 92 horizontal at HeroRank 0, CameraLagSpeed/RotationLagSpeed 15",

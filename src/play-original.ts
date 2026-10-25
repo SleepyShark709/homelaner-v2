@@ -46,7 +46,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <kbd>R</kbd><span>回到出生点</span>
     </div>
   </aside>
-  <div class="play-hud"><div>位置 <b id="hud-position">—</b></div><div>状态 <b id="hud-mode">—</b></div><div>速度 <b id="hud-speed">—</b></div><div id="hud-quest-row" hidden>任务区域 <b id="hud-quests">—</b></div><div id="hud-crosswalk-row" hidden>人行横道 <b id="hud-crosswalk">—</b></div><div>FPS <b id="hud-fps">—</b></div></div>
+  <div class="play-hud"><div>位置 <b id="hud-position">—</b></div><div>状态 <b id="hud-mode">—</b></div><div>速度 <b id="hud-speed">—</b></div><div id="hud-free-row" hidden>破坏 <b id="hud-destroyed">0</b> · 命中 <b id="hud-hits">0</b></div><div id="hud-quest-row" hidden>任务区域 <b id="hud-quests">—</b></div><div id="hud-crosswalk-row" hidden>人行横道 <b id="hud-crosswalk">—</b></div><div>FPS <b id="hud-fps">—</b></div></div>
   <div class="play-loading" id="loading"><div><strong id="load-title">装配原版可玩街区</strong><p id="load-message">读取原关卡、材质与地形…</p><progress id="progress" max="1" value="0"></progress></div></div>
   <div class="play-paused" id="paused" hidden>已暂停 · 点击继续</div>
   <div class="play-quest" id="quest-hint" hidden></div>`;
@@ -70,7 +70,8 @@ if (freeMode) {
   const badge = document.querySelector<HTMLElement>('.play-badge');
   if (badge) badge.textContent = '自由破坏预览 · 非原版';
   const warn = document.querySelector<HTMLElement>('.warn');
-  if (warn) warn.textContent = '自由破坏为可选预览：可摧毁市民/车辆/道具，市民会复活；热视线、任务和完整原版 AI 尚未接入。';
+  if (warn) warn.textContent = '自由破坏为可选预览：可摧毁市民/车辆/道具，市民会复活；热视线按 Shift+E；任务和完整原版 AI 尚未接入。';
+  el('hud-free-row').hidden = false;
 }
 const playDistrict = plazaMode ? 'MainLevel' : startupMode ? 'ResidentialArea1' : requestedDistrict;
 let player: OriginalPlayer | undefined;
@@ -396,6 +397,10 @@ try {
       el('hud-mode').textContent = stats.flying ? (stats.state === 'fly' ? '飞行冲刺' : '飞行悬停') : stats.grounded ? (stats.state === 'run' ? '地面移动' : '地面待机') : '腾空';
       el('hud-speed').textContent = `${stats.speed.toFixed(1)} m/s${stats.charge > 0 ? ` · 蓄升 ${stats.charge.toFixed(1)}s` : ''}`;
       el('hud-fps').textContent = String(Math.round(viewer.engine.getFps()));
+      if (freeMode && combat) {
+        el('hud-destroyed').textContent = String(combat.destroyed);
+        el('hud-hits').textContent = String(combat.hits);
+      }
       if (crosswalkMarkers.length) {
         let nearest = Infinity;
         for (const marker of crosswalkMarkers) nearest = Math.min(nearest, Math.hypot(marker[0] - stats.position[0], marker[2] - stats.position[2]));

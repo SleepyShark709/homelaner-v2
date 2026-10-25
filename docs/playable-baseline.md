@@ -111,12 +111,15 @@ node scripts/capture-world.mjs --query='view=play&mode=free' --ready=play --prob
 
 - 使用 `FREE_RULES`：市民 35、车辆 100、道具 30 生命；
 - 近战/远程/强力攻击可伤害并摧毁预览市民、车辆、道具；
+- HUD 显示当前 `破坏/命中` 计数（实测 2/2）；
 - 市民被摧毁后 8 秒在原 spawn 点复活；
 - 没有玩家受伤、负分、强制失败等惩罚系统；
 - 热视线 **Shift+E** 已接入预览；Homelander 换模未开始；
 - 默认 `?view=play` 仍是原版基线 `baseline` 模式，不伤害市民。
 
 浏览器探针已验证：free 模式下 KeyK 攻击可把市民生命降到 0，`destroyed` 计数增加。
+
+![自由破坏 HUD](research/screenshots/play-free-hud.jpg)
 
 ## B3/B4 进展
 
