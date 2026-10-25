@@ -62,7 +62,7 @@ const CAMERA = { armLength: 4.0, attackArmLength: 6.5, farArmLength: 8.0, farSpe
 input.pitch = 0.02;
 const paused = el('paused');
 const params = new URLSearchParams(location.search);
-const originalHudMode = params.get('hud') === 'original';
+const originalHudMode = params.get('hud') !== 'help';
 if (originalHudMode) {
   document.body.classList.add('hud-original');
   el('minimap-wrap').hidden = false;
