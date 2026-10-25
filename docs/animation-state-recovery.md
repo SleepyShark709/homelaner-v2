@@ -80,7 +80,8 @@ fly   -> Hero_FlyForward
 
 ```text
 ground idle -> Hero_Walk / Hero_StartSprint -> Hero_SprintRun (loop)
-walk/run -> Hero_Stopping_WalkRun (once) -> Hero_Idle (loop)
+SprintRun -> Hero_Stopping_Sprint (once) -> Hero_Idle/Hero_Walk (loop)
+Hero_Walk -> Hero_Stopping_WalkRun (once) -> Hero_Idle (loop)
 ground jump -> Hero_JumpSpeed (once) -> Hero_JumpFallFast (loop)
 landing -> Hero_JumpLand (once) -> Hero_Idle / Hero_Walk / Hero_SprintRun (loop)
 ```

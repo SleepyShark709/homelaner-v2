@@ -209,6 +209,8 @@ export class Character {
       if (desired === 'Hero_SprintRun' && (this.clip === 'Hero_Idle' || this.clip === 'Hero_Walk')) {
         this.setOneShot('Hero_StartSprint', desired);
       } else if ((desired === 'Hero_Idle' || desired === 'Hero_Walk') && this.clip === 'Hero_SprintRun') {
+        this.setOneShot('Hero_Stopping_Sprint', desired);
+      } else if (desired === 'Hero_Idle' && this.clip === 'Hero_Walk') {
         this.setOneShot('Hero_Stopping_WalkRun', desired);
       } else {
         this.setLoop(desired);

@@ -120,7 +120,7 @@ HeroABS_JumpFallLoop
 - [ ] 仍未导入：`ALS_N_Jump`、`HeroABS_MoveGround` 的完整方向 blendspace 样本、`Hero_FlyLeft`/`Hero_FlyRight`/`Hero_FlyBack`/`Hero_FlyTame`；fly 已按 velY/平面速度直接切 `FlyUp/FlyDown/FlyFastDown/FlyForward/FlyForwardLow`，仍不是 BlendSpace 采样。
 - [x] jump 的起跳/下落/落地顺序已接入：`Hero_JumpSpeed → Hero_JumpFallFast → Hero_JumpLand`。
 - [ ] jump 状态仍未按 `HeroABS_JumpFallLoop` 的 Speed/SpeedZ 轴选择与混合；当前是固定片段，不是 BlendSpace 采样。
-- [x] 已接入基础直接状态链：`StartSprint→SprintRun`、`SprintRun→Stopping_WalkRun→Idle`、`JumpSpeed→JumpFall→JumpLand`（用 `AnimationGroup.getLength()` 计时）。
+- [x] 已接入基础直接状态链：`StartSprint→SprintRun`、`SprintRun→Stopping_Sprint→Idle/Walk`、`Walk→Stopping_WalkRun→Idle`、`JumpSpeed→JumpFallFast→JumpLand`（用 `AnimationGroup.getLength()` 计时）。
 - [ ] 用 AnimBP 的真实 transition/blend 时间替换直接计时，并验证起跳/落地和冲刺起停边界。
 
 
