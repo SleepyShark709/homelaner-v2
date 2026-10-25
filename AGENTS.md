@@ -1,5 +1,16 @@
 # Project scope
 
+## Current phase (2026-10-25): original-game restoration only
+
+Restoring UNDEFEATED is the only active primary milestone. The Homelander skin, free-destruction mode, heat vision and other Web-side extensions are frozen optional experiments; they must not be treated as completion evidence or expanded until the restoration gates pass:
+
+1. Capture the real gameplay player/camera transform from the original executable (not the menu Pawn).
+2. Re-render the same location/camera and record an honest same-camera comparison.
+3. Close the lighting/material/sky/scene-content gaps and restore the missing props.
+4. Verify the original animation/state logic, then preserve it on any replacement character.
+
+Until those gates pass, do not call this a faithful port or a successful migration. The current default `?view=play` is the original character/slice; `?skin=homelander`, `?mode=free` and `?retarget=1` are experimental and may be incomplete.
+
 This is a new independent project at E:/undefeated-web. Do not base implementation on the existing homelander-simulator source tree. The original game installation is read-only.
 
 User correction (2026-10-24, supersedes milestone shortcuts): the user requires comprehensive REA-led reverse engineering and faithful original-game reconstruction. They rejected the current small browser demo as insufficient. Suspend further sandbox/free-mode/model development until original-world coverage, materials, animation/state logic and runtime comparison are evidenced. Preserve the current demo, but label it a partial reconstruction, never a complete port. Do not use self-designed approximate systems as replacements for unexamined original behavior. Actual REA output, UAssetAPI/UModel output and authored Web code must have distinct provenance. A recovered asset sample is not whole-game coverage. Restore the original game before pursuing the requested modifications.
