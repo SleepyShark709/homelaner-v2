@@ -13,6 +13,15 @@ ShadowMapTexture2D  198 个
 
 清单：`research/world-recovery/lightmap-inventory.json`。
 
+关键发现：起始建筑在 `CommercialArea` 子关卡，而它自己的 `CommercialArea_BuiltData` 还有：
+
+```text
+LightMapTexture2D   76 个
+ShadowMapTexture2D  25 个
+```
+
+因此起始建筑的候选 lightmap 集合应先从这 76 个里找，而不是 MainLevel 的 464 个。
+
 单个 `HQ_Lightmap0_16` 已用 UModel 成功导出为 4096×4096 PNG，证明这些不是残留引用，而是真实烘焙数据。
 
 导出命令（从 `-HeroGame/Maps` 目录执行）：

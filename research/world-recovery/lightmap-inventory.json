@@ -34,5 +34,24 @@
     "texcoord1": "constant (0,1), unusable",
     "texcoord2": "packed within [0,1], lightmap candidate",
     "texcoord3": "packed within [0,1], lightmap candidate"
+  },
+  "commercialAreaBuiltData": {
+    "package": "/Game/-HeroGame/Maps/SubLevel/CommercialArea_BuiltData",
+    "lightMapTexture2DCount": 76,
+    "shadowMapTexture2DCount": 25,
+    "firstLightmaps": [
+      "HQ_Lightmap0_1",
+      "HQ_Lightmap0_101",
+      "HQ_Lightmap0_132",
+      "HQ_Lightmap0_134",
+      "HQ_Lightmap0_137",
+      "HQ_Lightmap0_138",
+      "HQ_Lightmap0_146",
+      "HQ_Lightmap0_147",
+      "HQ_Lightmap0_15",
+      "HQ_Lightmap0_21",
+      "HQ_Lightmap0_217",
+      "HQ_Lightmap0_219"
+    ]
   }
 }
