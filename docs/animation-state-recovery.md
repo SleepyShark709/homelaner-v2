@@ -213,7 +213,7 @@ movingRootClips  []
 
 `HeroABS_MoveGround` 的样本速度轴以 850 cm/s（8.5 m/s）为 run 基准；Web 的 `Hero_SprintRun` 播放速率改为 `planarSpeed / 8.5`（0.7..2.2），`Hero_Walk` 改为 `planarSpeed / 3`（0.6..1.5），不再使用固定的 6/1.5 基准。10 m/s 普通跑步截图 `research/screenshots/play-run-ratio.jpg` 无畸形。
 
-`Hero_SprintSuper` 在 30 m/s 的 Shift 冲刺下已实际渲染检查（`research/screenshots/play-sprint-super.jpg`）：单段姿态看起来偏直立。但 `HeroABS_MoveGround` 的实际 SampleData 在 1675/2225/2500 cm/s 明确使用 `Hero_SprintSuper`，因此高速度段（>16.75 m/s）现在按样本权重使用它；30 m/s 时 clip 回到 `Hero_SprintSuper`。若后续逐帧对照证明导入片段姿态有误，应修正转换/骨骼轨道，而不是继续忽略该原版样本。
+`Hero_SprintSuper` 在 30 m/s 的 Shift 冲刺下已实际渲染检查（`research/screenshots/play-sprint-super-high.jpg`）：单段姿态仍偏直立、没有明显前倾摆腿。但 `HeroABS_MoveGround` 的实际 SampleData 在 1675/2225/2500 cm/s 明确使用 `Hero_SprintSuper`，因此高速度段（>16.75 m/s）现在按样本权重使用它；30 m/s 时 clip 回到 `Hero_SprintSuper`。若后续逐帧对照证明导入片段姿态有误，应修正转换/骨骼轨道，而不是继续忽略该原版样本。
 
 
 `npm run verify:locomotion` 会检查整个 `hero.gltf` 的 46 段动画：
