@@ -25,7 +25,7 @@
     "acceleration": "20.48 m/s^2 (original walk 2048 cm/s^2)",
     "sprintAcceleration": "150 m/s^2 (original sprint 15000 cm/s^2)",
     "braking": "60 m/s^2 authored approximation for the high BrakingFrictionFactor/UE stopping behavior",
-    "flyAcceleration": "70 m/s^2 authored; original doc lists 4096 cm/s^2 for flying, not yet matched"
+    "flyAcceleration": "40.96 m/s^2 (original flying 4096 cm/s^2)"
   },
-  "note": "Recovered CharacterMovement defaults; Web uses the original walk/sprint acceleration values, JumpZVelocity=2000 with GravityScale=5, MaxFlySpeed=4000 and AirControl=1. Braking and fly acceleration remain approximate."
+  "note": "Recovered CharacterMovement defaults; Web uses the original walk/sprint/fly accelerations, JumpZVelocity=2000 with GravityScale=5, MaxFlySpeed=4000 and AirControl=1. Braking remains approximate."
 }

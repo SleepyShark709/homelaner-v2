@@ -1,4 +1,4 @@
-﻿import assert from 'node:assert/strict';
+import assert from 'node:assert/strict';
 import { PlayerMotor } from '../src/game/PlayerMotor.ts';
 class Keys {
   yaw = Math.PI; down = new Set(); edges = new Set();
@@ -17,8 +17,8 @@ input.press('KeyW'); tick(1); assert.ok(motor.position[2] < -7); assert.equal(mo
 input.clear(); tick(.3); assert.equal(motor.state, 'idle'); assert.equal(motor.velocity[2], 0);
 input.press('Space'); tick(.15); assert.ok(motor.position[1] > 2); assert.equal(motor.flying, false);
 input.clear(); input.press('Space'); tick(.1); assert.equal(motor.flying, true);
-input.clear(); input.press('KeyW'); input.press('ShiftLeft'); tick(1); assert.equal(Math.round(Math.hypot(...motor.velocity)), 70);
-input.clear(); tick(1); assert.equal(Math.round(Math.hypot(...motor.velocity)), 0); assert.equal(motor.state, 'hover');
+input.clear(); input.press('KeyW'); input.press('ShiftLeft'); tick(1.8); assert.equal(Math.round(Math.hypot(...motor.velocity)), 70);
+input.clear(); tick(2); assert.equal(Math.round(Math.hypot(...motor.velocity)), 0); assert.equal(motor.state, 'hover');
 const hoverHeight = motor.position[1]; input.press('KeyE'); tick(1); assert.equal(motor.position[1], hoverHeight, 'E heat vision must not ascend'); input.clear();
 input.press('KeyF'); tick(5); assert.equal(motor.flying, false); assert.equal(motor.grounded, true);
 input.clear(); input.press('KeyR'); tick(.1); assert.ok(Math.abs(motor.position[0]) < .01 && Math.abs(motor.position[2]) < .01);
