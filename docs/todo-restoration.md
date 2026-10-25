@@ -47,6 +47,7 @@
 ### 1.1 建筑雨棚/檐口与石材明暗
 
 - [ ] 确认开始建筑（CommercialArea `SM_MERGED_Building_2_01_9`）雨棚/檐口/门框对应的实际 mesh slot 与材质。
+- [x] 已确认开始建筑的 8 个可见 material slot，并解码 `building_02_Inst`（Contrast .43796、EmissiveAmount 1.74378、Emissive Colour）、`brick_02_TintB_Inst2`（Tint Colour .06/.0216/.0017、Roughness 1）参数；见 [material-recovery.md](material-recovery.md) 与 `research/world-recovery/building-material-parameters.json`。父 shader graph/emissive mask 尚未恢复，暂不直接给整面墙加 emissive。
 - [ ] 还原雨棚底面、柱脚、石材接缝的环境遮蔽/阴影，不新增猜测的暗面。
 - [ ] 对照原版同机位截图逐块修正；验收标准：同机位同尺寸截图的主要轮廓、玻璃、金属框、檐口不再存在明显色差/缺失。
 - 参考：原版实抓 `research/runtime-observation/original-gameplay-start-final.png`；对照图上方路径。

@@ -1,0 +1,44 @@
+{
+  "scope": "Start-building SM_MERGED_Building_2_01_9 and nearby UrbanCity facade/brick materials",
+  "source": "cooked MaterialInstanceConstant packages decoded with UAssetGUI",
+  "startBuildingSlots": [
+    { "material": "/Game/UrbanCity/Materials/Tileable/brick_02_TintB_Inst2", "diffuse": "/Game/UrbanCity/Textures/Tileable/brick_02_d" },
+    { "material": "/Game/UrbanCity/Materials/Buildings/building_02_Inst", "diffuse": "/Game/UrbanCity/Textures/Buildings/building_02_d" },
+    { "material": "/Game/UrbanCity/Materials/-Window_mat", "diffuse": null },
+    { "material": "/Game/UrbanCity/Materials/Tileable/Tilable_metal_TintC_Inst", "diffuse": "/Game/UrbanCity/Textures/Tileable/metal_01_d" },
+    { "material": "/Game/-HeroGame/Materials/MaterialInstance/MI_RoofTop", "diffuse": null },
+    { "material": "/Game/ModularStreetPack/Materials/L_Aircon_Mat", "diffuse": null },
+    { "material": "/Game/ModularStreetPack/Materials/Roof_Felt_Mat", "diffuse": null },
+    { "material": "/Game/ModularStreetPack/Materials/Galvanized_Steel_Mat", "diffuse": null }
+  ],
+  "building_02_Inst": {
+    "parent": "/Game/UrbanCity/Materials/building_mat",
+    "diffuse": "/Game/UrbanCity/Textures/Buildings/building_02_d",
+    "normal": "/Game/UrbanCity/Textures/Buildings/building_02_n",
+    "roughnessMap": "/Game/UrbanCity/Textures/Buildings/building_02_r",
+    "scalarParameters": {
+      "Contrast": 0.4379599988460541,
+      "EmissiveAmount": 1.7437800168991089
+    },
+    "vectorParameters": {
+      "Emissive Colour": [0.07746099680662155, 0.0949999988079071, 0.06173599883913994]
+    },
+    "baseOverrides": {
+      "bOverride_TwoSided": true,
+      "OpacityMaskClipValue": 0.33329999446868896
+    }
+  },
+  "brick_02_TintB_Inst2": {
+    "parent": "/Game/UrbanCity/Materials/-Tilable_mat",
+    "diffuse": "/Game/UrbanCity/Textures/Tileable/brick_02_d",
+    "normal": "/Game/UrbanCity/Textures/Tileable/brick_02_n",
+    "scalarParameters": {
+      "Normal Strength": 1,
+      "Roughness": 1
+    },
+    "vectorParameters": {
+      "Tint Colour": [0.05999999865889549, 0.021616000682115555, 0.0017130000051110983]
+    }
+  },
+  "note": "The material parameters are recovered, but the parent material shader graph (contrast/emissive mask/tint layering) and the emissive mask texture are not reconstructed. Web currently uses the diffuse texture with neutral/white albedo for building_02_Inst and brick_02_TintB_Inst2, so the stone/brick tint is still a Gate 3 gap."
+}
