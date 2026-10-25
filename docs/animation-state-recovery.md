@@ -242,6 +242,28 @@ Hero_IdleFlying       SpawnFlyDustEffect 2.393s
 
 `Hero_StartSprint` 没有 notify。完整报告：[notify-times.json](../research/world-recovery/notify-times.json)。攻击序列的 notify 时间本来就已经在 `combat-timings.json` 中，这一轮补齐的是 locomotion/fly 序列。
 
+### AnimBP transition / crossfade 时间（2026-10-25）
+
+`scripts/extract-animbp-transitions.py` 从 `HeroAnimBP.json` 的 `AnimationTransitionBetweenStates` 提取到 **33 条实际 transition**（另 1 条空结构）：
+
+```text
+DefaultStateMachine   21
+Ground State           8
+Jump/Falling State     4
+Flying State           0（单状态）
+```
+
+全部 `BlendMode = HermiteCubic`。关键时长：
+
+```text
+JumpStart -> FallingLoop          0.55 s
+StopSprint -> Idle                0.25 s
+MovementModeConduit -> Landing    0.10 s
+其余绝大多数                      0.20 s
+```
+
+完整状态名/前后状态/时长：[animbp-transition-timing.json](../research/world-recovery/animbp-transition-timing.json)。Web 目前仍用即时的 `setLoop`/`setOneShot` + Babylon blendingSpeed，**尚未按这些秒数实现真正的 crossfade**。
+
 ### 原版脚步声音（2026-10-25）
 
 `Footstep01..09` 是 cooked `SoundWave`，音频以 Ogg 形式嵌在 `.uexp` 偏移 `0x87` 之后。`scripts/extract-footstep-sounds.py` 提取出 8 个 `.ogg`（pak 中没有 `Footstep05`），SHA/size 清单在 [footstep-sound-manifest.json](../research/world-recovery/footstep-sound-manifest.json)。

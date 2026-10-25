@@ -1,0 +1,385 @@
+{
+  "source": "research/rea-audit/decoded/hero-anim/HeroAnimBP.json",
+  "note": "CrossfadeDuration is seconds; BlendMode is HermiteCubic in every recovered transition.",
+  "machines": [
+    {
+      "name": "DefaultStateMachine",
+      "initialState": 0,
+      "states": [
+        "Ground",
+        "MovementModeConduit",
+        "Falling",
+        "Flying",
+        "Landing",
+        "BossAttackingMoveLoop",
+        "BossBlowingMoveSecondLoop",
+        "BossBlowingMoveLoop",
+        "BossHeavyAttackSmashingLoop"
+      ]
+    },
+    {
+      "name": "Ground State",
+      "initialState": 0,
+      "states": [
+        "Idle",
+        "Moving",
+        "StopSprint",
+        "StopConduit",
+        "StopWalkRun"
+      ]
+    },
+    {
+      "name": "Jump/Falling State",
+      "initialState": 0,
+      "states": [
+        "JumpStart",
+        "FallingLoop",
+        "AirAttack"
+      ]
+    },
+    {
+      "name": "Flying State",
+      "initialState": 0,
+      "states": [
+        "Flying"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "machine": "DefaultStateMachine",
+      "states": [
+        "Ground",
+        "MovementModeConduit",
+        "Falling",
+        "Flying",
+        "Landing",
+        "BossAttackingMoveLoop",
+        "BossBlowingMoveSecondLoop",
+        "BossBlowingMoveLoop",
+        "BossHeavyAttackSmashingLoop"
+      ],
+      "transitions": [
+        {
+          "previousState": 0,
+          "nextState": 1,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "Ground",
+          "nextName": "MovementModeConduit"
+        },
+        {
+          "previousState": 1,
+          "nextState": 0,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "MovementModeConduit",
+          "nextName": "Ground"
+        },
+        {
+          "previousState": 2,
+          "nextState": 1,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "Falling",
+          "nextName": "MovementModeConduit"
+        },
+        {
+          "previousState": 1,
+          "nextState": 2,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "MovementModeConduit",
+          "nextName": "Falling"
+        },
+        {
+          "previousState": 1,
+          "nextState": 4,
+          "crossfadeSeconds": 0.10000000149011612,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "MovementModeConduit",
+          "nextName": "Landing"
+        },
+        {
+          "previousState": 4,
+          "nextState": 1,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "Landing",
+          "nextName": "MovementModeConduit"
+        },
+        {
+          "previousState": 4,
+          "nextState": 0,
+          "crossfadeSeconds": 0.25,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "Landing",
+          "nextName": "Ground"
+        },
+        {
+          "previousState": 1,
+          "nextState": 3,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "MovementModeConduit",
+          "nextName": "Flying"
+        },
+        {
+          "previousState": 3,
+          "nextState": 1,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "Flying",
+          "nextName": "MovementModeConduit"
+        },
+        {
+          "previousState": 3,
+          "nextState": 5,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "Flying",
+          "nextName": "BossAttackingMoveLoop"
+        },
+        {
+          "previousState": 5,
+          "nextState": 3,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "BossAttackingMoveLoop",
+          "nextName": "Flying"
+        },
+        {
+          "previousState": 3,
+          "nextState": 6,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "Flying",
+          "nextName": "BossBlowingMoveSecondLoop"
+        },
+        {
+          "previousState": 6,
+          "nextState": 3,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "BossBlowingMoveSecondLoop",
+          "nextName": "Flying"
+        },
+        {
+          "previousState": 3,
+          "nextState": 7,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "Flying",
+          "nextName": "BossBlowingMoveLoop"
+        },
+        {
+          "previousState": 7,
+          "nextState": 3,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "BossBlowingMoveLoop",
+          "nextName": "Flying"
+        },
+        {
+          "previousState": 3,
+          "nextState": 8,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "Flying",
+          "nextName": "BossHeavyAttackSmashingLoop"
+        },
+        {
+          "previousState": 8,
+          "nextState": 3,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "BossHeavyAttackSmashingLoop",
+          "nextName": "Flying"
+        },
+        {
+          "previousState": 8,
+          "nextState": 1,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "BossHeavyAttackSmashingLoop",
+          "nextName": "MovementModeConduit"
+        },
+        {
+          "previousState": 6,
+          "nextState": 1,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "BossBlowingMoveSecondLoop",
+          "nextName": "MovementModeConduit"
+        },
+        {
+          "previousState": 5,
+          "nextState": 1,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "BossAttackingMoveLoop",
+          "nextName": "MovementModeConduit"
+        },
+        {
+          "previousState": 7,
+          "nextState": 1,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "BossBlowingMoveLoop",
+          "nextName": "MovementModeConduit"
+        }
+      ]
+    },
+    {
+      "machine": "Ground State",
+      "states": [
+        "Idle",
+        "Moving",
+        "StopSprint",
+        "StopConduit",
+        "StopWalkRun"
+      ],
+      "transitions": [
+        {
+          "previousState": 0,
+          "nextState": 1,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "Idle",
+          "nextName": "Moving"
+        },
+        {
+          "previousState": 2,
+          "nextState": 0,
+          "crossfadeSeconds": 0.25,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "StopSprint",
+          "nextName": "Idle"
+        },
+        {
+          "previousState": 1,
+          "nextState": 3,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "Moving",
+          "nextName": "StopConduit"
+        },
+        {
+          "previousState": 3,
+          "nextState": 2,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "StopConduit",
+          "nextName": "StopSprint"
+        },
+        {
+          "previousState": 3,
+          "nextState": 4,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "StopConduit",
+          "nextName": "StopWalkRun"
+        },
+        {
+          "previousState": 4,
+          "nextState": 0,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "StopWalkRun",
+          "nextName": "Idle"
+        },
+        {
+          "previousState": 4,
+          "nextState": 1,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "StopWalkRun",
+          "nextName": "Moving"
+        },
+        {
+          "previousState": 2,
+          "nextState": 1,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "StopSprint",
+          "nextName": "Moving"
+        }
+      ]
+    },
+    {
+      "machine": "Jump/Falling State",
+      "states": [
+        "JumpStart",
+        "FallingLoop",
+        "AirAttack"
+      ],
+      "transitions": [
+        {
+          "previousState": 0,
+          "nextState": 1,
+          "crossfadeSeconds": 0.550000011920929,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "JumpStart",
+          "nextName": "FallingLoop"
+        },
+        {
+          "previousState": 0,
+          "nextState": 2,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "JumpStart",
+          "nextName": "AirAttack"
+        },
+        {
+          "previousState": 1,
+          "nextState": 2,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "FallingLoop",
+          "nextName": "AirAttack"
+        },
+        {
+          "previousState": 2,
+          "nextState": 1,
+          "crossfadeSeconds": 0.20000000298023224,
+          "blendMode": "EAlphaBlendOption::HermiteCubic",
+          "logicType": null,
+          "previousName": "AirAttack",
+          "nextName": "FallingLoop"
+        }
+      ]
+    }
+  ]
+}
