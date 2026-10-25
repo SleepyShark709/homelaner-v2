@@ -111,6 +111,17 @@ export class OriginalMaterials {
       material.albedoTexture = this.texture(channels.baseColor);
       if (!factors.baseColor?.length) material.albedoColor = Color3.White();
     }
+    if (source === '/Game/UrbanCity/Materials/Tileable/brick_02_TintB_Inst2') {
+      // Recovered instance parameters: Tint Colour (.06,.021616,.001713 linear) and
+      // Tint Opacity .633027. The derived texture applies the lerp in linear space;
+      // the original parent -Tilable_mat graph is still not reconstructed.
+      material.albedoTexture = this.texture({
+        url: '/assets/world/textures/Game/UrbanCity/Textures/Tileable/brick_02_d_tintB.png',
+        colorSpace: 'srgb',
+        texCoord: 0,
+      });
+      material.albedoColor = Color3.White();
+    }
     if (channels.normal && !allSurfaceShader) {
       const convention = channels.normal.normalConvention?.toLowerCase();
       if (convention === 'directx' || convention === 'opengl') {

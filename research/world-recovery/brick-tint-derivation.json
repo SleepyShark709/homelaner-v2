@@ -1,0 +1,17 @@
+{
+  "source": "public\\assets\\world\\textures\\Game\\UrbanCity\\Textures\\Tileable\\brick_02_d.png",
+  "sourceSha256": "f53a859fa762289e17a9f1f348a550218500cf4bb8798a1aef8d20c8a5ac51ae",
+  "output": "public\\assets\\world\\textures\\Game\\UrbanCity\\Textures\\Tileable\\brick_02_d_tintB.png",
+  "outputSha256": "584144c2e4164a0e3b2493ffd7c225e84be4cb1e12278eb7602792a18bf79961",
+  "tintColourLinear": [
+    0.05999999865889549,
+    0.021616000682115555,
+    0.0017130000051110983
+  ],
+  "recoveredTintOpacity": 0.6330270171165466,
+  "effectiveTintOpacity": 0.17724756479263307,
+  "tintScale": 0.28,
+  "mask": "source alpha (0..170) used as per-texel tint weight",
+  "formula": "linear(sRGB) blended toward tint by effectiveTintOpacity * (alpha/255), then back to sRGB; alpha preserved",
+  "note": "Derived for same-camera comparison. The parent -Tilable_mat tint layering/mask is not reconstructed; .28 is a luma calibration, not a recovered value."
+}
