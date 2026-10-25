@@ -49,10 +49,11 @@ B2 探针 [probe-play-b2.js](../scripts/probe-play-b2.js) / [probe-play-b2-hit.j
 ```
 
 - 从 MainLevel 几何中恢复 **227 个 CrossWalk** 与 **339 个 TrafficLight** 网格位置；
-- `traffic=1` 只绘制 227 个人行横道位置的黄色圆环；
+- `traffic=1` 绘制 227 个人行横道位置的黄色圆环；
+- HUD 同时显示最近人行横道距离（实测 4.3 m）；
 - 车辆已有 7 m 车距停车与玩家前方 5 m 让行，但**原版红绿灯时序、`BP_TrafficSystem` 状态机和路线遍历未恢复**。
 
-脚本：`tools/asset-pipeline/export-traffic-markers.mjs`；证据：`research/world-recovery/traffic-markers.json`。截图 `play-traffic-crosswalk4.jpg`。
+脚本：`tools/asset-pipeline/export-traffic-markers.mjs`；证据：`research/world-recovery/traffic-markers.json`。截图 `play-traffic-crosswalk4.jpg`、`play-traffic-hud.jpg`。
 
 ## 任务触发区域可视化（可选）
 

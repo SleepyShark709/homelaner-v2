@@ -46,7 +46,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <kbd>R</kbd><span>回到出生点</span>
     </div>
   </aside>
-  <div class="play-hud"><div>位置 <b id="hud-position">—</b></div><div>状态 <b id="hud-mode">—</b></div><div>速度 <b id="hud-speed">—</b></div><div id="hud-quest-row" hidden>任务区域 <b id="hud-quests">—</b></div><div>FPS <b id="hud-fps">—</b></div></div>
+  <div class="play-hud"><div>位置 <b id="hud-position">—</b></div><div>状态 <b id="hud-mode">—</b></div><div>速度 <b id="hud-speed">—</b></div><div id="hud-quest-row" hidden>任务区域 <b id="hud-quests">—</b></div><div id="hud-crosswalk-row" hidden>人行横道 <b id="hud-crosswalk">—</b></div><div>FPS <b id="hud-fps">—</b></div></div>
   <div class="play-loading" id="loading"><div><strong id="load-title">装配原版可玩街区</strong><p id="load-message">读取原关卡、材质与地形…</p><progress id="progress" max="1" value="0"></progress></div></div>
   <div class="play-paused" id="paused" hidden>已暂停 · 点击继续</div>
   <div class="play-quest" id="quest-hint" hidden></div>`;
@@ -82,6 +82,7 @@ type QuestArea = { id: string; kind: string; position: Vec3 };
 let questAreas: QuestArea[] = [];
 let questMessageUntil = 0;
 const visitedQuests = new Set<string>();
+const crosswalkMarkers: Vec3[] = [];
 const questHint = el('quest-hint');
 
 viewer.onProgress = (message, done, total) => {
@@ -152,11 +153,13 @@ try {
     crosswalkMaterial.disableLighting = true;
     for (const marker of traffic?.markers ?? []) {
       if (marker.kind !== 'crosswalk') continue;
+      crosswalkMarkers.push(marker.position);
       const ring = CreateTorus('crosswalk-marker', { diameter: 4.4, thickness: 0.1, tessellation: 20 }, viewer.scene);
       ring.position.set(marker.position[0], marker.position[1] + 0.08, marker.position[2]);
       ring.material = crosswalkMaterial;
       ring.isPickable = false;
     }
+    if (crosswalkMarkers.length) el('hud-crosswalk-row').hidden = false;
   }
   if (params.get('quests') === '1') {
     const quests = await fetch('/assets/world/quest-areas.json').then(response => response.ok ? response.json() : null).catch(() => null) as { areas?: QuestArea[] } | null;
@@ -393,6 +396,11 @@ try {
       el('hud-mode').textContent = stats.flying ? (stats.state === 'fly' ? '飞行冲刺' : '飞行悬停') : stats.grounded ? (stats.state === 'run' ? '地面移动' : '地面待机') : '腾空';
       el('hud-speed').textContent = `${stats.speed.toFixed(1)} m/s${stats.charge > 0 ? ` · 蓄升 ${stats.charge.toFixed(1)}s` : ''}`;
       el('hud-fps').textContent = String(Math.round(viewer.engine.getFps()));
+      if (crosswalkMarkers.length) {
+        let nearest = Infinity;
+        for (const marker of crosswalkMarkers) nearest = Math.min(nearest, Math.hypot(marker[0] - stats.position[0], marker[2] - stats.position[2]));
+        el('hud-crosswalk').textContent = `${nearest.toFixed(1)} m`;
+      }
       if (questAreas.length) {
         let nearest: { area: QuestArea; distance: number } | undefined;
         for (const area of questAreas) {
