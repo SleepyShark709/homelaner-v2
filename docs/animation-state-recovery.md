@@ -122,6 +122,9 @@ Flying State:
 
 ## 动画数据校验
 
+`Hero_SprintSuper` 在 30 m/s 的 Shift 冲刺下已实际渲染检查（`research/screenshots/play-sprint-super.jpg`）：角色呈直立/步行姿态，没有原版冲刺应有的前倾和摆腿。因此当前 Shift 冲刺继续使用 `Hero_SprintRun`，不把 `Hero_SprintSuper` 当作普通冲刺片段；仍保留该导入片段供后续 BlendSpace 验证。
+
+
 `npm run verify:locomotion` 会检查整个 `hero.gltf` 的 34 段动画：
 
 - 每段旋转通道关节数：基础/多数原版片段 93；部分 PSA config 主动删除了头发/配饰骨骼的旋转轨道，因此为 68；
