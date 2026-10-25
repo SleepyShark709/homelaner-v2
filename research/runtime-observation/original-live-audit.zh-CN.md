@@ -77,14 +77,31 @@ camera  = (-3.62, 3.2715, 70.73891) m
 
 ![原版 gameplay 起点 vs Web 同机位](comparison-live-gameplay-start-web-v3.jpg)
 
-这是第一张**同一玩家位置、同一相机位置/朝向**的对照。建筑柱、门洞、人物位置/比例和地面透视已经对上；剩余差异主要是：
+这是第一张**同一玩家位置、同一相机位置/朝向、同一 FOV** 的对照。建筑柱、门洞、人物位置/比例和地面透视已经对上；`-Window_mat` 与 `Tilable_metal_TintC_Inst` 已用恢复参数从灰玻璃/白框修正为深色玻璃/金属框。剩余差异主要是：
 
-- 原版门/窗玻璃、金属框、材质和明暗对比更完整；Web 门洞偏平、偏亮；
+- 原版顶部雨棚/檐口和石材明暗层次更完整；Web 仍偏平；
 - 原版有完整 HUD/minimap/任务标识；Web 是自制 HUD；
-- 原版有实时角色投影/环境光遮蔽；Web 阴影和接触阴影不足；
-- 人物动作/HUD/画面比例仍需逐项对齐。
+- 原版有实时角色投影/环境光遮蔽；Web 接触阴影不足；
+- 玻璃反射、门内暗部层次和画面比例仍需逐项对齐；
+- 人物动作仍需逐帧验证。
 
 结论：**同机位已建立，视觉等价和动作逐帧保留仍未完成。**
+
+## minimap 静态图恢复
+
+已从 pak 恢复原版 minimap 底图：
+
+```text
+/Game/-WorkSpace/Hyodo/MiniMap/NewMinimapSystem/T_StaticMinimap_Tex
+```
+
+- `repak` 解包 → `UModel` 导出 1024×1024 Radiance HDR → 解码为 PNG；
+- 原版 `BP_WorldCaptureCamera` 用正交 `SCS_BaseColor` capture 生成该图；
+- 原版 HUD 通过 `M_NewMiniMapSystem` / `NewMiniMap_Widget` 使用它。
+
+底图文件：`minimap-static.png`。当前 Web HUD 还没有接这张图，因为 `WorldToMapSpace` 的精确世界范围/UV 变换和图标布局尚未完全恢复，不能用一个猜的缩放冒充原版 minimap。
+
+![原版 minimap 静态底图](minimap-static.png)
 
 ## 历史候选限制
 
@@ -120,5 +137,6 @@ camera  = (-3.62, 3.2715, 70.73891) m
 - `original-minimap-crop.png`：原版 minimap 放大；
 - `comparison-start-live-vs-web.jpg`：早期非同一状态并排对照；
 - `original-gameplay-start-final.png`：intro 结束后的真实 gameplay 起点实抓；
-- `comparison-live-gameplay-start-web.jpg`：同一玩家/相机位置的 Web 对照；
+- `comparison-live-gameplay-start-web-v3.jpg`：同一玩家/相机/FOV 的 Web 对照；
+- `minimap-static.png`：从 `T_StaticMinimap_Tex` 恢复的 1024×1024 原版 minimap 底图；
 - `original-start-plaza.png`：用户提供的早期原版截图。
