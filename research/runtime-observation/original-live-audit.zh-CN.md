@@ -30,6 +30,8 @@ cam_rot  = (-10.000, 90.000, 0.000)
 
 这是**菜单角色**的 transform（相机在角色后方 400 cm、高度 327 cm），不是 `GAME START` 后的玩家起点；进入 gameplay 后该 Pawn 未重新绑定，因此不能把它当开始坐标。
 
+`ClientTravel("MainLevel", 0, false)` 与 `ConsoleCommand("open MainLevel")` 均被游戏拒绝，不能用它们绕过菜单。可复现步骤见 `tools/runtime/ue4ss/README.md`。
+
 此外，自动截图/前台窗口切换在本轮遇到了非游戏窗口抢占，已停止该自动化，不做不可靠的截图判断。
 
 ## 重要限制
