@@ -118,7 +118,8 @@ HeroABS_JumpFallLoop
 - [x] 用 UModel `-export -game=ue4.27 -path=... -out=...` 导出 PSA + config（**没有 `-psa` 参数**；动画对象默认导出 PSA）。以 `-HeroGame/...` 开头的包名需复制到不以 `-` 开头的目录并在该目录内用本地 package 名导出。
 - [x] 写 `scripts/append-locomotion-animations.py`，把十六段追加到原 93 骨骼 hero.gltf；原 18 段保留，共 34 段；报告：`research/world-recovery/locomotion-import.json`。
 - [x] 更新 `src/game/Character.ts`：低速使用 `Hero_Walk`，run 使用 `Hero_SprintRun`，JumpStart 后使用 `Hero_JumpFallFast`（对应 `HeroABS_JumpFallLoop` 的 Speed≈1250/SpeedZ≈-5000 低空样本）；`Hero_SprintSuper` 已在 30 m/s Shift 冲刺下实际渲染检查，姿态呈直立/步行而非冲刺，因此不用于默认 run（截图 `research/screenshots/play-sprint-super.jpg`）；已用真实 W/Space/Alt+W 输入截图验证无畸形。
-- [ ] 仍未导入：`ALS_N_Jump`、`HeroABS_MoveGround` 的完整方向 blendspace 样本、`Hero_FlyLeft`/`Hero_FlyRight`/`Hero_FlyBack`/`Hero_FlyTame`；fly 已按 velY/平面速度直接切 `FlyUp/FlyDown/FlyFastDown/FlyForward/FlyForwardLow`，仍不是 BlendSpace 采样。ALS_N_Walk/Run_B/FL/FR 的 cooked 包已定位并从 pak 解出（`research` 临时路径），但 UModel CLI 对这些 package 报 “unable to find package” 或挂起，尚未生成 PSA；下一轮先解决 UModel 路径/参数，或改用 UAssetAPI 读取 AnimSequence。
+- [x] 已导入 `ALS_N_Walk_B/FL/FR` 与 `ALS_N_Run_B/FL/FR` 六段方向样本（UModel 需同时提供 `SKEL_Male`；总动画数 40，校验通过）；`setGroundBlend` 已建立 speed×direction 2D 权重结构，但当前 controller orient-to-velocity，方向轴暂不可见，需后续相机相对 strafe/aim 才能验证。
+- [ ] 仍未导入：`ALS_N_Jump`、`Hero_FlyLeft`/`Hero_FlyRight`/`Hero_FlyBack`/`Hero_FlyTame`；fly 已按 velY/平面速度直接切 `FlyUp/FlyDown/FlyFastDown/FlyForward/FlyForwardLow`，仍不是 BlendSpace 采样。
 - [x] jump 的起跳/下落/落地顺序已接入：`Hero_JumpSpeed`（上升期保持末帧）→ `Hero_JumpFallFast` → `Hero_JumpLand`。
 - [ ] jump 状态仍未按 `HeroABS_JumpFallLoop` 的 Speed/SpeedZ 轴选择与混合；当前是固定片段，不是 BlendSpace 采样。
 - [x] 已接入基础直接状态链：普通移动直接 `SprintRun`；Shift 冲刺 `StartSprint→SprintRun`；在普通跑步中新按 Shift 也会重新进入 `StartSprint`；停止按是否来自冲刺选 `Stopping_Sprint`/`Stopping_WalkRun`；`JumpSpeed→JumpFallFast→JumpLand`（用 `AnimationGroup.getLength()` 计时）。

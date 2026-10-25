@@ -1,0 +1,68 @@
+{
+  "source": "UModel PSA + config; appendix script",
+  "clips": [
+    {
+      "name": "ALS_N_Walk_B",
+      "frames": 31,
+      "rate": 31.0,
+      "durationSeconds": 0.967741935483871,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion-directional/AdvancedLocomotionV2/Characters/Mannequin/ActionMaleAnimation/ALS_N_Walk_B.psa",
+      "sourceSha256": "7c5dc78a4d19870e6f481ac7feef5f770eecfe8f81632db3080f464f2d159f30"
+    },
+    {
+      "name": "ALS_N_Walk_FL",
+      "frames": 31,
+      "rate": 31.0,
+      "durationSeconds": 0.967741935483871,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion-directional/AdvancedLocomotionV2/Characters/Mannequin/ActionMaleAnimation/ALS_N_Walk_FL.psa",
+      "sourceSha256": "0233d5bd5ddb2e5d15c35be3cf56181b2894d67f7dfb98973c55e37220e79f38"
+    },
+    {
+      "name": "ALS_N_Walk_FR",
+      "frames": 31,
+      "rate": 31.0,
+      "durationSeconds": 0.967741935483871,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion-directional/AdvancedLocomotionV2/Characters/Mannequin/ActionMaleAnimation/ALS_N_Walk_FR.psa",
+      "sourceSha256": "4447c0066eba91e84d14a31077c0d28c84bf6c02a44614d252e57251c9fa8c6f"
+    },
+    {
+      "name": "ALS_N_Run_B",
+      "frames": 19,
+      "rate": 31.66666603088379,
+      "durationSeconds": 0.5684210640439699,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion-directional/AdvancedLocomotionV2/Characters/Mannequin/ActionMaleAnimation/ALS_N_Run_B.psa",
+      "sourceSha256": "7bd9ba56951daf1c637d464a760f383921189c15c99b52ce3742e49f4f7d1d77"
+    },
+    {
+      "name": "ALS_N_Run_FL",
+      "frames": 23,
+      "rate": 31.363636016845703,
+      "durationSeconds": 0.7014492831183091,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion-directional/AdvancedLocomotionV2/Characters/Mannequin/ActionMaleAnimation/ALS_N_Run_FL.psa",
+      "sourceSha256": "332c4e2886a2f92021ad788fed1165eff5d857cb28076c7f132b4519dd9bbfb6"
+    },
+    {
+      "name": "ALS_N_Run_FR",
+      "frames": 23,
+      "rate": 31.363636016845703,
+      "durationSeconds": 0.7014492831183091,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion-directional/AdvancedLocomotionV2/Characters/Mannequin/ActionMaleAnimation/ALS_N_Run_FR.psa",
+      "sourceSha256": "cb5fc991d42135fb6c4523e8d7a37c2e84f256d9fabae67b1ed2a13104a787bd"
+    }
+  ],
+  "outputGltfSha256": "97f6a864fe15671ef88d0b375fdb1f35301766ac56b925c181900938b2a0408b",
+  "outputBufferSha256": "20a94a61f67c12d3ead253949dd6ee06f2e083e1203fee0daddc4988962e483b",
+  "animationCount": 40
+}

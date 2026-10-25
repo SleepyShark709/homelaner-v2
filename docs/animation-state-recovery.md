@@ -124,7 +124,7 @@ Flying State:
 
 ### 1D ground blend（2026-10-25）
 
-`Character.setGroundBlend()` 现在同时播放 `Hero_Idle` / `Hero_Walk` / `Hero_SprintRun`，按 planar speed 设置 normalized group weights：
+`Character.setGroundBlend()` 同时播放 `Hero_Idle` / `Hero_Walk` / `Hero_SprintRun`，按 planar speed 设置 normalized group weights：
 
 ```text
 0 .. 3 m/s   Idle -> Walk
@@ -133,7 +133,16 @@ Flying State:
 >= 8.5       SprintRun 1.0
 ```
 
-这是 `HeroABS_MoveGround` 的**一维速度子集**；真正的双向 BlendSpace、精确轴值、过渡曲线和 AnimBP transition 时间仍未恢复。10 m/s 实测截图 `research/screenshots/play-ground-blend-run.jpg` 无畸形。
+2026-10-25 又导入了六段原版方向样本，总动画数 40：
+
+```text
+ALS_N_Walk_B / FL / FR
+ALS_N_Run_B / FL / FR
+```
+
+`setGroundBlend` 已扩展为 speed × direction 的 2D 权重结构；但当前 `OriginalPlayer` 始终让角色朝向速度方向，所以 local direction 恒为 forward，后退探针仍返回 `Hero_SprintRun`。方向样本已导入并验证，但方向轴要等相机相对 strafe/aim 控制恢复后才可见。
+
+这是 `HeroABS_MoveGround` 的**速度/方向子集**；真正的双向 BlendSpace、精确轴值、过渡曲线和 AnimBP transition 时间仍未恢复。10 m/s 实测截图 `research/screenshots/play-directional-blend-run.jpg` 无畸形。
 
 空中首次远程攻击现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→K 验证返回 `clip=Hero_AirAttackStart`；连续两次 K 的结果记录在 `research/world-recovery/air-attack-chain.json`。
 

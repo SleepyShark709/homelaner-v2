@@ -1,6 +1,6 @@
 {
   "source": "public/assets/character/hero.gltf",
-  "animationCount": 34,
+  "animationCount": 40,
   "clips": [
     {
       "name": "Hero_Idle",
@@ -341,6 +341,66 @@
       "nonFinite": 0,
       "loop": true,
       "firstLastRotationDeltaDegrees": 1.3282000880564975
+    },
+    {
+      "name": "ALS_N_Walk_B",
+      "durationSeconds": 0.9677419066429138,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.751684363173524e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 0.03751787913325576
+    },
+    {
+      "name": "ALS_N_Walk_FL",
+      "durationSeconds": 0.9677419066429138,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.782617241654407e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 0.03706375823569957
+    },
+    {
+      "name": "ALS_N_Walk_FR",
+      "durationSeconds": 0.9677419066429138,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 4.074554982302914e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 0.0377923814968758
+    },
+    {
+      "name": "ALS_N_Run_B",
+      "durationSeconds": 0.5684210658073425,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.9121330619451555e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 0.03843014315465586
+    },
+    {
+      "name": "ALS_N_Run_FL",
+      "durationSeconds": 0.7014492750167847,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.8983393291225354e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 0.03783218812464871
+    },
+    {
+      "name": "ALS_N_Run_FR",
+      "durationSeconds": 0.7014492750167847,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.949153104532144e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 0.12923827554772058
     }
   ],
   "failures": []
