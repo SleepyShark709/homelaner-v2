@@ -13,7 +13,7 @@
       "textureFailures": 0,
       "unresolvedMaterialCacheKeys": 0,
       "ambiguousSlots": 0,
-      "fps": 116.00928073845031,
+      "fps": 129.36610608519445,
       "activeMeshes": 0,
       "warning": "",
       "scope": "",
@@ -83,18 +83,18 @@
           "stats": {
             "position": [
               -56.40265961419975,
-              4.315833333333329,
-              -559.1971034579456
+              4.281874999999996,
+              -559.1736935742061
             ],
             "velocity": [
               0,
-              4.074999999999989,
-              -2.8091860487349196
+              4.483333333333322,
+              -2.979852715401586
             ],
             "flying": false,
             "grounded": false,
             "state": "jump",
-            "speed": 4.949459693381371,
+            "speed": 5.383288955950988,
             "charge": 0
           },
           "clip": "Hero_JumpSpeed",
@@ -104,8 +104,8 @@
           "stats": {
             "position": [
               -56.40265961419975,
-              4.315833333333329,
-              -559.2819825278613
+              4.281874999999996,
+              -559.2699504218996
             ],
             "velocity": [
               0,
@@ -125,8 +125,8 @@
           "stats": {
             "position": [
               -56.40265961419975,
-              14.712277777777803,
-              -559.2819825278613
+              14.678319444444472,
+              -559.2699504218996
             ],
             "velocity": [
               0,
@@ -146,21 +146,21 @@
           "stats": {
             "position": [
               -56.40265961419975,
-              0.47000000000000003,
-              -559.2819825278613
+              0.5311194444444856,
+              -559.2699504218996
             ],
             "velocity": [
               0,
-              0,
+              -40,
               0
             ],
             "flying": true,
-            "grounded": true,
+            "grounded": false,
             "state": "hover",
-            "speed": 0,
+            "speed": 40,
             "charge": 0
           },
-          "clip": "Hero_IdleFlying",
+          "clip": "Hero_FlyFastDown",
           "active": true
         },
         "exited": {
@@ -168,7 +168,7 @@
             "position": [
               -56.40265961419975,
               0.47000000000000003,
-              -559.2819825278613
+              -559.2699504218996
             ],
             "velocity": [
               0,
@@ -187,19 +187,19 @@
         "sprinting": {
           "stats": {
             "position": [
-              -53.65533615302649,
+              -53.57467384358601,
               0.47000000000000003,
-              -550.7791170263831
+              -550.7270336930497
             ],
             "velocity": [
               -9.679477132857153,
               0,
-              -6.25
+              -5
             ],
             "flying": false,
             "grounded": true,
             "state": "run",
-            "speed": 11.52192594862094,
+            "speed": 10.894598549992768,
             "charge": 0
           },
           "clip": "Hero_StartSprint",
@@ -207,10 +207,10 @@
         },
         "evidence": {
           "walkDistance": 8.601058713623388,
-          "jumpHeight": 3.845833333333329,
-          "ascendDelta": 10.396444444444473,
-          "descendDelta": -14.242277777777803,
-          "sprintSpeed": 11.52192594862094
+          "jumpHeight": 3.8118749999999957,
+          "ascendDelta": 10.396444444444477,
+          "descendDelta": -14.147199999999987,
+          "sprintSpeed": 10.894598549992768
         }
       },
       "consoleErrors": [],
@@ -221,7 +221,7 @@
       },
       "browser": "Chrome/156.0.8078.48",
       "url": "http://127.0.0.1:4178/?view=play&debug=1",
-      "durationMs": 32085
+      "durationMs": 31231
     }
   ],
   "scope": "B1 playable vertical slice: original ResidentialArea1 street + MainLevel static world, original hero character, heightfield ground, AABB collision proxy and original-input movement. Not a complete original gameplay reconstruction.",

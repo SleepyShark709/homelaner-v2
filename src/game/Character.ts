@@ -182,23 +182,6 @@ export class Character {
     return this.animations.find(group => group.name === (this.aliases.get(name) ?? name));
   }
 
-  /** Normalized 0..1 phase of the current dominant clip, used to start a
-   * newly activated blend sample at the same gait phase instead of frame 0. */
-  private currentPhase(): number {
-    const group = this.groupFor(this.clip);
-    const animatable = group?.animatables[0];
-    if (!group || !animatable) return 0;
-    const span = group.to - group.from;
-    if (span <= 0) return 0;
-    const frame = ((animatable.masterFrame - group.from) % span + span) % span;
-    return frame / span;
-  }
-
-  private startAtPhase(group: AnimationGroup, ratio: number, phase: number): void {
-    const span = group.to - group.from;
-    group.start(true, ratio, group.from + Math.max(0, Math.min(0.999, phase)) * span);
-  }
-
   private setFlyBlend(vertical: number, planar: number, velocityX: number, velocityZ: number): void {
     if (this.fade) return;
     // HeroABS_FlyingUpDonwAnim samples: FlyUp +2666, FastUp +6000,
@@ -253,19 +236,12 @@ export class Character {
       [back, direction.B, Math.max(0.7, Math.min(1.4, speed / 3000))],
     ];
     const total = combined.reduce((sum, [, weight]) => sum + weight, 0);
-    const phase = this.currentPhase();
     const active = new Set(combined.map(([group]) => group));
     this.animations.forEach(group => { if (!active.has(group)) group.stop(); });
     let dominant = 'Hero_FlyForward', dominantWeight = -1;
     for (const [group, weight, ratio] of combined) {
       const normalized = total > 0 ? weight / total : 0;
-      if (normalized <= 0.001) {
-        if (group.isPlaying) group.stop();
-        group.weight = 0;
-        group.setWeightForAllAnimatables(0);
-        continue;
-      }
-      if (!group.isPlaying) this.startAtPhase(group, ratio, phase);
+      if (!group.isPlaying) group.start(true);
       group.weight = normalized;
       group.setWeightForAllAnimatables(normalized);
       group.speedRatio = ratio;
@@ -328,93 +304,25 @@ export class Character {
   }
 
   /**
-   * 2D speed/direction subset of HeroABS_MoveGround. The recovered ALS
-   * Walk/Run B/FL/FR samples are blended with the forward Hero clips; the real
-   * axis values, sample positions and AnimBP transition rules are still open.
+   * Locomotion uses one recovered gait clip at a time. The previous
+   * speed×direction multi-group blend is out of the default path because it
+   * visibly mixed whole-body poses in Babylon.
    */
   private setGroundBlend(speed: number, velocityX: number, velocityZ: number): void {
     if (this.fade) return;
-    const names = {
-      idle: 'Hero_Idle',
-      walkF: 'Hero_Walk', walkFL: 'ALS_N_Walk_FL', walkFR: 'ALS_N_Walk_FR', walkB: 'ALS_N_Walk_B',
-      runF: 'Hero_SprintRun', superF: 'Hero_SprintSuper', runFL: 'ALS_N_Run_FL', runFR: 'ALS_N_Run_FR', runB: 'ALS_N_Run_B',
-    } as const;
-    const groups = Object.fromEntries(Object.entries(names).map(([key, name]) => [key, this.groupFor(name)])) as Record<keyof typeof names, AnimationGroup | undefined>;
-    const idle = groups.idle, walkF = groups.walkF, runF = groups.runF;
-    if (!idle || !walkF || !runF) return;
-    const speedWeights = speed <= 3
-      ? { idle: Math.max(0, 1 - (speed - 0.15) / 2.85), walk: Math.min(1, Math.max(0, (speed - 0.15) / 2.85)), run: 0, super: 0 }
-      : speed < 8.5
-        ? { idle: 0, walk: 1 - (speed - 3) / 5.5, run: (speed - 3) / 5.5, super: 0 }
-        : speed < 16.75
-          ? { idle: 0, walk: 0, run: 1 - (speed - 8.5) / 8.25, super: (speed - 8.5) / 8.25 }
-          : { idle: 0, walk: 0, run: 0, super: 1 };
-    let dir = { F: 1, FL: 0, FR: 0, B: 0 };
-    if (speed > 0.15) {
-      const sin = Math.sin(this.yaw), cos = Math.cos(this.yaw);
-      const localForward = velocityX * sin + velocityZ * cos;
-      const localRight = velocityX * cos - velocityZ * sin;
-      const angle = Math.atan2(-localRight, localForward) * 180 / Math.PI;
-      const a = Math.abs(angle);
-      if (a <= 90) {
-        dir = angle >= 0
-          ? { F: (90 - a) / 90, FL: 0, FR: a / 90, B: 0 }
-          : { F: (90 - a) / 90, FL: a / 90, FR: 0, B: 0 };
-      } else {
-        dir = angle >= 0
-          ? { F: 0, FL: 0, FR: (180 - a) / 90, B: (a - 90) / 90 }
-          : { F: 0, FL: (180 - a) / 90, FR: 0, B: (a - 90) / 90 };
-      }
-    }
-    const combined: Array<[AnimationGroup | undefined, number, number]> = [
-      [idle, speedWeights.idle, 1],
-      [groups.walkF, speedWeights.walk * dir.F, Math.max(0.6, Math.min(1.5, speed / 3))],
-      [groups.walkFL, speedWeights.walk * dir.FL, Math.max(0.6, Math.min(1.5, speed / 3))],
-      [groups.walkFR, speedWeights.walk * dir.FR, Math.max(0.6, Math.min(1.5, speed / 3))],
-      [groups.walkB, speedWeights.walk * dir.B, Math.max(0.6, Math.min(1.5, speed / 3))],
-      [groups.runF, speedWeights.run * dir.F, Math.max(0.7, Math.min(2.2, speed / 8.5))],
-      [groups.superF, speedWeights.super * dir.F, Math.max(0.8, Math.min(1.5, speed / 22.25))],
-      [groups.runFL, (speedWeights.run + speedWeights.super) * dir.FL, Math.max(0.7, Math.min(2.2, speed / 8.5))],
-      [groups.runFR, (speedWeights.run + speedWeights.super) * dir.FR, Math.max(0.7, Math.min(2.2, speed / 8.5))],
-      [groups.runB, (speedWeights.run + speedWeights.super) * dir.B, Math.max(0.7, Math.min(2.2, speed / 8.5))],
-    ];
-    const total = combined.reduce((sum, [, weight]) => sum + weight, 0);
-    const phase = this.currentPhase();
-    const target = new Map<AnimationGroup, number>();
-    for (const [group, weight] of combined) {
-      if (!group) continue;
-      const normalized = total > 0 ? weight / total : 0;
-      if (normalized > 0.001) target.set(group, normalized);
-    }
-    // Combat calls endAction() before the attack clip has necessarily stopped.
-    // Fade that still-playing attack/jump group into the locomotion target
-    // instead of hard-stopping it and snapping to frame 0 of the next gait.
-    const foreign = this.animations.some(group => group.isPlaying && group.weight > 0.001 && !target.has(group));
-    if (foreign && !this.fade) {
-      this.beginCrossfade(target, 0.18);
-      return;
-    }
-    let dominant = 'Hero_Idle', dominantWeight = -1;
-    const ground = new Set(combined.map(([group]) => group).filter((group): group is AnimationGroup => !!group));
-    this.animations.forEach(group => { if (!ground.has(group)) group.stop(); });
-    for (const [group, weight, ratio] of combined) {
-      if (!group) continue;
-      const normalized = total > 0 ? weight / total : 0;
-      if (normalized <= 0.001) {
-        if (group.isPlaying) group.stop();
-        group.weight = 0;
-        group.setWeightForAllAnimatables(0);
-        continue;
-      }
-      if (!group.isPlaying) this.startAtPhase(group, ratio, phase);
-      group.weight = normalized;
-      group.setWeightForAllAnimatables(normalized);
-      group.speedRatio = ratio;
-      if (normalized > dominantWeight) { dominantWeight = normalized; dominant = group.name; }
-    }
-    this.transition = null;
-    this.action = '';
-    this.clip = dominant;
+    const desired = speed < 0.15 ? 'Hero_Idle' : speed < 4 ? 'Hero_Walk' : speed < 16.75 ? 'Hero_SprintRun' : 'Hero_SprintSuper';
+    const group = this.groupFor(desired);
+    if (!group) return;
+    const ratio = desired === 'Hero_Idle'
+      ? 1
+      : desired === 'Hero_Walk'
+        ? Math.max(0.6, Math.min(2, speed / 3))
+        : desired === 'Hero_SprintRun'
+          ? Math.max(0.7, Math.min(2.2, speed / 8.5))
+          : Math.max(0.8, Math.min(1.5, speed / 22.25));
+    if (this.clip !== desired) this.setLoop(desired, 0.2);
+    group.speedRatio = ratio;
+    return;
   }
 
   private setOneShot(name: string, next: string, entryFade = 0.2, nextFade = 0.2): void {
