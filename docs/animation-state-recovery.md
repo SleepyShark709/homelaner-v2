@@ -81,6 +81,7 @@ fly   -> Hero_FlyForward
 ```text
 normal ground run -> Hero_SprintRun (direct)
 Shift sprint -> Hero_StartSprint (once) -> Hero_SprintRun (loop)
+SprintRun + newly pressed Shift -> Hero_StartSprint again
 SprintRun -> wasSprinting ? Hero_Stopping_Sprint : Hero_Stopping_WalkRun -> next (once)
 Hero_Walk -> Hero_Stopping_WalkRun (once) -> Hero_Idle (loop)
 ground jump -> Hero_JumpSpeed (once; hold last frame while velY>0.2) -> Hero_JumpFallFast (loop)

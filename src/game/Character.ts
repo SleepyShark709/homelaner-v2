@@ -227,6 +227,12 @@ export class Character {
       return;
     }
     const desired = planarSpeed < 0.15 ? 'Hero_Idle' : planarSpeed < 4 ? 'Hero_Walk' : 'Hero_SprintRun';
+    if (!wasSprinting && motor.sprint === true && this.clip === 'Hero_SprintRun' && planarSpeed < 25) {
+      // Shift pressed while already running: re-enter the recovered StartSprint
+      // state instead of silently raising the speed ceiling.
+      this.setOneShot('Hero_StartSprint', 'Hero_SprintRun');
+      return;
+    }
     if (this.clip !== desired) {
       if (desired === 'Hero_SprintRun' && (this.clip === 'Hero_Idle' || this.clip === 'Hero_Walk')) {
         if (motor.sprint === true) this.setOneShot('Hero_StartSprint', desired);
