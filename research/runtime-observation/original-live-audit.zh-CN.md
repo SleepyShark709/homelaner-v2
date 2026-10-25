@@ -34,6 +34,27 @@ cam_rot  = (-10.000, 90.000, 0.000)
 
 此外，自动截图/前台窗口切换在本轮遇到了非游戏窗口抢占，已停止该自动化，不做不可靠的截图判断。
 
+## UE4SS actor dump（GameStartCamera）
+
+在 MainLevel 的菜单/初始场景 dump 到：
+
+```text
+GameStartCamera1 loc=(-8.0, -1221.0, 16495.0) rot=(-82.377, 97.997, 0)
+GameStartCamera2 loc=(857.0, 724.0, 383.0) rot=(-10.294, 169.389, 0)
+BP_RespawnAndSpawnPoint_126 loc=(-350.0, 930.0, 17090.0) rot=(0,90,0)
+BP_StoryStartPoint2 loc=(19141.098,-24464.004,8455.0)
+BP_StoryStartPoint3 loc=(-343.184,2995.804,65.0)
+BP_StoryStartPoint_427 loc=(-9979.271,-12698.271,3313.218)
+```
+
+用 `GameStartCamera2` 的 transform（UE→Web：x/100、z/100、y/100；yaw 取 `90 - UEyaw`；pitch 为 -0.1796）通过 Web 的检查用绝对相机参数渲染，得到：
+
+![原版实时画面 vs GameStartCamera2 渲染](comparison-live-vs-gamestartcamera2.jpg)
+
+右图明显仍不是原版开始画面，说明 `GameStartCamera2` 不是当前开始广场的最终 gameplay 相机（它更像菜单/过场相机），或者开始画面还依赖 PlayerStart/Story 状态，尚未对齐。
+
+Web 新增了仅用于检查的 `?cam=x,y,z&camyaw=&campitch=&fov=` 绝对相机覆盖；默认玩法相机不受影响。
+
 ## 重要限制
 
 内存候选在多个位置重复出现，可能是相机组件默认值/CDO 或标题画面相机，**尚未用移动后数值变化验证**，不能当作真实玩家坐标。

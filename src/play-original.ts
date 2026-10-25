@@ -65,6 +65,10 @@ const cameraArmOverride = Number(params.get('arm'));
 if (Number.isFinite(cameraArmOverride) && cameraArmOverride > 0) CAMERA.armLength = cameraArmOverride;
 const cameraFovOverride = Number(params.get('fov'));
 if (Number.isFinite(cameraFovOverride) && cameraFovOverride > 0) CAMERA.fov = cameraFovOverride;
+const absoluteCamera = (params.get('cam') ?? '').split(',').map(Number);
+const absoluteYaw = Number(params.get('camyaw'));
+const absolutePitch = Number(params.get('campitch'));
+const hasAbsoluteCamera = absoluteCamera.length === 3 && absoluteCamera.every(Number.isFinite);
 const requestedDistrict = params.get('district') ?? 'ResidentialArea1';
 const plazaMode = params.get('plaza') === '1';
 const freeMode = params.get('mode') === 'free';
@@ -384,6 +388,16 @@ try {
   let cameraInitialized = false;
   let cameraArm = CAMERA.armLength;
   const updateCamera = (dt = 1 / 60) => {
+    if (hasAbsoluteCamera) {
+      const [x, y, z] = absoluteCamera;
+      const yaw = Number.isFinite(absoluteYaw) ? absoluteYaw : 0;
+      const pitch = Number.isFinite(absolutePitch) ? absolutePitch : 0;
+      viewer.camera.position.set(x, y, z);
+      viewer.camera.setTarget(new Vector3(x + Math.sin(yaw) * Math.cos(pitch), y + Math.sin(pitch), z + Math.cos(yaw) * Math.cos(pitch)));
+      const aspect = viewer.engine.getRenderWidth() / Math.max(1, viewer.engine.getRenderHeight());
+      viewer.camera.fov = 2 * Math.atan(Math.tan((CAMERA.fov * Math.PI) / 360) / aspect);
+      return;
+    }
     if (!player) return;
     const yaw = input.yaw, pitch = input.pitch;
     const speed3 = Math.hypot(player.velocity[0], player.velocity[1], player.velocity[2]);
