@@ -638,7 +638,11 @@ try {
           const thin = mesh as unknown as { thinInstanceCount?: number; thinInstanceEnablePicking?: boolean };
           if ((thin.thinInstanceCount ?? 0) > 0) thin.thinInstanceEnablePicking = true;
         }
-        const ray = viewer.scene.createPickingRay(x, y, Matrix.Identity(), viewer.camera);
+        const canvas = viewer.engine.getRenderingCanvas();
+        const rect = canvas?.getBoundingClientRect();
+        const renderX = rect ? (x - rect.left) * viewer.engine.getRenderWidth() / rect.width : x;
+        const renderY = rect ? (y - rect.top) * viewer.engine.getRenderHeight() / rect.height : y;
+        const ray = viewer.scene.createPickingRay(renderX, renderY, Matrix.Identity(), viewer.camera);
         const hit = viewer.scene.pickWithRay(ray, () => true, true);
         return hit?.hit ? { mesh: hit.pickedMesh?.name, material: hit.pickedMesh?.material?.name, point: hit.pickedPoint?.asArray() } : null;
       },

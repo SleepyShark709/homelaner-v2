@@ -83,6 +83,7 @@ Web 用 `scripts/derive-metal-tint.py` 生成 `metal_01_d_tintC.png`，按 Tint 
 - 这是**派生/校准资产**，不是原版像素；生成脚本 `scripts/derive-brick-tint.py`，参数和 sha256 在 `research/world-recovery/brick-tint-derivation.json`；
 - 同机位 mean luma 57.1 / std 30.7，接近原版 55.8 / 31.3，石墙从灰色回到暖棕灰；
 - **没有把 Emissive Colour 直接加到整面墙**，避免未遮罩区域错误发绿光。
+- 2026-10-25 的 `play.pick()` CSS→render 坐标修正后，同机位对窗格/石柱的射线仍穿过前景建筑，命中 `SM_SkyDome` / `SM_Env_Plains_Mountain_01` / landscape。说明当前 thin-instance/前景建筑不参与 picking，逐材质屏幕采样工具暂不可用；这不是材质颜色结论。
 
 同机位对照图：[comparison-gate3-materials.jpg](../research/runtime-observation/comparison-gate3-materials.jpg)；单边试验截图：`research/screenshots/building-metal-tint.jpg`、`building-emissive-tuned.jpg`、`building-trim-roughness.jpg`。页面纹理失败 0，B1 通过。
 
