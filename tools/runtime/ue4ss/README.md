@@ -81,3 +81,15 @@ PostProcessVolume AutoExposureMinBrightness=1.0
 - `InputDone()` 只能调用一次；重复调用会不断推进/循环过场；
 - 当前尝试的 `ClientTravel("MainLevel", 0, false)` / `ConsoleCommand("open MainLevel")` 被游戏拒绝，不能用来跳过菜单；
 - 不能拿菜单 Pawn 当起点；以 intro 结束后的稳定值为准。
+
+## 原版窗口截图限制（2026-10-25）
+
+尝试在 UE4SS staging 下用 `-windowed` 启动原游戏，并通过 `SetWindowPos(HWND_TOPMOST)`、`SetForegroundWindow`、`AttachThreadInput` 和 Alt+Tab 把窗口置前，再发送 Shift+W 并用 `CopyFromScreen` 抓取。`GetWindowRect` 返回 1280x720，但所有截图仍是浏览器桌面，不是游戏画面；进程窗口无法被真正置前/显示。
+
+因此这几次截图（已删除）**不能作为原版冲刺证据**。若以后要抓原版移动帧，优先使用：
+
+- 游戏自身的截图/控制台方式；或
+- 独立桌面/虚拟显示会话；或
+- 直接把窗口渲染到可读交换链的工具。
+
+不要再把 `CopyFromScreen` 的结果当成游戏证据，除非先确认截图内容是 UNDEFEATED 画面。
