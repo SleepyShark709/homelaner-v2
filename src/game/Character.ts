@@ -75,6 +75,12 @@ export class Character {
     this.container.rootNodes.forEach(node => { node.parent = this.root; });
     this.container.meshes.filter(mesh => mesh.getTotalVertices() > 0).forEach(mesh => {
       mesh.isPickable = false;
+      // Skinned characters animate outside their rest-pose bounding box; Babylon
+      // can cull the whole skinned mesh for a frame when the stale bounds leave
+      // the frustum. Keep the hero active every frame to remove the visible
+      // one-frame flicker/disappearance.
+      mesh.alwaysSelectAsActiveMesh = true;
+      mesh.receiveShadows = true;
       shadows?.addShadowCaster(mesh);
     });
     if (skin === 'homelander') {
