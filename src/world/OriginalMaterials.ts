@@ -122,6 +122,11 @@ export class OriginalMaterials {
       });
       material.albedoColor = Color3.White();
     }
+    if (source === '/Game/UrbanCity/Materials/Tileable/brick_02_TintA_Inst') {
+      // TintA is the cream cornice/trim variant: Tint Opacity is 0, so only its
+      // recovered roughness (.666245) applies; the grunge layer is still missing.
+      material.roughness = 0.6662449836730957;
+    }
     if (channels.normal && !allSurfaceShader) {
       const convention = channels.normal.normalConvention?.toLowerCase();
       if (convention === 'directx' || convention === 'opengl') {

@@ -3,6 +3,7 @@
   "source": "cooked MaterialInstanceConstant packages decoded with UAssetGUI",
   "startBuildingSlots": [
     { "material": "/Game/UrbanCity/Materials/Tileable/brick_02_TintB_Inst2", "diffuse": "/Game/UrbanCity/Textures/Tileable/brick_02_d" },
+    { "material": "/Game/UrbanCity/Materials/Tileable/brick_02_TintA_Inst", "diffuse": "/Game/UrbanCity/Textures/Tileable/brick_02_d" },
     { "material": "/Game/UrbanCity/Materials/Buildings/building_02_Inst", "diffuse": "/Game/UrbanCity/Textures/Buildings/building_02_d" },
     { "material": "/Game/UrbanCity/Materials/-Window_mat", "diffuse": null },
     { "material": "/Game/UrbanCity/Materials/Tileable/Tilable_metal_TintC_Inst", "diffuse": "/Game/UrbanCity/Textures/Tileable/metal_01_d" },
@@ -34,11 +35,36 @@
     "normal": "/Game/UrbanCity/Textures/Tileable/brick_02_n",
     "scalarParameters": {
       "Normal Strength": 1,
-      "Roughness": 1
+      "Roughness": 1,
+      "Tint Opacity": 0.6330270171165466
     },
     "vectorParameters": {
       "Tint Colour": [0.05999999865889549, 0.021616000682115555, 0.0017130000051110983]
     }
+  },
+  "brick_02_TintA_Inst": {
+    "parent": "/Game/UrbanCity/Materials/-Tilable_mat",
+    "diffuse": "/Game/UrbanCity/Textures/Tileable/brick_02_d",
+    "normal": "/Game/UrbanCity/Textures/Tileable/brick_02_n",
+    "scalarParameters": {
+      "Normal Strength": 1,
+      "Roughness": 0.6662449836730957,
+      "Tint Opacity": 0,
+      "Grunge 1 Opacity": 2.6000208854675293,
+      "Grunge 1 Scale": 0.9982179999351501,
+      "Grunge 2 Opacity": -0.8935379981994629,
+      "Grunge 2 Scale": 0.6548669934272766,
+      "Grunge 3 Opacity": 0.6258649826049805,
+      "Grunge 3 Scale": -0.7822890281677246,
+      "Height": 0.14547500014305115
+    },
+    "vectorParameters": {
+      "Tint Colour": [1, 0.61635422706604, 0.5780996084213257],
+      "Grunge 1 Colour": [0.054999999701976776, 0.03602999821305275, 0.028599999845027924],
+      "Grunge 2 Colour": [0, 0, 0],
+      "Grunge 3 Colour": [0, 0, 0]
+    },
+    "note": "Tint Opacity is 0; roughness .666 is applied in Web. Grunge/height (parallax) layers are not reconstructed."
   },
   "note": "The material parameters are recovered, but the parent material shader graph (contrast/emissive mask/tint layering) and the emissive mask texture are not reconstructed. Web currently uses the diffuse texture with neutral/white albedo for building_02_Inst and brick_02_TintB_Inst2, so the stone/brick tint is still a Gate 3 gap."
 }

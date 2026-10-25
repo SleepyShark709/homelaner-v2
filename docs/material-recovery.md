@@ -40,7 +40,23 @@ Normal          brick_02_n
 Normal Strength 1
 Roughness       1
 Tint Colour     (0.06, 0.021616, 0.001713)
+Tint Opacity    0.633027
 ```
+
+### brick_02_TintA_Inst（檐口/trim 变体）
+
+```text
+parent          /Game/UrbanCity/Materials/-Tilable_mat
+Diffuse         brick_02_d
+Normal          brick_02_n
+Roughness       0.666245
+Tint Opacity    0
+Tint Colour     (1, 0.616354, 0.578100)
+Grunge 1/2/3    Opacity 2.6000 / -0.8935 / 0.6259
+Height          0.145475
+```
+
+TintA 的 `Tint Opacity=0`，所以 Web 不应用它的 Tint Colour，只应用恢复的 roughness .666245；Grunge/Height（parallax）层仍未恢复。
 
 ## 当前 Web 状态
 
