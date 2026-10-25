@@ -13,7 +13,7 @@
       "textureFailures": 0,
       "unresolvedMaterialCacheKeys": 0,
       "ambiguousSlots": 0,
-      "fps": 107.71992818671596,
+      "fps": 114.46012971757516,
       "activeMeshes": 0,
       "warning": "",
       "scope": "",
@@ -187,19 +187,19 @@
         "sprinting": {
           "stats": {
             "position": [
-              -51.84035987262847,
+              -53.734053345288345,
               0.47000000000000003,
-              -557.6336817255955
+              -551.6793670263683
             ],
             "velocity": [
-              -7.5,
+              -9.679477132857153,
               0,
-              -28.395558146204763
+              0
             ],
             "flying": false,
             "grounded": true,
             "state": "run",
-            "speed": 29.36933302672186,
+            "speed": 9.679477132857153,
             "charge": 0
           },
           "clip": "Hero_StartSprint",
@@ -210,7 +210,7 @@
           "jumpHeight": 3.845833333333329,
           "ascendDelta": 10.396444444444473,
           "descendDelta": -14.242277777777803,
-          "sprintSpeed": 29.36933302672186
+          "sprintSpeed": 9.679477132857153
         }
       },
       "consoleErrors": [],
@@ -221,7 +221,7 @@
       },
       "browser": "Chrome/156.0.8078.48",
       "url": "http://127.0.0.1:4178/?view=play&debug=1",
-      "durationMs": 32349,
+      "durationMs": 32516,
       "screenshot": "research/screenshots/play-b1.jpg"
     }
   ],

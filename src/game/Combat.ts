@@ -52,7 +52,15 @@ export class Combat {
   private begin(kind: 'melee' | 'ranged', strong: boolean): void {
     this.strong = kind === 'ranged' && strong;
     let name: string;
-    if (kind === 'melee') { name = `Hero_Attack${this.combo % 4 + 1}`; this.combo++; }
+    if (kind === 'melee' && (this.motor.flying || !this.motor.grounded)) {
+      // Air melee uses the same AirAttack state entry as the ranged path.
+      if (!this.airAttackStarted) {
+        this.airAttackStarted = true;
+        name = 'Hero_AirAttackStart';
+      } else {
+        name = ['Hero_AirKick_L', 'Hero_AirKick_R'][this.combo++ % 2];
+      }
+    } else if (kind === 'melee') { name = `Hero_Attack${this.combo % 4 + 1}`; this.combo++; }
     else if (this.strong) name = this.motor.flying || !this.motor.grounded ? 'Hero_AirSuperKick' : 'Hero_SuperPunch';
     else if (this.motor.flying || !this.motor.grounded) {
       if (!this.airAttackStarted) {
