@@ -44,5 +44,12 @@
     "HQ_Lightmap0_138 was the highest HQ candidate under the likely UE lightmap V-flip convention.",
     "A PBRMaterial.lightmapTexture trial with TEXCOORD_2/vScale=-1/vOffset=1 did not produce a verifiable visual change in the same-camera capture, so it was reverted and is not applied.",
     "True binding still requires the component LightMapIndex or FLightMap2D texture reference."
-  ]
+  ],
+  "uv2AlignmentTrial": {
+    "material": "StandardMaterial.lightmapTexture",
+    "texture": "HQ_Lightmap0_138",
+    "uv": "TEXCOORD_2",
+    "flipV": true,
+    "result": "The lightmap bands aligned with the facade/frame/base geometry, confirming the UV candidate, but the exported PNG contains chart-coloured/debug-looking values (purple/green/pink), not neutral lighting. The UModel PNG cannot be used as the final lightmap until the Lightmass/HDR format is decoded correctly."
+  }
 }

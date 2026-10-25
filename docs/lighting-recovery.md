@@ -37,6 +37,8 @@ gradient ratio ≈ 1.72
 
 排名与限制记录在 `research/world-recovery/lightmap-candidate-analysis.json`。给建筑 PBR 材质挂 `HQ_Lightmap0_138` + TEXCOORD_2 的试验没有产生可验证的视觉变化，已回退；因此这只是候选排序，不是已应用的 lightmap。
 
+进一步用 `StandardMaterial.lightmapTexture` 做 UV 对齐诊断（PBRMaterial 没有 lightmapTexture 属性）：lightmap 的色带/分块会**准确地落在门框、柱础和玻璃分格上**，说明 `TEXCOORD_2 + V 翻转` 的 UV 选择很可能是对的。但导出的 PNG 呈现紫/绿/粉的分块颜色，不是中性光照，说明 UModel 对 Lightmass/HDR lightmap 的像素解码不正确；不能把这个 PNG 当作最终 lightmap 使用。诊断截图：`research/screenshots/lightmap-standard-test.jpg`。
+
 单个 `HQ_Lightmap0_16` 已用 UModel 成功导出为 4096×4096 PNG，证明这些不是残留引用，而是真实烘焙数据。
 
 导出命令（从 `-HeroGame/Maps` 目录执行）：
