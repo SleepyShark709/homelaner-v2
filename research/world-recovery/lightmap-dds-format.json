@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-25",
+  "source": "UNDEFEATED/Content/-HeroGame/Maps/SubLevel/CommercialArea_BuiltData.ubulk",
+  "object": "HQ_Lightmap0_138",
+  "exportCommand": "umodel -export -dds -path=<extracted Content> -out=<temp> HeroGame/Maps/SubLevel/CommercialArea_BuiltData HQ_Lightmap0_138 LightMapTexture2D",
+  "dds": {
+    "sha256": "a21a58991e785a47e2f1b993813430071177e806b8fd1d015f342ece9176beee",
+    "bytes": 1048704,
+    "width": 1024,
+    "height": 1024,
+    "fourCC": "DXT5",
+    "srgb": false
+  },
+  "decodes": {
+    "dxt5_pillow": "chart-coloured purple/green/pink atlas (see research/screenshots/lightmap138-pillow.png)",
+    "bc6h_texture2ddecoder": "colour noise, not lighting (see research/screenshots/lightmap138-bc6.png)"
+  },
+  "conclusion": "The exported DDS is a real DXT5 container, not a mislabeled BC6H DDS; decoding it as BC6H does not recover a lightmap. The UModel/PNG/DDS data remains chart/debug-like, so the next step is the runtime FLightMap2D resource, not another pixel decoder."
+}

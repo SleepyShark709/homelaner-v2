@@ -164,3 +164,12 @@ Web 现在使用原版 `clouds.png` 作为玻璃 emissive 层，`uScale=vScale=0
 - `research/world-recovery/lightmap-inventory.json`
 - `research/runtime-observation/original-live-audit.zh-CN.md`（LightingTest/PostProcessVolume 参数）
 - `research/runtime-observation/comparison-live-gameplay-start-final.jpg`
+
+## DDS BC6H 排除（2026-10-25）
+
+重新从 `CommercialArea_BuiltData` 导出 `HQ_Lightmap0_138.dds`：1024×1024、FourCC=DXT5、SRGB=false、sha256 `a21a5899...beee`。
+
+- Pillow DXT5 解码仍是紫/绿/粉 chart 图；
+- 用 `texture2ddecoder.decode_bc6` 强行按 BC6H 解码是彩色噪声；
+
+因此这个 DDS **不是被写错 header 的 BC6H**，再换像素解码器不会恢复光照。记录在 `research/world-recovery/lightmap-dds-format.json`；下一步必须走 `FLightMap2D` 运行时资源，而不是继续猜 DDS 格式。
