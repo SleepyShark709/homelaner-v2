@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "2bedfb0",
+  "validatedCommit": "1e04725",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -231,6 +231,19 @@
       "idle": 27.3,
       "diagonal": 27.1,
       "afterAttack": 23.9
+    },
+    {
+      "command": "node scripts/capture-video-frames.mjs",
+      "exitCode": 0,
+      "video": "2026-10-26 01-19-46.mp4",
+      "start": 4.4,
+      "end": 6.2,
+      "note": "startup walk shows whole-body pose mixing"
+    },
+    {
+      "command": "capture-world probe-walk-start-weights",
+      "exitCode": 0,
+      "note": "crossfade weights are smooth, but simultaneous gait groups mix poses"
     }
   ],
   "evidence": {
@@ -242,5 +255,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Player flicker/stutter: shadow/zoffset/phase fixes landed; shadows=0 diagnostic added at 2bedfb0."
+  "note": "Player locomotion now uses one gait group at a time; video review + probes at 1e04725. B1/tests pass."
 }
