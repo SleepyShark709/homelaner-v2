@@ -80,7 +80,10 @@ export class Character {
       // the frustum. Keep the hero active every frame to remove the visible
       // one-frame flicker/disappearance.
       mesh.alwaysSelectAsActiveMesh = true;
-      mesh.receiveShadows = true;
+      // Do not enable receiveShadows on the skinned hero yet: the preview
+      // 1024px shadow map has no character-specific bias/normalBias, so
+      // self-shadow acne flickers across the body while running/attacking.
+      // The hero still casts a stable shadow onto the world.
       shadows?.addShadowCaster(mesh);
     });
     if (skin === 'homelander') {
@@ -171,6 +174,23 @@ export class Character {
     return this.animations.find(group => group.name === (this.aliases.get(name) ?? name));
   }
 
+  /** Normalized 0..1 phase of the current dominant clip, used to start a
+   * newly activated blend sample at the same gait phase instead of frame 0. */
+  private currentPhase(): number {
+    const group = this.groupFor(this.clip);
+    const animatable = group?.animatables[0];
+    if (!group || !animatable) return 0;
+    const span = group.to - group.from;
+    if (span <= 0) return 0;
+    const frame = ((animatable.masterFrame - group.from) % span + span) % span;
+    return frame / span;
+  }
+
+  private startAtPhase(group: AnimationGroup, ratio: number, phase: number): void {
+    const span = group.to - group.from;
+    group.start(true, ratio, group.from + Math.max(0, Math.min(0.999, phase)) * span);
+  }
+
   private setFlyBlend(vertical: number, planar: number, velocityX: number, velocityZ: number): void {
     if (this.fade) return;
     // HeroABS_FlyingUpDonwAnim samples: FlyUp +2666, FastUp +6000,
@@ -225,12 +245,19 @@ export class Character {
       [back, direction.B, Math.max(0.7, Math.min(1.4, speed / 3000))],
     ];
     const total = combined.reduce((sum, [, weight]) => sum + weight, 0);
+    const phase = this.currentPhase();
     const active = new Set(combined.map(([group]) => group));
     this.animations.forEach(group => { if (!active.has(group)) group.stop(); });
     let dominant = 'Hero_FlyForward', dominantWeight = -1;
     for (const [group, weight, ratio] of combined) {
       const normalized = total > 0 ? weight / total : 0;
-      if (!group.isPlaying) group.start(true);
+      if (normalized <= 0.001) {
+        if (group.isPlaying) group.stop();
+        group.weight = 0;
+        group.setWeightForAllAnimatables(0);
+        continue;
+      }
+      if (!group.isPlaying) this.startAtPhase(group, ratio, phase);
       group.weight = normalized;
       group.setWeightForAllAnimatables(normalized);
       group.speedRatio = ratio;
@@ -344,13 +371,20 @@ export class Character {
       [groups.runB, (speedWeights.run + speedWeights.super) * dir.B, Math.max(0.7, Math.min(2.2, speed / 8.5))],
     ];
     const total = combined.reduce((sum, [, weight]) => sum + weight, 0);
+    const phase = this.currentPhase();
     let dominant = 'Hero_Idle', dominantWeight = -1;
     const ground = new Set(combined.map(([group]) => group).filter((group): group is AnimationGroup => !!group));
     this.animations.forEach(group => { if (!ground.has(group)) group.stop(); });
     for (const [group, weight, ratio] of combined) {
       if (!group) continue;
       const normalized = total > 0 ? weight / total : 0;
-      if (!group.isPlaying) group.start(true);
+      if (normalized <= 0.001) {
+        if (group.isPlaying) group.stop();
+        group.weight = 0;
+        group.setWeightForAllAnimatables(0);
+        continue;
+      }
+      if (!group.isPlaying) this.startAtPhase(group, ratio, phase);
       group.weight = normalized;
       group.setWeightForAllAnimatables(normalized);
       group.speedRatio = ratio;
