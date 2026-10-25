@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "d49f04f",
+  "validatedCommit": "57efc50",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -199,6 +199,14 @@
       "exitCode": 0,
       "weak": "ignored",
       "strong": "destroyed"
+    },
+    {
+      "command": "capture-world probe-hero-visibility",
+      "exitCode": 0,
+      "meshes": 13,
+      "frames": 96,
+      "missing": 0,
+      "hidden": 0
     }
   ],
   "evidence": {
@@ -210,5 +218,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Plan A: F lands, roam is stable, and baseline vehicle policy is verified at d49f04f."
+  "note": "Player-fidelity workstream active: skinned hero meshes stay active; frame probe reports 0 missing/hidden at 57efc50."
 }
