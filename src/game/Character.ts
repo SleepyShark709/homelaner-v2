@@ -1,4 +1,4 @@
-﻿import { Scene } from '@babylonjs/core/scene';
+import { Scene } from '@babylonjs/core/scene';
 import { TransformNode } from '@babylonjs/core/Meshes/transformNode';
 import { Animation } from '@babylonjs/core/Animations/animation';
 import { AnimationGroup } from '@babylonjs/core/Animations/animationGroup';
@@ -9,7 +9,7 @@ import type { ShadowGenerator } from '@babylonjs/core/Lights/Shadows/shadowGener
 import type { MotionState } from './PlayerMotor';
 import type { Vec3 } from './collision';
 
-const CLIPS: Record<MotionState, string> = { idle: 'Hero_Idle', run: 'Hero_SprintRun', jump: 'Hero_JumpFall', hover: 'Hero_IdleFlying', fly: 'Hero_FlyFastSprint' };
+const CLIPS: Record<MotionState, string> = { idle: 'Hero_Idle', run: 'Hero_SprintRun', jump: 'Hero_JumpFallFast', hover: 'Hero_IdleFlying', fly: 'Hero_FlyFastSprint' };
 interface RetargetClip {
   duration: number;
   times: number[];
@@ -179,11 +179,11 @@ export class Character {
       return;
     }
     if (tookOff && motor.state === 'jump') {
-      this.setOneShot('Hero_JumpSpeed', 'Hero_JumpFall');
+      this.setOneShot('Hero_JumpSpeed', 'Hero_JumpFallFast');
       return;
     }
     if (!grounded) {
-      const desired = motor.state === 'jump' ? 'Hero_JumpFall' : CLIPS[motor.state];
+      const desired = motor.state === 'jump' ? 'Hero_JumpFallFast' : CLIPS[motor.state];
       if (this.clip !== desired) this.setLoop(desired);
       const group = this.groupFor(desired);
       if (group) group.speedRatio = 1;

@@ -57,7 +57,7 @@ Hero_Stopping_WalkRun 31f @31.0
 idle  -> Hero_Idle
 walk  -> Hero_Walk           # planar speed < 4 m/s
 run   -> Hero_SprintRun      # 前向跑步；Hero_SprintSuper 已导入但实测姿态不是正常跑步，暂不用于默认 run
-jump  -> Hero_JumpFall       # 下落循环
+jump  -> Hero_JumpFallFast   # 下落循环；对应 HeroABS_JumpFallLoop 的 Speed~1250/SpeedZ~-5000 样本
 hover -> Hero_IdleFlying
 fly   -> Hero_FlyFastSprint
 ```
@@ -67,7 +67,7 @@ fly   -> Hero_FlyFastSprint
 ```text
 ground idle -> Hero_Walk / Hero_StartSprint -> Hero_SprintRun (loop)
 walk/run -> Hero_Stopping_WalkRun (once) -> Hero_Idle (loop)
-ground jump -> Hero_JumpSpeed (once) -> Hero_JumpFall (loop)
+ground jump -> Hero_JumpSpeed (once) -> Hero_JumpFallFast (loop)
 landing -> Hero_JumpLand (once) -> Hero_Idle / Hero_Walk / Hero_SprintRun (loop)
 ```
 
@@ -92,7 +92,7 @@ landing -> Hero_JumpLand (once) -> Hero_Idle / Hero_Walk / Hero_SprintRun (loop)
 
 ## 结论
 
-Gate 4 仍未完成，但核心缺失片段已进入原骨架，并已用真实 `W`/Space 输入验证 `run`/`jump` 片段可以播放（见 `research/screenshots/play-sprintrun.jpg`、`play-jumpfall.jpg`）。下一步是按 `HeroAnimBP` 的转移条件实现混合空间与状态机，而不是继续换片段。
+Gate 4 仍未完成，但核心缺失片段已进入原骨架，并已用真实 `W`/Space 输入验证 `run`/`jump` 片段可以播放（见 `research/screenshots/play-sprintrun.jpg`、`play-jumpfallfast.jpg`）。`HeroABS_JumpFallLoop` 解码后确认其低空下落样本是 `Hero_JumpFallFast`，因此 jump 下落循环已切换到该片段。下一步是按 `HeroAnimBP` 的转移条件实现完整混合空间与状态机，而不是继续换片段。
 
 ## 证据
 
