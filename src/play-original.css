@@ -19,6 +19,7 @@ body{margin:0;overflow:hidden}
 .play-minimap{position:fixed;left:22px;bottom:22px;width:210px;height:210px;padding:0;z-index:4;display:none;background:#07110f;overflow:hidden;filter:drop-shadow(0 0 10px #000b)}
 .play-minimap canvas{display:block;width:100%;height:100%}
 .play-minimap-frame{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.play-minimap-tint{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.85;mix-blend-mode:screen}
 .hud-original .play-header,.hud-original .play-panel,.hud-original .play-hud,.hud-original .play-quest{display:none!important}
 .hud-original .play-minimap{display:block}
 .play-loading{position:fixed;inset:0;display:grid;place-items:center;background:#0b1715ee;z-index:9}
