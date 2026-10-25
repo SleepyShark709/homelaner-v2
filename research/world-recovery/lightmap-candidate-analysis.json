@@ -51,5 +51,12 @@
     "uv": "TEXCOORD_2",
     "flipV": true,
     "result": "The lightmap bands aligned with the facade/frame/base geometry, confirming the UV candidate, but the exported PNG contains chart-coloured/debug-looking values (purple/green/pink), not neutral lighting. The UModel PNG cannot be used as the final lightmap until the Lightmass/HDR format is decoded correctly."
+  },
+  "ddsFormatTrial": {
+    "export": "HQ_Lightmap0_138.dds",
+    "dimensions": "1024x1024",
+    "fourCC": "DXT5",
+    "srgb": false,
+    "rgbeDecode": "Attempted RGB * 2^(A*255-128); result is black/white noise, not neutral lighting. The raw PNG/DDS is therefore encoded/chart data, not directly usable RGB lighting."
   }
 }

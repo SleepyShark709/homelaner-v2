@@ -39,6 +39,16 @@ gradient ratio ≈ 1.72
 
 进一步用 `StandardMaterial.lightmapTexture` 做 UV 对齐诊断（PBRMaterial 没有 lightmapTexture 属性）：lightmap 的色带/分块会**准确地落在门框、柱础和玻璃分格上**，说明 `TEXCOORD_2 + V 翻转` 的 UV 选择很可能是对的。但导出的 PNG 呈现紫/绿/粉的分块颜色，不是中性光照，说明 UModel 对 Lightmass/HDR lightmap 的像素解码不正确；不能把这个 PNG 当作最终 lightmap 使用。诊断截图：`research/screenshots/lightmap-standard-test.jpg`。
 
+检查 DDS 头：
+
+```text
+1024x1024
+FourCC = DXT5
+SRGB = false
+```
+
+再尝试 `RGB * 2^(A*255-128)` 的 RGBE 解码，结果是黑/白噪声，不是中性光照。说明原始 PNG/DDS 里是**编码/图表数据**，不是可直接当 RGB 光照的纹理；必须使用 Lightmass 的运行时解码规则或组件层 `FLightMap2D` 数据，不能靠普通图片处理。
+
 单个 `HQ_Lightmap0_16` 已用 UModel 成功导出为 4096×4096 PNG，证明这些不是残留引用，而是真实烘焙数据。
 
 导出命令（从 `-HeroGame/Maps` 目录执行）：
