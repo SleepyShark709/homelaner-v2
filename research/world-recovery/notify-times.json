@@ -1,8 +1,811 @@
 {
   "source": "decoded UAssetGUI AnimSequence JSON",
   "note": "AnimNotifyEvent.LinkValue is the absolute sequence time; EndLink.LinkValue is the end time.",
+  "clipCount": 24,
+  "notifyCount": 116,
+  "notifyNames": [
+    "AttackMoveTo",
+    "BodyMvmt_Cue",
+    "ChainAirLongAttack",
+    "ChainComboLongAttack",
+    "Cue_DashAttackStart",
+    "Cue_SuperKickSpin",
+    "FinishAction",
+    "FinishLongAttack",
+    "MoveToEnemy",
+    "NormalLongAttack",
+    "P_AirAttack_Shock",
+    "P_AirKIckWind",
+    "P_AirSuperKick",
+    "P_Attack_Wave",
+    "P_FistCannonSpawn",
+    "P_LongRangeSlash",
+    "P_LongRangeSlashBlack",
+    "P_NormalAttackSlash",
+    "P_StartSprint",
+    "P_SuperKIckWind",
+    "P_SuperPunchSpawn",
+    "PlayFootStepL",
+    "PlayFootStepR",
+    "PlayLandFootStep",
+    "RunStop",
+    "SpawnAirLongAttack",
+    "SpawnComboLongAttack",
+    "SpawnFlyDustEffect",
+    "SpawnSuperLongAttack",
+    "StartAirAttack",
+    "StartAttackMove",
+    "StartJumpSmahAttack",
+    "StartLongAttack",
+    "StartSmashMoveDown",
+    "StopAttackMove",
+    "StopSmashJumpUp",
+    "StopSuperPunchSlidMove",
+    "Trail",
+    "VisibleMesh"
+  ],
   "clips": {
-    "Hero_StartSprint": [],
+    "ALS_N_Run_B": [
+      {
+        "notify": "PlayFootStepR",
+        "time": 0.12305427342653275,
+        "end": 0.12305427342653275,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepR",
+        "time": 0.37862852215766907,
+        "end": 0.37862852215766907,
+        "duration": "+0",
+        "track": 0
+      }
+    ],
+    "ALS_N_Walk_B": [
+      {
+        "notify": "PlayFootStepR",
+        "time": 0.036255061626434326,
+        "end": 0.036255061626434326,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepR",
+        "time": 0.4819790720939636,
+        "end": 0.4819790720939636,
+        "duration": "+0",
+        "track": 0
+      }
+    ],
+    "Hero_AirAttackStart": [
+      {
+        "notify": "P_StartSprint",
+        "time": 0.5132579803466797,
+        "end": 0.5132579803466797,
+        "duration": "+0",
+        "track": 3
+      },
+      {
+        "notify": "P_AirAttack_Shock",
+        "time": 0.5139531493186951,
+        "end": 0.5139531493186951,
+        "duration": "+0",
+        "track": 2
+      },
+      {
+        "notify": "Cue_DashAttackStart",
+        "time": 0.514654278755188,
+        "end": 0.514654278755188,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "StartAirAttack",
+        "time": 0.5223671197891235,
+        "end": 0.5223671197891235,
+        "duration": "+0",
+        "track": 0
+      }
+    ],
+    "Hero_AirKick_L": [
+      {
+        "notify": "P_AirKIckWind",
+        "time": 0.28115445375442505,
+        "end": 0.28115445375442505,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "P_LongRangeSlashBlack",
+        "time": 0.42823582887649536,
+        "end": 0.42823582887649536,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "SpawnAirLongAttack",
+        "time": 0.4319169521331787,
+        "end": 0.4319169521331787,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "ChainAirLongAttack",
+        "time": 0.5025947093963623,
+        "end": 0.5025947093963623,
+        "duration": "+0",
+        "track": 2
+      },
+      {
+        "notify": "FinishAction",
+        "time": 1.1006519794464111,
+        "end": 1.1006519794464111,
+        "duration": "+0",
+        "track": 1
+      }
+    ],
+    "Hero_AirKick_R": [
+      {
+        "notify": "P_AirKIckWind",
+        "time": 0.3520650863647461,
+        "end": 0.3520650863647461,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "P_LongRangeSlashBlack",
+        "time": 0.4964240491390228,
+        "end": 0.4964240491390228,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "SpawnAirLongAttack",
+        "time": 0.4988625645637512,
+        "end": 0.4988625645637512,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "ChainAirLongAttack",
+        "time": 0.5536006093025208,
+        "end": 0.5536006093025208,
+        "duration": "+0",
+        "track": 2
+      },
+      {
+        "notify": "FinishAction",
+        "time": 1.1345702409744263,
+        "end": 1.1345702409744263,
+        "duration": "+0",
+        "track": 1
+      }
+    ],
+    "Hero_AirSuperKick": [
+      {
+        "notify": "P_SuperKIckWind",
+        "time": 0.1748773604631424,
+        "end": 0.1748773604631424,
+        "duration": "+0",
+        "track": 3
+      },
+      {
+        "notify": "Cue_SuperKickSpin",
+        "time": 0.19833652675151825,
+        "end": 0.19833652675151825,
+        "duration": "+0",
+        "track": 2
+      },
+      {
+        "notify": "SpawnSuperLongAttack",
+        "time": 0.6547237634658813,
+        "end": 0.6547237634658813,
+        "duration": "+0",
+        "track": 2
+      },
+      {
+        "notify": "P_AirSuperKick",
+        "time": 0.6781829595565796,
+        "end": 0.6781829595565796,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "StopSuperPunchSlidMove",
+        "time": 0.9383663535118103,
+        "end": 0.9383663535118103,
+        "duration": "+0",
+        "track": 3
+      },
+      {
+        "notify": "ChainAirLongAttack",
+        "time": 0.9511622190475464,
+        "end": 0.9511622190475464,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "FinishAction",
+        "time": 1.9015564918518066,
+        "end": 1.9015564918518066,
+        "duration": "+0",
+        "track": 1
+      }
+    ],
+    "Hero_Attack1": [
+      {
+        "notify": "StartAttackMove",
+        "time": 0.008530602790415287,
+        "end": 0.008530602790415287,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "VisibleMesh",
+        "time": 0.2468097060918808,
+        "end": 0.2468097060918808,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "P_NormalAttackSlash",
+        "time": 0.3952811658382416,
+        "end": 0.3952811658382416,
+        "duration": "+0",
+        "track": 2
+      },
+      {
+        "notify": "StopAttackMove",
+        "time": 0.4250306487083435,
+        "end": 0.4250306487083435,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "P_Attack_Wave",
+        "time": 0.468570351600647,
+        "end": 0.468570351600647,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "FinishAction",
+        "time": 0.9002944231033325,
+        "end": 0.9002944231033325,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepR",
+        "time": 1.6317030191421509,
+        "end": 1.6317030191421509,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepL",
+        "time": 1.8079352378845215,
+        "end": 1.8079352378845215,
+        "duration": "+0",
+        "track": 1
+      }
+    ],
+    "Hero_Attack2": [
+      {
+        "notify": "StartAttackMove",
+        "time": 0.01066325418651104,
+        "end": 0.01066325418651104,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "VisibleMesh",
+        "time": 0.2506661117076874,
+        "end": 0.2506661117076874,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "P_NormalAttackSlash",
+        "time": 0.4145631790161133,
+        "end": 0.4145631790161133,
+        "duration": "+0",
+        "track": 2
+      },
+      {
+        "notify": "StopAttackMove",
+        "time": 0.44998931884765625,
+        "end": 0.44998931884765625,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "P_Attack_Wave",
+        "time": 0.47686365246772766,
+        "end": 0.47686365246772766,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "FinishAction",
+        "time": 0.8992426991462708,
+        "end": 0.8992426991462708,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepL",
+        "time": 1.6420695781707764,
+        "end": 1.6420695781707764,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepR",
+        "time": 1.8203752040863037,
+        "end": 1.8203752040863037,
+        "duration": "+0",
+        "track": 1
+      }
+    ],
+    "Hero_Attack3": [
+      {
+        "notify": "StartAttackMove",
+        "time": 0.007362220901995897,
+        "end": 0.007362220901995897,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "VisibleMesh",
+        "time": 0.2506661117076874,
+        "end": 0.2506661117076874,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "P_NormalAttackSlash",
+        "time": 0.4084441065788269,
+        "end": 0.4084441065788269,
+        "duration": "+0",
+        "track": 2
+      },
+      {
+        "notify": "StopAttackMove",
+        "time": 0.43539726734161377,
+        "end": 0.43539726734161377,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "P_Attack_Wave",
+        "time": 0.45014721155166626,
+        "end": 0.45014721155166626,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "FinishAction",
+        "time": 0.9002944231033325,
+        "end": 0.9002944231033325,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepR",
+        "time": 1.6171897649765015,
+        "end": 1.6171897649765015,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepL",
+        "time": 1.8224483728408813,
+        "end": 1.8224483728408813,
+        "duration": "+0",
+        "track": 1
+      }
+    ],
+    "Hero_Attack4": [
+      {
+        "notify": "StartAttackMove",
+        "time": 0.009465713053941727,
+        "end": 0.009465713053941727,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "VisibleMesh",
+        "time": 0.25218597054481506,
+        "end": 0.25218597054481506,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "P_NormalAttackSlash",
+        "time": 0.39880573749542236,
+        "end": 0.39880573749542236,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "P_NormalAttackSlash",
+        "time": 0.39880573749542236,
+        "end": 0.39880573749542236,
+        "duration": "+0",
+        "track": 2
+      },
+      {
+        "notify": "StopAttackMove",
+        "time": 0.43125060200691223,
+        "end": 0.43125060200691223,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "P_Attack_Wave",
+        "time": 0.4489229917526245,
+        "end": 0.4489229917526245,
+        "duration": "+0",
+        "track": 3
+      },
+      {
+        "notify": "P_Attack_Wave",
+        "time": 0.4489229917526245,
+        "end": 0.4489229917526245,
+        "duration": "+0",
+        "track": 4
+      },
+      {
+        "notify": "FinishAction",
+        "time": 0.9010449647903442,
+        "end": 0.9010449647903442,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepL",
+        "time": 1.6254829168319702,
+        "end": 1.6254829168319702,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepR",
+        "time": 1.8224483728408813,
+        "end": 1.8224483728408813,
+        "duration": "+0",
+        "track": 1
+      }
+    ],
+    "Hero_BackHandSlash_New": [
+      {
+        "notify": "MoveToEnemy",
+        "time": 0.16827934980392456,
+        "end": 0.16827934980392456,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "P_AirKIckWind",
+        "time": 0.2985711395740509,
+        "end": 0.2985711395740509,
+        "duration": "+0",
+        "track": 3
+      },
+      {
+        "notify": "AttackMoveTo",
+        "time": 0.3491796553134918,
+        "end": 0.3491796553134918,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "P_LongRangeSlash",
+        "time": 0.410180926322937,
+        "end": 0.410180926322937,
+        "duration": "+0",
+        "track": 2
+      },
+      {
+        "notify": "SpawnComboLongAttack",
+        "time": 0.4354228377342224,
+        "end": 0.4354228377342224,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "ChainComboLongAttack",
+        "time": 0.4564577639102936,
+        "end": 0.4564577639102936,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "FinishAction",
+        "time": 1.0033656358718872,
+        "end": 1.0033656358718872,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepL",
+        "time": 1.7080354690551758,
+        "end": 1.7080354690551758,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepR",
+        "time": 1.9814894199371338,
+        "end": 1.9814894199371338,
+        "duration": "+0",
+        "track": 1
+      }
+    ],
+    "Hero_FlashKick": [
+      {
+        "notify": "MoveToEnemy",
+        "time": 0.25767773389816284,
+        "end": 0.25767773389816284,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "P_AirKIckWind",
+        "time": 0.33129993081092834,
+        "end": 0.33129993081092834,
+        "duration": "+0",
+        "track": 2
+      },
+      {
+        "notify": "AttackMoveTo",
+        "time": 0.33988919854164124,
+        "end": 0.33988919854164124,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "P_LongRangeSlashBlack",
+        "time": 0.49572286009788513,
+        "end": 0.49572286009788513,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "SpawnComboLongAttack",
+        "time": 0.4994039833545685,
+        "end": 0.4994039833545685,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "ChainComboLongAttack",
+        "time": 0.6527835726737976,
+        "end": 0.6527835726737976,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayLandFootStep",
+        "time": 0.8994179368019104,
+        "end": 0.8994179368019104,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "FinishAction",
+        "time": 1.1497334241867065,
+        "end": 1.1497334241867065,
+        "duration": "+0",
+        "track": 0
+      }
+    ],
+    "Hero_IdleFlying": [
+      {
+        "notify": "SpawnFlyDustEffect",
+        "time": 2.3927221298217773,
+        "end": 2.3927221298217773,
+        "duration": "+0",
+        "track": 0
+      }
+    ],
+    "Hero_JumpLand": [
+      {
+        "notify": "PlayFootStepL",
+        "time": 0.06668069213628769,
+        "end": 0.06668069213628769,
+        "duration": "+0",
+        "track": 0
+      }
+    ],
+    "Hero_JumpSpeed": [
+      {
+        "notify": "PlayFootStepL",
+        "time": 0.10727807879447937,
+        "end": 0.10727807879447937,
+        "duration": "+0",
+        "track": 0
+      }
+    ],
+    "Hero_LongFistForce_L": [
+      {
+        "notify": "StartLongAttack",
+        "time": 0.008413967676460743,
+        "end": 0.008413967676460743,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "NormalLongAttack",
+        "time": 0.41649141907691956,
+        "end": 0.41649141907691956,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "P_FistCannonSpawn",
+        "time": 0.41649141907691956,
+        "end": 0.41649141907691956,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "FinishLongAttack",
+        "time": 1.1022298336029053,
+        "end": 1.1022298336029053,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepR",
+        "time": 1.6891040802001953,
+        "end": 1.6891040802001953,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepL",
+        "time": 1.9751789569854736,
+        "end": 1.9751789569854736,
+        "duration": "+0",
+        "track": 1
+      }
+    ],
+    "Hero_LongFistForce_R": [
+      {
+        "notify": "StartLongAttack",
+        "time": 0.008413967676460743,
+        "end": 0.008413967676460743,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "NormalLongAttack",
+        "time": 0.4185948967933655,
+        "end": 0.4185948967933655,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "P_FistCannonSpawn",
+        "time": 0.4185948967933655,
+        "end": 0.4185948967933655,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "FinishLongAttack",
+        "time": 1.0980228185653687,
+        "end": 1.0980228185653687,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepR",
+        "time": 1.6912075281143188,
+        "end": 1.6912075281143188,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepL",
+        "time": 1.9751789569854736,
+        "end": 1.9751789569854736,
+        "duration": "+0",
+        "track": 1
+      }
+    ],
+    "Hero_Smash_A": [
+      {
+        "notify": "StartJumpSmahAttack",
+        "time": 0.016827933490276337,
+        "end": 0.016827933490276337,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "VisibleMesh",
+        "time": 0.3298499882221222,
+        "end": 0.3298499882221222,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "StopSmashJumpUp",
+        "time": 0.3828354775905609,
+        "end": 0.3828354775905609,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "StartSmashMoveDown",
+        "time": 0.5931846499443054,
+        "end": 0.5931846499443054,
+        "duration": "+0",
+        "track": 2
+      },
+      {
+        "notify": "P_LongRangeSlash",
+        "time": 0.6568564176559448,
+        "end": 0.6568564176559448,
+        "duration": "+0",
+        "track": 3
+      },
+      {
+        "notify": "SpawnComboLongAttack",
+        "time": 0.6710740923881531,
+        "end": 0.6710740923881531,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "ChainComboLongAttack",
+        "time": 0.8666386008262634,
+        "end": 0.8666386008262634,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "FinishAction",
+        "time": 1.2999578714370728,
+        "end": 1.2999578714370728,
+        "duration": "+0",
+        "track": 0
+      }
+    ],
+    "Hero_SprintRun": [
+      {
+        "notify": "PlayFootStepR",
+        "time": 0.26435986161231995,
+        "end": 0.26435986161231995,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepL",
+        "time": 0.5560887455940247,
+        "end": 0.5560887455940247,
+        "duration": "+0",
+        "track": 0
+      }
+    ],
+    "Hero_SprintSuper": [
+      {
+        "notify": "PlayFootStepR",
+        "time": 0.2625157833099365,
+        "end": 0.2625157833099365,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepL",
+        "time": 0.5496424436569214,
+        "end": 0.5496424436569214,
+        "duration": "+0",
+        "track": 0
+      }
+    ],
     "Hero_Stopping_Sprint": [
       {
         "notify": "BodyMvmt_Cue",
@@ -29,6 +832,75 @@
         "notify": "PlayFootStepL",
         "time": 1.2068785429000854,
         "end": 1.2068785429000854,
+        "duration": "+0",
+        "track": 0
+      }
+    ],
+    "Hero_Stopping_WalkRun": [
+      {
+        "notify": "PlayFootStepL",
+        "time": 0.4627852737903595,
+        "end": 0.4627852737903595,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepR",
+        "time": 0.9351674914360046,
+        "end": 0.9351674914360046,
+        "duration": "+0",
+        "track": 0
+      }
+    ],
+    "Hero_SuperPunch": [
+      {
+        "notify": "StopSuperPunchSlidMove",
+        "time": 0.6962557435035706,
+        "end": 0.6962557435035706,
+        "duration": "+0",
+        "track": 1
+      },
+      {
+        "notify": "Trail",
+        "time": 0.7004627585411072,
+        "end": 1.0054690837860107,
+        "duration": 0.30500632524490356,
+        "track": 0
+      },
+      {
+        "notify": "P_SuperPunchSpawn",
+        "time": 0.8551929593086243,
+        "end": 0.8551929593086243,
+        "duration": "+0",
+        "track": 3
+      },
+      {
+        "notify": "SpawnSuperLongAttack",
+        "time": 0.8701215386390686,
+        "end": 0.8701215386390686,
+        "duration": "+0",
+        "track": 2
+      },
+      {
+        "notify": "FinishAction",
+        "time": 1.89734947681427,
+        "end": 1.89734947681427,
+        "duration": "+0",
+        "track": 1
+      }
+    ],
+    "Hero_Walk": [
+      {
+        "notify": "PlayFootStepR",
+        "time": 0.33172062039375305,
+        "end": 0.33172062039375305,
+        "duration": "+0",
+        "track": 0
+      },
+      {
+        "notify": "PlayFootStepL",
+        "time": 0.8256204724311829,
+        "end": 0.8256204724311829,
         "duration": "+0",
         "track": 0
       }

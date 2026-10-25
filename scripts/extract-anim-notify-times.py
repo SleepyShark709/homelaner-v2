@@ -2,15 +2,11 @@
 """Extract absolute AnimNotify times from decoded UAssetGUI AnimSequence JSON."""
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SOURCES = [
-    ROOT / "research/rea-audit/decoded/Animations/Hero_StartSprint.json",
-    ROOT / "research/rea-audit/decoded/Animations/Hero_Stopping_Sprint.json",
-]
-OUTPUT = ROOT / "research/world-recovery/notify-times.json"
 
 
 def extract(path: Path) -> list[dict]:
@@ -33,10 +29,27 @@ def extract(path: Path) -> list[dict]:
     return rows
 
 
-report = {
-    "source": "decoded UAssetGUI AnimSequence JSON",
-    "note": "AnimNotifyEvent.LinkValue is the absolute sequence time; EndLink.LinkValue is the end time.",
-    "clips": {path.stem: extract(path) for path in SOURCES},
-}
-OUTPUT.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-print(json.dumps(report, indent=2))
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", type=Path, default=ROOT / "research/rea-audit/decoded/Animations")
+    parser.add_argument("--output", type=Path, default=ROOT / "research/world-recovery/notify-times.json")
+    args = parser.parse_args()
+    clips = {}
+    for path in sorted(args.input.glob("*.json")):
+        rows = extract(path)
+        if rows:
+            clips[path.stem] = rows
+    report = {
+        "source": "decoded UAssetGUI AnimSequence JSON",
+        "note": "AnimNotifyEvent.LinkValue is the absolute sequence time; EndLink.LinkValue is the end time.",
+        "clipCount": len(clips),
+        "notifyCount": sum(len(rows) for rows in clips.values()),
+        "notifyNames": sorted({row["notify"] for rows in clips.values() for row in rows}),
+        "clips": clips,
+    }
+    args.output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({key: report[key] for key in ("clipCount", "notifyCount", "notifyNames")}, indent=2))
+
+
+if __name__ == "__main__":
+    main()

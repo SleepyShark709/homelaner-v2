@@ -219,16 +219,28 @@ PlayFootStepR
 RunStop
 ```
 
-清单：[animation-notify-manifest.json](../research/world-recovery/animation-notify-manifest.json)。UModel props 里 `TriggerTimeOffset` 全是 0，没有绝对 TriggerTime；但 UAssetGUI 解码的 `AnimSequence` 里 `AnimNotifyEvent.LinkValue` 就是绝对时间。已对 `Hero_Stopping_Sprint` 取得：
+`scripts/extract-animation-notifies.py` 从 28 份 UModel `.props.txt` 提取到名称清单；进一步用 UAssetGUI 解码全部 46 段 AnimSequence 后，`AnimNotifyEvent.LinkValue` 给出绝对时间：
 
 ```text
-BodyMvmt_Cue  0.0986s
-RunStop       0.1946s
-PlayFootStepR 0.9479s
-PlayFootStepL 1.2069s
+24 段有 notify
+116 个 notify event
+39 种 notify 名称
 ```
 
-`Hero_StartSprint` 的 Notifies 为空。报告：[notify-times.json](../research/world-recovery/notify-times.json)。其余 clip 仍需逐包解码。
+关键 locomotion notify：
+
+```text
+Hero_Stopping_Sprint  BodyMvmt_Cue 0.0986s  RunStop 0.1946s
+                      PlayFootStepR 0.9479s  PlayFootStepL 1.2069s
+Hero_Walk             PlayFootStepR 0.332s   PlayFootStepL 0.826s
+Hero_SprintRun        PlayFootStepR 0.264s   PlayFootStepL 0.556s
+Hero_SprintSuper      PlayFootStepR 0.263s   PlayFootStepL 0.550s
+Hero_JumpLand         PlayFootStepL 0.067s
+Hero_JumpSpeed        PlayFootStepL 0.107s
+Hero_IdleFlying       SpawnFlyDustEffect 2.393s
+```
+
+`Hero_StartSprint` 没有 notify。完整报告：[notify-times.json](../research/world-recovery/notify-times.json)。攻击序列的 notify 时间本来就已经在 `combat-timings.json` 中，这一轮补齐的是 locomotion/fly 序列。
 
 空中首次攻击（近战 J 或远程 K）现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→J/K 均返回 `clip=Hero_AirAttackStart`；连续两次 K 的结果记录在 `research/world-recovery/air-attack-chain.json`。
 
