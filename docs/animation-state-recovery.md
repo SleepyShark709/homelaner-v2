@@ -214,7 +214,7 @@ PlayFootStepR
 RunStop
 ```
 
-`scripts/extract-animation-notifies.py` 从 28 份 UModel `.props.txt` 提取到名称清单；进一步用 UAssetGUI 解码此前 46 段 AnimSequence 后，`AnimNotifyEvent.LinkValue` 给出绝对时间：
+`scripts/extract-animation-notifies.py` 从 28 份 UModel `.props.txt` 提取到名称清单；进一步用 UAssetGUI 解码全部 49 段 AnimSequence 后，`AnimNotifyEvent.LinkValue` 给出绝对时间（新增的 3 段垂直飞行没有 notify）：
 
 ```text
 24 段有 notify
