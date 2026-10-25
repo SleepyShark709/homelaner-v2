@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "dfc2f2e",
+  "validatedCommit": "a7580af",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -71,6 +71,13 @@
         "Hero_SprintRun"
       ],
       "audioFiles": 8
+    },
+    {
+      "command": "capture-world probe-footstep-audio",
+      "exitCode": 0,
+      "durationSeconds": 0.36685416666666665,
+      "sampleRate": 48000,
+      "channels": 1
     }
   ],
   "evidence": {
@@ -82,5 +89,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "All automated checks pass after wiring the recovered original footstep sounds at dfc2f2e. The Ogg files stay local/Git-ignored."
+  "note": "All automated checks pass after verifying the recovered footstep Ogg decodes in Chrome at a7580af."
 }
