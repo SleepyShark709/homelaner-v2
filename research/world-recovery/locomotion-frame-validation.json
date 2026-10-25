@@ -1,0 +1,287 @@
+{
+  "source": "public/assets/character/hero.gltf",
+  "animationCount": 28,
+  "clips": [
+    {
+      "name": "Hero_Idle",
+      "durationSeconds": 2.4834439754486084,
+      "rotationJoints": 93,
+      "channels": 127,
+      "maxQuaternionNormError": 4.392873087510907e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 0.03686139581192731
+    },
+    {
+      "name": "Hero_IdleFlying",
+      "durationSeconds": 2.4834439754486084,
+      "rotationJoints": 93,
+      "channels": 127,
+      "maxQuaternionNormError": 4.1528489314046624e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 0.036156168764152403
+    },
+    {
+      "name": "Hero_FlyFastSprint",
+      "durationSeconds": 1.336363673210144,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.585773811209947e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 1.334742219497809
+    },
+    {
+      "name": "A_ThirdPersonRun",
+      "durationSeconds": 0.5666667222976685,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.712582152815003e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 7.407351676296753
+    },
+    {
+      "name": "Hero_Attack1",
+      "durationSeconds": 1.666666865348816,
+      "rotationJoints": 93,
+      "channels": 127,
+      "maxQuaternionNormError": 4.933070463231104e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 129.2890709182185
+    },
+    {
+      "name": "Hero_Attack2",
+      "durationSeconds": 1.666666865348816,
+      "rotationJoints": 93,
+      "channels": 127,
+      "maxQuaternionNormError": 4.049563262498168e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 118.25637955711017
+    },
+    {
+      "name": "Hero_Attack3",
+      "durationSeconds": 1.666666865348816,
+      "rotationJoints": 93,
+      "channels": 127,
+      "maxQuaternionNormError": 4.179555923577993e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 133.73675365469808
+    },
+    {
+      "name": "Hero_Attack4",
+      "durationSeconds": 1.666666865348816,
+      "rotationJoints": 93,
+      "channels": 127,
+      "maxQuaternionNormError": 4.3904138324890596e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 130.68858042960798
+    },
+    {
+      "name": "Hero_LongFistForce_L",
+      "durationSeconds": 2.000000238418579,
+      "rotationJoints": 93,
+      "channels": 127,
+      "maxQuaternionNormError": 4.0850108851131495e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 88.83836777559803
+    },
+    {
+      "name": "Hero_LongFistForce_R",
+      "durationSeconds": 2.000000238418579,
+      "rotationJoints": 93,
+      "channels": 127,
+      "maxQuaternionNormError": 4.0801818368407794e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 87.5598252061177
+    },
+    {
+      "name": "Hero_BackHandSlash_New",
+      "durationSeconds": 2.000000238418579,
+      "rotationJoints": 93,
+      "channels": 127,
+      "maxQuaternionNormError": 4.1893059465891724e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 104.85804577650184
+    },
+    {
+      "name": "Hero_FlashKick",
+      "durationSeconds": 1.1666666269302368,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 4.123178531934002e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 53.2639968916378
+    },
+    {
+      "name": "Hero_Smash_A",
+      "durationSeconds": 1.3333333730697632,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 4.1729595556816435e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 81.90700571875773
+    },
+    {
+      "name": "Hero_SuperPunch",
+      "durationSeconds": 2,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 4.080431237341031e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 78.18110922066948
+    },
+    {
+      "name": "Hero_AirKick_L",
+      "durationSeconds": 1.1666666269302368,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 4.172237311195204e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 93.88170130764955
+    },
+    {
+      "name": "Hero_AirKick_R",
+      "durationSeconds": 1.1666666269302368,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.803764703214085e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 63.999224315496036
+    },
+    {
+      "name": "Hero_AirSuperKick",
+      "durationSeconds": 2,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.889083299846163e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 114.68823923022948
+    },
+    {
+      "name": "Hero_AirAttackStart",
+      "durationSeconds": 0.6666666865348816,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.965306638598065e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 110.18236489986745
+    },
+    {
+      "name": "Hero_Walk",
+      "durationSeconds": 0.9677419066429138,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.8760395226766775e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 22.174483087847683
+    },
+    {
+      "name": "Hero_SprintRun",
+      "durationSeconds": 0.5671296715736389,
+      "rotationJoints": 93,
+      "channels": 127,
+      "maxQuaternionNormError": 4.0926269040397756e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 3.4812927251249386
+    },
+    {
+      "name": "Hero_SprintSuper",
+      "durationSeconds": 0.41698843240737915,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.950932714325006e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 13.139226785765308
+    },
+    {
+      "name": "Hero_JumpSpeed",
+      "durationSeconds": 0.3174603283405304,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.8964856230450096e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 82.19662074277802
+    },
+    {
+      "name": "Hero_JumpLand",
+      "durationSeconds": 0.1846153885126114,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.93933613507258e-8,
+      "nonFinite": 0,
+      "loop": false,
+      "firstLastRotationDeltaDegrees": 59.42715025061044
+    },
+    {
+      "name": "Hero_JumpFall",
+      "durationSeconds": 0.8241758346557617,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 4.133318121102292e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 0.03812195489632988
+    },
+    {
+      "name": "Hero_JumpFallFast",
+      "durationSeconds": 0.8241758346557617,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 4.0894080122200194e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 0.04513523686113772
+    },
+    {
+      "name": "Hero_StartSprint",
+      "durationSeconds": 1.4051522016525269,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.770610690345677e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 0.041486124082949334
+    },
+    {
+      "name": "Hero_Stopping_Sprint",
+      "durationSeconds": 1.2335526943206787,
+      "rotationJoints": 93,
+      "channels": 127,
+      "maxQuaternionNormError": 4.1493728453190215e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 95.48986217194394
+    },
+    {
+      "name": "Hero_Stopping_WalkRun",
+      "durationSeconds": 0.9677420258522034,
+      "rotationJoints": 93,
+      "channels": 127,
+      "maxQuaternionNormError": 4.1017717444802315e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 39.87204184689145
+    }
+  ],
+  "failures": []
+}

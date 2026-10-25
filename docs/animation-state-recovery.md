@@ -79,6 +79,17 @@ landing -> Hero_JumpLand (once) -> Hero_Idle / Hero_Walk / Hero_SprintRun (loop)
 - `ALS_N_Jump`、`HeroABS_Flying*` 和完整方向混合仍未导入；
 - 直接状态链的时长取 `AnimationGroup.getLength()`，不是 AnimBP 的精确 transition/blend 时间。
 
+## 动画数据校验
+
+`npm run verify:locomotion` 会检查整个 `hero.gltf` 的 28 段动画：
+
+- 每段旋转通道关节数：基础/多数原版片段 93；部分 PSA config 主动删除了头发/配饰骨骼的旋转轨道，因此为 68；
+- 四元数范数误差 < 5e-8；
+- 无 NaN/Inf；
+- 记录每段时长、帧数、首尾旋转差。
+
+报告：`research/world-recovery/locomotion-frame-validation.json`。这只证明关键帧数据结构/数值健康，**不等于**与原程序逐帧骨骼对照。
+
 ## 结论
 
 Gate 4 仍未完成，但核心缺失片段已进入原骨架，并已用真实 `W`/Space 输入验证 `run`/`jump` 片段可以播放（见 `research/screenshots/play-sprintrun.jpg`、`play-jumpfall.jpg`）。下一步是按 `HeroAnimBP` 的转移条件实现混合空间与状态机，而不是继续换片段。

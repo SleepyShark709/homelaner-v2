@@ -9,6 +9,7 @@
     "dev": "vite --host 127.0.0.1 --port 5178 --strictPort",
     "typecheck": "tsc --noEmit",
     "verify:assets": "node scripts/verify-assets.mjs",
+    "verify:locomotion": "node scripts/validate-locomotion-frames.mjs",
     "verify:game": "node scripts/verify-assets.mjs --game",
     "verify:world": "node scripts/verify-world.mjs",
     "test:world": "node scripts/test-world.mjs",
