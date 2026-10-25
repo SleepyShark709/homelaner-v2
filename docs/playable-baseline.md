@@ -1,6 +1,6 @@
 # 可玩原版基线 B1/B2/B3：原街区、原角色、原输入、战斗与动态碰撞
 
-日期：2026-10-25。入口：`http://127.0.0.1:5178/?view=play`；可用 `&district=TitleMenuLevel` 等主世界关卡切换检查目标（预览人口只在 ResidentialArea1 加载）；`&startup=1` 先执行原 17 包启动链再进入可玩模式；`&plaza=1` 是 MainLevel 起点广场预览预设（启动链 + `(-20,0)` + 砖石 overlay）；`&mode=free` 开启自由破坏预览（非默认原版基线）。
+日期：2026-10-25。入口：`http://127.0.0.1:5178/?view=play`；可用 `&district=TitleMenuLevel` 等主世界关卡切换检查目标（预览人口只在 ResidentialArea1 加载）；`&startup=1` 先执行原 17 包启动链再进入可玩模式（自动启用砖石地面 overlay，`floors=native` 可关闭）；`&plaza=1` 是 MainLevel 起点广场预览预设（启动链 + `(-20,0)` + 砖石 overlay）；`&mode=free` 开启自由破坏预览（非默认原版基线）。
 
 这是**可玩切片**，不是完整 UNDEFEATED 移植。B1 把原角色放回恢复后的原版街区，用原高度场和原输入语义驱动；B2 增加预览人口、原战斗动画/弹道和相机遮挡收缩。攻击命中、AI、任务、Boss、菜单/存档、完整动画状态机和同机位对照仍需继续。
 
@@ -127,19 +127,19 @@ node scripts/capture-world.mjs --query='view=play&mode=free' --ready=play --prob
 
 ## MainLevel 起点广场候选（startup 全城）
 
-单区 `?view=play` 在 MainLevel 原点附近只显示空广场；加上 `&startup=1` 加载 17 包后，同一位置出现古典立面、石栏杆、广告牌和城市街区：
+单区 `?view=play` 在 MainLevel 原点附近只显示空广场；加上 `&startup=1` 加载 17 包后，同一位置出现古典立面、石栏杆、广告牌和城市街区。startup 模式现在自动启用砖石地面 overlay（`floors=native` 可关闭，仅用于 floor 诊断）。
 
 ```text
 /?view=play&startup=1&at=20,0&yaw=0
 /?view=play&plaza=1
 ```
 
-截图 `play-mainplaza-startup3.jpg`，对照图 `comparison-start-plaza-mainlevel.jpg`。`plaza=1` 预设使用更接近原图的 `(-20,0)` 姿态：启动链 + 砖石 overlay + 相机净空（`play-plaza-mode.jpg` / `comparison-start-plaza-camera-clear.jpg`）；不改变默认出生点。
+截图 `play-mainplaza-startup3.jpg`、`play-startup-overlay.jpg`，对照图 `comparison-start-plaza-mainlevel.jpg`。`plaza=1` 预设使用更接近原图的 `(-20,0)` 姿态：启动链 + 砖石 overlay + 相机净空（`play-plaza-mode.jpg` / `comparison-start-plaza-camera-clear.jpg`）；不改变默认出生点。
 
 另外两个候选姿态：
 
 - `plaza=1&at=-20,0&yaw=0`：石栏杆在左、古典建筑在中央，构图更接近原图；出生点搜索现在要求角色后方 4 m 相机位不被静态 AABB 占用，因此相机不再挤进角色（`play-plaza-left-clear.jpg`，对照 `comparison-start-plaza-camera-clear.jpg`）；
-- `plaza=1&at=-10,-20&yaw=0`：干净的铺装广场，但建筑布局不同（`play-plaza-left2.jpg`）。使用 `&floors=overlay` 会在恢复的砖石楼板 AABB 上铺 `GroundBrick_B_A` 原始纹理，得到 `play-mainplaza-overlay.jpg` / `comparison-start-plaza-overlay.jpg`；这是**预览地面回退**，不是原 floor mesh 已正确渲染。它比之前的 CommercialArea 候选更接近原程序起点广场的城市构图，但：
+- `plaza=1&at=-10,-20&yaw=0`：干净的铺装广场，但建筑布局不同（`play-plaza-left2.jpg`）。startup/plaza 模式现在默认在恢复的砖石楼板 AABB 上铺 `GroundBrick_B_A` 原始纹理；`floors=native` 可关闭。得到 `play-mainplaza-overlay.jpg` / `comparison-start-plaza-overlay.jpg`；这是**预览地面回退**，不是原 floor mesh 已正确渲染。它比之前的 CommercialArea 候选更接近原程序起点广场的城市构图，但：
 
 - 地面 overlay 只是用原纹理覆盖 AABB，原程序 floor mesh 的可见性仍未修好；
 - 长椅、相机位置和建筑朝向没有逐项匹配；

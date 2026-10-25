@@ -177,7 +177,7 @@ try {
       marker.isPickable = false;
     }
   }
-  if (new URLSearchParams(location.search).get('floors') === 'overlay' || plazaMode) {
+  if (new URLSearchParams(location.search).get('floors') === 'overlay' || (startupMode && new URLSearchParams(location.search).get('floors') !== 'native')) {
     // Preview-only fallback for recovered ground-brick floors that do not render
     // in the current material path. Uses the authored GroundBrick_B_A texture.
     for (const surface of surfaces.surfaces) {
