@@ -1,0 +1,21 @@
+{
+  "source": "cooked UNDEFEATED SoundWave .uexp files, embedded Ogg payload",
+  "clipCount": 2,
+  "usage": "first 0.22 s on hit; full clip on destruction",
+  "clips": [
+    {
+      "name": "chain_D_impacts_0201",
+      "file": "public\\assets\\audio\\chain_d_impacts_0201.ogg",
+      "bytes": 16689,
+      "sha256": "c174127d244e136844ff1f4fa2ea0a2821b586fdf76e7ce6c5f05ce1b20407ee",
+      "source": "UNDEFEATED/Content/-HeroGame/Sound/Import/chain_D_impacts_0201.uexp"
+    },
+    {
+      "name": "chain_D_impacts_0601",
+      "file": "public\\assets\\audio\\chain_d_impacts_0601.ogg",
+      "bytes": 14677,
+      "sha256": "d8fe91254bdb17d508a713f51eca257791d3688640bdadfc121dac5857ae6466",
+      "source": "UNDEFEATED/Content/-HeroGame/Sound/Import/chain_D_impacts_0601.uexp"
+    }
+  ]
+}

@@ -485,7 +485,11 @@ try {
   combat = new Combat(viewer.scene, input, player as unknown as PlayerMotor, character, population, viewer.camera, collision.boxes, { heatVision: true });
   combat.mode = freeMode ? 'free' : 'baseline';
   await combat.load();
-  combat.onSound = kind => { if (kind === 'swing') footsteps.playSwing(); };
+  combat.onSound = kind => {
+    if (kind === 'swing') footsteps.playSwing();
+    else if (kind === 'destruction') footsteps.playDestruction();
+    else footsteps.playImpact();
+  };
   viewer.camera.detachControl();
   viewer.camera.minZ = 0.12;
   // HeroComponent switches Camera.FieldOfView by HeroRank:

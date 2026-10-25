@@ -3,6 +3,7 @@ const FOOTSTEP_URLS = Array.from({ length: 8 }, (_, index) => {
   return `/assets/audio/footstep${String(number).padStart(2, '0')}.ogg`;
 });
 const SWING_URLS = Array.from({ length: 4 }, (_, index) => `/assets/audio/punch_swish${String(index + 1).padStart(2, '0')}.ogg`);
+const IMPACT_URLS = ['/assets/audio/chain_d_impacts_0201.ogg', '/assets/audio/chain_d_impacts_0601.ogg'];
 
 /**
  * Plays the recovered Footstep01..09 samples at the original animation notify
@@ -14,6 +15,7 @@ export class Footsteps {
   private gain: GainNode | null = null;
   private buffers: AudioBuffer[] = [];
   private swings: AudioBuffer[] = [];
+  private impacts: AudioBuffer[] = [];
   private unlocked = false;
 
   constructor(private readonly enabled = true) {}
@@ -39,10 +41,14 @@ export class Footsteps {
     this.gain = this.context.createGain();
     this.gain.gain.value = 0.32;
     this.gain.connect(this.context.destination);
-    [this.buffers, this.swings] = await Promise.all([this.loadBuffers(FOOTSTEP_URLS), this.loadBuffers(SWING_URLS)]);
+    [this.buffers, this.swings, this.impacts] = await Promise.all([
+      this.loadBuffers(FOOTSTEP_URLS),
+      this.loadBuffers(SWING_URLS),
+      this.loadBuffers(IMPACT_URLS),
+    ]);
   }
 
-  private playBuffer(buffers: AudioBuffer[], volume = 1): void {
+  private playBuffer(buffers: AudioBuffer[], volume = 1, duration?: number): void {
     if (!this.enabled || !this.context || !this.gain || buffers.length === 0) return;
     if (this.context.state === 'suspended') {
       if (!this.unlocked) {
@@ -57,12 +63,16 @@ export class Footsteps {
     level.gain.value = volume;
     source.connect(level);
     level.connect(this.gain);
-    source.start();
+    source.start(0, 0, duration);
   }
 
   play(): void { this.playBuffer(this.buffers); }
 
   playSwing(): void { this.playBuffer(this.swings, 0.8); }
+
+  playImpact(): void { this.playBuffer(this.impacts, 0.9, 0.22); }
+
+  playDestruction(): void { this.playBuffer(this.impacts, 1); }
 
   dispose(): void {
     void this.context?.close().catch(() => undefined);
@@ -70,5 +80,6 @@ export class Footsteps {
     this.gain = null;
     this.buffers = [];
     this.swings = [];
+    this.impacts = [];
   }
 }

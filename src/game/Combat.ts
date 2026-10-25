@@ -19,7 +19,7 @@ export class Combat {
   hits = 0;
   heatActive = false;
   heatTarget = '';
-  onSound: ((kind: 'swing' | 'impact') => void) | undefined;
+  onSound: ((kind: 'swing' | 'impact' | 'destruction') => void) | undefined;
   private readonly effects: Effects;
   private clips: ClipTiming[] = [];
   private timeline: AttackTimeline | null = null;
@@ -117,7 +117,10 @@ export class Combat {
     const actor = this.population.actors.find(item => item.id === id);
     const result = this.population.hit(id, attack, this.mode);
     this.effects.impact(point, result === 'destroyed' && actor?.kind !== 'citizen');
-    if (result !== 'ignored') { this.hits++; this.population.alert(point); }
+    if (result !== 'ignored') {
+      this.hits++; this.population.alert(point);
+      if (attack.kind !== 'heat') this.onSound?.(result === 'destroyed' ? 'destruction' : 'impact');
+    }
     if (result === 'destroyed') {
       this.destroyed++;
       this.onImpact(actor?.kind === 'citizen' ? '击倒路人' : actor?.kind === 'vehicle' ? '载具已摧毁' : '道具已摧毁');
