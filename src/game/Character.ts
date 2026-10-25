@@ -248,9 +248,9 @@ export class Character {
     }
     const group = this.groupFor(desired);
     if (group) group.speedRatio = desired === 'Hero_SprintRun'
-      ? Math.max(0.7, Math.min(2.2, planarSpeed / 6))
+      ? Math.max(0.7, Math.min(2.2, planarSpeed / 8.5))
       : desired === 'Hero_Walk'
-        ? Math.max(0.6, Math.min(1.5, planarSpeed / 1.5))
+        ? Math.max(0.6, Math.min(1.5, planarSpeed / 3))
         : 1;
   }
 
