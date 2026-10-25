@@ -161,6 +161,16 @@ D（右移） -> Hero_FlyRight
 S（后退） -> Hero_FlyBack, speed 40
 ```
 
+前向样本按 `HeroABS_FlyingMoveAnim` 的速度轴近似选择：
+
+```text
+<=12 m/s   FlyTame
+12..55     FlyForwardLow
+>55        FlyForward
+```
+
+24.5 m/s 实测返回 `Hero_FlyForwardLow`；`FlyForward` 保留给 >55 m/s 的加速段。
+
 报告：[fly-directional-import.json](../research/world-recovery/fly-directional-import.json)
 
 ### ALS_N_Jump（2026-10-25）

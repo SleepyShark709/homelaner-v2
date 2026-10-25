@@ -6,5 +6,6 @@
   event('keydown', 'Space'); await wait(80); event('keyup', 'Space');
   await wait(300);
   event('keydown', 'KeyW'); await wait(700); event('keyup', 'KeyW');
-  return { player: document.querySelector('canvas')?.dataset.player ?? '' };
+  const play = window.__undefeatedPlay;
+  return { clip: play.character.clip, player: play.player.stats() };
 })()

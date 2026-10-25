@@ -140,7 +140,12 @@ export class Character {
     if (vertical < -6) { this.setLoop('Hero_FlyFastDown'); return; }
     if (vertical < -1.5) { this.setLoop('Hero_FlyDown'); return; }
     if (planar <= 1) { this.setLoop('Hero_IdleFlying'); return; }
-    const forwardName = planar > 7 ? 'Hero_FlyForward' : 'Hero_FlyForwardLow';
+    const forwardName = planar > 55 ? 'Hero_FlyForward' : planar > 12 ? 'Hero_FlyForwardLow' : 'Hero_FlyTame';
+    const forwardRatio = forwardName === 'Hero_FlyTame'
+      ? Math.max(0.6, Math.min(1.2, planar / 12))
+      : forwardName === 'Hero_FlyForwardLow'
+        ? Math.max(0.7, Math.min(1.4, planar / 30))
+        : Math.max(0.7, Math.min(1.4, planar / 60));
     const forward = this.groupFor(forwardName);
     const left = this.groupFor('Hero_FlyLeft');
     const right = this.groupFor('Hero_FlyRight');
@@ -170,7 +175,7 @@ export class Character {
       if (!group.isPlaying) group.start(true);
       group.weight = normalized;
       group.setWeightForAllAnimatables(normalized);
-      group.speedRatio = 1;
+      group.speedRatio = group === forward ? forwardRatio : 1;
       if (normalized > dominantWeight) { dominantWeight = normalized; dominant = group.name; }
     }
     this.transition = null;
