@@ -184,14 +184,14 @@ running jump          -> Hero_JumpSpeed
 
 真实 Space 输入返回 `clip=ALS_N_Jump`，随后仍按 `JumpFallFast -> JumpLand` 前进。报告：[jump-extra-import.json](../research/world-recovery/jump-extra-import.json)
 
-下落样本现在按垂直速度选择：
+下落样本现在按 JumpFallLoop 的真实采样尺度选择：
 
 ```text
-vertical >= -3 m/s -> Hero_JumpFall
-vertical <  -3 m/s -> Hero_JumpFallFast
+vertical >= -35 m/s -> Hero_JumpFall
+vertical <  -35 m/s -> Hero_JumpFallFast
 ```
 
-普通起跳的 ALS 起跳片段会覆盖到下落初期，因此通常直接进入 Fast；从边缘走落等低速下落会先用 `Hero_JumpFall`。
+普通跳跃下落约 -9 到 -20 m/s，会使用 `Hero_JumpFall`；`Hero_JumpFallFast` 对应 -5000 cm/s 的高速下坠样本。真实 Space 输入在 1.15 s 后返回 `Hero_JumpFall`，并以 0.55 s crossfade 从 `ALS_N_Jump` 进入。
 
 ### Root motion 审计
 

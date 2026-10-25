@@ -9,7 +9,7 @@ import type { ShadowGenerator } from '@babylonjs/core/Lights/Shadows/shadowGener
 import type { MotionState } from './PlayerMotor';
 import type { Vec3 } from './collision';
 
-const CLIPS: Record<MotionState, string> = { idle: 'Hero_Idle', run: 'Hero_SprintRun', jump: 'Hero_JumpFallFast', hover: 'Hero_IdleFlying', fly: 'Hero_FlyForward' };
+const CLIPS: Record<MotionState, string> = { idle: 'Hero_Idle', run: 'Hero_SprintRun', jump: 'Hero_JumpFall', hover: 'Hero_IdleFlying', fly: 'Hero_FlyForward' };
 // Absolute source-time notify events decoded from the AnimSequences.
 const FOOTSTEP_TIMES: Record<string, number[]> = {
   Hero_Walk: [0.332, 0.826],
@@ -414,7 +414,7 @@ export class Character {
     if (tookOff && motor.state === 'jump') {
       // Walk/standing takeoff uses the ALS jump sample; running takeoff keeps
       // the game-specific Hero_JumpSpeed sample.
-      this.setOneShot(planarSpeed < 4 ? 'ALS_N_Jump' : 'Hero_JumpSpeed', 'Hero_JumpFallFast', 0.2, 0.55);
+      this.setOneShot(planarSpeed < 4 ? 'ALS_N_Jump' : 'Hero_JumpSpeed', 'Hero_JumpFall', 0.2, 0.55);
       const created = this.transition as { holdUntilFall?: boolean } | null;
       if (created) created.holdUntilFall = true;
       return;
@@ -424,8 +424,9 @@ export class Character {
       let desired: string;
       if (motor.state === 'jump') {
         // HeroABS_JumpFallLoop has a low-air fast sample and a slower fall
-        // sample; switch to Fast only once the descent is established.
-        desired = vertical < -3 ? 'Hero_JumpFallFast' : 'Hero_JumpFall';
+        // JumpFallLoop samples put JumpFallFast at the high-speed -5000 cm/s
+        // band, while a normal ~9 m/s jump fall belongs to JumpFall.
+        desired = vertical < -35 ? 'Hero_JumpFallFast' : 'Hero_JumpFall';
       } else if (motor.state === 'hover' || motor.state === 'fly') {
         this.setFlyBlend(vertical, planarSpeed, motor.velocity[0], motor.velocity[2]);
         return;
