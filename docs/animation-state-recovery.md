@@ -79,8 +79,9 @@ fly   -> Hero_FlyForward
 已加的最小直接状态链（不是 AnimBP 的混合/条件曲线）：
 
 ```text
-ground idle -> Hero_Walk / Hero_StartSprint -> Hero_SprintRun (loop)
-SprintRun -> Hero_Stopping_Sprint (once) -> Hero_Idle/Hero_Walk (loop)
+normal ground run -> Hero_SprintRun (direct)
+Shift sprint -> Hero_StartSprint (once) -> Hero_SprintRun (loop)
+SprintRun -> wasSprinting ? Hero_Stopping_Sprint : Hero_Stopping_WalkRun -> next (once)
 Hero_Walk -> Hero_Stopping_WalkRun (once) -> Hero_Idle (loop)
 ground jump -> Hero_JumpSpeed (once; hold last frame while velY>0.2) -> Hero_JumpFallFast (loop)
 landing -> Hero_JumpLand (once) -> Hero_Idle / Hero_Walk / Hero_SprintRun (loop)

@@ -20,7 +20,7 @@ interface RetargetFile { fps: number; clips: Record<string, RetargetClip> }
 
 const normalizeBone = (name: string) => name.replace(/[^a-z0-9]/gi, '').toLowerCase();
 
-export interface MotionSource { position: Vec3; velocity: Vec3; heading: number; state: MotionState }
+export interface MotionSource { position: Vec3; velocity: Vec3; heading: number; state: MotionState; sprint?: boolean }
 export class Character {
   readonly root: TransformNode;
   private container!: AssetContainer;
@@ -31,6 +31,7 @@ export class Character {
   private action = '';
   private transition: { name: string; remaining: number; next: string; holdUntilFall?: boolean } | null = null;
   private wasGrounded = true;
+  private wasSprinting = false;
   constructor(readonly scene: Scene) { this.root = new TransformNode('player-visual', scene); this.root.scaling.setAll(1.05); }
 
   async load(shadows?: ShadowGenerator, skin: 'original' | 'homelander' = 'original'): Promise<void> {
@@ -162,6 +163,8 @@ export class Character {
     this.root.rotation.y = this.yaw;
     const grounded = motor.state === 'idle' || motor.state === 'run';
     const planarSpeed = Math.hypot(motor.velocity[0], motor.velocity[2]);
+    const wasSprinting = this.wasSprinting;
+    this.wasSprinting = motor.sprint === true;
     const landed = !this.wasGrounded && grounded;
     const tookOff = this.wasGrounded && !grounded;
     this.wasGrounded = grounded;
@@ -226,9 +229,10 @@ export class Character {
     const desired = planarSpeed < 0.15 ? 'Hero_Idle' : planarSpeed < 4 ? 'Hero_Walk' : 'Hero_SprintRun';
     if (this.clip !== desired) {
       if (desired === 'Hero_SprintRun' && (this.clip === 'Hero_Idle' || this.clip === 'Hero_Walk')) {
-        this.setOneShot('Hero_StartSprint', desired);
+        if (motor.sprint === true) this.setOneShot('Hero_StartSprint', desired);
+        else this.setLoop(desired);
       } else if ((desired === 'Hero_Idle' || desired === 'Hero_Walk') && this.clip === 'Hero_SprintRun') {
-        this.setOneShot('Hero_Stopping_Sprint', desired);
+        this.setOneShot(wasSprinting ? 'Hero_Stopping_Sprint' : 'Hero_Stopping_WalkRun', desired);
       } else if (desired === 'Hero_Idle' && this.clip === 'Hero_Walk') {
         this.setOneShot('Hero_Stopping_WalkRun', desired);
       } else {
