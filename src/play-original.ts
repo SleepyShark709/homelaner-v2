@@ -205,7 +205,7 @@ let character: Character | undefined;
 let combat: Combat | undefined;
 let population: Population | undefined;
 let shadows: ShadowGenerator | undefined;
-type QuestArea = { id: string; kind: string; position: Vec3 };
+type QuestArea = { id: string; kind: string; position: Vec3; radius?: number };
 let questAreas: QuestArea[] = [];
 let questMessageUntil = 0;
 const visitedQuests = new Set<string>();
@@ -585,7 +585,8 @@ try {
         let nearest: { area: QuestArea; distance: number } | undefined;
         for (const area of questAreas) {
           const distance = Math.hypot(area.position[0] - stats.position[0], area.position[1] - stats.position[1], area.position[2] - stats.position[2]);
-          if (distance < 6 && (!nearest || distance < nearest.distance)) nearest = { area, distance };
+          const radius = area.radius ?? 6;
+          if (distance < radius && (!nearest || distance < nearest.distance)) nearest = { area, distance };
         }
         if (nearest) {
           visitedQuests.add(nearest.area.id);

@@ -10,7 +10,7 @@
         25.86,
         142.28
       ],
-      "radius": 1,
+      "radius": 50,
       "component": "EnterCollision",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -22,7 +22,7 @@
         151.7,
         -321.4
       ],
-      "radius": 1,
+      "radius": 50,
       "component": "EnterCollision",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -34,7 +34,7 @@
         130.7,
         -104.4
       ],
-      "radius": 1,
+      "radius": 50,
       "component": "EnterCollision",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -46,7 +46,7 @@
         130.7,
         -357.4
       ],
-      "radius": 1,
+      "radius": 50,
       "component": "EnterCollision",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -58,7 +58,7 @@
         130.7,
         -508.55
       ],
-      "radius": 1,
+      "radius": 50,
       "component": "EnterCollision",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -70,7 +70,7 @@
         151.61,
         -229.87
       ],
-      "radius": 1,
+      "radius": 50,
       "component": "EnterCollision",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -82,7 +82,7 @@
         132.7,
         -367.4
       ],
-      "radius": 1,
+      "radius": 50,
       "component": "EnterCollision",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -94,7 +94,7 @@
         65.75,
         -351.03
       ],
-      "radius": 1,
+      "radius": 50,
       "component": "EnterCollision",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -106,7 +106,7 @@
         40.21,
         196.59
       ],
-      "radius": 1,
+      "radius": 50,
       "component": "EnterCollision",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -118,7 +118,7 @@
         164.95,
         -12.21
       ],
-      "radius": 1,
+      "radius": 50,
       "component": "EnterCollision",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -130,7 +130,7 @@
         0.7,
         461.26
       ],
-      "radius": 1,
+      "radius": 4.5,
       "component": "Box",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -142,7 +142,7 @@
         0.7,
         -45.03
       ],
-      "radius": 1,
+      "radius": 4.5,
       "component": "Box",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -154,7 +154,7 @@
         0.7,
         -16.31
       ],
-      "radius": 1,
+      "radius": 4.5,
       "component": "Box",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -166,7 +166,7 @@
         0.7,
         1.9
       ],
-      "radius": 1,
+      "radius": 4.5,
       "component": "Box",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -178,7 +178,7 @@
         0.7,
         123.94
       ],
-      "radius": 1,
+      "radius": 4.5,
       "component": "Box",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -190,7 +190,7 @@
         0.7,
         394.09
       ],
-      "radius": 1,
+      "radius": 4.5,
       "component": "Box",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -202,7 +202,7 @@
         0.7,
         -515.24
       ],
-      "radius": 1,
+      "radius": 4.5,
       "component": "Box",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -214,7 +214,7 @@
         0.7,
         -531.5
       ],
-      "radius": 1,
+      "radius": 4.5,
       "component": "Box",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -226,7 +226,7 @@
         0.7,
         -603.27
       ],
-      "radius": 1,
+      "radius": 4.5,
       "component": "Box",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -238,7 +238,7 @@
         0.84,
         -386.07
       ],
-      "radius": 1,
+      "radius": 4.5,
       "component": "Box",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     },
@@ -250,7 +250,7 @@
         0,
         0
       ],
-      "radius": 1,
+      "radius": 4.5,
       "component": "BP_Base_EasterEgg_2",
       "note": "trigger position recovered; quest completion/state machine not recovered"
     }

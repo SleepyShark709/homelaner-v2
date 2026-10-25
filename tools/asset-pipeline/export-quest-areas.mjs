@@ -36,7 +36,10 @@ for (const actor of json.Exports) {
   if (!root || !trigger) continue;
   const radius = num(prop(trigger, 'SphereRadius')?.Value) / 100;
   const extent = vec(prop(trigger, 'BoxExtent')?.Value);
-  const markerRadius = Math.max(radius, extent ? Math.max(...extent.map(Math.abs)) / 100 : 0, 1);
+  // The instance component often omits inherited shape properties. FireQuest_BP's
+  // class default is SphereRadius=5000 cm; MatQuest_BP uses BoxExtent=(450,450,32) cm.
+  const defaultRadius = kind === 'fire' ? 50 : 4.5;
+  const markerRadius = Math.max(radius, extent ? Math.max(...extent.map(Math.abs)) / 100 : 0, defaultRadius);
   areas.push({
     id: String(actor.ObjectName),
     kind,
