@@ -144,6 +144,40 @@ export class Character {
     group.start(true);
   }
 
+  /**
+   * Small 1D subset of HeroABS_MoveGround: blend Idle/Walk/SprintRun by planar
+   * speed instead of hard-cutting between them. The real BlendSpace samples,
+   * axis mapping and transition rules are still not recovered.
+   */
+  private setGroundBlend(speed: number): void {
+    const idle = this.groupFor('Hero_Idle');
+    const walk = this.groupFor('Hero_Walk');
+    const run = this.groupFor('Hero_SprintRun');
+    if (!idle || !walk || !run) return;
+    const ground = new Set([idle, walk, run]);
+    this.animations.forEach(group => { if (!ground.has(group)) group.stop(); });
+    const weights = speed <= 3
+      ? { idle: Math.max(0, 1 - (speed - 0.15) / 2.85), walk: Math.min(1, Math.max(0, (speed - 0.15) / 2.85)), run: 0 }
+      : speed < 5
+        ? { idle: 0, walk: 1, run: 0 }
+        : speed < 8.5
+          ? { idle: 0, walk: 1 - (speed - 5) / 3.5, run: (speed - 5) / 3.5 }
+          : { idle: 0, walk: 0, run: 1 };
+    const total = weights.idle + weights.walk + weights.run;
+    const normalized = { idle: weights.idle / total, walk: weights.walk / total, run: weights.run / total };
+    for (const [group, weight] of [[idle, normalized.idle], [walk, normalized.walk], [run, normalized.run]] as const) {
+      if (!group.isPlaying) group.start(true);
+      group.weight = weight;
+      group.setWeightForAllAnimatables(weight);
+    }
+    idle.speedRatio = 1;
+    walk.speedRatio = Math.max(0.6, Math.min(1.5, speed / 3));
+    run.speedRatio = Math.max(0.7, Math.min(2.2, speed / 8.5));
+    this.transition = null;
+    this.action = '';
+    this.clip = normalized.run >= 0.5 ? 'Hero_SprintRun' : normalized.walk >= 0.5 ? 'Hero_Walk' : 'Hero_Idle';
+  }
+
   private setOneShot(name: string, next: string): void {
     const group = this.groupFor(name);
     if (!group) { this.setLoop(next); return; }
@@ -236,22 +270,17 @@ export class Character {
     if (this.clip !== desired) {
       if (desired === 'Hero_SprintRun' && (this.clip === 'Hero_Idle' || this.clip === 'Hero_Walk')) {
         if (motor.sprint === true) this.setOneShot('Hero_StartSprint', desired);
-        else this.setLoop(desired);
+        else this.setGroundBlend(planarSpeed);
       } else if ((desired === 'Hero_Idle' || desired === 'Hero_Walk') && this.clip === 'Hero_SprintRun') {
         this.setOneShot(wasSprinting ? 'Hero_Stopping_Sprint' : 'Hero_Stopping_WalkRun', desired);
       } else if (desired === 'Hero_Idle' && this.clip === 'Hero_Walk') {
         this.setOneShot('Hero_Stopping_WalkRun', desired);
       } else {
-        this.setLoop(desired);
+        this.setGroundBlend(planarSpeed);
       }
       return;
     }
-    const group = this.groupFor(desired);
-    if (group) group.speedRatio = desired === 'Hero_SprintRun'
-      ? Math.max(0.7, Math.min(2.2, planarSpeed / 8.5))
-      : desired === 'Hero_Walk'
-        ? Math.max(0.6, Math.min(1.5, planarSpeed / 3))
-        : 1;
+    this.setGroundBlend(planarSpeed);
   }
 
   pause(paused: boolean): void {

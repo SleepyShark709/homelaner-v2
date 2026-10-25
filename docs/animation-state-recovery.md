@@ -122,6 +122,19 @@ Flying State:
 
 ## 动画数据校验
 
+### 1D ground blend（2026-10-25）
+
+`Character.setGroundBlend()` 现在同时播放 `Hero_Idle` / `Hero_Walk` / `Hero_SprintRun`，按 planar speed 设置 normalized group weights：
+
+```text
+0 .. 3 m/s   Idle -> Walk
+3 .. 5       Walk 1.0
+5 .. 8.5     Walk -> SprintRun
+>= 8.5       SprintRun 1.0
+```
+
+这是 `HeroABS_MoveGround` 的**一维速度子集**；真正的双向 BlendSpace、精确轴值、过渡曲线和 AnimBP transition 时间仍未恢复。10 m/s 实测截图 `research/screenshots/play-ground-blend-run.jpg` 无畸形。
+
 空中首次远程攻击现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→K 验证返回 `clip=Hero_AirAttackStart`；连续两次 K 的结果记录在 `research/world-recovery/air-attack-chain.json`。
 
 
