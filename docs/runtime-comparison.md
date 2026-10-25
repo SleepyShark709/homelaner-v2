@@ -1,6 +1,22 @@
 # 原程序与 Web 可玩切片：第一轮视觉对照
 
-日期：2026-10-25。目标：把原程序实际窗口截图和当前 `?view=play` 画面放在一起，先核对角色/相机/光照/UI 的明显差异。**不是同机位、同输入或像素等价验收。**
+日期：2026-10-25。目标：把原程序实际窗口截图和当前 `?view=play` 画面放在一起，先核对角色/相机/光照/UI 的明显差异。**仍不是像素等价验收。**
+
+## 2026-10-25 更新：第一张真实同机位
+
+通过 UE4SS 调用 `WBP_TitleSinboard_C:GameStartEvent()` + 一次 `InputDone()`，intro 结束后原程序真实 gameplay transform 为：
+
+```text
+pawn (x,y,z) = (-311.999, 7473.891, 167.150) cm
+cam  (x,y,z) = (-361.999, 7073.891, 327.150) cm
+rot          = (-10, 90, 0)
+```
+
+换算到 Web（x/100, z/100, y/100）并在 `(-3.12, 74.73891)`、相机 `(-3.62, 3.2715, 70.73891)`、FOV 92 下重截，得到同一玩家/相机的对照：
+
+![原版 gameplay 起点 vs Web 同机位](../research/runtime-observation/comparison-live-gameplay-start-web.jpg)
+
+相机位置、朝向、人物位置/比例、建筑柱/门洞和地面透视已经对上。剩余差异集中在门/窗玻璃与金属框、光照/接触阴影、材质、HUD/minimap 和角色动作。**同机位门已过，视觉等价未过。**
 
 ![原程序与 Web 对照](../research/runtime-observation/comparison-character-camera.jpg)
 

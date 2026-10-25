@@ -9,6 +9,8 @@ Restoring UNDEFEATED is the only active primary milestone. The Homelander skin, 
 3. Close the lighting/material/sky/scene-content gaps and restore the missing props.
 4. Verify the original animation/state logic, then preserve it on any replacement character.
 
+Status (2026-10-25): gate 1 complete via `WBP_TitleSinboard_C:GameStartEvent()` + one `InputDone()`; the settled gameplay transform is `pawn (-311.999, 7473.891, 167.150)` / `cam (-361.999, 7073.891, 327.150)`, rot `(-10, 90, 0)`. Gate 2 has a first same-camera comparison at `(-3.12, 74.73891)` with camera `(-3.62, 3.2715, 70.73891)`, FOV 92. Gates 3 and 4 remain open; the visual result is not yet equivalent.
+
 Until those gates pass, do not call this a faithful port or a successful migration. The current default `?view=play` is the original character/slice; `?skin=homelander`, `?mode=free` and `?retarget=1` are experimental and may be incomplete.
 
 This is a new independent project at E:/undefeated-web. Do not base implementation on the existing homelander-simulator source tree. The original game installation is read-only.
