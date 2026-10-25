@@ -34,6 +34,12 @@
 
 三个已恢复 `StoryStartPoint` 的 startup 检查都没有命中开始广场，见 [story-start-point-audit.zh-CN.md](../research/world-recovery/story-start-point-audit.zh-CN.md)。
 
+## 原程序实时开始画面（2026-10-25）
+
+已直接启动原程序并截取 `GAME START` 后的实际画面：`research/runtime-observation/original-start-live4.png`（1296×759）。与原 Web `plaza=1` 并排对照见 `comparison-start-live-vs-web.jpg`。
+
+结论：**当前 Web 起点构图/光照/场景物仍明显不匹配，不能称为同机位或视觉还原完成。** 运行时候选相机数据尚未验证，详见 [original-live-audit.zh-CN.md](../research/runtime-observation/original-live-audit.zh-CN.md)。
+
 原生 floor/树木材质化后，`plaza=1&at=-30,-4&yaw=0&exact=1` 成为当前最新的候选取景：大块石铺装、左侧栏杆/花箱、左中景树木、中央/右侧古典建筑。对照图 `comparison-start-plaza-native.jpg`；仍不是同机位，原程序更开阔、长椅沿左栏杆排布、右侧广告牌不同。
 
 `arm=6&fov=80` 的检查用相机覆盖（`play-plaza-arm6b.jpg` / `comparison-start-plaza-arm6.jpg`）让角色比例更接近原图，但场景左右关系仍不同；默认相机仍使用恢复的 4 m / 92°。
