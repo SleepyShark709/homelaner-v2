@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "c776162",
+  "validatedCommit": "b799f7d",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -36,6 +36,12 @@
       "assetFailures": 0,
       "textureFailures": 0,
       "checks": "idle/run/jump/fly-up/fly-down/land/exit-flight/Shift-StartSprint; 1D Idle/Walk/Run ground blend; 2D ground blend with ALS direction samples; fly direction blend (FlyRight/FlyBack probes); ALS_N_Jump standing/walk takeoff; fly-forward speed-axis sample; JumpFall/Fast vertical split; air melee/ranged AirAttack entry"
+    },
+    {
+      "command": "node scripts/audit-root-motion.mjs",
+      "exitCode": 0,
+      "animationCount": 46,
+      "movingRootClips": []
     }
   ],
   "evidence": {
@@ -47,5 +53,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "All automated checks pass after making airborne melee enter AirAttack at c776162. This is a partial reconstruction, not a complete port."
+  "note": "All automated checks pass after the 46-clip root-motion audit at b799f7d. This is a partial reconstruction, not a complete port."
 }
