@@ -103,7 +103,11 @@ export class OriginalMaterials {
       clouds.vScale = 0.2;
       clouds.gammaSpace = false;
       material.emissiveTexture = clouds;
-      material.emissiveColor = new Color3(0.07746099680662155, 0.0949999988079071, 0.06173599883913994);
+      material.emissiveColor = new Color3(
+        0.07746099680662155 * 0.35,
+        0.0949999988079071 * 0.35,
+        0.06173599883913994 * 0.35,
+      );
       material.roughness = 0.4379599988460541;
     }
     const channels = record.channels ?? {};
