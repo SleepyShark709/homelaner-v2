@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "ecc97e7",
+  "validatedCommit": "01a5c91",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -35,7 +35,7 @@
       "terrain": 144,
       "assetFailures": 0,
       "textureFailures": 0,
-      "checks": "idle/run/jump/fly-up/fly-down/land/exit-flight/Shift-StartSprint; 1D Idle/Walk/Run ground blend; 2D ground blend with ALS direction samples; fly direction blend (FlyRight/FlyBack probes); ALS_N_Jump standing/walk takeoff"
+      "checks": "idle/run/jump/fly-up/fly-down/land/exit-flight/Shift-StartSprint; 1D Idle/Walk/Run ground blend; 2D ground blend with ALS direction samples; fly direction blend (FlyRight/FlyBack probes); ALS_N_Jump standing/walk takeoff; fly-forward speed-axis sample"
     }
   ],
   "evidence": {
@@ -47,5 +47,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "All automated checks pass after importing ALS_N_Jump (46 total) at ecc97e7. This is a partial reconstruction, not a complete port."
+  "note": "All automated checks pass after the fly-forward speed-axis mapping at 01a5c91. This is a partial reconstruction, not a complete port."
 }
