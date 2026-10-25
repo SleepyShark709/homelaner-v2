@@ -104,6 +104,15 @@ Idle / Walk / SprintRun / SprintSuper 每次只选一个
 
 旧的 2D 多组混合默认路径已移除。
 
+补充验证 clip 时长没有被导入器减半：
+
+```text
+Hero_SprintRun: glTF duration 0.567s
+原版 notify: PlayFootStepR 0.264s / PlayFootStepL 0.556s
+```
+
+两者吻合，说明动画本身不是 2 倍速。快跑松开 Shift 后探针看到 `Hero_SprintRun` 的 speedRatio 回到 1.11，masterFrame 从 0 完整走到 34 再回 0，循环周期约 0.51s，不是 1→3→1 截断。旧代码的多组权重加 stale speedRatio 才会造成那个观感。
+
 ## 验收方式
 
 - `?view=play` 硬刷新后观察 idle/走/跑/跳/飞；
