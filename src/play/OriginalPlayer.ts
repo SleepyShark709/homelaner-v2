@@ -91,6 +91,12 @@ export class OriginalPlayer {
 
   update(dt: number, input: Input): void {
     if (input.pressed('KeyR')) this.reset();
+    // F exits flight and lets gravity land the player. Space also toggles flight
+    // while airborne, but F is the explicit "land" input shown in the HUD help.
+    if (input.pressed('KeyF') && this.flying) {
+      this.flying = false;
+      this.velocity[1] = Math.min(0, this.velocity[1]);
+    }
     const ground = this.supportAt(this.position[0], this.position[2], this.position[1]);
     this.grounded = !this.flying && this.position[1] <= ground + 0.08;
     this.walk = input.held('AltLeft', 'AltRight');
