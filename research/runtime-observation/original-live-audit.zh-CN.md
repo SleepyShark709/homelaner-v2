@@ -11,6 +11,27 @@
   - Location / Rotation / FOV 相邻；
   - 候选示例：location ≈ `(340, -674.19, 327.13)` cm，rotation ≈ `(-10, 90, 0)`，FOV = 90。
 
+## UE4SS 只读运行时挂载
+
+为拿到真实 transform，使用 UE4SS v3.0.1 在**临时 staging 副本**中注入：
+
+- 复制 `UNDEFEATED-Win64-Shipping.exe`、`OpenImageDenoise.dll`、`tbb12.dll` 到临时目录；
+- `Content`/`Engine` 用 junction 指回原安装，原安装不被修改；
+- UE4SS + `CoordDump` Lua mod 每秒打印 `Pawn` 与 `PlayerCameraManager` 的坐标/旋转。
+
+结果（菜单/标题场景）：
+
+```text
+pawn_loc = (-312.000, 943.000, 167.000) cm
+pawn_rot = (0.000, 90.000, 0.000)
+cam_loc  = (-362.000, 543.000, 327.000) cm
+cam_rot  = (-10.000, 90.000, 0.000)
+```
+
+这是**菜单角色**的 transform（相机在角色后方 400 cm、高度 327 cm），不是 `GAME START` 后的玩家起点；进入 gameplay 后该 Pawn 未重新绑定，因此不能把它当开始坐标。
+
+此外，自动截图/前台窗口切换在本轮遇到了非游戏窗口抢占，已停止该自动化，不做不可靠的截图判断。
+
 ## 重要限制
 
 内存候选在多个位置重复出现，可能是相机组件默认值/CDO 或标题画面相机，**尚未用移动后数值变化验证**，不能当作真实玩家坐标。
