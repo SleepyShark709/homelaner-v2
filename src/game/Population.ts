@@ -117,10 +117,10 @@ export class Population {
           actor.root.rotation.x = -Math.min(Math.PI / 2, actor.defeatedTime * 5);
         }
         if (actor.defeatedTime > 2.5) actor.root.setEnabled(false);
-        // Preview city lifecycle: citizens return after a short delay. The
-        // original spawner cadence/count is not recovered; vehicles/props stay
-        // destroyed for the rest of the session.
-        if (actor.kind === 'citizen' && actor.defeatedTime >= 8) this.revive(actor);
+        // Preview sandbox lifecycle: citizens return after 8 s, props after 12 s,
+        // vehicles after 15 s. The original spawner cadence/count is not recovered.
+        const respawnAfter = actor.kind === 'citizen' ? 8 : actor.kind === 'prop' ? 12 : 15;
+        if (actor.defeatedTime >= respawnAfter) this.revive(actor);
         continue;
       }
       if (actor.kind === 'prop') continue;

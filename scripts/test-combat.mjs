@@ -1,4 +1,4 @@
-﻿import assert from 'node:assert/strict';
+import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { AttackTimeline, applyDamage, traceTargets } from '../src/game/combat-rules.ts';
 const timings = JSON.parse(readFileSync(new URL('../public/assets/character/combat-timings.json', import.meta.url))).clips;
@@ -16,8 +16,9 @@ const strong = new AttackTimeline(timings.find(clip => clip.name === 'Hero_Super
 assert.equal(strong.step(1.15).hit, false); assert.equal(strong.step(.02).hit, true);
 const make = kind => ({ id: kind, kind, alive: true, health: 100, min: [-1, 0, 9], max: [1, 2, 11] });
 const weak = { kind: 'ranged', strong: false, damage: 100, direction: [0, 0, 1] };
-const civilian = make('citizen'), car = make('vehicle');
+const civilian = make('citizen'), car = make('vehicle'), prop = make('prop');
 assert.equal(applyDamage('baseline', civilian, weak), 'destroyed');
+assert.equal(applyDamage('baseline', prop, weak), 'destroyed');
 assert.equal(applyDamage('baseline', car, weak), 'ignored');
 assert.equal(applyDamage('baseline', car, { ...weak, strong: true }), 'destroyed');
 assert.equal(applyDamage('baseline', car, { ...weak, strong: true }), 'ignored');
