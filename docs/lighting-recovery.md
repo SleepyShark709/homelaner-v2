@@ -63,7 +63,15 @@ LODData[0].LightMap / ShadowMap / LightMapUVBias / LightMapCoordinateIndex
   -> Lua 看到的是 UScriptStruct 类型对象，不是可读数值
 ```
 
-原因是 `FLODData` / `FLightMapRef` 内部的 lightmap 引用不是反射 UPROPERTY，Lua 反射层拿不到内部字段。下一步必须用原生 C++/UE4SS SDK 或内存偏移读取，而不是继续用 Lua 猜。
+原因是 `FLODData` / `FLightMapRef` 内部的 lightmap 引用不是反射 UPROPERTY，Lua 反射层拿不到内部字段。进一步尝试：
+
+```text
+LODData[0] / LODData[1] 返回 UScriptStruct
+GetStructAddress() 返回数值地址
+但 .LightMap/.ShadowMap/.LightMapIndex/.LightMapUVBias 全部为 nil
+```
+
+即 Lua 拿到的只是 struct 类型/地址，不是可字段读取的实例；下一步必须用原生 C++/UE4SS SDK 或内存偏移读取。
 
 ## UV 通道
 
