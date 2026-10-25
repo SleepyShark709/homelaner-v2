@@ -73,9 +73,9 @@ player  = (-3.12, 1.6715, 74.73891) m
 camera  = (-3.62, 3.2715, 70.73891) m
 ```
 
-用该 transform + FOV 92 绝对相机渲染，与原程序 `PrintWindow` 实抓画面并排：
+用该 transform + 实测 FOV 90（`PlayerCameraManager:GetFOVAngle() = 90.000`）绝对相机渲染，与原程序 `PrintWindow` 实抓画面并排：
 
-![原版 gameplay 起点 vs Web 同机位](comparison-live-gameplay-start-web-v2.jpg)
+![原版 gameplay 起点 vs Web 同机位](comparison-live-gameplay-start-web-v3.jpg)
 
 这是第一张**同一玩家位置、同一相机位置/朝向**的对照。建筑柱、门洞、人物位置/比例和地面透视已经对上；剩余差异主要是：
 

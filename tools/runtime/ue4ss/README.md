@@ -57,9 +57,10 @@ intro 结束后 `CoordDump` 停在：
 pawn = (-311.999, 7473.891, 167.150) cm
 cam  = (-361.999, 7073.891, 327.150) cm
 rot  = (-10, 90, 0)
+fov  = 90.000
 ```
 
-这是当前用于同机位对照的真实 gameplay 起点。
+这是当前用于同机位对照的真实 gameplay 起点。`PlayerCameraManager:GetFOVAngle()` 实测为 90.000；Web 同机位也必须用 FOV 90。
 
 ## 已知限制
 
