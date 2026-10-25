@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "7425cd2",
+  "validatedCommit": "1c6e5b7",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -53,5 +53,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "All automated checks pass after decoding the MoveGround SampleData and adding the SprintSuper high-speed band at 7425cd2. This is a partial reconstruction, not a complete port."
+  "note": "All automated checks pass after recording the SprintSuper high-speed pose at 1c6e5b7. SprintSuper is required by the decoded MoveGround samples but its imported pose still looks upright and is flagged for frame comparison."
 }
