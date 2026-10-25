@@ -113,11 +113,11 @@ HeroABS_FlyingUpDonwAnim
 HeroABS_JumpFallLoop
 ```
 
-- [x] 从 pak 提取并导入 `Hero_Walk`、`Hero_SprintRun`、`Hero_SprintSuper`、`Hero_JumpSpeed`、`Hero_JumpLand`、`Hero_JumpFall`、`Hero_JumpFallFast`、`Hero_StartSprint`、`Hero_Stopping_Sprint`、`Hero_Stopping_WalkRun`、`Hero_FlyForward`、`Hero_FlyFastForward1`、`Hero_FlyDown`、`Hero_FlyFastDown`、`Hero_FlyUp` 十五段 PSA + config。
+- [x] 从 pak 提取并导入 `Hero_Walk`、`Hero_SprintRun`、`Hero_SprintSuper`、`Hero_JumpSpeed`、`Hero_JumpLand`、`Hero_JumpFall`、`Hero_JumpFallFast`、`Hero_StartSprint`、`Hero_Stopping_Sprint`、`Hero_Stopping_WalkRun`、`Hero_FlyForward`、`Hero_FlyForwardLow`、`Hero_FlyFastForward1`、`Hero_FlyDown`、`Hero_FlyFastDown`、`Hero_FlyUp` 十五段 PSA + config。
 - [x] 用 UModel `-export -game=ue4.27 -path=... -out=...` 导出 PSA + config（**没有 `-psa` 参数**；动画对象默认导出 PSA）。以 `-HeroGame/...` 开头的包名需复制到不以 `-` 开头的目录并在该目录内用本地 package 名导出。
-- [x] 写 `scripts/append-locomotion-animations.py`，把十五段追加到原 93 骨骼 hero.gltf；原 18 段保留，共 33 段；报告：`research/world-recovery/locomotion-import.json`。
+- [x] 写 `scripts/append-locomotion-animations.py`，把十六段追加到原 93 骨骼 hero.gltf；原 18 段保留，共 34 段；报告：`research/world-recovery/locomotion-import.json`。
 - [x] 更新 `src/game/Character.ts`：低速使用 `Hero_Walk`，run 使用 `Hero_SprintRun`，JumpStart 后使用 `Hero_JumpFallFast`（对应 `HeroABS_JumpFallLoop` 的 Speed≈1250/SpeedZ≈-5000 低空样本）；`Hero_SprintSuper` 已导入但实测姿态不是正常跑步，暂不用于默认 run；已用真实 W/Space/Alt+W 输入截图验证无畸形。
-- [ ] 仍未导入：`ALS_N_Jump`、`HeroABS_MoveGround` 的完整方向 blendspace 样本、`Hero_FlyForwardLow`/`Hero_FlyLeft`/`Hero_FlyRight`/`Hero_FlyBack`/`Hero_FlyTame`；fly 已按 velY 直接切 `FlyUp/FlyDown/FlyFastDown/FlyForward`，仍不是 BlendSpace 采样。
+- [ ] 仍未导入：`ALS_N_Jump`、`HeroABS_MoveGround` 的完整方向 blendspace 样本、`Hero_FlyLeft`/`Hero_FlyRight`/`Hero_FlyBack`/`Hero_FlyTame`；fly 已按 velY/平面速度直接切 `FlyUp/FlyDown/FlyFastDown/FlyForward/FlyForwardLow`，仍不是 BlendSpace 采样。
 - [x] jump 的起跳/下落/落地顺序已接入：`Hero_JumpSpeed → Hero_JumpFallFast → Hero_JumpLand`。
 - [ ] jump 状态仍未按 `HeroABS_JumpFallLoop` 的 Speed/SpeedZ 轴选择与混合；当前是固定片段，不是 BlendSpace 采样。
 - [x] 已接入基础直接状态链：`StartSprint→SprintRun`、`SprintRun→Stopping_WalkRun→Idle`、`JumpSpeed→JumpFall→JumpLand`（用 `AnimationGroup.getLength()` 计时）。
@@ -131,7 +131,7 @@ HeroABS_JumpFallLoop
 - [ ] 实现 montage 攻击的 section/通知/连招/取消窗口；现有攻击时间轴仅是部分恢复。
 - [ ] 恢复 AnimNotify：命中、移动、脚步声、飞行尘土、攻击碰撞、结束；当前只覆盖部分。
 - [ ] Root motion / 惯性 / 转向 / 空中控制与原始一致。
-- [x] 数据级校验：`npm run verify:locomotion` 检查 33 段动画的四元数范数、NaN、关节覆盖；报告 `research/world-recovery/locomotion-frame-validation.json`（<5e-8，无 NaN；部分 PSA config 删除配饰轨道故为 68 关节）。
+- [x] 数据级校验：`npm run verify:locomotion` 检查 34 段动画的四元数范数、NaN、关节覆盖；报告 `research/world-recovery/locomotion-frame-validation.json`（<5e-8，无 NaN；部分 PSA config 删除配饰轨道故为 68 关节）。
 - [ ] 验证方法：在真实 gameplay 同一帧读原程序骨骼/动画状态，与 Web 同帧骨骼比较；不能只看截图。
 - [ ] 验收标准：逐帧（至少逐关键帧）骨骼旋转/位移在容差内，无穿插/畸形，状态转移与原始一致。
 

@@ -112,6 +112,16 @@
       "sourceSha256": "27cd61ae568f1f1a2d9b3ee3e9380223d1ec23d1c69c0b7324cf9d6116803746"
     },
     {
+      "name": "Hero_FlyForwardLow",
+      "frames": 22,
+      "rate": 15.714285850524902,
+      "durationSeconds": 1.3363636247776758,
+      "channelCount": 77,
+      "mappedJoints": 93,
+      "source": "research/exports/locomotion/Animations/Hero_FlyForwardLow.psa",
+      "sourceSha256": "29d4655d0ada7e85139f90d6594dd624f59c61dffa568b305da4edea91c2b47a"
+    },
+    {
       "name": "Hero_FlyFastForward1",
       "frames": 22,
       "rate": 15.714285850524902,
@@ -152,7 +162,7 @@
       "sourceSha256": "88034e13ca6404317d4874c1f4e96ed8314033fc41a096172ac91e0f0c6e2030"
     }
   ],
-  "outputGltfSha256": "d71d00cb787c327f44fa2affc8d1c5e0696301b809c00186e99608df158fd5ed",
-  "outputBufferSha256": "186d7cf333a0ed557e88b473cebcb3cd055b1833b244e78b787958bfca1dbf2b",
-  "animationCount": 33
+  "outputGltfSha256": "ef1996daf6ca081343df22da36827075e41298947ff0b0656c0edfdeef2b02a9",
+  "outputBufferSha256": "97f857f63e9095896f82601d46133692e16d04c0dc48ce862f75fa8187d36a90",
+  "animationCount": 34
 }

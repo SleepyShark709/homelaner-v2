@@ -193,7 +193,8 @@ export class Character {
         if (vertical > 1.5) desired = 'Hero_FlyUp';
         else if (vertical < -6) desired = 'Hero_FlyFastDown';
         else if (vertical < -1.5) desired = 'Hero_FlyDown';
-        else if (motor.state === 'fly' || planarSpeed > 2) desired = 'Hero_FlyForward';
+        else if (planarSpeed > 7) desired = 'Hero_FlyForward';
+        else if (planarSpeed > 1) desired = 'Hero_FlyForwardLow';
         else desired = 'Hero_IdleFlying';
       } else {
         desired = CLIPS[motor.state];

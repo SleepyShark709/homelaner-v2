@@ -34,6 +34,7 @@ CLIPS = [
     ROOT / "research/exports/locomotion/Hero_Stopping_Sprint.psa",
     ROOT / "research/exports/locomotion/Hero_Stopping_WalkRun.psa",
     ROOT / "research/exports/locomotion/Animations/Hero_FlyForward.psa",
+    ROOT / "research/exports/locomotion/Animations/Hero_FlyForwardLow.psa",
     ROOT / "research/exports/locomotion/Animations/Hero_FlyFastForward1.psa",
     ROOT / "research/exports/locomotion/Animations/Hero_FlyDown.psa",
     ROOT / "research/exports/locomotion/Animations/Hero_FlyFastDown.psa",

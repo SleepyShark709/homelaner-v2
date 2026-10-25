@@ -1,6 +1,6 @@
 {
   "source": "public/assets/character/hero.gltf",
-  "animationCount": 33,
+  "animationCount": 34,
   "clips": [
     {
       "name": "Hero_Idle",
@@ -291,6 +291,16 @@
       "nonFinite": 0,
       "loop": true,
       "firstLastRotationDeltaDegrees": 1.3343554348206867
+    },
+    {
+      "name": "Hero_FlyForwardLow",
+      "durationSeconds": 1.336363673210144,
+      "rotationJoints": 68,
+      "channels": 77,
+      "maxQuaternionNormError": 3.636215906155371e-8,
+      "nonFinite": 0,
+      "loop": true,
+      "firstLastRotationDeltaDegrees": 1.3324802385076124
     },
     {
       "name": "Hero_FlyFastForward1",

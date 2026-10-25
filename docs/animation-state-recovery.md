@@ -32,7 +32,7 @@ Hero_Walk / Hero_SprintRun / Hero_SprintSuper
 
 ## 已导入的原版 locomotion 片段
 
-2026-10-25 已从 pak 导出以下 PSA/config，并通过 `scripts/append-locomotion-animations.py` 追加到原 93 骨骼 `public/assets/character/hero.gltf`（原有 18 段保留，共 33 段）：
+2026-10-25 已从 pak 导出以下 PSA/config，并通过 `scripts/append-locomotion-animations.py` 追加到原 93 骨骼 `public/assets/character/hero.gltf`（原有 18 段保留，共 34 段）：
 
 ```text
 Hero_Walk             31f @31.0
@@ -46,6 +46,7 @@ Hero_StartSprint      61f @42.7
 Hero_Stopping_Sprint  76f @60.8
 Hero_Stopping_WalkRun 31f @31.0
 Hero_FlyForward
+Hero_FlyForwardLow
 Hero_FlyFastForward1
 Hero_FlyDown
 Hero_FlyFastDown
@@ -56,7 +57,7 @@ Hero_FlyUp
 
 ## 当前 Web 的映射
 
-`src/game/Character.ts` 现在使用原 `hero.gltf` 的 33 段：
+`src/game/Character.ts` 现在使用原 `hero.gltf` 的 34 段：
 
 ```text
 idle  -> Hero_Idle
@@ -70,7 +71,9 @@ fly   -> Hero_FlyForward
   velY > 1.5   -> Hero_FlyUp
   velY < -6    -> Hero_FlyFastDown
   velY < -1.5  -> Hero_FlyDown
-  否则前飞     -> Hero_FlyForward
+  否则前飞 >7  -> Hero_FlyForward
+  前飞 1..7    -> Hero_FlyForwardLow
+  悬停         -> Hero_IdleFlying
 ```
 
 已加的最小直接状态链（不是 AnimBP 的混合/条件曲线）：
@@ -92,7 +95,7 @@ landing -> Hero_JumpLand (once) -> Hero_Idle / Hero_Walk / Hero_SprintRun (loop)
 
 ## 动画数据校验
 
-`npm run verify:locomotion` 会检查整个 `hero.gltf` 的 33 段动画：
+`npm run verify:locomotion` 会检查整个 `hero.gltf` 的 34 段动画：
 
 - 每段旋转通道关节数：基础/多数原版片段 93；部分 PSA config 主动删除了头发/配饰骨骼的旋转轨道，因此为 68；
 - 四元数范数误差 < 5e-8；
