@@ -24,13 +24,13 @@
 
 ## MainLevel 起点广场候选
 
-`?view=play&startup=1&at=20,0&yaw=0` 在 MainLevel 原点附近加载全城后，出现石栏杆、古典立面、广告牌和城市街区，构图比单区 CommercialArea 候选更接近原程序起点广场。`?view=play&plaza=1` 是同一检查的快捷预设，默认使用更接近原图的 `(-20,0)` 姿态。
+`?view=play&startup=1&at=20,0&yaw=0` 在 MainLevel 原点附近加载全城后，出现石栏杆、古典立面、广告牌、城市街区和原生砖石楼板，构图比单区 CommercialArea 候选更接近原程序起点广场。`?view=play&plaza=1` 是同一检查的快捷预设，默认使用 `(20,0)` 开阔广场姿态（`comparison-start-plaza-native2.jpg`）。
 
 ![MainLevel 起点广场候选](../research/runtime-observation/comparison-start-plaza-mainlevel.jpg)
 
-加 `&floors=overlay` 后，用原 `GroundBrick_B_A` 纹理覆盖恢复楼板 AABB，可得到更接近原程序的砖石地面（`comparison-start-plaza-overlay.jpg`）；这是预览回退，不是原 floor mesh 已修复。
+`SM_Floor12000x15000` 的 thin-instance→普通 mesh 材质化修复了原生砖石楼板；`&floors=overlay` 现在只是可选回退，不再默认。
 
-候选姿态补充：`plaza=1&at=-20,0&yaw=0` 把石栏杆放到左侧、古典建筑放中央，并给后方 4 m 相机留空，构图更接近原图（`comparison-start-plaza-camera-clear.jpg`）；`plaza=1&at=-10,-20&yaw=0` 视野干净但建筑布局不同。两者都仍是候选，不是同机位。
+候选姿态补充：`plaza=1&at=-20,0&yaw=0` 是喷泉/右侧栏杆近景（`play-plaza--20-native-trees.jpg`）；`plaza=1&at=-30,-4&yaw=0&exact=1` 是左侧栏杆/花箱/树木构图（`comparison-start-plaza-native.jpg`）；两者都不如 `(20,0)` 开阔，仍不是同机位。
 
 三个已恢复 `StoryStartPoint` 的 startup 检查都没有命中开始广场，见 [story-start-point-audit.zh-CN.md](../research/world-recovery/story-start-point-audit.zh-CN.md)。
 

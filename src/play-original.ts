@@ -256,7 +256,7 @@ try {
     const [x, z] = at.split(',').map(Number);
     if (Number.isFinite(x) && Number.isFinite(z)) { baseX = x; baseZ = z; }
   } else if (plazaMode) {
-    baseX = -20; baseZ = 0;
+    baseX = 20; baseZ = 0;
   }
   materializeThin(name => /Tree|Palm/i.test(name), [baseX, baseZ], 120);
   const rotation = candidate?.rotation ?? [0, 0, 0, 1];

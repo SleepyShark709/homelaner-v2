@@ -1,6 +1,6 @@
 # 可玩原版基线 B1/B2/B3：原街区、原角色、原输入、战斗与动态碰撞
 
-日期：2026-10-25。入口：`http://127.0.0.1:5178/?view=play`；可用 `&district=TitleMenuLevel` 等主世界关卡切换检查目标（预览人口只在 ResidentialArea1 加载）；`&startup=1` 先执行原 17 包启动链再进入可玩模式；`&plaza=1` 是 MainLevel 起点广场预览预设（启动链 + `(-20,0)` + 原生楼板）；`&mode=free` 开启自由破坏预览（非默认原版基线）。
+日期：2026-10-25。入口：`http://127.0.0.1:5178/?view=play`；可用 `&district=TitleMenuLevel` 等主世界关卡切换检查目标（预览人口只在 ResidentialArea1 加载）；`&startup=1` 先执行原 17 包启动链再进入可玩模式；`&plaza=1` 是 MainLevel 起点广场预览预设（启动链 + `(20,0)` + 原生楼板/树木）；`&mode=free` 开启自由破坏预览（非默认原版基线）。
 
 这是**可玩切片**，不是完整 UNDEFEATED 移植。B1 把原角色放回恢复后的原版街区，用原高度场和原输入语义驱动；B2 增加预览人口、原战斗动画/弹道和相机遮挡收缩。攻击命中、AI、任务、Boss、菜单/存档、完整动画状态机和同机位对照仍需继续。
 
@@ -137,11 +137,11 @@ node scripts/capture-world.mjs --query='view=play&mode=free' --ready=play --prob
 /?view=play&plaza=1
 ```
 
-截图 `play-mainplaza-startup3.jpg`、`play-plaza-nativefloor.jpg`，对照图 `comparison-start-plaza-mainlevel.jpg`。`plaza=1` 预设使用更接近原图的 `(-20,0)` 姿态：启动链 + 原生砖石楼板 + 相机净空（`play-plaza-nativefloor.jpg` / `comparison-start-plaza-camera-clear.jpg`）；不改变默认出生点。
+截图 `play-mainplaza-startup3.jpg`、`play-plaza-nativefloor.jpg`、`play-plaza-mode-native.jpg`，对照图 `comparison-start-plaza-native2.jpg`。`plaza=1` 预设使用更接近原图的开阔广场姿态 `(20,0)`：启动链 + 原生砖石楼板 + 局部树木 + 相机净空（`play-plaza-mode-native.jpg` / `comparison-start-plaza-native2.jpg`）；不改变默认出生点。
 
 另外两个候选姿态：
 
-- `plaza=1&at=-20,0&yaw=0`：石栏杆在左、古典建筑在中央，构图更接近原图；出生点搜索现在要求角色后方 4 m 相机位不被静态 AABB 占用，因此相机不再挤进角色（`play-plaza-left-clear.jpg`，对照 `comparison-start-plaza-camera-clear.jpg`）；
+- `plaza=1&at=-20,0&yaw=0`：石栏杆在右、喷泉近景，构图不如 `(20,0)` 开阔；出生点搜索现在要求角色后方 4 m 相机位不被静态 AABB 占用，因此相机不再挤进角色（`play-plaza--20-native-trees.jpg`）；
 - `plaza=1&at=-10,-20&yaw=0`：干净的铺装广场，但建筑布局不同（`play-plaza-left2.jpg`）。原生楼板修复后不再默认铺 overlay；`?floors=overlay` 仍保留为可选的 `GroundBrick_B_A` 回退，用于对比测试。它比之前的 CommercialArea 候选更接近原程序起点广场的城市构图，但：
 
 - 原生楼板已修复；overlay 只在显式 `floors=overlay` 时作为回退；
