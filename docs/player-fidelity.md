@@ -104,6 +104,15 @@ Idle / Walk / SprintRun / SprintSuper 每次只选一个
 
 旧的 2D 多组混合默认路径已移除。
 
+自动回归探针在 idle → 走 → 冲刺 → 松开 Shift → 停止的 524 帧里：
+
+```text
+非 crossfade 帧中同时活跃的步态组最大值 = 1
+violations = 0
+```
+
+这直接保证不会再出现多个全身步态抢骨架的“插入别的动作”。
+
 补充验证 clip 时长没有被导入器减半：
 
 ```text
