@@ -82,6 +82,8 @@ GetStructAddress() 返回数值地址
 
 即 Lua 拿到的只是 struct 类型/地址，不是可字段读取的实例；下一步必须用原生 C++/UE4SS SDK 或内存偏移读取。
 
+另外比较了 `comp.LightMap` 的 UObject 地址与当前加载的 510/900 个 `LightMapTexture2D` 对象地址，**没有匹配**。说明 `comp.LightMap` 指向的是 `FLightMap`/`FLightMapRef` 包装对象，不是可直接命名/采样的 `LightMapTexture2D`；真正的纹理在 `FLightMap2D::Textures[]` 内部，仍需原生读取。
+
 ## UV 通道
 
 起始建筑 glTF 有 4 个 UV 通道：
