@@ -14,7 +14,7 @@ rot          = (-10, 90, 0)
 
 换算到 Web（x/100, z/100, y/100）并在 `(-3.12, 74.73891)`、相机 `(-3.62, 3.2715, 70.73891)`、FOV 92 下重截，得到同一玩家/相机的对照：
 
-![原版 gameplay 起点 vs Web 同机位](../research/runtime-observation/comparison-live-gameplay-start-web.jpg)
+![原版 gameplay 起点 vs Web 同机位](../research/runtime-observation/comparison-live-gameplay-start-web-v2.jpg)
 
 相机位置、朝向、人物位置/比例、建筑柱/门洞和地面透视已经对上。剩余差异集中在门/窗玻璃与金属框、光照/接触阴影、材质、HUD/minimap 和角色动作。**同机位门已过，视觉等价未过。**
 

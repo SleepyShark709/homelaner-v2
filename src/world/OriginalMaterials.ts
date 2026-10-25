@@ -67,6 +67,23 @@ export class OriginalMaterials {
     if (factors.metallic != null) material.metallic = factors.metallic;
     if (factors.emissive?.length) material.emissiveColor = Color3.FromArray(factors.emissive);
     if (factors.opacity != null) material.alpha = factors.opacity;
+    if (source === '/Game/UrbanCity/Materials/Tileable/Tilable_metal_TintC_Inst') {
+      // Recovered Tint Colour / Tint Opacity from the material instance. The diffuse
+      // texture is retained; this tint replaces the unverified white fallback on the
+      // storefront mullions. Full -Tilable_mat layering is still not reconstructed.
+      material.albedoColor = new Color3(0.14, 0.145, 0.17);
+      material.metallic = 0.5;
+      material.roughness = 0.45;
+    }
+    if (source === '/Game/UrbanCity/Materials/-Window_mat') {
+      // Recovered master-cached parameters: the shader's Param colour is almost black-blue,
+      // roughness is very low, and the emissive colour is scaled by EmissiveAmount.
+      // This replaces the unverified neutral fallback; full shader math is still not reconstructed.
+      material.albedoColor = new Color3(0.014750001, 0.017312495, 0.025);
+      material.metallic = 0.1;
+      material.roughness = 0.062217001;
+      material.emissiveColor = new Color3(0.26752028 * 0.15, 0.315 * 0.15, 0.26144999 * 0.15);
+    }
     const channels = record.channels ?? {};
     if (channels.baseColor && !allSurfaceShader && !concreteShader) {
       material.albedoTexture = this.texture(channels.baseColor);
