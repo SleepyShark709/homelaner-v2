@@ -1,0 +1,10 @@
+{
+  "dds": "C:\\Users\\Shark\\AppData\\Local\\Temp\\undefeated-lightmap-dds\\CommercialArea_BuiltData\\HQ_Lightmap0_138.dds",
+  "sha256": "a21a58991e785a47e2f1b993813430071177e806b8fd1d015f342ece9176beee",
+  "bytes": 1048704,
+  "width": 1024,
+  "height": 1024,
+  "fourCC": "DXT5",
+  "dxt5Decode": "see lightmap-dxt5.png",
+  "bc6hDecode": "colour noise; see lightmap-bc6.png"
+}
