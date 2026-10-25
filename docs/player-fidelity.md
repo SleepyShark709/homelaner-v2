@@ -84,6 +84,26 @@ MI_Sunglasses_003 / M_GlassLens_master_Black -> zOffset=-1, zOffsetUnits=-1
 
 探针确认 2 个 `M_ShadowTrim` 和 4 个墨镜 primitive 都已生效。若闪烁是局部黑/白斑，这一项应优先观察。
 
+## 实机录屏 2026-10-26 01:19（5–8s 启动走路）
+
+逐帧抽帧确认：启动走路时角色会在**直立/跑步**两种全身姿势间跳变，不是单纯掉帧。根因定位到地面 locomotion 的多组权重混合：
+
+```text
+Hero_Idle + Hero_Walk + Hero_SprintRun + ALS_N_Walk_FL ...
+```
+
+多组同时以权重作用于同一骨架时，Babylon 的组权重没有形成预期的 UE BlendSpace 效果，表现为“跑动动作里加入了别的动作”。快跑切回普通跑后，组的播放长度/相位也随权重组变化，看起来像循环被截成 1-3-1。
+
+已改为**单步态组**：
+
+```text
+Idle / Walk / SprintRun / SprintSuper 每次只选一个
+状态切换用 0.2s group crossfade
+播放速度显式设置为 speed / sampleSpeed
+```
+
+旧的 2D 多组混合默认路径已移除。
+
 ## 验收方式
 
 - `?view=play` 硬刷新后观察 idle/走/跑/跳/飞；
