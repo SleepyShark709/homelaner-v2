@@ -262,7 +262,7 @@ MovementModeConduit -> Landing    0.10 s
 其余绝大多数                      0.20 s
 ```
 
-完整状态名/前后状态/时长：[animbp-transition-timing.json](../research/world-recovery/animbp-transition-timing.json)。Web 已加入 `Character` 级别的 group-weight crossfade：默认 0.2 s、`JumpStart -> FallingLoop` 用 0.55 s，曲线为 Hermite 近似；`StopSprint -> Idle` 的 0.25 s 与 `MovementModeConduit -> Landing` 的 0.10 s 尚未按边单独接线。crossfade 期间 ground/fly 连续混合会等待 fade 完成，之后再恢复权重更新。
+完整状态名/前后状态/时长：[animbp-transition-timing.json](../research/world-recovery/animbp-transition-timing.json)。Web 已加入 `Character` 级别的 group-weight crossfade：默认 0.2 s、`JumpStart -> FallingLoop` 用 0.55 s、`StopSprint -> Idle` 用 0.25 s、`Landing` 入场 0.1 s / 回到 Ground 0.25 s，曲线为 Hermite 近似；crossfade 期间 ground/fly 连续混合会等待 fade 完成，之后再恢复权重更新。
 
 ### 原版脚步声音（2026-10-25）
 

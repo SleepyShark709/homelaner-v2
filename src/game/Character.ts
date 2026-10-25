@@ -365,7 +365,9 @@ export class Character {
     this.wasGrounded = grounded;
     if (this.action) return;
     if (landed) {
-      this.setOneShot('Hero_JumpLand', planarSpeed < 0.2 ? 'Hero_Idle' : planarSpeed < 4 ? 'Hero_Walk' : 'Hero_SprintRun');
+      const next = planarSpeed < 0.2 ? 'Hero_Idle' : planarSpeed < 4 ? 'Hero_Walk' : 'Hero_SprintRun';
+      // Recovered Falling/Landing chain: entry ~0.1 s, Landing->Ground 0.25 s.
+      this.setOneShot('Hero_JumpLand', next, 0.1, 0.25);
       return;
     }
     if (this.transition) {
@@ -434,7 +436,8 @@ export class Character {
         if (motor.sprint === true) this.setOneShot('Hero_StartSprint', desired);
         else this.setGroundBlend(planarSpeed, motor.velocity[0], motor.velocity[2]);
       } else if ((desired === 'Hero_Idle' || desired === 'Hero_Walk') && runLike) {
-        this.setOneShot(wasSprinting ? 'Hero_Stopping_Sprint' : 'Hero_Stopping_WalkRun', desired);
+        const exitFade = wasSprinting && desired === 'Hero_Idle' ? 0.25 : 0.2;
+        this.setOneShot(wasSprinting ? 'Hero_Stopping_Sprint' : 'Hero_Stopping_WalkRun', desired, 0.2, exitFade);
       } else if (desired === 'Hero_Idle' && this.clip === 'Hero_Walk') {
         this.setOneShot('Hero_Stopping_WalkRun', desired);
       } else {
