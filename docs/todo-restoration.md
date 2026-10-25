@@ -53,7 +53,7 @@
 ### 1.2 原版 MainLevel 光照 / 自动曝光 / Lightmap
 
 - [x] 已确认 `MainLevel_BuiltData` 内含 464 个 LightMapTexture2D 和 198 个 ShadowMapTexture2D，并成功导出 `HQ_Lightmap0_16` 样本；清单见 `research/world-recovery/lightmap-inventory.json`，详见 [lighting-recovery.md](lighting-recovery.md)。
-- [ ] 从 MainLevel/CommercialArea 的 StaticMeshComponent 提取 LightMapIndex、LightMapCoordinateIndex、UV scale/bias，定位起始建筑对应的 lightmap。
+- [ ] 从 MainLevel/CommercialArea 的 StaticMeshComponent 提取 LightMapIndex、LightMapCoordinateIndex、UV scale/bias，定位起始建筑对应的 lightmap。已知起始建筑 actor `SM_MERGED_Building_2_01_9` 的 StaticMeshComponent export 703；UAssetGUI JSON 未序列化 LightMap 字段，需在 gameplay 中运行 `tools/runtime/ue4ss/LightmapProbe` 读取运行时组件。
 - [ ] 导出/绑定 mesh lightmap UV1，实现原版 lightmap 采样，而不是继续用 `LightingTest` 子关卡参数或全局 SSAO 冒充。
 - [ ] 研究 UE4 自动曝光（AutoExposure 1..8）与 Bloom 2.5 的真实来源：`LightingTest` 参数已记录但**不是** MainLevel 结论。
 - [ ] 评估 Web 端可实现的 lightmap/AO 投影；优先使用原版数据，不用全局 SSAO 冒充。

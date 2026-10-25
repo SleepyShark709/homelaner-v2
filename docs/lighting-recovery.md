@@ -31,12 +31,27 @@ umodel -export -png -game=ue4.27 -path=. -out=<dir> `
 - 不知道起始建筑使用哪一个 `HQ_Lightmap0_*`；
 - 原版 Mobile/Preview 采样、Lightmass 编码（HDR RGBE/BC6H）和 UE 的 Lightmap 解码仍未复刻。
 
+## CommercialArea 起始建筑
+
+在 `CommercialArea.umap` 中：
+
+```text
+actor SM_MERGED_Building_2_01_9
+StaticMeshComponent export index 703
+StaticMesh import -184
+OverrideMaterials [-47, -39, -45]
+```
+
+UAssetGUI 序列化出的组件属性里**没有** `LightMap` / `LightMapCoordinateIndex` / `LightMapUVBias`；这些字段在 cooked 包或运行时 component 上，不能从现有 JSON 直接拿。
+
+新增 UE4SS probe：`tools/runtime/ue4ss/LightmapProbe`。菜单/标题场景中 `FindAllOf("StaticMeshComponent")` 未找到该 building（`components=0`），需要在真正加载 CommercialArea 的 gameplay 状态下再跑一次，读取组件上的 LightMap 指针/索引。
+
 ## 下一步
 
-1. 解码 MainLevel 中 `SM_MERGED_Building_2_01_9` 的 `LightMap` 属性，定位 lightmap 索引。
-2. 导出对应 lightmap 与 mesh UV1；确认 UV scale/bias。
-3. 在 Web 材质中实现 lightmap 采样（或烘焙为顶点/AO），不用全局 SSAO 冒充。
-4. 与同机位对照验证；在此之前 exposure/SSAO 只能标为预览。
+1. 在 gameplay 状态运行 `LightmapProbe`，拿到起始建筑组件的 LightMap 指针/索引。
+2. 匹配到 `HQ_Lightmap0_*` 具体对象。
+3. 导出 mesh lightmap UV1 并确认 UV scale/bias。
+4. 在 Web 材质中采样原版 lightmap。
 
 ## 相关证据
 
