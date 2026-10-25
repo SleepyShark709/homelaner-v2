@@ -13,6 +13,9 @@ export const FREE_RULES = { citizenHealth: 35, vehicleHealth: 100, propHealth: 3
 export function canDamage(mode: PlayMode, target: Damageable, attack: AttackSpec): boolean {
   if (!target.alive) return false;
   if (mode === 'free') return true;
+  // A-mode sandbox: civilians are damageable with normal attacks. Vehicles
+  // still require a strong attack in baseline; props stay non-destructible.
+  if (target.kind === 'citizen') return true;
   return target.kind === 'vehicle' && attack.strong;
 }
 export function applyDamage(mode: PlayMode, target: Damageable, attack: AttackSpec): 'ignored' | 'hit' | 'destroyed' {

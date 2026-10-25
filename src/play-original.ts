@@ -636,7 +636,7 @@ try {
         for (const mesh of viewer.scene.meshes) {
           mesh.isPickable = true;
           mesh.computeWorldMatrix(true);
-          mesh.refreshBoundingInfo();
+          mesh.refreshBoundingInfo({});
           const thin = mesh as unknown as { thinInstanceCount?: number; thinInstanceEnablePicking?: boolean; thinInstanceRefreshBoundingInfo?: (force?: boolean) => void };
           if ((thin.thinInstanceCount ?? 0) > 0) {
             thin.thinInstanceEnablePicking = true;

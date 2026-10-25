@@ -1,4 +1,4 @@
-import assert from 'node:assert/strict';
+﻿import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { AttackTimeline, applyDamage, traceTargets } from '../src/game/combat-rules.ts';
 const timings = JSON.parse(readFileSync(new URL('../public/assets/character/combat-timings.json', import.meta.url))).clips;
@@ -17,14 +17,15 @@ assert.equal(strong.step(1.15).hit, false); assert.equal(strong.step(.02).hit, t
 const make = kind => ({ id: kind, kind, alive: true, health: 100, min: [-1, 0, 9], max: [1, 2, 11] });
 const weak = { kind: 'ranged', strong: false, damage: 100, direction: [0, 0, 1] };
 const civilian = make('citizen'), car = make('vehicle');
-assert.equal(applyDamage('baseline', civilian, weak), 'ignored');
+assert.equal(applyDamage('baseline', civilian, weak), 'destroyed');
 assert.equal(applyDamage('baseline', car, weak), 'ignored');
 assert.equal(applyDamage('baseline', car, { ...weak, strong: true }), 'destroyed');
 assert.equal(applyDamage('baseline', car, { ...weak, strong: true }), 'ignored');
-assert.equal(applyDamage('free', civilian, { ...weak, damage: 12 }), 'hit');
-assert.equal(civilian.health, 88);
-assert.equal(applyDamage('free', civilian, weak), 'destroyed');
-assert.equal(applyDamage('free', civilian, weak), 'ignored');
+const freeCivilian = make('citizen');
+assert.equal(applyDamage('free', freeCivilian, { ...weak, damage: 12 }), 'hit');
+assert.equal(freeCivilian.health, 88);
+assert.equal(applyDamage('free', freeCivilian, weak), 'destroyed');
+assert.equal(applyDamage('free', freeCivilian, weak), 'ignored');
 const wall = { id: 'wall', min: [-5, 0, 4], max: [5, 10, 5] };
 assert.equal(traceTargets([0, 1, 0], [0, 0, 20], [wall], [make('vehicle')]).target, false);
 assert.equal(traceTargets([0, 1, 0], [0, 0, 20], [], [make('vehicle')]).target, true);
