@@ -116,13 +116,14 @@ HeroABS_JumpFallLoop
 - [x] 更新 `src/game/Character.ts`：run 使用 `Hero_SprintRun`，jump 使用 `Hero_JumpFall`；已用真实 W/Space 输入截图验证无畸形。
 - [ ] 仍未导入：`Hero_SprintSuper`、`ALS_N_Jump`、`HeroABS_MoveGround` 的完整 blendspace 样本、`HeroABS_Flying*`；当前 run/jump 仍是直接片段切换，不是 BlendSpace 采样。
 - [ ] jump 的起跳/下落/落地转移仍缺：`Hero_JumpSpeed → Hero_JumpFall → Hero_JumpLand` 还没作为状态机播放。
-- [ ] 冲刺起停仍缺：`Hero_StartSprint` / `Hero_Stopping_Sprint` / `Hero_Stopping_WalkRun` 已导入但未接入状态转移。
+- [x] 已接入基础直接状态链：`StartSprint→SprintRun`、`SprintRun→Stopping_WalkRun→Idle`、`JumpSpeed→JumpFall→JumpLand`（用 `AnimationGroup.getLength()` 计时）。
+- [ ] 用 AnimBP 的真实 transition/blend 时间替换直接计时，并验证起跳/落地和冲刺起停边界。
 
 
 ### 2.2 恢复 HeroAnimBP 状态机
 
-- [ ] 解码 `HeroAnimBP` 的状态/过渡条件、BlendSpace 轴（速度/方向/飞行）。
-- [ ] 实现 idle/ground move/sprint start/stop/jump/fall/land/fly/hover 的转移和混合时间。
+- [x] 解码 `HeroAnimBP` 的资产/引用；基础 idle/run/jump/fall/land 直接状态链已实现。
+- [ ] 恢复 `HeroABS_MoveGround` 的实际 BlendSpace 轴、过渡条件、混合时间和飞行混合空间，替换当前直接片段计时。
 - [ ] 实现 montage 攻击的 section/通知/连招/取消窗口；现有攻击时间轴仅是部分恢复。
 - [ ] 恢复 AnimNotify：命中、移动、脚步声、飞行尘土、攻击碰撞、结束；当前只覆盖部分。
 - [ ] Root motion / 惯性 / 转向 / 空中控制与原始一致。

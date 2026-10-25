@@ -29,6 +29,8 @@ export class Character {
   private clip = '';
   private yaw = Math.PI;
   private action = '';
+  private transition: { name: string; remaining: number; next: string } | null = null;
+  private wasGrounded = true;
   constructor(readonly scene: Scene) { this.root = new TransformNode('player-visual', scene); this.root.scaling.setAll(1.05); }
 
   async load(shadows?: ShadowGenerator, skin: 'original' | 'homelander' = 'original'): Promise<void> {
@@ -130,21 +132,74 @@ export class Character {
     return this.animations.find(group => group.name === (this.aliases.get(name) ?? name));
   }
 
+  private setLoop(name: string): void {
+    const group = this.groupFor(name);
+    if (!group) return;
+    this.animations.forEach(item => item.stop());
+    this.container.skeletons.forEach(skeleton => skeleton.returnToRest());
+    this.transition = null;
+    this.action = '';
+    this.clip = name;
+    group.start(true);
+  }
+
+  private setOneShot(name: string, next: string): void {
+    const group = this.groupFor(name);
+    if (!group) { this.setLoop(next); return; }
+    this.animations.forEach(item => item.stop());
+    this.container.skeletons.forEach(skeleton => skeleton.returnToRest());
+    this.action = '';
+    this.clip = name;
+    group.start(false);
+    this.transition = { name, remaining: Math.max(0.05, group.getLength()), next };
+  }
+
   update(motor: MotionSource, dt: number): void {
     this.root.position.copyFromFloats(...motor.position);
     this.root.position.y += 0.026;
     const difference = Math.atan2(Math.sin(motor.heading - this.yaw), Math.cos(motor.heading - this.yaw));
     this.yaw += difference * Math.min(1, dt * 12);
     this.root.rotation.y = this.yaw;
+    const grounded = motor.state === 'idle' || motor.state === 'run';
+    const landed = !this.wasGrounded && grounded;
+    const tookOff = this.wasGrounded && !grounded;
+    this.wasGrounded = grounded;
     if (this.action) return;
-    const clip = CLIPS[motor.state];
-    if (clip !== this.clip) {
-      this.animations.forEach(group => group.stop());
-      this.container.skeletons.forEach(skeleton => skeleton.returnToRest());
-      this.groupFor(clip)?.start(true);
-      this.clip = clip;
+    if (landed) {
+      this.setOneShot('Hero_JumpLand', motor.state === 'run' ? 'Hero_SprintRun' : 'Hero_Idle');
+      return;
     }
-    const group = this.groupFor(clip);
+    if (this.transition) {
+      this.transition.remaining -= dt;
+      if (this.transition.remaining > 0) return;
+      const next = this.transition.next;
+      this.transition = null;
+      this.setLoop(next);
+      return;
+    }
+    if (tookOff && motor.state === 'jump') {
+      this.setOneShot('Hero_JumpSpeed', 'Hero_JumpFall');
+      return;
+    }
+    if (!grounded) {
+      const desired = motor.state === 'jump' ? 'Hero_JumpFall' : CLIPS[motor.state];
+      if (this.clip !== desired) this.setLoop(desired);
+      const group = this.groupFor(desired);
+      if (group) group.speedRatio = 1;
+      return;
+    }
+    const desired = motor.state === 'run' ? 'Hero_SprintRun' : 'Hero_Idle';
+    if (this.clip !== desired) {
+      if (this.clip === 'Hero_Idle' && desired === 'Hero_SprintRun') {
+        this.setOneShot('Hero_StartSprint', desired);
+      } else if (this.clip === 'Hero_SprintRun' && desired === 'Hero_Idle') {
+        this.setOneShot('Hero_Stopping_WalkRun', desired);
+      } else {
+        this.setLoop(desired);
+      }
+      return;
+    }
+    const group = this.groupFor(desired);
     if (group) group.speedRatio = motor.state === 'run' ? Math.max(0.7, Math.min(2.2, Math.hypot(motor.velocity[0], motor.velocity[2]) / 6)) : 1;
   }
 

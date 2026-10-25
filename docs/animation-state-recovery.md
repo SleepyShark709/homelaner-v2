@@ -55,17 +55,27 @@ Hero_Stopping_WalkRun 31f @31.0
 ```text
 idle  -> Hero_Idle
 run   -> Hero_SprintRun      # 原版冲刺片段；还不是 HeroABS_MoveGround 混合
-jump  -> Hero_JumpFall       # 原版下落片段；起跳/落地转移还未接
+jump  -> Hero_JumpFall       # 下落循环
 hover -> Hero_IdleFlying
 fly   -> Hero_FlyFastSprint
+```
+
+已加的最小直接状态链（不是 AnimBP 的混合/条件曲线）：
+
+```text
+ground idle -> Hero_StartSprint (once) -> Hero_SprintRun (loop)
+run -> Hero_Stopping_WalkRun (once) -> Hero_Idle (loop)
+ground jump -> Hero_JumpSpeed (once) -> Hero_JumpFall (loop)
+landing -> Hero_JumpLand (once) -> Hero_Idle/Hero_SprintRun (loop)
 ```
 
 因此：
 
 - 待机/飞行/攻击/跑步/跳跃下落素材已是原版；
-- **地面移动/跳跃/落地/冲刺起停仍是直接片段切换**，不是 AnimBP 的 BlendSpace/过渡/IK/通知/根运动；
-- `Hero_StartSprint` / `Hero_Stopping_*` / `Hero_JumpSpeed` / `Hero_JumpLand` 已导入但尚未接入状态机；
-- 还没有实现 `HeroABS_MoveGround` 的方向/速度混合、`Hero_SprintSuper`、`ALS_N_Jump`、飞行混合空间。
+- 跳跃/落地/冲刺起停已有直接片段顺序；
+- **仍不是 `HeroABS_MoveGround` 的 BlendSpace**，没有原始速度/方向轴、过渡曲线、IK/通知/根运动；
+- `Hero_SprintSuper`、`ALS_N_Jump`、飞行混合空间仍未导入；
+- 直接状态链的时长取 `AnimationGroup.getLength()`，不是 AnimBP 的精确 transition/blend 时间。
 
 ## 结论
 
