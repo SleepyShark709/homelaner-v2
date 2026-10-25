@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "db35677",
+  "validatedCommit": "e4f8b0c",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -158,5 +158,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "All automated checks pass after wiring the 0.1/0.25 s landing edges and 0.25 s StopSprint->Idle at db35677."
+  "note": "All automated checks pass after blending flight from the decoded FlyingMoveAnim sample layout at e4f8b0c."
 }
