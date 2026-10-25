@@ -44,11 +44,22 @@ OverrideMaterials [-47, -39, -45]
 
 UAssetGUI 序列化出的组件属性里**没有** `LightMap` / `LightMapCoordinateIndex` / `LightMapUVBias`；这些字段在 cooked 包或运行时 component 上，不能从现有 JSON 直接拿。
 
-新增 UE4SS probe：`tools/runtime/ue4ss/LightmapProbe`。菜单/标题场景中 `FindAllOf("StaticMeshComponent")` 未找到该 building（`components=0`），需要在真正加载 CommercialArea 的 gameplay 状态下再跑一次，读取组件上的 LightMap 指针/索引。
+新增 UE4SS probe：`tools/runtime/ue4ss/LightmapProbe`。菜单/标题场景中 `FindAllOf("StaticMeshComponent")` 未找到该 building（`components=0`）。在 `GameStartEvent()` + 一次 `InputDone()` 后的 gameplay 状态，probe 已找到：
+
+```text
+CommercialArea...SM_MERGED_Building_2_01_9.StaticMeshComponent0
+LightMap                UObject pointer
+LightMapCoordinateIndex UObject pointer
+LightMapUVBias          UObject pointer
+LightMapResourceCluster UObject pointer
+LightmapType            0
+```
+
+说明运行时确实有 lightmap 绑定；但当前 UE4SS Lua 对这些属性返回的是包装指针，`:Get()`/`:GetFullName()` 不能直接解出索引，下一步需要用 property dump/C++ 反射读取 `FLightMapRef` 的内部字段，而不是继续猜。
 
 ## 下一步
 
-1. 在 gameplay 状态运行 `LightmapProbe`，拿到起始建筑组件的 LightMap 指针/索引。
+1. 用 UE4SS property dump/C++ 反射读取该组件 `LightMap` 的内部 LightMapIndex/LightMapCoordinateIndex/UVBias。
 2. 匹配到 `HQ_Lightmap0_*` 具体对象。
 3. 导出 mesh lightmap UV1 并确认 UV scale/bias。
 4. 在 Web 材质中采样原版 lightmap。
