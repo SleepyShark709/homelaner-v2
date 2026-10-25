@@ -144,6 +144,20 @@ try {
   }
   const terrain = await TerrainHeightfield.load(viewer.terrainManifest);
   const surfaces = await WalkableSurfaces.load('/assets/world/walkable-surfaces.json');
+  if (params.get('traffic') === '1') {
+    const traffic = await fetch('/assets/world/traffic-markers.json').then(response => response.ok ? response.json() : null).catch(() => null) as { markers?: Array<{ kind: string; position: Vec3 }> } | null;
+    const crosswalkMaterial = new StandardMaterial('crosswalk-marker-mat', viewer.scene);
+    crosswalkMaterial.emissiveColor = new Color3(0.95, 0.92, 0.55);
+    crosswalkMaterial.diffuseColor = new Color3(0.95, 0.92, 0.55);
+    crosswalkMaterial.disableLighting = true;
+    for (const marker of traffic?.markers ?? []) {
+      if (marker.kind !== 'crosswalk') continue;
+      const ring = CreateTorus('crosswalk-marker', { diameter: 4.4, thickness: 0.1, tessellation: 20 }, viewer.scene);
+      ring.position.set(marker.position[0], marker.position[1] + 0.08, marker.position[2]);
+      ring.material = crosswalkMaterial;
+      ring.isPickable = false;
+    }
+  }
   if (params.get('quests') === '1') {
     const quests = await fetch('/assets/world/quest-areas.json').then(response => response.ok ? response.json() : null).catch(() => null) as { areas?: QuestArea[] } | null;
     questAreas = quests?.areas ?? [];

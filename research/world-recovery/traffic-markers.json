@@ -1,0 +1,6232 @@
+{
+  "schemaVersion": 1,
+  "source": "public/assets/world/geometry-manifest.json",
+  "markers": [
+    {
+      "id": "MainLevel:MainLevel:9438",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -36.9,
+        0.64,
+        -201
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9443",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -47.2,
+        5.92,
+        -201
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9444",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -44.4,
+        5.8,
+        -201
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9445",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -41.4,
+        5.51,
+        -201
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9446",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -290.9,
+        0.64,
+        -448.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9451",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -301.2,
+        5.92,
+        -448.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9452",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -298.4,
+        5.8,
+        -448.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9453",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -295.4,
+        5.51,
+        -448.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9454",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -319.5,
+        0.64,
+        -441.11
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9459",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -319.5,
+        5.92,
+        -430.81
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9460",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -319.5,
+        5.8,
+        -433.61
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9461",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -319.5,
+        5.51,
+        -436.61
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9462",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -313.1,
+        0.64,
+        -408.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9467",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -302.8,
+        5.92,
+        -408.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9468",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -305.6,
+        5.8,
+        -408.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9469",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -308.6,
+        5.51,
+        -408.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9470",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -284,
+        0.64,
+        -167.91
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9475",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -284,
+        5.92,
+        -178.21
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9476",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -284,
+        5.8,
+        -175.41
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9477",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -284,
+        5.51,
+        -172.41
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9478",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -290.9,
+        0.64,
+        -201.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9483",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -301.2,
+        5.92,
+        -201.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9484",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -298.4,
+        5.8,
+        -201.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9485",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -295.4,
+        5.51,
+        -201.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9486",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -319.5,
+        0.64,
+        -194.11
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9491",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -319.5,
+        5.92,
+        -183.81
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9492",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -319.5,
+        5.8,
+        -186.61
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9493",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -319.5,
+        5.51,
+        -189.61
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9494",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -313.1,
+        0.64,
+        -161.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9499",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -302.8,
+        5.92,
+        -161.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9500",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -305.6,
+        5.8,
+        -161.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9501",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -308.6,
+        5.51,
+        -161.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9502",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -284,
+        0.64,
+        265.09
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9507",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -284,
+        5.92,
+        254.79
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9508",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -284,
+        5.8,
+        257.59
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9509",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -284,
+        5.51,
+        260.59
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9510",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -290.9,
+        0.64,
+        235.99
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9515",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -301.2,
+        5.92,
+        235.99
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9516",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -298.4,
+        5.8,
+        235.99
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9517",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -295.4,
+        5.51,
+        235.99
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9518",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -319.5,
+        0.64,
+        242.89
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9523",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -319.5,
+        5.92,
+        253.19
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9524",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -319.5,
+        5.8,
+        250.39
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9525",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -319.5,
+        5.51,
+        247.39
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9526",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -70,
+        0.64,
+        -194.1
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9531",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -70,
+        5.92,
+        -183.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9532",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -70,
+        5.8,
+        -186.6
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9533",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -70,
+        5.51,
+        -189.6
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9534",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -313.1,
+        0.64,
+        270.99
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9539",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -302.8,
+        5.92,
+        270.99
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9540",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -305.6,
+        5.8,
+        270.99
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9541",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -308.6,
+        5.51,
+        270.99
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9542",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -30,
+        0.64,
+        265.1
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9547",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30,
+        5.92,
+        254.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9548",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30,
+        5.8,
+        257.6
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9549",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30,
+        5.51,
+        260.6
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9550",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -36.9,
+        0.64,
+        236
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9555",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -47.2,
+        5.92,
+        236
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9556",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -44.4,
+        5.8,
+        236
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9557",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -41.4,
+        5.51,
+        236
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9558",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -70,
+        0.64,
+        242.9
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9563",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -70,
+        5.92,
+        253.2
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9564",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -70,
+        5.8,
+        250.4
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9565",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -70,
+        5.51,
+        247.4
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9566",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -63.1,
+        0.64,
+        271.5
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9571",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -52.8,
+        5.92,
+        271.5
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9572",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -55.6,
+        5.8,
+        271.5
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9573",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -58.6,
+        5.51,
+        271.5
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9574",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        163,
+        0.64,
+        265.1
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9579",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        163,
+        5.92,
+        254.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9580",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        163,
+        5.8,
+        257.6
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9581",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        163,
+        5.51,
+        260.6
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9582",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        156.1,
+        0.64,
+        236
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9587",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        145.8,
+        5.92,
+        236
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9588",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        148.6,
+        5.8,
+        236
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9589",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        151.6,
+        5.51,
+        236
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9590",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        123,
+        0.64,
+        242.9
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9595",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123,
+        5.92,
+        253.2
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9596",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123,
+        5.8,
+        250.4
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9597",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123,
+        5.51,
+        247.4
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9598",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        129.9,
+        0.64,
+        271.5
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9603",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        140.2,
+        5.92,
+        271.5
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9604",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        137.4,
+        5.8,
+        271.5
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9605",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        134.4,
+        5.51,
+        271.5
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9606",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        363,
+        0.64,
+        265.13
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9611",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        363,
+        5.92,
+        254.83
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9612",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        363,
+        5.8,
+        257.63
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9613",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        363,
+        5.51,
+        260.63
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9614",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -63.1,
+        0.64,
+        -161
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9619",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -52.8,
+        5.92,
+        -161
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9620",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -55.6,
+        5.8,
+        -161
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9621",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -58.6,
+        5.51,
+        -161
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9622",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        356.1,
+        0.64,
+        236.03
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9627",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        345.8,
+        5.92,
+        236.03
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9628",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        348.6,
+        5.8,
+        236.03
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9629",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        351.6,
+        5.51,
+        236.03
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9630",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        327,
+        0.64,
+        242.93
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9635",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        327,
+        5.92,
+        253.23
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9636",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        327,
+        5.8,
+        250.43
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9637",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        327,
+        5.51,
+        247.43
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9638",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        333.9,
+        0.64,
+        72.53
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9643",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        344.2,
+        5.92,
+        72.53
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9644",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        341.4,
+        5.8,
+        72.53
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9645",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        338.4,
+        5.51,
+        72.53
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9646",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        363,
+        0.64,
+        65.13
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9651",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        363,
+        5.92,
+        54.83
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9652",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        363,
+        5.8,
+        57.63
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9653",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        363,
+        5.51,
+        60.63
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9654",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        356.1,
+        0.64,
+        32.03
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9659",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        345.8,
+        5.92,
+        32.03
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9660",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        348.6,
+        5.8,
+        32.03
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9661",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        351.6,
+        5.51,
+        32.03
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9662",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        327,
+        0.64,
+        38.93
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9667",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        327,
+        5.92,
+        49.23
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9668",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        327,
+        5.8,
+        46.43
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9669",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        327,
+        5.51,
+        43.43
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9670",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        333.9,
+        0.64,
+        -160.47
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9675",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        344.2,
+        5.92,
+        -160.47
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9676",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        341.4,
+        5.8,
+        -160.47
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9677",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        338.4,
+        5.51,
+        -160.47
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9678",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        363,
+        0.64,
+        -167.87
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9683",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        363,
+        5.92,
+        -178.17
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9684",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        363,
+        5.8,
+        -175.37
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9685",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        363,
+        5.51,
+        -172.37
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9686",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        356.1,
+        0.64,
+        -200.97
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9691",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        345.8,
+        5.92,
+        -200.97
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9692",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        348.6,
+        5.8,
+        -200.97
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9693",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        351.6,
+        5.51,
+        -200.97
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9694",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        327,
+        0.64,
+        -194.07
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9699",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        327,
+        5.92,
+        -183.77
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9700",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        327,
+        5.8,
+        -186.57
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9701",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        327,
+        5.51,
+        -189.57
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9702",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -30,
+        0.64,
+        65.1
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9707",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30,
+        5.92,
+        54.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9708",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30,
+        5.8,
+        57.6
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9709",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30,
+        5.51,
+        60.6
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9710",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        333.9,
+        0.64,
+        -407.47
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9715",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        344.2,
+        5.92,
+        -407.47
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9716",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        341.4,
+        5.8,
+        -407.47
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9717",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        338.4,
+        5.51,
+        -407.47
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9718",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        363,
+        0.64,
+        -414.87
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9723",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        363,
+        5.92,
+        -425.17
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9724",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        363,
+        5.8,
+        -422.37
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9725",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        363,
+        5.51,
+        -419.37
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9726",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        356.1,
+        0.64,
+        -447.97
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9731",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        345.8,
+        5.92,
+        -447.97
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9732",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        348.6,
+        5.8,
+        -447.97
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9733",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        351.6,
+        5.51,
+        -447.97
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9734",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        327,
+        0.64,
+        -441.07
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9739",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        327,
+        5.92,
+        -430.77
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9740",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        327,
+        5.8,
+        -433.57
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9741",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        327,
+        5.51,
+        -436.57
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9742",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -36.9,
+        0.64,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9747",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -47.2,
+        5.92,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9748",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -44.4,
+        5.8,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9749",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -41.4,
+        5.51,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9750",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -70,
+        0.64,
+        38.9
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9755",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -70,
+        5.92,
+        49.2
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9756",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -70,
+        5.8,
+        46.4
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9757",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -70,
+        5.51,
+        43.4
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9758",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -63.1,
+        0.64,
+        72
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9763",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -52.8,
+        5.92,
+        72
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9764",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -55.6,
+        5.8,
+        72
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9765",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -58.6,
+        5.51,
+        72
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9766",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -280,
+        0.64,
+        65.1
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9771",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -280,
+        5.92,
+        54.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9772",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -280,
+        5.8,
+        57.6
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9773",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -280,
+        5.51,
+        60.6
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9774",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -290.9,
+        0.64,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9779",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -301.2,
+        5.92,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9780",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -298.4,
+        5.8,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9781",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -295.4,
+        5.51,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9782",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -320,
+        0.64,
+        38.9
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9787",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -320,
+        5.92,
+        49.2
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9788",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -320,
+        5.8,
+        46.4
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9789",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -320,
+        5.51,
+        43.4
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9790",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        156.1,
+        0.64,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9795",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        145.8,
+        5.92,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9796",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        148.6,
+        5.8,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9797",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        151.6,
+        5.51,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9798",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -313.1,
+        0.64,
+        72
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9803",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -302.8,
+        5.92,
+        72
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9804",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -305.6,
+        5.8,
+        72
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9805",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -308.6,
+        5.51,
+        72
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9806",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -540.9,
+        0.64,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9811",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -551.2,
+        5.92,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9812",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -548.4,
+        5.8,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9813",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -545.4,
+        5.51,
+        32
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9814",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        633.8,
+        0.64,
+        71.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9819",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        644.1,
+        5.92,
+        71.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9820",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        641.3,
+        5.8,
+        71.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9821",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        638.3,
+        5.51,
+        71.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9822",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        652.1,
+        0.64,
+        32.5
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9827",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        641.8,
+        5.92,
+        32.5
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9828",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        644.6,
+        5.8,
+        32.5
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9829",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        647.6,
+        5.51,
+        32.5
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9830",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        627,
+        0.64,
+        38.9
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9834",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        333.9,
+        0.64,
+        272.03
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9839",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        344.2,
+        5.92,
+        272.03
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9840",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        341.4,
+        5.8,
+        272.03
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9841",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        338.4,
+        5.51,
+        272.03
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9842",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        627,
+        0.64,
+        65.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9846",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        123,
+        0.64,
+        38.9
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9851",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123,
+        5.92,
+        49.2
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9852",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123,
+        5.8,
+        46.4
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9853",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123,
+        5.51,
+        43.4
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9854",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        633.8,
+        0.64,
+        271.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9859",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        644.1,
+        5.92,
+        271.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9860",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        641.3,
+        5.8,
+        271.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9861",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        638.3,
+        5.51,
+        271.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9862",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        652.1,
+        0.64,
+        238
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9867",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        641.8,
+        5.92,
+        238
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9868",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        644.6,
+        5.8,
+        238
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9869",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        647.6,
+        5.51,
+        238
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9870",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        627.5,
+        0.64,
+        242.9
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9874",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        627,
+        0.64,
+        265.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9878",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        633.8,
+        0.64,
+        -161.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9883",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        644.1,
+        5.92,
+        -161.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9884",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        641.3,
+        5.8,
+        -161.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9885",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        638.3,
+        5.51,
+        -161.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9886",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        652.1,
+        0.64,
+        -199
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9891",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        641.8,
+        5.92,
+        -199
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9892",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        644.6,
+        5.8,
+        -199
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9893",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        647.6,
+        5.51,
+        -199
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9894",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        627.5,
+        0.64,
+        -194.1
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9898",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        627,
+        0.64,
+        -167.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9902",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        633.8,
+        0.64,
+        -408.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9907",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        644.1,
+        5.92,
+        -408.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9908",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        641.3,
+        5.8,
+        -408.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9909",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        638.3,
+        5.51,
+        -408.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9910",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        652.1,
+        0.64,
+        -446
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9915",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        641.8,
+        5.92,
+        -446
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9916",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        644.6,
+        5.8,
+        -446
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9917",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        647.6,
+        5.51,
+        -446
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9918",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        129.9,
+        0.64,
+        72
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9923",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        140.2,
+        5.92,
+        72
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9924",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        137.4,
+        5.8,
+        72
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9925",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        134.4,
+        5.51,
+        72
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9926",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        627.5,
+        0.64,
+        -441.1
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9930",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        627,
+        0.64,
+        -414.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9934",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -559.2,
+        0.64,
+        71.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9939",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -548.9,
+        5.92,
+        71.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9940",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -551.7,
+        5.8,
+        71.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9941",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -554.7,
+        5.51,
+        71.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9942",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        163,
+        0.64,
+        -414.91
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9947",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        163,
+        5.92,
+        -425.21
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9948",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        163,
+        5.8,
+        -422.41
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9949",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        163,
+        5.51,
+        -419.41
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9950",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -533.99,
+        0.64,
+        38.9
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9954",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -533.99,
+        0.64,
+        65.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9958",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -559.2,
+        0.64,
+        271.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9963",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -548.9,
+        5.92,
+        271.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9964",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -551.7,
+        5.8,
+        271.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9965",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -554.7,
+        5.51,
+        271.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9966",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -540.9,
+        0.64,
+        238
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9971",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -551.2,
+        5.92,
+        238
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9972",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -548.4,
+        5.8,
+        238
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9973",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -545.4,
+        5.51,
+        238
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9974",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -533.49,
+        0.64,
+        242.9
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9978",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -533.99,
+        0.64,
+        265.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9982",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        163,
+        0.64,
+        -167.9
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9987",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        163,
+        5.92,
+        -178.2
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9988",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        163,
+        5.8,
+        -175.4
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9989",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        163,
+        5.51,
+        -172.4
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9990",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -559.2,
+        0.64,
+        -161.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9995",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -548.9,
+        5.92,
+        -161.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9996",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -551.7,
+        5.8,
+        -161.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9997",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -554.7,
+        5.51,
+        -161.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:9998",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -540.9,
+        0.64,
+        -199
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10003",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -551.2,
+        5.92,
+        -199
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10004",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -548.4,
+        5.8,
+        -199
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10005",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -545.4,
+        5.51,
+        -199
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10006",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -533.49,
+        0.64,
+        -194.1
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10010",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -533.99,
+        0.64,
+        -167.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10014",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -559.2,
+        0.64,
+        -408.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10019",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -548.9,
+        5.92,
+        -408.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10020",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -551.7,
+        5.8,
+        -408.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10021",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -554.7,
+        5.51,
+        -408.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10022",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -540.9,
+        0.64,
+        -446
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10027",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -551.2,
+        5.92,
+        -446
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10028",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -548.4,
+        5.8,
+        -446
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10029",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -545.4,
+        5.51,
+        -446
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10030",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -533.5,
+        0.64,
+        -441.1
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10034",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -534,
+        0.64,
+        -414.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10038",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -30.7,
+        0.64,
+        561.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10043",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30.7,
+        5.92,
+        551.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10044",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30.7,
+        5.8,
+        553.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10045",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30.7,
+        5.51,
+        556.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10046",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -68.65,
+        0.64,
+        543.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10051",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -68.65,
+        5.92,
+        553.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10052",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -68.65,
+        5.8,
+        550.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10053",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -68.65,
+        5.51,
+        547.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10054",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        156.1,
+        0.64,
+        -201
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10059",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        145.8,
+        5.92,
+        -201
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10060",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        148.6,
+        5.8,
+        -201
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10061",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        151.6,
+        5.51,
+        -201
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10062",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -63.25,
+        0.64,
+        535.65
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10066",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -36.5,
+        0.64,
+        536.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10070",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        161.8,
+        0.64,
+        560.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10075",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        161.8,
+        5.92,
+        550.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10076",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        161.8,
+        5.8,
+        553.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10077",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        161.8,
+        5.51,
+        556.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10078",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        123.85,
+        0.64,
+        543.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10083",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123.85,
+        5.92,
+        553.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10084",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123.85,
+        5.8,
+        550.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10085",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123.85,
+        5.51,
+        547.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10086",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        129.75,
+        0.64,
+        535.65
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10090",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        156,
+        0.64,
+        536.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10094",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        362.3,
+        0.64,
+        560.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10099",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        362.3,
+        5.92,
+        550.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10100",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        362.3,
+        5.8,
+        553.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10101",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        362.3,
+        5.51,
+        556.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10102",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        326.85,
+        0.64,
+        543.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10107",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        326.85,
+        5.92,
+        553.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10108",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        326.85,
+        5.8,
+        550.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10109",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        326.85,
+        5.51,
+        547.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10110",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        333.75,
+        0.64,
+        535.65
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10114",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        356.5,
+        0.64,
+        536.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10118",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        123,
+        0.64,
+        -194.1
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10123",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123,
+        5.92,
+        -183.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10124",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123,
+        5.8,
+        -186.6
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10125",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123,
+        5.51,
+        -189.6
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10126",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -30.7,
+        0.64,
+        -668.65
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10131",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30.7,
+        5.92,
+        -678.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10132",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30.7,
+        5.8,
+        -676.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10133",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30.7,
+        5.51,
+        -673.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10134",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -68.65,
+        0.64,
+        -686.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10139",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -68.65,
+        5.92,
+        -676.65
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10140",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -68.65,
+        5.8,
+        -679.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10141",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -68.65,
+        5.51,
+        -682.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10142",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -63.27,
+        0.64,
+        -662.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10146",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -36.52,
+        0.64,
+        -661.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10150",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        161.8,
+        0.64,
+        -668.65
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10155",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        161.8,
+        5.92,
+        -678.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10156",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        161.8,
+        5.8,
+        -676.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10157",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        161.8,
+        5.51,
+        -673.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10158",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        123.85,
+        0.64,
+        -686.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10163",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123.85,
+        5.92,
+        -676.65
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10164",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123.85,
+        5.8,
+        -679.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10165",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123.85,
+        5.51,
+        -682.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10166",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        129.73,
+        0.64,
+        -662.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10170",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        155.98,
+        0.64,
+        -661.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10174",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        362.3,
+        0.64,
+        -668.65
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10179",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        362.3,
+        5.92,
+        -678.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10180",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        362.3,
+        5.8,
+        -676.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10181",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        362.3,
+        5.51,
+        -673.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10182",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        326.85,
+        0.54,
+        -686.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10187",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        326.85,
+        5.82,
+        -676.65
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10188",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        326.85,
+        5.7,
+        -679.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10189",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        326.85,
+        5.41,
+        -682.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10190",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        129.9,
+        0.64,
+        -161
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10195",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        140.2,
+        5.92,
+        -161
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10196",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        137.4,
+        5.8,
+        -161
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10197",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        134.4,
+        5.51,
+        -161
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10198",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        333.75,
+        0.64,
+        -662.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10203",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        344.05,
+        5.92,
+        -662.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10204",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        341.25,
+        5.8,
+        -662.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10205",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        338.25,
+        5.51,
+        -662.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10206",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        356.48,
+        0.64,
+        -661.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10210",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        334.33,
+        0.54,
+        -690.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10214",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        356.35,
+        0.54,
+        -689.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10219",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        346.05,
+        5.82,
+        -689.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10220",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        348.85,
+        5.7,
+        -689.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10221",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        351.85,
+        5.41,
+        -689.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10222",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -285.2,
+        0.64,
+        -668.65
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10227",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -285.2,
+        5.92,
+        -678.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10228",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -285.2,
+        5.8,
+        -676.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10229",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -285.2,
+        5.51,
+        -673.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10230",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -318.65,
+        0.64,
+        -686.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10235",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -318.65,
+        5.92,
+        -676.65
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10236",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -318.65,
+        5.8,
+        -679.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10237",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -318.65,
+        5.51,
+        -682.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10238",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -313.27,
+        0.64,
+        -662.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10242",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -291.02,
+        0.64,
+        -661.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10246",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -285.2,
+        0.64,
+        561.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10251",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -285.2,
+        5.92,
+        551.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10252",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -285.2,
+        5.8,
+        553.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10253",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -285.2,
+        5.51,
+        556.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10254",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -318.65,
+        0.64,
+        543.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10259",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -318.65,
+        5.92,
+        553.35
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10260",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -318.65,
+        5.8,
+        550.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10261",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -318.65,
+        5.51,
+        547.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10262",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -30,
+        0.64,
+        -167.9
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10267",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30,
+        5.92,
+        -178.2
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10268",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30,
+        5.8,
+        -175.4
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10269",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30,
+        5.51,
+        -172.4
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10270",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -313.25,
+        0.64,
+        535.65
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10274",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -290.99,
+        0.64,
+        536.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10278",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        156.1,
+        0.64,
+        -448.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10283",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        145.8,
+        5.92,
+        -448.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10284",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        148.6,
+        5.8,
+        -448.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10285",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        151.6,
+        5.51,
+        -448.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10286",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        123,
+        0.64,
+        -441.11
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10291",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123,
+        5.92,
+        -430.81
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10292",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123,
+        5.8,
+        -433.61
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10293",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        123,
+        5.51,
+        -436.61
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10294",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        129.9,
+        0.64,
+        -408.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10299",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        140.2,
+        5.92,
+        -408.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10300",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        137.4,
+        5.8,
+        -408.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10301",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        134.4,
+        5.51,
+        -408.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10302",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -30,
+        0.64,
+        -414.91
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10307",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30,
+        5.92,
+        -425.21
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10308",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30,
+        5.8,
+        -422.41
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10309",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -30,
+        5.51,
+        -419.41
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10310",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -36.9,
+        0.64,
+        -448.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10315",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -47.2,
+        5.92,
+        -448.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10316",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -44.4,
+        5.8,
+        -448.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10317",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -41.4,
+        5.51,
+        -448.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10318",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -70,
+        0.64,
+        -441.11
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10323",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -70,
+        5.92,
+        -430.81
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10324",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -70,
+        5.8,
+        -433.61
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10325",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -70,
+        5.51,
+        -436.61
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10326",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -63.1,
+        0.64,
+        -408.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10331",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -52.8,
+        5.92,
+        -408.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10332",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -55.6,
+        5.8,
+        -408.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10333",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -58.6,
+        5.51,
+        -408.01
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10334",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -284,
+        0.64,
+        -414.91
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10339",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -284,
+        5.92,
+        -425.21
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10340",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -284,
+        5.8,
+        -422.41
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10341",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -284,
+        5.51,
+        -419.41
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10342",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        163,
+        0.64,
+        65.1
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10347",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        163,
+        5.92,
+        54.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10348",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        163,
+        5.8,
+        57.6
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10349",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        163,
+        5.51,
+        60.6
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10350",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -63.15,
+        0.65,
+        -201.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10354",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -70.05,
+        0.65,
+        -167.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10358",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -36.85,
+        0.65,
+        -161.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10362",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -30,
+        0.65,
+        38.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10366",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -63.15,
+        0.65,
+        31.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10370",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -70.05,
+        0.65,
+        65.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10374",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -36.85,
+        0.65,
+        71.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10378",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -280,
+        0.65,
+        38.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10382",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -313.15,
+        0.65,
+        31.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10386",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -320.05,
+        0.65,
+        65.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10390",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        129.85,
+        0.65,
+        31.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10394",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -290.85,
+        0.65,
+        71.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10398",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        365,
+        0.65,
+        242.88
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10402",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -559.15,
+        0.65,
+        40.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10407",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -559.15,
+        5.93,
+        51.25
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10408",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -559.15,
+        5.81,
+        48.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10409",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -559.15,
+        5.52,
+        45.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10410",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        633.85,
+        0.65,
+        32.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10414",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -540.85,
+        0.65,
+        71.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10418",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        326.95,
+        0.65,
+        265.18
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10422",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        652.15,
+        0.65,
+        63.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10427",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        652.15,
+        5.93,
+        53.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10428",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        652.15,
+        5.81,
+        55.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10429",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        652.15,
+        5.52,
+        58.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10430",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        633.85,
+        0.65,
+        236.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10434",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        652.15,
+        0.65,
+        262.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10439",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        652.15,
+        5.93,
+        252.65
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10440",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        652.15,
+        5.81,
+        255.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10441",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        652.15,
+        5.52,
+        258.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10442",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        633.85,
+        0.65,
+        -201.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10446",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        122.95,
+        0.65,
+        65.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10450",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        652.15,
+        0.65,
+        -169.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10455",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        652.15,
+        5.93,
+        -179.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10456",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        652.15,
+        5.81,
+        -177.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10457",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        652.15,
+        5.52,
+        -174.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10458",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        633.85,
+        0.65,
+        -448.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10462",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        652.15,
+        0.65,
+        -416.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10467",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        652.15,
+        5.93,
+        -426.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10468",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        652.15,
+        5.81,
+        -424.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10469",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        652.15,
+        5.52,
+        -421.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10470",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        163,
+        0.65,
+        -441.16
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10474",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -540.85,
+        0.65,
+        71.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10478",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -559.14,
+        0.65,
+        245.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10483",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -559.14,
+        5.93,
+        255.75
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10484",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -559.14,
+        5.81,
+        252.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10485",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -559.14,
+        5.52,
+        249.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10486",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -540.85,
+        0.65,
+        270.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10490",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -559.15,
+        0.65,
+        -192.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10495",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -559.15,
+        5.93,
+        -181.75
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10496",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -559.15,
+        5.81,
+        -184.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10497",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -559.15,
+        5.52,
+        -187.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10498",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -540.85,
+        0.65,
+        -162.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10502",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -559.15,
+        0.65,
+        -439.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10507",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -559.15,
+        5.93,
+        -428.75
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10508",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -559.15,
+        5.81,
+        -431.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10509",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -559.15,
+        5.52,
+        -434.55
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10510",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        156.15,
+        0.65,
+        71.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10514",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -540.85,
+        0.65,
+        -409.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10518",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -61.4,
+        0.65,
+        561.3
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10523",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -51.1,
+        5.93,
+        561.3
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10524",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -53.9,
+        5.81,
+        561.3
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10525",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -56.9,
+        5.52,
+        561.3
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10526",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -30.2,
+        0.65,
+        543
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10530",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        131.57,
+        0.65,
+        560.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10535",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        141.87,
+        5.93,
+        560.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10536",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        139.07,
+        5.81,
+        560.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10537",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        136.07,
+        5.52,
+        560.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10538",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        162.3,
+        0.65,
+        543
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10542",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        335.46,
+        0.65,
+        560.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10547",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        345.76,
+        5.93,
+        560.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10548",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        342.96,
+        5.81,
+        560.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10549",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        339.96,
+        5.52,
+        560.8
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10550",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        362.8,
+        0.65,
+        542.5
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10554",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -68.2,
+        0.65,
+        -668.7
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10558",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -38.7,
+        0.65,
+        -687
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10563",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -49,
+        5.93,
+        -687
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10564",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -46.2,
+        5.81,
+        -687
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10565",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -43.2,
+        5.52,
+        -687
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10566",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        124.3,
+        0.65,
+        -668.7
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10570",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        163,
+        0.65,
+        -194.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10574",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        153.8,
+        0.65,
+        -687
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10579",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        143.5,
+        5.93,
+        -687
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10580",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        146.3,
+        5.81,
+        -687
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10581",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        149.3,
+        5.52,
+        -687
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10582",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        328.3,
+        0.65,
+        -668.7
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10586",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        362.8,
+        0.54,
+        -687
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10590",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -319.7,
+        0.65,
+        -668.7
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10594",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -293.2,
+        0.65,
+        -687
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10599",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -303.5,
+        5.93,
+        -687
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10600",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -300.7,
+        5.81,
+        -687
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10601",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -297.7,
+        5.52,
+        -687
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10602",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -311.49,
+        0.65,
+        561.3
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10607",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -301.19,
+        5.93,
+        561.3
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10608",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -303.99,
+        5.81,
+        561.3
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10609",
+      "level": "MainLevel",
+      "kind": "traffic",
+      "position": [
+        -306.99,
+        5.52,
+        561.3
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10610",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -284.2,
+        0.65,
+        543
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10614",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        129.85,
+        0.65,
+        -448.06
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10618",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        122.95,
+        0.65,
+        -414.86
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10622",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        156.15,
+        0.65,
+        -408.06
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10626",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        129.85,
+        0.65,
+        -201.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10630",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -30,
+        0.65,
+        -441.16
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10634",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -63.15,
+        0.65,
+        -448.06
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10638",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -70.05,
+        0.65,
+        -414.86
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10642",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -36.85,
+        0.65,
+        -408.06
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10646",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -284,
+        0.65,
+        -441.16
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10650",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -313.15,
+        0.65,
+        -448.06
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10654",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -318.55,
+        0.65,
+        -414.86
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10658",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -290.85,
+        0.65,
+        -408.06
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10662",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -284,
+        0.65,
+        -194.16
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10666",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -313.15,
+        0.65,
+        -201.06
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10670",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        122.95,
+        0.65,
+        -167.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10674",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -318.55,
+        0.65,
+        -167.86
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10678",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -290.85,
+        0.65,
+        -161.06
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10682",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -284,
+        0.65,
+        242.84
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10686",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -313.15,
+        0.65,
+        235.94
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10690",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -318.55,
+        0.65,
+        265.14
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10694",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -290.85,
+        0.65,
+        270.94
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10698",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -30,
+        0.65,
+        242.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10702",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -63.15,
+        0.65,
+        235.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10706",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -70.05,
+        0.65,
+        265.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10710",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -36.85,
+        0.65,
+        271.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10714",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        156.15,
+        0.65,
+        -161.05
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10718",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        163,
+        0.65,
+        242.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10722",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        129.85,
+        0.65,
+        235.95
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10726",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        122.95,
+        0.65,
+        265.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10730",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        156.15,
+        0.65,
+        271.45
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10734",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        333.85,
+        0.65,
+        235.98
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10738",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        356.15,
+        0.65,
+        271.98
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10742",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        365,
+        0.65,
+        38.88
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10746",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        326.95,
+        0.65,
+        65.18
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10750",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        333.85,
+        0.65,
+        31.98
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10754",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        356.15,
+        0.65,
+        72.48
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10758",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        -30,
+        0.65,
+        -194.15
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10762",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        365,
+        0.65,
+        -194.12
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10766",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        326.95,
+        0.65,
+        -167.82
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10770",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        333.85,
+        0.65,
+        -201.02
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10774",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        356.15,
+        0.65,
+        -160.52
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10778",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        365,
+        0.65,
+        -441.12
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10782",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        326.95,
+        0.65,
+        -414.82
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10786",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        333.85,
+        0.65,
+        -448.02
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10790",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        356.15,
+        0.65,
+        -407.52
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    },
+    {
+      "id": "MainLevel:MainLevel:10794",
+      "level": "MainLevel",
+      "kind": "crosswalk",
+      "position": [
+        163,
+        0.65,
+        38.85
+      ],
+      "note": "mesh placement recovered; signal timing/BP_TrafficSystem behavior not recovered"
+    }
+  ]
+}
