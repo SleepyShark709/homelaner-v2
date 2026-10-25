@@ -37,13 +37,19 @@
   key('keydown', 'Space'); await wait(80); key('keyup', 'Space'); await wait(250);
   const exited = state();
   if (exited.stats.flying) throw new Error('flight Space did not exit flight');
+  key('keydown', 'KeyR'); await wait(80); key('keyup', 'KeyR'); await wait(250);
+  key('keydown', 'ShiftLeft'); key('keydown', 'KeyW'); await wait(400);
+  const sprinting = state();
+  key('keyup', 'KeyW'); key('keyup', 'ShiftLeft');
+  if (sprinting.clip !== 'Hero_StartSprint') throw new Error(`Shift sprint did not select Hero_StartSprint (${sprinting.clip})`);
   return {
-    start, walking, jump, flying, ascended, descended, exited,
+    start, walking, jump, flying, ascended, descended, exited, sprinting,
     evidence: {
       walkDistance: Math.abs(walking.stats.position[2] - start.stats.position[2]),
       jumpHeight: jump.stats.position[1] - start.stats.position[1],
       ascendDelta: ascended.stats.position[1] - flyY,
       descendDelta: descended.stats.position[1] - ascended.stats.position[1],
+      sprintSpeed: sprinting.stats.speed,
     },
   };
 })()
