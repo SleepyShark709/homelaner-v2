@@ -131,6 +131,15 @@ Web 现在使用原版 `clouds.png` 作为玻璃 emissive 层，`uScale=vScale=0
 
 同机位 luma：原版 55.8/31.3，加入云层后 Web 57.8/31.0。玻璃已不再是纯黑，但 `mask_grunge_tileable`、Contrast/Greunge 数学仍未复刻，不能称为完整 shader 还原。
 
+## 已排除的捷径
+
+- **静态建筑加入实时 ShadowGenerator**：把 `SM_MERGED_Building_2_01_*` 加进方向光阴影 caster 后，同机位 mean/std 仍为 57.8/31.0，雨棚上沿没有变暗；原版这里是烘焙光/lightmap，不是简单动态阴影。
+- **`mask_grunge_tileable` 作为 PBR detailMap**：会导致场景材质加载超时/暗屏，已回退。
+- **直接把候选 lightmap 挂到 PBRMaterial.lightmapTexture**：无可验证变化，已回退。
+- **LODData 直接扫描 lightmap 纹理指针**：0 命中。
+
+这些路径都不能替代真正的组件 LightMapIndex/`FLightMap2D` 绑定。
+
 ## 下一步
 
 1. 用 UE4SS C++ mod/SDK 读取 `FLODData::LightMap` 的内部 LightMapIndex/LightMapCoordinateIndex/UVBias。
