@@ -103,7 +103,7 @@
     "plazaPoses": "MainLevel startup poses: (20,0) clean city/balustrade view; (-20,0) puts balustrade left/central classical building closer to the original composition but camera is wall-clipped; (-10,-20) clean paved plaza with a different building layout. All candidate-only.",
     "cameraClearSpawn": "Spawn search now rejects points whose 4 m rear camera slot intersects static AABBs; plaza=1&at=-20,0&yaw=0 yields a clean balustrade-left/classical-building composition.",
     "questAreas": "?quests=1 renders 21 recovered triggers, marks a nearby trigger as discovered (HUD 1/21 verified at MatQuest_BP2_368) and shows an F detail hint; quest logic/state/rewards are not recovered.",
-    "trafficMarkers": "?traffic=1 renders 227 recovered CrossWalk placement rings; 339 TrafficLight mesh positions exist in the evidence; signal timing/BP_TrafficSystem remains unrecovered."
+    "trafficMarkers": "?traffic=1 renders 227 recovered CrossWalk placement rings; verified at (-36.9,-201.1,yaw 0.785); 339 TrafficLight mesh positions exist in evidence; signal timing/BP_TrafficSystem remains unrecovered."
   },
   "limitations": [
     "Spawn is a viewer-safe centre point, not the original PlayerStart or story spawn.",

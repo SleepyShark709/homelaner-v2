@@ -146,7 +146,7 @@ const consoleMessages = [];
 let data;
 for (;;) {
   const result = await cdp.send('Runtime.evaluate', { expression: probeExpr, returnByValue: true });
-  if (result.exceptionDetails) throw new Error(`Page probe failed: ${result.exceptionDetails.text}`);
+  if (result.exceptionDetails) throw new Error(`Page probe failed: ${result.exceptionDetails.text}: ${result.exceptionDetails.exception?.description ?? ''}`);
   data = JSON.parse(result.result.value);
   if (data.ready === expectedReady || data.ready === 'error') break;
   if (Date.now() - started > timeout) throw new Error(`Timed out waiting for viewer (${data.ready}; ${data.warning})`);
