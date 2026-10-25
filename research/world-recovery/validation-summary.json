@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "3bbc3cc",
+  "validatedCommit": "8c1693c",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -171,5 +171,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "All automated checks pass; load-time thin-instance picking also fails and is documented at 3bbc3cc."
+  "note": "All automated checks pass; the AABB picking fallback also fails and is documented at 8c1693c."
 }
