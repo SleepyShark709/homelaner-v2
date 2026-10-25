@@ -6,6 +6,7 @@ import { Matrix, Quaternion, Vector3 } from '@babylonjs/core/Maths/math.vector';
 import { Color3 } from '@babylonjs/core/Maths/math.color';
 import { DirectionalLight } from '@babylonjs/core/Lights/directionalLight';
 import { ShadowGenerator } from '@babylonjs/core/Lights/Shadows/shadowGenerator';
+import { SSAO2RenderingPipeline } from '@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/ssao2RenderingPipeline';
 import '@babylonjs/core/Lights/Shadows/shadowGeneratorSceneComponent';
 import { StandardMaterial } from '@babylonjs/core/Materials/standardMaterial';
 import { Texture } from '@babylonjs/core/Materials/Textures/texture';
@@ -116,6 +117,15 @@ const cameraArmOverride = Number(params.get('arm'));
 if (Number.isFinite(cameraArmOverride) && cameraArmOverride > 0) CAMERA.armLength = cameraArmOverride;
 const cameraFovOverride = Number(params.get('fov'));
 if (Number.isFinite(cameraFovOverride) && cameraFovOverride > 0) CAMERA.fov = cameraFovOverride;
+if (params.get('ssao') === '1') {
+  // Preview contact shading for the same-camera comparison. This is a
+  // screen-space approximation, not a reconstruction of the original AO/lightmaps.
+  const ssao = new SSAO2RenderingPipeline('preview-ssao', viewer.scene, { ssaoRatio: 0.75, blurRatio: 1 }, [viewer.camera]);
+  ssao.totalStrength = 1.35;
+  ssao.radius = 0.55;
+  ssao.samples = 16;
+  ssao.expensiveBlur = false;
+}
 const absoluteCamera = (params.get('cam') ?? '').split(',').map(Number);
 const absoluteYaw = Number(params.get('camyaw'));
 const absolutePitch = Number(params.get('campitch'));

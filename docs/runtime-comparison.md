@@ -26,6 +26,8 @@ rot          = (-10, 90, 0)
 
 边框随状态的绿/红着色、任务图标和原版缩放材质尚未恢复，所以 HUD 仍未等价。
 
+`?ssao=1` 可打开仅检查用 SSAO2 接触阴影预览，用于比较柱脚/门洞暗部；它是屏幕空间近似，不是原版 AO/lightmap 重建，也不是默认效果。
+
 ![原程序与 Web 对照](../research/runtime-observation/comparison-character-camera.jpg)
 
 ## 来源
