@@ -13,7 +13,7 @@ Status (2026-10-25): gate 1 complete via `WBP_TitleSinboard_C:GameStartEvent()` 
 
 ## Durable handoff (2026-10-25, before power-off)
 
-The complete remaining-work checklist is [docs/todo-restoration.md](docs/todo-restoration.md). Read that first; this section preserves the facts that are expensive to rediscover.
+The complete remaining-work checklist is [docs/todo-restoration.md](docs/todo-restoration.md). Read that first; this section preserves the facts that are expensive to rediscover. Latest automated validation at `86070da`: [validation-summary.json](research/world-recovery/validation-summary.json).
 
 ### Verified original-game runtime
 
