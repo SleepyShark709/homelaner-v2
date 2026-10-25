@@ -1,0 +1,105 @@
+{
+  "source": "DT_MinimapIcon NameMap; UModel Texture2D export",
+  "originalTable": "/Game/-WorkSpace/Hyodo/DataTable/DT_MinimapIcon",
+  "icons": [
+    {
+      "name": "quest_fire",
+      "sourcePackage": "/Game/-HeroGame/Res/UI/quest_fire",
+      "localPath": "public/assets/world/minimap/quest_fire.png",
+      "bytes": 32026,
+      "sha256": "1a924edf6af69d8a75aa01ae68a89cbb4f1c4ecf776b6e3e5fbe5b8d3e45e2b5"
+    },
+    {
+      "name": "quest_accident",
+      "sourcePackage": "/Game/-HeroGame/Res/UI/quest_accident",
+      "localPath": "public/assets/world/minimap/quest_accident.png",
+      "bytes": 34662,
+      "sha256": "f1f093ba8c61debc5abcea671479ec5d405c1e50119833b883681b683274e5b3"
+    },
+    {
+      "name": "quest_terrorist",
+      "sourcePackage": "/Game/-HeroGame/Res/UI/quest_terrorist",
+      "localPath": "public/assets/world/minimap/quest_terrorist.png",
+      "bytes": 34454,
+      "sha256": "a42ac402aac981b90d38b9d13dbd2daf3dbb74a37675c538813681c6df54d1a2"
+    },
+    {
+      "name": "destruction32",
+      "sourcePackage": "/Game/-HeroGame/Res/UI/destruction32",
+      "localPath": "public/assets/world/minimap/destruction32.png",
+      "bytes": 1638,
+      "sha256": "075a198b6a8be961404355e660716224b45d90a169aa171027c1af412f9f3b6a"
+    },
+    {
+      "name": "flight32",
+      "sourcePackage": "/Game/-HeroGame/Res/UI/flight32",
+      "localPath": "public/assets/world/minimap/flight32.png",
+      "bytes": 1853,
+      "sha256": "e7e5416ef544bc5b39041f765d3d174b1a1d96476803e30c49de7e8e7e5866bd"
+    },
+    {
+      "name": "T_BossIcon",
+      "sourcePackage": "/Game/-HeroGame/Res/UI/T_BossIcon",
+      "localPath": "public/assets/world/minimap/T_BossIcon.png",
+      "bytes": 8271,
+      "sha256": "290b9c31c100dd6ecbe5e324b6195aea04493afa7825fb93ea41b4c2536a48b0"
+    },
+    {
+      "name": "T_BossIcon_Fire",
+      "sourcePackage": "/Game/-HeroGame/Res/UI/T_BossIcon_Fire",
+      "localPath": "public/assets/world/minimap/T_BossIcon_Fire.png",
+      "bytes": 281126,
+      "sha256": "bb4df10f6125a38211ced85378138098d674b3b6ea0945407065c4af807c6574"
+    },
+    {
+      "name": "T_BossIcon_Lightning",
+      "sourcePackage": "/Game/-HeroGame/Res/UI/T_BossIcon_Lightning",
+      "localPath": "public/assets/world/minimap/T_BossIcon_Lightning.png",
+      "bytes": 294563,
+      "sha256": "58ed719e33e8e476a04f372dd51f0e029e910b0c3d89f98ec05f5d6cb34c9f33"
+    },
+    {
+      "name": "T_BossIcon_Wind",
+      "sourcePackage": "/Game/-HeroGame/Res/UI/T_BossIcon_Wind",
+      "localPath": "public/assets/world/minimap/T_BossIcon_Wind.png",
+      "bytes": 226000,
+      "sha256": "f40bd79f1df49a7a80ba19a7dd0b013bd0030532fd2343af09587559f4954743"
+    },
+    {
+      "name": "T_CityDamage",
+      "sourcePackage": "/Game/-HeroGame/Res/UI/T_CityDamage",
+      "localPath": "public/assets/world/minimap/T_CityDamage.png",
+      "bytes": 10999,
+      "sha256": "9825a38b476103833f72283fc6d7f46aaab761167ab89c4b07cdfe155a32cb6e"
+    },
+    {
+      "name": "T_EnemyIcon",
+      "sourcePackage": "/Game/-HeroGame/Res/UI/T_EnemyIcon",
+      "localPath": "public/assets/world/minimap/T_EnemyIcon.png",
+      "bytes": 2613,
+      "sha256": "b4546ebb4a5b859451c71911b772c17190424192b972e428f431d17b64a888f9"
+    },
+    {
+      "name": "T_FlightRing_G",
+      "sourcePackage": "/Game/-HeroGame/Res/UI/T_FlightRing_G",
+      "localPath": "public/assets/world/minimap/T_FlightRing_G.png",
+      "bytes": 1813,
+      "sha256": "1cfc0cae32cea5195362e9e3d6734f137715aef5eecd7053a013a0e942e4b307"
+    },
+    {
+      "name": "T_FlightRing_N",
+      "sourcePackage": "/Game/-HeroGame/Res/UI/T_FlightRing_N",
+      "localPath": "public/assets/world/minimap/T_FlightRing_N.png",
+      "bytes": 2020,
+      "sha256": "87f0aba57ab6b278553af86ba9b84b6bd826ecad581469d975e0519a579981a2"
+    },
+    {
+      "name": "T_StoryPointIcon",
+      "sourcePackage": "/Game/-HeroGame/Res/UI/T_StoryPointIcon",
+      "localPath": "public/assets/world/minimap/T_StoryPointIcon.png",
+      "bytes": 55809,
+      "sha256": "a39ce79262859271b4e925406a37cacb050db3e03c121d72987b116a50506016"
+    }
+  ],
+  "note": "14 icon textures recovered; HUD currently uses quest_fire/quest_accident only. Active-quest icon state/colour filtering is not recovered."
+}

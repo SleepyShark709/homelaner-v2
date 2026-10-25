@@ -99,9 +99,14 @@ const drawMinimap = (position: number[], yaw: number) => {
   if (!context) return;
   context.clearRect(0, 0, MINIMAP_PIXELS, MINIMAP_PIXELS);
   context.drawImage(minimapImage, MINIMAP_SOURCE_ORIGIN, MINIMAP_SOURCE_ORIGIN, MINIMAP_SOURCE_SIZE, MINIMAP_SOURCE_SIZE, 0, 0, MINIMAP_PIXELS, MINIMAP_PIXELS);
-  const nearbyQuests = [...questAreas]
-    .sort((a, b) => Math.hypot(a.position[0] - position[0], a.position[2] - position[2]) - Math.hypot(b.position[0] - position[0], b.position[2] - position[2]))
-    .slice(0, 8);
+  // Default keeps the nearest-8 preview used for the same-camera HUD. ?minimap=all
+  // shows all 21 recovered quest triggers for inspection; neither reproduces the
+  // original active-quest icon state machine/colour filtering yet.
+  const nearbyQuests = params.get('minimap') === 'all'
+    ? questAreas
+    : [...questAreas]
+      .sort((a, b) => Math.hypot(a.position[0] - position[0], a.position[2] - position[2]) - Math.hypot(b.position[0] - position[0], b.position[2] - position[2]))
+      .slice(0, 8);
   for (const area of nearbyQuests) {
     const qx = ((area.position[0] - MINIMAP_WORLD_MIN) / MINIMAP_WORLD_SPAN) * MINIMAP_PIXELS;
     const qy = ((MINIMAP_WORLD_MIN + MINIMAP_WORLD_SPAN - area.position[2]) / MINIMAP_WORLD_SPAN) * MINIMAP_PIXELS;
