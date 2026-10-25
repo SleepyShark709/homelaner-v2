@@ -45,10 +45,13 @@ Tint Colour     (0.06, 0.021616, 0.001713)
 ## 当前 Web 状态
 
 - 纹理已经加载；
-- 但父材质 shader graph（Contrast、Emissive mask、Tint 叠加）没有恢复；
-- `building_02_Inst` 仍是白色 albedo，石材偏中性灰；
+- `building_02_d` 的 alpha 是**窗格遮罩**（alpha 0/255 二进制；白色区域对应深色玻璃窗），而该 material 的子网格本身已经只覆盖窗格；
+- 因此对 `building_02_Inst` 单独加了 `clouds.png` emissive 层，颜色使用恢复的 Emissive Colour `(0.07746, 0.095, 0.061736)`，tiling 0.2；
+- `building_02_Inst` 的 Contrast/EmissiveAmount 仍没有完整 shader math；
 - `brick_02_TintB_Inst2` 仍是白色 albedo，砖材偏灰；
-- **没有把 Emissive Colour 直接加到整面墙**，因为 emissive mask 未恢复，整面加会错误发绿光。
+- **没有把 Emissive Colour 直接加到整面墙**，避免未遮罩区域错误发绿光。
+
+同机位试验截图：`research/screenshots/building-emissive.jpg`；页面纹理失败 0，B1 通过。全画面 mean luma 58.1 / std 31.1（之前约 57.8 / 31.0，变化很小）。
 
 清单：[building-material-parameters.json](building-material-parameters.json)
 

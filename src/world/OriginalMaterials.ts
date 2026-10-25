@@ -93,6 +93,19 @@ export class OriginalMaterials {
       material.emissiveTexture = clouds;
       material.emissiveColor = new Color3(0.08, 0.11, 0.17);
     }
+    if (source === '/Game/UrbanCity/Materials/Buildings/building_02_Inst') {
+      // building_mat imports building_02_* plus /Game/UrbanCity/Textures/Tileable/clouds;
+      // its EmissiveColor is a LinearInterpolate with Contrast .43796 / EmissiveAmount 1.74378.
+      // building_02_d's alpha is the window mask, and the submesh is already limited to
+      // those window panes, so apply the recovered cloud layer on the pane material only.
+      const clouds = new Texture('/assets/world/textures/Game/UrbanCity/Textures/Tileable/clouds.png', this.scene);
+      clouds.uScale = 0.2;
+      clouds.vScale = 0.2;
+      clouds.gammaSpace = false;
+      material.emissiveTexture = clouds;
+      material.emissiveColor = new Color3(0.07746099680662155, 0.0949999988079071, 0.06173599883913994);
+      material.roughness = 0.4379599988460541;
+    }
     const channels = record.channels ?? {};
     if (channels.baseColor && !allSurfaceShader && !concreteShader) {
       material.albedoTexture = this.texture(channels.baseColor);

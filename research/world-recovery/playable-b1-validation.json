@@ -13,13 +13,29 @@
       "textureFailures": 0,
       "unresolvedMaterialCacheKeys": 0,
       "ambiguousSlots": 0,
-      "fps": 0,
+      "fps": 147.56517462095354,
       "activeMeshes": 0,
       "warning": "",
       "scope": "",
       "streaming": null,
       "streamingTrace": null,
-      "player": null,
+      "player": {
+        "position": [
+          -50.000015896295054,
+          0.47000000000000003,
+          -548.6291926118167
+        ],
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "flying": false,
+        "grounded": true,
+        "state": "idle",
+        "speed": 0,
+        "charge": 0
+      },
       "probe": {
         "start": {
           "stats": {
@@ -45,9 +61,9 @@
         "walking": {
           "stats": {
             "position": [
-              -55.44086487480937,
+              -55.49463974776969,
               0.47000000000000003,
-              -565.4695099413454
+              -565.4715096163079
             ],
             "velocity": [
               -3.226492377619051,
@@ -66,9 +82,9 @@
         "jump": {
           "stats": {
             "position": [
-              -55.68163873145223,
+              -55.73541360441255,
               4.281874999999996,
-              -567.4129521901115
+              -567.4149518650739
             ],
             "velocity": [
               0,
@@ -87,9 +103,9 @@
         "flying": {
           "stats": {
             "position": [
-              -55.68163873145223,
+              -55.73541360441255,
               4.281874999999996,
-              -567.5092090378049
+              -567.5112087127674
             ],
             "velocity": [
               0,
@@ -108,19 +124,19 @@
         "ascended": {
           "stats": {
             "position": [
-              -55.68163873145223,
-              14.436541666666692,
-              -567.5092090378049
+              -55.73541360441255,
+              14.678319444444472,
+              -567.5112087127674
             ],
             "velocity": [
               0,
-              28.672000000000047,
+              29.01333333333338,
               0
             ],
             "flying": true,
             "grounded": false,
             "state": "hover",
-            "speed": 28.672000000000047,
+            "speed": 29.01333333333338,
             "charge": 0
           },
           "clip": "Hero_FlyUp",
@@ -129,9 +145,9 @@
         "descended": {
           "stats": {
             "position": [
-              -55.68163873145223,
+              -55.73541360441255,
               0.47000000000000003,
-              -567.5092090378049
+              -567.5112087127674
             ],
             "velocity": [
               0,
@@ -150,9 +166,9 @@
         "exited": {
           "stats": {
             "position": [
-              -55.68163873145223,
+              -55.73541360441255,
               0.47000000000000003,
-              -567.5092090378049
+              -567.5112087127674
             ],
             "velocity": [
               0,
@@ -190,10 +206,10 @@
           "active": true
         },
         "evidence": {
-          "walkDistance": 16.840317329528716,
+          "walkDistance": 16.84231700449118,
           "jumpHeight": 3.8118749999999957,
-          "ascendDelta": 10.154666666666696,
-          "descendDelta": -13.966541666666691,
+          "ascendDelta": 10.396444444444477,
+          "descendDelta": -14.208319444444472,
           "sprintSpeed": 30
         }
       },
@@ -205,7 +221,7 @@
       },
       "browser": "Chrome/156.0.8078.48",
       "url": "http://127.0.0.1:4178/?view=play&debug=1",
-      "durationMs": 27422,
+      "durationMs": 29491,
       "screenshot": "research/screenshots/play-b1.jpg"
     }
   ],
