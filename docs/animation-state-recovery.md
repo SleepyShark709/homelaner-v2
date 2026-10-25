@@ -193,6 +193,17 @@ vertical <  -3 m/s -> Hero_JumpFallFast
 
 普通起跳的 ALS 起跳片段会覆盖到下落初期，因此通常直接进入 Fast；从边缘走落等低速下落会先用 `Hero_JumpFall`。
 
+### Root motion 审计
+
+`scripts/audit-root-motion.mjs` 检查全部 46 段动画的 root joint translation：
+
+```text
+animationCount   46
+movingRootClips  []
+```
+
+所有转换后的 clip 都是 **in-place**（root 平移为 0），角色位移由外部 PlayerMotor 驱动；这些 clip 没有可提取的 root motion。原 AnimBP 的 root-motion/notify 逻辑仍未恢复，但当前素材本身不含 root 位移。
+
 空中首次攻击（近战 J 或远程 K）现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→J/K 均返回 `clip=Hero_AirAttackStart`；连续两次 K 的结果记录在 `research/world-recovery/air-attack-chain.json`。
 
 

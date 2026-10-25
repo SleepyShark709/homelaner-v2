@@ -1,0 +1,699 @@
+{
+  "source": "public/assets/character/hero.gltf",
+  "rootJoint": "root",
+  "animationCount": 46,
+  "movingRootClips": [],
+  "conclusion": "All converted clips have zero root-joint translation. Movement is driven by the external player motor; there is no clip root motion to extract for these animations.",
+  "clips": [
+    {
+      "name": "Hero_Idle",
+      "rootTranslationChannel": true,
+      "frames": 151,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_IdleFlying",
+      "rootTranslationChannel": true,
+      "frames": 151,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyFastSprint",
+      "rootTranslationChannel": true,
+      "frames": 22,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "A_ThirdPersonRun",
+      "rootTranslationChannel": true,
+      "frames": 18,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_Attack1",
+      "rootTranslationChannel": true,
+      "frames": 112,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_Attack2",
+      "rootTranslationChannel": true,
+      "frames": 112,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_Attack3",
+      "rootTranslationChannel": true,
+      "frames": 112,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_Attack4",
+      "rootTranslationChannel": true,
+      "frames": 112,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_LongFistForce_L",
+      "rootTranslationChannel": true,
+      "frames": 122,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_LongFistForce_R",
+      "rootTranslationChannel": true,
+      "frames": 122,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_BackHandSlash_New",
+      "rootTranslationChannel": true,
+      "frames": 122,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlashKick",
+      "rootTranslationChannel": true,
+      "frames": 72,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_Smash_A",
+      "rootTranslationChannel": true,
+      "frames": 82,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_SuperPunch",
+      "rootTranslationChannel": true,
+      "frames": 122,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_AirKick_L",
+      "rootTranslationChannel": true,
+      "frames": 72,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_AirKick_R",
+      "rootTranslationChannel": true,
+      "frames": 72,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_AirSuperKick",
+      "rootTranslationChannel": true,
+      "frames": 122,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_AirAttackStart",
+      "rootTranslationChannel": true,
+      "frames": 42,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_Walk",
+      "rootTranslationChannel": true,
+      "frames": 31,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_SprintRun",
+      "rootTranslationChannel": true,
+      "frames": 36,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_SprintSuper",
+      "rootTranslationChannel": true,
+      "frames": 37,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_JumpSpeed",
+      "rootTranslationChannel": true,
+      "frames": 21,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_JumpLand",
+      "rootTranslationChannel": true,
+      "frames": 13,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_JumpFall",
+      "rootTranslationChannel": true,
+      "frames": 91,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_JumpFallFast",
+      "rootTranslationChannel": true,
+      "frames": 91,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_StartSprint",
+      "rootTranslationChannel": true,
+      "frames": 61,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_Stopping_Sprint",
+      "rootTranslationChannel": true,
+      "frames": 76,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_Stopping_WalkRun",
+      "rootTranslationChannel": true,
+      "frames": 31,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyForward",
+      "rootTranslationChannel": true,
+      "frames": 22,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyForwardLow",
+      "rootTranslationChannel": true,
+      "frames": 22,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyFastForward1",
+      "rootTranslationChannel": true,
+      "frames": 22,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyDown",
+      "rootTranslationChannel": true,
+      "frames": 22,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyFastDown",
+      "rootTranslationChannel": true,
+      "frames": 22,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyUp",
+      "rootTranslationChannel": true,
+      "frames": 22,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ALS_N_Walk_B",
+      "rootTranslationChannel": true,
+      "frames": 31,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ALS_N_Walk_FL",
+      "rootTranslationChannel": true,
+      "frames": 31,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ALS_N_Walk_FR",
+      "rootTranslationChannel": true,
+      "frames": 31,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ALS_N_Run_B",
+      "rootTranslationChannel": true,
+      "frames": 19,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ALS_N_Run_FL",
+      "rootTranslationChannel": true,
+      "frames": 23,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ALS_N_Run_FR",
+      "rootTranslationChannel": true,
+      "frames": 23,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyBack",
+      "rootTranslationChannel": true,
+      "frames": 22,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyLeft",
+      "rootTranslationChannel": true,
+      "frames": 22,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyRight",
+      "rootTranslationChannel": true,
+      "frames": 22,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyTame",
+      "rootTranslationChannel": true,
+      "frames": 22,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Hero_FlyTameFront",
+      "rootTranslationChannel": true,
+      "frames": 22,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ALS_N_Jump",
+      "rootTranslationChannel": true,
+      "frames": 21,
+      "range": [
+        0,
+        0,
+        0
+      ],
+      "net": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

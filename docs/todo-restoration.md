@@ -138,8 +138,10 @@ HeroABS_JumpFallLoop
 - [ ] 恢复 `HeroABS_MoveGround` 的实际 BlendSpace 轴、过渡条件、混合时间和飞行混合空间，替换当前直接片段计时。
 - [ ] 实现 montage 攻击的 section/通知/连招/取消窗口；现有攻击时间轴仅是部分恢复。
 - [ ] 恢复 AnimNotify：命中、移动、脚步声、飞行尘土、攻击碰撞、结束；当前只覆盖部分。
-- [ ] Root motion / 惯性 / 转向 / 空中控制与原始一致。
-- [x] 数据级校验：`npm run verify:locomotion` 检查 34 段动画的四元数范数、NaN、关节覆盖；报告 `research/world-recovery/locomotion-frame-validation.json`（<5e-8，无 NaN；部分 PSA config 删除配饰轨道故为 68 关节）。
+- [x] 46 段转换 clip 的 root joint translation 全部为 0（`scripts/audit-root-motion.mjs`，`research/world-recovery/root-motion-audit.json`），素材是 in-place；位移由 PlayerMotor 驱动。
+- [ ] AnimBP 的 root-motion/notify 逻辑仍未恢复；当前素材没有可提取的 root motion。
+- [ ] 惯性 / 转向 / 空中控制与原始一致。
+- [x] 数据级校验：`npm run verify:locomotion` 检查 46 段动画的四元数范数、NaN、关节覆盖；报告 `research/world-recovery/locomotion-frame-validation.json`（<5e-8，无 NaN；部分 PSA config 删除配饰轨道故为 68 关节）。
 - [ ] 验证方法：在真实 gameplay 同一帧读原程序骨骼/动画状态，与 Web 同帧骨骼比较；不能只看截图。
 - [ ] 验收标准：逐帧（至少逐关键帧）骨骼旋转/位移在容差内，无穿插/畸形，状态转移与原始一致。
 
