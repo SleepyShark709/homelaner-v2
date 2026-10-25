@@ -106,3 +106,24 @@ rot          = (-10, 90, 0)
 4. 原版起点广场位置尚未在 Web 场景中定位，不能把 ResidentialArea1 街道当同机位。
 
 下一步优先处理背景山体/雾和相机 lag，再继续寻找原版起点广场/同机位；这些改动不会冒充完整原版渲染等价。
+
+
+## Latest 49-clip same-camera capture (2026-10-25)
+
+The current build was re-captured with the exact Gate 2 pose:
+
+```text
+player (-3.12, 74.739)
+camera (-3.62, 3.2715, 70.739)
+yaw 0, camera yaw 0, pitch -0.1745, FOV 90
+```
+
+Measured Rec.709 luma after cropping the original title bar:
+
+```text
+ORIGINAL, crop (0,30,1312,780): mean 55.73 / std 31.34
+WEB current 1280x720:          mean 54.23 / std 32.01
+delta: -1.50 mean
+```
+
+Evidence: [comparison-latest.jpg](../research/runtime-observation/comparison-latest.jpg), report [same-camera-latest.json](../research/world-recovery/same-camera-latest.json). The pose/FOV still matches; local material/lighting differences remain, so this is **not pixel equivalence and not a completed Gate 3**.
