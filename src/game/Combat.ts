@@ -27,6 +27,7 @@ export class Combat {
   private queued: { kind: 'melee' | 'ranged'; strong: boolean } | null = null;
   private combo = 0;
   private rangedCombo = 0;
+  private airAttackStarted = false;
   private idleTime = 0;
   private heatTick = 0;
   private readonly projectiles: Projectile[] = [];
@@ -53,7 +54,16 @@ export class Combat {
     let name: string;
     if (kind === 'melee') { name = `Hero_Attack${this.combo % 4 + 1}`; this.combo++; }
     else if (this.strong) name = this.motor.flying || !this.motor.grounded ? 'Hero_AirSuperKick' : 'Hero_SuperPunch';
-    else if (this.motor.flying || !this.motor.grounded) name = ['Hero_AirKick_L', 'Hero_AirKick_R'][this.rangedCombo++ % 2];
+    else if (this.motor.flying || !this.motor.grounded) {
+      if (!this.airAttackStarted) {
+        // HeroAnimBP has a distinct Jump/Falling AirAttack state; its entry
+        // montage is Hero_AirAttackStart with a StartAirAttack notify.
+        this.airAttackStarted = true;
+        name = 'Hero_AirAttackStart';
+      } else {
+        name = ['Hero_AirKick_L', 'Hero_AirKick_R'][this.rangedCombo++ % 2];
+      }
+    }
     else if (Math.hypot(this.motor.velocity[0], this.motor.velocity[2]) > 0.5) name = ['Hero_BackHandSlash_New', 'Hero_FlashKick', 'Hero_Smash_A'][this.rangedCombo++ % 3];
     else name = ['Hero_LongFistForce_L', 'Hero_LongFistForce_R'][this.rangedCombo++ % 2];
     const timing = this.clips.find(clip => clip.name === name);
@@ -63,6 +73,7 @@ export class Combat {
     this.character.playAction(name, timing.playbackRate);
   }
   update(dt: number): void {
+    if (this.motor.grounded && !this.motor.flying) this.airAttackStarted = false;
     const melee = this.input.pressed('AttackMelee') || this.input.pressed('KeyJ');
     const ranged = this.input.pressed('AttackRanged') || this.input.pressed('KeyK');
     const strong = this.input.pressed('AttackStrong') || this.input.held('ShiftLeft', 'ShiftRight');

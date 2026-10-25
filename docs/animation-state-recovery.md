@@ -122,6 +122,9 @@ Flying State:
 
 ## 动画数据校验
 
+空中首次远程攻击现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→K 验证返回 `clip=Hero_AirAttackStart`。
+
+
 `HeroABS_MoveGround` 的样本速度轴以 850 cm/s（8.5 m/s）为 run 基准；Web 的 `Hero_SprintRun` 播放速率改为 `planarSpeed / 8.5`（0.7..2.2），`Hero_Walk` 改为 `planarSpeed / 3`（0.6..1.5），不再使用固定的 6/1.5 基准。10 m/s 普通跑步截图 `research/screenshots/play-run-ratio.jpg` 无畸形。
 
 `Hero_SprintSuper` 在 30 m/s 的 Shift 冲刺下已实际渲染检查（`research/screenshots/play-sprint-super.jpg`）：角色呈直立/步行姿态，没有原版冲刺应有的前倾和摆腿。因此当前 Shift 冲刺继续使用 `Hero_SprintRun`，不把 `Hero_SprintSuper` 当作普通冲刺片段；仍保留该导入片段供后续 BlendSpace 验证。

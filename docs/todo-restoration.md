@@ -122,6 +122,7 @@ HeroABS_JumpFallLoop
 - [x] jump 的起跳/下落/落地顺序已接入：`Hero_JumpSpeed`（上升期保持末帧）→ `Hero_JumpFallFast` → `Hero_JumpLand`。
 - [ ] jump 状态仍未按 `HeroABS_JumpFallLoop` 的 Speed/SpeedZ 轴选择与混合；当前是固定片段，不是 BlendSpace 采样。
 - [x] 已接入基础直接状态链：普通移动直接 `SprintRun`；Shift 冲刺 `StartSprint→SprintRun`；在普通跑步中新按 Shift 也会重新进入 `StartSprint`；停止按是否来自冲刺选 `Stopping_Sprint`/`Stopping_WalkRun`；`JumpSpeed→JumpFallFast→JumpLand`（用 `AnimationGroup.getLength()` 计时）。
+- [x] 空中首次远程攻击进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`；落地复位（真实 Space→Space→K 验证：clip=Hero_AirAttackStart）。
 - [ ] 用 AnimBP 的真实 transition/blend 时间替换直接计时，并验证起跳/落地和冲刺起停边界。
 
 
