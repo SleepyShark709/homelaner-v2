@@ -37,6 +37,12 @@ interface RetargetFile { fps: number; clips: Record<string, RetargetClip> }
 const normalizeBone = (name: string) => name.replace(/[^a-z0-9]/gi, '').toLowerCase();
 
 export interface MotionSource { position: Vec3; velocity: Vec3; heading: number; state: MotionState; sprint?: boolean }
+interface Crossfade {
+  elapsed: number;
+  duration: number;
+  from: Map<AnimationGroup, number>;
+  to: Map<AnimationGroup, number>;
+}
 export class Character {
   readonly root: TransformNode;
   private container!: AssetContainer;
@@ -45,7 +51,8 @@ export class Character {
   private clip = '';
   private yaw = Math.PI;
   private action = '';
-  private transition: { name: string; remaining: number; next: string; holdUntilFall?: boolean } | null = null;
+  private transition: { name: string; remaining: number; next: string; holdUntilFall?: boolean; nextFade?: number } | null = null;
+  private fade: Crossfade | null = null;
   private wasGrounded = true;
   private wasSprinting = false;
   private footstepLast = new Map<string, number>();
@@ -53,7 +60,10 @@ export class Character {
   constructor(readonly scene: Scene) {
     this.root = new TransformNode('player-visual', scene);
     this.root.scaling.setAll(1.05);
-    this.scene.onBeforeRenderObservable.add(() => this.emitFootsteps());
+    this.scene.onBeforeRenderObservable.add(() => {
+      this.tickCrossfade(Math.min(this.scene.getEngine().getDeltaTime() / 1000, 0.05));
+      this.emitFootsteps();
+    });
   }
 
   async load(shadows?: ShadowGenerator, skin: 'original' | 'homelander' = 'original'): Promise<void> {
@@ -156,6 +166,7 @@ export class Character {
   }
 
   private setFlyBlend(vertical: number, planar: number, velocityX: number, velocityZ: number): void {
+    if (this.fade) return;
     // HeroABS_FlyingUpDonwAnim samples: FlyUp +6000, FlyDown -6000,
     // FlyFastDown -3333/-1333, FlyForward at Speed 6000.
     if (vertical > 1.5) { this.setLoop('Hero_FlyUp'); return; }
@@ -207,15 +218,55 @@ export class Character {
     this.clip = dominant;
   }
 
-  private setLoop(name: string): void {
+  private beginCrossfade(to: Map<AnimationGroup, number>, duration: number): void {
+    const from = new Map<AnimationGroup, number>();
+    for (const group of this.animations) {
+      if (group.isPlaying && group.weight > 0.001) from.set(group, group.weight);
+    }
+    for (const group of to.keys()) {
+      if (!group.isPlaying) group.start(true);
+      group.weight = 0;
+      group.setWeightForAllAnimatables(0);
+    }
+    this.fade = { elapsed: 0, duration: Math.max(0.01, duration), from, to };
+  }
+
+  private tickCrossfade(dt: number): void {
+    const fade = this.fade;
+    if (!fade) return;
+    fade.elapsed += dt;
+    const t = Math.min(1, fade.elapsed / fade.duration);
+    const eased = t * t * (3 - 2 * t);
+    const groups = new Set<AnimationGroup>([...fade.from.keys(), ...fade.to.keys()]);
+    for (const group of groups) {
+      const from = fade.from.get(group) ?? 0;
+      const to = fade.to.get(group) ?? 0;
+      const weight = from + (to - from) * eased;
+      if (!group.isPlaying && weight > 0.001) group.start(true);
+      group.weight = weight;
+      group.setWeightForAllAnimatables(weight);
+    }
+    if (t >= 1) {
+      for (const group of this.animations) {
+        if (!fade.to.has(group)) group.stop();
+      }
+      for (const [group, weight] of fade.to) {
+        group.weight = weight;
+        group.setWeightForAllAnimatables(weight);
+      }
+      this.fade = null;
+    }
+  }
+
+  private setLoop(name: string, fadeSeconds = 0.2): void {
     const group = this.groupFor(name);
     if (!group) return;
-    this.animations.forEach(item => item.stop());
-    this.container.skeletons.forEach(skeleton => skeleton.returnToRest());
+    if (this.clip === name && group.isPlaying && !this.fade) { this.transition = null; return; }
+    group.start(true);
+    this.beginCrossfade(new Map([[group, 1]]), fadeSeconds);
     this.transition = null;
     this.action = '';
     this.clip = name;
-    group.start(true);
   }
 
   /**
@@ -224,6 +275,7 @@ export class Character {
    * axis values, sample positions and AnimBP transition rules are still open.
    */
   private setGroundBlend(speed: number, velocityX: number, velocityZ: number): void {
+    if (this.fade) return;
     const names = {
       idle: 'Hero_Idle',
       walkF: 'Hero_Walk', walkFL: 'ALS_N_Walk_FL', walkFR: 'ALS_N_Walk_FR', walkB: 'ALS_N_Walk_B',
@@ -288,15 +340,14 @@ export class Character {
     this.clip = dominant;
   }
 
-  private setOneShot(name: string, next: string): void {
+  private setOneShot(name: string, next: string, entryFade = 0.2, nextFade = 0.2): void {
     const group = this.groupFor(name);
     if (!group) { this.setLoop(next); return; }
-    this.animations.forEach(item => item.stop());
-    this.container.skeletons.forEach(skeleton => skeleton.returnToRest());
+    group.start(false);
+    this.beginCrossfade(new Map([[group, 1]]), entryFade);
     this.action = '';
     this.clip = name;
-    group.start(false);
-    this.transition = { name, remaining: Math.max(0.05, group.getLength()), next };
+    this.transition = { name, remaining: Math.max(0.05, group.getLength()), next, nextFade };
   }
 
   update(motor: MotionSource, dt: number): void {
@@ -338,14 +389,15 @@ export class Character {
         }
       }
       const next = this.transition.next;
+      const nextFade = this.transition.nextFade ?? 0.2;
       this.transition = null;
-      this.setLoop(next);
+      this.setLoop(next, nextFade);
       return;
     }
     if (tookOff && motor.state === 'jump') {
       // Walk/standing takeoff uses the ALS jump sample; running takeoff keeps
       // the game-specific Hero_JumpSpeed sample.
-      this.setOneShot(planarSpeed < 4 ? 'ALS_N_Jump' : 'Hero_JumpSpeed', 'Hero_JumpFallFast');
+      this.setOneShot(planarSpeed < 4 ? 'ALS_N_Jump' : 'Hero_JumpSpeed', 'Hero_JumpFallFast', 0.2, 0.55);
       const created = this.transition as { holdUntilFall?: boolean } | null;
       if (created) created.holdUntilFall = true;
       return;
