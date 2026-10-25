@@ -116,7 +116,7 @@ try {
   // The world uses thin-instanced meshes for merged props. In this Babylon
   // path the thin-instance buffer does not draw, so materialize the instances
   // that matter for the playable slice as regular meshes with decomposed TRS.
-  const materializeThin = (matches: (name: string) => boolean) => {
+  const materializeThin = (matches: (name: string) => boolean, center?: [number, number], radius = Infinity) => {
     for (const candidate of [...viewer.scene.meshes]) {
       if (!matches(candidate.name)) continue;
       const source = candidate as Mesh;
@@ -131,6 +131,7 @@ try {
         if (!clone) continue;
         const scale = new Vector3(), rotation = new Quaternion(), position = new Vector3();
         Matrix.FromArray(matrix).decompose(scale, rotation, position);
+        if (center && Math.hypot(position.x - center[0], position.z - center[1]) > radius) continue;
         clone.thinInstanceCount = 0;
         clone.position.copyFrom(position);
         clone.scaling.copyFrom(scale);
@@ -257,6 +258,7 @@ try {
   } else if (plazaMode) {
     baseX = -20; baseZ = 0;
   }
+  materializeThin(name => /Tree|Palm/i.test(name), [baseX, baseZ], 120);
   const rotation = candidate?.rotation ?? [0, 0, 0, 1];
   input.yaw = legacy ? Math.PI : 2 * Math.atan2(rotation[1], rotation[3]);
   const yawParam = params.get('yaw');

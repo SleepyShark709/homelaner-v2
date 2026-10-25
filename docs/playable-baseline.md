@@ -9,7 +9,7 @@
 - 世界：`MainLevel + ResidentialArea1` 静态装配，3,782 个源对象组件、144 块地形；资源/纹理失败 0。
 - 角色：`/assets/character/hero.gltf`，原身体/头发/墨镜三套网格与骨架，18 段原动画；保留原骨架与比例。
 - 地面：144 块原 Landscape 高度场逐点采样（`TerrainHeightfield`），不是旧的单平面地面。
-- 可走楼板：`tools/asset-pipeline/export-walkable-surfaces.mjs` 从 `/Mesh/Floor/` 资产导出 29 个世界 AABB 顶面；玩家支撑高度取地形与楼板顶面的较高者，因此可以站上恢复出的砖/石广场地面。`SM_Floor12000x15000` 原本是 thin-instanced mesh，在 Babylon 路径中 thin 实例不绘制；运行时把每个实例矩阵的平移/缩放复制成普通 mesh clone，原生 `MI_FloorBrick1` 地面现在可见（`play-floor-fixed.jpg`、`play-plaza-nativefloor.jpg`）。同一材质化管线也应用到 `Bench` thin 实例，避免长椅被 thin buffer 吞掉。`?at=<x,z>&yaw=<rad>` 可把出生点/朝向放到指定地面点检查，例如 `?view=play&district=CommercialArea&at=100,234`（`play-plaza-floor2.jpg`）。
+- 可走楼板：`tools/asset-pipeline/export-walkable-surfaces.mjs` 从 `/Mesh/Floor/` 资产导出 29 个世界 AABB 顶面；玩家支撑高度取地形与楼板顶面的较高者，因此可以站上恢复出的砖/石广场地面。`SM_Floor12000x15000` 原本是 thin-instanced mesh，在 Babylon 路径中 thin 实例不绘制；运行时把每个实例矩阵的平移/缩放/旋转复制成普通 mesh clone，原生 `MI_FloorBrick1` 地面现在可见（`play-floor-fixed.jpg`、`play-plaza-nativefloor.jpg`）。同一材质化管线也应用到 `Bench` 和出生点 120 m 内的 `Tree/Palm` thin 实例。`?at=<x,z>&yaw=<rad>&exact=1` 可把出生点/朝向精确放到指定点做取景检查（绕过安全环搜索），例如 `?view=play&plaza=1&at=-30,-4&yaw=0&exact=1`（`play-plaza-trees2.jpg`）。
 - 碰撞：从恢复后的静态对象 TRS 与 asset bounds 生成 1,432 个 AABB 代理（2,171 个对象中跳过 731 个过小、8 个过大）；这是可玩性代理，不是原 cooked PhysX。相机偏移会对附近 AABB 做收缩，避免穿墙。所有存活预览 actor（含市民、车辆、报刊箱）的 `solidBoxes` 每帧加入玩家动态碰撞。
 - 相机：第三人称按原 `PlayerBP` `CameraBoom` 的 `TargetArmLength=400 cm`、`SocketOffset=(0,50,90) cm`、`RelativeLocation Z=70 cm` 校准，并按 HeroRank 0 的 `Camera.FieldOfView=92°` 水平视场换算（rank 表 92/94/96/98/100/100/100）；使用原 `CameraLagSpeed/RotationLagSpeed=15` 做相机位置/朝向平滑。攻击时目标臂长按 HeroComponent AST 的 650 cm 插值（`CameraInterpSpeed=2`）；`CharacterSpeed > 6000 cm/s` 时切到 FarArmLength=800 cm、FarCameraInterpSpeed=1；相机还钳制在地形上方 0.3 m。HeroComponent 的其它 HPS Far/Zoom 状态、弹簧回弹和碰撞后处理仍是近似。
 - 输入：Space 地面跳跃 / 空中开飞 / 飞行退飞；E/Q 升降；地面按住 E 约 1 秒自动开飞；Shift 冲刺；Alt 慢行；F 预留互动；R 为调试回出生点。按 P07，Shift 只有与移动输入同时存在才进入冲刺；松开 Shift/停止移动即解除，Alt 慢行取消冲刺。按 P08，冲刺速度跌到 850 cm/s（步行）/2000 cm/s（飞行）以下会重置，且保持 Shift 不会立即重新触发。加速度使用原值：步行 2048 cm/s²、飞行 4096 cm/s²、冲刺 15000 cm/s²；楼板/台阶支撑使用 MaxStepHeight=75 cm。
@@ -147,6 +147,23 @@ node scripts/capture-world.mjs --query='view=play&mode=free' --ready=play --prob
 - 原生楼板已修复；overlay 只在显式 `floors=overlay` 时作为回退；
 - 长椅、相机位置和建筑朝向没有逐项匹配；
 - 仍是**候选**，不是同机位结论。
+
+### 原生地面/树木候选（exact=1）
+
+```text
+/?view=play&plaza=1&at=-30,-4&yaw=0&exact=1
+```
+
+`exact=1` 跳过安全环搜索，仅用于取景检查。现在同一画面包含：
+
+- 原生 `MI_FloorBrick1` 大块石铺装；
+- 左/中景树木（Tree/Palm thin instances 已材质化）；
+- 左侧石栏杆与花箱；
+- 中央/右侧古典立面。
+
+![原始 vs Web：起点广场候选](../research/runtime-observation/comparison-start-plaza-native.jpg)
+
+仍不是同机位：原程序画面更开阔、长椅沿左栏杆排布、右侧有大幅广告牌，Web 相机/建筑朝向/植被密度与长椅位置不同。
 
 ## 起点广场候选（未证明）
 
