@@ -10,6 +10,22 @@ import type { MotionState } from './PlayerMotor';
 import type { Vec3 } from './collision';
 
 const CLIPS: Record<MotionState, string> = { idle: 'Hero_Idle', run: 'Hero_SprintRun', jump: 'Hero_JumpFallFast', hover: 'Hero_IdleFlying', fly: 'Hero_FlyForward' };
+// Absolute source-time notify events decoded from the AnimSequences.
+const FOOTSTEP_TIMES: Record<string, number[]> = {
+  Hero_Walk: [0.332, 0.826],
+  Hero_SprintRun: [0.264, 0.556],
+  Hero_SprintSuper: [0.263, 0.550],
+  Hero_Stopping_WalkRun: [0.463, 0.935],
+  Hero_Stopping_Sprint: [0.948, 1.207],
+  Hero_JumpLand: [0.067],
+  Hero_JumpSpeed: [0.107],
+  ALS_N_Walk_B: [0.036, 0.482],
+  ALS_N_Walk_FL: [0.036, 0.482],
+  ALS_N_Walk_FR: [0.036, 0.482],
+  ALS_N_Run_B: [0.123, 0.379],
+  ALS_N_Run_FL: [0.123, 0.379],
+  ALS_N_Run_FR: [0.123, 0.379],
+};
 interface RetargetClip {
   duration: number;
   times: number[];
@@ -32,7 +48,13 @@ export class Character {
   private transition: { name: string; remaining: number; next: string; holdUntilFall?: boolean } | null = null;
   private wasGrounded = true;
   private wasSprinting = false;
-  constructor(readonly scene: Scene) { this.root = new TransformNode('player-visual', scene); this.root.scaling.setAll(1.05); }
+  private footstepLast = new Map<string, number>();
+  onFootstep: ((clip: string) => void) | undefined;
+  constructor(readonly scene: Scene) {
+    this.root = new TransformNode('player-visual', scene);
+    this.root.scaling.setAll(1.05);
+    this.scene.onBeforeRenderObservable.add(() => this.emitFootsteps());
+  }
 
   async load(shadows?: ShadowGenerator, skin: 'original' | 'homelander' = 'original'): Promise<void> {
     const url = skin === 'homelander' ? '/assets/character/homelander.glb' : '/assets/character/hero.gltf';
@@ -392,6 +414,24 @@ export class Character {
     const x = position?.x ?? this.root.position.x, y = (position?.y ?? this.root.position.y + 1.55) + 0.10, z = position?.z ?? this.root.position.z;
     const sin = Math.sin(this.yaw), cos = Math.cos(this.yaw);
     return [-0.032, 0.032].map(side => [x + sin * 0.12 + cos * side, y, z + cos * 0.12 - sin * side] as Vec3);
+  }
+
+  private emitFootsteps(): void {
+    if (!this.onFootstep || !this.clip) return;
+    const times = FOOTSTEP_TIMES[this.clip];
+    if (!times) return;
+    const group = this.animations.find(item => item.name === this.clip);
+    const animation = group?.targetedAnimations[0]?.animation;
+    const animatable = group?.animatables[0];
+    if (!group?.isPlaying || !animation || !animatable || (group.weight ?? 1) < 0.2) return;
+    const fps = animation.framePerSecond || 30;
+    const time = animatable.masterFrame / fps;
+    let last = this.footstepLast.get(this.clip) ?? 0;
+    if (time + 0.05 < last) last = 0;
+    for (const notify of times) {
+      if (notify > last && notify <= time) this.onFootstep(this.clip);
+    }
+    this.footstepLast.set(this.clip, time);
   }
 
   dispose(): void { this.animations.forEach(group => group.dispose()); this.animations = []; this.container?.dispose(); this.root.dispose(); }

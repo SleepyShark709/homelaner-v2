@@ -242,6 +242,18 @@ Hero_IdleFlying       SpawnFlyDustEffect 2.393s
 
 `Hero_StartSprint` 没有 notify。完整报告：[notify-times.json](../research/world-recovery/notify-times.json)。攻击序列的 notify 时间本来就已经在 `combat-timings.json` 中，这一轮补齐的是 locomotion/fly 序列。
 
+### 原版脚步声音（2026-10-25）
+
+`Footstep01..09` 是 cooked `SoundWave`，音频以 Ogg 形式嵌在 `.uexp` 偏移 `0x87` 之后。`scripts/extract-footstep-sounds.py` 提取出 8 个 `.ogg`（pak 中没有 `Footstep05`），SHA/size 清单在 [footstep-sound-manifest.json](../research/world-recovery/footstep-sound-manifest.json)。
+
+`Character.onFootstep` 在主导 clip 的原始 notify 时间触发；`src/game/Footsteps.ts` 用 Web Audio 随机播放这些原版采样。已实测普通 W 前进 1.4 秒触发：
+
+```text
+Hero_Walk, Hero_SprintRun, Hero_SprintRun
+```
+
+`?audio=0` 可关闭。音频文件保持本地、Git 忽略；未恢复表面材质对应的 footstep 变体选择。
+
 空中首次攻击（近战 J 或远程 K）现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→J/K 均返回 `clip=Hero_AirAttackStart`；连续两次 K 的结果记录在 `research/world-recovery/air-attack-chain.json`。
 
 

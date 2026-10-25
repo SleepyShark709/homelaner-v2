@@ -1,0 +1,70 @@
+{
+  "source": "cooked UNDEFEATED SoundWave .uexp files, embedded Ogg payload",
+  "clipCount": 8,
+  "clips": [
+    {
+      "name": "Footstep01",
+      "file": "public\\assets\\audio\\footstep01.ogg",
+      "bytes": 6542,
+      "oggOffsetInUexp": 135,
+      "sha256": "6f3918fce717a559d93af426149549b1ece48b6cefa46be90be145fbbc1da855",
+      "source": "C:\\Users\\Shark\\AppData\\Local\\Temp\\undefeated-sounds\\UNDEFEATED\\Content\\-HeroGame\\Sound\\Import\\Footstep01.uexp"
+    },
+    {
+      "name": "Footstep02",
+      "file": "public\\assets\\audio\\footstep02.ogg",
+      "bytes": 6685,
+      "oggOffsetInUexp": 135,
+      "sha256": "7684ae65112edb1e163e323fb830a3cc062cdd4a5ced2b2e7377c433265355f4",
+      "source": "C:\\Users\\Shark\\AppData\\Local\\Temp\\undefeated-sounds\\UNDEFEATED\\Content\\-HeroGame\\Sound\\Import\\Footstep02.uexp"
+    },
+    {
+      "name": "Footstep03",
+      "file": "public\\assets\\audio\\footstep03.ogg",
+      "bytes": 7140,
+      "oggOffsetInUexp": 135,
+      "sha256": "f54b470fdbdf873d7e49ac80b551aa14dea6b6e9cd66da320858d4dfde616083",
+      "source": "C:\\Users\\Shark\\AppData\\Local\\Temp\\undefeated-sounds\\UNDEFEATED\\Content\\-HeroGame\\Sound\\Import\\Footstep03.uexp"
+    },
+    {
+      "name": "Footstep04",
+      "file": "public\\assets\\audio\\footstep04.ogg",
+      "bytes": 7588,
+      "oggOffsetInUexp": 135,
+      "sha256": "f514e7ef70a7d418c2d70cef6dfef57b561da8fc451d637ca7e150679a10a2e6",
+      "source": "C:\\Users\\Shark\\AppData\\Local\\Temp\\undefeated-sounds\\UNDEFEATED\\Content\\-HeroGame\\Sound\\Import\\Footstep04.uexp"
+    },
+    {
+      "name": "Footstep06",
+      "file": "public\\assets\\audio\\footstep06.ogg",
+      "bytes": 7215,
+      "oggOffsetInUexp": 135,
+      "sha256": "26329e0a73e074e47063e15b5d6307c76c95437875904d76375e50d0a59563d1",
+      "source": "C:\\Users\\Shark\\AppData\\Local\\Temp\\undefeated-sounds\\UNDEFEATED\\Content\\-HeroGame\\Sound\\Import\\Footstep06.uexp"
+    },
+    {
+      "name": "Footstep07",
+      "file": "public\\assets\\audio\\footstep07.ogg",
+      "bytes": 6875,
+      "oggOffsetInUexp": 135,
+      "sha256": "b5e61012d11238860f58643c8005fb5f8e13004eb7892a8ffbae1f11a5177a14",
+      "source": "C:\\Users\\Shark\\AppData\\Local\\Temp\\undefeated-sounds\\UNDEFEATED\\Content\\-HeroGame\\Sound\\Import\\Footstep07.uexp"
+    },
+    {
+      "name": "Footstep08",
+      "file": "public\\assets\\audio\\footstep08.ogg",
+      "bytes": 6570,
+      "oggOffsetInUexp": 135,
+      "sha256": "f5d8d88eb0857eeaf4ffa80e7ab545adb378714ab25ebb32ef12090893b1db72",
+      "source": "C:\\Users\\Shark\\AppData\\Local\\Temp\\undefeated-sounds\\UNDEFEATED\\Content\\-HeroGame\\Sound\\Import\\Footstep08.uexp"
+    },
+    {
+      "name": "Footstep09",
+      "file": "public\\assets\\audio\\footstep09.ogg",
+      "bytes": 7005,
+      "oggOffsetInUexp": 135,
+      "sha256": "73491e4802c835a1784eeb3ab463ca92763b7b400162e26055d00410d46b1a59",
+      "source": "C:\\Users\\Shark\\AppData\\Local\\Temp\\undefeated-sounds\\UNDEFEATED\\Content\\-HeroGame\\Sound\\Import\\Footstep09.uexp"
+    }
+  ]
+}

@@ -15,6 +15,7 @@ import { CreateTorus } from '@babylonjs/core/Meshes/Builders/torusBuilder';
 import { Mesh } from '@babylonjs/core/Meshes/mesh';
 import { OriginalWorld } from './world/OriginalWorld';
 import { Character } from './game/Character';
+import { Footsteps } from './game/Footsteps';
 import { Input } from './game/Input';
 import { Combat } from './game/Combat';
 import { Population } from './game/Population';
@@ -444,6 +445,9 @@ try {
   }
   character = new Character(viewer.scene);
   await character.load(shadows, params.get('skin') === 'homelander' ? 'homelander' : 'original');
+  const footsteps = new Footsteps(params.get('audio') !== '0');
+  character.onFootstep = () => footsteps.play();
+  void footsteps.load().catch(error => console.warn('footstep audio unavailable', error));
   if (params.get('skin') === 'homelander' && !freeMode) {
     const badge = document.querySelector<HTMLElement>('.play-badge');
     if (badge) badge.textContent = 'Homelander · 动作映射';
