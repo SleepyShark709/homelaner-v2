@@ -20,19 +20,21 @@ def main() -> None:
     entries = []
     for uexp in sorted(args.input.rglob("*.uexp")):
         payload = uexp.read_bytes()
-        offset = payload.find(b"OggS")
-        if offset < 0:
+        marker = payload.find(b"OggS")
+        if marker < 0:
             continue
-        ogg = payload[offset:]
+        ogg = payload[marker:]
         target = args.output / f"{uexp.stem.lower()}.ogg"
         target.write_bytes(ogg)
+        source = uexp.as_posix()
+        package = source[source.find("UNDEFEATED/Content"):] if "UNDEFEATED/Content" in source else str(uexp)
         entries.append({
             "name": uexp.stem,
             "file": str(target.relative_to(ROOT)),
             "bytes": len(ogg),
-            "oggOffsetInUexp": offset,
+            "oggOffsetInUexp": marker,
             "sha256": hashlib.sha256(ogg).hexdigest(),
-            "source": str(uexp),
+            "source": package,
         })
     manifest = {
         "source": "cooked UNDEFEATED SoundWave .uexp files, embedded Ogg payload",
