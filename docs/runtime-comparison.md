@@ -2,6 +2,19 @@
 
 日期：2026-10-25。目标：把原程序实际窗口截图和当前 `?view=play` 画面放在一起，先核对角色/相机/光照/UI 的明显差异。**仍不是像素等价验收。**
 
+## 2026-10-25 更新：Gate 3 石材/窗格/HUD 起始态
+
+![原版 vs Web Gate 3 材质对照](../research/runtime-observation/comparison-gate3-materials.jpg)
+
+- 石材：`brick_02_TintB_Inst2` 使用恢复的 Tint Colour/Tint Opacity 派生纹理，Web 从冷灰回到暖棕灰；
+- 檐口：`brick_02_TintA_Inst` 应用 recovered roughness .666245；
+- 窗格：`building_02_Inst` 使用 recovered Emissive Colour ×0.35 的 `clouds` emissive，避免过强蓝色横带；
+- minimap：外框改成原版 gameplay-start 的红色状态（`frame-tint-red.png`）；
+- 同机位整画面 mean luma 56.9 / std 30.7；原版 55.8 / 31.3；
+- 仍未完成：lightmap、Grunge/height、完整 HUD/minimap 状态机、窗格反射。
+
+这不是像素等价验收；材质层级和光照仍未恢复完整。
+
 ## 2026-10-25 更新：第一张真实同机位
 
 通过 UE4SS 调用 `WBP_TitleSinboard_C:GameStartEvent()` + 一次 `InputDone()`，intro 结束后原程序真实 gameplay transform 为：
