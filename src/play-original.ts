@@ -2,7 +2,7 @@ import './play-original.css';
 // Babylon's Ray side-effect is required for scene.createPickingRay/pickWithRay
 // used by the ground/plaza diagnostics.
 import '@babylonjs/core/Culling/ray';
-import { Matrix, Vector3 } from '@babylonjs/core/Maths/math.vector';
+import { Matrix, Quaternion, Vector3 } from '@babylonjs/core/Maths/math.vector';
 import { Color3 } from '@babylonjs/core/Maths/math.color';
 import { DirectionalLight } from '@babylonjs/core/Lights/directionalLight';
 import { ShadowGenerator } from '@babylonjs/core/Lights/Shadows/shadowGenerator';
@@ -64,6 +64,7 @@ const params = new URLSearchParams(location.search);
 const requestedDistrict = params.get('district') ?? 'ResidentialArea1';
 const plazaMode = params.get('plaza') === '1';
 const freeMode = params.get('mode') === 'free';
+const exactSpawn = params.get('exact') === '1';
 const startupMode = params.get('startup') === '1' || plazaMode;
 if (freeMode) {
   document.title = 'UNDEFEATED · 自由破坏预览';
@@ -112,32 +113,37 @@ try {
   await viewer.load();
   if (!viewer.terrainManifest) throw new Error('地形清单未载入');
   await viewer.select(startupMode ? '__startup__' : requestedDistrict);
-  // The floor slabs arrive as one thin-instanced mesh per level. In this
-  // Babylon path the thin-instance buffer does not draw, so materialize each
-  // floor instance as a regular mesh with the same matrix translation/scale.
-  for (const candidate of [...viewer.scene.meshes]) {
-    if (!/SM_Floor12000x15000/i.test(candidate.name)) continue;
-    const floor = candidate as Mesh;
-    const thin = floor as unknown as { thinInstanceCount?: number; _thinInstanceDataStorage?: { matrixData?: Float32Array } };
-    const count = thin.thinInstanceCount ?? 0;
-    const data = thin._thinInstanceDataStorage?.matrixData;
-    if (!data || count < 1) continue;
-    for (let index = 0; index < count; index++) {
-      const matrix = Array.from(data.slice(index * 16, index * 16 + 16));
-      if (matrix.length < 16) continue;
-      const clone = floor.clone(`${floor.name}-solid-${index}`, null, true);
-      if (!clone) continue;
-      clone.thinInstanceCount = 0;
-      clone.position.set(matrix[12], matrix[13], matrix[14]);
-      clone.scaling.set(Math.hypot(matrix[0], matrix[1], matrix[2]), Math.hypot(matrix[4], matrix[5], matrix[6]), Math.hypot(matrix[8], matrix[9], matrix[10]));
-      clone.rotation.set(0, 0, 0);
-      clone.rotationQuaternion = null;
-      clone.setEnabled(true);
-      clone.isVisible = true;
-      clone.alwaysSelectAsActiveMesh = true;
+  // The world uses thin-instanced meshes for merged props. In this Babylon
+  // path the thin-instance buffer does not draw, so materialize the instances
+  // that matter for the playable slice as regular meshes with decomposed TRS.
+  const materializeThin = (matches: (name: string) => boolean) => {
+    for (const candidate of [...viewer.scene.meshes]) {
+      if (!matches(candidate.name)) continue;
+      const source = candidate as Mesh;
+      const thin = source as unknown as { thinInstanceCount?: number; _thinInstanceDataStorage?: { matrixData?: Float32Array } };
+      const count = thin.thinInstanceCount ?? 0;
+      const data = thin._thinInstanceDataStorage?.matrixData;
+      if (!data || count < 1) continue;
+      for (let index = 0; index < count; index++) {
+        const matrix = Array.from(data.slice(index * 16, index * 16 + 16));
+        if (matrix.length < 16) continue;
+        const clone = source.clone(`${source.name}-solid-${index}`, null, true);
+        if (!clone) continue;
+        const scale = new Vector3(), rotation = new Quaternion(), position = new Vector3();
+        Matrix.FromArray(matrix).decompose(scale, rotation, position);
+        clone.thinInstanceCount = 0;
+        clone.position.copyFrom(position);
+        clone.scaling.copyFrom(scale);
+        clone.rotationQuaternion = rotation;
+        clone.setEnabled(true);
+        clone.isVisible = true;
+        clone.alwaysSelectAsActiveMesh = true;
+      }
+      source.setEnabled(false);
     }
-    floor.setEnabled(false);
-  }
+  };
+  materializeThin(name => /SM_Floor12000x15000/i.test(name));
+  materializeThin(name => /Bench/i.test(name));
 
   // The static world includes reference-pose skeletal citizens baked into the
   // MainLevel batches. B1 has no population/AI yet, so hide those mannequins
@@ -271,16 +277,19 @@ try {
       }
     }
   }
-  for (const [dx, dz] of spawnOffsets) {
+  for (const [dx, dz] of exactSpawn ? [[0, 0] as [number, number]] : spawnOffsets) {
     const x = baseX + dx, z = baseZ + dz;
     const terrainY = terrain.heightAt(x, z) ?? 0;
     const floorY = surfaces.topAt(x, z, terrainY + 0.75);
     const y = Math.max(terrainY, floorY ?? -Infinity) + 0.02;
-    if (insideBox([x, y, z], collision.boxes)) continue;
+    if (!exactSpawn && insideBox([x, y, z], collision.boxes)) continue;
     // Keep a 4 m third-person camera slot clear so a wall/balustrade does not
-    // force the camera into the character at spawn.
-    const cameraX = x - Math.sin(input.yaw) * 4, cameraZ = z - Math.cos(input.yaw) * 4;
-    if (insideBox([cameraX, y + 1.6, cameraZ], collision.boxes)) continue;
+    // force the camera into the character at spawn. exact=1 is inspection-only
+    // and deliberately bypasses both checks.
+    if (!exactSpawn) {
+      const cameraX = x - Math.sin(input.yaw) * 4, cameraZ = z - Math.cos(input.yaw) * 4;
+      if (insideBox([cameraX, y + 1.6, cameraZ], collision.boxes)) continue;
+    }
     spawn = [x, y, z];
     break;
   }
