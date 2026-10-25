@@ -274,6 +274,8 @@ Space→Space→J -> Hero_AirAttackStart, sounds=[whoosh]
 
 Chrome 解码：`cannonexplode01_stereo.ogg` 2.4271 s / 48 kHz / stereo；`sweetener_whooshf01.ogg` 0.8623 s / 48 kHz / stereo。
 
+飞行风噪来自 `Cue_FlyingWindNoise` 的 `SoundNodeWavePlayer` → `/Game/Assets/Audio/Whooshes/Flourish03`（[flight-wind-manifest.json](../research/world-recovery/flight-wind-manifest.json)）。实际播放为 1.2× pitch、cue volume .35、循环，并按水平/垂直速度调节增益；真实双跳进入飞行后 `flightWindActive=false -> true`。Chrome 解码 3.4507 s / 48 kHz / stereo。
+
 空中首次攻击（近战 J 或远程 K）现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→J/K 均返回 `clip=Hero_AirAttackStart`；连续两次 K 的结果记录在 `research/world-recovery/air-attack-chain.json`。
 
 

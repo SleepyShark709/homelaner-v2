@@ -6,6 +6,7 @@ const SWING_URLS = Array.from({ length: 4 }, (_, index) => `/assets/audio/punch_
 const IMPACT_URLS = ['/assets/audio/chain_d_impacts_0201.ogg', '/assets/audio/chain_d_impacts_0601.ogg'];
 const HEAVY_URLS = Array.from({ length: 5 }, (_, index) => `/assets/audio/cannonexplode0${index + 1}_stereo.ogg`);
 const WHOOSH_URLS = Array.from({ length: 4 }, (_, index) => `/assets/audio/sweetener_whooshf0${index + 1}.ogg`);
+const WIND_URL = '/assets/audio/flourish03.ogg';
 
 /**
  * Plays the recovered Footstep01..09 samples at the original animation notify
@@ -20,6 +21,11 @@ export class Footsteps {
   private impacts: AudioBuffer[] = [];
   private heavies: AudioBuffer[] = [];
   private whooshes: AudioBuffer[] = [];
+  private wind: AudioBuffer | null = null;
+  private windSource: AudioBufferSourceNode | null = null;
+  private windGain: GainNode | null = null;
+
+  get flightWindActive(): boolean { return this.windSource !== null; }
   private unlocked = false;
 
   constructor(private readonly enabled = true) {}
@@ -54,6 +60,7 @@ export class Footsteps {
       this.loadBuffers(HEAVY_URLS),
       this.loadBuffers(WHOOSH_URLS),
     ]);
+    this.wind = (await this.loadBuffers([WIND_URL]))[0] ?? null;
   }
 
   private playBuffer(buffers: AudioBuffer[], volume = 1, duration?: number): void {
@@ -86,6 +93,31 @@ export class Footsteps {
 
   playWhoosh(): void { this.playBuffer(this.whooshes, 0.75); }
 
+  setFlightWind(active: boolean, intensity: number): void {
+    if (!this.enabled || !this.context || !this.gain || !this.wind) return;
+    if (active && !this.windSource) {
+      this.windSource = this.context.createBufferSource();
+      this.windSource.buffer = this.wind;
+      this.windSource.loop = true;
+      this.windSource.playbackRate.value = 1.2;
+      this.windGain = this.context.createGain();
+      this.windGain.gain.value = 0;
+      this.windSource.connect(this.windGain);
+      this.windGain.connect(this.gain);
+      this.windSource.start();
+    }
+    if (this.windGain) {
+      const level = active ? Math.min(0.35, 0.08 + Math.max(0, intensity) * 0.35) : 0;
+      this.windGain.gain.setTargetAtTime(level, this.context.currentTime, 0.12);
+    }
+    if (!active && this.windSource) {
+      const source = this.windSource;
+      this.windSource = null;
+      this.windGain = null;
+      setTimeout(() => { try { source.stop(); source.disconnect(); } catch { /* already stopped */ } }, 350);
+    }
+  }
+
   dispose(): void {
     void this.context?.close().catch(() => undefined);
     this.context = null;
@@ -95,5 +127,8 @@ export class Footsteps {
     this.impacts = [];
     this.heavies = [];
     this.whooshes = [];
+    this.wind = null;
+    this.windSource = null;
+    this.windGain = null;
   }
 }

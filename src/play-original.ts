@@ -571,6 +571,10 @@ try {
     accumulator += dt;
     while (accumulator >= 1 / 120) { player.update(1 / 120, input); accumulator -= 1 / 120; }
     character.update(player, dt);
+    footsteps.setFlightWind(player.flying, Math.max(
+      Math.hypot(player.velocity[0], player.velocity[2]) / 40,
+      Math.abs(player.velocity[1]) / 40,
+    ));
     combat?.update(dt);
     updateCamera(dt);
     hudTime += dt;
@@ -627,7 +631,7 @@ try {
   el('loading').hidden = true;
   if (new URLSearchParams(location.search).get('debug') === '1') {
     (window as typeof window & { __undefeatedPlay?: unknown }).__undefeatedPlay = {
-      viewer, player, character, input, collision, combat, population, shadows, terrain, surfaces,
+      viewer, player, character, input, collision, combat, population, shadows, terrain, surfaces, footsteps,
       pick: (x: number, y: number) => {
         for (const mesh of viewer.scene.meshes) {
           mesh.isPickable = true;

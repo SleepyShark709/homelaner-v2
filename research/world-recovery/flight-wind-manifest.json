@@ -1,0 +1,12 @@
+{
+  "source": "Cue_FlyingWindNoise -> SoundNodeWavePlayer /Game/Assets/Audio/Whooshes/Flourish03",
+  "cue": "UNDEFEATED/Content/-HeroGame/Sound/Cue/Cue_FlyingWindNoise.uexp",
+  "wave": "UNDEFEATED/Content/Assets/Audio/Whooshes/Flourish03.uexp",
+  "file": "public\\assets\\audio\\flourish03.ogg",
+  "bytes": 77993,
+  "sha256": "b1ec9bfcc4098ff1d0c21313b1c4f6c27aa039dec9ac4ab8193aa97279d1b33d",
+  "cueDurationSeconds": 3.4507291316986084,
+  "cueVolumeMultiplier": 0.35,
+  "cuePitchMultiplier": 1.2,
+  "loop": true
+}
