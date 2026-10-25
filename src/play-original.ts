@@ -635,8 +635,13 @@ try {
       pick: (x: number, y: number) => {
         for (const mesh of viewer.scene.meshes) {
           mesh.isPickable = true;
-          const thin = mesh as unknown as { thinInstanceCount?: number; thinInstanceEnablePicking?: boolean };
-          if ((thin.thinInstanceCount ?? 0) > 0) thin.thinInstanceEnablePicking = true;
+          mesh.computeWorldMatrix(true);
+          mesh.refreshBoundingInfo();
+          const thin = mesh as unknown as { thinInstanceCount?: number; thinInstanceEnablePicking?: boolean; thinInstanceRefreshBoundingInfo?: (force?: boolean) => void };
+          if ((thin.thinInstanceCount ?? 0) > 0) {
+            thin.thinInstanceEnablePicking = true;
+            thin.thinInstanceRefreshBoundingInfo?.(true);
+          }
         }
         const canvas = viewer.engine.getRenderingCanvas();
         const rect = canvas?.getBoundingClientRect();

@@ -1,0 +1,87 @@
+{
+  "query": "?view=play&startup=1&at=-3.12,74.739&yaw=0&exact=1&cam=-3.62,3.2715,70.739&camyaw=0&campitch=-0.1745&fov=90",
+  "probePoint": [
+    -3.6,
+    2,
+    76
+  ],
+  "storefrontObject": "CommercialArea:703/SM_MERGED_Building_2_01_9-b8e812d00b7f",
+  "meshes": [
+    {
+      "component": "SM_MERGED_Building_2_01_9 (base)",
+      "material": "/Game/UrbanCity/Materials/Tileable/brick_02_TintA_Inst",
+      "min": [
+        -29.42000389099121,
+        0.6499999761581421,
+        75.37999725341797
+      ],
+      "max": [
+        14.579999923706055,
+        1.3230663537979126,
+        119.37999725341797
+      ],
+      "vertices": 936
+    },
+    {
+      "component": "SM_MERGED_Building_2_01_9 (facade)",
+      "material": "/Game/UrbanCity/Materials/Buildings/building_02_Inst",
+      "min": [
+        -29.721067428588867,
+        1.1500011682510376,
+        75.0789230465889
+      ],
+      "max": [
+        14.881059467792511,
+        43.14999997615814,
+        119.68104934692383
+      ],
+      "vertices": 5544
+    },
+    {
+      "component": "SM_MERGED_Building_2_01_9 (merged trim)",
+      "material": "/Game/UrbanCity/Materials/Tileable/brick_02_TintB_Inst2",
+      "min": [
+        -29.198381423950195,
+        1.1500011682510376,
+        75.60161834955215
+      ],
+      "max": [
+        14.358373939990997,
+        42.20144498348236,
+        119.15837478637695
+      ],
+      "vertices": 3766
+    },
+    {
+      "component": "SM_MERGED_Building_2_01_9 (windows)",
+      "material": "/Game/UrbanCity/Materials/-Window_mat",
+      "min": [
+        -27.615304946899414,
+        0.6500008916854654,
+        77.18468475341797
+      ],
+      "max": [
+        12.775302648544312,
+        9.535354971885681,
+        117.57530975341797
+      ],
+      "vertices": 532
+    },
+    {
+      "component": "SM_MERGED_Building_2_01_9 (frames)",
+      "material": "/Game/UrbanCity/Materials/Tileable/Tilable_metal_TintC_Inst",
+      "min": [
+        -27.92000389099121,
+        0.650000815391536,
+        76.87999725341797
+      ],
+      "max": [
+        13.079999923706055,
+        38.24674451351166,
+        117.87999725341797
+      ],
+      "vertices": 4856
+    }
+  ],
+  "note": "Bounds identify the materials at the start storefront. Babylon thin-instance picking still passes through these meshes even with isPickable/thinInstanceEnablePicking/refreshBoundingInfo set, so no screen-pick material conclusions are drawn."
+}
