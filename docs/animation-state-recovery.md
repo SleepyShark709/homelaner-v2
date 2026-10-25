@@ -54,7 +54,8 @@ Hero_Stopping_WalkRun 31f @31.0
 
 ```text
 idle  -> Hero_Idle
-run   -> Hero_SprintRun      # 原版冲刺片段；还不是 HeroABS_MoveGround 混合
+walk  -> Hero_Walk           # planar speed < 4 m/s
+run   -> Hero_SprintRun      # planar speed >= 4 m/s; 还不是 HeroABS_MoveGround 混合
 jump  -> Hero_JumpFall       # 下落循环
 hover -> Hero_IdleFlying
 fly   -> Hero_FlyFastSprint
@@ -63,10 +64,10 @@ fly   -> Hero_FlyFastSprint
 已加的最小直接状态链（不是 AnimBP 的混合/条件曲线）：
 
 ```text
-ground idle -> Hero_StartSprint (once) -> Hero_SprintRun (loop)
-run -> Hero_Stopping_WalkRun (once) -> Hero_Idle (loop)
+ground idle -> Hero_Walk / Hero_StartSprint -> Hero_SprintRun (loop)
+walk/run -> Hero_Stopping_WalkRun (once) -> Hero_Idle (loop)
 ground jump -> Hero_JumpSpeed (once) -> Hero_JumpFall (loop)
-landing -> Hero_JumpLand (once) -> Hero_Idle/Hero_SprintRun (loop)
+landing -> Hero_JumpLand (once) -> Hero_Idle / Hero_Walk / Hero_SprintRun (loop)
 ```
 
 因此：

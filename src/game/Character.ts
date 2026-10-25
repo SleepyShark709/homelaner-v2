@@ -161,12 +161,13 @@ export class Character {
     this.yaw += difference * Math.min(1, dt * 12);
     this.root.rotation.y = this.yaw;
     const grounded = motor.state === 'idle' || motor.state === 'run';
+    const planarSpeed = Math.hypot(motor.velocity[0], motor.velocity[2]);
     const landed = !this.wasGrounded && grounded;
     const tookOff = this.wasGrounded && !grounded;
     this.wasGrounded = grounded;
     if (this.action) return;
     if (landed) {
-      this.setOneShot('Hero_JumpLand', motor.state === 'run' ? 'Hero_SprintRun' : 'Hero_Idle');
+      this.setOneShot('Hero_JumpLand', planarSpeed < 0.2 ? 'Hero_Idle' : planarSpeed < 4 ? 'Hero_Walk' : 'Hero_SprintRun');
       return;
     }
     if (this.transition) {
@@ -188,11 +189,11 @@ export class Character {
       if (group) group.speedRatio = 1;
       return;
     }
-    const desired = motor.state === 'run' ? 'Hero_SprintRun' : 'Hero_Idle';
+    const desired = planarSpeed < 0.15 ? 'Hero_Idle' : planarSpeed < 4 ? 'Hero_Walk' : 'Hero_SprintRun';
     if (this.clip !== desired) {
-      if (this.clip === 'Hero_Idle' && desired === 'Hero_SprintRun') {
+      if (desired === 'Hero_SprintRun' && (this.clip === 'Hero_Idle' || this.clip === 'Hero_Walk')) {
         this.setOneShot('Hero_StartSprint', desired);
-      } else if (this.clip === 'Hero_SprintRun' && desired === 'Hero_Idle') {
+      } else if ((desired === 'Hero_Idle' || desired === 'Hero_Walk') && this.clip === 'Hero_SprintRun') {
         this.setOneShot('Hero_Stopping_WalkRun', desired);
       } else {
         this.setLoop(desired);
@@ -200,7 +201,11 @@ export class Character {
       return;
     }
     const group = this.groupFor(desired);
-    if (group) group.speedRatio = motor.state === 'run' ? Math.max(0.7, Math.min(2.2, Math.hypot(motor.velocity[0], motor.velocity[2]) / 6)) : 1;
+    if (group) group.speedRatio = desired === 'Hero_SprintRun'
+      ? Math.max(0.7, Math.min(2.2, planarSpeed / 6))
+      : desired === 'Hero_Walk'
+        ? Math.max(0.6, Math.min(1.5, planarSpeed / 1.5))
+        : 1;
   }
 
   pause(paused: boolean): void {
