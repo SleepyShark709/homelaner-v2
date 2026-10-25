@@ -137,7 +137,7 @@ HeroABS_JumpFallLoop
 - [x] 已加入 1D ground blend：`Hero_Idle/Hero_Walk/Hero_SprintRun` 同时播放并按 planar speed 加权（0..3 Idle→Walk，5..8.5 Walk→Run），10 m/s 实拍无畸形；这是 `HeroABS_MoveGround` 的速度子集。
 - [ ] 恢复 `HeroABS_MoveGround` 的实际 BlendSpace 轴、过渡条件、混合时间和飞行混合空间，替换当前直接片段计时。
 - [ ] 实现 montage 攻击的 section/通知/连招/取消窗口；现有攻击时间轴仅是部分恢复。
-- [ ] 恢复 AnimNotify：命中、移动、脚步声、飞行尘土、攻击碰撞、结束；当前只覆盖部分。
+- [ ] 恢复 AnimNotify：命中、移动、脚步声、飞行尘土、攻击碰撞、结束；已从 props 提取到 BodyMvmt_Cue/PlayFootStepL/PlayFootStepR/RunStop 名称（`research/world-recovery/animation-notify-manifest.json`），但绝对 TriggerTime 未序列化，仍需 AnimSequence notify 数组。
 - [x] 46 段转换 clip 的 root joint translation 全部为 0（`scripts/audit-root-motion.mjs`，`research/world-recovery/root-motion-audit.json`），素材是 in-place；位移由 PlayerMotor 驱动。
 - [ ] AnimBP 的 root-motion/notify 逻辑仍未恢复；当前素材没有可提取的 root motion。
 - [ ] 惯性 / 转向 / 空中控制与原始一致。

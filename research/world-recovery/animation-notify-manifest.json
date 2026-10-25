@@ -1,0 +1,233 @@
+{
+  "source": "UModel .props.txt animation dumps",
+  "clipCount": 28,
+  "notifyNames": [
+    "BodyMvmt_Cue",
+    "PlayFootStepL",
+    "PlayFootStepR",
+    "RunStop"
+  ],
+  "clips": [
+    {
+      "clip": "Hero_FlyDown",
+      "source": "research\\exports\\locomotion\\Animations\\Hero_FlyDown.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_FlyFastDown",
+      "source": "research\\exports\\locomotion\\Animations\\Hero_FlyFastDown.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_FlyFastForward1",
+      "source": "research\\exports\\locomotion\\Animations\\Hero_FlyFastForward1.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_FlyForward",
+      "source": "research\\exports\\locomotion\\Animations\\Hero_FlyForward.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_FlyForwardLow",
+      "source": "research\\exports\\locomotion\\Animations\\Hero_FlyForwardLow.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_JumpLand",
+      "source": "research\\exports\\locomotion\\Animations\\Hero_JumpLand.props.txt",
+      "notifies": [
+        "PlayFootStepL"
+      ],
+      "notifyCount": 2,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_JumpSpeed",
+      "source": "research\\exports\\locomotion\\Animations\\Hero_JumpSpeed.props.txt",
+      "notifies": [
+        "PlayFootStepL"
+      ],
+      "notifyCount": 2,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_SprintRun",
+      "source": "research\\exports\\locomotion\\Animations\\Hero_SprintRun.props.txt",
+      "notifies": [
+        "PlayFootStepL",
+        "PlayFootStepR"
+      ],
+      "notifyCount": 4,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_SprintSuper",
+      "source": "research\\exports\\locomotion\\Animations\\Hero_SprintSuper.props.txt",
+      "notifies": [
+        "PlayFootStepL",
+        "PlayFootStepR"
+      ],
+      "notifyCount": 4,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_Walk",
+      "source": "research\\exports\\locomotion\\Animations\\Hero_Walk.props.txt",
+      "notifies": [
+        "PlayFootStepL",
+        "PlayFootStepR"
+      ],
+      "notifyCount": 4,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_JumpFall",
+      "source": "research\\exports\\locomotion\\Hero_JumpFall.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_JumpFallFast",
+      "source": "research\\exports\\locomotion\\Hero_JumpFallFast.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_StartSprint",
+      "source": "research\\exports\\locomotion\\Hero_StartSprint.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_Stopping_Sprint",
+      "source": "research\\exports\\locomotion\\Hero_Stopping_Sprint.props.txt",
+      "notifies": [
+        "BodyMvmt_Cue",
+        "PlayFootStepL",
+        "PlayFootStepR",
+        "RunStop"
+      ],
+      "notifyCount": 8,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_Stopping_WalkRun",
+      "source": "research\\exports\\locomotion\\Hero_Stopping_WalkRun.props.txt",
+      "notifies": [
+        "PlayFootStepL",
+        "PlayFootStepR"
+      ],
+      "notifyCount": 4,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_FlyUp",
+      "source": "research\\exports\\locomotion\\HeroGame\\Player\\Animations\\Hero_FlyUp.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "ALS_N_Run_B",
+      "source": "research\\exports\\locomotion-directional\\AdvancedLocomotionV2\\Characters\\Mannequin\\ActionMaleAnimation\\ALS_N_Run_B.props.txt",
+      "notifies": [
+        "PlayFootStepR"
+      ],
+      "notifyCount": 4,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "ALS_N_Run_FL",
+      "source": "research\\exports\\locomotion-directional\\AdvancedLocomotionV2\\Characters\\Mannequin\\ActionMaleAnimation\\ALS_N_Run_FL.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "ALS_N_Run_FR",
+      "source": "research\\exports\\locomotion-directional\\AdvancedLocomotionV2\\Characters\\Mannequin\\ActionMaleAnimation\\ALS_N_Run_FR.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "ALS_N_Walk_B",
+      "source": "research\\exports\\locomotion-directional\\AdvancedLocomotionV2\\Characters\\Mannequin\\ActionMaleAnimation\\ALS_N_Walk_B.props.txt",
+      "notifies": [
+        "PlayFootStepR"
+      ],
+      "notifyCount": 4,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "ALS_N_Walk_FL",
+      "source": "research\\exports\\locomotion-directional\\AdvancedLocomotionV2\\Characters\\Mannequin\\ActionMaleAnimation\\ALS_N_Walk_FL.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "ALS_N_Walk_FR",
+      "source": "research\\exports\\locomotion-directional\\AdvancedLocomotionV2\\Characters\\Mannequin\\ActionMaleAnimation\\ALS_N_Walk_FR.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_FlyBack",
+      "source": "research\\exports\\fly-directional\\Animations\\Hero_FlyBack.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_FlyLeft",
+      "source": "research\\exports\\fly-directional\\Animations\\Hero_FlyLeft.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_FlyRight",
+      "source": "research\\exports\\fly-directional\\Animations\\Hero_FlyRight.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_FlyTame",
+      "source": "research\\exports\\fly-directional\\Animations\\Hero_FlyTame.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "Hero_FlyTameFront",
+      "source": "research\\exports\\fly-directional\\Animations\\Hero_FlyTameFront.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    },
+    {
+      "clip": "ALS_N_Jump",
+      "source": "research\\exports\\jump-extra\\AdvancedLocomotionV2\\Characters\\Mannequin\\ActionMaleAnimation\\ALS_N_Jump.props.txt",
+      "notifies": [],
+      "notifyCount": 0,
+      "note": "UModel props serialize TriggerTimeOffset (0) but not the absolute TriggerTime; absolute times require the AnimSequence notify array."
+    }
+  ]
+}

@@ -208,6 +208,19 @@ movingRootClips  []
 
 所有转换后的 clip 都是 **in-place**（root 平移为 0），角色位移由外部 PlayerMotor 驱动；这些 clip 没有可提取的 root motion。原 AnimBP 的 root-motion/notify 逻辑仍未恢复，但当前素材本身不含 root 位移。
 
+### AnimNotify 清单
+
+`scripts/extract-animation-notifies.py` 从 28 份 UModel `.props.txt` 提取到：
+
+```text
+BodyMvmt_Cue
+PlayFootStepL
+PlayFootStepR
+RunStop
+```
+
+清单：[animation-notify-manifest.json](../research/world-recovery/animation-notify-manifest.json)。限制：UModel props 里 `TriggerTimeOffset` 全是 0，没有绝对 TriggerTime；要恢复实际触发时刻仍需 AnimSequence notify 数组/运行时。
+
 空中首次攻击（近战 J 或远程 K）现在进入 `HeroAnimBP` 的 AirAttack 状态入口 `Hero_AirAttackStart`（包含 `StartAirAttack` notify），后续空中攻击切 `Hero_AirKick_L/R`，落地后复位。真实 Space→Space→J/K 均返回 `clip=Hero_AirAttackStart`；连续两次 K 的结果记录在 `research/world-recovery/air-attack-chain.json`。
 
 
