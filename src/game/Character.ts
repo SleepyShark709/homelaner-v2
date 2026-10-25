@@ -380,6 +380,20 @@ export class Character {
     ];
     const total = combined.reduce((sum, [, weight]) => sum + weight, 0);
     const phase = this.currentPhase();
+    const target = new Map<AnimationGroup, number>();
+    for (const [group, weight] of combined) {
+      if (!group) continue;
+      const normalized = total > 0 ? weight / total : 0;
+      if (normalized > 0.001) target.set(group, normalized);
+    }
+    // Combat calls endAction() before the attack clip has necessarily stopped.
+    // Fade that still-playing attack/jump group into the locomotion target
+    // instead of hard-stopping it and snapping to frame 0 of the next gait.
+    const foreign = this.animations.some(group => group.isPlaying && group.weight > 0.001 && !target.has(group));
+    if (foreign && !this.fade) {
+      this.beginCrossfade(target, 0.18);
+      return;
+    }
     let dominant = 'Hero_Idle', dominantWeight = -1;
     const ground = new Set(combined.map(([group]) => group).filter((group): group is AnimationGroup => !!group));
     this.animations.forEach(group => { if (!ground.has(group)) group.stop(); });
