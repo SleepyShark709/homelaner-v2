@@ -1,0 +1,27 @@
+{
+  "source": "/Game/-HeroGame/Player/PlayerBP",
+  "decoded": "research/rea-audit/decoded/-HeroGame/Player/PlayerBP.json",
+  "exportIndex": 70,
+  "units": "cm/s and UE units",
+  "values": {
+    "MaxStepHeight": 75,
+    "JumpZVelocity": 2000,
+    "WalkableFloorAngle": 60,
+    "MaxWalkSpeed": 1000,
+    "MaxFlySpeed": 4000,
+    "BrakingFrictionFactor": 32,
+    "BrakingDecelerationWalking": 0,
+    "BrakingDecelerationFlying": 5,
+    "AirControl": 1,
+    "bUseControllerDesiredRotation": true,
+    "bOrientRotationToMovement": true,
+    "GravityScale": 5
+  },
+  "webMapping": {
+    "MaxWalkSpeed": "10 m/s (TUNING.walk)",
+    "JumpZVelocity": "20 m/s (TUNING.jump)",
+    "MaxFlySpeed": "40 m/s (TUNING.fly)",
+    "gravity": "9.81*5 m/s^2 (TUNING.gravity)"
+  },
+  "note": "Recovered CharacterMovement defaults; Web jump/gravity/fly/walk speeds now match JumpZVelocity=2000cm/s with GravityScale=5 (4m jump), MaxFlySpeed=4000cm/s and MaxWalkSpeed=1000cm/s. Braking/acceleration remain approximate."
+}

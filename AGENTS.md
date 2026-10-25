@@ -39,6 +39,8 @@ The complete remaining-work checklist is [docs/todo-restoration.md](docs/todo-re
   fov  = 90.000   (PlayerCameraManager:GetFOVAngle)
   ```
 
+- PlayerBP CharacterMovement defaults are recovered in `research/world-recovery/player-movement-tuning.json`: `MaxWalkSpeed=1000 cm/s`, `JumpZVelocity=2000 cm/s`, `GravityScale=5`, `MaxFlySpeed=4000 cm/s`, `AirControl=1`, `BrakingDecelerationWalking=0`. Web now uses jump 20 m/s with 49.05 m/s² gravity (about 4 m jump), 10 m/s walk and 40 m/s flight.
+
 - Web same-camera conversion (x/100, z/100, y/100; yaw = 90 - UE yaw):
 
   ```text
