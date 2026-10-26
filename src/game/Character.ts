@@ -57,6 +57,8 @@ export class Character {
   private wasSprinting = false;
   private sprintStop = false;
   private flyMovingFor = 0;
+  private flyCandidate = '';
+  private flyCandidateFor = 0;
   private footstepLast = new Map<string, number>();
   onFootstep: ((clip: string) => void) | undefined;
   constructor(readonly scene: Scene) {
@@ -219,12 +221,24 @@ export class Character {
         else { desired = 'Hero_FlyFastForward1'; ratio = Math.max(0.8, Math.min(1.5, speed / 6000)); }
       }
     }
+    const currentIsFlying = this.clip === 'Hero_IdleFlying' || this.clip.startsWith('Hero_Fly');
+    const urgent = /^Hero_Fly(FastUp|Up|Down|FastDown|BulletDive)$/.test(desired);
+    let heldCandidate = false;
+    if (currentIsFlying && !urgent && desired !== this.clip) {
+      if (this.flyCandidate === desired) this.flyCandidateFor += dt;
+      else { this.flyCandidate = desired; this.flyCandidateFor = dt; }
+      // Require a short stable direction before swapping the whole-body fly clip.
+      if (this.flyCandidateFor < 0.12) { desired = this.clip; heldCandidate = true; }
+    } else if (desired === this.clip) {
+      this.flyCandidate = '';
+      this.flyCandidateFor = 0;
+    }
     const group = this.groupFor(desired);
     if (!group) return;
     if (this.clip !== desired) this.setLoop(desired, 0.2);
     // Avoid retiming the fly cycle every frame on tiny velocity noise, which
     // shows up as whole-body shimmy during directional flight.
-    if (Math.abs((group.speedRatio ?? 1) - ratio) > 0.06) group.speedRatio = ratio;
+    if (!heldCandidate && Math.abs((group.speedRatio ?? 1) - ratio) > 0.06) group.speedRatio = ratio;
     return;
   }
 
