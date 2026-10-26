@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "f628dfd",
+  "validatedCommit": "59f7f61",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -294,6 +294,12 @@
         "heat": false,
         "charge": 0.358
       }
+    },
+    {
+      "command": "capture-world probe-autolock-dummy2",
+      "exitCode": 0,
+      "beforeDistance": 6,
+      "afterDistanceToInitialCenter": 1.45
     }
   ],
   "evidence": {
@@ -305,5 +311,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Ground gait hysteresis at 17.25/14.5 m/s; B1/tests pass at f628dfd."
+  "note": "Melee warp verified at 1.45 m from the initial target center; gait hysteresis and B1/tests pass at 59f7f61."
 }
