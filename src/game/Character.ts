@@ -465,10 +465,19 @@ export class Character {
 
   playAction(name: string, speed: number): void {
     const group = this.groupFor(name);
-    if (!group) throw new Error(`閸樼喓澧楅崝銊ょ稊缂傚搫銇? ${name}`);
-    this.animations.forEach(item => item.stop());
-    this.container.skeletons.forEach(skeleton => skeleton.returnToRest());
-    this.action = name; this.clip = name; group.start(false, speed);
+    if (!group) throw new Error(`Missing animation clip: ${name}`);
+    const hasSource = this.animations.some(item => item.isPlaying && item.weight > 0.001);
+    this.action = name;
+    this.clip = name;
+    group.start(false, speed);
+    if (hasSource) {
+      // Blend the attack in from the current locomotion pose instead of
+      // stopping every group and resetting the skeleton to rest for one frame.
+      this.beginCrossfade(new Map([[group, 1]]), 0.1);
+    } else {
+      group.weight = 1;
+      group.setWeightForAllAnimatables(1);
+    }
   }
 
   endAction(): void { this.action = ''; }
