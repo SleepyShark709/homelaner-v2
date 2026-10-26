@@ -104,8 +104,8 @@ export class OriginalPlayer {
     const right = input.axis(['KeyD', 'ArrowRight'], ['KeyA', 'ArrowLeft']);
     const moving = forward !== 0 || right !== 0;
     const shiftHeld = input.held('ShiftLeft', 'ShiftRight');
-    // Shift+E is the heat-vision chord; it must not also charge/ascend.
-    const heatHeld = shiftHeld && input.held('KeyE');
+    // H is the heat-vision key; E remains takeoff/ascend and must keep charging.
+    const heatHeld = input.held('KeyH');
     // P07: Shift only arms sprint; StartSprint requires movement input. Walk
     // mode cancels sprint. P08 resets a sprint once speed falls below 850 cm/s
     // walking or 2000 cm/s flying; keep it disarmed until Shift/movement is
