@@ -56,6 +56,7 @@ export class Character {
   private wasGrounded = true;
   private wasSprinting = false;
   private sprintStop = false;
+  private flyMovingFor = 0;
   private footstepLast = new Map<string, number>();
   onFootstep: ((clip: string) => void) | undefined;
   constructor(readonly scene: Scene) {
@@ -183,8 +184,11 @@ export class Character {
     return this.animations.find(group => group.name === (this.aliases.get(name) ?? name));
   }
 
-  private setFlyBlend(vertical: number, planar: number, velocityX: number, velocityZ: number): void {
+  private setFlyBlend(vertical: number, planar: number, velocityX: number, velocityZ: number, dt: number): void {
     if (this.fade) return;
+    if (planar > 2) this.flyMovingFor = 0.35;
+    else this.flyMovingFor = Math.max(0, this.flyMovingFor - dt);
+    const moving = planar > 1 || this.flyMovingFor > 0;
     // One flying group at a time, using the recovered vertical samples first and
     // then the horizontal/side samples. This avoids whole-body fly clips being
     // mixed simultaneously.
@@ -195,20 +199,23 @@ export class Character {
     else if (vertical < -45) desired = 'Hero_FlyBulletDive';
     else if (vertical < -35) desired = 'Hero_FlyFastDown';
     else if (vertical < -13) desired = 'Hero_FlyDown';
-    else if (planar <= 1) desired = 'Hero_IdleFlying';
+    else if (!moving) desired = 'Hero_IdleFlying';
     else {
       const sin = Math.sin(this.yaw), cos = Math.cos(this.yaw);
       const localForward = velocityX * sin + velocityZ * cos;
       const localRight = velocityX * cos - velocityZ * sin;
       const angle = Math.atan2(-localRight, localForward) * 180 / Math.PI;
       const a = Math.abs(angle);
+      const sideEntry = this.clip === 'Hero_FlyLeft' || this.clip === 'Hero_FlyRight' || this.clip === 'Hero_FlyBack' ? 25 : 35;
       if (a > 140) { desired = 'Hero_FlyBack'; ratio = Math.max(0.7, Math.min(1.4, planar / 30)); }
-      else if (angle > 35) { desired = 'Hero_FlyRight'; ratio = Math.max(0.7, Math.min(1.4, planar / 30)); }
-      else if (angle < -35) { desired = 'Hero_FlyLeft'; ratio = Math.max(0.7, Math.min(1.4, planar / 30)); }
+      else if (angle > sideEntry) { desired = 'Hero_FlyRight'; ratio = Math.max(0.7, Math.min(1.4, planar / 30)); }
+      else if (angle < -sideEntry) { desired = 'Hero_FlyLeft'; ratio = Math.max(0.7, Math.min(1.4, planar / 30)); }
       else {
         const speed = planar * 100;
-        if (speed < 1200) { desired = 'Hero_FlyForwardLow'; ratio = Math.max(0.7, Math.min(1.4, speed / 1200)); }
-        else if (speed < 4200) { desired = 'Hero_FlyForward'; ratio = Math.max(0.7, Math.min(1.4, speed / 3000)); }
+        const lowExit = this.clip === 'Hero_FlyForward' || this.clip === 'Hero_FlyFastForward1' ? 900 : 1200;
+        const fastEntry = this.clip === 'Hero_FlyFastForward1' ? 3600 : 4200;
+        if (speed < lowExit) { desired = 'Hero_FlyForwardLow'; ratio = Math.max(0.7, Math.min(1.4, speed / 1200)); }
+        else if (speed < fastEntry) { desired = 'Hero_FlyForward'; ratio = Math.max(0.7, Math.min(1.4, speed / 3000)); }
         else { desired = 'Hero_FlyFastForward1'; ratio = Math.max(0.8, Math.min(1.5, speed / 6000)); }
       }
     }
@@ -300,6 +307,7 @@ export class Character {
 
   private setGroundBlend(speed: number, velocityX: number, velocityZ: number, walk = false): void {
     if (this.fade) return;
+    this.flyMovingFor = 0;
     const desired = this.groundClip(speed, walk);
     const group = this.groupFor(desired);
     if (!group) return;
@@ -400,7 +408,7 @@ export class Character {
         // band, while a normal ~9 m/s jump fall belongs to JumpFall.
         desired = vertical < -35 ? 'Hero_JumpFallFast' : 'Hero_JumpFall';
       } else if (motor.state === 'hover' || motor.state === 'fly') {
-        this.setFlyBlend(vertical, planarSpeed, motor.velocity[0], motor.velocity[2]);
+        this.setFlyBlend(vertical, planarSpeed, motor.velocity[0], motor.velocity[2], dt);
         return;
       } else {
         desired = CLIPS[motor.state];
