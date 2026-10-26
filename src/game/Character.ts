@@ -325,14 +325,14 @@ export class Character {
     return;
   }
 
-  private setOneShot(name: string, next: string, entryFade = 0.2, nextFade = 0.2): void {
+  private setOneShot(name: string, next: string, entryFade = 0.2, nextFade = 0.2, playbackRate = 1, maxDuration = Infinity): void {
     const group = this.groupFor(name);
     if (!group) { this.setLoop(next); return; }
-    group.start(false);
+    group.start(false, playbackRate);
     this.beginCrossfade(new Map([[group, 1]]), entryFade);
     this.action = '';
     this.clip = name;
-    this.transition = { name, remaining: Math.max(0.05, group.getLength()), next, nextFade };
+    this.transition = { name, remaining: Math.min(Math.max(0.05, group.getLength() / playbackRate), maxDuration), next, nextFade };
   }
 
   update(motor: MotionSource, dt: number): void {
@@ -415,20 +415,20 @@ export class Character {
     if (!wasSprinting && motor.sprint === true && runLike && planarSpeed < 25) {
       // Shift pressed while already running: re-enter the recovered StartSprint
       // state instead of silently raising the speed ceiling.
-      this.setOneShot('Hero_StartSprint', 'Hero_SprintRun');
+      this.setOneShot('Hero_StartSprint', 'Hero_SprintRun', 0.15, 0.15, 1.4, 0.34);
       return;
     }
     if (this.clip !== desired) {
       if (desired === 'Hero_SprintRun' && (this.clip === 'Hero_Idle' || walkLike)) {
-        if (motor.sprint === true) this.setOneShot('Hero_StartSprint', desired);
+        if (motor.sprint === true) this.setOneShot('Hero_StartSprint', desired, 0.15, 0.15, 1.4, 0.34);
         else this.setGroundBlend(planarSpeed, motor.velocity[0], motor.velocity[2], motor.walk === true);
       } else if ((desired === 'Hero_Idle' || desired === 'Hero_Walk') && runLike) {
         const stopFromSprint = this.sprintStop;
         const exitFade = stopFromSprint && desired === 'Hero_Idle' ? 0.25 : 0.2;
-        this.setOneShot(stopFromSprint ? 'Hero_Stopping_Sprint' : 'Hero_Stopping_WalkRun', desired, 0.2, exitFade);
+        this.setOneShot(stopFromSprint ? 'Hero_Stopping_Sprint' : 'Hero_Stopping_WalkRun', desired, 0.15, exitFade, 1.5, 0.36);
         this.sprintStop = false;
       } else if (desired === 'Hero_Idle' && this.clip === 'Hero_Walk') {
-        this.setOneShot('Hero_Stopping_WalkRun', desired);
+        this.setOneShot('Hero_Stopping_WalkRun', desired, 0.15, 0.15, 1.5, 0.35);
       } else {
         this.setGroundBlend(planarSpeed, motor.velocity[0], motor.velocity[2], motor.walk === true);
       }

@@ -71,8 +71,10 @@ export class OriginalPlayer {
 
   /** Landscape plus recovered flat floor tops (plaza brick floors). */
   private supportAt(x: number, z: number, feetY: number): number {
-    const terrain = this.ground.heightAt(x, z) ?? 0;
-    const floor = this.surfaces?.topAt(x, z, feetY, 0.75);
+    const rawTerrain = this.ground.heightAt(x, z);
+    const terrain = Number.isFinite(rawTerrain) ? rawTerrain! : 0;
+    const rawFloor = this.surfaces?.topAt(x, z, feetY, 0.75);
+    const floor = Number.isFinite(rawFloor) ? rawFloor! : undefined;
     return floor !== undefined ? Math.max(terrain, floor) : terrain;
   }
 
@@ -98,7 +100,7 @@ export class OriginalPlayer {
       this.velocity[1] = Math.min(0, this.velocity[1]);
     }
     const ground = this.supportAt(this.position[0], this.position[2], this.position[1]);
-    this.grounded = !this.flying && this.position[1] <= ground + 0.08;
+    this.grounded = !this.flying && this.position[1] <= ground + 0.12;
     this.walk = input.held('AltLeft', 'AltRight');
     const forward = input.axis(['KeyW', 'ArrowUp'], ['KeyS', 'ArrowDown']);
     const right = input.axis(['KeyD', 'ArrowRight'], ['KeyA', 'ArrowLeft']);
@@ -182,7 +184,7 @@ export class OriginalPlayer {
 
     // Terrain and recovered floor tops are the ground; nearby boxes only block walls.
     const groundNow = this.supportAt(this.position[0], this.position[2], this.position[1]);
-    if (this.position[1] <= groundNow + 0.03) {
+    if (this.position[1] <= groundNow + 0.12) {
       if (this.position[1] < groundNow + 0.02) this.position[1] = groundNow + 0.02;
       if (this.velocity[1] < 0) this.velocity[1] = 0;
       this.grounded = true;

@@ -94,7 +94,7 @@ export class Combat {
         const view = this.camera.getTarget().subtract(this.camera.position); view.y = 0;
         dx = -view.x; dz = -view.z; length = Math.hypot(dx, dz) || 1;
       }
-      const candidateBase: Vec3 = [center[0] + dx / length, target.min[1] + 0.02, center[2] + dz / length];
+      const candidateBase: Vec3 = [center[0] + dx / length, start[1] + 0.02, center[2] + dz / length];
       let placed = false;
       for (const distance of [1.45, 2.0, 2.6, 3.2]) {
         const candidate: Vec3 = [center[0] + dx / length * distance, candidateBase[1], center[2] + dz / length * distance];
