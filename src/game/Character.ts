@@ -215,7 +215,9 @@ export class Character {
     const group = this.groupFor(desired);
     if (!group) return;
     if (this.clip !== desired) this.setLoop(desired, 0.2);
-    group.speedRatio = ratio;
+    // Avoid retiming the fly cycle every frame on tiny velocity noise, which
+    // shows up as whole-body shimmy during directional flight.
+    if (Math.abs((group.speedRatio ?? 1) - ratio) > 0.06) group.speedRatio = ratio;
     return;
   }
 
