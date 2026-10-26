@@ -113,6 +113,8 @@ violations = 0
 
 这直接保证不会再出现多个全身步态抢骨架的“插入别的动作”。
 
+启动走路也不再经过 Idle→Walk→Run 两次连续 crossfade：默认 W 移动直接进入 SprintRun，只有 Alt 走模式才选择 Walk。这样录屏 5–8 秒处只发生一次 Idle→Run 过渡。
+
 补充验证 clip 时长没有被导入器减半：
 
 ```text

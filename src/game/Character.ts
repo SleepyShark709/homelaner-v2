@@ -36,7 +36,7 @@ interface RetargetFile { fps: number; clips: Record<string, RetargetClip> }
 
 const normalizeBone = (name: string) => name.replace(/[^a-z0-9]/gi, '').toLowerCase();
 
-export interface MotionSource { position: Vec3; velocity: Vec3; heading: number; state: MotionState; sprint?: boolean }
+export interface MotionSource { position: Vec3; velocity: Vec3; heading: number; state: MotionState; sprint?: boolean; walk?: boolean }
 interface Crossfade {
   elapsed: number;
   duration: number;
@@ -308,9 +308,9 @@ export class Character {
    * speed×direction multi-group blend is out of the default path because it
    * visibly mixed whole-body poses in Babylon.
    */
-  private setGroundBlend(speed: number, velocityX: number, velocityZ: number): void {
+  private setGroundBlend(speed: number, velocityX: number, velocityZ: number, walk = false): void {
     if (this.fade) return;
-    const desired = speed < 0.15 ? 'Hero_Idle' : speed < 4 ? 'Hero_Walk' : speed < 16.75 ? 'Hero_SprintRun' : 'Hero_SprintSuper';
+    const desired = speed < 0.15 ? 'Hero_Idle' : walk ? 'Hero_Walk' : speed < 16.75 ? 'Hero_SprintRun' : 'Hero_SprintSuper';
     const group = this.groupFor(desired);
     if (!group) return;
     const ratio = desired === 'Hero_Idle'
@@ -350,7 +350,7 @@ export class Character {
     this.wasGrounded = grounded;
     if (this.action) return;
     if (landed) {
-      const next = planarSpeed < 0.2 ? 'Hero_Idle' : planarSpeed < 4 ? 'Hero_Walk' : 'Hero_SprintRun';
+      const next = planarSpeed < 0.2 ? 'Hero_Idle' : motor.walk ? 'Hero_Walk' : 'Hero_SprintRun';
       // Recovered Falling/Landing chain: entry ~0.1 s, Landing->Ground 0.25 s.
       this.setOneShot('Hero_JumpLand', next, 0.1, 0.25);
       return;
@@ -408,7 +408,7 @@ export class Character {
       if (group) group.speedRatio = 1;
       return;
     }
-    const desired = planarSpeed < 0.15 ? 'Hero_Idle' : planarSpeed < 4 ? 'Hero_Walk' : 'Hero_SprintRun';
+    const desired = planarSpeed < 0.15 ? 'Hero_Idle' : motor.walk ? 'Hero_Walk' : 'Hero_SprintRun';
     const walkLike = this.clip === 'Hero_Walk' || this.clip.startsWith('ALS_N_Walk');
     const runLike = this.clip === 'Hero_SprintRun' || this.clip.startsWith('ALS_N_Run');
     if (!wasSprinting && motor.sprint === true && runLike && planarSpeed < 25) {
@@ -420,18 +420,18 @@ export class Character {
     if (this.clip !== desired) {
       if (desired === 'Hero_SprintRun' && (this.clip === 'Hero_Idle' || walkLike)) {
         if (motor.sprint === true) this.setOneShot('Hero_StartSprint', desired);
-        else this.setGroundBlend(planarSpeed, motor.velocity[0], motor.velocity[2]);
+        else this.setGroundBlend(planarSpeed, motor.velocity[0], motor.velocity[2], motor.walk === true);
       } else if ((desired === 'Hero_Idle' || desired === 'Hero_Walk') && runLike) {
         const exitFade = wasSprinting && desired === 'Hero_Idle' ? 0.25 : 0.2;
         this.setOneShot(wasSprinting ? 'Hero_Stopping_Sprint' : 'Hero_Stopping_WalkRun', desired, 0.2, exitFade);
       } else if (desired === 'Hero_Idle' && this.clip === 'Hero_Walk') {
         this.setOneShot('Hero_Stopping_WalkRun', desired);
       } else {
-        this.setGroundBlend(planarSpeed, motor.velocity[0], motor.velocity[2]);
+        this.setGroundBlend(planarSpeed, motor.velocity[0], motor.velocity[2], motor.walk === true);
       }
       return;
     }
-    this.setGroundBlend(planarSpeed, motor.velocity[0], motor.velocity[2]);
+    this.setGroundBlend(planarSpeed, motor.velocity[0], motor.velocity[2], motor.walk === true);
   }
 
   pause(paused: boolean): void {
