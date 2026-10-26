@@ -13,7 +13,7 @@
       "textureFailures": 0,
       "unresolvedMaterialCacheKeys": 0,
       "ambiguousSlots": 0,
-      "fps": 130.9471846219045,
+      "fps": 2.6655767419558116,
       "activeMeshes": 0,
       "warning": "",
       "scope": "",
@@ -61,9 +61,9 @@
         "walking": {
           "stats": {
             "position": [
-              -56.16188575755689,
+              -56.18877319403705,
               0.47000000000000003,
-              -557.2302513254401
+              -557.3091278758462
             ],
             "velocity": [
               -3.226492377619051,
@@ -82,9 +82,9 @@
         "jump": {
           "stats": {
             "position": [
-              -56.40265961419975,
+              -56.42954705067991,
               4.315833333333329,
-              -559.1971034579456
+              -559.2759800083517
             ],
             "velocity": [
               0,
@@ -103,9 +103,9 @@
         "flying": {
           "stats": {
             "position": [
-              -56.40265961419975,
+              -56.42954705067991,
               4.315833333333329,
-              -559.2819825278613
+              -559.3608590782674
             ],
             "velocity": [
               0,
@@ -124,19 +124,19 @@
         "ascended": {
           "stats": {
             "position": [
-              -56.40265961419975,
-              14.470500000000023,
-              -559.2819825278613
+              -56.42954705067991,
+              14.712277777777803,
+              -559.3608590782674
             ],
             "velocity": [
               0,
-              28.672000000000047,
+              29.01333333333338,
               0
             ],
             "flying": true,
             "grounded": false,
             "state": "hover",
-            "speed": 28.672000000000047,
+            "speed": 29.01333333333338,
             "charge": 0
           },
           "clip": "Hero_FlyUp",
@@ -145,9 +145,9 @@
         "descended": {
           "stats": {
             "position": [
-              -56.40265961419975,
+              -56.42954705067991,
               0.47000000000000003,
-              -559.2819825278613
+              -559.3608590782674
             ],
             "velocity": [
               0,
@@ -166,9 +166,9 @@
         "exited": {
           "stats": {
             "position": [
-              -56.40265961419975,
+              -56.42954705067991,
               0.47000000000000003,
-              -559.2819825278613
+              -559.3608590782674
             ],
             "velocity": [
               0,
@@ -187,30 +187,30 @@
         "sprinting": {
           "stats": {
             "position": [
-              -53.65533615302649,
+              -53.735998462466966,
               0.47000000000000003,
-              -550.7791170263831
+              -550.8416170263831
             ],
             "velocity": [
               -9.679477132857153,
               0,
-              -6.25
+              -7.5
             ],
             "flying": false,
             "grounded": true,
             "state": "run",
-            "speed": 11.52192594862094,
+            "speed": 12.245091978646162,
             "charge": 0
           },
           "clip": "Hero_StartSprint",
           "active": true
         },
         "evidence": {
-          "walkDistance": 8.601058713623388,
+          "walkDistance": 8.679935264029496,
           "jumpHeight": 3.845833333333329,
-          "ascendDelta": 10.154666666666692,
-          "descendDelta": -14.000500000000022,
-          "sprintSpeed": 11.52192594862094
+          "ascendDelta": 10.396444444444473,
+          "descendDelta": -14.242277777777803,
+          "sprintSpeed": 12.245091978646162
         }
       },
       "consoleErrors": [],
@@ -221,7 +221,7 @@
       },
       "browser": "Chrome/156.0.8078.48",
       "url": "http://127.0.0.1:4178/?view=play&debug=1",
-      "durationMs": 29596
+      "durationMs": 26275
     }
   ],
   "scope": "B1 playable vertical slice: original ResidentialArea1 street + MainLevel static world, original hero character, heightfield ground, AABB collision proxy and original-input movement. Not a complete original gameplay reconstruction.",

@@ -90,12 +90,20 @@ export class Combat {
         const view = this.camera.getTarget().subtract(this.camera.position); view.y = 0;
         dx = -view.x; dz = -view.z; length = Math.hypot(dx, dz) || 1;
       }
-      const candidate: Vec3 = [center[0] + dx / length * 1.45, target.min[1] + 0.02, center[2] + dz / length * 1.45];
-      const wall = firstHit(start, [candidate[0] - start[0], candidate[1] - start[1], candidate[2] - start[2]], this.walls, [0.36, 0.96, 0.36]);
-      if (!wall || wall.time > 0.98) {
+      const candidateBase: Vec3 = [center[0] + dx / length, target.min[1] + 0.02, center[2] + dz / length];
+      let placed = false;
+      for (const distance of [1.45, 2.0, 2.6, 3.2]) {
+        const candidate: Vec3 = [center[0] + dx / length * distance, candidateBase[1], center[2] + dz / length * distance];
+        const wall = firstHit(start, [candidate[0] - start[0], candidate[1] - start[1], candidate[2] - start[2]], this.walls, [0.36, 0.96, 0.36]);
+        if (wall && wall.time <= 0.98) continue;
         this.motor.position = candidate;
         this.motor.velocity = [0, 0, 0];
         standX = candidate[0]; standZ = candidate[2];
+        placed = true;
+        break;
+      }
+      if (!placed) {
+        // Keep the old position when every stand distance is obstructed.
       }
     }
     const yaw = Math.atan2(center[0] - standX, center[2] - standZ);
