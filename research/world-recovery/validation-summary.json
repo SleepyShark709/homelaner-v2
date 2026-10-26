@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "405d9cc",
+  "validatedCommit": "24aadcb",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -282,6 +282,18 @@
       "command": "capture-world probe-vfx",
       "exitCode": 0,
       "streakMeshes": 6
+    },
+    {
+      "command": "capture-world probe-heat-key",
+      "exitCode": 0,
+      "H": {
+        "heat": true,
+        "charge": 0
+      },
+      "E": {
+        "heat": false,
+        "charge": 0.358
+      }
     }
   ],
   "evidence": {
@@ -293,5 +305,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Procedural sprint/fly/swing streaks added at 405d9cc; B1/tests pass."
+  "note": "Heat vision moved to H; E takeoff preserved. VFX and B1/tests pass at 24aadcb."
 }
