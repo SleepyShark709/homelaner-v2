@@ -117,6 +117,8 @@ violations = 0
 
 攻击结束保留 attack clip 到下一次 locomotion 更新；如果攻击组已停止，crossfade 会立即切到移动目标，而不是从空来源淡入导致骨架回到 rest/T-pose。攻击结束探针现在 `fades=[]`，直接出现一个 `Hero_SprintRun:1.00` 组。
 
+攻击进入也不再 `stop()` 全部动画并 `returnToRest()`；现在从当前 locomotion 姿势 0.1s crossfade 到 attack clip，攻击命中仍正常。
+
 补充验证 clip 时长没有被导入器减半：
 
 ```text
