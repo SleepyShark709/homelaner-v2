@@ -121,6 +121,8 @@ violations = 0
 
 飞行同样改为单组：垂直 FlyFastUp/FlyUp/FlyDown/FastDown/BulletDive 优先，否则按 back/side/forward 速度和方向选一个，不再同时混合 7 个全身飞行组。
 
+冲刺停止现在会记住“刚从冲刺状态来”，使用 `Hero_Stopping_Sprint`，而不是因为松开 Shift 后状态已清零而误用 `Hero_Stopping_WalkRun`。探针：`SprintRun -> Stopping_Sprint -> Idle`。
+
 补充验证 clip 时长没有被导入器减半：
 
 ```text
