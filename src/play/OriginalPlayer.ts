@@ -45,6 +45,7 @@ export class OriginalPlayer {
   sprint = false;
   walk = false;
   charge = 0;
+  attackLocked = false;
   private sprintFast = false;
   private sprintBlocked = false;
   readonly spawn: Vec3;
@@ -102,8 +103,9 @@ export class OriginalPlayer {
     const ground = this.supportAt(this.position[0], this.position[2], this.position[1]);
     this.grounded = !this.flying && this.position[1] <= ground + 0.12;
     this.walk = input.held('AltLeft', 'AltRight');
-    const forward = input.axis(['KeyW', 'ArrowUp'], ['KeyS', 'ArrowDown']);
-    const right = input.axis(['KeyD', 'ArrowRight'], ['KeyA', 'ArrowLeft']);
+    const forward = this.attackLocked ? 0 : input.axis(['KeyW', 'ArrowUp'], ['KeyS', 'ArrowDown']);
+    const right = this.attackLocked ? 0 : input.axis(['KeyD', 'ArrowRight'], ['KeyA', 'ArrowLeft']);
+    if (this.attackLocked) { this.velocity[0] = 0; this.velocity[2] = 0; }
     const moving = forward !== 0 || right !== 0;
     const shiftHeld = input.held('ShiftLeft', 'ShiftRight');
     // H is the heat-vision key; E remains takeoff/ascend and must keep charging.

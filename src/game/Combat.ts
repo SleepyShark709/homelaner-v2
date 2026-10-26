@@ -45,6 +45,7 @@ export class Combat {
   }
   get actionName(): string { return this.heatActive ? '热视线' : this.timeline ? this.attackKind === 'melee' ? '近战连击' : this.strong ? '强力拳波' : '远程攻击' : '待命'; }
   get attacking(): boolean { return this.timeline !== null; }
+  private setAttackLock(locked: boolean): void { (this.motor as unknown as { attackLocked?: boolean }).attackLocked = locked; }
   consumeCameraSnap(): boolean { const value = this.warped; this.warped = false; return value; }
   private aim(): Vec3 {
     const origin = this.camera.position.asArray() as Vec3;
@@ -117,6 +118,7 @@ export class Combat {
   }
   private begin(kind: 'melee' | 'ranged', strong: boolean): void {
     this.strong = kind === 'ranged' && strong;
+    this.setAttackLock(true);
     this.lockedTarget = this.acquireTarget(kind);
     if (this.lockedTarget) this.faceAndWarp(kind, this.lockedTarget);
     let name: string;
@@ -159,7 +161,7 @@ export class Combat {
     const strong = this.input.pressed('AttackStrong') || this.input.held('ShiftLeft', 'ShiftRight');
     this.heatActive = this.allowHeatVision && this.input.held('KeyH');
     if (this.heatActive) {
-      if (this.timeline) { this.timeline = null; this.character.endAction(); }
+      if (this.timeline) { this.timeline = null; this.setAttackLock(false); this.character.endAction(); }
       this.lockedTarget = null;
       this.queued = null; this.motor.heading = this.input.yaw;
       this.heat(dt);
@@ -174,7 +176,7 @@ export class Combat {
         const result = this.timeline.step(dt);
         if (result.hit) this.fire();
         if (result.finished) {
-          this.timeline = null; this.lockedTarget = null; this.character.endAction();
+          this.timeline = null; this.lockedTarget = null; this.setAttackLock(false); this.character.endAction();
           if (this.queued) { const queued = this.queued; this.queued = null; this.begin(queued.kind, queued.strong); }
         }
       } else {
@@ -258,7 +260,7 @@ export class Combat {
       if (wall || projectile.age >= 4) { if (wall) this.effects.impact(projectile.position); projectile.mesh.dispose(); this.projectiles.splice(i, 1); }
     }
   }
-  pause(): void { this.heatActive = false; this.heatTarget = ''; this.heatTick = 0; this.lockedTarget = null; this.effects.heat(null); }
+  pause(): void { this.heatActive = false; this.heatTarget = ''; this.heatTick = 0; this.lockedTarget = null; this.setAttackLock(false); this.effects.heat(null); }
   reset(): void { this.pause(); this.timeline = null; this.lockedTarget = null; this.queued = null; this.combo = this.rangedCombo = this.destroyed = this.hits = 0; this.character.endAction(); this.projectiles.forEach(projectile => projectile.mesh.dispose()); this.projectiles.length = 0; this.effects.reset(); }
   dispose(): void { this.reset(); this.effects.dispose(); }
 }

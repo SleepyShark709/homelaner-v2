@@ -413,22 +413,19 @@ export class Character {
     const walkLike = this.clip === 'Hero_Walk' || this.clip.startsWith('ALS_N_Walk');
     const runLike = this.clip === 'Hero_SprintRun' || this.clip.startsWith('ALS_N_Run');
     if (!wasSprinting && motor.sprint === true && runLike && planarSpeed < 25) {
-      // Shift pressed while already running: re-enter the recovered StartSprint
-      // state instead of silently raising the speed ceiling.
-      this.setOneShot('Hero_StartSprint', 'Hero_SprintRun', 0.15, 0.15, 1.4, 0.34);
+      // Shift pressed while already running: skip the long StartSprint montage
+      // and crossfade directly into SprintRun.
+      this.setLoop('Hero_SprintRun', 0.12);
       return;
     }
     if (this.clip !== desired) {
       if (desired === 'Hero_SprintRun' && (this.clip === 'Hero_Idle' || walkLike)) {
-        if (motor.sprint === true) this.setOneShot('Hero_StartSprint', desired, 0.15, 0.15, 1.4, 0.34);
-        else this.setGroundBlend(planarSpeed, motor.velocity[0], motor.velocity[2], motor.walk === true);
+        this.setLoop(desired, 0.12);
       } else if ((desired === 'Hero_Idle' || desired === 'Hero_Walk') && runLike) {
-        const stopFromSprint = this.sprintStop;
-        const exitFade = stopFromSprint && desired === 'Hero_Idle' ? 0.25 : 0.2;
-        this.setOneShot(stopFromSprint ? 'Hero_Stopping_Sprint' : 'Hero_Stopping_WalkRun', desired, 0.15, exitFade, 1.5, 0.36);
+        this.setLoop(desired, 0.15);
         this.sprintStop = false;
       } else if (desired === 'Hero_Idle' && this.clip === 'Hero_Walk') {
-        this.setOneShot('Hero_Stopping_WalkRun', desired, 0.15, 0.15, 1.5, 0.35);
+        this.setLoop(desired, 0.15);
       } else {
         this.setGroundBlend(planarSpeed, motor.velocity[0], motor.velocity[2], motor.walk === true);
       }
