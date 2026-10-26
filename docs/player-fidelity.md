@@ -162,6 +162,19 @@ Hero_SprintRun: glTF duration 0.567s
 
 ![速度线](../research/screenshots/vfx-streaks5.jpg)
 
+## 第 5 项：热射线键位
+
+热射线已从 `Shift+E` 改为 **H**。E 继续负责起飞/上升和地面蓄力，不再与热射线冲突。
+
+探针：
+
+```text
+按住 H -> heatActive=true, action=热视线, charge=0
+按住 E -> heatActive=false, charge=0.358
+```
+
+HUD/帮助文本已同步。
+
 ## 验收方式
 
 - `?view=play` 硬刷新后观察 idle/走/跑/跳/飞；
