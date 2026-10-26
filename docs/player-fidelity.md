@@ -149,6 +149,19 @@ Hero_SprintRun: glTF duration 0.567s
 
 两者吻合，说明动画本身不是 2 倍速。快跑松开 Shift 后探针看到 `Hero_SprintRun` 的 speedRatio 回到 1.11，masterFrame 从 0 完整走到 34 再回 0，循环周期约 0.51s，不是 1→3→1 截断。旧代码的多组权重加 stale speedRatio 才会造成那个观感。
 
+## 第 4 项：快跑/飞行/攻击特效（第一版）
+
+新增程序化预览 VFX：
+
+- 地面速度 > 12 m/s：金色竖向速度线；
+- 飞行：蓝色速度线；
+- 攻击开始：3 条蓝色挥击线；
+- 上限 96 条，按生命周期缩放/销毁，`reset()` 清空。
+
+这些是 Web 预览特效，不是原版 UE 粒子系统。强制速度探针能生成 6 条 streak。
+
+![速度线](../research/screenshots/vfx-streaks5.jpg)
+
 ## 验收方式
 
 - `?view=play` 硬刷新后观察 idle/走/跑/跳/飞；
