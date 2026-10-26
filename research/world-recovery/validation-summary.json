@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "6331584",
+  "validatedCommit": "a6cfd52",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -262,5 +262,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "One-group locomotion verified across walk/sprint/stop; max one active gait group without crossfade at 6331584."
+  "note": "Default W starts directly in SprintRun (one crossfade); exclusive gait groups and B1 pass at a6cfd52."
 }
