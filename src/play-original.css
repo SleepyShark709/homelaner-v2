@@ -30,3 +30,10 @@ body{margin:0;overflow:hidden}
 .play-paused[hidden]{display:none}
 .play-quest{position:fixed;left:50%;bottom:120px;transform:translateX(-50%);padding:10px 16px;border:1px solid #d9b95a99;border-radius:6px;background:#15140be6;color:#f1df9e;font-size:13px;letter-spacing:.5px;z-index:4;text-align:center}
 .play-quest[hidden]{display:none}
+.play-lock{position:fixed;left:0;top:0;width:48px;height:48px;transform:translate(-50%,-50%);border:2px solid #ffd36ecc;border-radius:50%;z-index:5;pointer-events:none;box-shadow:0 0 10px #ffb30088,inset 0 0 8px #ffb30044;transition:width .08s,height .08s}
+.play-lock i{position:absolute;inset:6px;border:1px solid #ffe5a0aa;border-radius:50%}
+.play-lock::before,.play-lock::after{content:"";position:absolute;left:50%;top:50%;background:#ffd36ecc;transform:translate(-50%,-50%)}
+.play-lock::before{width:14px;height:1px}
+.play-lock::after{width:1px;height:14px}
+.play-lock b{position:absolute;left:50%;top:52px;transform:translateX(-50%);font:10px/1 ui-monospace,monospace;color:#ffe5a0;text-shadow:0 1px 2px #000;white-space:nowrap}
+.play-lock[hidden]{display:none}

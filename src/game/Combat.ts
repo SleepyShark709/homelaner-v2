@@ -33,6 +33,7 @@ export class Combat {
   private idleTime = 0;
   private heatTick = 0;
   private lockedTarget: Actor | null = null;
+  private previewTarget: Actor | null = null;
   private warped = false;
   private readonly projectiles: Projectile[] = [];
   private readonly allowHeatVision: boolean;
@@ -45,6 +46,12 @@ export class Combat {
   }
   get actionName(): string { return this.heatActive ? '热视线' : this.timeline ? this.attackKind === 'melee' ? '近战连击' : this.strong ? '强力拳波' : '远程攻击' : '待命'; }
   get attacking(): boolean { return this.timeline !== null; }
+  getLockTarget(): { center: Vec3; distance: number } | null {
+    const actor = this.timeline ? this.lockedTarget : this.previewTarget;
+    if (!actor?.alive) return null;
+    const center = this.targetCenter(actor);
+    return { center, distance: Math.hypot(center[0] - this.motor.position[0], center[2] - this.motor.position[2]) };
+  }
   private setAttackLock(locked: boolean): void { (this.motor as unknown as { attackLocked?: boolean }).attackLocked = locked; }
   consumeCameraSnap(): boolean { const value = this.warped; this.warped = false; return value; }
   private aim(): Vec3 {
@@ -155,6 +162,8 @@ export class Combat {
   }
   update(dt: number): void {
     this.effects.speedTrail(this.motor.position, this.motor.velocity, this.motor.flying, !this.motor.flying && Math.hypot(this.motor.velocity[0], this.motor.velocity[2]) > 12, dt);
+    if (!this.timeline && !this.heatActive) this.previewTarget = this.acquireTarget('melee');
+    else if (this.heatActive) this.previewTarget = null;
     if (this.motor.grounded && !this.motor.flying) this.airAttackStarted = false;
     const melee = this.input.pressed('AttackMelee') || this.input.pressed('KeyJ');
     const ranged = this.input.pressed('AttackRanged') || this.input.pressed('KeyK');
@@ -260,7 +269,7 @@ export class Combat {
       if (wall || projectile.age >= 4) { if (wall) this.effects.impact(projectile.position); projectile.mesh.dispose(); this.projectiles.splice(i, 1); }
     }
   }
-  pause(): void { this.heatActive = false; this.heatTarget = ''; this.heatTick = 0; this.lockedTarget = null; this.setAttackLock(false); this.effects.heat(null); }
+  pause(): void { this.heatActive = false; this.heatTarget = ''; this.heatTick = 0; this.lockedTarget = null; this.previewTarget = null; this.setAttackLock(false); this.effects.heat(null); }
   reset(): void { this.pause(); this.timeline = null; this.lockedTarget = null; this.queued = null; this.combo = this.rangedCombo = this.destroyed = this.hits = 0; this.character.endAction(); this.projectiles.forEach(projectile => projectile.mesh.dispose()); this.projectiles.length = 0; this.effects.reset(); }
   dispose(): void { this.reset(); this.effects.dispose(); }
 }

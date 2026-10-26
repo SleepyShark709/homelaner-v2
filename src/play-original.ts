@@ -51,7 +51,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="play-hud"><div>位置 <b id="hud-position">—</b></div><div>状态 <b id="hud-mode">—</b></div><div>速度 <b id="hud-speed">—</b></div><div id="hud-free-row" hidden>破坏 <b id="hud-destroyed">0</b> · 命中 <b id="hud-hits">0</b></div><div id="hud-quest-row" hidden>任务区域 <b id="hud-quests">—</b></div><div id="hud-crosswalk-row" hidden>人行横道 <b id="hud-crosswalk">—</b></div><div>FPS <b id="hud-fps">—</b></div></div>
   <div class="play-loading" id="loading"><div><strong id="load-title">装配原版可玩街区</strong><p id="load-message">读取原关卡、材质与地形…</p><progress id="progress" max="1" value="0"></progress></div></div>
   <div class="play-paused" id="paused" hidden>已暂停 · 点击继续</div>
-  <div class="play-quest" id="quest-hint" hidden></div>`;
+  <div class="play-quest" id="quest-hint" hidden></div>
+  <div class="play-lock" id="lock-reticle" hidden><i></i><b id="lock-distance"></b></div>`;
 
 const el = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
 const canvas = el<HTMLCanvasElement>('world');
@@ -62,6 +63,8 @@ const input = new Input(canvas);
 const CAMERA = { armLength: 4.0, attackArmLength: 6.5, farArmLength: 8.0, farSpeed: 60, armSpeed: 2, farArmSpeed: 1, boomHeight: 0.7, socketRight: 0.5, socketUp: 0.9, lagSpeed: 15, fov: 90 };
 input.pitch = 0.02;
 const paused = el('paused');
+const lockReticle = el('lock-reticle');
+const lockDistance = el('lock-distance');
 const params = new URLSearchParams(location.search);
 const originalHudMode = params.get('hud') !== 'help';
 if (originalHudMode) {
@@ -579,6 +582,21 @@ try {
     ));
     combat?.update(dt);
     if (combat?.consumeCameraSnap()) cameraInitialized = false;
+    const lock = combat?.getLockTarget();
+    if (lock) {
+      const viewport = viewer.camera.viewport.toGlobal(viewer.engine.getRenderWidth(), viewer.engine.getRenderHeight());
+      const projected = Vector3.Project(Vector3.FromArray(lock.center), Matrix.IdentityReadOnly, viewer.scene.getTransformMatrix(), viewport);
+      if (projected.z > 0 && projected.z < 1) {
+        lockReticle.style.left = `${(projected.x / viewer.engine.getRenderWidth()) * canvas.clientWidth}px`;
+        lockReticle.style.top = `${(projected.y / viewer.engine.getRenderHeight()) * canvas.clientHeight}px`;
+        lockDistance.textContent = `${lock.distance.toFixed(1)} m`;
+        lockReticle.hidden = false;
+      } else {
+        lockReticle.hidden = true;
+      }
+    } else {
+      lockReticle.hidden = true;
+    }
     updateCamera(dt);
     hudTime += dt;
     if (hudTime > 0.1) {
