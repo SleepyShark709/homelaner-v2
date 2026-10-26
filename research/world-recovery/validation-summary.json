@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "e5da119",
+  "validatedCommit": "cde7736",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -311,6 +311,13 @@
       ],
       "emptyFrames": 0,
       "maxY": 4.47
+    },
+    {
+      "command": "capture-world probe-running-jump",
+      "exitCode": 0,
+      "frames": 126,
+      "emptyFrames": 0,
+      "maxY": 4.46
     }
   ],
   "evidence": {
@@ -322,5 +329,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Standing jump chain verified without empty animation frames at e5da119; B1/tests pass."
+  "note": "Standing and moving jump chains verified without empty animation frames at cde7736."
 }
