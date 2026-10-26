@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "fcf83f3",
+  "validatedCommit": "073e3c5",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -336,5 +336,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Lock-on reticle added at fcf83f3; B1/tests pass."
+  "note": "Flight clip selection hysteresis added after video review at 073e3c5; B1/tests pass."
 }
