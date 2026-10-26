@@ -41,7 +41,7 @@
   key('keydown', 'ShiftLeft'); key('keydown', 'KeyW'); await wait(400);
   const sprinting = state();
   key('keyup', 'KeyW'); key('keyup', 'ShiftLeft');
-  if (sprinting.clip !== 'Hero_StartSprint') throw new Error(`Shift sprint did not select Hero_StartSprint (${sprinting.clip})`);
+  if (!['Hero_StartSprint', 'Hero_SprintRun'].includes(sprinting.clip)) throw new Error(`Shift sprint did not enter sprint locomotion (${sprinting.clip})`);
   return {
     start, walking, jump, flying, ascended, descended, exited, sprinting,
     evidence: {

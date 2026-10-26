@@ -35,16 +35,15 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <aside class="play-panel">
     <h1>原版街区 · 可玩切片</h1>
     <p>原角色、原骨架与原始街区资产；地形高度来自原 Landscape 高度场。建筑碰撞为静态 AABB 代理，跳跃/重力/相机手感仍是预览。</p>
-    <p class="warn">本切片不是完整原版玩法：AI、车辆、任务与完整攻击状态仍未接入；H 为热视线预览，mode=free 为自由破坏预览。</p>
+    <p class="warn">本切片不是完整原版玩法：AI、车辆、任务与完整攻击状态仍未接入；镭射眼为作者预览，默认关闭，需 ?heat=1 启用；mode=free 为自由破坏预览。</p>
     <div class="play-keys">
       <kbd>W A S D</kbd><span>移动</span>
       <kbd>拖动鼠标</kbd><span>转向</span>
       <kbd>SPACE</kbd><span>地面跳跃 / 空中开飞 / 飞行退飞</span>
       <kbd>E / Q</kbd><span>上升 / 下降；地面按住 E 蓄升</span>
-      <kbd>H</kbd><span>热视线（预览）</span>
       <kbd>SHIFT</kbd><span>冲刺</span>
       <kbd>ALT</kbd><span>慢行</span>
-      <kbd>F</kbd><span>互动（预留）</span>
+      <kbd>F</kbd><span>退出飞行并落地</span>
       <kbd>R</kbd><span>回到出生点</span>
     </div>
   </aside>
@@ -197,7 +196,7 @@ if (freeMode) {
   const badge = document.querySelector<HTMLElement>('.play-badge');
   if (badge) badge.textContent = '自由破坏预览 · 非原版';
   const warn = document.querySelector<HTMLElement>('.warn');
-  if (warn) warn.textContent = '自由破坏为可选预览：可摧毁市民/车辆/道具，市民会复活；热视线按 H；任务和完整原版 AI 尚未接入。';
+  if (warn) warn.textContent = '自由破坏为可选预览：可摧毁市民/车辆/道具，市民会复活；镭射眼需 ?heat=1；任务和完整原版 AI 尚未接入。';
   el('hud-free-row').hidden = false;
 }
 const playDistrict = plazaMode ? 'MainLevel' : startupMode ? 'ResidentialArea1' : requestedDistrict;
@@ -483,7 +482,7 @@ try {
     await population.load({ manifestUrl, worldOffset: populationOffset, sandbox: true });
   }
   population.pause(true);
-  combat = new Combat(viewer.scene, input, player as unknown as PlayerMotor, character, population, viewer.camera, collision.boxes, { heatVision: true });
+  combat = new Combat(viewer.scene, input, player as unknown as PlayerMotor, character, population, viewer.camera, collision.boxes, { heatVision: params.get('heat') === '1' });
   combat.mode = freeMode ? 'free' : 'baseline';
   await combat.load();
   combat.onSound = kind => {
