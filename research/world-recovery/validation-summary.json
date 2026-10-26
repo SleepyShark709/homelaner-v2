@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "5482cb8",
+  "validatedCommit": "405d9cc",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -277,6 +277,11 @@
       "hits": 1,
       "alive": false,
       "wallBlockedWarp": true
+    },
+    {
+      "command": "capture-world probe-vfx",
+      "exitCode": 0,
+      "streakMeshes": 6
     }
   ],
   "evidence": {
@@ -288,5 +293,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Attack auto-lock/warp with reach and stand-distance fallbacks at 5482cb8; B1/tests pass."
+  "note": "Procedural sprint/fly/swing streaks added at 405d9cc; B1/tests pass."
 }
