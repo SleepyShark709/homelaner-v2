@@ -55,6 +55,7 @@ export class Character {
   private fade: Crossfade | null = null;
   private wasGrounded = true;
   private wasSprinting = false;
+  private sprintStop = false;
   private footstepLast = new Map<string, number>();
   onFootstep: ((clip: string) => void) | undefined;
   constructor(readonly scene: Scene) {
@@ -399,6 +400,7 @@ export class Character {
       return;
     }
     const desired = planarSpeed < 0.15 ? 'Hero_Idle' : motor.walk ? 'Hero_Walk' : 'Hero_SprintRun';
+    if (motor.sprint === true || planarSpeed > 20) this.sprintStop = true;
     const walkLike = this.clip === 'Hero_Walk' || this.clip.startsWith('ALS_N_Walk');
     const runLike = this.clip === 'Hero_SprintRun' || this.clip.startsWith('ALS_N_Run');
     if (!wasSprinting && motor.sprint === true && runLike && planarSpeed < 25) {
@@ -412,8 +414,10 @@ export class Character {
         if (motor.sprint === true) this.setOneShot('Hero_StartSprint', desired);
         else this.setGroundBlend(planarSpeed, motor.velocity[0], motor.velocity[2], motor.walk === true);
       } else if ((desired === 'Hero_Idle' || desired === 'Hero_Walk') && runLike) {
-        const exitFade = wasSprinting && desired === 'Hero_Idle' ? 0.25 : 0.2;
-        this.setOneShot(wasSprinting ? 'Hero_Stopping_Sprint' : 'Hero_Stopping_WalkRun', desired, 0.2, exitFade);
+        const stopFromSprint = this.sprintStop;
+        const exitFade = stopFromSprint && desired === 'Hero_Idle' ? 0.25 : 0.2;
+        this.setOneShot(stopFromSprint ? 'Hero_Stopping_Sprint' : 'Hero_Stopping_WalkRun', desired, 0.2, exitFade);
+        this.sprintStop = false;
       } else if (desired === 'Hero_Idle' && this.clip === 'Hero_Walk') {
         this.setOneShot('Hero_Stopping_WalkRun', desired);
       } else {
@@ -432,6 +436,7 @@ export class Character {
   playAction(name: string, speed: number): void {
     const group = this.groupFor(name);
     if (!group) throw new Error(`Missing animation clip: ${name}`);
+    this.sprintStop = false;
     const hasSource = this.animations.some(item => item.isPlaying && item.weight > 0.001);
     this.action = name;
     this.clip = name;
