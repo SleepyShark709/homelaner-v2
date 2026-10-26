@@ -545,13 +545,15 @@ try {
     look.copyFrom(base).addInPlace(forward.scale(20));
     look.y += 0.25;
     const desired = base.add(offset.scale(safe));
-    if (!cameraInitialized || hit) {
+    if (!cameraInitialized) {
       viewer.camera.position.copyFrom(desired);
       cameraTarget.copyFrom(look);
       cameraInitialized = true;
     } else {
-      // PlayerBP CameraLagSpeed/CameraRotationLagSpeed = 15.
-      const alpha = 1 - Math.exp(-CAMERA.lagSpeed * dt);
+      // PlayerBP CameraLagSpeed/CameraRotationLagSpeed = 15. When the boom
+      // collides with geometry, ease quickly toward the safe point instead of
+      // snapping every frame (which reads as flight jitter near buildings).
+      const alpha = 1 - Math.exp(-(hit ? 45 : CAMERA.lagSpeed) * dt);
       viewer.camera.position.copyFrom(Vector3.Lerp(viewer.camera.position, desired, alpha));
       cameraTarget.copyFrom(Vector3.Lerp(cameraTarget, look, alpha));
     }
