@@ -287,9 +287,18 @@ export class Character {
    * speed×direction multi-group blend is out of the default path because it
    * visibly mixed whole-body poses in Babylon.
    */
+  private groundClip(speed: number, walk: boolean): string {
+    if (speed < 0.15) return 'Hero_Idle';
+    if (walk) return 'Hero_Walk';
+    // Hysteresis around the SprintRun/SprintSuper boundary prevents repeated
+    // crossfades when the speed hovers around 16.75 m/s.
+    if (this.clip === 'Hero_SprintSuper') return speed > 14.5 ? 'Hero_SprintSuper' : 'Hero_SprintRun';
+    return speed >= 17.25 ? 'Hero_SprintSuper' : 'Hero_SprintRun';
+  }
+
   private setGroundBlend(speed: number, velocityX: number, velocityZ: number, walk = false): void {
     if (this.fade) return;
-    const desired = speed < 0.15 ? 'Hero_Idle' : walk ? 'Hero_Walk' : speed < 16.75 ? 'Hero_SprintRun' : 'Hero_SprintSuper';
+    const desired = this.groundClip(speed, walk);
     const group = this.groupFor(desired);
     if (!group) return;
     const ratio = desired === 'Hero_Idle'
@@ -399,7 +408,7 @@ export class Character {
       if (group) group.speedRatio = 1;
       return;
     }
-    const desired = planarSpeed < 0.15 ? 'Hero_Idle' : motor.walk ? 'Hero_Walk' : 'Hero_SprintRun';
+    const desired = this.groundClip(planarSpeed, motor.walk === true);
     if (motor.sprint === true || planarSpeed > 20) this.sprintStop = true;
     const walkLike = this.clip === 'Hero_Walk' || this.clip.startsWith('ALS_N_Walk');
     const runLike = this.clip === 'Hero_SprintRun' || this.clip.startsWith('ALS_N_Run');
