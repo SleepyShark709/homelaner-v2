@@ -577,6 +577,7 @@ try {
       Math.abs(player.velocity[1]) / 40,
     ));
     combat?.update(dt);
+    if (combat?.consumeCameraSnap()) cameraInitialized = false;
     updateCamera(dt);
     hudTime += dt;
     if (hudTime > 0.1) {

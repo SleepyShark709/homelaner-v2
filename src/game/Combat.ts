@@ -33,6 +33,7 @@ export class Combat {
   private idleTime = 0;
   private heatTick = 0;
   private lockedTarget: Actor | null = null;
+  private warped = false;
   private readonly projectiles: Projectile[] = [];
   private readonly allowHeatVision: boolean;
   onImpact: (message: string) => void = () => {};
@@ -44,6 +45,7 @@ export class Combat {
   }
   get actionName(): string { return this.heatActive ? '热视线' : this.timeline ? this.attackKind === 'melee' ? '近战连击' : this.strong ? '强力拳波' : '远程攻击' : '待命'; }
   get attacking(): boolean { return this.timeline !== null; }
+  consumeCameraSnap(): boolean { const value = this.warped; this.warped = false; return value; }
   private aim(): Vec3 {
     const origin = this.camera.position.asArray() as Vec3;
     const delta = this.camera.getTarget().subtract(this.camera.position).normalize().scale(200).asArray() as Vec3;
@@ -102,6 +104,7 @@ export class Combat {
         this.motor.velocity = [0, 0, 0];
         standX = candidate[0]; standZ = candidate[2];
         placed = true;
+        this.warped = true;
         break;
       }
       if (!placed) {
