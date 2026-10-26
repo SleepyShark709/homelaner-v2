@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "a6cfd52",
+  "validatedCommit": "a5c608f",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -251,6 +251,14 @@
       "frames": 524,
       "maxActiveGaitGroups": 1,
       "violations": 0
+    },
+    {
+      "command": "capture-world probe-attack-exit",
+      "exitCode": 0,
+      "fades": 0,
+      "groups": [
+        "Hero_SprintRun:1.00"
+      ]
     }
   ],
   "evidence": {
@@ -262,5 +270,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Default W starts directly in SprintRun (one crossfade); exclusive gait groups and B1 pass at a6cfd52."
+  "note": "Direct-run startup and attack-exit empty-fade guard verified at a5c608f; B1/tests pass."
 }
