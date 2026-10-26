@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "595639e",
+  "validatedCommit": "d82e6c1",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -259,6 +259,15 @@
       "groups": [
         "Hero_SprintRun:1.00"
       ]
+    },
+    {
+      "command": "capture-world probe-sprint-stop",
+      "exitCode": 0,
+      "sequence": [
+        "Hero_SprintRun",
+        "Hero_Stopping_Sprint",
+        "Hero_Idle"
+      ]
     }
   ],
   "evidence": {
@@ -270,5 +279,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Ground/attack/fly transitions now use exclusive groups with crossfades; B1 and tests pass at 595639e."
+  "note": "Sprint stop now uses Hero_Stopping_Sprint; B1/tests pass at d82e6c1."
 }
