@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "d82e6c1",
+  "validatedCommit": "419bdc5",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -268,6 +268,15 @@
         "Hero_Stopping_Sprint",
         "Hero_Idle"
       ]
+    },
+    {
+      "command": "capture-world probe-attack-autolock",
+      "exitCode": 0,
+      "beforeDistance": 7.98,
+      "afterDistance": 4.47,
+      "hits": 1,
+      "alive": false,
+      "wallBlockedWarp": true
     }
   ],
   "evidence": {
@@ -279,5 +288,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Sprint stop now uses Hero_Stopping_Sprint; B1/tests pass at d82e6c1."
+  "note": "Attack auto-lock/warp first pass at 419bdc5; B1/tests pass."
 }
