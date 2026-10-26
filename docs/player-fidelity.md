@@ -115,6 +115,8 @@ violations = 0
 
 启动走路也不再经过 Idle→Walk→Run 两次连续 crossfade：默认 W 移动直接进入 SprintRun，只有 Alt 走模式才选择 Walk。这样录屏 5–8 秒处只发生一次 Idle→Run 过渡。
 
+SprintRun/SprintSuper 边界加入滞回：17.25 m/s 进入 Super，14.5 m/s 才退回 Run，避免速度在 16.75 附近来回切换导致循环重启。
+
 攻击结束保留 attack clip 到下一次 locomotion 更新；如果攻击组已停止，crossfade 会立即切到移动目标，而不是从空来源淡入导致骨架回到 rest/T-pose。攻击结束探针现在 `fades=[]`，直接出现一个 `Hero_SprintRun:1.00` 组。
 
 攻击进入也不再 `stop()` 全部动画并 `returnToRest()`；现在从当前 locomotion 姿势 0.1s crossfade 到 attack clip，攻击命中仍正常。
