@@ -143,9 +143,11 @@ export class Combat {
     this.onSound?.(heavy ? 'heavy' : name === 'Hero_AirAttackStart' ? 'whoosh' : 'swing');
     this.attackKind = kind; this.timeline = new AttackTimeline(timing); this.idleTime = 0;
     this.motor.heading = this.input.yaw;
+    this.effects.swing(this.origin(), this.direction(this.origin(), this.lockedTarget ? this.targetCenter(this.lockedTarget) : this.aim()));
     this.character.playAction(name, timing.playbackRate);
   }
   update(dt: number): void {
+    this.effects.speedTrail(this.motor.position, this.motor.velocity, this.motor.flying, !this.motor.flying && Math.hypot(this.motor.velocity[0], this.motor.velocity[2]) > 12, dt);
     if (this.motor.grounded && !this.motor.flying) this.airAttackStarted = false;
     const melee = this.input.pressed('AttackMelee') || this.input.pressed('KeyJ');
     const ranged = this.input.pressed('AttackRanged') || this.input.pressed('KeyK');

@@ -12,10 +12,55 @@ export class Effects {
   private readonly blue: StandardMaterial;
   private readonly beams: Mesh[];
   private readonly sparks: { mesh: Mesh; age: number; life: number; velocity: Vector3; size: number }[] = [];
+  private readonly streaks: { mesh: Mesh; age: number; life: number; size: number }[] = [];
+  private trailClock = 0;
   constructor(readonly scene: Scene) {
     const material = (name: string, color: string) => { const mat = new StandardMaterial(name, scene); mat.emissiveColor = Color3.FromHexString(color); mat.disableLighting = true; return mat; };
     this.red = material('heat-red', '#ff3122'); this.gold = material('impact-gold', '#ffd38a'); this.blue = material('fist-cyan', '#c5ffff');
+    this.gold.alpha = 0.75; this.blue.alpha = 0.7;
     this.beams = [0, 1].map(index => { const mesh = MeshBuilder.CreateCylinder(`eye-beam-${index}`, { height: 1, diameter: 0.035, tessellation: 6 }, scene); mesh.material = this.red; mesh.isPickable = false; mesh.setEnabled(false); return mesh; });
+  }
+  private streak(point: Vec3, direction: Vector3, color: 'gold' | 'blue', length: number, life: number): void {
+    if (this.streaks.length >= 96) this.streaks.shift()!.mesh.dispose();
+    const mesh = MeshBuilder.CreateSphere('speed-streak', { diameter: 1, segments: 4 }, this.scene);
+    mesh.material = color === 'blue' ? this.blue : this.gold;
+    mesh.isPickable = false;
+    mesh.position.copyFromFloats(...point);
+    mesh.rotation.y = Math.atan2(direction.x, direction.z);
+    mesh.scaling.set(0.045, length, 0.045);
+    this.streaks.push({ mesh, age: 0, life, size: length });
+  }
+  /** Procedural sprint/fly speed streaks. These are authored preview VFX, not
+   * recovered UE particle systems. */
+  speedTrail(position: Vec3, velocity: Vec3, flying: boolean, sprinting: boolean, dt: number): void {
+    this.trailClock += dt;
+    const speed = Math.hypot(velocity[0], velocity[1], velocity[2]);
+    if ((!flying && !sprinting) || speed < 6) return;
+    if (this.trailClock < 0.055) return;
+    this.trailClock = 0;
+    const direction = new Vector3(-velocity[0], -velocity[1] * 0.2, -velocity[2]);
+    if (direction.lengthSquared() < 1e-5) return;
+    direction.normalize();
+    const y = flying ? position[1] + 1.0 + Math.random() * 0.6 : position[1] + 0.6 + Math.random() * 0.5;
+    const sideVector = new Vector3(direction.z, 0, -direction.x);
+    for (let i = 0; i < 2; i++) {
+      const side = (i === 0 ? -1 : 1) * (flying ? 0.8 : 0.55) + (Math.random() - 0.5) * 0.25;
+      const point: Vec3 = [
+        position[0] + direction.x * 0.8 + sideVector.x * side,
+        y,
+        position[2] + direction.z * 0.8 + sideVector.z * side,
+      ];
+      this.streak(point, direction, flying ? 'blue' : 'gold', flying ? 1.8 + Math.random() * 0.7 : 1.0 + Math.random() * 0.45, flying ? 0.5 : 0.4);
+    }
+  }
+  swing(point: Vec3, direction: Vec3): void {
+    const view = Vector3.FromArray(direction);
+    if (view.lengthSquared() < 1e-5) return;
+    view.normalize();
+    for (let i = 0; i < 3; i++) {
+      const side = (i - 1) * 0.22;
+      this.streak([point[0] + view.z * side, point[1] + 0.1, point[2] - view.x * side], view, 'blue', 0.45 + i * 0.08, 0.14);
+    }
   }
   heat(eyes: Vec3[] | null, end?: Vec3): void {
     this.beams.forEach((mesh, index) => {
@@ -50,7 +95,14 @@ export class Effects {
       if (spark.age >= spark.life) { spark.mesh.dispose(); this.sparks.splice(i, 1); continue; }
       spark.velocity.y -= 5 * dt; spark.mesh.position.addInPlace(spark.velocity.scale(dt)); spark.mesh.scaling.setAll(spark.size * (1 - spark.age / spark.life));
     }
+    for (let i = this.streaks.length - 1; i >= 0; i--) {
+      const streak = this.streaks[i]; streak.age += dt;
+      if (streak.age >= streak.life) { streak.mesh.dispose(); this.streaks.splice(i, 1); continue; }
+      const fade = 1 - streak.age / streak.life;
+      streak.mesh.scaling.x = streak.mesh.scaling.z = 0.045 * fade;
+      streak.mesh.scaling.y = streak.size * (0.7 + fade * 0.3);
+    }
   }
-  reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; }
+  reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; this.streaks.forEach(streak => streak.mesh.dispose()); this.streaks.length = 0; this.trailClock = 0; }
   dispose(): void { this.reset(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
 }
