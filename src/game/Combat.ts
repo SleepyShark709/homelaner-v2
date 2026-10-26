@@ -189,14 +189,16 @@ export class Combat {
     const direction = this.direction(origin, locked ?? this.aim());
     this.population.alert(origin);
     if (this.attackKind === 'melee') {
-      const center: Vec3 = locked ?? [origin[0] + direction[0] * 0.95, this.motor.position[1] + 0.3, origin[2] + direction[2] * 0.95];
+      const reachable = locked && Math.hypot(locked[0] - this.motor.position[0], locked[2] - this.motor.position[2]) <= 3.3;
+      const center: Vec3 = reachable ? locked : [origin[0] + direction[0] * 0.95, this.motor.position[1] + 0.3, origin[2] + direction[2] * 0.95];
+      const meleeDirection = this.direction(origin, center);
       this.effects.impact([center[0], origin[1], center[2]]);
       for (const actor of this.population.actors.filter(item => item.alive)) {
         const closest = center.map((value, i) => Math.max(actor.min[i], Math.min(actor.max[i], value))) as Vec3;
         if (Math.hypot(...closest.map((value, i) => value - center[i])) > 2.56) continue;
         const target: Vec3 = [(actor.min[0] + actor.max[0]) / 2, (actor.min[1] + actor.max[1]) / 2, (actor.min[2] + actor.max[2]) / 2];
         const wall = firstHit(origin, target.map((value, i) => value - origin[i]) as Vec3, this.walls);
-        if (!wall || wall.time > 0.99) this.strike(actor.id, { kind: 'melee', strong: false, damage: FREE_RULES.meleeDamage, direction }, target);
+        if (!wall || wall.time > 0.99) this.strike(actor.id, { kind: 'melee', strong: false, damage: FREE_RULES.meleeDamage, direction: meleeDirection }, target);
       }
     } else {
       if (this.projectiles.length >= 12) this.projectiles.shift()!.mesh.dispose();
