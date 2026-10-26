@@ -53,7 +53,9 @@ export class Combat {
   private direction(origin: Vec3, target: Vec3): Vec3 { return Vector3.FromArray(target).subtract(Vector3.FromArray(origin)).normalize().asArray() as Vec3; }
   private origin(): Vec3 { return [this.motor.position[0], this.motor.position[1] + 1.25, this.motor.position[2]]; }
   private targetCenter(actor: Actor): Vec3 {
-    return [(actor.min[0] + actor.max[0]) / 2, (actor.min[1] + actor.max[1]) / 2, (actor.min[2] + actor.max[2]) / 2];
+    // Use the actor root for ground-plane targeting; some imported model
+    // bounds carry a large local offset that is not the visible body center.
+    return [actor.position[0], (actor.min[1] + actor.max[1]) / 2, actor.position[2]];
   }
   private acquireTarget(kind: 'melee' | 'ranged'): Actor | null {
     const origin = this.origin();
@@ -206,7 +208,7 @@ export class Combat {
       for (const actor of this.population.actors.filter(item => item.alive)) {
         const closest = center.map((value, i) => Math.max(actor.min[i], Math.min(actor.max[i], value))) as Vec3;
         if (Math.hypot(...closest.map((value, i) => value - center[i])) > 2.56) continue;
-        const target: Vec3 = [(actor.min[0] + actor.max[0]) / 2, (actor.min[1] + actor.max[1]) / 2, (actor.min[2] + actor.max[2]) / 2];
+        const target = this.targetCenter(actor);
         const wall = firstHit(origin, target.map((value, i) => value - origin[i]) as Vec3, this.walls);
         if (!wall || wall.time > 0.99) this.strike(actor.id, { kind: 'melee', strong: false, damage: FREE_RULES.meleeDamage, direction: meleeDirection }, target);
       }
