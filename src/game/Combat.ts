@@ -6,6 +6,7 @@ import type { Character } from './Character';
 import type { Input } from './Input';
 import type { PlayerMotor } from './PlayerMotor';
 import type { Population } from './Population';
+import type { Actor } from './Population';
 import { Effects } from './Effects';
 import { firstHit, sweep } from './collision';
 import type { Obstacle, Vec3 } from './collision';
@@ -31,6 +32,7 @@ export class Combat {
   private airAttackStarted = false;
   private idleTime = 0;
   private heatTick = 0;
+  private lockedTarget: Actor | null = null;
   private readonly projectiles: Projectile[] = [];
   private readonly allowHeatVision: boolean;
   onImpact: (message: string) => void = () => {};
@@ -50,8 +52,60 @@ export class Combat {
   }
   private direction(origin: Vec3, target: Vec3): Vec3 { return Vector3.FromArray(target).subtract(Vector3.FromArray(origin)).normalize().asArray() as Vec3; }
   private origin(): Vec3 { return [this.motor.position[0], this.motor.position[1] + 1.25, this.motor.position[2]]; }
+  private targetCenter(actor: Actor): Vec3 {
+    return [(actor.min[0] + actor.max[0]) / 2, (actor.min[1] + actor.max[1]) / 2, (actor.min[2] + actor.max[2]) / 2];
+  }
+  private acquireTarget(kind: 'melee' | 'ranged'): Actor | null {
+    const origin = this.origin();
+    const view = this.camera.getTarget().subtract(this.camera.position); view.y = 0;
+    if (view.lengthSquared() < 1e-5) return null;
+    view.normalize();
+    const range = kind === 'melee' ? 12 : 80;
+    let best: Actor | null = null;
+    let bestScore = Infinity;
+    for (const actor of this.population.actors) {
+      if (!actor.alive) continue;
+      const center = this.targetCenter(actor);
+      const dx = center[0] - origin[0], dz = center[2] - origin[2];
+      const distance = Math.hypot(dx, dz);
+      if (distance > range) continue;
+      const dot = distance > 0.001 ? (dx * view.x + dz * view.z) / distance : 1;
+      if (dot < 0.2 && distance > 4) continue;
+      const wall = firstHit(origin, [center[0] - origin[0], center[1] - origin[1], center[2] - origin[2]], this.walls);
+      if (wall && wall.time < 0.98) continue;
+      const score = distance - dot * 3;
+      if (score < bestScore) { best = actor; bestScore = score; }
+    }
+    return best;
+  }
+  private faceAndWarp(kind: 'melee' | 'ranged', target: Actor): void {
+    const center = this.targetCenter(target);
+    const start = [...this.motor.position] as Vec3;
+    let standX = start[0], standZ = start[2];
+    const distance = Math.hypot(center[0] - standX, center[2] - standZ);
+    if (kind === 'melee' && distance > 2.0 && !this.motor.flying && this.motor.grounded) {
+      let dx = standX - center[0], dz = standZ - center[2];
+      let length = Math.hypot(dx, dz);
+      if (length < 0.001) {
+        const view = this.camera.getTarget().subtract(this.camera.position); view.y = 0;
+        dx = -view.x; dz = -view.z; length = Math.hypot(dx, dz) || 1;
+      }
+      const candidate: Vec3 = [center[0] + dx / length * 1.45, target.min[1] + 0.02, center[2] + dz / length * 1.45];
+      const wall = firstHit(start, [candidate[0] - start[0], candidate[1] - start[1], candidate[2] - start[2]], this.walls, [0.36, 0.96, 0.36]);
+      if (!wall || wall.time > 0.98) {
+        this.motor.position = candidate;
+        this.motor.velocity = [0, 0, 0];
+        standX = candidate[0]; standZ = candidate[2];
+      }
+    }
+    const yaw = Math.atan2(center[0] - standX, center[2] - standZ);
+    this.motor.heading = yaw;
+    this.input.yaw = yaw;
+  }
   private begin(kind: 'melee' | 'ranged', strong: boolean): void {
     this.strong = kind === 'ranged' && strong;
+    this.lockedTarget = this.acquireTarget(kind);
+    if (this.lockedTarget) this.faceAndWarp(kind, this.lockedTarget);
     let name: string;
     if (kind === 'melee' && (this.motor.flying || !this.motor.grounded)) {
       // Air melee uses the same AirAttack state entry as the ranged path.
@@ -91,6 +145,7 @@ export class Combat {
     this.heatActive = this.allowHeatVision && this.input.held('KeyE') && this.input.held('ShiftLeft', 'ShiftRight');
     if (this.heatActive) {
       if (this.timeline) { this.timeline = null; this.character.endAction(); }
+      this.lockedTarget = null;
       this.queued = null; this.motor.heading = this.input.yaw;
       this.heat(dt);
     } else {
@@ -104,7 +159,7 @@ export class Combat {
         const result = this.timeline.step(dt);
         if (result.hit) this.fire();
         if (result.finished) {
-          this.timeline = null; this.character.endAction();
+          this.timeline = null; this.lockedTarget = null; this.character.endAction();
           if (this.queued) { const queued = this.queued; this.queued = null; this.begin(queued.kind, queued.strong); }
         }
       } else {
@@ -129,10 +184,12 @@ export class Combat {
     else this.onImpact('基础交互：弱攻击不会破坏车辆或伤害路人');
   }
   private fire(): void {
-    const origin = this.origin(), direction = this.direction(origin, this.aim());
+    const origin = this.origin();
+    const locked = this.lockedTarget?.alive ? this.targetCenter(this.lockedTarget) : null;
+    const direction = this.direction(origin, locked ?? this.aim());
     this.population.alert(origin);
     if (this.attackKind === 'melee') {
-      const center: Vec3 = [origin[0] + direction[0] * 0.95, this.motor.position[1] + 0.3, origin[2] + direction[2] * 0.95];
+      const center: Vec3 = locked ?? [origin[0] + direction[0] * 0.95, this.motor.position[1] + 0.3, origin[2] + direction[2] * 0.95];
       this.effects.impact([center[0], origin[1], center[2]]);
       for (const actor of this.population.actors.filter(item => item.alive)) {
         const closest = center.map((value, i) => Math.max(actor.min[i], Math.min(actor.max[i], value))) as Vec3;
@@ -184,7 +241,7 @@ export class Combat {
       if (wall || projectile.age >= 4) { if (wall) this.effects.impact(projectile.position); projectile.mesh.dispose(); this.projectiles.splice(i, 1); }
     }
   }
-  pause(): void { this.heatActive = false; this.heatTarget = ''; this.heatTick = 0; this.effects.heat(null); }
-  reset(): void { this.pause(); this.timeline = null; this.queued = null; this.combo = this.rangedCombo = this.destroyed = this.hits = 0; this.character.endAction(); this.projectiles.forEach(projectile => projectile.mesh.dispose()); this.projectiles.length = 0; this.effects.reset(); }
+  pause(): void { this.heatActive = false; this.heatTarget = ''; this.heatTick = 0; this.lockedTarget = null; this.effects.heat(null); }
+  reset(): void { this.pause(); this.timeline = null; this.lockedTarget = null; this.queued = null; this.combo = this.rangedCombo = this.destroyed = this.hits = 0; this.character.endAction(); this.projectiles.forEach(projectile => projectile.mesh.dispose()); this.projectiles.length = 0; this.effects.reset(); }
   dispose(): void { this.reset(); this.effects.dispose(); }
 }
