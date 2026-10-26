@@ -257,6 +257,18 @@ export class Character {
     for (const group of this.animations) {
       if (group.isPlaying && group.weight > 0.001) from.set(group, group.weight);
     }
+    if (from.size === 0) {
+      // Nothing is currently weighted (action clip already stopped). Starting a
+      // fade from an empty source would leave the skeleton at rest for the fade
+      // duration, so switch the target in immediately.
+      for (const [group, weight] of to) {
+        if (!group.isPlaying) group.start(true);
+        group.weight = weight;
+        group.setWeightForAllAnimatables(weight);
+      }
+      this.fade = null;
+      return;
+    }
     for (const group of to.keys()) {
       if (!group.isPlaying) group.start(true);
       group.weight = 0;
@@ -320,7 +332,19 @@ export class Character {
         : desired === 'Hero_SprintRun'
           ? Math.max(0.7, Math.min(2.2, speed / 8.5))
           : Math.max(0.8, Math.min(1.5, speed / 22.25));
-    if (this.clip !== desired) this.setLoop(desired, 0.2);
+    if (this.clip !== desired) {
+      const current = this.groupFor(this.clip);
+      if (current && current !== group && current.isPlaying) {
+        // Attack/one-shot ended before its clip stopped: crossfade it into the
+        // new gait instead of hard-stopping it and snapping the skeleton.
+        group.start(true);
+        this.beginCrossfade(new Map([[group, 1]]), 0.18);
+        this.clip = desired;
+        group.speedRatio = ratio;
+        return;
+      }
+      this.setLoop(desired, 0.2);
+    }
     group.speedRatio = ratio;
     return;
   }
@@ -447,7 +471,7 @@ export class Character {
     this.action = name; this.clip = name; group.start(false, speed);
   }
 
-  endAction(): void { this.action = ''; this.clip = ''; }
+  endAction(): void { this.action = ''; }
 
   eyes(): Vec3[] {
     const head = this.container.transformNodes.find(node => normalizeBone(node.name) === normalizeBone('head') || normalizeBone(node.name) === normalizeBone('head.x'));
