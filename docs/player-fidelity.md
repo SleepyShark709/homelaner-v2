@@ -119,6 +119,8 @@ violations = 0
 
 攻击进入也不再 `stop()` 全部动画并 `returnToRest()`；现在从当前 locomotion 姿势 0.1s crossfade 到 attack clip，攻击命中仍正常。
 
+飞行同样改为单组：垂直 FlyFastUp/FlyUp/FlyDown/FastDown/BulletDive 优先，否则按 back/side/forward 速度和方向选一个，不再同时混合 7 个全身飞行组。
+
 补充验证 clip 时长没有被导入器减半：
 
 ```text
