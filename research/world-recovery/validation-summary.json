@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-25",
-  "validatedCommit": "7ac5acf",
+  "validatedCommit": "c166237",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -305,5 +305,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Heat moved to H, procedural VFX added, auto-lock targets actor roots at 7ac5acf; B1/tests pass."
+  "note": "Camera snaps after melee warp at c166237; B1/tests pass."
 }
