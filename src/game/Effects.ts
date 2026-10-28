@@ -255,6 +255,33 @@ export class Effects {
       }
     }
   }
+  /** Original P_FlyUp smoke/blast family. The full multi-emitter ground crack
+   * system is not converted yet; takeoff uses the recovered blast texture plus
+   * original smoke puffs. */
+  flyTakeoff(position: Vec3): void {
+    const sprite = new Sprite('fly-takeoff-blast', this.blastManager);
+    sprite.position.copyFromFloats(position[0], position[1] + 0.06, position[2]);
+    sprite.width = 1.2; sprite.height = 1.2;
+    sprite.color = new Color4(1, 1, 1, 0.7);
+    this.blasts.push({ sprite, age: 0, life: 0.45, startSize: 1.2, grow: 2.4, alpha: 0.7 });
+    this.smokeBurst(position, 7, 1.2);
+  }
+  flyLand(position: Vec3): void {
+    this.smokeBurst(position, 9, 1.5);
+  }
+  private smokeBurst(position: Vec3, count: number, spread: number): void {
+    for (let i = 0; i < count; i++) {
+      const sprite = new Sprite('fly-smoke-burst', this.dustManager);
+      const angle = Math.random() * Math.PI * 2;
+      const radius = Math.random() * spread;
+      sprite.position.copyFromFloats(position[0] + Math.cos(angle) * radius, position[1] + 0.05 + Math.random() * 0.35, position[2] + Math.sin(angle) * radius);
+      const size = 0.7 + Math.random() * 0.6;
+      sprite.cellIndex = Math.floor(Math.random() * 16);
+      sprite.width = size; sprite.height = size;
+      sprite.color = new Color4(1, 1, 1, 0.55);
+      this.dust.push({ sprite, age: 0, life: 0.8 + Math.random() * 0.4, size });
+    }
+  }
   heat(eyes: Vec3[] | null, end?: Vec3): void {
     this.beams.forEach((mesh, index) => {
       mesh.setEnabled(!!eyes && !!end);
