@@ -79,6 +79,8 @@ public/assets/vfx/-HeroGame/Mesh/Effect/SM_ky_quad_centerRot.pskx
 
 `P_StartSprint` 已接入原版 `T_BlastWave` 贴图：地面起跑时生成 0.4 s 加色扩散冲击波。原版 `SM_BlastWave` 网格和三个 mesh emitter 尚未转换，因此当前是**原版贴图/时序的首版**，不是完整网格粒子复刻。提交 `4c80a47`，截图 `research/screenshots/start-sprint-wave2.jpg`。
 
+`P_AirAttack_Shock` 已接入同一原版 `T_BlastWave` 贴图：空中近战生成更大、更短的冲击环，0.3 s。原版三个 emitter（含 `T_Burst_M`/`T_Wave`）尚未完整转换。提交 `fa088bb`，截图 `research/screenshots/air-attack-shock.jpg`。
+
 仍需继续对齐：
 
 1. 原版 `M_Effect_Master_RGBSubUV` 的颜色/透明度曲线与精确尺寸；
