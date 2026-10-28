@@ -21,6 +21,8 @@ export class Effects {
   private readonly slashManager: SpriteManager;
   private readonly dust: { sprite: Sprite; age: number; life: number; size: number }[] = [];
   private readonly dustManager: SpriteManager;
+  private readonly blastManager: SpriteManager;
+  private readonly blasts: { sprite: Sprite; age: number; life: number }[] = [];
   private dustClock = 0;
   private trailClock = 0;
   constructor(readonly scene: Scene) {
@@ -35,6 +37,10 @@ export class Effects {
     this.dustManager.blendMode = Constants.ALPHA_COMBINE;
     this.dustManager.disableDepthWrite = true;
     this.dustManager.isPickable = false;
+    this.blastManager = new SpriteManager('start-sprint-blast', '/assets/vfx/InfinityBladeEffects/Effects/FX_Textures/Gradient/T_BlastWave.png', 8, { width: 512, height: 512 }, scene);
+    this.blastManager.blendMode = Constants.ALPHA_ADD;
+    this.blastManager.disableDepthWrite = true;
+    this.blastManager.isPickable = false;
     this.beams = [0, 1].map(index => { const mesh = MeshBuilder.CreateCylinder(`eye-beam-${index}`, { height: 1, diameter: 0.035, tessellation: 6 }, scene); mesh.material = this.red; mesh.isPickable = false; mesh.setEnabled(false); return mesh; });
   }
   private streak(point: Vec3, direction: Vector3, color: 'gold' | 'blue', length: number, life: number): void {
@@ -116,6 +122,16 @@ export class Effects {
       this.dust.push({ sprite, age: 0, life: 0.9 + Math.random() * 0.5, size });
     }
   }
+  /** Original P_StartSprint wave texture; one expanding shockwave at takeoff.
+   * The source uses SM_BlastWave; the sprite keeps the recovered texture and
+   * timing, pending the mesh emitter conversion. */
+  startSprint(position: Vec3): void {
+    const sprite = new Sprite('start-sprint-blast', this.blastManager);
+    sprite.position.copyFromFloats(position[0], position[1] + 0.08, position[2]);
+    sprite.width = 0.45; sprite.height = 0.45;
+    sprite.color = new Color4(1, 1, 1, 0.65);
+    this.blasts.push({ sprite, age: 0, life: 0.4 });
+  }
   heat(eyes: Vec3[] | null, end?: Vec3): void {
     this.beams.forEach((mesh, index) => {
       mesh.setEnabled(!!eyes && !!end);
@@ -144,6 +160,14 @@ export class Effects {
     }
   }
   update(dt: number): void {
+    for (let i = this.blasts.length - 1; i >= 0; i--) {
+      const blast = this.blasts[i]; blast.age += dt;
+      if (blast.age >= blast.life) { blast.sprite.dispose(); this.blasts.splice(i, 1); continue; }
+      const progress = blast.age / blast.life;
+      const scale = 0.45 + progress * 1.4;
+      blast.sprite.width = scale; blast.sprite.height = scale;
+      blast.sprite.color = new Color4(1, 1, 1, 0.65 * (1 - progress));
+    }
     for (let i = this.dust.length - 1; i >= 0; i--) {
       const puff = this.dust[i]; puff.age += dt;
       if (puff.age >= puff.life) { puff.sprite.dispose(); this.dust.splice(i, 1); continue; }
@@ -169,6 +193,6 @@ export class Effects {
       streak.mesh.scaling.y = streak.size * (0.7 + fade * 0.3);
     }
   }
-  reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; this.streaks.forEach(streak => streak.mesh.dispose()); this.streaks.length = 0; this.slashes.forEach(slash => slash.sprite.dispose()); this.slashes.length = 0; this.dust.forEach(puff => puff.sprite.dispose()); this.dust.length = 0; this.dustClock = 0; this.trailClock = 0; }
-  dispose(): void { this.reset(); this.slashManager.dispose(); this.dustManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
+  reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; this.streaks.forEach(streak => streak.mesh.dispose()); this.streaks.length = 0; this.slashes.forEach(slash => slash.sprite.dispose()); this.slashes.length = 0; this.dust.forEach(puff => puff.sprite.dispose()); this.dust.length = 0; this.blasts.forEach(blast => blast.sprite.dispose()); this.blasts.length = 0; this.dustClock = 0; this.trailClock = 0; }
+  dispose(): void { this.reset(); this.slashManager.dispose(); this.dustManager.dispose(); this.blastManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
 }

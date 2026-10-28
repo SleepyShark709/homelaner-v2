@@ -34,6 +34,7 @@ export class Combat {
   private heatTick = 0;
   private lockedTarget: Actor | null = null;
   private previewTarget: Actor | null = null;
+  private wasSprinting = false;
   private warped = false;
   private readonly projectiles: Projectile[] = [];
   private readonly allowHeatVision: boolean;
@@ -168,6 +169,9 @@ export class Combat {
   }
   update(dt: number): void {
     this.effects.flyDust(this.motor.position, this.motor.velocity, this.motor.flying, dt);
+    const sprinting = (this.motor as unknown as { sprint?: boolean }).sprint === true;
+    if (sprinting && !this.wasSprinting && this.motor.grounded) this.effects.startSprint(this.motor.position);
+    this.wasSprinting = sprinting;
     if (!this.timeline && !this.heatActive) this.previewTarget = this.acquireTarget('melee');
     else if (this.heatActive) this.previewTarget = null;
     if (this.motor.grounded && !this.motor.flying) this.airAttackStarted = false;
@@ -275,7 +279,7 @@ export class Combat {
       if (wall || projectile.age >= 4) { if (wall) this.effects.impact(projectile.position); projectile.mesh.dispose(); this.projectiles.splice(i, 1); }
     }
   }
-  pause(): void { this.heatActive = false; this.heatTarget = ''; this.heatTick = 0; this.lockedTarget = null; this.previewTarget = null; this.setAttackLock(false); this.effects.heat(null); }
+  pause(): void { this.heatActive = false; this.heatTarget = ''; this.heatTick = 0; this.lockedTarget = null; this.previewTarget = null; this.wasSprinting = false; this.setAttackLock(false); this.effects.heat(null); }
   reset(): void { this.pause(); this.timeline = null; this.lockedTarget = null; this.queued = null; this.combo = this.rangedCombo = this.destroyed = this.hits = 0; this.character.endAction(); this.projectiles.forEach(projectile => projectile.mesh.dispose()); this.projectiles.length = 0; this.effects.reset(); }
   dispose(): void { this.reset(); this.effects.dispose(); }
 }
