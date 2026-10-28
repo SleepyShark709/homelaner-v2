@@ -22,6 +22,7 @@ export class Effects {
   private readonly dust: { sprite: Sprite; age: number; life: number; size: number }[] = [];
   private readonly dustManager: SpriteManager;
   private readonly blastManager: SpriteManager;
+  private readonly burstManager: SpriteManager;
   private readonly rangedManager: SpriteManager;
   private readonly ranged: { sprite: Sprite; age: number; life: number }[] = [];
   private readonly blasts: { sprite: Sprite; age: number; life: number; startSize: number; grow: number; alpha: number }[] = [];
@@ -43,6 +44,10 @@ export class Effects {
     this.blastManager.blendMode = Constants.ALPHA_ADD;
     this.blastManager.disableDepthWrite = true;
     this.blastManager.isPickable = false;
+    this.burstManager = new SpriteManager('attack-wave-burst', '/assets/vfx/StarterContent/Textures/T_Burst_M.png', 8, { width: 256, height: 256 }, scene);
+    this.burstManager.blendMode = Constants.ALPHA_ADD;
+    this.burstManager.disableDepthWrite = true;
+    this.burstManager.isPickable = false;
     this.rangedManager = new SpriteManager('long-range-slash', '/assets/vfx/InfinityBladeEffects/Effects/FX_Textures/Gradient/T_SwipeTrail.png', 8, { width: 256, height: 256 }, scene);
     this.rangedManager.blendMode = Constants.ALPHA_ADD;
     this.rangedManager.disableDepthWrite = true;
@@ -147,6 +152,15 @@ export class Effects {
     sprite.color = new Color4(1, 1, 1, 0.8);
     this.blasts.push({ sprite, age: 0, life: 0.3, startSize: 1.0, grow: 3.0, alpha: 0.8 });
   }
+  /** Original P_Attack_Wave burst texture (T_Burst_M) used for heavy hits. */
+  attackWave(point: Vec3): void {
+    const sprite = new Sprite('attack-wave-burst', this.burstManager);
+    sprite.position.copyFromFloats(point[0], point[1] + 0.2, point[2]);
+    sprite.width = 1.2; sprite.height = 1.2;
+    sprite.angle = Math.random() * Math.PI * 2;
+    sprite.color = new Color4(1, 1, 1, 0.9);
+    this.blasts.push({ sprite, age: 0, life: 0.38, startSize: 1.2, grow: 2.8, alpha: 0.9 });
+  }
   /** Original P_LongRangeSlash texture family: T_SwipeTrail from
    * M_Effect_Slash / SM_SlashTrail. Two stretched additive swipes stand in for
    * the source mesh trail until the mesh particle conversion is complete. */
@@ -235,5 +249,5 @@ export class Effects {
     }
   }
   reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; this.streaks.forEach(streak => streak.mesh.dispose()); this.streaks.length = 0; this.slashes.forEach(slash => slash.sprite.dispose()); this.slashes.length = 0; this.ranged.forEach(swipe => swipe.sprite.dispose()); this.ranged.length = 0; this.dust.forEach(puff => puff.sprite.dispose()); this.dust.length = 0; this.blasts.forEach(blast => blast.sprite.dispose()); this.blasts.length = 0; this.dustClock = 0; this.trailClock = 0; }
-  dispose(): void { this.reset(); this.slashManager.dispose(); this.rangedManager.dispose(); this.dustManager.dispose(); this.blastManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
+  dispose(): void { this.reset(); this.slashManager.dispose(); this.rangedManager.dispose(); this.dustManager.dispose(); this.blastManager.dispose(); this.burstManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
 }

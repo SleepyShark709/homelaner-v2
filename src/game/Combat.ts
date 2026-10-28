@@ -167,6 +167,11 @@ export class Combat {
     } else {
       this.effects.rangedSlash(effectOrigin, effectDirection);
     }
+    if (heavy) this.effects.attackWave([
+      effectOrigin[0] + effectDirection[0] * 0.9,
+      effectOrigin[1] + 0.2,
+      effectOrigin[2] + effectDirection[2] * 0.9,
+    ]);
     this.character.playAction(name, timing.playbackRate);
   }
   update(dt: number): void {
