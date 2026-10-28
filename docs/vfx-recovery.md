@@ -93,6 +93,8 @@ public/assets/vfx/-HeroGame/Mesh/Effect/SM_ky_quad_centerRot.pskx
 
 `P_FlyUp` 的起飞冲击已使用原版 `T_BlastWave` + `T_RaP_Smoke_puff_4x4_2k`：起飞时脚下冲击波/烟雾，落地时烟雾 burst。原版多 emitter 地面裂纹/烟柱系统仍未完整转换。提交 `b3c766c`，截图 `research/screenshots/fly-takeoff.jpg`。
 
+远程弹体已从蓝色程序化球体替换为 `SM_Crunch_Fist_V02` 的缩放克隆（约 0.45 m），使用 `T_FistCannonImpact` 材质并朝速度方向旋转。提交 `3f7cd55`，截图 `research/screenshots/fist-projectile2.jpg`。`M_FistCannon` shader graph 仍未完整还原。
+
 仍需继续对齐：
 
 1. 原版 `M_Effect_Master_RGBSubUV` 的颜色/透明度曲线与精确尺寸；
