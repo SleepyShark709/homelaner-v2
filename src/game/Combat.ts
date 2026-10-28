@@ -161,7 +161,9 @@ export class Combat {
     const effectOrigin = this.origin();
     const effectDirection = this.direction(effectOrigin, this.lockedTarget ? this.targetCenter(this.lockedTarget) : this.aim());
     if (kind === 'melee') {
-      this.effects.slash([effectOrigin[0] + effectDirection[0] * 1.05, effectOrigin[1] - 0.15, effectOrigin[2] + effectDirection[2] * 1.05]);
+      const slashPoint: Vec3 = [effectOrigin[0] + effectDirection[0] * 1.05, effectOrigin[1] - 0.15, effectOrigin[2] + effectDirection[2] * 1.05];
+      this.effects.slash(slashPoint);
+      if (this.motor.flying || !this.motor.grounded) this.effects.airShock(slashPoint);
     } else {
       this.effects.swing(effectOrigin, effectDirection);
     }

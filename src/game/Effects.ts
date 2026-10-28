@@ -22,7 +22,7 @@ export class Effects {
   private readonly dust: { sprite: Sprite; age: number; life: number; size: number }[] = [];
   private readonly dustManager: SpriteManager;
   private readonly blastManager: SpriteManager;
-  private readonly blasts: { sprite: Sprite; age: number; life: number }[] = [];
+  private readonly blasts: { sprite: Sprite; age: number; life: number; startSize: number; grow: number; alpha: number }[] = [];
   private dustClock = 0;
   private trailClock = 0;
   constructor(readonly scene: Scene) {
@@ -130,7 +130,16 @@ export class Effects {
     sprite.position.copyFromFloats(position[0], position[1] + 0.08, position[2]);
     sprite.width = 0.45; sprite.height = 0.45;
     sprite.color = new Color4(1, 1, 1, 0.65);
-    this.blasts.push({ sprite, age: 0, life: 0.4 });
+    this.blasts.push({ sprite, age: 0, life: 0.4, startSize: 0.45, grow: 1.4, alpha: 0.65 });
+  }
+  /** Original P_AirAttack_Shock reuses T_BlastWave; larger, shorter shockwave
+   * at the air-attack point. The three-emitter mesh system is still pending. */
+  airShock(point: Vec3): void {
+    const sprite = new Sprite('air-attack-shock', this.blastManager);
+    sprite.position.copyFromFloats(point[0], point[1], point[2]);
+    sprite.width = 1.0; sprite.height = 1.0;
+    sprite.color = new Color4(1, 1, 1, 0.8);
+    this.blasts.push({ sprite, age: 0, life: 0.3, startSize: 1.0, grow: 3.0, alpha: 0.8 });
   }
   heat(eyes: Vec3[] | null, end?: Vec3): void {
     this.beams.forEach((mesh, index) => {
@@ -164,9 +173,9 @@ export class Effects {
       const blast = this.blasts[i]; blast.age += dt;
       if (blast.age >= blast.life) { blast.sprite.dispose(); this.blasts.splice(i, 1); continue; }
       const progress = blast.age / blast.life;
-      const scale = 0.45 + progress * 1.4;
+      const scale = blast.startSize + progress * blast.grow;
       blast.sprite.width = scale; blast.sprite.height = scale;
-      blast.sprite.color = new Color4(1, 1, 1, 0.65 * (1 - progress));
+      blast.sprite.color = new Color4(1, 1, 1, blast.alpha * (1 - progress));
     }
     for (let i = this.dust.length - 1; i >= 0; i--) {
       const puff = this.dust[i]; puff.age += dt;
