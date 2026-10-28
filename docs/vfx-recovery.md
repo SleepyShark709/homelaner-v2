@@ -85,6 +85,8 @@ public/assets/vfx/-HeroGame/Mesh/Effect/SM_ky_quad_centerRot.pskx
 
 `P_Attack_Wave` 的重击 burst 已使用原版 `T_Burst_M`：0.38 s 扩散彩虹环。原版三个 emitter 和 `T_Wave` 层尚未接入。提交 `ad66279`，截图 `research/screenshots/attack-wave.jpg`。
 
+`P_FistCannonSpawn` 的枪口闪光已使用原版 `T_FistCannonImpact`：0.22 s 双手侧加色 streak。原版 `SM_Crunch_Fist_V02` 网格和三个 emitter 仍未转换。提交 `145349d`，截图 `research/screenshots/fist-cannon.jpg`。
+
 仍需继续对齐：
 
 1. 原版 `M_Effect_Master_RGBSubUV` 的颜色/透明度曲线与精确尺寸；
