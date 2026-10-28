@@ -89,6 +89,8 @@ public/assets/vfx/-HeroGame/Mesh/Effect/SM_ky_quad_centerRot.pskx
 
 `SM_Crunch_Fist_V02` 的 glTF 已加载：远程攻击会在手部克隆原版拳头网格 0.26 s，尺寸按原始 bbox 归一化到约 1.3 m，材质暂用青色半透明近似 `M_FistCannon`。提交 `9d7223d`，截图 `research/screenshots/fist-mesh2.jpg`。完整材质/三 emitter 仍未转换。
 
+拳头材质现已改用原版 `T_FistCannonImpact` 的发光/透明度贴图 + 加色混合（提交 `ab5308d`，截图 `research/screenshots/fist-mesh3.jpg`）；`M_FistCannon` 的 shader graph 仍未完整还原。
+
 仍需继续对齐：
 
 1. 原版 `M_Effect_Master_RGBSubUV` 的颜色/透明度曲线与精确尺寸；
