@@ -165,6 +165,7 @@ export class Combat {
       this.effects.slash(slashPoint);
       if (this.motor.flying || !this.motor.grounded) this.effects.airShock(slashPoint);
     } else {
+      this.effects.fistCannon(effectOrigin, effectDirection);
       this.effects.rangedSlash(effectOrigin, effectDirection);
     }
     if (heavy) this.effects.attackWave([

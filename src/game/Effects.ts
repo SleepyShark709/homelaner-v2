@@ -24,7 +24,9 @@ export class Effects {
   private readonly blastManager: SpriteManager;
   private readonly burstManager: SpriteManager;
   private readonly rangedManager: SpriteManager;
+  private readonly fistManager: SpriteManager;
   private readonly ranged: { sprite: Sprite; age: number; life: number }[] = [];
+  private readonly fistFlashes: { sprite: Sprite; age: number; life: number }[] = [];
   private readonly blasts: { sprite: Sprite; age: number; life: number; startSize: number; grow: number; alpha: number }[] = [];
   private dustClock = 0;
   private trailClock = 0;
@@ -52,6 +54,10 @@ export class Effects {
     this.rangedManager.blendMode = Constants.ALPHA_ADD;
     this.rangedManager.disableDepthWrite = true;
     this.rangedManager.isPickable = false;
+    this.fistManager = new SpriteManager('fist-cannon-impact', '/assets/vfx/-HeroGame/Res/Effect/T_FistCannonImpact.png', 8, { width: 512, height: 512 }, scene);
+    this.fistManager.blendMode = Constants.ALPHA_ADD;
+    this.fistManager.disableDepthWrite = true;
+    this.fistManager.isPickable = false;
     this.beams = [0, 1].map(index => { const mesh = MeshBuilder.CreateCylinder(`eye-beam-${index}`, { height: 1, diameter: 0.035, tessellation: 6 }, scene); mesh.material = this.red; mesh.isPickable = false; mesh.setEnabled(false); return mesh; });
   }
   private streak(point: Vec3, direction: Vector3, color: 'gold' | 'blue', length: number, life: number): void {
@@ -180,6 +186,24 @@ export class Effects {
       this.ranged.push({ sprite, age: 0, life: 0.16 });
     }
   }
+  /** Original P_FistCannonSpawn muzzle streak: T_FistCannonImpact (the source
+   * also uses SM_Crunch_Fist_V02; the fist mesh conversion is still pending). */
+  fistCannon(point: Vec3, direction: Vec3): void {
+    const sideX = -direction[2], sideZ = direction[0];
+    for (let i = 0; i < 2; i++) {
+      const sprite = new Sprite('fist-cannon-impact', this.fistManager);
+      const side = (i === 0 ? -1 : 1) * 0.14;
+      sprite.position.copyFromFloats(
+        point[0] + direction[0] * 0.45 + sideX * side,
+        point[1] + 0.12,
+        point[2] + direction[2] * 0.45 + sideZ * side,
+      );
+      sprite.width = 0.55; sprite.height = 1.35;
+      sprite.angle = (i === 0 ? -1 : 1) * 0.1;
+      sprite.color = new Color4(1, 1, 1, 0.85);
+      this.fistFlashes.push({ sprite, age: 0, life: 0.22 });
+    }
+  }
   heat(eyes: Vec3[] | null, end?: Vec3): void {
     this.beams.forEach((mesh, index) => {
       mesh.setEnabled(!!eyes && !!end);
@@ -208,6 +232,13 @@ export class Effects {
     }
   }
   update(dt: number): void {
+    for (let i = this.fistFlashes.length - 1; i >= 0; i--) {
+      const flash = this.fistFlashes[i]; flash.age += dt;
+      if (flash.age >= flash.life) { flash.sprite.dispose(); this.fistFlashes.splice(i, 1); continue; }
+      const fade = 1 - flash.age / flash.life;
+      flash.sprite.height = 1.35 * (1 + (1 - fade) * 0.5);
+      flash.sprite.color = new Color4(1, 1, 1, 0.85 * fade);
+    }
     for (let i = this.ranged.length - 1; i >= 0; i--) {
       const swipe = this.ranged[i]; swipe.age += dt;
       if (swipe.age >= swipe.life) { swipe.sprite.dispose(); this.ranged.splice(i, 1); continue; }
@@ -248,6 +279,6 @@ export class Effects {
       streak.mesh.scaling.y = streak.size * (0.7 + fade * 0.3);
     }
   }
-  reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; this.streaks.forEach(streak => streak.mesh.dispose()); this.streaks.length = 0; this.slashes.forEach(slash => slash.sprite.dispose()); this.slashes.length = 0; this.ranged.forEach(swipe => swipe.sprite.dispose()); this.ranged.length = 0; this.dust.forEach(puff => puff.sprite.dispose()); this.dust.length = 0; this.blasts.forEach(blast => blast.sprite.dispose()); this.blasts.length = 0; this.dustClock = 0; this.trailClock = 0; }
-  dispose(): void { this.reset(); this.slashManager.dispose(); this.rangedManager.dispose(); this.dustManager.dispose(); this.blastManager.dispose(); this.burstManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
+  reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; this.streaks.forEach(streak => streak.mesh.dispose()); this.streaks.length = 0; this.slashes.forEach(slash => slash.sprite.dispose()); this.slashes.length = 0; this.ranged.forEach(swipe => swipe.sprite.dispose()); this.ranged.length = 0; this.fistFlashes.forEach(flash => flash.sprite.dispose()); this.fistFlashes.length = 0; this.dust.forEach(puff => puff.sprite.dispose()); this.dust.length = 0; this.blasts.forEach(blast => blast.sprite.dispose()); this.blasts.length = 0; this.dustClock = 0; this.trailClock = 0; }
+  dispose(): void { this.reset(); this.slashManager.dispose(); this.rangedManager.dispose(); this.fistManager.dispose(); this.dustManager.dispose(); this.blastManager.dispose(); this.burstManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
 }
