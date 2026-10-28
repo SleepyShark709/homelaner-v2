@@ -26,7 +26,7 @@
 - 攻击时按住方向键不再边走边打：攻击 timeline 期间设置玩家 `attackLocked`，清空水平输入/速度；探针按住 W 挥空拳，攻击期间仅 8 cm 漂移，结束后恢复移动。
 - 普通跑↔快跑不再播放长 StartSprint/Stopping montage：Shift 直接 0.12 s crossfade 到 SprintRun，停下 0.15 s 回 Idle，避免下蹲/站立动作跟着位移。
 - 2026-10-28：减速惯性降低。保留原加速值，仅在目标速度低于当前速度时使用 1.8x 减速度；探针跑步 10 m/s 停 257 ms/1.19 m，飞行 37.9 m/s 停 529 ms/9.56 m。
-- 普通攻击斩击已恢复为原版 `P_NormalAttackSlash` 图集（`T_ky_slash01_4x4`，frames 3..10，0.2 s，加色 sprite）；飞行尘土改为原版 `T_RaP_Smoke_puff_4x4_2k` 烟雾，原程序化蓝色飞行速度线已移除；地面起跑冲击波、空中攻击冲击环和起飞冲击改用原版 `T_BlastWave`；远程斩击改用原版 `T_SwipeTrail`；重击加入原版 `T_Burst_M` 爆发环；命中/破坏 impact 改用原版 `T_Burst_M`；远程枪口加入原版 `T_FistCannonImpact` 和 `SM_Crunch_Fist_V02` 网格，拳头/弹体使用原版 impact 贴图（shader graph 仍近似）。完整 mesh 粒子仍未全部转换。资产清单与后续顺序见 `docs/vfx-recovery.md`。
+- 普通攻击斩击已恢复为原版 `P_NormalAttackSlash` 图集（`T_ky_slash01_4x4`，frames 3..10，0.2 s，加色 sprite）；飞行尘土改为原版 `T_RaP_Smoke_puff_4x4_2k` 烟雾，原程序化蓝色飞行速度线已移除；地面起跑冲击波、空中攻击冲击环和起飞冲击改用原版 `T_BlastWave`；远程斩击改用原版 `T_SwipeTrail`；重击/命中改用原版 `T_Burst_M`；远程枪口加入原版 `T_FistCannonImpact` 和 `SM_Crunch_Fist_V02` 网格，拳头/弹体使用原版 impact + wave-noise 贴图（shader graph 仍近似）。完整 mesh 粒子仍未全部转换。资产清单与后续顺序见 `docs/vfx-recovery.md`。
 - NPC/建筑穿模与局部入地第一轮：玩家脚骨原先低于地面 14.4 cm，视觉根骨上抬 14.5 cm（idle +0.1 cm，run +1.1 cm）；NPC/车辆按地形/可行走面贴地，路线步进对建筑 AABB 做 sweep，撞墙时跳到下一航点而不是穿墙。玩家碰撞半径从 0.36 增至 0.42，NPC sweep half 从 0.28 增至 0.36，增加肩/手臂与墙的间隙。探针 25 actors / 1432 boxes：0 sunk、0 floating、0 wall overlap。仍不是完整导航网格。
 - NPC/建筑穿模与局部入地尚未全部处理：复杂街角、门洞、上下层和车辆完整碰撞仍待处理。
 
