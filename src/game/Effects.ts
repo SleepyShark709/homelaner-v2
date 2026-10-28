@@ -5,6 +5,7 @@ import type { AbstractMesh } from '@babylonjs/core/Meshes/abstractMesh';
 import { MeshBuilder } from '@babylonjs/core/Meshes/meshBuilder';
 import type { Mesh } from '@babylonjs/core/Meshes/mesh';
 import { StandardMaterial } from '@babylonjs/core/Materials/standardMaterial';
+import { Texture } from '@babylonjs/core/Materials/Textures/texture';
 import { SpriteManager } from '@babylonjs/core/Sprites/spriteManager';
 import { Sprite } from '@babylonjs/core/Sprites/sprite';
 import '@babylonjs/core/Sprites/spriteSceneComponent';
@@ -67,9 +68,14 @@ export class Effects {
     this.fistManager.disableDepthWrite = true;
     this.fistManager.isPickable = false;
     this.fistMaterial = new StandardMaterial('fist-cannon-mesh-mat', scene);
-    this.fistMaterial.emissiveColor = Color3.FromHexString('#d8ffff');
+    const fistTexture = new Texture('/assets/vfx/-HeroGame/Res/Effect/T_FistCannonImpact.png', scene);
+    fistTexture.hasAlpha = true;
+    this.fistMaterial.diffuseColor = Color3.Black();
+    this.fistMaterial.emissiveColor = Color3.White();
+    this.fistMaterial.emissiveTexture = fistTexture;
+    this.fistMaterial.opacityTexture = fistTexture;
+    this.fistMaterial.alphaMode = Constants.ALPHA_ADD;
     this.fistMaterial.disableLighting = true;
-    this.fistMaterial.alpha = 0.7;
     this.fistMaterial.backFaceCulling = false;
     this.beams = [0, 1].map(index => { const mesh = MeshBuilder.CreateCylinder(`eye-beam-${index}`, { height: 1, diameter: 0.035, tessellation: 6 }, scene); mesh.material = this.red; mesh.isPickable = false; mesh.setEnabled(false); return mesh; });
   }
@@ -331,5 +337,5 @@ export class Effects {
     }
   }
   reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; this.streaks.forEach(streak => streak.mesh.dispose()); this.streaks.length = 0; this.slashes.forEach(slash => slash.sprite.dispose()); this.slashes.length = 0; this.ranged.forEach(swipe => swipe.sprite.dispose()); this.ranged.length = 0; this.fistFlashes.forEach(flash => flash.sprite.dispose()); this.fistFlashes.length = 0; this.fistSpawns.forEach(spawn => spawn.mesh.dispose()); this.fistSpawns.length = 0; this.dust.forEach(puff => puff.sprite.dispose()); this.dust.length = 0; this.blasts.forEach(blast => blast.sprite.dispose()); this.blasts.length = 0; this.dustClock = 0; this.trailClock = 0; }
-  dispose(): void { this.reset(); this.fistContainer?.dispose(); this.fistMaterial.dispose(); this.slashManager.dispose(); this.rangedManager.dispose(); this.fistManager.dispose(); this.dustManager.dispose(); this.blastManager.dispose(); this.burstManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
+  dispose(): void { this.reset(); this.fistContainer?.dispose(); this.fistMaterial.emissiveTexture?.dispose(); this.fistMaterial.dispose(); this.slashManager.dispose(); this.rangedManager.dispose(); this.fistManager.dispose(); this.dustManager.dispose(); this.blastManager.dispose(); this.burstManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
 }
