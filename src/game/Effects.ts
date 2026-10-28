@@ -22,6 +22,8 @@ export class Effects {
   private readonly dust: { sprite: Sprite; age: number; life: number; size: number }[] = [];
   private readonly dustManager: SpriteManager;
   private readonly blastManager: SpriteManager;
+  private readonly rangedManager: SpriteManager;
+  private readonly ranged: { sprite: Sprite; age: number; life: number }[] = [];
   private readonly blasts: { sprite: Sprite; age: number; life: number; startSize: number; grow: number; alpha: number }[] = [];
   private dustClock = 0;
   private trailClock = 0;
@@ -41,6 +43,10 @@ export class Effects {
     this.blastManager.blendMode = Constants.ALPHA_ADD;
     this.blastManager.disableDepthWrite = true;
     this.blastManager.isPickable = false;
+    this.rangedManager = new SpriteManager('long-range-slash', '/assets/vfx/InfinityBladeEffects/Effects/FX_Textures/Gradient/T_SwipeTrail.png', 8, { width: 256, height: 256 }, scene);
+    this.rangedManager.blendMode = Constants.ALPHA_ADD;
+    this.rangedManager.disableDepthWrite = true;
+    this.rangedManager.isPickable = false;
     this.beams = [0, 1].map(index => { const mesh = MeshBuilder.CreateCylinder(`eye-beam-${index}`, { height: 1, diameter: 0.035, tessellation: 6 }, scene); mesh.material = this.red; mesh.isPickable = false; mesh.setEnabled(false); return mesh; });
   }
   private streak(point: Vec3, direction: Vector3, color: 'gold' | 'blue', length: number, life: number): void {
@@ -141,6 +147,25 @@ export class Effects {
     sprite.color = new Color4(1, 1, 1, 0.8);
     this.blasts.push({ sprite, age: 0, life: 0.3, startSize: 1.0, grow: 3.0, alpha: 0.8 });
   }
+  /** Original P_LongRangeSlash texture family: T_SwipeTrail from
+   * M_Effect_Slash / SM_SlashTrail. Two stretched additive swipes stand in for
+   * the source mesh trail until the mesh particle conversion is complete. */
+  rangedSlash(point: Vec3, direction: Vec3): void {
+    const sideX = -direction[2], sideZ = direction[0];
+    for (let i = 0; i < 2; i++) {
+      const sprite = new Sprite('long-range-slash', this.rangedManager);
+      const side = (i === 0 ? -1 : 1) * 0.6;
+      sprite.position.copyFromFloats(
+        point[0] + direction[0] * 0.9 + sideX * side,
+        point[1] + 0.35 + (i - 0.5) * 0.15,
+        point[2] + direction[2] * 0.9 + sideZ * side,
+      );
+      sprite.width = 1.6 + i * 0.2; sprite.height = 0.45;
+      sprite.angle = (i === 0 ? -1 : 1) * 0.12;
+      sprite.color = new Color4(1, 1, 1, 0.8);
+      this.ranged.push({ sprite, age: 0, life: 0.16 });
+    }
+  }
   heat(eyes: Vec3[] | null, end?: Vec3): void {
     this.beams.forEach((mesh, index) => {
       mesh.setEnabled(!!eyes && !!end);
@@ -169,6 +194,13 @@ export class Effects {
     }
   }
   update(dt: number): void {
+    for (let i = this.ranged.length - 1; i >= 0; i--) {
+      const swipe = this.ranged[i]; swipe.age += dt;
+      if (swipe.age >= swipe.life) { swipe.sprite.dispose(); this.ranged.splice(i, 1); continue; }
+      const fade = 1 - swipe.age / swipe.life;
+      swipe.sprite.width *= 1.0 + dt * 2;
+      swipe.sprite.color = new Color4(1, 1, 1, 0.8 * fade);
+    }
     for (let i = this.blasts.length - 1; i >= 0; i--) {
       const blast = this.blasts[i]; blast.age += dt;
       if (blast.age >= blast.life) { blast.sprite.dispose(); this.blasts.splice(i, 1); continue; }
@@ -202,6 +234,6 @@ export class Effects {
       streak.mesh.scaling.y = streak.size * (0.7 + fade * 0.3);
     }
   }
-  reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; this.streaks.forEach(streak => streak.mesh.dispose()); this.streaks.length = 0; this.slashes.forEach(slash => slash.sprite.dispose()); this.slashes.length = 0; this.dust.forEach(puff => puff.sprite.dispose()); this.dust.length = 0; this.blasts.forEach(blast => blast.sprite.dispose()); this.blasts.length = 0; this.dustClock = 0; this.trailClock = 0; }
-  dispose(): void { this.reset(); this.slashManager.dispose(); this.dustManager.dispose(); this.blastManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
+  reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; this.streaks.forEach(streak => streak.mesh.dispose()); this.streaks.length = 0; this.slashes.forEach(slash => slash.sprite.dispose()); this.slashes.length = 0; this.ranged.forEach(swipe => swipe.sprite.dispose()); this.ranged.length = 0; this.dust.forEach(puff => puff.sprite.dispose()); this.dust.length = 0; this.blasts.forEach(blast => blast.sprite.dispose()); this.blasts.length = 0; this.dustClock = 0; this.trailClock = 0; }
+  dispose(): void { this.reset(); this.slashManager.dispose(); this.rangedManager.dispose(); this.dustManager.dispose(); this.blastManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
 }
