@@ -12,6 +12,9 @@ const ORIGINAL_GRAVITY = 49;
 const ACCELERATION_WALK = 20.48;
 const ACCELERATION_FLY = 40.96;
 const ACCELERATION_SPRINT = 150;
+// Deceleration-only multiplier: keep original acceleration, but reduce the
+// floaty coast when input is released or reversed.
+const DECEL_MULTIPLIER = 1.8;
 
 export interface PlaySpawn {
   position: Vec3;
@@ -164,7 +167,10 @@ export class OriginalPlayer {
     const length = Math.hypot(desiredX, desiredZ);
     if (length > 0) { desiredX = desiredX / length * speed; desiredZ = desiredZ / length * speed; }
     const desiredY = this.flying ? verticalInput * speed : this.grounded ? -0.4 : this.velocity[1];
-    const acceleration = (this.flying ? ACCELERATION_FLY : this.sprint ? ACCELERATION_SPRINT : ACCELERATION_WALK) * dt;
+    const desiredPlanar = Math.hypot(desiredX, desiredZ);
+    const currentPlanar = Math.hypot(this.velocity[0], this.velocity[2]);
+    const slowing = desiredPlanar < currentPlanar - 0.05 || (this.flying && Math.abs(desiredY) < Math.abs(this.velocity[1]) - 0.05);
+    const acceleration = (this.flying ? ACCELERATION_FLY : this.sprint ? ACCELERATION_SPRINT : ACCELERATION_WALK) * (slowing ? DECEL_MULTIPLIER : 1) * dt;
     this.velocity[0] += Math.max(-acceleration, Math.min(acceleration, desiredX - this.velocity[0]));
     this.velocity[2] += Math.max(-acceleration, Math.min(acceleration, desiredZ - this.velocity[2]));
     if (this.flying) this.velocity[1] += Math.max(-acceleration, Math.min(acceleration, desiredY - this.velocity[1]));
