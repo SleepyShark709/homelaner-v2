@@ -81,6 +81,8 @@ public/assets/vfx/-HeroGame/Mesh/Effect/SM_ky_quad_centerRot.pskx
 
 `P_AirAttack_Shock` 已接入同一原版 `T_BlastWave` 贴图：空中近战生成更大、更短的冲击环，0.3 s。原版三个 emitter（含 `T_Burst_M`/`T_Wave`）尚未完整转换。提交 `fa088bb`，截图 `research/screenshots/air-attack-shock.jpg`。
 
+`P_LongRangeSlash` 的远程斩击已改用材质族里的原版 `T_SwipeTrail`（来自 `M_Effect_Slash`，`SM_SlashTrail`）：两道拉伸加色 swipe，0.16 s。原版 mesh trail 还没转换，这是贴图/时序首版。提交 `e0e5733`，截图 `research/screenshots/ranged-slash4.jpg`。
+
 仍需继续对齐：
 
 1. 原版 `M_Effect_Master_RGBSubUV` 的颜色/透明度曲线与精确尺寸；
