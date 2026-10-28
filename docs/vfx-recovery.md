@@ -91,6 +91,8 @@ public/assets/vfx/-HeroGame/Mesh/Effect/SM_ky_quad_centerRot.pskx
 
 拳头材质现已改用原版 `T_FistCannonImpact` 的发光/透明度贴图 + 加色混合（提交 `ab5308d`，截图 `research/screenshots/fist-mesh3.jpg`）；`M_FistCannon` 的 shader graph 仍未完整还原。
 
+`P_FlyUp` 的起飞冲击已使用原版 `T_BlastWave` + `T_RaP_Smoke_puff_4x4_2k`：起飞时脚下冲击波/烟雾，落地时烟雾 burst。原版多 emitter 地面裂纹/烟柱系统仍未完整转换。提交 `b3c766c`，截图 `research/screenshots/fly-takeoff.jpg`。
+
 仍需继续对齐：
 
 1. 原版 `M_Effect_Master_RGBSubUV` 的颜色/透明度曲线与精确尺寸；
