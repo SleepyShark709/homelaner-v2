@@ -36,6 +36,7 @@ export class Effects {
   private fistMeshes: AbstractMesh[] = [];
   private fistScale = 0.3;
   private readonly fistMaterial: StandardMaterial;
+  private fistOpacityTexture?: Texture;
   private readonly blasts: { sprite: Sprite; age: number; life: number; startSize: number; grow: number; alpha: number }[] = [];
   private dustClock = 0;
   private trailClock = 0;
@@ -73,7 +74,9 @@ export class Effects {
     this.fistMaterial.diffuseColor = Color3.Black();
     this.fistMaterial.emissiveColor = Color3.White();
     this.fistMaterial.emissiveTexture = fistTexture;
-    this.fistMaterial.opacityTexture = fistTexture;
+    this.fistOpacityTexture = new Texture('/assets/vfx/-HeroGame/Res/Effect/T_FistCannonWaveNoise.png', scene);
+    this.fistOpacityTexture.getAlphaFromRGB = true;
+    this.fistMaterial.opacityTexture = this.fistOpacityTexture;
     this.fistMaterial.alphaMode = Constants.ALPHA_ADD;
     this.fistMaterial.disableLighting = true;
     this.fistMaterial.backFaceCulling = false;
@@ -377,5 +380,5 @@ export class Effects {
     }
   }
   reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; this.streaks.forEach(streak => streak.mesh.dispose()); this.streaks.length = 0; this.slashes.forEach(slash => slash.sprite.dispose()); this.slashes.length = 0; this.ranged.forEach(swipe => swipe.sprite.dispose()); this.ranged.length = 0; this.fistFlashes.forEach(flash => flash.sprite.dispose()); this.fistFlashes.length = 0; this.fistSpawns.forEach(spawn => spawn.mesh.dispose()); this.fistSpawns.length = 0; this.dust.forEach(puff => puff.sprite.dispose()); this.dust.length = 0; this.blasts.forEach(blast => blast.sprite.dispose()); this.blasts.length = 0; this.dustClock = 0; this.trailClock = 0; }
-  dispose(): void { this.reset(); this.fistContainer?.dispose(); this.fistMaterial.emissiveTexture?.dispose(); this.fistMaterial.dispose(); this.slashManager.dispose(); this.rangedManager.dispose(); this.fistManager.dispose(); this.dustManager.dispose(); this.blastManager.dispose(); this.burstManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
+  dispose(): void { this.reset(); this.fistContainer?.dispose(); this.fistOpacityTexture?.dispose(); this.fistMaterial.emissiveTexture?.dispose(); this.fistMaterial.dispose(); this.slashManager.dispose(); this.rangedManager.dispose(); this.fistManager.dispose(); this.dustManager.dispose(); this.blastManager.dispose(); this.burstManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
 }
