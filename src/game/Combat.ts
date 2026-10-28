@@ -157,7 +157,13 @@ export class Combat {
     this.onSound?.(heavy ? 'heavy' : name === 'Hero_AirAttackStart' ? 'whoosh' : 'swing');
     this.attackKind = kind; this.timeline = new AttackTimeline(timing); this.idleTime = 0;
     this.motor.heading = this.input.yaw;
-    this.effects.swing(this.origin(), this.direction(this.origin(), this.lockedTarget ? this.targetCenter(this.lockedTarget) : this.aim()));
+    const effectOrigin = this.origin();
+    const effectDirection = this.direction(effectOrigin, this.lockedTarget ? this.targetCenter(this.lockedTarget) : this.aim());
+    if (kind === 'melee') {
+      this.effects.slash([effectOrigin[0] + effectDirection[0] * 1.05, effectOrigin[1] - 0.15, effectOrigin[2] + effectDirection[2] * 1.05]);
+    } else {
+      this.effects.swing(effectOrigin, effectDirection);
+    }
     this.character.playAction(name, timing.playbackRate);
   }
   update(dt: number): void {

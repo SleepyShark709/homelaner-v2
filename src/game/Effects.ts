@@ -2,6 +2,10 @@ import { Scene } from '@babylonjs/core/scene';
 import { MeshBuilder } from '@babylonjs/core/Meshes/meshBuilder';
 import type { Mesh } from '@babylonjs/core/Meshes/mesh';
 import { StandardMaterial } from '@babylonjs/core/Materials/standardMaterial';
+import { SpriteManager } from '@babylonjs/core/Sprites/spriteManager';
+import { Sprite } from '@babylonjs/core/Sprites/sprite';
+import '@babylonjs/core/Sprites/spriteSceneComponent';
+import { Constants } from '@babylonjs/core/Engines/constants';
 import { Color3 } from '@babylonjs/core/Maths/math.color';
 import { Quaternion, Vector3 } from '@babylonjs/core/Maths/math.vector';
 import type { Vec3 } from './collision';
@@ -13,11 +17,17 @@ export class Effects {
   private readonly beams: Mesh[];
   private readonly sparks: { mesh: Mesh; age: number; life: number; velocity: Vector3; size: number }[] = [];
   private readonly streaks: { mesh: Mesh; age: number; life: number; size: number }[] = [];
+  private readonly slashes: { sprite: Sprite; age: number; life: number }[] = [];
+  private readonly slashManager: SpriteManager;
   private trailClock = 0;
   constructor(readonly scene: Scene) {
     const material = (name: string, color: string) => { const mat = new StandardMaterial(name, scene); mat.emissiveColor = Color3.FromHexString(color); mat.disableLighting = true; return mat; };
     this.red = material('heat-red', '#ff3122'); this.gold = material('impact-gold', '#ffd38a'); this.blue = material('fist-cyan', '#c5ffff');
     this.gold.alpha = 0.75; this.blue.alpha = 0.7;
+    this.slashManager = new SpriteManager('normal-attack-slash-atlas', '/assets/vfx/-HeroGame/Res/Effect/T_ky_slash01_4x4.png', 16, { width: 512, height: 512 }, scene);
+    this.slashManager.blendMode = Constants.ALPHA_ADD;
+    this.slashManager.disableDepthWrite = true;
+    this.slashManager.isPickable = false;
     this.beams = [0, 1].map(index => { const mesh = MeshBuilder.CreateCylinder(`eye-beam-${index}`, { height: 1, diameter: 0.035, tessellation: 6 }, scene); mesh.material = this.red; mesh.isPickable = false; mesh.setEnabled(false); return mesh; });
   }
   private streak(point: Vec3, direction: Vector3, color: 'gold' | 'blue', length: number, life: number): void {
@@ -62,6 +72,16 @@ export class Effects {
       this.streak([point[0] + view.z * side, point[1] + 0.1, point[2] - view.x * side], view, 'blue', 0.45 + i * 0.08, 0.14);
     }
   }
+  /** Original P_NormalAttackSlash: 4x4 T_ky_slash01 atlas, frames 3..10,
+   * lifetime 0.2 s. SpriteManager handles the camera-facing quad and atlas UVs. */
+  slash(point: Vec3): void {
+    const sprite = new Sprite('normal-attack-slash', this.slashManager);
+    sprite.position.copyFromFloats(point[0], point[1], point[2]);
+    sprite.width = 1.1;
+    sprite.height = 1.1;
+    sprite.playAnimation(3, 10, false, 0.2 / 8);
+    this.slashes.push({ sprite, age: 0, life: 0.2 });
+  }
   heat(eyes: Vec3[] | null, end?: Vec3): void {
     this.beams.forEach((mesh, index) => {
       mesh.setEnabled(!!eyes && !!end);
@@ -90,6 +110,10 @@ export class Effects {
     }
   }
   update(dt: number): void {
+    for (let i = this.slashes.length - 1; i >= 0; i--) {
+      const slash = this.slashes[i]; slash.age += dt;
+      if (slash.age >= slash.life) { slash.sprite.dispose(); this.slashes.splice(i, 1); }
+    }
     for (let i = this.sparks.length - 1; i >= 0; i--) {
       const spark = this.sparks[i]; spark.age += dt;
       if (spark.age >= spark.life) { spark.mesh.dispose(); this.sparks.splice(i, 1); continue; }
@@ -103,6 +127,6 @@ export class Effects {
       streak.mesh.scaling.y = streak.size * (0.7 + fade * 0.3);
     }
   }
-  reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; this.streaks.forEach(streak => streak.mesh.dispose()); this.streaks.length = 0; this.trailClock = 0; }
-  dispose(): void { this.reset(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
+  reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; this.streaks.forEach(streak => streak.mesh.dispose()); this.streaks.length = 0; this.slashes.forEach(slash => slash.sprite.dispose()); this.slashes.length = 0; this.trailClock = 0; }
+  dispose(): void { this.reset(); this.slashManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
 }
