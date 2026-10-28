@@ -87,6 +87,8 @@ public/assets/vfx/-HeroGame/Mesh/Effect/SM_ky_quad_centerRot.pskx
 
 `P_FistCannonSpawn` 的枪口闪光已使用原版 `T_FistCannonImpact`：0.22 s 双手侧加色 streak。原版 `SM_Crunch_Fist_V02` 网格和三个 emitter 仍未转换。提交 `145349d`，截图 `research/screenshots/fist-cannon.jpg`。
 
+`SM_Crunch_Fist_V02` 的 glTF 已加载：远程攻击会在手部克隆原版拳头网格 0.26 s，尺寸按原始 bbox 归一化到约 1.3 m，材质暂用青色半透明近似 `M_FistCannon`。提交 `9d7223d`，截图 `research/screenshots/fist-mesh2.jpg`。完整材质/三 emitter 仍未转换。
+
 仍需继续对齐：
 
 1. 原版 `M_Effect_Master_RGBSubUV` 的颜色/透明度曲线与精确尺寸；
