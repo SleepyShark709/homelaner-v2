@@ -83,6 +83,8 @@ public/assets/vfx/-HeroGame/Mesh/Effect/SM_ky_quad_centerRot.pskx
 
 `P_LongRangeSlash` 的远程斩击已改用材质族里的原版 `T_SwipeTrail`（来自 `M_Effect_Slash`，`SM_SlashTrail`）：两道拉伸加色 swipe，0.16 s。原版 mesh trail 还没转换，这是贴图/时序首版。提交 `e0e5733`，截图 `research/screenshots/ranged-slash4.jpg`。
 
+`P_Attack_Wave` 的重击 burst 已使用原版 `T_Burst_M`：0.38 s 扩散彩虹环。原版三个 emitter 和 `T_Wave` 层尚未接入。提交 `ad66279`，截图 `research/screenshots/attack-wave.jpg`。
+
 仍需继续对齐：
 
 1. 原版 `M_Effect_Master_RGBSubUV` 的颜色/透明度曲线与精确尺寸；
