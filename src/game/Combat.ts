@@ -1,6 +1,6 @@
 import { Vector3 } from '@babylonjs/core/Maths/math.vector';
 import type { FreeCamera } from '@babylonjs/core/Cameras/freeCamera';
-import type { Mesh } from '@babylonjs/core/Meshes/mesh';
+import type { AbstractMesh } from '@babylonjs/core/Meshes/abstractMesh';
 import type { Scene } from '@babylonjs/core/scene';
 import type { Character } from './Character';
 import type { Input } from './Input';
@@ -13,7 +13,7 @@ import type { Obstacle, Vec3 } from './collision';
 import { AttackTimeline, FREE_RULES, traceTargets } from './combat-rules';
 import type { AttackKind, AttackSpec, ClipTiming, PlayMode } from './combat-rules';
 
-interface Projectile { mesh: Mesh; position: Vec3; direction: Vec3; radius: number; age: number; strong: boolean; hitIds: Set<string> }
+interface Projectile { mesh: AbstractMesh; position: Vec3; direction: Vec3; radius: number; age: number; strong: boolean; hitIds: Set<string> }
 export class Combat {
   mode: PlayMode = 'free';
   destroyed = 0;
@@ -251,7 +251,7 @@ export class Combat {
       }
     } else {
       if (this.projectiles.length >= 12) this.projectiles.shift()!.mesh.dispose();
-      const mesh = this.effects.projectile(); mesh.position.copyFromFloats(...origin);
+      const mesh = this.effects.projectile(); mesh.position.copyFromFloats(...origin); mesh.rotation.y = Math.atan2(direction[0], direction[2]);
       this.projectiles.push({ mesh, position: origin, direction, age: 0, strong: this.strong, radius: this.strong ? (this.timeline?.timing.name === 'Hero_AirSuperKick' ? 5 : 15) : 2.56, hitIds: new Set() });
     }
   }

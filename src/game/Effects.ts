@@ -294,7 +294,17 @@ export class Effects {
       mesh.rotationQuaternion = axis.lengthSquared() < 1e-8 ? Quaternion.RotationAxis(Vector3.Right(), direction.y > 0 ? 0 : Math.PI) : Quaternion.RotationAxis(axis.normalize(), Math.acos(Math.max(-1, Math.min(1, direction.y))));
     });
   }
-  projectile(): Mesh {
+  projectile(): AbstractMesh {
+    const source = this.fistMeshes[0];
+    if (source) {
+      const mesh = source.clone('fist-cannon-projectile', null);
+      if (mesh) {
+        mesh.setEnabled(true);
+        mesh.material = this.fistMaterial;
+        mesh.scaling.setAll(this.fistScale * 0.35);
+        return mesh;
+      }
+    }
     const mesh = MeshBuilder.CreateSphere('fist-wave', { diameter: 0.8, segments: 6 }, this.scene);
     mesh.material = this.blue; mesh.isPickable = false; return mesh;
   }
