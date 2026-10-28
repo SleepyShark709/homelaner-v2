@@ -361,7 +361,10 @@ export class Character {
 
   update(motor: MotionSource, dt: number): void {
     this.root.position.copyFromFloats(...motor.position);
-    this.root.position.y += 0.026;
+    // The cooked skeleton's ball/toe bones sit ~14 cm below the motor's foot
+    // plane in the idle/run poses; lift the visual root so the boots do not sink
+    // into the recovered floor.
+    this.root.position.y += 0.026 + 0.145;
     const difference = Math.atan2(Math.sin(motor.heading - this.yaw), Math.cos(motor.heading - this.yaw));
     this.yaw += difference * Math.min(1, dt * 12);
     this.root.rotation.y = this.yaw;

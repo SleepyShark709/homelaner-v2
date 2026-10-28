@@ -18,7 +18,7 @@ export class Population {
   private readonly containers: AssetContainer[] = [];
   private manifest!: Manifest;
   private paused = true;
-  constructor(readonly scene: Scene, readonly walls: Obstacle[]) {}
+  constructor(readonly scene: Scene, readonly walls: Obstacle[], private readonly groundAt?: (x: number, z: number, feetY: number) => number) {}
   async load(options: { worldOffset?: [number, number]; manifestUrl?: string; sandbox?: boolean } = {}): Promise<void> {
     const response = await fetch(options.manifestUrl ?? '/assets/population-manifest.json');
     if (!response.ok) throw new Error('人车资源清单未生成');
@@ -77,6 +77,7 @@ export class Population {
   }
   private health(kind: TargetKind): number { return kind === 'citizen' ? FREE_RULES.citizenHealth : kind === 'vehicle' ? FREE_RULES.vehicleHealth : FREE_RULES.propHealth; }
   private place(actor: Actor, yaw: number): void {
+    if (this.groundAt) actor.position[1] = this.groundAt(actor.position[0], actor.position[2], actor.position[1]);
     actor.root.position.copyFromFloats(...actor.position);
     actor.root.position.y += actor.model.groundOffset;
     const correction = actor.model.forwardAxis === '+X' ? -Math.PI / 2 : actor.model.forwardAxis === '-Z' ? Math.PI : 0;
@@ -144,6 +145,25 @@ export class Population {
         const blocked = this.actors.some(other => other !== actor && other.alive && other.kind === 'vehicle' && vehicleShouldHold(actor.position, other.position, forward));
         const playerAhead = playerPosition ? vehicleShouldHold(actor.position, playerPosition, forward, 5) : false;
         if (blocked || playerAhead) continue;
+      }
+      if (distance > 0.01) {
+        const stepLength = Math.min(distance, speed * dt);
+        const step: Vec3 = [dx / distance * stepLength, 0, dz / distance * stepLength];
+        const half: Vec3 = actor.kind === 'vehicle' ? [0.6, 0.9, 0.6] : [0.28, 0.9, 0.28];
+        const hit = firstHit([actor.position[0], actor.position[1] + 0.9, actor.position[2]], step, this.walls, half);
+        if (hit) {
+          // Route points are preview paths, not a navmesh. Do not let an NPC
+          // walk through a building: skip to the next waypoint and turn back.
+          let next = actor.routeIndex + actor.routeDirection;
+          if (next >= route.points.length || next < 0) {
+            if (route.closed) next = (next + route.points.length) % route.points.length;
+            else { actor.routeDirection *= -1; next = actor.routeIndex + actor.routeDirection; }
+          }
+          actor.routeIndex = Math.max(0, Math.min(route.points.length - 1, next));
+          this.place(actor, Math.atan2(dx, dz));
+          this.animate(actor, 'Citizen_N_Walk_F');
+          continue;
+        }
       }
       if (distance < speed * dt + 0.08) {
         actor.position = [...target];

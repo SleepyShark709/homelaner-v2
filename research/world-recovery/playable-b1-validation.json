@@ -13,7 +13,7 @@
       "textureFailures": 0,
       "unresolvedMaterialCacheKeys": 0,
       "ambiguousSlots": 0,
-      "fps": 96.99321047152743,
+      "fps": 90.19843655396782,
       "activeMeshes": 0,
       "warning": "",
       "scope": "",
@@ -83,18 +83,18 @@
           "stats": {
             "position": [
               -56.31684755883863,
-              4.315833333333329,
+              4.346388888888885,
               -558.48502438803
             ],
             "velocity": [
               0,
-              4.074999999999989,
+              3.6666666666666554,
               0
             ],
             "flying": false,
             "grounded": false,
             "state": "jump",
-            "speed": 4.074999999999989,
+            "speed": 3.6666666666666554,
             "charge": 0
           },
           "clip": "Hero_JumpSpeed",
@@ -104,7 +104,7 @@
           "stats": {
             "position": [
               -56.31684755883863,
-              4.315833333333329,
+              4.346388888888885,
               -558.48502438803
             ],
             "velocity": [
@@ -125,18 +125,18 @@
           "stats": {
             "position": [
               -56.31684755883863,
-              14.956900000000026,
+              14.501055555555581,
               -558.48502438803
             ],
             "velocity": [
               0,
-              29.354666666666716,
+              28.672000000000047,
               0
             ],
             "flying": true,
             "grounded": false,
             "state": "hover",
-            "speed": 29.354666666666716,
+            "speed": 28.672000000000047,
             "charge": 0
           },
           "clip": "Hero_FlyUp",
@@ -146,18 +146,18 @@
           "stats": {
             "position": [
               -56.31684755883863,
-              0.7181444444444816,
+              0.47000000000000003,
               -558.48502438803
             ],
             "velocity": [
               0,
-              -40,
+              0,
               0
             ],
             "flying": true,
-            "grounded": false,
+            "grounded": true,
             "state": "hover",
-            "speed": 40,
+            "speed": 0,
             "charge": 0
           },
           "clip": "Hero_FlyFastDown",
@@ -207,9 +207,9 @@
         },
         "evidence": {
           "walkDistance": 8.679935264029496,
-          "jumpHeight": 3.845833333333329,
-          "ascendDelta": 10.641066666666696,
-          "descendDelta": -14.238755555555544,
+          "jumpHeight": 3.876388888888885,
+          "ascendDelta": 10.154666666666696,
+          "descendDelta": -14.03105555555558,
           "sprintSpeed": 13.048171426123451
         }
       },
@@ -221,7 +221,7 @@
       },
       "browser": "Chrome/156.0.8078.48",
       "url": "http://127.0.0.1:4178/?view=play&debug=1",
-      "durationMs": 31590
+      "durationMs": 34521
     }
   ],
   "scope": "B1 playable vertical slice: original ResidentialArea1 street + MainLevel static world, original hero character, heightfield ground, AABB collision proxy and original-input movement. Not a complete original gameplay reconstruction.",

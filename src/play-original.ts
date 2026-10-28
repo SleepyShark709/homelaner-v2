@@ -459,7 +459,11 @@ try {
   // Preview population: original citizen/vehicle/prop meshes and animations,
   // but placements/routes come from the previous prototype manifest, not a
   // recovered original AI/quest system. Damage stays in baseline mode here.
-  population = new Population(viewer.scene, collision.boxes);
+  population = new Population(viewer.scene, collision.boxes, (x, z, feetY) => {
+    const ground = terrain.heightAt(x, z) ?? 0;
+    const floor = surfaces.topAt(x, z, feetY, 0.75);
+    return floor !== undefined ? Math.max(ground, floor) : ground;
+  });
   if (playDistrict === 'ResidentialArea1') {
     let manifestUrl = '/assets/population-manifest.json';
     let populationOffset: [number, number] = [offsetX, offsetZ];
