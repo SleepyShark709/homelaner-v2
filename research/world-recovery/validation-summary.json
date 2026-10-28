@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "date": "2026-10-28",
-  "validatedCommit": "daae26c",
+  "date": "2026-10-29",
+  "validatedCommit": "1e73d57",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -325,6 +325,20 @@
       "visible": true,
       "distance": 4,
       "hideOnDeath": true
+    },
+    {
+      "command": "capture-world probe-vfx-assets",
+      "exitCode": 0,
+      "managersReady": true,
+      "managers": [
+        "normal-attack-slash-atlas",
+        "fly-smoke-atlas",
+        "start-sprint-blast",
+        "attack-wave-burst",
+        "long-range-slash",
+        "fist-cannon-impact"
+      ],
+      "fistMeshLoaded": true
     }
   ],
   "evidence": {
@@ -336,5 +350,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Player-fidelity pass at daae26c: attack lock, direct SprintRun/Idle transitions, landing-tolerance fix, lock-on reticle, fly clip memory/hysteresis/dwell, authored heat preview default off. npm test/typecheck/build/B1 pass. Overall full-game completion remains low (~20-25%); this is still a partial reconstruction."
+  "note": "Player/VFX/clipping pass at 1e73d57: attack lock, reduced deceleration inertia, original slash/dust/sprint/air/ranged/fist/impact textures and Crunch Fist mesh, player foot lift and NPC wall/ground clearance. Tests/B1 and the VFX asset probe pass. Full UE particle graphs and full navmesh remain open; overall whole-game completion remains partial."
 }
