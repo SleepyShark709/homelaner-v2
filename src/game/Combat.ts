@@ -44,6 +44,7 @@ export class Combat {
     const response = await fetch('/assets/character/combat-timings.json');
     if (!response.ok) throw new Error('原版动作时间轴未生成');
     this.clips = (await response.json()).clips;
+    await this.effects.load();
   }
   get actionName(): string { return this.heatActive ? '热视线' : this.timeline ? this.attackKind === 'melee' ? '近战连击' : this.strong ? '强力拳波' : '远程攻击' : '待命'; }
   get attacking(): boolean { return this.timeline !== null; }
