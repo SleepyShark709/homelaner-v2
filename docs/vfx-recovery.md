@@ -77,13 +77,16 @@ public/assets/vfx/-HeroGame/Mesh/Effect/SM_ky_quad_centerRot.pskx
 
 这项仍是**原版贴图/材质族 + 作者发射节奏**，不是四个 GPU emitter 的完整复刻；原版参数已记录在上面的 module 数据中。
 
+`P_StartSprint` 已接入原版 `T_BlastWave` 贴图：地面起跑时生成 0.4 s 加色扩散冲击波。原版 `SM_BlastWave` 网格和三个 mesh emitter 尚未转换，因此当前是**原版贴图/时序的首版**，不是完整网格粒子复刻。提交 `4c80a47`，截图 `research/screenshots/start-sprint-wave2.jpg`。
+
 仍需继续对齐：
 
 1. 原版 `M_Effect_Master_RGBSubUV` 的颜色/透明度曲线与精确尺寸；
 2. `ParticleModuleTypeDataMesh` 的 roll/pitch/yaw 随机与手部 socket 绑定；
 3. burst/lifetime/size 的精确组合；
 4. `P_FlyDust` 四个 POP emitter 的 burst/速度/加速度按原参数还原；
-5. 逐个接入其他 `P_*` 特效，替换 `Effects.ts` 的程序化 effects。
+5. `P_StartSprint` 的 `SM_BlastWave` 网格与三 emitter 参数；
+6. 逐个接入其他 `P_*` 特效，替换 `Effects.ts` 的程序化 effects。
 
 ## 优先级
 
