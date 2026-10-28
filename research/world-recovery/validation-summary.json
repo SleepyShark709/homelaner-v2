@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "date": "2026-10-25",
-  "validatedCommit": "0e1c0ec",
+  "date": "2026-10-28",
+  "validatedCommit": "daae26c",
   "commands": [
     {
       "command": "npm run verify:locomotion",
@@ -35,7 +35,7 @@
       "terrain": 144,
       "assetFailures": 0,
       "textureFailures": 0,
-      "checks": "idle/run/jump/fly-up/fly-down/land/exit-flight/Shift-StartSprint; 1D Idle/Walk/Run ground blend; 2D ground blend with ALS direction samples; fly direction blend (FlyRight/FlyBack probes); ALS_N_Jump standing/walk takeoff; fly-forward speed-axis sample; JumpFall/Fast vertical split; air melee/ranged AirAttack entry; FlyFastSprint >55 m/s band; SprintSuper 16.75..25 m/s sample band"
+      "checks": "idle/run/jump/fly-up/fly-down/land/exit-flight; single-group gait; attack movement lock; one-group fly selection; no empty animation frames in jump chains; H heat opt-in only"
     },
     {
       "command": "node scripts/audit-root-motion.mjs",
@@ -336,5 +336,5 @@
     "gate3": "baked MainLevel lightmap, Grunge/height, full minimap/HUD state machine",
     "gate4": "HeroABS_MoveGround BlendSpace axes/weights, AnimBP transition/blend times, ALS_N_Jump, notify/root-motion/IK"
   },
-  "note": "Fly clip selection now has movement memory, angle/speed hysteresis and 0.12 s dwell at 0e1c0ec; B1/tests pass."
+  "note": "Player-fidelity pass at daae26c: attack lock, direct SprintRun/Idle transitions, landing-tolerance fix, lock-on reticle, fly clip memory/hysteresis/dwell, authored heat preview default off. npm test/typecheck/build/B1 pass. Overall full-game completion remains low (~20-25%); this is still a partial reconstruction."
 }
