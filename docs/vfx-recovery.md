@@ -95,6 +95,8 @@ public/assets/vfx/-HeroGame/Mesh/Effect/SM_ky_quad_centerRot.pskx
 
 远程弹体已从蓝色程序化球体替换为 `SM_Crunch_Fist_V02` 的缩放克隆（约 0.45 m），使用 `T_FistCannonImpact` 材质并朝速度方向旋转。提交 `3f7cd55`，截图 `research/screenshots/fist-projectile2.jpg`。`M_FistCannon` shader graph 仍未完整还原。
 
+命中/破坏的 `impact` 已从程序化金色球替换为原版 `T_Burst_M`：普通命中 0.24 s 小环，破坏 0.55 s 大环。提交 `e460d91`，截图 `research/screenshots/impact-burst.jpg`。
+
 仍需继续对齐：
 
 1. 原版 `M_Effect_Master_RGBSubUV` 的颜色/透明度曲线与精确尺寸；
