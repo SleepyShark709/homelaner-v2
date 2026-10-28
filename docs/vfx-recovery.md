@@ -1,8 +1,14 @@
 # 玩家 VFX 还原（2026-10-28）
 
+## 2026-10-29 更正
+
+**当前 Web 中的玩家 VFX 不是原版 UNDEFEATED 特效。** 它们只是从原包提取的原版贴图/网格，加上 `Effects.ts` 自写的 SpriteManager / 自写 mesh 播放；没有运行原版 `UParticleSystem` 的 emitter、module、distribution 和渲染材质。此前把其中几项写成“原版 VFX 已恢复”是不准确的，现全部降级为**占位预览**，不能作为还原完成。
+
+真正的还原至少需要：解码 `UParticleSystem` 的 emitter/LOD/module/distribution，按原版参数实现 Cascade/GPU 粒子运行时，并复现材质与 socket/notify。下一步先做 `P_NormalAttackSlash` 的完整 mesh emitter 规格，而不是继续用 sprite 近似。
+
 ## 结论
 
-当前 `src/game/Effects.ts` 里的速度线、拳风、冲击球、热视线都是 **Web 程序化预览**，不是原版 UE 粒子资产。声音和动画是原版，视觉特效不是。
+当前 `src/game/Effects.ts` 里的速度线、拳风、冲击球、热视线都是 **Web 自写播放**，不是原版 UE 粒子系统。声音和动画是原版，视觉特效不是。
 
 用户已明确：玩家操控角色的原版特效优先级很高。后续以原版 `P_*` 粒子系统、材质、贴图、网格和 AnimNotify 为准，不再把程序化几何当作还原结果。
 

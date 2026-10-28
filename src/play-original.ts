@@ -35,7 +35,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <aside class="play-panel">
     <h1>原版街区 · 可玩切片</h1>
     <p>原角色、原骨架与原始街区资产；地形高度来自原 Landscape 高度场。建筑碰撞为静态 AABB 代理，跳跃/重力/相机手感仍是预览。</p>
-    <p class="warn">本切片不是完整原版玩法：AI、车辆、任务与完整攻击状态仍未接入；镭射眼为作者预览，默认关闭，需 ?heat=1 启用；mode=free 为自由破坏预览。</p>
+    <p class="warn">本切片不是完整原版玩法：AI、车辆、任务与完整攻击状态仍未接入；VFX 是原版贴图/网格的占位预览，不是原版 UE 粒子系统；镭射眼为作者预览，默认关闭，需 ?heat=1 启用；mode=free 为自由破坏预览。</p>
     <div class="play-keys">
       <kbd>W A S D</kbd><span>移动</span>
       <kbd>拖动鼠标</kbd><span>转向</span>
