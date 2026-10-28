@@ -6,7 +6,7 @@ import { SpriteManager } from '@babylonjs/core/Sprites/spriteManager';
 import { Sprite } from '@babylonjs/core/Sprites/sprite';
 import '@babylonjs/core/Sprites/spriteSceneComponent';
 import { Constants } from '@babylonjs/core/Engines/constants';
-import { Color3 } from '@babylonjs/core/Maths/math.color';
+import { Color3, Color4 } from '@babylonjs/core/Maths/math.color';
 import { Quaternion, Vector3 } from '@babylonjs/core/Maths/math.vector';
 import type { Vec3 } from './collision';
 
@@ -19,6 +19,9 @@ export class Effects {
   private readonly streaks: { mesh: Mesh; age: number; life: number; size: number }[] = [];
   private readonly slashes: { sprite: Sprite; age: number; life: number }[] = [];
   private readonly slashManager: SpriteManager;
+  private readonly dust: { sprite: Sprite; age: number; life: number; size: number }[] = [];
+  private readonly dustManager: SpriteManager;
+  private dustClock = 0;
   private trailClock = 0;
   constructor(readonly scene: Scene) {
     const material = (name: string, color: string) => { const mat = new StandardMaterial(name, scene); mat.emissiveColor = Color3.FromHexString(color); mat.disableLighting = true; return mat; };
@@ -28,6 +31,10 @@ export class Effects {
     this.slashManager.blendMode = Constants.ALPHA_ADD;
     this.slashManager.disableDepthWrite = true;
     this.slashManager.isPickable = false;
+    this.dustManager = new SpriteManager('fly-smoke-atlas', '/assets/vfx/-HeroGame/Res/Effect/T_RaP_Smoke_puff_4x4_2k.png', 64, { width: 256, height: 256 }, scene);
+    this.dustManager.blendMode = Constants.ALPHA_COMBINE;
+    this.dustManager.disableDepthWrite = true;
+    this.dustManager.isPickable = false;
     this.beams = [0, 1].map(index => { const mesh = MeshBuilder.CreateCylinder(`eye-beam-${index}`, { height: 1, diameter: 0.035, tessellation: 6 }, scene); mesh.material = this.red; mesh.isPickable = false; mesh.setEnabled(false); return mesh; });
   }
   private streak(point: Vec3, direction: Vector3, color: 'gold' | 'blue', length: number, life: number): void {
@@ -82,6 +89,33 @@ export class Effects {
     sprite.playAnimation(3, 10, false, 0.2 / 8);
     this.slashes.push({ sprite, age: 0, life: 0.2 });
   }
+  /** Original P_FlyDust / P_FlyIdleDust smoke: T_RaP_Smoke_puff_4x4_2k,
+   * 0.85..1.5 s lifetime, soft alpha smoke. Authored emission cadence around
+   * the recovered four POP emitters; not a full GPU emitter reproduction yet. */
+  flyDust(position: Vec3, velocity: Vec3, flying: boolean, dt: number): void {
+    if (!flying) { this.dustClock = 0; return; }
+    this.dustClock -= dt;
+    if (this.dustClock > 0) return;
+    this.dustClock = 0.08;
+    const speed = Math.hypot(velocity[0], velocity[2]);
+    const backX = speed > 1 ? -velocity[0] / speed : 0;
+    const backZ = speed > 1 ? -velocity[2] / speed : 0;
+    for (let i = 0; i < 3; i++) {
+      const sprite = new Sprite('fly-dust', this.dustManager);
+      const angle = Math.random() * Math.PI * 2;
+      const radius = 0.3 + Math.random() * 0.7;
+      sprite.position.copyFromFloats(
+        position[0] + backX * (0.3 + Math.random() * 0.8) + Math.cos(angle) * radius,
+        position[1] + 0.05 + Math.random() * 0.45,
+        position[2] + backZ * (0.3 + Math.random() * 0.8) + Math.sin(angle) * radius,
+      );
+      const size = 0.8 + Math.random() * 0.55;
+      sprite.cellIndex = Math.floor(Math.random() * 16);
+      sprite.width = size; sprite.height = size;
+      sprite.color = new Color4(1, 1, 1, 0.62);
+      this.dust.push({ sprite, age: 0, life: 0.9 + Math.random() * 0.5, size });
+    }
+  }
   heat(eyes: Vec3[] | null, end?: Vec3): void {
     this.beams.forEach((mesh, index) => {
       mesh.setEnabled(!!eyes && !!end);
@@ -110,6 +144,14 @@ export class Effects {
     }
   }
   update(dt: number): void {
+    for (let i = this.dust.length - 1; i >= 0; i--) {
+      const puff = this.dust[i]; puff.age += dt;
+      if (puff.age >= puff.life) { puff.sprite.dispose(); this.dust.splice(i, 1); continue; }
+      const progress = puff.age / puff.life;
+      const scale = puff.size * (1 + progress * 1.8);
+      puff.sprite.width = scale; puff.sprite.height = scale;
+      puff.sprite.color = new Color4(1, 1, 1, 0.62 * (1 - progress));
+    }
     for (let i = this.slashes.length - 1; i >= 0; i--) {
       const slash = this.slashes[i]; slash.age += dt;
       if (slash.age >= slash.life) { slash.sprite.dispose(); this.slashes.splice(i, 1); }
@@ -127,6 +169,6 @@ export class Effects {
       streak.mesh.scaling.y = streak.size * (0.7 + fade * 0.3);
     }
   }
-  reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; this.streaks.forEach(streak => streak.mesh.dispose()); this.streaks.length = 0; this.slashes.forEach(slash => slash.sprite.dispose()); this.slashes.length = 0; this.trailClock = 0; }
-  dispose(): void { this.reset(); this.slashManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
+  reset(): void { this.heat(null); this.sparks.forEach(spark => spark.mesh.dispose()); this.sparks.length = 0; this.streaks.forEach(streak => streak.mesh.dispose()); this.streaks.length = 0; this.slashes.forEach(slash => slash.sprite.dispose()); this.slashes.length = 0; this.dust.forEach(puff => puff.sprite.dispose()); this.dust.length = 0; this.dustClock = 0; this.trailClock = 0; }
+  dispose(): void { this.reset(); this.slashManager.dispose(); this.dustManager.dispose(); this.beams.forEach(mesh => mesh.dispose()); this.red.dispose(); this.gold.dispose(); this.blue.dispose(); }
 }

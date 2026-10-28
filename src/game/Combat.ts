@@ -167,7 +167,7 @@ export class Combat {
     this.character.playAction(name, timing.playbackRate);
   }
   update(dt: number): void {
-    this.effects.speedTrail(this.motor.position, this.motor.velocity, this.motor.flying, !this.motor.flying && Math.hypot(this.motor.velocity[0], this.motor.velocity[2]) > 12, dt);
+    this.effects.flyDust(this.motor.position, this.motor.velocity, this.motor.flying, dt);
     if (!this.timeline && !this.heatActive) this.previewTarget = this.acquireTarget('melee');
     else if (this.heatActive) this.previewTarget = null;
     if (this.motor.grounded && !this.motor.flying) this.airAttackStarted = false;
