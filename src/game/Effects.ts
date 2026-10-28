@@ -309,15 +309,18 @@ export class Effects {
     mesh.material = this.blue; mesh.isPickable = false; return mesh;
   }
   impact(point: Vec3, destroyed = false): void {
-    const count = destroyed ? 8 : 2;
-    for (let i = 0; i < count; i++) {
-      if (this.sparks.length >= 64) this.sparks.shift()!.mesh.dispose();
-      const size = destroyed ? 0.24 + i * 0.035 : 0.09;
-      const mesh = MeshBuilder.CreateSphere('impact', { diameter: 1, segments: 4 }, this.scene);
-      mesh.material = this.gold; mesh.isPickable = false; mesh.position.copyFromFloats(...point); mesh.scaling.setAll(size);
-      const angle = i * 2.399;
-      this.sparks.push({ mesh, age: 0, life: destroyed ? 0.85 : 0.18, size, velocity: new Vector3(Math.sin(angle) * (destroyed ? 7 : 2), 2 + i % 3, Math.cos(angle) * (destroyed ? 7 : 2)) });
-    }
+    const sprite = new Sprite('impact-burst', this.burstManager);
+    sprite.position.copyFromFloats(point[0], point[1], point[2]);
+    sprite.width = destroyed ? 0.9 : 0.45;
+    sprite.height = sprite.width;
+    sprite.angle = Math.random() * Math.PI * 2;
+    sprite.color = new Color4(1, 1, 1, 0.9);
+    this.blasts.push({
+      sprite, age: 0, life: destroyed ? 0.55 : 0.24,
+      startSize: destroyed ? 0.9 : 0.45,
+      grow: destroyed ? 2.4 : 1.2,
+      alpha: 0.9,
+    });
   }
   update(dt: number): void {
     for (let i = this.fistSpawns.length - 1; i >= 0; i--) {
