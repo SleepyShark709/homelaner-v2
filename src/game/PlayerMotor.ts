@@ -2,7 +2,7 @@ import { firstHit, moveAndSlide } from './collision.ts';
 import type { Bounds, Obstacle, Vec3 } from './collision';
 import type { Input } from './Input';
 
-export const TUNING = { walk: 10, sprint: 30, fly: 40, boost: 70, acceleration: 20.48, braking: 60, sprintAcceleration: 150, flyAcceleration: 40.96, jump: 20, gravity: 9.81 * 5, height: 1.92, radius: 0.36 };
+export const TUNING = { walk: 10, sprint: 30, fly: 40, boost: 70, acceleration: 20.48, braking: 60, sprintAcceleration: 150, flyAcceleration: 40.96, jump: 20, gravity: 9.81 * 5, height: 1.92, radius: 0.42 };
 export type MotionState = 'idle' | 'run' | 'jump' | 'hover' | 'fly';
 export class PlayerMotor {
   position: Vec3;

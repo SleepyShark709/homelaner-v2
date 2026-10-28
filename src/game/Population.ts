@@ -149,7 +149,7 @@ export class Population {
       if (distance > 0.01) {
         const stepLength = Math.min(distance, speed * dt);
         const step: Vec3 = [dx / distance * stepLength, 0, dz / distance * stepLength];
-        const half: Vec3 = actor.kind === 'vehicle' ? [0.6, 0.9, 0.6] : [0.28, 0.9, 0.28];
+        const half: Vec3 = actor.kind === 'vehicle' ? [0.7, 0.95, 0.7] : [0.36, 0.95, 0.36];
         const hit = firstHit([actor.position[0], actor.position[1] + 0.9, actor.position[2]], step, this.walls, half);
         if (hit) {
           // Route points are preview paths, not a navmesh. Do not let an NPC
