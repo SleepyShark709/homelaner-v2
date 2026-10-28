@@ -26,7 +26,7 @@
 - 攻击时按住方向键不再边走边打：攻击 timeline 期间设置玩家 `attackLocked`，清空水平输入/速度；探针按住 W 挥空拳，攻击期间仅 8 cm 漂移，结束后恢复移动。
 - 普通跑↔快跑不再播放长 StartSprint/Stopping montage：Shift 直接 0.12 s crossfade 到 SprintRun，停下 0.15 s 回 Idle，避免下蹲/站立动作跟着位移。
 - 2026-10-28：减速惯性降低。保留原加速值，仅在目标速度低于当前速度时使用 1.8x 减速度；探针跑步 10 m/s 停 257 ms/1.19 m，飞行 37.9 m/s 停 529 ms/9.56 m。
-- 普通攻击斩击已恢复为原版 `P_NormalAttackSlash` 图集（`T_ky_slash01_4x4`，frames 3..10，0.2 s，加色 sprite）；其余速度线/飞行/冲击仍是程序化预览。资产清单与后续顺序见 `docs/vfx-recovery.md`。
+- 普通攻击斩击已恢复为原版 `P_NormalAttackSlash` 图集（`T_ky_slash01_4x4`，frames 3..10，0.2 s，加色 sprite）；飞行尘土改为原版 `T_RaP_Smoke_puff_4x4_2k` 烟雾，原程序化蓝色飞行速度线已移除。其余冲刺/冲击/远程特效仍是程序化预览。资产清单与后续顺序见 `docs/vfx-recovery.md`。
 - NPC/建筑穿模与局部入地尚未处理。
 
 ## 第 1 项：闪烁
